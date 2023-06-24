@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html land="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>JavaScriptBasics</title>
+        <script type="text/javascript">
+            // alert("Hello world!")
+        </script>
+    </head>
+    <body>
+        <h2>Mime type</h2>
+        <p>It is recommended to use a mime type to reduce chances of browser missinterpretting your JS script</p>
+    
+        <script src="test.js" type="text/javascript"></script>
+
+        <h2>HTML4 script declaration</h2>
+        <p>When adding JS script to the HTML 4 page you ahev to include additional tags. See example below:<br>
+            <h3 style="color:turquoise">
+                &lt;script language="Javascript" type="text/javascript" src="test.js&gt; &lt;/script&gt;
+            </h3>
+
+        <h2>Variables</h2>
+        <p>Use <b style="color:aqua">var</b> to create variables</p>
+        <script>
+            var score;
+            score = 1000;
+            var age = 38;
+
+            function outputVars(){
+                document.getElementById("output").innerHTML = "Score: " + score + " Age: " + age;
+            }
+        </script>
+        <h4 id="output"></h4>
+        <button onclick="outputVars()">Output</button>
+
+        <h2>If Statements</h2>
+        <script>
+            var score = 17000;
+            var highscore = 15000;
+
+            function checkScore(){
+                if(score > highscore){
+                    highscore = score;
+                    document.getElementById("checkScore").innerHTML = "You have a new highscore! Congratulations!";
+                }
+                else if(score < highscore){
+                    document.getElementById("checkScore").innerHTML = "Your score is lower than highscore";
+                }
+                else{
+                    document.getElementById("checkScore").innerHTML = "You have reached the highscore! Congratulations!";
+                }
+            }
+        </script>
+        <p id="checkScore"></p>
+        <button onclick="checkScore()">Check Score</button>
+
+        <h4>SWITCH statement</h4>
+        <script>
+            var zipCode = "H91N27H"
+
+            function checkZip(){
+                switch(zipCode){
+                    case "H91B12B":
+                        town = "Cleargalway"
+                        break;
+                    case "H91N27H":
+                        town = "Galway"
+                        break
+                    default:
+                        town = "Not found"
+                }
+                document.getElementById("outputZip").innerHTML = town
+            }
+
+            function reset(){
+                document.getElementById("outputZip").innerHTML = "Check the H91N27H zip code town"
+            }
+        </script>
+        <p id="outputZip">Check the H91N27H zip code town</p>
+        <button onclick="checkZip()" ondblclick="reset()">Check ZIP code</button>
+    </body>
+</html>

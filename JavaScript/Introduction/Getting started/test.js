@@ -1,0 +1,1 @@
+alert("text from src referenced file")
