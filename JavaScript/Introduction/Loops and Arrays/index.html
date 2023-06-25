@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h3>While and Do While loops</h3>
+        <p id="output"></p>
+        <button onclick="count()">While loop</button>
+        <p id="output2"></p>
+        <button onclick="count2()">Do While loop</button>
+
+        <h3>FOR loop</h3>
+        <p id = "output3">Output of FOR loop will go here<p>
+        <button onclick="count3()">FOR loop</button>
+
+        <h3>Declaring Arrays</h3>
+        <button onclick="getFirstElements()">Get 1st item in arrays</button>
+        <button onclick="listAirlines()">Get Airlines</button>
+        <button onclick="listStates()">Get States</button>
+        <p id = "output4"></p>
+
+        <script>
+            function count(){
+                var x = 0;
+                while (x < 101){
+                    if (x % 20 == 0 && x != 0){
+                        document.getElementById("output").innerHTML += x + "<br>";
+                    }else{
+                        document.getElementById("output").innerHTML += x + " "
+                    }
+                    x+=5;
+                    console.log(x)
+                }
+
+            }
+
+            function count2(){
+                x = 0;
+                do{
+                    if (x % 20 == 0 && x != 0){
+                        document.getElementById("output2").innerHTML += x + "<br>";
+                    }else{
+                        document.getElementById("output2").innerHTML += x + " "
+                    }
+                    x+=5;
+                }while (x<101)
+            }
+
+            function count3(){
+                for(var i = 0; i < 11; i++){
+                    document.getElementById("output3").innerHTML += (i + "<br>")
+                    console.log(i)
+                }
+            }
+            
+
+            //Declaring arrays
+            //There are 3 different ways to delare an array
+            var airlines = new Array()
+            airlines[0] = "Delta";
+            airlines[1] = "US Airways";
+            airlines[2] = "jetBlue"
+
+            var people = new Array("Alex", "Kristina", "Igor")
+
+            var states = ["New York", "Texas", "Washington"]
+
+            function getFirstElements(){
+                console.log("Get array elements")
+                document.getElementById("output4").innerHTML = "Airlines: " + airlines[0] + "<br>People: " + people[0] + "<br>States: " + states[0];
+            }
+
+
+            function listAirlines(){
+                for(i in airlines){
+                    console.log("Looking for i: " + i)
+                    document.getElementById("output4").innerHTML += airlines[i] + "<br>"
+                }
+            }
+
+            function listStates(){
+                var len = states.length
+                for(var i=0; i< len; i++){
+                    document.getElementById("output4").innerHTML += i+1 + " : " +states[i]+ "<br>"
+                }
+            }
+
+        </script>
+
+    </body>
+
+</html>
