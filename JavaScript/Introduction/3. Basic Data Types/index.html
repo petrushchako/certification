@@ -15,7 +15,30 @@
         <p id="nullVAR"></p>
         <button onclick="nullVAR()">Display null variable</button>
 
+        <h3>Regular Expressions</h3>
+        <p id="regExp" >JS includes what is known as Regular Expressions, <br>which are used to search for specific patterns of characters or a sequence of characters.
+        <br>There are two ways to create a regular expressions:</p>
+        <p><b>1.</b> You can create what is known as the literal string version
+        <br><b style="color:blue"">var str = "This is a sample string";<br>var re = /Sample/i;</b></p>
+        <p><b>2.</b> Create the regex object
+        <br><b style="color:blue"">var str = "This is a sample string";<br>var re2 = new RegExp("Sample", "i");</b></p>
+        <button onclick="regExp()">Check the string for content with RegEx</button>
 
+        <h3>Substring</h3>
+        <p >1. Use <b style="color:darkorchid">.substr(x, y);</b> method on the string to retrieve some text by <br>passing starting index (x) 
+            (included) and the number of characters you want to extract (y)<p>
+            <p id = "substring">Example</p>
+
+        <button onclick="subString()">Get substring .substr(2,3)</button>
+        <p >2. Use <b style="color:darkorchid">.substring(x, y);</b> method on the string to retrieve some text by <br>passing starting index (x) 
+            (included) and end index (y) (excluded)<p>
+            <p id = "substring2">Example</p>
+        <button onclick="subString2()">Get substring .substring(2,3)</button>
+
+
+        <h3>Format String</h3>
+        <p id = "formatStr">  Hello World  </p>
+        <button onclick="formatString()">Format string above</button>
 
         
         <script type="text/javascript">
@@ -30,10 +53,46 @@
 
             function nullVAR(){
                 var x = {};
-                alert("x=" + x + typeof x)
+                x = null;
+                alert("x = " + x + ", of type : "+ typeof x)
+            }
+
+            function regExp(){
+                var str = "This is a sample string";
+                var re = /Sample/i //the "i" modifier stand for ignoreCase option that will be applied in comparison
+                var re2 = new RegExp("Sample", "i"); // alternative way of using regex is to create the object instead of the string literal
+
+                var check = re.exec(str); //returns the text found if there is a match
+                //alert(check) this would print "sample"
+                if (check){
+                    alert (check + "\n'" + str + "' contains the value defined in 're' variable")
+                }else{
+                    alert(check + "\n" + "No match found")
+                }
+                var check2 = re.test(str); //returns true or false
+            }
+
+            function subString(){
+                str = document.getElementById("substring").innerText
+                sub23 = str.substr(2 , 3)
+                document.getElementById("substring").style.color = "blue"
+                document.getElementById("substring").innerHTML = ("'" + str + "'.substr(2 , 3) = " + sub23)
+            }
+
+            function subString2(){
+                str = document.getElementById("substring2").innerText
+                sub23 = str.substring(2 , 3)
+                document.getElementById("substring2").style.color = "blue"
+                document.getElementById("substring2").innerHTML = ("'" + str + "'.substring(2 , 3) = " + sub23)
             }
 
 
+            function formatString(){
+                var str = document.getElementById("formatStr").innerText
+                document.getElementById("formatStr").innerHTML = str + "<br>.toLowerCase().italics() : " + str.toLowerCase().italics() +
+                                                                "<br>.toUpperCase().fixed() : " + str.toUpperCase().fixed() +
+                                                                "<br>.trim().bold() : " + str.trim().bold()
+            }
 
         </script>
     </body>

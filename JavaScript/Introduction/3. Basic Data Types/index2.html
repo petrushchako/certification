@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Numbers</title>
+    </head>
+
+    <body>
+        <h3>Number object</h3>
+        <p>There is a Number Object to help you with number operation (Similar to string method available for string object)</p>
+        <p id="numObj">123.45678910</p>
+        <button onclick="numObj()">Display Num Object methods</button>
+
+
+        <script type = "text/javascript">
+            var num =Number(document.getElementById("numObj").innerText)
+            function numObj(){
+                document.getElementById("numObj").innerHTML = num + "<br>num.toFixed(2) : ".bold() + num.toFixed(2) +
+                                                                "<br>num.toPrecision() : ".bold() + num.toPrecision() +
+                                                                "<br>num.toPrecision(3) : ".bold() + num.toPrecision(3) +
+                                                                "<br>num.toPrecision(4) : ".bold() + num.toPrecision(4)
+            }
+
+
+
+        </script>
+    </body>
+</html>
