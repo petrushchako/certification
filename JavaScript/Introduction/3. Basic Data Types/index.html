@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html land="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>JavaScript Variables</title>
+        
+    </head>
+    <body>
+        <h3>Undefined Variables</h3>
+        <p id="undefinedVAR">When you create a variable and don't assign any value to it, it will be of <b>undefined</b> type. <br>The reason we use <b>undefined</b> is that when you create a vfunction that relies on some variable, and it is undefined, that means nothing happened to that variable yet.</p>
+        <button onclick="undefinedVAR()">Display undefined variable</button>
+
+        <h3>NULL variable</h3>
+        <p id="nullVAR"></p>
+        <button onclick="nullVAR()">Display null variable</button>
+
+
+
+        
+        <script type="text/javascript">
+            function undefinedVAR(){
+                var x
+                if (typeof x === 'undefined'){
+                    alert('WARNING!\nx is undefined')
+                }else{
+                    alert(x)
+                }
+            }
+
+            function nullVAR(){
+                var x = {};
+                alert("x=" + x + typeof x)
+            }
+
+
+
+        </script>
+    </body>
+</html>
