@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Controlling Program Flow
+        </title>
+        
+    </head>
+    <body>
+        
+        <form>
+            Number 1 <input type = "number" name = "num1"/><br/>
+            <input type = "button" name = "button1" onclick="ternaryOperator(num1.value)" value = "Test" />
+        </form>
+
+        <script type="text/javascript">
+            nestedIF()
+            nestedLOOP()
+            breakContinueStm()
+            //ternaryOperator()
+
+            function nestedIF(){
+                var x =12
+
+                if (x>5){
+                    if (x <= 6){
+                        alert("Lower side of range")
+                    }else{
+                        alert("Higher side of range")
+                    }
+                }else{
+                    alert("Outside of range")
+                }
+            }
+
+            function nestedLOOP(){
+                document.writeln("Here is the nested FOR loop<br>")
+                for(var i = 1; i <= 5; i++){
+                    document.writeln("<BR><BR>i : ".bold() + i + "<BR>")
+                    for(var j = 1; j <= 5; j++){
+                        document.writeln("j : ".bold() + j + "&emsp;")
+                    }
+                }
+                
+            }
+
+            function breakContinueStm(){
+                var x = 10
+                out: for (i = 1; i <= 10; i++){
+                    document.writeln("<br>[i " + i + " : x ");
+                    myinnerloop:
+                        do{
+                            x += 1
+                            if (x%2 == 0) {
+                                document.writeln(x + "]")
+                                break myinnerloop
+                            }
+                            else if(i == 8){
+                                break out
+                            }
+                        } while (x <= 15)
+                }
+            }
+
+
+            function ternaryOperator(x){
+                x > 10? alert(x + " is more then 10") : (x==7? alert(x + " is equal to 7") :alert(x + " is not equal to 7"))
+            }
+        </script>
+
+    </body>
+</html>
