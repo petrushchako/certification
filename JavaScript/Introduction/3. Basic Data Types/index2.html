@@ -10,6 +10,20 @@
         <p id="numObj">123.45678910</p>
         <button onclick="numObj()">Display Num Object methods</button>
 
+        <h3>Math Object</h3>
+        <p>Math objects provide a lot of different method you can use to execute operations on numbers.</p>
+        <button onclick="mathObj()">Roll dice</button>
+        <p id="mathObj"></p>
+
+        <h3>Date and Time objects</h3>
+        <p>Getting Date and Time</p>
+        <button onclick="timedateObj()">Get Date and Time</button>
+        <p id="timedate"></p>
+
+        <h3>Boolean</h3>
+        <p>Booleadn object and primitive type</p>
+        <button onclick="booleanObj()">Get Boolean info</button>
+        <p id="booleanObj"></p>
 
         <script type = "text/javascript">
             var num =Number(document.getElementById("numObj").innerText)
@@ -17,9 +31,51 @@
                 document.getElementById("numObj").innerHTML = num + "<br>num.toFixed(2) : ".bold() + num.toFixed(2) +
                                                                 "<br>num.toPrecision() : ".bold() + num.toPrecision() +
                                                                 "<br>num.toPrecision(3) : ".bold() + num.toPrecision(3) +
-                                                                "<br>num.toPrecision(4) : ".bold() + num.toPrecision(4)
+                                                                "<br>num.toPrecision(4) : ".bold() + num.toPrecision(4);
+
+                document.getElementById("numObj").innerHTML += ("<br>LocaleString : ".bold() + num.toLocaleString());
             }
 
+            function mathObj(){
+                var result = document.getElementById("mathObj");
+                //result.innerHTML += Math.ceil(Math.random()*6) + " ";
+                result.innerHTML += "[ " + getDiceNum() + " , " + getDiceNum()  + " ]   "
+            }
+            function getDiceNum(){
+                return Math.ceil(Math.random() * 6)
+            }
+
+            function timedateObj(){
+                var today = new Date()
+
+                var birthday = new Date ("September 7, 1992 06:00:00");
+                
+                var result = document.getElementById("timedate")
+                result.innerHTML = "standard date object : " + today.toString() +
+                                    "<br>toDateString() : " + today.toDateString() +
+                                    "<br>.toGMTString() : " + birthday.toGMTString() +
+                                    "<br>.toUTCString() : " + birthday.toUTCString() +
+                                    "<br>.toLocaleDateString() : " + today.toLocaleDateString() +
+                                    "<br>.toLocaleTimeString() : " + today.toLocaleTimeString() + 
+                                    "<br>.today.getDay() : " + today.getDay()
+                
+                tutorialDate = new Date(2020, 6 , 28, 12, 32, 0)
+                result.innerHTML += "<br>Tutorial Date : " + tutorialDate.toLocaleString()
+                tutorialDate.setYear(today.getFullYear())
+                result.innerHTML += "<br>Tutorial date after changing year object property : " + tutorialDate.toLocaleString()
+            }
+
+            function booleanObj(){
+                a = false;
+                b = new Boolean(true);
+
+                var result = document.getElementById("booleanObj")
+                result.innerHTML = "Primitive (typeof) : "+ a + " -> " + typeof a + 
+                                   "<br>new Boolean (typeof) : " + b + " -> " + typeof b
+
+                c = Boolean(1) //true
+                d = Boolean(0) //false
+            }
 
 
         </script>
