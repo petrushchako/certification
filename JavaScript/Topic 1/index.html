@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <h3>How to detect a User's Browser and Screen Dimensions</h3>
+        <p>The JavaScript command <b>`window.screen.availWidth`</b> and 
+            <b>`window.screen.availHeight`</b> show the size of the monitor or screen.<br>
+            The JavaScript command <b>`window.innerWidth`</b> and 
+                <b>`window.innerHeight`</b> show the size of the browser window or viewport.</p>
+        <input type="button" onclick="doIt()" value="Do It" />
+        <br><br>
+        <span id = "output"></span>
+
+        <br><br>
+        <h3>Dialog boxes</h3>
+        <p><b>prompt()</b> returns string or null<br><b>confirm()</b> returns boolean</p>
+        <input type="button" onclick="myPrompt()" value="Ask for name" />
+        <input type="button" onclick="myConfirm()" value="Approve" />
+
+
+        <script type="text/javascript">
+            
+            function doIt(){
+                var screenSize = "Screen size (monitor) : " + window.screen.availWidth + 
+                                 " x " + window.screen.availHeight + "<br>"
+                var windowSize = "Window size (browser) : " + window.innerWidth + 
+                                 " x " + window.innerWidth + "<br>"
+                document.getElementById("output").innerHTML = screenSize + windowSize
+                            
+            }
+
+
+            function myPrompt(){
+                //prompt() terurns string or null
+                var name = prompt("What is your name?", "Enter name here")
+
+                if(name == "Enter name here"){
+                    alert("Please replace string with your name")
+                }
+                else if (name){
+                    alert("Hello " + name)
+                } 
+                else {
+                    alert("You pressed cancel or no value has been entered")
+                }
+            }
+            
+            function myConfirm(){
+                //confirm() return boolean
+                var status = confirm("Approve?")
+
+                if(status){
+                    alert("APPROVED\nYour response was OK")
+                }
+                else {
+                    alert("DECLINED\nYour response was Cancel")
+                }
+            }
+
+        </script>
+    </body>
+</html>
