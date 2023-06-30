@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>JS Excetion Handling</title>
+    </head>
+    <body>
+
+        <form id = "frm1">
+            First name : <input type="text" name="fname" value="Smith"><br>
+            Second name : <input type="text" name="sname" value="John"><br>
+            Age : <input id="age" type="number" name="age" value=""><br>
+            <input id="validate" type="button" onclick="exceptionForValidation()" value="Validate" style="transform:translate(+500%, +100%)"/>
+            
+            <input id="basicbutton" type="button" onclick="clearText()" value="Clear" style = "display:block"/>
+    
+        </form>
+
+        <script type = "text/javascript">
+            function clearText(){
+                try{
+                    var form = document.getElementById("frm1");
+                    var nameValues = [];
+
+                    for (var i = 0; i < form.elements.length; i++) {
+                        var element = form.elements[i];
+                        if (element.getAttribute("name")) {
+                            nameValues.push(element.getAttribute("name"));
+                        }
+                    }
+                    console.log(nameValues);
+
+                    //Clear input 
+                    for (i in nameValues){
+                        form.elements[i].value = ""
+                    }
+                }
+                catch (e){
+                    alert(e.message)
+                }
+            }
+
+            function exceptionForValidation(){
+                var datatocheck = Number(document.getElementById("age").value);
+                try{
+                    console.log(datatocheck)
+                    if (datatocheck == ""){
+                        throw "input is empty" 
+                    } 
+                    else if (isNaN(datatocheck)){
+                        throw "Not a Number"
+                    }
+                    else if (datatocheck < 18){
+                        throw("too low")
+                    }
+                    else if (datatocheck > 100){
+                        throw "too high"
+                    }
+                    document.getElementById("validate").style.backgroundColor = "green"
+                }
+                catch (e){
+                    alert("Age input is " + e)
+                    document.getElementById("age").style.backgroundColor = "red"
+                    document.getElementById("basicbutton").style.display = "block"
+                }
+                
+            }
+        </script>
+    </body>
+
+</html>
