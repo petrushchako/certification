@@ -8,5 +8,10 @@ b[9] = 10
 console.log(b)
 
 //Use array methods to add elements to the array
-
+let c = [1,2,3]
+console.log("\n" + c)
+c.push(4)
+console.log(c)
+c.pop()
+console.log(c)
 
