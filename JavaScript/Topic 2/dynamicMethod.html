@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        Enter JS command:<br><textarea id = "input" rows="20" cols="50"></textarea>
+        <br><br>
+        <button onclick="doIt()">Execute</button>
+        <br><br>
+        Output Windows: 
+        <div id="output" style="height: 125px; width: 425px; border: 1px solid"></div>
+    
+        <script type="text/javascript">
+            function doIt(){
+                let jsExec = document.getElementById("input").value
+
+                try{
+                    eval(jsExec)
+                }catch(e){
+                    alert("Sorry, the code ran into a problem:\n" + e)
+                }
+            }
+        </script>
+    
+    
+    </body>
+</html>
