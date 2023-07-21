@@ -2,7 +2,7 @@
 An interaction such as a mouse click, a keu press, an object changing values, or a webpage loading. 
 
 #### The most common events in JavaScript
-* onchange
+* ## onchange
 
 Example:
 ```
@@ -12,7 +12,7 @@ Example:
 ```
 Note: Technically nothig has changes in the input field until the user clicks out of the input box of press the Enter key. 
 
-* onmouseover
+* ## onmouseover
 This enent allows you to make something interactive to take place when user hovers the mouse over some area.
 
 ```
