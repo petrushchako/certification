@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Formatting JavaScript Dates</title>
+        <script type="text/javascript">
+            let today = new Date()
+            let anniversary = new Date("February 14 2010, 18:00:00")
+            let birthday = new Date(1992, 9, 7)
+            
+
+            document.writeln("Today : ".bold() + today + "<br>")
+            document.writeln("Annivarsary : ".bold() + anniversary + "<br>")
+            document.writeln("Annivarsary (toString()) : ".bold() + anniversary.toString() + "<br>")
+            document.writeln("My birthday : ".bold() + birthday + "<br>")
+            document.writeln("My birthday (toLocaleDateString()) : ".bold() + birthday.toLocaleDateString() + "<br>")
+
+            //Alter Date object
+            anniversary.setDate(23)
+            anniversary.setMonth(11)
+            anniversary.setFullYear(2012)
+            document.writeln("<br>Annivarsary ( after setDate()): ".bold() + anniversary + "<br>")
+
+
+            //Compare dates
+            function compareDates(x, y){
+                let date1 = new Date(x)
+                let date2 = new Date(y)
+                    
+                if(date1.getTime() == date2.getTime()){
+                    //alert("Same")
+                    document.getElementById("result").innerHTML = "Result : Dates are the same"
+                }
+                else if(isNaN(date1)||isNaN(date2)){
+                    document.getElementById("result").innerHTML = "Wrong input"
+                }else{
+                    //alert(date1.getDate() + " " + date2.getDate())
+                    document.getElementById("result").innerHTML = "Result : Dates are different"
+                }
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <form>
+            <br><br>
+            <input type="text" name="dateX" placeholder="m/dd/yyyy" />
+            <input type="text" name="dateY" placeholder="m/dd/yyyy" /><br>
+            <input type="button" name="button1" onclick="compareDates(dateX.value, dateY.value)" value="Compare Dates">
+            <h4 id = "result">Result:</h4>
+        </form>
+    </body>
+</html>
