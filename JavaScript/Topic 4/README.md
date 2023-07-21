@@ -1,6 +1,7 @@
 ### Document Object Model
 * 4.1 Identify and construct the Document Object Model (DOM) tree 
 window, document, body, other HTML elements 
+![Alt Text](./DOM_document.png)
 
 * 4.2 Identify and handle document, form, keyboard, and mouse events 
 onload, onfocus, onblur, onchange, onkeydown, onkeyup, onkeypress, onclick, onmouseover, onmouseout 
