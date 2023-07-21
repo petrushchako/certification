@@ -14,7 +14,7 @@ Note: Technically nothig has changes in the input field until the user clicks ou
 
 * ## onmouseover
 This enent allows you to make something interactive to take place when user hovers the mouse over some area.
-
+Example:
 ```
 <head>
     <script src="scripts/main.js>
@@ -52,3 +52,39 @@ fuction product(item, description, price, imgsrc){
     this.imgsrc = imgsrc;
 }
 ```
+
+* ## onload
+On load event occures when window loads. 
+Example:
+```
+...
+<body onload="alert('This is example of onload event')">
+...
+```
+
+* ## onclick
+On click evenet is one of the most used event in JS. The action takes places after something is being clicked on, usually a button.
+Example:
+```
+<div class = "itemquantity">
+    <p>
+        <input type="text" value="1" id="manqty><br/>
+        <button id="manqtyadd onclick="addOne('manqty')">+</button>
+        <button id="manqtysubtract onclick="javascript: document.getElementById('manqty').value--;">-</button>
+    </p>
+</div>
+```
+
+* ## onmouseout
+onmouseout event triggers the action when mouse leaves area that event is assigned to. 
+Example:
+```
+<h1>My First Heading</h1>
+<p id="par">&emsp; &nbsp;</p>
+<button onmouseout="javascript: document.getElementById('par').innerHTML = 'Hover over button to see text'" 
+		onmouseover="javascript: document.getElementById('par').innerHTML = 'Some text'" >Show data</button>
+</body>
+```
+
+* ## onkeydown
+onkeydown event trigger when any key is pressed on the keyboard withing area event is assigned to.
