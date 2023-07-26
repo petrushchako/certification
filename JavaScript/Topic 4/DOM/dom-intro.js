@@ -13,6 +13,12 @@
            But it will only work with function without input parameters. 
         2. Wrap the code call in function definition (i.e. line 8) */
 
+    document.getElementById("myButton2").addEventListener('click', addText)
+    document.getElementById("myButton2").addEventListener('click', function(){alert("description added")})    
+
+    function addText(){
+        document.getElementById("textArea").innerHTML = "Number 1-3 in unordered list"
+    }
 })();
 
 
