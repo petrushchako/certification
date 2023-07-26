@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head lang="en">
+    <title>Locate, Modify and Add Elements</title>
+</head>
+<body>
+    
+    <img src = "./NY.png" tag = "img" class = "design" id = "NY" alt = "New York" width="500" hight="500">
+
+    <h2 id="title">Information about pictures</h2>
+    
+    <h5 id="infoImgTitle" style="font-weight:bold">Information about the Images</h5>
+    <p id="infoImgBody"></p>
+
+    <h5 id="infoClassTitle" style="font-weight:bold">Information about the "design" class</h5>
+    <p id="infoClassBody"></p>
+
+    <input type = "button" class = "button" id = "button1" value = "Change img description" onclick = "setAttributeFunc()">
+    <input type = "button" class = "button" id = "button2" value = "Create element" onclick="createElementFunc()">
+
+    <img src = "./T.png" tag = "img" class = "design" id = "T" alt = "Toronto" width="500", hight="500">
+    <script></script>
+
+    <script type="text/javascript">
+        getTags()
+        getClasses()
+
+        //Add Event listener by assigning it to element on HTML page
+        document.getElementById("button1").addEventListener("click", getClasses)
+
+        function getTags(){
+            let info = Array.from(document.getElementsByTagName("img"))
+            info.forEach(element => {
+                document.getElementById("infoImgBody").innerHTML += "<br>" + element.src
+            })
+
+        }
+
+        function getClasses(){
+            let info = Array.from(document.getElementsByClassName("design"))
+            for (i=0; i<info.length; i++){
+                document.getElementById("infoClassBody").innerHTML += "<br>Class : ".italics().small() + info[i].className.bold() + "; Description : ".italics().small() + info[i].alt.bold()
+            }
+        }
+        
+        function setAttributeFunc(){
+            let tags = document.getElementsByTagName("img")
+            Array.from(tags).forEach(tag => {
+                //set alt attribute in every img element to second parameter
+                // Note: can be used for change of class name to modify styling, if you have css targetting specified class
+                tag.setAttribute("alt", "city") 
+            })
+        }
+
+        function createElementFunc(){
+            let constructionP = document.createElement("h6")
+            let constructionText = document.createTextNode("This page is under construction")
+            constructionP.appendChild(constructionText)
+            document.getElementById("title").appendChild(constructionP)
+        }
+
+    </script>
+</body>
