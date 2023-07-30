@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+</head>
+<body>
+    <h2>Animations</h2>
+    
+    <style>
+        #square {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            background: yellow;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+            border-radius: 50%;
+            top: 450px;
+        }
+    </style>
+
+    <div id="square">
+        <div class = "circle" id="circle1"></div>
+        <div class = "circle" id="circle2" style="right:0px; background-color:green"></div>
+    </div>
+
+    <script type="text/javascript" src="Animations.js"></script>
+
+    <p><button onclick = animation()>Move!</button></p>
+
+</body>

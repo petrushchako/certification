@@ -3,9 +3,17 @@
     <title>Locate, Modify and Add Elements</title>
 </head>
 <body>
+    <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; grid-gap:10px">
+        <div class="left-div" >
+            <img src = "./NY.png" tag = "img" class = "design" id = "NY" alt = "New York" width="200" hight="200">
+        </div>
+        <div class="right-div" >
+            <img src = "./T.png" tag = "img" class = "design" id = "T" alt = "Toronto" width="200", hight="200">
+        </div>
+        
+    </div>
     
-    <img src = "./NY.png" tag = "img" class = "design" id = "NY" alt = "New York" width="500" hight="500">
-
+    
     <h2 id="title">Information about pictures</h2>
     
     <h5 id="infoImgTitle" style="font-weight:bold">Information about the Images</h5>
@@ -13,11 +21,16 @@
 
     <h5 id="infoClassTitle" style="font-weight:bold">Information about the "design" class</h5>
     <p id="infoClassBody"></p>
+    <div>
+        <input type = "button" class = "button" id = "button1" value = "Change img description" onclick = "setAttributeFunc()">
+    
+    </div>
+    <div>
+        <input type = "button" class = "button" id = "button2" value = "Create element" onclick="createElementFunc()">
 
-    <input type = "button" class = "button" id = "button1" value = "Change img description" onclick = "setAttributeFunc()">
-    <input type = "button" class = "button" id = "button2" value = "Create element" onclick="createElementFunc()">
-
-    <img src = "./T.png" tag = "img" class = "design" id = "T" alt = "Toronto" width="500", hight="500">
+    </div>
+    
+    
     <script></script>
 
     <script type="text/javascript">
