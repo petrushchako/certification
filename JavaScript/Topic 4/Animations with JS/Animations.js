@@ -21,7 +21,4 @@ function animation(){
             dot2.style.right = location2 + "px"
         }
     }
-
-
-
 }
