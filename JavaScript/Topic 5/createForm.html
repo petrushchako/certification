@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Creating Forms</title>
+    </head>
+    <body>
+        <h1>Creating Form</h1>
+        <form method = "POST" action = "form.aspx">
+            <p>
+                <label>Customer name: <input type = "text" id = "customerName" name = "customerName" maxlength="10">
+            </p>
+
+            <!-- Fieldset groups form elements together with the common name that is referenced in legend
+            Fieldset also provides a boundry(a box) where all fields are represented on web page-->
+            <fieldset>
+                <legend>Pizza Size</legend>
+                <p>
+                    <label><input type = "radio" name="size" value="small">Small (10 inch)</label>
+                </p>
+                <p>
+                    <label><input type = "radio" name="size" value="medium">Medium (12 inch)</label>
+                </p>
+                <p>
+                    <label><input type = "radio" name="size" value="large">Large (14 inch)</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pizza Toppings</legend>
+                <p>
+                    <label><input type = "checkbox" name = "toppings" value ="bacon">Bacon</label>
+                    <label><input type = "checkbox" name = "toppings" value ="cheese">Extra cheese</label>
+                    <label><input type = "checkbox" name = "toppings" value ="onion">Onion</label>
+                    <label><input type = "checkbox" name = "toppings" value ="mushroom">Mushroom</label>
+                </p>
+            </fieldset>
+
+            <p>Crust<br>
+                <select name = "crust" multiple >
+                    <option value = "c1">Normal</option>
+                    <option value = "c2" selected>Chicago Deep Dish (+$2)</option>
+                    <option value = "c3">New York Thin</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Delivery Instruction:<br>
+                    <textarea name="comment" cols="50" rows="5" maxlength="1000">How do we get to your house</textarea>
+                </label>
+            </p>
+
+
+
+        </form>
+
+    </body>
+</html>
