@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="">
+
+    <style>
+        html,body {font-family:"Verdana",sans-serif}
+        h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
+    </style>
+
+    <script src=""></script>
+</head>
+<body>
+
+<img src="LosAngeles.png" alt="LA" style="width:100%" tag="img">
+<img src="NewYork.png" alt="NY" style="width:100%" tag="img">
+
+<h1>Images in this file</h1>
+<p id="result"></p>
+<button onclick="getImages()">List images</button>
+<br><br><br>
+<h3>Example of HTML collection</h3>
+<img src="HTMLCollection.png">
+
+<script>
+
+    function getImages(){
+        let tagsList = document.getElementsByTagName("img")
+        for (i=0 ; i<tagsList.length; i++){
+            document.getElementById("result").innerHTML += "<br>" + tagsList[i].src
+        }
+
+        /*
+        The reason the forEach loop is not working as expected is due to the nature of the getElementsByTagName method and the return value it provides.
+        getElementsByTagName returns an HTMLCollection, which is not an array, but rather a live collection of elements. 
+        As such, it does not have access to array methods like forEach. The forEach method is available only on arrays.
+        Now, the forEach method works correctly with the Array.from() conversion, 
+        and it will display the src attributes of each image when you click the "List images" button. */
+        let tagsArray = Array.from(tagsList)
+        tagsArray.forEach(element =>{
+            document.getElementById("result").innerHTML += "<br>" + element.alt
+        })
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Current time</h1>
+<p id="par">&emsp; &nbsp;</p>
+
+<script type="text/javascript">
+//displayTime()
+
+function displayTime() {
+  const currentTime = new Date();
+  document.getElementById("par").innerHTML = currentTime.toLocaleTimeString();
+}
+
+const intervalID = window.setInterval(displayTime, 1000); // Display time every second
+
+</script>
+        
+</body>
+</html>
