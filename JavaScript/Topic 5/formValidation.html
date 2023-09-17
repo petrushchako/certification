@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 Form Validation</title>
+    <style type="text/css" media="all">
+        span {
+            width: 175px;
+            display: block;
+            float: left;
+        }
+        input {
+            float: left;
+        }
+        p {
+            padding-top: 10px;
+            clear: all;
+        }
+        h2 {
+            padding-top: 20px;
+            clear: all;
+        }
+        label {
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creating Forms</h1>
+    <form method="POST" action="form.aspx">
+        <h2>Email</h2>
+        <p><label><span>Email input:</span><input type=email name=emailInput required></label></p>
+
+        <h2>Telephone number</h2>
+        <p><label><span>Telephone input:</span><input type=tel name=telInput</label></p>
+
+        <h2>URL</h2>
+        <p><label><span>URL input:</span></label><input type=url></p>
+
+        <h2>Numeric values</h2>
+        <p><label><span>Number input:</span></label><input type=number name=numberInput></p>
+
+        <h2>Range</h2>
+        <p><label><span>Range Input:</span></label><input type="range" value=50 min="0" max="100"> Value set to 50. By default values accepted between 0-100</p>
+
+        <h2>Data List</h2>
+        <p><label><span>Data list:</span></label><input type=text list=somelist></p>
+        <datalist id="somelist">
+            <option label="Ireland" value="IRL"></option>
+            <option label="Iraq" value="IRQ"></option>
+            <option label="Iceland" value="IS"></option>
+            <option id="Ukraine" value="UA"></option>
+            <option id="Canada" value="CA"></option>
+        </datalist>
+
+
+        <h2>Atributes</h2>
+        <p><label><span>Autofocus: </span></label><input type="text" autofocus>Autofocuses in the input box imediatelly after loading the web page</p>
+
+        <h2>Pattern</h2>
+        <p><label><span>Pattern: </span></label><input type="text" pattern="^\d{5}(-\d{4})?$">Hint: will only work with 4 or 9 characters (defined in pattern)</p>
+
+        <h2>Placeholder</h2>
+        <p><label><span>Placeholder: </span></label><input type="text" placeholder="Hello World!"></p>
+
+
+        <p><button type="submit">Submit</button></p>
+    </form>
+
+</body>
+</html>
