@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The opener Property</h2>
+
+<p id="demo">
+Click the button to open a new window that writes "HELLO!" in the opener window.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  const myWindow = window.open("", "myWindow", "width=300,height=300");
+  myWindow.document.write("<p>This is 'myWindow'</p>");   // Text in the new window
+  myWindow.opener.document.write("<p>This is the source window!</p>");  // Text in the window that created the new window
+}
+</script>
+
+</body>
+</html>
