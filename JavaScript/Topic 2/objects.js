@@ -5,7 +5,7 @@ let car1 = {
     getPrice: function(){
         return 5000
     },
-    printDescription: function(){
+    print**Description**: function(){
         console.log(this.make + " " + this.model)
     }
 }
@@ -23,7 +23,7 @@ let car2 = {
     getPrice: function(){
         return 10000
     },
-    printDescription: function(){
+    print**Description**: function(){
         console.log(this.make + " " + this.model)
     }
 }
