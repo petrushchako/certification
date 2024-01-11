@@ -73,7 +73,36 @@ roles:
 
 ### YAML Styles
 
+**Block or flow:**
+- Two forms of styles:
+    - Block Styles
+    - Flow Styles
 
+- **Block styles**:
+    - Better for humans
+    - Less compact
+    - The YAML you've probably seen
+
+    ```yaml
+    host: phl-42
+    datacenter:
+        location: Philadelphia
+        cab: 13
+    roles:
+        - web
+        - dns
+    ```
+
+- **Flow styles**:
+    - An extension of JSON
+    - "Folding" long lines of content
+    - Tags and anchors
+
+    ```yaml
+    host: "phl-42"
+    datacenter: {location: Philadelphia, cab: 13 }
+    roles: [web, dns]
+    ```
 
 ## YAML Breakdown
 ### Mappings
