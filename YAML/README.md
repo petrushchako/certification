@@ -260,6 +260,29 @@ roles: [ websrver , wp_database ]
 > ```
 
 ### Tags
+- Used for:
+    - **Setting a custom URI**
+        >Use the `%TAG !` prefix
+        >```yaml
+        >%TAG ! tag:hostdata:phl:
+        >---
+        >```
+
+    - **Setting local tags**
+        >- Single exlamation, no space `!`
+        >- URI: `tag:hostdata:phl:PHL`
+        >```yaml
+        >datacenter:
+        >   location: !PHL Philadelphia
+        >```
+
+    - **Setting a data type**
+        >- Force data type; don't rely on parser
+        >- Use two exlamation points, no space `!!`
+        >```yaml
+        >cabinet: !!str 13
+        >cab_unit: !!str 2
+        >```
 
 
 
