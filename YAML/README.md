@@ -231,11 +231,33 @@ roles: [ websrver , wp_database ]
 > ...
 > ```
 
-
-
 ### Comments
 
+- Define a comment with an octothorpe and whitespace (`# `)
+- Inline comments aceeptable, however, must continue to end of the line
+- Comments cannot be contained in scalars
+- Comments are for humants, no actual content should be conveyed through comments
+- Blank lines function as commented lines
 
+> **Do this**
+> ```yaml
+> # Philly DC Host Data
+> host: phl-42
+> datacenter:
+>     location: Philadelphia # Reference ID ...
+> Reference ID: PHL
+> ```
+
+> **Don't do this**
+>   - No space after `#`
+>   - Comment in the middle of the string
+> ```yaml
+> #Philly DC Host Data
+> host: phl-42
+> datacenter:
+>     location: "Philadelphia # Reference ID ...
+> Reference ID: PHL"
+> ```
 
 ### Tags
 
