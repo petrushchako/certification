@@ -166,15 +166,43 @@ datacenter:
 roles: [ websrver , wp_database ]
 ```
 
-
-
-
 ### Scalars
+- String, number, boolean
+    - Whitespace permitted
+- "... presented with zero or more Unicode characters"
+- Mapping: Assigning one scalar to another
+- Use quotes (**`** or **"** ) to conver a non-string scalar into a string scalar
+    - Double quotes permit escape sequences
+- Multiline scalars:
+    - **Block style** (preserves newline)
+
+        ```yaml
+        downtime_schedule: |
+            2019-10-04 - kernel upgrade
+            2019-02-02 - security fix
+        ```
+
+    - **Folded style** (converts newline/spacing to single space):
+
+        ```yaml
+        comments: >
+            Experiencing high I/O
+            since 2018-10-01.
+            Current investigating.
+        ```
 
 ### Structures
 
+
+
 ### Comments
+
+
 
 ### Tags
 
+
+
 ### Anchors
+
+
