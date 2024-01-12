@@ -86,11 +86,11 @@ roles:
     ```yaml
     host: phl-42
     datacenter:
-        location: Philadelphia
-        cab: 13
+      location: Philadelphia
+      cab: 13
     roles:
-        - web
-        - dns
+      - web
+      - dns
     ```
 
 - **Flow styles**:
@@ -115,19 +115,59 @@ roles:
     ```yaml
     host: "phl-42"
     datecenter:
-        location: "Philadelphia"
-        cab: 13
+      location: "Philadelphia"
+      cab: 13
     ```
 
 **Flow styles**
 - Use curly brackets and commas (`{ x , y }`)
 
     ```yaml
-    datacenter: { location: "Philadelphia", cab: 13}
+    datacenter: { location: "Philadelphia", cab: 13 }
     ```
 
 
 ### Sequences
+
+- Lists, arrays, collections
+- Denote with dash and space (`- `)
+- Can be a combined with mappings:
+    - Mapping of sequences
+    - Sequence of mappings
+
+    ```yaml
+    roles:
+      - webserver
+      - wp_database
+    ```
+    >Note:
+    > - Cannot be:
+    >   - Nested without mapping (**#1** missing colon after `playbook`)
+    >   - Blank (**#2** empty element)<br>
+    >     Instead, an empty string can be provided (`""`)
+    >```yaml
+    >- playbook     #1
+    >   - wordpress
+    >   -            #2
+    >   - mysql
+    >```
+
+Sequence of mapping example:
+
+```yaml
+datacenter:
+    - location: "Philadelphia"
+      cab: 13
+      cab_unit: 3 
+```
+
+**Flow styles:**
+```yaml
+roles: [ websrver , wp_database ]
+```
+
+
+
 
 ### Scalars
 
