@@ -106,6 +106,27 @@ roles:
 
 ## YAML Breakdown
 ### Mappings
+
+- Associative arrays, hash tables, key-value pairs, collections
+- Denote with a colon and a space `: `
+- No duplicate keys
+- Mappings can be nested
+
+    ```yaml
+    host: "phl-42"
+    datecenter:
+        location: "Philadelphia"
+        cab: 13
+    ```
+
+**Flow styles**
+- Use curly brackets and commas (`{ x , y }`)
+
+    ```yaml
+    datacenter: { location: "Philadelphia", cab: 13}
+    ```
+
+
 ### Sequences
 
 ### Scalars
