@@ -192,6 +192,44 @@ roles: [ websrver , wp_database ]
         ```
 
 ### Structures
+- Multiple directives/documents in one file
+- Optional within the YAML spec
+    - May be requirement for different platforms
+- Tripple dashes (`---`) to mark the ned without closing the data stream
+
+>**Multi-doc stream**
+> ```yaml
+> ---
+> host: phl-42
+> datacenter:
+>     location: Philadelphia
+>     cabinet: 13
+>     cab_unit: 2
+> ---
+> host: phl-43
+> datacenter:
+>     location: Philadelphia
+>     cabinet: 13
+>     cab_unit: 3
+> ```
+
+>**Stream with end**
+> ```yaml
+> ---
+> host: phl-42
+> datacenter:
+>     location: Philadelphia
+>     cabinet: 13
+>     cab_unit: 2
+> ...
+> ---
+> host: phl-43
+> datacenter:
+>     location: Philadelphia
+>     cabinet: 13
+>     cab_unit: 3
+> ...
+> ```
 
 
 
