@@ -281,7 +281,7 @@ roles: [ websrver , wp_database ]
         >- Use two exlamation points, no space `!!`
         >```yaml
         >cabinet: !!str 13
-        >cab_unit: !!str 2
+        >cab_unit: !!int 2
         >```
 
 
