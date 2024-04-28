@@ -84,3 +84,58 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
 5. **Other Interface and application**
 
     Various applications and interfaces are used for various task performed by user.
+
+## Linux architecture
+
+![](img/linux-architecture.png)
+
+- **Hardware**
+  - **RAM**<br>
+    It is volatile memory space that stores the data which is directly accessed by CPU
+  - **CPU**<br>It is a Electronic Component that carries out the instructions of computer program
+  - **Hard Disk Drive**<br>It is non-volatile memory, where the Operating System is stored
+- **Kernel**<br>The kernel is the Interface between the Applications and the actual process done at the Hardware level.
+
+    **Tasks performed by the Kernel**
+  - **Resource Allocation**<br>Manage the computer's resources and allow other programs to run and use these resources
+  - **Security Management**<br>Provides security and protection from faults and malicious behaviours
+  - **Process management**<br>Allows the execution of applications and support them with features such as hardware abstraction
+  - **Device Management**<br>Maintains a list of available devices and allow drivers to physically access their devices
+  - **Scheduling**<br>Gives every program specific amount of time and can switch from one process to another
+  - **Memory Management**<br>Allows processes to safely access the memory according to their requirements
+
+
+  Types of Kernel
+  ![](img/kernel-types.png)
+
+- **Shell**
+    The shell is the interface which takes user-command and sends it to the kernel
+
+    - Shell has got its own programming language and you can combine multiple commands in a single script
+    - The shell takes the command in human readable format and provides it to kernel in binary language
+    - The user generally interacts via shell, but direct interaction with hardware is also possible
+    - The first shell created was `sh` for Unix systems. Linux still provide support for `sh` shell, but `bash` is more popular within the Linux users
+
+    Types of shell:
+    - **Bash**
+      - Bourne-Again-shell was written as part of the GNU project to enhance the functionality of sh (Bourne-shell)
+      - Some enhancements like command completion and complete command history are done
+      - It supports all sh functionalities and has its own script for startup
+      - It can perform integral calculations without invoking any external process
+      - One can enter "#! /bin/bash" at the top of the file to tell Linux to run with bash interpreter
+    - **C shell**
+      - It was written by Bill Joy and is widely distributed with BSD Unix
+      - Syntax and control statement are modeled and designed like C
+      - It is executed in a text window, which allow users to provide commands
+      - It can also read commands from the script
+      - It is linked to tcsh shell which is an improved version
+    - **Korn shell**
+      - Korn shell includes C shell's major advantages and its own features
+      - It has command line editing which allows you to use vi or Emac style editing commands
+      - It enables common programming tasks to be done cleanly without creating extra processes
+      - A feature like debugging primitive make it possible to write tools that help the programmer to debug their shell code
+    - **tsch shell**
+      - It is a native root shell of BSD based systems
+      - It is essentially a C shell with programmable command line completion, command line editing and other new features
+      - tsch is backward compatible with original C shell
+      - csh is actually a Tcsh shell on many systems such as Mac OS and Red Hat Linux
