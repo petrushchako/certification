@@ -139,3 +139,26 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
       - It is essentially a C shell with programmable command line completion, command line editing and other new features
       - tsch is backward compatible with original C shell
       - csh is actually a Tcsh shell on many systems such as Mac OS and Red Hat Linux
+
+## Linux distributions
+
+- There are more than 600 distribution available based on:
+    - The development group
+    - Their specific requirement and
+    - Customization
+- They are community and commercial supported distros
+- Some of the popular Linux Distros are **Ubuntu**, **Fedora**, **RedHat**, **Debian**, **CentOS**, etc.
+
+### Distinguishing Factors for Linux Distro
+1. **Enterprise users or home users**
+  - Home user distro has user-friendly GUI and it is easy to use
+  - Enterprise edition gives more importance to performance
+2. **Hardware support**
+  - Most of the distros are portable to multiple hardware, but some of them are designed for specific vendors
+3. **Designed for Servers, Desktops and Embedded devices**
+  - Server distro generally don't have a GUI
+  - Some of the packages of server distro are different from desktop distro
+4. **Targeted at a specific user community**
+  - Some may have enhanced firewall securities while some may be more dedicated towards scientific computing packages
+5. **Commercial**
+  - If it is to make available commercially or non-commercially
