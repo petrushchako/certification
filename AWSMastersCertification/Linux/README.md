@@ -68,3 +68,19 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
 - New enhancements happening and updates come frequently
 - More Secure than other Operating Systems
 
+## Components of Linux
+1. **Init Program**
+   
+   The first program, which is responsible for the initialization of the system. Ex: sysvinit, systemd
+2. **Bootloader**
+
+    A program which loads the operating system when the system is turned on. Ex: GNU Grub, Syslinux
+3. **Software Libraries**
+
+    Set of programming code used to develop and design software programs and applications.
+4. **Package Management System**
+
+    A collection of tools for Installation, Deletion, Configuration, and Upgradation of software. Ex: dpkg, RPM
+5. **Other Interface and application**
+
+    Various applications and interfaces are used for various task performed by user.
