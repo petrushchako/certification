@@ -57,3 +57,14 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
 |Community|Wide network of developers|Limited commercial developers|
 |Support|Depends on forums and community for|Vendors usually provide technical support support for commercial Unix|
 |Bug Fixes|Bug fixing is much faster in Linux than in Unix||
+
+## Features of Linux
+- Linux is an open-source
+- Significantly reduces the monitory cost
+- Huge base of developers that freely provide support
+- It is Reliable as it runs smoothly and no need to reboot it repeatedly
+- Licensing freedom to re-use and re-publish the code
+- Can be Customized if you want to change your system's look
+- New enhancements happening and updates come frequently
+- More Secure than other Operating Systems
+
