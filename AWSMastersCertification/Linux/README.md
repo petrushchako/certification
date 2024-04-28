@@ -30,3 +30,19 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
 3. Open source projects are generally a collaborative effort by multiple sets of developers to enhance the product and allow others to get benefit of it
 4. The owner may put restrictions on usage, modification and distribution by various licensing, but it should be available to study for everyone
 
+## Linux History
+- **1969 and 1970**
+
+    Unix OS was conceived, implemented and released by Ken Thompson and Dennis Ritchie
+- **1977**
+
+    BD (Berkeley software Distribution) contained Unix code that was developed by UC Berkeley
+- **1983 and 1986**
+
+    Stallman started a GNU project for Unix like OS, which was free for copying and modification. In 1986, Maurice J published the design of Unix OS
+- **1987**
+
+    MINIX, which similar to Unix was developed by Andrew Tanenbaum, where copying of code was allowed
+- **1991**
+
+    Torvalds created a Linux Kernel in 1991. Linux Kernel along with GNU Tools became Linux Operating System
