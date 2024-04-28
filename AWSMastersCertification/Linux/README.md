@@ -46,3 +46,14 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
 - **1991**
 
     Torvalds created a Linux Kernel in 1991. Linux Kernel along with GNU Tools became Linux Operating System
+
+## Linux vs UNIX
+|**Parameters**|**Linux**|**UNIX**|
+|---|---|---|
+|Cost|Free|Not Free<br>Different vendors have different prices|
+|Flexibility|Yes|Not Flexible<br>Compatible with lesser hardware|
+|Source Code|Available|Not available<br>As it is not a freeware|
+|Installation|Economical|Uneconomical<br>Unix requires specific hardware|
+|Community|Wide network of developers|Limited commercial developers|
+|Support|Depends on forums and community for|Vendors usually provide technical support support for commercial Unix|
+|Bug Fixes|Bug fixing is much faster in Linux than in Unix||
