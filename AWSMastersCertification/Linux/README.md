@@ -241,3 +241,23 @@ Shell Scripting is a series of shell commands arranged in a text file to be exec
 ## User interface in Linux
 - Graphical user interface interacts with users with icons, folders, wallpapers, widgets and visual indicators to make it easier for the user to access the program
 - For Linux, desktop environments are DE, GNOME, CINNAMON, MATE, etc.
+
+
+## Basic Linux commands
+|Command|Description|
+|---|---|
+|`ls`|Lists down the content of a directory
+|`mkdir`|Creates a directory
+|`mv`|Moves or renames a file/directory
+|`pwd`|Shows the present working directory
+|`rm`|Removes a file/directory
+|`cd`|Enter a directory
+|`whoami`|Tell the current logged-in user
+|`clear`|Clear the screen
+|`cat`|Displays the text of a file
+|`tail`|Displays the last few lines of the file
+|`echo`|Prints a line of text
+|`cp`|a Copy a file/directory
+|`touch`|Creates a file
+|`df`|Shows the available disk space
+|`du`|Shows disk space consumed by the directory and files
