@@ -206,3 +206,34 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
 - Pipe along with grep is most commonly used
 - Ex - `cat fil.txt / grep "Linux"`
 
+## Shell scripting
+
+Shell Scripting is a series of shell commands arranged in a text file to be executed one after the other
+
+- Can be created using any normal text editor
+- Helps automate a squance of tasks creating and also saves time
+- Similar to batch file in Windows
+- Compiled like C/CPP program, but are interpreted directly
+- Each shell script must have executable permission to run the script
+
+### Creating shell script
+1. To get into the root for execution `sudo -i` Create a text file and add the extension of the shell `vi script.sh`
+2. Enter some commands in the scripts to be executed 
+    ```bash
+    echo "My first Script"
+    echo $(date)
+    ```
+3. Change the permission of the script, give it executable permission and may also give read and execute permission for other users `chmod 755 script.sh`
+4. Run the script:
+   ```sh
+   ./script.sh
+   bash script.sh
+   ```
+
+### Practical uses of shell script
+- Data backup at regular interval of time in the background
+- To find out the number of users and their details
+- Find details about various processes and sorting them based on CPU usage, runtime, memory usage, users, etc.
+- To append each file with a signature, date, etc.
+- For scheduling tasks to be done at network servers
+- Creating new users by providing permissions just by entering username
