@@ -261,3 +261,28 @@ Shell Scripting is a series of shell commands arranged in a text file to be exec
 |`touch`|Creates a file
 |`df`|Shows the available disk space
 |`du`|Shows disk space consumed by the directory and files
+
+## Advanced Linux commands
+`grep`
+
+  - `-c` Counts the number of matching lines
+  - `-n` Shows the matching line and its number
+  - `-i` Matches irrespective of case (upper/lower)
+  - `-H` Prints the file name for each match
+  - `-v` Displays line that do not match the string
+  - `-r` Recursively search in directories
+
+Description:
+  - The command prints the lines matching with the pattern which is passed
+  - When a match is found, the line is copied to standard output or mode requested
+  - It has no restriction on the input line length other than the available memory size
+  - Since the new line acts as a separator so it can't be passed as a pattern to be matched
+  - grep has some specifications from POSIX and GNU
+  
+
+    <br><br>Syntax:
+    `grep <options> <pattern> <filename>`
+
+    Example:
+    `grep "hello" file.txt`
+
