@@ -237,3 +237,7 @@ Shell Scripting is a series of shell commands arranged in a text file to be exec
 - To append each file with a signature, date, etc.
 - For scheduling tasks to be done at network servers
 - Creating new users by providing permissions just by entering username
+
+## User interface in Linux
+- Graphical user interface interacts with users with icons, folders, wallpapers, widgets and visual indicators to make it easier for the user to access the program
+- For Linux, desktop environments are DE, GNOME, CINNAMON, MATE, etc.
