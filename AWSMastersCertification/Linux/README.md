@@ -198,3 +198,11 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
 |**5**|Multiple user mode in GUI|
 |**6**|Reboot|
 
+**Pipe**
+- Pipe represented as `|` is used to direct the output of one command to another
+- It creates an internal connection between two or more commands
+- The data is passed to other commands directly instead of using temporary text files
+- The pipe is unidirectional and data flows from left to right
+- Pipe along with grep is most commonly used
+- Ex - `cat fil.txt / grep "Linux"`
+
