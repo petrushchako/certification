@@ -263,14 +263,15 @@ Shell Scripting is a series of shell commands arranged in a text file to be exec
 |`du`|Shows disk space consumed by the directory and files
 
 ## Advanced Linux commands
-`grep`
-
-  - `-c` Counts the number of matching lines
-  - `-n` Shows the matching line and its number
-  - `-i` Matches irrespective of case (upper/lower)
-  - `-H` Prints the file name for each match
-  - `-v` Displays line that do not match the string
-  - `-r` Recursively search in directories
+### grep
+|||
+|---|---|
+|`-c`|Counts the number of matching lines
+|`-n`| Shows the matching line and its number
+|`-i`| Matches irrespective of case (upper/lower)
+|`-H`| Prints the file name for each match
+|`-v`| Displays line that do not match the string
+|`-r`| Recursively search in directories
 
 Description:
   - The command prints the lines matching with the pattern which is passed
@@ -286,3 +287,34 @@ Description:
     Example:
     `grep "hello" file.txt`
 
+
+### sed
+|||
+|---|---|
+|`-f`|Add the contents of script file to the commands for execution
+|`-e`|Add the script to the commands to be executed
+|`-r`|Use extended regular expressions in the script
+|`-z`|Separate lines by NULL characters
+|`-n`|Suppress automatic printing of pattern space
+|`-s`|Consider filing as separate rather than a single continuous long stream
+
+- sed is a stream editor for basic text transformations on an input stream
+- sed do not require any input file and can work on input stream via piping
+- sed can have one or more command combined together with -e or -f
+- Example: sed 's/hello/world/' file.txt > output.txt
+
+Examples:
+
+  **Reading from a file and sending output to a file**
+  ```sh
+  sed 's/hello/world/' file.txt > output.txt
+  cat output.txt
+  #world, this is a file
+  ```
+  **Reading the output from an input stream and sending output to a file**
+  ```sh
+  cat file.txt sed 's/hello/world/' > output1. txt
+  cat outputl.txt
+  # hello, this is a file
+  ```
+  
