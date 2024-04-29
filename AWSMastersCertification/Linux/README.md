@@ -181,3 +181,20 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
 |`p`|Pipe(it is similiar to a socket, but users cannot work with it directly)|
 |`c`|Processess character hardware communication|
 
+
+**Run levels**
+- The `init` figures out the default run-level to start the associated script with respect to the configured run level
+- You can manually change the run level using the `telinit` command and superuser has permission to modify the run - level
+- It is an operational level which describes the current state of the system with respect to the services available
+- It is a single digit integer that defines the state of the system
+  
+|Run Level|Description|
+|---|---|
+|**0**|Halt the system|
+|**1**|Single user mode|
+|**2**|Multiple user mode with no network<br>FileSystem|
+|**3**|Multiple users in CLI,but no GUI|
+|**4**|User definable|
+|**5**|Multiple user mode in GUI|
+|**6**|Reboot|
+
