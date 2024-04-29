@@ -162,3 +162,22 @@ Linux is an **Open Source Operating System** modelled on Unix, and developed in 
   - Some may have enhanced firewall securities while some may be more dedicated towards scientific computing packages
 5. **Commercial**
   - If it is to make available commercially or non-commercially
+
+
+## Miscellaneous Linux Concepts
+
+**File**
+- You don't need a command to check the CPU info, but can print the file `/proc/cpuinfo` like a simple plain text file
+- There are some special files that represent hardware devices, system information, etc.
+- The `/proc` filesystem in Linux gives detail about the kernel's run-time operations in form of plain text files
+
+**Types of files in LInux**
+|Type|Description|
+|---|---|
+|`-`|Normal file|
+|`d`|Normal directory|
+|`l`|Symbolic link (shortcut to a file/directory)|
+|`s`|Socket(pass the data between two processes)|
+|`p`|Pipe(it is similiar to a socket, but users cannot work with it directly)|
+|`c`|Processess character hardware communication|
+
