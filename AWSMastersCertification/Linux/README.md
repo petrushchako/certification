@@ -317,4 +317,21 @@ Examples:
   cat outputl.txt
   # hello, this is a file
   ```
-  
+
+### awk
+
+
+
+- It is mostly used for pattern scanning and processing
+- Using this command you can split each line into multiple variables
+- It performs a set of actions on the matched lines
+- It is useful to create reports or transform the data files
+- awk commands are easy to program as it performs with set of rules and actions
+
+  <br><br>Syntax:
+  `awk 'program' ‹filename>`
+
+  Example:
+  `awk '{print}' file.txt`
+
+
