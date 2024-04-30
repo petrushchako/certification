@@ -287,9 +287,10 @@ Description:
     Example:
     `grep "hello" file.txt`
 
+<hr>
 
 ### sed
-|||
+|Flag|Description|
 |---|---|
 |`-f`|Add the contents of script file to the commands for execution
 |`-e`|Add the script to the commands to be executed
@@ -317,10 +318,9 @@ Examples:
   cat outputl.txt
   # hello, this is a file
   ```
+<hr>
 
 ### awk
-
-
 
 - It is mostly used for pattern scanning and processing
 - Using this command you can split each line into multiple variables
@@ -359,3 +359,18 @@ Examples:
   end of file
   ubuntu@ubuntu#
   ```
+<hr>
+
+### alias
+
+- alias tells Linux to replace one string with another string while executing a command
+- It is used to provide a short name of the frequently used commands
+- It can be defined by adding it in the shell's `.rc` file
+- Don't add space between string and equal sign
+- Reload bash to activate the alias
+
+  <br><br>Syntax:
+  `alias <string>='<command>`
+
+  Example:
+  `alias lk='ls -ltr`
