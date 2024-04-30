@@ -343,3 +343,19 @@ Examples:
   |`$0`|For whole line|
   |`$1`|For first field|
   |`$n`|For nth field|
+
+  Example:
+
+  In the first command awk divides each line as a set of variables and then prints the value of variable 1 and 4 from each line and in the second command it prints all lines having text file
+
+  ```sh
+  ubuntu@ubuntu# awk '{print $1,$4}' file. txt
+  hello, a
+  this line.
+  This 3rd
+  end
+  ubuntu@ubuntu# awk '/file/ {print}' file. txt
+  hello, this is a file
+  end of file
+  ubuntu@ubuntu#
+  ```
