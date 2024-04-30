@@ -335,3 +335,11 @@ Examples:
   `awk '{print}' file.txt`
 
 
+  |Flag/Option|Description|
+  |---|---|
+  |`-F fs`|To specify a file separator|
+  |`-f file`|To specify a file that contains an **awk** script|
+  |`-v var=value`|To declare a variable|
+  |`$0`|For whole line|
+  |`$1`|For first field|
+  |`$n`|For nth field|
