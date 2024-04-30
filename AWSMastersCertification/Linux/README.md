@@ -374,3 +374,13 @@ Examples:
 
   Example:
   `alias lk='ls -ltr`
+
+<hr>
+
+### history
+
+- In a shell, "history" command keeps record of all the commands used in the particular tab
+- You can give a number `n` to print the last `n` commands `hisotry 20`
+- You can get the list of a particular command executed along with a grep command `history grep ls`
+- You may clear the history with the appending -c `history -c`
+- You can use up and down arrow keys to select previously executed commands
