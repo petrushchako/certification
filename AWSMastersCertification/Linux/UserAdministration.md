@@ -26,3 +26,18 @@ The file system is a logical arrangement to store and retrieve data
 - Depending upon the file system architecture, file fragmentation occurs when some files are in noncontiguous clusters or some file are deleted
 - Each file has a metadata consisting of size, date and time of creation, file type, access permission, owner of a file, etc.
 
+### Type of file systems
+
+- **Disk File System**
+  
+  It manages data on a permanent storage device. Accessing the data for multiple request can be handled Ex - NTFS, FAT, etc.
+
+- **Network File System**
+
+  It allows a user on a client computer to access the files over a computer network using NFS protocol Ex - AFS, SMB
+
+- **Special Purpose File System**
+
+  The system API/device is given a file type representation to use according with Unix OS
+
+
