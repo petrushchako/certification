@@ -41,3 +41,13 @@ The file system is a logical arrangement to store and retrieve data
   The system API/device is given a file type representation to use according with Unix OS
 
 
+### Examples of File Systems
+
+- **FAT**
+
+  - File Allocation Table (FAT) uses indexing for a contiguous area of disk store
+  - Each entry has index of the next cluster or indicates end of the file
+  - The top directory has a number of clusters of each file in the particular directory
+  - FAT may lead to fragmentation and has better alternatives for larger file systems
+
+    ![](img/FAT.png)
