@@ -51,3 +51,19 @@ The file system is a logical arrangement to store and retrieve data
   - FAT may lead to fragmentation and has better alternatives for larger file systems
 
     ![](img/FAT.png)
+
+  **Comparison of FAT versions**
+
+  |Attribute|FAT12|FAT16|FAT32|
+  |---|---|---|---|
+  |Used For|Floppies, small hard drives|Small to large hard drives|Large to very large hard drives|
+  |Size of each FAT entry|12 bits|16 bits|28 bits|
+  |Maximum number of Clusters|~4,096|~65,536|~268,435,456|
+  |Supported cluster size|512 B to 4 KB|2 KB to 32 KB|4 KB to 32 KB|
+  |Maximum volume size|16,736,256B (16MB)|2,147,123,200B (2GB)|~2^41B (2TB)|
+  
+  - There are multiple version of FAT like FAT 12, FAT 16, FAT 32 with FAT 32 more suited for device with larger memory chunks
+  - It is best suited for file system of smaller sizes and primarily used in floppies, cameras, media players, etc.
+
+
+
