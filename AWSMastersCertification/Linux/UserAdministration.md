@@ -162,3 +162,15 @@ The file system is a logical arrangement to store and retrieve data
   |**File Owner**|The user who currently has owner permission over the file|
 
 <br><br>
+
+- **File Operations**
+
+  |Operation|Description|
+  |---|---|
+  |**Create**|Allocate space on disk and make an entry|
+  |**Write**|Write the data in the file|
+  |**Read**|Read the data from the file|
+  |**Delete**|Delete the file to free the allocated memory|
+  |**Move**|Move files to a different location|
+
+  
