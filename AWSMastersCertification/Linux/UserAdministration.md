@@ -206,3 +206,11 @@ The file system is a logical arrangement to store and retrieve data
     - In such files, each record has a key associated with it
     - We can search the index table to locate the block that contains the desired record
 
+<br><br>
+
+- **Linux File Hierarchy Structure**
+
+  ![](img/LFHS.png)
+
+
+  
