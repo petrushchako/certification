@@ -40,6 +40,7 @@ The file system is a logical arrangement to store and retrieve data
 
   The system API/device is given a file type representation to use according with Unix OS
 
+<br><br>
 
 ### Examples of File Systems
 
@@ -65,15 +66,23 @@ The file system is a logical arrangement to store and retrieve data
   - There are multiple version of FAT like FAT 12, FAT 16, FAT 32 with FAT 32 more suited for device with larger memory chunks
   - It is best suited for file system of smaller sizes and primarily used in floppies, cameras, media players, etc.
 
-
+<br><br>
 
 - **NTFS**
 
-  New Technology File System (NTFS) uses advanced data structure to improve performance, reliability and disk space usage
+  **N**ew **T**echnology **F**ile **S**ystem (NTFS) uses advanced data structure to improve performance, reliability and disk space usage
 
   - Each file operation is broken down into transaction so that recovery is allowed
   - Whenever it is needed each file or folder can be expanded or compressed automatically
 
   ![](img/NTFS.png)
 
-  
+  **NTFS - Features**
+  |Feature|Description|
+  |---|---|
+  |**Self Healing NTFS**|Detects and corrects corrupted NTFS volume file|
+  |**ACL(Access Control List)**|Determines who else can access or modify your files|
+  |**File level encryption**|Protects your file content from unauthorized access|
+  |**Disk Quotas**|It keeps track of disk space being used and enables administrator to limit disk space that a user may use|
+  |**Reliable File System**|Automated recovery operations and checks for consistency by using transaction log and journal file|
+  |**File Compression**|Compression of large file is allowed so that disk space is used efficiently|
