@@ -67,3 +67,13 @@ The file system is a logical arrangement to store and retrieve data
 
 
 
+- **NTFS**
+
+  New Technology File System (NTFS) uses advanced data structure to improve performance, reliability and disk space usage
+
+  - Each file operation is broken down into transaction so that recovery is allowed
+  - Whenever it is needed each file or folder can be expanded or compressed automatically
+
+  ![](img/NTFS.png)
+
+  
