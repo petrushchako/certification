@@ -150,3 +150,15 @@ The file system is a logical arrangement to store and retrieve data
   |**OS Support**|Windows, Linux,MAC|DOS, Windows,Linux, MAC|Linux|Linux, MAC|
 
 
+- **File attributes**
+  |Attribute|Details|
+  |---|---|
+  |**File name**|A human readable name assigned to a file|
+  |**File Type**|Identifies the category of the application required|
+  |**Permission**|The user has the permission to access every file|
+  |**File size**|Memory allocated on the disk to store the file|
+  |**File location**|A pointer to find out the file|
+  |**File date**|Date of creation or last modification of file|
+  |**File Owner**|The user who currently has owner permission over the file|
+
+
