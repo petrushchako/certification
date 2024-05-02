@@ -173,4 +173,13 @@ The file system is a logical arrangement to store and retrieve data
   |**Delete**|Delete the file to free the allocated memory|
   |**Move**|Move files to a different location|
 
-  
+<br><br>
+
+- **File System Characteristics**
+
+  - Linux is a multiuser system where every file in a Linux file system belongs to a user and a group with respective permissions
+  - Files in Linux may have a file extension, such as `.txt` and hidden files are indicated by a dot in front. Example - `.hiddenfile`
+  - Linux distinguishes between uppercase and lowercase letters in the file system
+  - Modern Linux and UNIX limits filename to 255 characters (255 bytes)
+  - Linux does not use drive letters which cannot tell whether you are addressing a partition, a drive/device, a network device, etc. from pathname
+
