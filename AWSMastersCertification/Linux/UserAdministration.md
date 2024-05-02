@@ -113,3 +113,20 @@ The file system is a logical arrangement to store and retrieve data
 
     ![](img/XFS.png)
 
+<br><br>
+
+- **Comparison of ext4 and XFS**
+
+  |Feature|ext4|XFS|
+  |---|---|---|
+  |Architecture|Hashed B-tree|B+tree|
+  |Emerged|2006|1994|
+  |Max volume size|1 Ebytes|8 Ebytes|
+  |Max file size|16 Tbytes|8 Ebytes|
+  |Max number of files|4 billion|2^64|
+  |Max file name size|255 bytes|255 bytes|
+  |Attributes|Yes|Yes|
+  |Transparent Compression|No|No|
+  |Transparent Encryption|Yes|No|
+  |Copy-on-Write(COW)|No|Planned|
+  |Snapshots|No|Planned|
