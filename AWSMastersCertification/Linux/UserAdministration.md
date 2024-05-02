@@ -102,3 +102,14 @@ The file system is a logical arrangement to store and retrieve data
   - There are very low chances of fragmentation in ext4
   - It is faster as it skips the unallocated blocks reducing the retrieval time
 
+<br><br>
+
+- **XFS**
+
+  - It is a journaling file system that uses a B-tree (balance tree) to allocate data as fast as possible
+  - It supports huge individual file size allocation
+  - It allows to reserve bandwidth and adjusts its operation based on existing reservations
+  - It is designed for data storage server and recommended for home systems
+
+    ![](img/XFS.png)
+
