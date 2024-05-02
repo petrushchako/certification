@@ -86,3 +86,19 @@ The file system is a logical arrangement to store and retrieve data
   |**Disk Quotas**|It keeps track of disk space being used and enables administrator to limit disk space that a user may use|
   |**Reliable File System**|Automated recovery operations and checks for consistency by using transaction log and journal file|
   |**File Compression**|Compression of large file is allowed so that disk space is used efficiently|
+
+<br><br>
+
+- **ext4**
+
+  - Fourth Extended File System (ext4) is designed for Linux Kernel
+  - It supports huge individual file size and go to TB's and almost one directory can contain 64,000 sub-directories
+
+  ![](img/VirtualFileSystem.png)
+
+  **Features**
+  - Less chances of file corruption during a crash and transparent encryption is supported
+  - When data is copied to disk, it supports delayed allocation and create blocks
+  - There are very low chances of fragmentation in ext4
+  - It is faster as it skips the unallocated blocks reducing the retrieval time
+
