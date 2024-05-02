@@ -130,3 +130,23 @@ The file system is a logical arrangement to store and retrieve data
   |Transparent Encryption|Yes|No|
   |Copy-on-Write(COW)|No|Planned|
   |Snapshots|No|Planned|
+
+<br><br>
+
+- **File systems comparisons**
+
+  |Attribute|NTFS|FAT32|XFS|ext4|
+  |---|---|---|---|---|
+  |**Max Filename Length**|255|255|255|255|
+  |**Max File Size**|16 EB|4 GB|8 EB|16 GB - 16 EB|
+  |**Max Volume Size**|16 EB|512 MB - 16 TB|8 EB|1 EB|
+  |**Access Control List**|Yes|No|Yes|Yes|
+  |**Symbolic Links**|Yes|No|Yes|Yes|
+  |**Filesystem-level Encryption**|Yes|No|No|Yes(experimental)|
+  |**Online grow**|No|No|Yes|Yes|
+  |**Offline grow**|Yes|With third party tools|No|Yes|
+  |**Transparent Compression**|Yes|No|No|No|
+  |**Copy on Write**|No|No|Yes(On request)|No|
+  |**OS Support**|Windows, Linux,MAC|DOS, Windows,Linux, MAC|Linux|Linux, MAC|
+
+
