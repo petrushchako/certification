@@ -183,3 +183,26 @@ The file system is a logical arrangement to store and retrieve data
   - Modern Linux and UNIX limits filename to 255 characters (255 bytes)
   - Linux does not use drive letters which cannot tell whether you are addressing a partition, a drive/device, a network device, etc. from pathname
 
+<br><br>
+
+- File Access Methods
+
+  - **Sequential Access**
+
+    - A file is processed in order, one record after the other
+    - If p is the pointer to a record, then next, record will be p+1
+
+      ![](img/sequentialAccess.png)
+
+  - **Direct Access**
+    
+    - Such files are generally made up of fixed logical length
+    - Reposition the pointer to a particular record number to identify reach record
+
+      ![](img/directAccess.png)
+
+  - **Indexed Access**
+
+    - In such files, each record has a key associated with it
+    - We can search the index table to locate the block that contains the desired record
+
