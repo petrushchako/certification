@@ -274,3 +274,34 @@ The file system is a logical arrangement to store and retrieve data
   - `apt-get update`
 - To install a package but prevent from upgrading if already installed use `--no-upgrade` option
   - `apt-get install python --no-upgrade`
+
+#### Install Package
+- Use command `install` to install a package
+  - Syntax<br>`apt-get isntall <package_name>`
+  - Example<br>`apt-get install python`
+- To install multiple packages together, provide multiple package names after install
+  - `apt-get isntall python mysql`
+- To install multiple packages having a particular string, use wildcard
+  - `apt-get install `*name`
+
+#### Upgrade Package
+- Use command `upgrade` to upgrade the system. It may remove or update the installed packages.
+  - Syntax<br>`apt-get upgrade`
+- To upgrade only specific package without installation of any packages use `--only-upgrade` option
+  - `apt-get install python --only-upgrade`
+
+#### Remove Package
+- Use command `remove` to remove a particular package
+  - Syntax<br>`apt-get remove <package_name>`
+  - Example<br>`apt-get remove python`
+- Removing a package does not remove its configuration file. To remove configuration files along with it, append `purge` option
+  - `apt-get remove --purge python`
+
+#### Download Package
+- Use command `download` to download a package without installing it
+  - Syntax<br>`apt-get download python`
+  - Example<br>`apt-get download python`
+- To download and unpack source code of a package use `source` option
+  - `apt-get source python`
+
+####
