@@ -232,3 +232,22 @@ The file system is a logical arrangement to store and retrieve data
 - **Manage Dependencies**<br>To verify that all dependent packages are isntalled
 - **Remove old/unused SW/SW version**<br>Remove and old version of the package if new version is installed
 
+<br><br>
+
+`apt-get`
+
+- Apt-get is the command line interface to handle package using APT library.
+- It is an efficient way of handling packages in your system.
+- Upgrades and removal are handled carefully to maintain the stability of the system.
+- It is the default package management system for Debian-like distro like Ubuntu.
+- Dependencies are managed automatically.
+- It has an external GUI support with tools like synaptic, aptitude, etc.
+
+`apt-cache`
+
+- Apt-cache is the command line interface to search apt software packages.
+- This tool is used to search software packages and get information about them.
+- The data is fetched from different sources listed in `sources.list` file.
+- One can search for package without having exact name of the package.
+- `/var/cache/apt/archives/` contains already downloaded packages to avoid downloading them again if one needs to re-install a package after removing it.
+
