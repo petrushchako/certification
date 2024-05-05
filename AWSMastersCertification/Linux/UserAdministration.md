@@ -304,4 +304,9 @@ The file system is a logical arrangement to store and retrieve data
 - To download and unpack source code of a package use `source` option
   - `apt-get source python`
 
-####
+#### Check Dependencies
+- Use command `check` to check for dependencies
+  - Sytnax<br>`apt-get check`
+  - Example<br>`apt-get download python`
+- To install dependencies use `build-dep` option
+  - `apt-get build-dep python`
