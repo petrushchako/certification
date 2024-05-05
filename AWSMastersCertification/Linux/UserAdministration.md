@@ -223,3 +223,12 @@ The file system is a logical arrangement to store and retrieve data
 - Different Linux distro use different package management systems. <br>For example:
   - `apt-get` : Ubuntu, Debian, etc 
   - `yum` : RedHat, Fedora, etc
+
+### Task of Package Management System
+- **Tool Installatiion**<br>Installing new tools and software in the system
+- **SW Upgrade**<br>Upgrading software to the latest version
+- **Checksum Verification**<br>To confirm that a package has been installed successfully
+- **Digital Signature Verification**<br>To check the authenticity of the package
+- **Manage Dependencies**<br>To verify that all dependent packages are isntalled
+- **Remove old/unused SW/SW version**<br>Remove and old version of the package if new version is installed
+
