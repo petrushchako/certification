@@ -214,3 +214,12 @@ The file system is a logical arrangement to store and retrieve data
 
 
   
+## Package Management
+
+### Software Package Management
+- Linux comes along with a set of tools and software and it is the primary method to install tools in Linux
+- It provides the freedom of installation based on your requirements
+- Package management in Linux takes care of installing, upgrading and removing the package from the system
+- Different Linux distro use different package management systems. <br>For example:
+  - `apt-get` : Ubuntu, Debian, etc 
+  - `yum` : RedHat, Fedora, etc
