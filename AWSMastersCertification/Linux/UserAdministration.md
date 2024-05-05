@@ -251,3 +251,26 @@ The file system is a logical arrangement to store and retrieve data
 - One can search for package without having exact name of the package.
 - `/var/cache/apt/archives/` contains already downloaded packages to avoid downloading them again if one needs to re-install a package after removing it.
 
+#### List & Search Packages
+
+- Use command `pkgnames` to lsit packages starting with a particular string
+  - Syntax<br>`apt-cache pkgnames <package_name>`
+  - Example<br>`apt-cache pkgnames python`
+- Use command `search` to search for a package with aprticular name
+  - Syntax<br>`apt-cache search python`
+
+#### Check Package information
+- Use command `show` to get details about a package
+  - Syntax<br>`apt-cache show <package_name>`
+  - Example<br>`apt-cache show python`
+- To check dependencies of a package use `showpkg` option
+  - Syntax<br>`apt-cache showpkg python`
+
+#### Update Package
+- Use command `update` to update a package
+  - Sytnax<br>`apt-get update <package_name>`
+  - Example<br>`apt-get update python`
+- To update the whole system, don't provide package name
+  - `apt-get update`
+- To install a package but prevent from upgrading if already installed use `--no-upgrade` option
+  - `apt-get install python --no-upgrade`
