@@ -509,3 +509,11 @@ The return value on execution of this command signifies as follows
 |6|specified group doesn't exist
 |9|group name already in use
 |10|can't update the group
+
+
+### Group Deletion
+`groupdel <groupname>`
+
+- We may delete a group if it is not required anymore
+- We must delete the user before we delte the primary group for it
+
