@@ -517,3 +517,44 @@ The return value on execution of this command signifies as follows
 - We may delete a group if it is not required anymore
 - We must delete the user before we delte the primary group for it
 
+<br><br>
+
+## Ownership and Permission
+### GCP Resources Access Mechanism
+Every file and directory has access permissions assigned to it. The persmissions are classified in three categories
+
+- **Read (r)**
+  - Allow to view file and list content of directory
+  - In binary: Just Read - 4 (100)
+- **Write (w)**
+  - Allows modify the file and add/delete files in directory
+  - In binary: Just Write - 2 (010) 
+- **Execute (x)**
+  - Allow to run a file and enter a direcotry
+  - In binary: Just Execute - 1 (001)
+
+#### Permission for a file/folder
+The sets of permission for a file/folder is in three categories (**User**, **Group**, **Other**)
+- The owner of a file/folder get the user permission
+- All the members of the groups assigned to it have group permission over it
+- Other permission is how any other users can access it
+
+### Permission to be Set
+|||
+|---|---|
+|0|Nothing|
+|1|Execute only|
+|2|Write only|
+|3|Write & execute|
+|4|Read|
+|5|Read & Execute|
+|6|Read & Write|
+|7|Read & Write & Execute|
+
+### Default permissions
+- The default permission for a file is `664` while it is `775` for a directory
+- We can change it by setting the unmask value for the user
+- To check current unmask value use command 'umask': ><br>`umask, >0002`
+- It shows an octal value of 002
+- A file gets the permission of default base_value(666) - unmask value and a folder gets the permission of default base value(777) - unmask value
+
