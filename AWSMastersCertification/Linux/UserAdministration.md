@@ -310,3 +310,17 @@ The file system is a logical arrangement to store and retrieve data
   - Example<br>`apt-get download python`
 - To install dependencies use `build-dep` option
   - `apt-get build-dep python`
+
+
+## Users in Linux
+### User Accounts
+- One can create multiple accounts for logging-in the Linux
+- Each user can have different privileges.
+- The user having the highest authority can restrict the other user to add new users or the data he has access to.
+- By default, one account named `root` has access to all the files and perform every action.
+
+### User infromation storage files
+- `/etc/passwd`<br>Stores the user account information for the system.<br>![](img/passwd.png)
+- `/etc/shadow`<br>Stores the password for the various accounts.<br>By default, it is not accessible to anybody except root user.<br>![](img/shadow.png)
+- `/etc/group`<br>Contains your system groups.
+
