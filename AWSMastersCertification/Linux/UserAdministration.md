@@ -368,4 +368,31 @@ users
 
 <br>
 
-###
+### Add user commands
+`useradd`
+
+|Option|Description|
+|---|---|
+|`-c`|Include user's full name|
+|`-e`|Specify date when user account will be disabled|
+|`-g`|Specifies the user's default group|
+|`-G`|Specifies which groups to add user to|
+|`-m`|Specifies the user's home director|
+|`-d`|Specify a pre-defined directory as home directory of user|
+|`-p`|Specifies the user's Password|
+|`-s`|Specifies the default shell for the user|
+
+<br>
+
+- Create user
+
+  ```sh
+  #add user
+  sudo useradd student
+  #Verify user creation
+  tail -2 /etc/passwd
+  ```
+- Create a user with home directory<br>`sudo useradd -m <username>`
+- Create a user with a predefined home directory<br>`sudo useradd -m -d /home/ubuntu/user <username>`
+- Create a user with an expiry date<br>`sudo useradd -m -e <yyyy-mm-dd> <username>`
+
