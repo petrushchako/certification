@@ -483,7 +483,29 @@ users
 
 `groupmod <options> <groupname>`
 
+|Option|Description|
+|---|---|
+|`-g`|Changes the group id
+|`-p`|Changes the group password
+|`-A`|Adds a user account to the group
+|`-R`|Removes a user account from the group
+|`-n`|Changes the name of the group
+
+
 - We will need to modify the users accessing the group or group details based on our requirements.
 - When the maximum limit set is reached, a new group entry (line) is started in `/etc/group`.
 - The command modifies the values in `/etc/login.defs`
 
+#### groupmod exit values
+
+The return value on execution of this command signifies as follows
+
+|Code|Description|
+|---|---|
+|0|success
+|2|invalid command syntax
+|3|invalid argument to option
+|4|specified group doesn't exist
+|6|specified group doesn't exist
+|9|group name already in use
+|10|can't update the group
