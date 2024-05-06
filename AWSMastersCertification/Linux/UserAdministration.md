@@ -558,3 +558,32 @@ The sets of permission for a file/folder is in three categories (**User**, **Gro
 - It shows an octal value of 002
 - A file gets the permission of default base_value(666) - unmask value and a folder gets the permission of default base value(777) - unmask value
 
+<br>
+
+### Change Ownership
+`chown`
+
+|Option|Details|
+|---|---|
+|`-c`|displays information of a file which is changed|
+|`-f`|do not display output|
+|`-R`|operate on files and directories recursively|
+|`--preserve-root`|do not operate recursively on `/`|
+|`-H`|if the file is a symbolic link, traverse it and operate on those file and directories|
+
+- Change the user/group of the file/folder
+  - Syntax<br>`chown <username> <filename>`
+  - Example<br>`chown student file.txt`
+- Change the group of file/folder
+  - Syntax<br>`chgrp <groupname> <filename>`
+  - Example<br>`chgrp professor file.txt`
+
+#### Ways to Format Owner
+Ownership of a file is specified in the format [user[:group]]
+|Syntax|Description|
+|---|---|
+|`<user>`|The name of user to own this file|
+|`<user>:<group>`|The user and group to own the file|
+|`:<group>`|The group to own the file (user is omitted)|
+|`<user>:`|the owner is changed to user, and owning group is login group of user.|
+|`:`|Does not change anything|
