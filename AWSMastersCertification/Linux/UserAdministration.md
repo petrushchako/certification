@@ -335,3 +335,12 @@ The file system is a logical arrangement to store and retrieve data
 - Inexperienced user can cause serious harm to OS and may also leave security vulnerability
 - ![](img/root-user.png)
 
+### Switch user
+
+`su <option> <username>`
+- If username not provided, it takes root by default
+- Once the command is given, it asks for the password of the user. If correct password is provided, it opens the shell for that user
+- Type `exit` to return back to original user
+- Root doesn't require the password to switch to other
+users
+
