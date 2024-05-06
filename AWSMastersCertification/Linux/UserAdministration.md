@@ -312,6 +312,8 @@ The file system is a logical arrangement to store and retrieve data
   - `apt-get build-dep python`
 
 
+<br><br>
+
 ## Users in Linux
 ### User Accounts
 - One can create multiple accounts for logging-in the Linux
@@ -323,4 +325,13 @@ The file system is a logical arrangement to store and retrieve data
 - `/etc/passwd`<br>Stores the user account information for the system.<br>![](img/passwd.png)
 - `/etc/shadow`<br>Stores the password for the various accounts.<br>By default, it is not accessible to anybody except root user.<br>![](img/shadow.png)
 - `/etc/group`<br>Contains your system groups.
+
+### Superuser
+- Superuser is commonly known as root
+- It is created by default and has user & group ID as 0
+- It doesn't have a password by default. One can assign it by<br>`sudo passwd root`
+- Give a strong password for root
+- One should only use this privilege for small interval for specific task and then go back to normal user
+- Inexperienced user can cause serious harm to OS and may also leave security vulnerability
+- ![](img/root-user.png)
 
