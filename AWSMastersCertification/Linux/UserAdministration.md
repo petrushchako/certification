@@ -477,3 +477,13 @@ users
 |`-R`<br>`--root CHROOT_DIR`|directory to chroot into
 |`-P`<br>`--prefix PREFIX_DIR`|directory prefix
 |`--extrausers`|Use the extra users database
+
+
+### Group modification
+
+`groupmod <options> <groupname>`
+
+- We will need to modify the users accessing the group or group details based on our requirements.
+- When the maximum limit set is reached, a new group entry (line) is started in `/etc/group`.
+- The command modifies the values in `/etc/login.defs`
+
