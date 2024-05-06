@@ -441,3 +441,39 @@ users
 |`-M`<br>`--mindays MIN_DAYS`|set minimum number of days before password change to MIN_DAYS|
 |`-R`<br>`--root CHROOT_DIR`|directory to chroot into|
 |`-W`<br>`--warndays WARN_DAYS`|set expiration warning days to WARN_DAYS|
+
+<br>
+
+## Group Managment
+
+### User groups in Linux
+- Linux group is a mechanism to organize a collection of users
+- Each group is also associated with a unique ID called the GID
+- There are two types of groups - a primary group and a supplementary group
+- Each user is a member of a primary group and of zero or 'more than zero' supplementary groups
+- Users may be added to an existing group to utilize the privileged access it grants
+- Every user by default gets its own group unless restricted manually
+
+### User Group
+- The group details are defined in `/etc/group` file
+- By default, every user gets its own group
+
+### Group add
+`groupadd <options> <groupname>`
+- A new group can be created and users can be made part of it
+- The command changes the value in the file `/etc/login.defs`
+- The default id for Minimum group ID is 1000. Group id start from here
+- There is no limit on the number of users in a group
+
+|Option|Description|
+|---|---|
+|`-f`<br>`--force`|exit successfully if the group already exists, and cancel -g if the GID is already used|
+|`-g`<br>`--gid GID`|Use GID for the new group|
+|`-h`<br>`--help`|display this help message and exit
+|`-K`<br>`--key KEY=VALUE`|override /etc/login. defs defaults
+|`-o`<br>`--non-unique`|allow to create groups with duplicate(non- unique) GID
+|`-p`<br>`--password PASSWORD`|use this encrypted password for the new group
+|`-r`<br>`--system`|create a system account
+|`-R`<br>`--root CHROOT_DIR`|directory to chroot into
+|`-P`<br>`--prefix PREFIX_DIR`|directory prefix
+|`--extrausers`|Use the extra users database
