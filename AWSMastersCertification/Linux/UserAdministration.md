@@ -368,7 +368,7 @@ users
 
 <br>
 
-### Add user commands
+### Add user
 `useradd`
 
 |Option|Description|
@@ -395,4 +395,12 @@ users
 - Create a user with home directory<br>`sudo useradd -m <username>`
 - Create a user with a predefined home directory<br>`sudo useradd -m -d /home/ubuntu/user <username>`
 - Create a user with an expiry date<br>`sudo useradd -m -e <yyyy-mm-dd> <username>`
+
+
+### Delete user
+`userdel`
+
+- Delete user<br>`sudo userdel student`
+- Delete user with home directory<br>`sudo userdel -r student`
+- Verify user deletion<br>`tail -2 /etc/passwd`
 
