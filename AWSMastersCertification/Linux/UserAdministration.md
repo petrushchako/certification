@@ -326,6 +326,8 @@ The file system is a logical arrangement to store and retrieve data
 - `/etc/shadow`<br>Stores the password for the various accounts.<br>By default, it is not accessible to anybody except root user.<br>![](img/shadow.png)
 - `/etc/group`<br>Contains your system groups.
 
+<br>
+
 ### Superuser
 - Superuser is commonly known as root
 - It is created by default and has user & group ID as 0
@@ -334,6 +336,8 @@ The file system is a logical arrangement to store and retrieve data
 - One should only use this privilege for small interval for specific task and then go back to normal user
 - Inexperienced user can cause serious harm to OS and may also leave security vulnerability
 - ![](img/root-user.png)
+
+<br>
 
 ### Switch user
 
@@ -344,3 +348,24 @@ The file system is a logical arrangement to store and retrieve data
 - Root doesn't require the password to switch to other
 users
 
+<br>
+
+### Super user do - sudo
+
+- Adding `sudo` runs the command with the user privileges
+- By default, it is root if user not mentioned
+- Permission for `sudo` access is stored in `/etc/sudoers`
+- By default new added user don't have sudo permission
+
+<br>
+
+- Syntax<br>`sudo <options> <-u user> command`
+
+
+#### Add/remove sudo privileges
+- To give sudo permission use<br>`sudo gpasswd -a student sudo`
+- To remove sudo permission use<br>`sudo gpasswd -d student sudo`
+
+<br>
+
+###
