@@ -587,3 +587,19 @@ Ownership of a file is specified in the format [user[:group]]
 |`:<group>`|The group to own the file (user is omitted)|
 |`<user>:`|the owner is changed to user, and owning group is login group of user.|
 |`:`|Does not change anything|
+
+### Change file/folder access level
+`chmod`
+`chmod <value_of_permission> <file_name>`
+
+Example<br>`chmod 764 file.txt`
+
+<br>
+
+|Option|Description|
+|---|---|
+|`-f`|suppress most error messages
+|`-r`|change files and directories recursively`
+|`--preserve-root`|do not operate recursively on `/`
+|`-c`|output a diagnostic message for change in every file made
+
