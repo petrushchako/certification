@@ -419,3 +419,25 @@ users
   |`-m`|Specifies the user's home directory.
   |`-p`|Specifies the user's Password.
   |`-s`|Specifies the default shell for the user.
+
+<br>
+
+### Password Aging Policies
+`chage`
+
+`chage <username>`
+- We use the chage command on Linux to change password related information
+- This information is used by the system to determine when a user must change his/her password
+- The chage command changes the number of days between password changes and the date of the last password change
+
+|Option|Description|
+|---|---|
+|`-d`<br>`--lastday LAST_DAY`|set date of last password change to LAST_DAY|
+|`-E`<br>`--expiredate EXPIRE_DATE`|set account expiration date to EXPIRE_DATE|
+|`-h`<br>`--help`|display this help message and exit|
+|`-i`<br>`--iso8601`|use YYYY-MM-DD when printing dates|
+|`-I`<br>`--inactive INACTIVE`|set password inactive after expiration to INACTIVE|
+|`-l`<br>`--list`|show account aging information|
+|`-M`<br>`--mindays MIN_DAYS`|set minimum number of days before password change to MIN_DAYS|
+|`-R`<br>`--root CHROOT_DIR`|directory to chroot into|
+|`-W`<br>`--warndays WARN_DAYS`|set expiration warning days to WARN_DAYS|
