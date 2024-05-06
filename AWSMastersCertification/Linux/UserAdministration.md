@@ -404,3 +404,18 @@ users
 - Delete user with home directory<br>`sudo userdel -r student`
 - Verify user deletion<br>`tail -2 /etc/passwd`
 
+### Modify user
+- A user might need some changes from time to time
+- To assign a password to it , either give it as an option while creating or use this command<br>`sudo passwd <username>`
+- Use command to modify user's configurations<br>`sudo usermod <options> <username>`
+- The options for useradd and usermod are similar:
+  
+  |Option|Description|
+  |---|---|
+  |`-c`|Include user's full name.
+  |`-e`|Specify date when user account will be disabled.
+  |`-g`|Specifies the user's default group.
+  |`-G`|Specifies which groups to add user to.
+  |`-m`|Specifies the user's home directory.
+  |`-p`|Specifies the user's Password.
+  |`-s`|Specifies the default shell for the user.
