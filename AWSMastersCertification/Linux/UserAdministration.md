@@ -603,3 +603,37 @@ Example<br>`chmod 764 file.txt`
 |`--preserve-root`|do not operate recursively on `/`
 |`-c`|output a diagnostic message for change in every file made
 
+### Special Permissions
+
+### SUID
+- If a file has to be executed only as a particular user then instead of modifying the permission for another user every time, we can modify it to always run like it has been run by that **user**
+- Example: `passwd` command which changes our password
+has only got root access but still works for other users because it is always executed as root is executing it.
+
+<br>
+
+- Syntax<br>`chmod 4664 <filename>`
+- **SUID has representation as 4 (100). A capital `S` is added in owner's category of permissions**
+
+<br><br>
+
+### SGID
+- If a file has to be executed only by a particular group then instead of modifying the permission for other user every time we can modify it to always run like it has been run by that **group of users**
+- We can merge **SUID** and **SGID** if required in a single command
+
+<br>
+
+- Syntax<br>`chmod 2664 <filename>`
+- **SGID has representation as 4 (100). A capital `S` is added in group's category of permissions.**
+
+<br><br>
+
+**Sticky Bit**
+- It is primarily used in shared directories
+- It is useful for directories like `/tmp` where a user can't delete a file created by another user even though `/tmp` has 777 permission
+- Root user has permission to remove any file
+
+<br>
+
+- Syntax<br>`chmod 1664 <filename>`
+  
