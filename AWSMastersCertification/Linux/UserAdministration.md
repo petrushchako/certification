@@ -653,3 +653,14 @@ It allows permission to user or group even if they are not a part of the owner o
   getfacl <filename>
   # Ex; getfacl file.txt
   ```
+
+<br><br>
+
+### md5sum
+- `md5sum` is used to verify the integrity of files as any change to the file will change its md5 hash value.
+- It is useful to check if a file transfer to a network was proper or it failed somewhere.
+- It is included by default in Unix-like OS.
+
+<br>
+
+- Syntax<br>`md5sum <filename>`
