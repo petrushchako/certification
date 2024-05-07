@@ -637,3 +637,19 @@ has only got root access but still works for other users because it is always ex
 
 - Syntax<br>`chmod 1664 <filename>`
   
+<br><br>
+
+### Access Control List (ACL)
+It allows permission to user or group even if they are not a part of the owner or owner group
+
+- Syntax
+
+  ```sh
+  # To set;
+  setfact -m user:<username>:rwx,group:<groupname>:rwx <filename>
+  # Ex; setfactl -m user:student:rwx file.txt
+
+  # To get;
+  getfacl <filename>
+  # Ex; getfacl file.txt
+  ```
