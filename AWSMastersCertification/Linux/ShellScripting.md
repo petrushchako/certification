@@ -86,3 +86,19 @@ Process synchronization can be achieved by:
     - **TTY** terminal type used is logged into
     - **TIME** amount of CPU in minutes and seconds that the process has been running
     - **CMD** name of command that launched the process
+
+<br>
+
+### `top`
+
+    |Option|Description|
+    |---|---|
+    |`-u`|append option ot display specific user process details|
+    |`c`|press `c` to view absolute path of the process|
+    |`d`|press `d` to change refresh interval|
+    |`SHIFT+p`|Sort by CPU utilization|
+    |`-n`|append the option to limit the number of iteration|
+    |`q`|exit|
+    
+- The command show the processor and memory being used by the system
+  
