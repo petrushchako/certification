@@ -168,3 +168,18 @@ It can be grouped into five major categories
   - `ls | tee file1.txt file2.txt file3.txt`
 - It can also be used to pass it to multiple commands
   - `cat file1.txt | tee file2.txt | sed 's/hello/hi/' | sed 's/file/text/'`
+
+<br>
+
+### `cron`
+
+- `cron` is a deamon which checks every fixed interval for scheduled tasks in cron table
+- `cron` consists of six fields separated ty tab or space:
+  - Minute (0-59)
+  - Hour (0-23)
+  - Day of the month (1-31)
+  - Month of the year (1-12 or Jan-Dec)
+  - Day of week (0-6 or Sun-Sat)
+  - Command
+- Use `crontab -e` to add a new entry
+
