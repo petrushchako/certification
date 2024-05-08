@@ -61,3 +61,28 @@ Process synchronization can be achieved by:
 - **Mutex locks**
   - Entire section of code is locked and no-one can access it until the lock is released by the process who applied the lock
   - Multiple locks can be applied in a part of the code. It is a locking mechanism.
+
+<br>
+
+### `ps`
+
+  `ps <option>`
+  |Option|Description|
+  |---|---|
+  |`-e`|every active process|
+  |`-f`|full format list for the process
+  |`-x`|all processes owned by the owner
+  |`-r`|all running processes
+  |`-T`|all processes associated with this Terminal
+  |`-g`|all processes owned by particular group
+  |`-p`|process by particular PID
+  |`--forest`|display how processes are linked to each other
+  
+
+  - Process status is used to check infomration related to various processes running on system
+  - It is primarily user for process monitoring
+  - The information generally displayed are:
+    - **PID** Unique process ID
+    - **TTY** terminal type used is logged into
+    - **TIME** amount of CPU in minutes and seconds that the process has been running
+    - **CMD** name of command that launched the process
