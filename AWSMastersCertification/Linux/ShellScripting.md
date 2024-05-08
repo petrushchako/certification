@@ -159,3 +159,12 @@ It can be grouped into five major categories
 - System calls run in different memory-space and with different privileges
 - The instructions are generally available as assemble language instructions
 
+<br>
+
+### `tee`
+
+- It is used to store and view the output to another command
+- We can also write output to multiple files:
+  - `ls | tee file1.txt file2.txt file3.txt`
+- It can also be used to pass it to multiple commands
+  - `cat file1.txt | tee file2.txt | sed 's/hello/hi/' | sed 's/file/text/'`
