@@ -238,3 +238,42 @@ It can be grouped into five major categories
 |`$RANDOM`|Returns a different random number each time is it referred to|
 |`$LINENO`|Return the current line number on the Bash script|
 
+<br>
+
+### Input in bash
+`read <option> <variable_name>`
+
+- Use command `read` to ask user to provide an entry for the variable
+- We can provide multiple variable to read in a go by separating them with whitespaces
+- Some options read provide are:
+  - `-p` allow you to specify promps
+  - `-s` makes input silend and doesn't display on screen
+  - `-r` backslash does not act as an escape character
+
+```bash
+#!/bin/bash
+# Prompt the user for their name
+echo "Enter your name: "
+read name
+
+# Display a greeting using the input provided
+echo "Hello $name! Welcome to the script."
+```
+
+<br>
+
+### Arithmetic in bash
+- We use two double parenthasis to do arithmetic calculations
+    - Syntax<br>`$((expression))`
+    - Example<br>`a = $((4*5))
+
+- `let` is a build-in function to do simple arithmetic:
+  - 
+    ```bash
+    let a--
+    let a = $2 -21
+    ```
+
+- `expr` is similar but it prints the result that assigning to a variable.<br>`expr 30 % 2`
+
+<br>
