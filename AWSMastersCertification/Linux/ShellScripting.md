@@ -91,14 +91,27 @@ Process synchronization can be achieved by:
 
 ### `top`
 
-    |Option|Description|
-    |---|---|
-    |`-u`|append option ot display specific user process details|
-    |`c`|press `c` to view absolute path of the process|
-    |`d`|press `d` to change refresh interval|
-    |`SHIFT+p`|Sort by CPU utilization|
-    |`-n`|append the option to limit the number of iteration|
-    |`q`|exit|
+|Option|Description|
+|---|---|
+|`-u`|append option ot display specific user process details|
+|`c`|press `c` to view absolute path of the process|
+|`d`|press `d` to change refresh interval|
+|`SHIFT+p`|Sort by CPU utilization|
+|`-n`|append the option to limit the number of iteration|
+|`q`|exit|
     
 - The command show the processor and memory being used by the system
   
+<br>
+
+### `kill`
+
+`kill <signal> <PID>`
+
+- The command is used to terminate a particular process
+- Common signal to a process are:
+  - **SIGHUP** numeric value 1, hang up the process
+  - **SIGKILL** numeric value 9, kills the process without saving
+  - **SIGTERM** numeric value 15, terminate the process
+- Use `ps` to find the process ID or use the command `pidof` (i.e. `pidof mysql`)
+
