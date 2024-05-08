@@ -277,3 +277,40 @@ echo "Hello $name! Welcome to the script."
 - `expr` is similar but it prints the result that assigning to a variable.<br>`expr 30 % 2`
 
 <br>
+
+### If Statement in bash
+```bash
+if [test_condition]
+then
+    <command>
+elif [<test_condition_2>]
+then
+    <command_2>
+else
+    <command_3>
+fi
+```
+
+- If statement helps to decide to run a piece of code based upon conditions that we may set.
+- Case is also supported and works similar to a C program
+
+
+<br>
+
+### Loop in bash
+- While loop
+  - ```bash
+    while [condition]
+    do
+        <command>
+    done
+    ```
+
+- For loop
+  - ```bash
+    for var in <list>
+    do
+        command
+    done
+    ```
+    
