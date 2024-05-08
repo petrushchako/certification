@@ -115,3 +115,47 @@ Process synchronization can be achieved by:
   - **SIGTERM** numeric value 15, terminate the process
 - Use `ps` to find the process ID or use the command `pidof` (i.e. `pidof mysql`)
 
+<br>
+
+### Some Common Process Commands
+- `bg`
+  - Starts running a suspended process in the background
+- `fg`
+  - Brings the suspended or the background running process to the foreground
+- `jobs`
+  - Display the status of jobs in the current shell
+
+<br>
+
+### System Calls
+It can be grouped into five major categories
+- **Process Control**
+  - create process
+  - load
+  - execute
+  - terminate, etc
+- **File Managment**
+  - create file
+  - open
+  - read
+  - write
+  - delete, etc
+- **Device Management**
+  - request device
+  - release
+  - read
+  - write, etc
+- **Information Maintenance**
+  - get time/date
+  - system data
+  - process attributes, etc
+- **Communication**
+  - create connection
+  - send
+  - receive
+  - delete
+  - transfer, etc
+
+- System calls run in different memory-space and with different privileges
+- The instructions are generally available as assemble language instructions
+
