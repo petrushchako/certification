@@ -204,3 +204,37 @@ It can be grouped into five major categories
 - Each script should have execute permission set to it
 - The script can also be added to be executed during boot or specific process execution
 - We can also install various tools like python and write their own scripts
+
+<br><br>
+
+## Bash scripting
+- Bash scripts instructs bash to run a set of commands sequentially.
+- The script must have execution permission assigned to it.
+- The first line is generally used to define, it is a bash script `#!/bin/bash`
+- Anything after `#` is not executed and used as a comment.
+- Anything that works on command line can be part of bash script and vice-versa.
+- Bash scipts have an extension of `.sh`
+
+### Varaibles in Bash
+- A varaible is a temporary memory block used to store information which is present for that block of code.
+- We perform two actions on variable:
+  - Set the value of it
+  - Read value of it
+- Bash works line by line. For every line it identifies the variables and replaces it with its value and then re-iterates the process in next line.
+- To read varaible, place `$` symbol before it.<br>`echo $NAME`
+
+<br>
+
+|Special variable|Description|
+|---|---|
+|`$0`|The name of the Bash script|
+|`$1-$9`|The first 9 arguments to the Bash script|
+|`$#`|Number of arguments passed to the script|
+|`$@`|All the arguments supplied to the Bash script|
+|`$?`|The exit status of the most recently run process|
+|`$USER`|THe username of the user running the script|
+|`$HOSTNAME`|The hostname of the machine the script is running on|
+|`$SECONDS`|The number of seconds since the script was started|
+|`$RANDOM`|Returns a different random number each time is it referred to|
+|`$LINENO`|Return the current line number on the Bash script|
+
