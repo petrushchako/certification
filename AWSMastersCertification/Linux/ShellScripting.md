@@ -183,3 +183,24 @@ It can be grouped into five major categories
   - Command
 - Use `crontab -e` to add a new entry
 
+<br><br>
+
+## Scripting
+### What is Scripting?
+- A script is a series of commands within a file which can be executed without being compiled
+- Scripts are general text document in human readable format that need to be executed by a certain program to achieve desired results
+- They can be written with any normal text editor
+- Each has their own specific extension or tags embedded inside the file
+- For ex - `.py` extension is for python scripts and `.sh` is for shell scripts
+- Scripting is done to automate the task of a user
+- A sequence of commands which is given as an input on regular intervals can be bundled together as a script and executed as a single file when required
+- This reduces the chances of typing error while pacing-up the process of command execution as the next command is immediately executed after finishing the current execution
+- Scripts can provide with help/suggestions in case of the user doing some error with a particular command
+
+### Scripting in Linux
+- Each distribution of Linux has shell which executes commands
+- We provide a command to shell as input and it executes them
+- The shell supports scripting and we can bundle a set of commands to be executed together by writing in a file with shell details
+- Each script should have execute permission set to it
+- The script can also be added to be executed during boot or specific process execution
+- We can also install various tools like python and write their own scripts
