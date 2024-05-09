@@ -314,3 +314,22 @@ fi
     done
     ```
     
+### Function in bash
+- Function os a block of code which can be re-used multiple times
+- No argument can be passed in functions in bash
+- In Bash, you can define functions using the function keyword or simply by using the function name followed by parentheses and curly braces {}.
+- Syntax
+
+  ```bash
+  function_name(){
+    echo "Hello, world!"
+  }
+
+  function fnc(){
+    function_name > file.txt
+  }
+
+  # Call function
+  function_name
+  fnc
+  ```
