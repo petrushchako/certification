@@ -349,3 +349,30 @@ fi
 **Expect**<br>The Expect command waits for input.
 **Send**<br>The send command is used to send a reply to a script or a program.
 **Interact**<br>The interact command allows you to define a predefined user interaction.
+
+- Examples
+
+`script.sh`
+```bash
+#!/bin/bash
+echo "What is you name?"
+read $reply
+echo "Enter your password?"
+read $reply
+```
+
+`expect_script.sh`
+```bash
+#!/usr/bin/expect
+set timeout -1
+spawn ./script. sh
+expect "What is you name?"
+send "Tom\r"
+expect "Enter your password?"
+send "tom123\r"
+expect eof
+```
+
+> To execute<br>
+> `chmod 755 expect_script`<br>`./expect_script`
+>
