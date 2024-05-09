@@ -333,3 +333,19 @@ fi
   function_name
   fnc
   ```
+
+<br>
+
+### Expect Script
+
+- The first line defines the expect command path which is `#!/usr/bin/expect`
+- The Expect script expects an input and sends an automated response without interacting with user.
+- Expect is useful to automate the process which requires interaction between the user and the program.
+- The script should be given executable permissions.
+- The last line should be the end of the file and `eof` is used to signify it.
+  
+#### Commands Used By Expect Script
+**Spawn**<br>The spawn command is used to start a script or program.
+**Expect**<br>The Expect command waits for input.
+**Send**<br>The send command is used to send a reply to a script or a program.
+**Interact**<br>The interact command allows you to define a predefined user interaction.
