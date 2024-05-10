@@ -356,9 +356,9 @@ fi
 ```bash
 #!/bin/bash
 echo "What is you name?"
-read $reply
+read name
 echo "Enter your password?"
-read $reply
+read password
 ```
 
 `expect_script.sh`
@@ -396,3 +396,9 @@ expect eof
 - When interact is executed, Expect will start reading from the keyboard.
 - Syntax:<br>`interact`
 
+#### `autoexpect`
+- Autoexpect works like expect, but it builds the automation script for you.
+- The script to be automated is passed as an argument and based on the replies to the input asked, the script is generated.
+- The generated file can be used to interact.
+- Installation:<br>`sudo apt install expect`
+- Syntax:<br>`autoexpect ./script.sh`
