@@ -390,4 +390,9 @@ expect eof
     "option_two"{send "second retry\r}
   }
   ```
-  
+#### `interact` Command
+- Some sensitive information might not be put in the script. In such cases, script should ask for the data from user and then proceed as usual.
+- The interact command reverts the control back to the keyboard.
+- When interact is executed, Expect will start reading from the keyboard.
+- Syntax:<br>`interact`
+
