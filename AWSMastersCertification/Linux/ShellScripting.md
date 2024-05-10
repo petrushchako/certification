@@ -402,3 +402,35 @@ expect eof
 - The generated file can be used to interact.
 - Installation:<br>`sudo apt install expect`
 - Syntax:<br>`autoexpect ./script.sh`
+
+
+- Example:
+
+  - Create `script.sh`
+    ```bash
+    #!/bin/bash
+    echo "What is your name?"
+    read name
+    echo "What is your password?"
+    read password
+    echo "You are $name with $password password"
+    ```
+  - Add permission<br>`chmod 755 script.sh`
+  - Run <br>`autoexpect ./script.sh`<br>This should generate following `script.exp` file<br>
+    ```bash
+    set timeout -1
+    spawn ./script.sh
+    match max 100000
+    expect -exact "What 15 your name?\r
+    "
+    send -- "t "
+    expect -exact "
+    send -- "Tom\r"
+    expect -exact "Tom\r
+    Enter your password?\r
+    "
+    send "Tom123\r"
+    expect eof
+    ```
+  - Add permissions to `.exp` file<br>`chmod 755 script.exp`
+  - Run the expect script<br>`./script.exp`
