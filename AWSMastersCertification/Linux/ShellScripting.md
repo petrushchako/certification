@@ -376,3 +376,18 @@ expect eof
 > To execute<br>
 > `chmod 755 expect_script`<br>`./expect_script`
 >
+
+#### Conditional Tests
+- It supports conditional test id there is a "if" statement or multiple options to be sent from the script
+- It also supports if-else statements. 
+- Loops are also supported.
+
+- Syntax:
+
+  ```bash
+  expect {
+    "option_one"{send "send first retry\r"}
+    "option_two"{send "second retry\r}
+  }
+  ```
+  
