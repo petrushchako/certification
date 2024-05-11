@@ -52,11 +52,27 @@
 |**Retransmission of lost data**|It uses an acknowledgment mechanism to check arrival of data. Error free data transfer. Error control is received through checsum, acknowledgment and time out.|
 |**Congestion control**|Data sending rate also depends on the congestion of the network|
 
-### TCP Connection Establishment
+#### TCP Connection Establishment
 ![](img/TCPConectionEstablishment.png)
 
 - **SYN**<br>It is synchronization for the sequence numbers. It carries one sequence number. No data is present.
 - **SYN + ACK**<br>SYN for communication in other direction and ACK for received SYN. It consumes one sequence number.
 - **ACK**<br>ACK segment for received SYN. It doesn't consume any sequence number.
 
+<br>
 
+### UPD
+- User Datagram Protocol have a fixed size header of 8 bytes.
+- Prior communications are not required to set up a communication channel.
+- It has no hand-shaking, so it is unreliable. Hence, there is no guarantee of delivery.
+- UD avoids the overhead of protocol processing like error detection.
+- Time-sensitive application often use UDP where dropping packet is a better choice than waiting for the packet to be retransmitted.
+- Live broadcast, multi-player games generally use UDP.
+
+#### UPD Features
+- No connection establishment is done. Data is sent right away.
+- Packates are sent individually and checked when received.
+- UPD does not avoid cingestion and it needs to be taken care at the application level.
+- The messages are not ordered.
+- It is very lightweight and fast.
+- It is useful for broadcast as connection establishment is not required. 
