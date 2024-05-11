@@ -34,3 +34,29 @@
 |**Data Link**|Organize bits into frame to provide hop-to-hop delivery.|
 |**Physical**|To transfer bits over an electrical medium.|
 
+<br>
+
+## Protocols
+### TCP
+- Transmission control protocol which delivers data from end-to-end in order, reliably.
+- It establishes a virtual path between source and destination.
+- It uses the underlying layer to deliver individual segments but control is with itself, and IP is unaware of the re-transmission or out-of-order packets.
+- Each TCP port is bound to at most one socket, avoiding duplication.
+
+#### TCP Features
+|Feature|Details|
+|---|---|
+|**Maximum segment size**|This is shared between both parties and is tha largest amount of data in bytes to be sent in one single segment|
+|**Rate Limits**|The rate a sender sends data to guarntee reliable data|
+|**Ordered data transfer**|It sends data as stream of bytes with numbering|
+|**Retransmission of lost data**|It uses an acknowledgment mechanism to check arrival of data. Error free data transfer. Error control is received through checsum, acknowledgment and time out.|
+|**Congestion control**|Data sending rate also depends on the congestion of the network|
+
+### TCP Connection Establishment
+![](img/TCPConectionEstablishment.png)
+
+- **SYN**<br>It is synchronization for the sequence numbers. It carries one sequence number. No data is present.
+- **SYN + ACK**<br>SYN for communication in other direction and ACK for received SYN. It consumes one sequence number.
+- **ACK**<br>ACK segment for received SYN. It doesn't consume any sequence number.
+
+
