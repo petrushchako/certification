@@ -76,3 +76,30 @@
 - The messages are not ordered.
 - It is very lightweight and fast.
 - It is useful for broadcast as connection establishment is not required. 
+
+<br>
+
+### IPv4
+- Internet Protocol version 4 is used to identify devices on a network through an addressing system.
+- It is a connectionless protocol used on a packet switched network.
+- It fragments packets when required.
+- Ipv4 address is a 32-bit address uniquely defines the connection of a device universally.
+- It doesn't g uarantee end to end message reliability or flow control.
+
+#### IPv4 Address
+- IPv4 are 32 bit integer and most commonly written in 4 octets with dot separated integer values.
+- IP address has the format <Network><Host>
+- Some of the numbers like 0.0.0.0 and 255.255.255.255 are reserved for default gateway or broadcast IP.
+- The network part is centrally administered by InterNIC and is unique through out the Internet.
+
+#### Issues with IPv4
+- No encryption of data is done in packets.
+- IP packet can be easily sniffed from a network.
+- Most of the networks have already been assigned and there is a resource crunch.
+- Ipv4 doesn't implement quality of service functionality.
+- No authentication of user done at the server.
+- Maximum packet size is of 65,535 bits which is smaller compared to the new faster networks.
+
+<br>
+
+###
