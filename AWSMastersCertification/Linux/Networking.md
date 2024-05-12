@@ -133,3 +133,12 @@
 - There is a size restriction in TFTP which is quite smaller.
 
 <br>
+
+### Telnet
+- It provides a bi-directional command line interface with a remote network.
+- The configuration for telnet in Linux is in `/etc/xinetd.d/telnet`.
+- The communication between client and server is handled by internal commands and which is not visible to the user.
+- It is a not a secure protocol.
+- Once the connection is established, the client program sends commands with one character at a time.
+- The Telnet server uses port 23 of TCP.
+
