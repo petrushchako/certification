@@ -191,3 +191,13 @@
 - Demo: 
   - 8.8.8.8 IP has DNS google-public-dns-a.google.com<br>`nslookup 8.8.8.8`
  
+<br>
+
+### DHCP
+- Dynamic Host Configuration Protocol is used to dynamically assign IP address and other network configurations to devices in a network
+- Used port 67 and 68 for server and client and runs on UDP
+- It is primarily used in setup where user connection comes and leaves frequently.
+- It was designed to povide computers with temporary address
+- It relieves the network administrator from manual configuration job
+- A large pool of users can be supported by fewer IP address based on their availability
+
