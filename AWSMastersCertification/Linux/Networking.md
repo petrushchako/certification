@@ -122,3 +122,14 @@
 - It allows to have ownership and access restrictions.
 - Come FTP client tools are Filezilla, dreamweaver, etc.
 
+<br>
+
+### TFTP
+- Trivial file transfer protocol is a simpler version of FTP.
+- It doesn't provide user authentication.
+- It works on client-sever model by establishing connection between them.
+- Listing, renaming and deleting is generally not supported at TFTP.
+- TFTP uses UDP port 69 while FTP uses TCP ports 20 and 21.
+- There is a size restriction in TFTP which is quite smaller.
+
+<br>
