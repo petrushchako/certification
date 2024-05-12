@@ -102,4 +102,16 @@
 
 <br>
 
-###
+### IPv6
+- IPv6 is the sixth revision to the Internet Protocol and follows IPv4.
+- It has long addresses of 128 bits. It supports billion of users now.
+- Simplified fixed size headers to process packets faster.
+- Support for authenticity and privacy.
+- Flow control and quality of service provides high reliability.
+- Encryption headers allows better security of data.
+- Extension headers allows large packet sizes.
+- Standard authorization of users to server.
+
+<br>
+
+### 
