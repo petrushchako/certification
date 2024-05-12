@@ -179,3 +179,15 @@
 \*** usually 80 but many on 8080<br>
 \**** resource name with exact path
 
+<br>
+
+### DNS
+- Domain name system provides a symbolic mapping between names and IP address in the world wide web
+- DNS is a distributed system with many servers working worldwide
+- Name are organized in a tree structure allowing faster retrieval
+- A user will know the email address but IP protocol needs IP address and DNS resolves the email address to corresponding IP address to be sent to.
+- The name assigned to machines must be unique
+- A name can consist of two or more components spared by a dot. Example: `www.google.co.in`<br><br>
+- Demo: 
+  - 8.8.8.8 IP has DNS google-public-dns-a.google.com<br>`nslookup 8.8.8.8`
+ 
