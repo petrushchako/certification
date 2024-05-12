@@ -114,4 +114,11 @@
 
 <br>
 
-### 
+### FTP
+- File Transfer Protocol is standard protocol to transfer file over a computer network.
+- It is built on client-server model and uses separate data and control connections.
+- FTP is a two-way system. Transferring file from client to server is called uploading and from server to client is called downloading.
+- In Unix, the service is provided by a daemon called ftpd which runs in background.
+- It allows to have ownership and access restrictions.
+- Come FTP client tools are Filezilla, dreamweaver, etc.
+
