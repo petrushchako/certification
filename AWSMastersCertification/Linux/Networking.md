@@ -160,3 +160,22 @@
 #### SSH Packet Format
 ![](img/sshPacket.png)
 
+<br>
+
+### HTTP - Hyper Text Transfer Protocol
+- An application layer protocol which is the base for data communication for World Wide Web
+- Stateless
+- Works on port 80 of TCP
+- Supports authentication and stores it in browser till the browser is closed or triggered to be deleted
+- Protocol for transferring various forms of data between server and the client like: plaintext, images, videos, sounds, etc.
+
+#### HTTP - URLs
+
+`<protocol*>://<host_name**>:<port***>/<path****>`
+`https://www.mynetwork.com:80/index.html
+
+\* http, ftp, dns, etc<br>
+\** domain name<br>
+\*** usually 80 but many on 8080<br>
+\**** resource name with exact path
+
