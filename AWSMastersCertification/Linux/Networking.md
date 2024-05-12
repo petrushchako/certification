@@ -222,5 +222,34 @@ Here's how the ARP protocol works:
 
 Overall, the ARP protocol plays a crucial role in facilitating communication between devices on the same local network by dynamically mapping IP addresses to MAC addresses. It is a fundamental protocol in the TCP/IP protocol suite and is widely used in Ethernet and Wi-Fi networks.
 
+
+> To check ARP table entries:<br>`arp -an`
+
+<br>
+
+### ICMP
+ICMP stands for Internet Control Message Protocol. It is a network layer protocol used for diagnostic and error reporting purposes in IP networks, such as the Internet. ICMP is an integral part of the Internet Protocol Suite (TCP/IP) and is used by network devices, including routers and hosts, to communicate status and error information to other devices.
+
+Here are some key aspects of ICMP:
+
+- **Error Reporting**<br>ICMP is primarily used for reporting errors and delivering status information related to IP packet processing. For example, when a router encounters an issue while forwarding an IP packet, it sends an ICMP message back to the source of the packet to notify it of the problem.
+
+- **Ping and Traceroute**<br>ICMP includes two commonly used utilities: Ping and Traceroute. Ping sends ICMP echo request messages to a destination host and waits for an echo reply, allowing devices to check if a remote host is reachable. Traceroute uses ICMP time exceeded messages to trace the route taken by packets to reach a destination, helping diagnose network routing issues.
+
+- **Control Messages**<br>ICMP includes various control message types, each serving a specific purpose. Some common ICMP message types include:
+   - Echo request/reply: Used by Ping to test reachability.
+   - Destination unreachable: Indicates that a packet cannot reach its destination.
+   - Time exceeded: Indicates that the TTL (Time to Live) value of a packet has expired.
+   - Parameter problem: Indicates an issue with the IP header of a packet.
+   - Redirect: Instructs a host to use a different router for a specific destination.
+
+- **ICMP Headers**<br>ICMP messages consist of an ICMP header followed by a variable-length data field. The ICMP header contains fields such as the message type, code, and checksum. The data field may contain additional information specific to the message type.
+
+- **Stateless Protocol**<br>ICMP is a stateless protocol, meaning it does not maintain any connection state between devices. Each ICMP message is processed independently, and there is no need for sequence numbers or acknowledgments.
+
+Overall, ICMP plays a critical role in network troubleshooting, diagnostics, and error reporting, providing essential mechanisms for communication between network devices and hosts.
+
+> `ping 8.8.8.8 -t 5`
+
 <br>
 
