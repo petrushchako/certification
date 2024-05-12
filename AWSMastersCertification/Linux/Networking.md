@@ -201,3 +201,26 @@
 - It relieves the network administrator from manual configuration job
 - A large pool of users can be supported by fewer IP address based on their availability
 
+<br>
+
+### ARP
+The ARP (Address Resolution Protocol) is a network protocol used to resolve network layer addresses (IPv4 addresses) into link layer addresses (MAC addresses) on a local area network (LAN). Its primary function is to map a known IP address to a MAC address, allowing devices to communicate with each other on the same network.
+
+Here's how the ARP protocol works:
+
+- **Address Resolution**<br>When a device wants to communicate with another device on the same local network, it needs to know the MAC address of the target device. However, devices typically only know the IP address of the target device.
+
+- **ARP Request**<br>To resolve the MAC address associated with an IP address, the sending device broadcasts an ARP request packet to the entire network. This ARP request contains the sender's IP and MAC address and the target IP address.
+
+- **ARP Reply**<br>The device with the IP address specified in the ARP request responds with an ARP reply packet. This packet contains the MAC address associated with the specified IP address.
+
+- **Caching**<br>After receiving an ARP reply, the sending device stores the mapping of the IP address to the MAC address in its ARP cache. Subsequent communications with the same IP address can use this cached mapping without needing to send another ARP request.
+
+- **ARP Cache**<br>The ARP cache is a table maintained by the operating system that stores the mappings of IP addresses to MAC addresses. This cache helps improve network efficiency by avoiding the need to send ARP requests for frequently accessed devices.
+
+- **Aging**<br>ARP cache entries have a finite lifetime, known as the ARP cache timeout or aging time. Entries in the ARP cache expire after a certain period of time if they are not used. When an entry expires, the device must send a new ARP request to refresh the mapping.
+
+Overall, the ARP protocol plays a crucial role in facilitating communication between devices on the same local network by dynamically mapping IP addresses to MAC addresses. It is a fundamental protocol in the TCP/IP protocol suite and is widely used in Ethernet and Wi-Fi networks.
+
+<br>
+
