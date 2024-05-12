@@ -250,6 +250,35 @@ Here are some key aspects of ICMP:
 Overall, ICMP plays a critical role in network troubleshooting, diagnostics, and error reporting, providing essential mechanisms for communication between network devices and hosts.
 
 > `ping 8.8.8.8 -t 5`
+> `traceroute 8.8.8.8`
 
 <br>
 
+## Packaet Capturing tools
+### Packet Sniffing
+- It is a techinque to monitor every packet taht crosses the network, in promiscuous mode
+- Some common sniffing tools are `tcpdump`, `Ip spoofing`, etc
+- It can be used to trace IP address to their destination
+- One can monitor all internet traffic from your system to the internet
+
+#### Sniffing methods
+- IP based
+- MAC based
+- ARP based
+
+#### Packet Sniffing Uses
+- Network intrusion detection to find if someone has unauthorized connection to our system.
+- Performance analysis to improve the network.
+- Detection of clear text password and username from network.
+- Conversion of data sent over the network to human readable format.
+- Used to make network secure as some malicious content can be filtered out.
+- Finding out the details about the different system connected to your system.
+
+#### Wireshark
+1. It is most popular network analyzer
+2. It lets you capture traffic and analyze the network on your computer
+3. It is available for both Linux and Windows
+4. Displays data with detailed protocol information
+5. Lots of filter options available to sort out the relevant information
+6. Colorize packets based on the filter
+7. It doesn't manipulate anything and just provide measurements
