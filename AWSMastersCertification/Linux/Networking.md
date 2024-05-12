@@ -138,7 +138,25 @@
 - It provides a bi-directional command line interface with a remote network.
 - The configuration for telnet in Linux is in `/etc/xinetd.d/telnet`.
 - The communication between client and server is handled by internal commands and which is not visible to the user.
+- It allows a user at one site to log in to a remote computer that is part of the same network, and then to interact as if they were sitting directly at that computer.
 - It is a not a secure protocol.
 - Once the connection is established, the client program sends commands with one character at a time.
 - The Telnet server uses port 23 of TCP.
+
+> Telnet was widely used in the early days of the Internet for remote access and administration of Unix-based systems. However, due to its lack of security, it has been largely replaced by more secure protocols such as SSH (Secure Shell).
+
+
+<br>
+
+### SSH
+- Secure shell is a cryptographic protocol to secure data over a network.
+- A password sniffing attack led to development of initial version of SSH.
+- It allows users to securely login in an unsecure network and execute commands.
+- Has client-server communication over TCP and provides authentication and encryption.
+- There is cryptographic integrity check via md5, sh1 keyed hash algorithms.
+- It is free for non-commercial use.
+- It only supports the known port numbers.
+
+#### SSH Packet Format
+![](img/sshPacket.png)
 
