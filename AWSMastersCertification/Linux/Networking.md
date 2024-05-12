@@ -296,10 +296,31 @@ Overall, ICMP plays a critical role in network troubleshooting, diagnostics, and
 |`-c`|count of packet to capture|
 |`-w`|write to a file than printing on the screen|
 |`-r`|read the content of the file|
+|`-x`|dumps the entire datagram captured with the default snaplen in hexadecimal|
 
-- It is popular packet analyzer that runs in command line
-- It uses the `libpcap` library to capture packets
-- It is a free tool and works on most Linux like operating systems
-- It is ip utility tool to sniff packets
-- TCPdump does not display all the fields of captured data. Use option `-x` that dumps the entire datagram captured with the default snaplen in hexadecimal
+`tcpdump` is a powerful command-line packet analyzer tool used for capturing and analyzing network traffic in real-time. It is available on most Unix-like operating systems, including Linux, macOS, and BSD. `tcpdump` allows users to capture and display packets that are transmitted or received on a network interface.
 
+Here's an overview of `tcpdump` and its features:
+
+1. **Packet Capture**<br>`tcpdump` captures packets flowing through a network interface in real-time. It can capture packets from Ethernet, Wi-Fi, loopback, and other types of network interfaces.
+
+2. **Filtering**<br>`tcpdump` provides various filtering options to specify which packets to capture. Users can filter packets based on criteria such as source or destination IP addresses, port numbers, protocol types, packet size, and more. Filters can be specified using BPF (Berkeley Packet Filter) syntax.
+
+3. **Output Control**<br>`tcpdump` offers flexibility in controlling the format and verbosity of output. Users can specify options to control how packet information is displayed, including packet headers, timestamps, and packet payloads. Output can be directed to the terminal or saved to a file for later analysis.
+
+4. **Protocol Support**<br>`tcpdump` supports a wide range of network protocols, including TCP, UDP, ICMP, IPv4, IPv6, ARP, DNS, HTTP, SSH, and many others. It can capture and analyze packets for virtually any protocol used on a network.
+
+5. **Post-Capture Analysis**<br>After capturing packets, `tcpdump` allows users to analyze the captured data using other tools or utilities. Captured packet data can be imported into packet analysis software such as Wireshark for detailed inspection and troubleshooting.
+
+Here's a basic usage example of `tcpdump`:
+
+```bash
+sudo tcpdump -i eth0 -n -nn -vvv
+```
+
+- `-i eth0`: Specifies the network interface (`eth0` in this example) from which to capture packets.
+- `-n`: Disables reverse DNS resolution, displaying IP addresses instead of hostnames.
+- `-nn`: Disables port number translation, displaying port numbers instead of service names.
+- `-vvv`: Increases the verbosity level, providing more detailed output.
+
+`tcpdump` is a versatile tool commonly used by network administrators, security professionals, and system administrators for troubleshooting network issues, monitoring network traffic, analyzing network protocols, and performing network security audits.
