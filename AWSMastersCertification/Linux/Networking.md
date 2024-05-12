@@ -282,3 +282,24 @@ Overall, ICMP plays a critical role in network troubleshooting, diagnostics, and
 5. Lots of filter options available to sort out the relevant information
 6. Colorize packets based on the filter
 7. It doesn't manipulate anything and just provide measurements
+
+<br>
+
+### `tcpdump`
+
+|Option|Description|
+|---|---|
+|`-i`|tells the interface we are using|
+|`-q`|stay quiet rather than printing more info|
+|`-t`|rename time stamp|
+|`-l`|buffers one line at a time on output|
+|`-c`|count of packet to capture|
+|`-w`|write to a file than printing on the screen|
+|`-r`|read the content of the file|
+
+- It is popular packet analyzer that runs in command line
+- It uses the `libpcap` library to capture packets
+- It is a free tool and works on most Linux like operating systems
+- It is ip utility tool to sniff packets
+- TCPdump does not display all the fields of captured data. Use option `-x` that dumps the entire datagram captured with the default snaplen in hexadecimal
+
