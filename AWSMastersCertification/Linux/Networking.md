@@ -469,3 +469,15 @@ A client-server model is used during establishment of connection between two par
   - Both party uses their private key, received public key and original shared key to compute a secret key. It will result in same shared secret key.
   - The shared secret key is used to encrypt all the communications.
 - Public key can be shared as there is no means of deriving the private key from it.
+
+### Authenticating User
+- SSH key pairs are used for authentication which are asymmetric key function
+- The procedure for authenticating the user is:
+  - The client sends an ID for the key pair.
+  - Server checks for authorized key file for the key ID.
+  - If match found it generates a random number and uses public key to encrypt the number.
+  - Server sends the client this encrypted number.
+  - If client has the private key then it will be able to decrypt the message to find the original number.
+  - The client finds the MD5 value for this number combined with shared key that is used to encrypt.
+  - Clients sends the md5 value to the server.
+  - Server does its own calculation and if the two values match, client is authenticated.
