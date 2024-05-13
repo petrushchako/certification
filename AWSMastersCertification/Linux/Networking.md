@@ -365,4 +365,53 @@ A firewall is a program which restricts the incoming and outgoing connections ba
 - The default Linux firewall is `iptables`
 - Multiple GUI version are also available for Linux
 
-###
+### `iptables`
+
+It is a firewall package that comes along with Linux distro
+- It is fast and reliable
+- Stateful packet inspection is done
+- Packets are filtered according to IP address and MAC address
+- Rate limiting feature which helps iptables block denial of service attacks
+
+#### Built-ins
+- **Input**<br>packets desired for local socket
+- **Forward**<br>packets routed through system
+- **Output**<br>packets generated locally
+- **Prerouting**<br>used for packets as it is received
+- **Postrouting**<br>used to packets going out
+
+#### iptables subgroups
+- **Filter**
+  - This is the default table and contains build-in chains
+  - Supports INPUT, FORWARD, OUTPUT
+- **NAT**
+  - Table consulted when packet is trying for a new connection
+  - Supports PREROUTING, POSTROUTING, OUTPUT
+- **Mangle**
+  - This table is used for altering the packets
+  - Supports INPUT, PREROUTING, FORWARD, OUTPUT, POSTROUTING
+
+### iptable start and stop
+- Start<br>`systemctl start iptables`
+- Stop<br>`systemctl stop iptables`
+- Restart<br>`systemctl restart iptables`
+
+### iptables check rules
+- To check existing rules in the system<br>`iptables -L`
+- For rules in particular table use `-t` option<br>`iptables -t nat -L`
+- Use `-n` option to get numeric representation of address and ports<br>`iptables -L -n`<br>`iptables -Ln`
+
+### Block specific IP
+- Syntax:<br>`iptables -A INPUT -s <ip_address> -j DROP`<br>`iptables -A INPUT -s 10.1.23.123 -j DROP`
+- If you want to bloack particular traffic from that IP address use `-p` option.<br>`-A` option is used to append at the end of rule<br>`iptables -A INPUT -p tcp -s <ip_address> -j DROP`
+
+### Unblock IP from rule
+- Use `-D` to delete an antry from the rule<br>`iptables -D INPUT -s <ip_address> -j DROP`<br>`iptables -D INPUT -s 10.1.23.123 -j DROP`
+- To remove all iptables rules use -F option<br>`iptables -F`
+- To remove rules from specific table use `-t` option<br>`iptables -t nat -F`
+
+### Allow ports
+- To allow incomming connections, use<br>`iptables -A INPUT -p tcp - -dport <portNumber> -j ACCEPT`<br>`iptables -A INPUT -p tcp --dport 80 -j ACCEPT`
+- To allow multiple ports at once use `multiport` option<br>`iptables -A OUTPUT -p TCP -m multiport --sport 21,22,80 -j ACCEPT`
+- To limit a particular network on a particular port<br>`iptables -A OUTPUT -p tcp -d 192.168.100.0/24 --dport 22 -j ACCEPT`
+  
