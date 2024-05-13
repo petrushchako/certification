@@ -353,3 +353,16 @@ Netstat provides statistics for the following:
 - Indicates the state of a TCP connection.
 - The possible states are as: CLOSE_ WAIT, CLOSED, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, LAST_ACK, LISTEN, SYN_RECEIVED, SYN_SEND, and TIME_WAIT.
 
+<br><br>
+
+## Lunix Firewall
+
+A firewall is a program which restricts the incoming and outgoing connections based on rules that have been pre-configured in the rule-set.
+
+- Firewall can log accesses and provide valuable information about network usage
+- Firewall can be hardware level or at software level. Software level firewall are cheaper and easier to configure
+- It reduces risks by blocking the insecure services reducing chances of malicious content entering system
+- The default Linux firewall is `iptables`
+- Multiple GUI version are also available for Linux
+
+###
