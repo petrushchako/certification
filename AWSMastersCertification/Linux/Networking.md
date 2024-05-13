@@ -324,3 +324,32 @@ sudo tcpdump -i eth0 -n -nn -vvv
 - `-vvv`: Increases the verbosity level, providing more detailed output.
 
 `tcpdump` is a versatile tool commonly used by network administrators, security professionals, and system administrators for troubleshooting network issues, monitoring network traffic, analyzing network protocols, and performing network security audits.
+
+<br>
+
+### `netstat`
+
+|Option|Details|
+|---|---|
+|`-a`|display all active connections|
+|`-t`|display only TCP connections|
+|`-l`|display all active listening ports|
+|`-u`|display UDP connections|
+|`-s`|display satatistics by protocol|
+|`-r`|display kernel routing table|
+|`-i`|display network interface packet transactions|
+|`-p`|display which process is using which socket|
+|`-n`|no dns resolution done|
+|`-c`|to keep printing netstat information every few seconds|
+
+
+It is a command used to display very detailed information about how your computer is interacting with other network devices.
+
+Netstat provides statistics for the following:
+- The name of the protocol (TCP or UDP).
+- The IP address of system and port number being used. An asterisk (*) is shown for the host if the server is listening on all interfaces.
+- If the port is not yet established, the port number is shown as an asterisk(*).
+- The IP address and port number of the remote network to which the socket is connected.
+- Indicates the state of a TCP connection.
+- The possible states are as: CLOSE_ WAIT, CLOSED, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, LAST_ACK, LISTEN, SYN_RECEIVED, SYN_SEND, and TIME_WAIT.
+
