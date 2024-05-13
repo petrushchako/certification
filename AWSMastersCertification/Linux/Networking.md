@@ -415,3 +415,21 @@ It is a firewall package that comes along with Linux distro
 - To allow multiple ports at once use `multiport` option<br>`iptables -A OUTPUT -p TCP -m multiport --sport 21,22,80 -j ACCEPT`
 - To limit a particular network on a particular port<br>`iptables -A OUTPUT -p tcp -d 192.168.100.0/24 --dport 22 -j ACCEPT`
   
+
+### `iptables` demo
+
+Block particular domain
+```sh
+# Get details of the domain
+host google.com
+
+# Add an entry for the IP (a particular website might run from multiple addesses too)
+iptable -A OUTPUT -p tcp -d 216.58.192.14 -j DROP
+iptables -L
+```
+
+Restrictin google IP and not being able to ping it
+```bash
+iptables -A INPUT -s 8.8.8.8 -j DROP
+ping 8.8.8.8
+```
