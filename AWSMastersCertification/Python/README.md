@@ -11,3 +11,7 @@
 - Python Interpreter is a program that reads and executes code
 - This includes source code, pre-compiled code and scripts
 - Example: `help('for')`
+
+### Standard Data Types
+![](img/datatypes.png)
+
