@@ -17,7 +17,7 @@
 
 ## Data Types
 
-### Immtutable
+### Immtutable data types
 #### Numeric data type
 - Python supports three different numerical values
   - int (signed integer) e.g. 10
@@ -35,3 +35,14 @@
 #### Tuple
 - Tuple consists of a number of values separated by comma(s). It is enclosed with parenthesis. i.e. `(1,2,3.15,'Python')`
 - Tuple can have objects of different data types, unlike Arrays in C.
+
+### Mutable data types
+#### Lists
+List is an ordered set of elements enclosed within square brackets. The main differences between Lists and Tuples are:
+- Lists are enclosed in brackets[] and Tuples are enclosed within parenthesis()
+- Lists are Mutable and Tuples are Immutable
+- Tuples are faster than Lists
+- Lists are enclosed within square brackets
+
+
+
