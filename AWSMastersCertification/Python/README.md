@@ -54,3 +54,62 @@ print(dictionaryExample) # {'name':'Alex', 'email':'alex@gmail.com'}
 #### Sets
 A set is an unordered collection of items. Every element is unique. A set is created by placing all the items (elements) inside curly braces `{}`, separated by comma.
 - You can create set by calling inbuild function `set()`
+
+## Python Operators
+### Arithmetic Operators
+|Operator|Example|
+|---|---|
+|Addition|`a+b`|
+|Subtraction|`a-b`|
+|Multiplication|`a*b`|
+|Division|`a/b`|
+|Modulus|`a%b`|
+|Exponent|`a**b`|
+|Floor Division|`a//b`|
+
+### Assignment Operator
+|||
+|---|---|
+|Assign value from right to left|`a=b`|
+|`a=a+b`|`a+=b`|
+|`a=a-b`|`a-=b`|
+|`a=a*b`|`a*=b`|
+|`a=a/b`|`a/=b`|
+|`a=a**b`|`a**=b`|
+|`a=a//b`|`a//=b`|
+
+### Comparison
+|Operator|Example|
+|---|---|
+|Equal to|`a==b`|
+|Not Equal To|`a!=b`|
+|Greater Than|`a>b`|
+|Less Than|`a<b`|
+|Greather Than Equal To|`a>=b`|
+|Less Than Equal To|`a <=b`|
+
+### Logical Operator
+|Operator|Description|
+|---|---|
+|a `and` b|Returns True if both values evaluate to True|
+|a `or` b|Return if at leas one of the values evaluate to True|
+|`not` a|Inverts the boolean value of an expression, making True become False and False become True|
+
+### Bitwise
+|Operator|Example|Details|
+|---|---|
+|Binary AND|`a & b`|Combines bits where both are 1|
+|Binary OR|`a\|b`|Combines bits where either is 1|
+|Binary XOR|`a^b`|Combines bits where one is 1 and the other is 0|
+|Binary NOT|`a~b`|Inverts all bits|
+|Binary Left Shift|`a<<`|Shifts bits to the left, filling with 0s|
+|Binary Right Shift|`a>>b`|Shifts bits to the right, filling with sign bit|
+
+### Identity
+- `is` <br>Evaluates to TRUE if the variables on either side of the operator point to the same object and FALSE otherwise
+- `is not`<br>Evaluates to FALSE if the variables on either side of the operator point to the same object and TRUE otherwise
+
+### Membership
+- `in`<br>Evaluates to TRUE if it finds a variable in the specified sequence and FALSE otherwise
+- `not in`<br>Evaluates to TRUE if it does not find a variable in the specified sequence and FALSE otherwise
+
