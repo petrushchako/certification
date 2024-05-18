@@ -51,3 +51,6 @@ dictionaryExample = {"name":"Alex", "email":"alex@gmail.com"}
 print(dictionaryExample) # {'name':'Alex', 'email':'alex@gmail.com'}
 ```
 
+#### Sets
+A set is an unordered collection of items. Every element is unique. A set is created by placing all the items (elements) inside curly braces `{}`, separated by comma.
+- You can create set by calling inbuild function `set()`
