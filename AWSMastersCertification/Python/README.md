@@ -15,3 +15,15 @@
 ### Standard Data Types
 ![](img/datatypes.png)
 
+## Data Types
+
+### Immtutable
+#### Numeric data type
+- Python supports three different numerical values
+  - int (signed integer) e.g. 10
+  - float (real numbers) e.g. 10.65
+  - Complex Numbers e.g. 10+6j
+- In Python you can represent numbers in multiple ways
+  - Binary
+  - Octal
+  - Hexedecimal
