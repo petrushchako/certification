@@ -44,5 +44,10 @@ List is an ordered set of elements enclosed within square brackets. The main dif
 - Tuples are faster than Lists
 - Lists are enclosed within square brackets
 
-
+#### Dictionaries
+Dictionaries contain key value pairs. Each key is separated from its value by a colon (:), the items are separated by comma, and the whole thing is enclosed within curly braces
+```python
+dictionaryExample = {"name":"Alex", "email":"alex@gmail.com"}
+print(dictionaryExample) # {'name':'Alex', 'email':'alex@gmail.com'}
+```
 
