@@ -154,3 +154,29 @@ each argument which is passed to main
   - Sets
   - Dictionaries
  
+ <br>
+
+### Opening and closing fiels
+
+#### Open function
+- You can open files using Python's built-in `open()` function
+
+  `file_Obj = open(file_name,[access_mode])`
+- Here are parameter details
+  - **file_name**<br>The `file_name` argument is a string value that contains the name of the file that you want to access
+  - **access_mode**<br>The `access_mode` determines the mode in which the file has to be opened (read, write, append)
+
+  |Mode|Description|
+  |---|---|
+  |`r`|This is the default mode. Opens a file for reading only|
+  |`rb`|Opens a file for reading in banary only|
+  |`r+`|Opens a file for both reading and writing|
+  |`rb+`|Opens a file for both reading and writing in binary format|
+  |`w`|Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing|
+  |`wb`|Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing|
+  |`a`|Opens a file for appending|
+  |`ab`|Opens a file for appending in binary format|
+  |`a+`|Opens a file for both appending and reading|
+  |`ab+`|Opens a file for both appending and reading in binary format|
+  |`w+`|Opens a file for both writing and reading|
+  |`wb+`|Opens a file for both writing and reading in binary format|
