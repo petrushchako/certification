@@ -140,3 +140,17 @@ each argument which is passed to main
     # Number of arguments: 4 arguments. Argument
     # List: ['test.py', 'argl', arg2', 'arg3']
     ```
+
+<br>
+
+## Sequences and File Operations
+- Understand Operations performed on files
+- Learn what sequences are
+- Execute Sequence Operations
+- Understand Types of Sequences in Python
+  - Lists
+  - Tuples
+  - Strings
+  - Sets
+  - Dictionaries
+ 
