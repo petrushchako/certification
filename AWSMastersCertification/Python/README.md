@@ -180,3 +180,31 @@ each argument which is passed to main
   |`ab+`|Opens a file for both appending and reading in binary format|
   |`w+`|Opens a file for both writing and reading|
   |`wb+`|Opens a file for both writing and reading in binary format|
+
+#### Write function
+`fileObject.write(string)`
+- The `write()` method does not add a newline character `\n` to the end of the string
+- The `write()` method writes content in an
+open file. Python strings can have binary data and not just text
+
+#### Read function
+`fileObject.read([count])`
+- The `read()` method reads a string from an open file
+- It is important to note that Python strings can have binary data apart from text data
+
+#### Renaming files
+`os.rename(current_file_name, new_file_name)`
+- The `rename()` method takes two arguments, the current filename and the new filename
+- `rename()` is the method from `os` module, we going to learn it in module 5
+
+#### Deleting files
+`os.remove(file_name)`
+- You can use the `remove()` method to delete files by supplying the name of the file to be deleted as an argument
+- `remove()` is the method from os module, we going to learn it in module 5
+
+#### Close function
+`file.close()`
+- The `close()` method closes the opened file
+- A closed file cannot be read or written any more
+- Python automatically closes a file when the reference object of a file is reassigned to another file
+
