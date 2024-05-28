@@ -1,4 +1,4 @@
-# AWS Certified Cloud Practitioner (CLF-C01)
+# AWS Certified Cloud Practitioner (CLF-C02)
 
 
 ### Course Outline
@@ -25,7 +25,7 @@
 - Serverless Services: The Bigger Picture
 - Understanding Serverless Services Pricing and Features
 - Demo: Exploring Compute Services - Lambda in Action
-- `HANDS-ON LAB` Create a Lambda Function Using the AWS Management Console
+- `HANDS-ON LAB`<br>Create a Lambda Function Using the AWS Management Console
 - Introducing Additional Compute Services
 - Compute Technology and Services Exam Tips
 
@@ -33,8 +33,8 @@
 - Exploring Amazon EC2 Storage
 - Amazon Simple Storage Service (S3): The Bigger Picture
 - Exploring S3 Storage Classes
-- `Demo` Exploring Storage Services - S3 in Action
-- `HANDS-ON LAB` Creating S3 Buckets with Versioning and Encryption
+- `Demo`<br>Exploring Storage Services - S3 in Action
+- `HANDS-ON LAB`<br>Creating S3 Buckets with Versioning and Encryption
 - Introducing Additional Storage Services
 - Amazon Elastic Block Store (EBS)
 - AWS Storage Gateway
@@ -45,8 +45,8 @@
 - Content Delivery: The Bigger Picture
 - AWS Global Accelerator
 - Networking: The Bigger Picture
-- `Demo` Exploring Networking Services - VPC in Action
-- `HANDS-ON LAB` Launch an EC2 Instance in a Virtual Private Cloud (VPC)
+- `Demo`<br>Exploring Networking Services - VPC in Action
+- `HANDS-ON LAB`<br>Launch an EC2 Instance in a Virtual Private Cloud (VPC)
 - DNS: The Bigger Picture
 - Applying Hybrid Models with Networking Services
 - Content Delivery and Networking Exam Tips
@@ -61,12 +61,12 @@
 **CHAPTER 7**<br>***Development, Messaging, and Deployment Technology and Services***
 - What Is CI/CD?
 - AWS Development Tools
-- `Demo` Working with AWS CloudShell and the AWS Command Line Interface (AWS CLI)
-- `Demo` Using AWS Cloud9
+- `Demo`<br>Working with AWS CloudShell and the AWS Command Line Interface (AWS CLI)
+- `Demo`<br>Using AWS Cloud9
 - Understanding AWS CodeArtifact
 - Decoupling Application Components
 - Introducing Amazon Simple Notification Service (SNS)
-- `HANDS-ON LAB` Create and Subscribe to an AWS SNS Topic
+- `HANDS-ON LAB`<br>Create and Subscribe to an AWS SNS Topic
 - Introducing Amazon Simple Queue Service (SQS)
 - Standard And FIFO Queues
 - Short Polling vs Long Polling
@@ -74,10 +74,10 @@
 - Introducing Amazon EventBridge
 - Understanding Step Functions
 - Deploying Infrastructure as Code with AWS CloudFormation
-- `HANDS-ON LAB` Create a DynamoDB Table Using CloudFormation
+- `HANDS-ON LAB`<br>Create a DynamoDB Table Using CloudFormation
 - What Is AWS Elastic Beanstalk?
-- `Demo` Deploying an Application Using Elastic Beanstalk
-- `Demo` Using AWS X-Ray to Identify Performance Issues
+- `Demo`<br>Deploying an Application Using Elastic Beanstalk
+- `Demo`<br>Using AWS X-Ray to Identify Performance Issues
 - Development, Messaging, and Deployment Exam Tips - Part 1
 - Development, Messaging, and Deployment Exam Tips - Part 2
 
@@ -96,7 +96,7 @@
 - What Is Amazon Kinesis?
 - Exploring Kinesis Data Firehose
 - What Is Amazon Athena?
-- `Demo` Using Athena to Query Data
+- `Demo`<br>Using Athena to Query Data
 - Introducing AWS Glue
 - Exploring AWS Data Exchange
 - Understanding Amazon Elastic Map Reduce (EMR)
@@ -106,20 +106,20 @@
 - Machine Learning With Amazon SageMaker
 - What Is Amazon Kendra?
 - Understanding Amazon Lex
-- `Demo` Using Amazon Polly
+- `Demo`<br>Using Amazon Polly
 - Introducing Amazon Comprehend
 - Amazon Textract, Amazon Transcribe, and Amazon Translate
-- `Demo` Using Amazon Transcribe
-- `Demo` Amazon Rekognition in Action
+- `Demo`<br>Using Amazon Transcribe
+- `Demo`<br>Amazon Rekognition in Action
 - Artificial Intelligence, Machine Learning, and Analytics Exam Tips - Part 1
 - Artificial Intelligence, Machine Learning, and Analytics Exam Tips - Part 2
 
 **CHAPTER 10**<br>***Auditing, Monitoring, Logging, and Additional Technology and Services***
 - Introducing Monitoring and Logging on AWS
 - Exploring Amazon CloudWatch and AWS CloudTrail
-- `Demo` Getting to Know CloudWatch Dashboards
+- `Demo`<br>Getting to Know CloudWatch Dashboards
 - Managing Many Resources on AWS
-- `HANDS-ON LAB` Visualize Metrics for Tagged Resources on Amazon CloudWatch
+- `HANDS-ON LAB`<br>Visualize Metrics for Tagged Resources on Amazon CloudWatch
 - Monitoring Service Health and Best Practices
 - Understanding Auditing on AWS
 - Identifying Business and End User Services
@@ -130,12 +130,12 @@
 - What Do We Need To Secure on AWS?
 - Illustrating the Principle of Least Privilege
 - What Is IAM?
-- `HANDS-ON LAB` Troubleshooting an IAM Policy on an EC2 Instance
+- `HANDS-ON LAB`<br>Troubleshooting an IAM Policy on an EC2 Instance
 - Leveraging Existing Identity Providers
 - Keeping Secrets Safe
 - Exploring Network Security Services
 - What Is Security Hub?
-- `Demo` Exploring Security Hub
+- `Demo`<br>Exploring Security Hub
 - Responding to Security Events
 - Growing Your Security Muscles
 - Governing Multiple Accounts on AWS
@@ -146,10 +146,10 @@
 - Cloud Costs: The Bigger Picture
 - Optimizing the Cost of Compute
 - Understanding Data Storage Costs
-- `HANDS-ON LAB` Creating an S3 Storage Lifecycle
+- `HANDS-ON LAB`<br>Creating an S3 Storage Lifecycle
 - Understanding Data Transfer Costs
 - Monitoring and Predicting Costs on AWS
-- `Demo` Setting a Budget Alert in Your AWS Account
+- `Demo`<br>Setting a Budget Alert in Your AWS Account
 - Managing Costs in a Multi-Account Environment
 - Monitoring The Cost of Resource Groups
 - Seeking Support From AWS
