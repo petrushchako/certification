@@ -6,4 +6,7 @@
 - Undestand six advantages of the cloud as well as benefits and terminology
 - Know computing models: IaaS, PaaS, SaaS, etc
 - Know the deployment models: Public, Private, Hybrid (Hybrid uses Direct Connect)
+- A Region is global and is made up of two or more AZs.
+- An AZ is made up of multiple data centers.
+- Multi-AZ deployments provide high availability.
 - 
