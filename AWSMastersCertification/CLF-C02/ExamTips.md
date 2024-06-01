@@ -3,3 +3,7 @@
 ### Chapter 1
 - Learn service cathegories (EC2-Compute service, VPC-Networking service, etc)
 - Read the AWS Service Whitepaper
+- Undestand six advantages of the cloud as well as benefits and terminology
+- Know computing models: IaaS, PaaS, SaaS, etc
+- Know the deployment models: Public, Private, Hybrid (Hybrid uses Direct Connect)
+- 
