@@ -9,4 +9,6 @@
 - A Region is global and is made up of two or more AZs.
 - An AZ is made up of multiple data centers.
 - Multi-AZ deployments provide high availability.
+- An Edge Location ensures low latency by placing content closer to users.
+- A Local Zone is an extension of a Region enabling things like real-time gaming.
 - 
