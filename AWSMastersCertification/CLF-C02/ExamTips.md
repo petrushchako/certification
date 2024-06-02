@@ -1,6 +1,6 @@
 # Examp tips
 
-### Chapter 1
+### Chapter 2
 - Learn service cathegories (EC2-Compute service, VPC-Networking service, etc)
 - Read the AWS Service Whitepaper
 - Undestand six advantages of the cloud as well as benefits and terminology
@@ -13,3 +13,7 @@
 - A Local Zone is an extension of a Region enabling things like real-time gaming.
 - Understand the Cloud Adaption Framework Perspectives and the Cloud Transformation Journey Phases.
 - Understand the Well-Architected Framework pillars, design principles, and how they apply in the real world.
+- The root user should be protected by MFA
+- The root user has power that no other user has
+- The CLI and SDKs are other options to manage AWS resources.
+- Know hot to protect root user (MFA, and create Admin user for daily tasks)
