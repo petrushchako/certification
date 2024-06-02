@@ -11,4 +11,5 @@
 - Multi-AZ deployments provide high availability.
 - An Edge Location ensures low latency by placing content closer to users.
 - A Local Zone is an extension of a Region enabling things like real-time gaming.
-- 
+- Understand the Cloud Adaption Framework Perspectives and the Cloud Transformation Journey Phases.
+- Understand the Well-Architected Framework pillars, design principles, and how they apply in the real world.
