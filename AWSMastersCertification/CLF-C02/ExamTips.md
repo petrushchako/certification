@@ -1,6 +1,6 @@
 # Examp tips
 
-### Chapter 2
+### Chapter 2<br>Foundation of Cloud Computing
 - Learn service cathegories (EC2-Compute service, VPC-Networking service, etc)
 - Read the AWS Service Whitepaper
 - Undestand six advantages of the cloud as well as benefits and terminology
@@ -17,3 +17,8 @@
 - The root user has power that no other user has
 - The CLI and SDKs are other options to manage AWS resources.
 - Know hot to protect root user (MFA, and create Admin user for daily tasks)
+
+<br>
+
+### Chapter 3<br>Compute Technology and Services
+- 
