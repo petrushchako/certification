@@ -21,4 +21,6 @@
 <br>
 
 ### Chapter 3<br>Compute Technology and Services
+- Know EC2 pricing options: On-Demand, Spot, Reserved instances, Dedicated Hosts and Savings Plans
+- Real world usage: deploying a database or a web application
 - 
