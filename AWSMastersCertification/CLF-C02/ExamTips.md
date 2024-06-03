@@ -23,4 +23,7 @@
 ### Chapter 3<br>Compute Technology and Services
 - Know EC2 pricing options: On-Demand, Spot, Reserved instances, Dedicated Hosts and Savings Plans
 - Real world usage: deploying a database or a web application
+- Understand the difference between horizontal and vertical scaling
+- The benefits of auto scaling
+- Know the types of load balancers: Classic, Applciation, Gateway and Network
 - 
