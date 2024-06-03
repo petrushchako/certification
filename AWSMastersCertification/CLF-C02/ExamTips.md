@@ -26,4 +26,5 @@
 - Understand the difference between horizontal and vertical scaling
 - The benefits of auto scaling
 - Know the types of load balancers: Classic, Applciation, Gateway and Network
-- 
+- Understand how to connect to an EC2 isntance from the console
+- Know the various ways to connect to a Linux EC2 instance: Instance Connect, SSH and System Manager.
