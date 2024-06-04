@@ -30,4 +30,5 @@
 - Know the various ways to connect to a Linux EC2 instance: Instance Connect, SSH and System Manager.
 - Know the difference between Elastic Container Service and Elastic Kubernetes Service
 - Understand when you would use containers: "Lift and shift", microservices architecture, CI/CD and refactoring applications.
-- 
+- Know your responsibility when using serverless services like Lambda. You are responsible for your code only. AWS manages servers, the environment, and language support.
+- Understand that Fargate is considered serverless and is used to manage containers.
