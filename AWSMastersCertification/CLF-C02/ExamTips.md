@@ -28,3 +28,5 @@
 - Know the types of load balancers: Classic, Applciation, Gateway and Network
 - Understand how to connect to an EC2 isntance from the console
 - Know the various ways to connect to a Linux EC2 instance: Instance Connect, SSH and System Manager.
+- Know the difference between Elastic Container Service and Elastic Kubernetes Service
+- Understand when you would use containers: "Lift and shift", microservices architecture, CI/CD and refactoring applications.
