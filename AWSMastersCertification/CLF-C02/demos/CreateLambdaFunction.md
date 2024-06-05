@@ -20,20 +20,21 @@ Note: There have been UI changes to the Lambda console. Please keep this in mind
 6. Once the function has been created, scroll down to the Code tab.
 7. Under Code source, select `lambda_function.py`.
 8. Replace the existing sample code with the following:
-```python
-import json
+   
+    ```python
+    import json
 
-def lambda_handler(event, context):
-    message = 'Hello {} {}! Keep being awesome!'.format(event['first_name'], event['last_name'])  
+    def lambda_handler(event, context):
+        message = 'Hello {} {}! Keep being awesome!'.format(event['first_name'], event['last_name'])  
 
-    #print to CloudWatch logs
-    print(message)
+        #print to CloudWatch logs
+        print(message)
 
-    return {
-        'message' : message
-    }  
-```
-9. Click `Deploy`.
+        return {
+            'message' : message
+        }  
+    ```
+9.  Click `Deploy`.
 
 <br>
 
