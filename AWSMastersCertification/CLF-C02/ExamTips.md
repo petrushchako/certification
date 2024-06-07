@@ -26,12 +26,15 @@
 - Understand the difference between horizontal and vertical scaling
 - The benefits of auto scaling
 - Know the types of load balancers: Classic, Applciation, Gateway and Network
-- Understand how to connect to an EC2 isntance from the console
-- Know the various ways to connect to a Linux EC2 instance: Instance Connect, SSH and System Manager.
-- Know the difference between Elastic Container Service and Elastic Kubernetes Service
+- Understand how to connect to an `EC2` isntance from the console
+- Know the various ways to connect to a Linux `EC2` instance: Instance Connect, SSH and System Manager.
+- Know the difference between `Elastic Container Service` and `Elastic Kubernetes Service`
 - Understand when you would use containers: "Lift and shift", microservices architecture, CI/CD and refactoring applications.
-- Know your responsibility when using serverless services like Lambda. You are responsible for your code only. AWS manages servers, the environment, and language support.
-- Understand that Fargate is considered serverless and is used to manage containers.
-- Know Lambda has an Always Free tier that includes million requests a month.
-- Know Fargate has no upfront costs. Pay only for the resources used (vCPU, memory and storage)
-- 
+- Know your responsibility when using serverless services like `Lambda`. You are responsible for your code only. AWS manages servers, the environment, and language support.
+- Understand that `Fargate` is considered serverless and is used to manage containers.
+- Know `Lambda` has an Always Free tier that includes million requests a month.
+- Know `Fargate` has no upfront costs. Pay only for the resources used (vCPU, memory and storage)
+- `Outposts` support hybrid deployment models
+- `Lightsail` is a compute service used to quickly launch small projects
+- `Batch` is compute service that processes large workloads in smaller batches
+- `Wavelength` allows users t mobile network
