@@ -38,3 +38,11 @@
 - `Lightsail` is a compute service used to quickly launch small projects
 - `Batch` is compute service that processes large workloads in smaller batches
 - `Wavelength` allows users t mobile network
+
+<br>
+
+### Chapter 4<br>Storage Technology and Services
+- Understand the difference between `EBS`(lock level storage used with EC2 instances), `EFS`(file system scalable across multiple EC2 instances) and `Instance Stores`(provides temporary block level storage directly attached to the instance)
+- Know that only `EBS` and `EFS` offer durable storage solutions.
+Instance store's data is ephemeral, meaning the data doesn't persist after the instance stops or terminates.<br>While all three offer high performance, `EBS` is particularly known for its provisioned IOPS, `EFS` is scalable file storage, and instance store for a high I/O operation's suitable for temporary data.
+- Remember that while `EBS` and `EFS` have costs associated with the amount of storage provisioned, `instance store` comes at no additional cost, as it's included in the instance price.
