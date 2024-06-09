@@ -46,3 +46,7 @@
 - Know that only `EBS` and `EFS` offer durable storage solutions.
 Instance store's data is ephemeral, meaning the data doesn't persist after the instance stops or terminates.<br>While all three offer high performance, `EBS` is particularly known for its provisioned IOPS, `EFS` is scalable file storage, and instance store for a high I/O operation's suitable for temporary data.
 - Remember that while `EBS` and `EFS` have costs associated with the amount of storage provisioned, `instance store` comes at no additional cost, as it's included in the instance price.
+- Understand that `S3` is object storage
+- `S3` provides durability, scalability, security and versatility
+- Know that each object stored in S3 has data, a key (unique within a bucket) and metadata.
+- 
