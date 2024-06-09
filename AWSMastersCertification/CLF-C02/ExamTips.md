@@ -49,4 +49,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand that `S3` is object storage
 - `S3` provides durability, scalability, security and versatility
 - Know that each object stored in S3 has data, a key (unique within a bucket) and metadata.
+- Understand the difference of retrieval times and fee differences between classes. 
+- Know if there is one or more AZ for data storage.
 - 
