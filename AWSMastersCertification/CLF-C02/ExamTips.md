@@ -51,4 +51,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Know that each object stored in S3 has data, a key (unique within a bucket) and metadata.
 - Understand the difference of retrieval times and fee differences between classes. 
 - Know if there is one or more AZ for data storage.
-- 
+- Understand `S3` **Bucket naming**. Remember that S3 Bucket name has to be globally unique. Permission are deny all by default, if it is not explicitly allowed, the action will be denied. Encryption comes in by default, so any object stored in `S3` will be encrypted and protected if someone tries to access it. 
+- `S3 Bucket` object versioning allow you to download previous version of an object.
+- Understand `S3 Lifecycle Policies`, they are the process of transitioning object between storage classes (i.e. Standard to Glacier) or deleting files once ceratin condition is met. 
