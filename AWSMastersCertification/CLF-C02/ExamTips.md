@@ -54,3 +54,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand `S3` **Bucket naming**. Remember that S3 Bucket name has to be globally unique. Permission are deny all by default, if it is not explicitly allowed, the action will be denied. Encryption comes in by default, so any object stored in `S3` will be encrypted and protected if someone tries to access it. 
 - `S3 Bucket` object versioning allow you to download previous version of an object.
 - Understand `S3 Lifecycle Policies`, they are the process of transitioning object between storage classes (i.e. Standard to Glacier) or deleting files once ceratin condition is met. 
+- Understand that `FSx` is for Windows primarelly.
+- `Elastic Disaster Recovery` is about swift recovery
+- Know that `FSx` offers seamless integration
+- Know that `Elastic Disaster Recovery` (DRS) is cost effective.
