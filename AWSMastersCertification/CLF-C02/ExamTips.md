@@ -58,4 +58,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Elastic Disaster Recovery` is about swift recovery
 - Know that `FSx` offers seamless integration
 - Know that `Elastic Disaster Recovery` (DRS) is cost effective.
-- 
+- Understand that `Elastic Block Storage (EBS)` is persistent storage.
+- Understand when you might want to use SSD (high IOPS) or HDD (high throughput) volumes
+- Know the importance of `EBS snashots` for data recovery.
