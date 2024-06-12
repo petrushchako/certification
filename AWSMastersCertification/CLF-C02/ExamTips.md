@@ -58,3 +58,4 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Elastic Disaster Recovery` is about swift recovery
 - Know that `FSx` offers seamless integration
 - Know that `Elastic Disaster Recovery` (DRS) is cost effective.
+- 
