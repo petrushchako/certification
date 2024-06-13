@@ -63,4 +63,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Know the importance of `EBS snashots` for data recovery.
 - Understand `Storage Gateway` is hybrid storage service. The Types are **S3 File, FSx File, Volume, Tape**
 - Know that `Storage  Gateway` is cost-effective, secure and offers seamless integration. Use cases are data backup, disaster ricovery and data processing. 
-- 
+- Understand that `AWS Backup` offers automated and centralized data protection. It integrates with various AWS Services
+- Know `AWS Backup` provides security and compliance.
+- Know that **Recovery process** allows you to restore.
