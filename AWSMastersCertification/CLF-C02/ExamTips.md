@@ -61,3 +61,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand that `Elastic Block Storage (EBS)` is persistent storage.
 - Understand when you might want to use SSD (high IOPS) or HDD (high throughput) volumes
 - Know the importance of `EBS snashots` for data recovery.
+- Understand `Storage Gateway` is hybrid storage service. The Types are **S3 File, FSx File, Volume, Tape**
+- Know that `Storage  Gateway` is cost-effective, secure and offers seamless integration. Use cases are data backup, disaster ricovery and data processing. 
+- 
