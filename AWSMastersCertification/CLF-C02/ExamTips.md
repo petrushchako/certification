@@ -74,4 +74,8 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - What is an `Edge Location`. Understand that `Edge Location` is a data center that is nearest the user requesting your content.
 - Know of `CloudFront`'s integration with other AWS services for an optimized delivery network.
 - Real-world applications of `CloudFront` include streaming and e-commerce.
-- 
+- Understand the core function of `AWS Global Accelerator`. It improves application performance and availability by driecting traffic through Amazon's high-speed private global network.
+- Be clear on when `Global Accelerator` is a must-have. It shines in cases of global user basis, high-traffic events, and multi-region applications.
+- Also recognize how Global Accelerator simplifies traffic management across multiple regions acting as a single point and thus reducing the complexity of handling global network traffic. 
+- Don't forget about `Global Accelerator's` built-in DDoS protection and automatic failover capabilites.
+- Also understand how `Global Accelerator` integrates with other AWS services such as `Elastic Load Balancer`, `EC2` and `S3`
