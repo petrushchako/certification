@@ -66,3 +66,12 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand that `AWS Backup` offers automated and centralized data protection. It integrates with various AWS Services
 - Know `AWS Backup` provides security and compliance.
 - Know that **Recovery process** allows you to restore.
+
+<br>
+
+### Chapter 5<br>Content Delivery and Networking Technology and Services
+- Untderstand the benefits of a `CDN`, especially `CloudFront`.
+- What is an `Edge Location`. Understand that `Edge Location` is a data center that is nearest the user requesting your content.
+- Know of `CloudFront`'s integration with other AWS services for an optimized delivery network.
+- Real-world applications of `CloudFront` include streaming and e-commerce.
+- 
