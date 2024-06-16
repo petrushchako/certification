@@ -79,3 +79,8 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Also recognize how Global Accelerator simplifies traffic management across multiple regions acting as a single point and thus reducing the complexity of handling global network traffic. 
 - Don't forget about `Global Accelerator's` built-in DDoS protection and automatic failover capabilites.
 - Also understand how `Global Accelerator` integrates with other AWS services such as `Elastic Load Balancer`, `EC2` and `S3`
+- Know that a `Virtual Private Cloud` allow you to provision a logically isolated section of AWS cloud.
+- Understand that within a `VPC`, you can launch AWS resources in a virtual network that you define.
+- Understand the roles and responsibilities of `Subnets`, `Routing Tables` and `Internet Gateways`
+- Know the significance of `Security Groups` and `Network Access Control Lists`
+- Know the difference between `Public` and `Private Subnets`
