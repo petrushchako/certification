@@ -84,3 +84,9 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand the roles and responsibilities of `Subnets`, `Routing Tables` and `Internet Gateways`
 - Know the significance of `Security Groups` and `Network Access Control Lists`
 - Know the difference between `Public` and `Private Subnets`
+- Remember `DNS` translates human-friendly domain names into machine-readable IP addresses. 
+- Know that `Route 53` provides diverse traffic routing options. It includes simple routing, geolocation routing and latency-based routing. 
+- Understand that `Route 53`'s health checks monitor the health and performance of your resources. They ensure traffic is only directed to healthy endpoints. 
+- Know that within a `VPC`, `Route 53` can be used to manage the `DNS` of your AWS resources, providing a private internal `DNS` service that is accessible only within your `VPC`.
+- `Route 53` is not just for `DNS` queries, but also for managing global traffic. It is capable of directing users to the neares or most optimal region, enhancing the global reach and performance of your applications. 
+- `Route 53` also allows for domain name registration management. Understand its role is not just routing traffic, but also in securing and managing domain names directly linked to your AWS resources. 
