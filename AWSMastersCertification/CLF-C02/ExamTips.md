@@ -90,3 +90,9 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Know that within a `VPC`, `Route 53` can be used to manage the `DNS` of your AWS resources, providing a private internal `DNS` service that is accessible only within your `VPC`.
 - `Route 53` is not just for `DNS` queries, but also for managing global traffic. It is capable of directing users to the neares or most optimal region, enhancing the global reach and performance of your applications. 
 - `Route 53` also allows for domain name registration management. Understand its role is not just routing traffic, but also in securing and managing domain names directly linked to your AWS resources. 
+- Remember, `Direct Connect` provides a dedicated private connection to AWS. It's ideal for large-scale data transfers and offers consistent network performance.
+- Know the two types of `VPN`s, `site-to-site` and `client` `VPN`. `Site-to-site VPN` is used for connecting entire networks to AWS, while `client VPN` is for individual remote access.
+- Understand that `Direct Connect` is preferable for heavy, consistent data transfer requirements.
+- `VPN` is suitable for secure remote connectivity.
+- Consider factors like data volume, security requirements, and setup flexibility when choosing between them.
+- Recognize the security offer by `VPN` through encryption, and recognize `Direct Connect` provides a more stable and faster connection.
