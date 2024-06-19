@@ -105,4 +105,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Remember that `MemoryDB` is an in-memory database, and that `ElastiCache` is an in-memory data store and cache service.
 - Understand the difference between `Database Migration Service (DMS)` (moving DB) and `Schema Conversion Tool (SCT)` (converting DB to AWS compatible)
 - Know when and why `Database Migration` is necessary and the benefits of using `DMS`.
-- 
+- `DynamoDB` is a no SQL service, perfect for flexible, scalable, and fast data management. It's used in web apps, gaming, IoT and more for its low latency and high performance.
+- Know some of `DynamoDB` key features, scalability, performance security, and Restoreability.
