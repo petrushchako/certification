@@ -107,3 +107,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Know when and why `Database Migration` is necessary and the benefits of using `DMS`.
 - `DynamoDB` is a no SQL service, perfect for flexible, scalable, and fast data management. It's used in web apps, gaming, IoT and more for its low latency and high performance.
 - Know some of `DynamoDB` key features, scalability, performance security, and Restoreability.
+- Understand the `MemoryDB` offers ultra-fast performance. `MemoryDB` delivers data access in microseconds.
+- `MemoryDB` is fully compatible with `Redis` data structures and APIs.
+- Know that `MemoryDB` automatically replicates data across multiple AWS availability zones.
+- It's ideal for real-time analytics, session stores, and gaming leaderboards.
