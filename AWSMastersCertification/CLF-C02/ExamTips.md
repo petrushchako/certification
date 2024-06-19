@@ -96,3 +96,11 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `VPN` is suitable for secure remote connectivity.
 - Consider factors like data volume, security requirements, and setup flexibility when choosing between them.
 - Recognize the security offer by `VPN` through encryption, and recognize `Direct Connect` provides a more stable and faster connection.
+
+<br>
+
+### Chapter 6<br>Database Technology and Services
+- Understand the differences between relational, NoSQL, and in-memory databases. Relational databases are structured, NoSQL offers flexibility, and in-memory databases provide speed.
+- Know the different database services we talked about that are associated with AWS.
+- Remember that MemoryDB is an in-memory database, and that ElastiCache is an in-memory data store and cache service.
+- 
