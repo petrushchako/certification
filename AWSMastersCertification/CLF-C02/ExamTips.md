@@ -102,5 +102,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 ### Chapter 6<br>Database Technology and Services
 - Understand the differences between relational, NoSQL, and in-memory databases. Relational databases are structured, NoSQL offers flexibility, and in-memory databases provide speed.
 - Know the different database services we talked about that are associated with AWS.
-- Remember that MemoryDB is an in-memory database, and that ElastiCache is an in-memory data store and cache service.
+- Remember that `MemoryDB` is an in-memory database, and that `ElastiCache` is an in-memory data store and cache service.
+- Understand the difference between `Database Migration Service (DMS)` (moving DB) and `Schema Conversion Tool (SCT)` (converting DB to AWS compatible)
+- Know when and why `Database Migration` is necessary and the benefits of using `DMS`.
 - 
