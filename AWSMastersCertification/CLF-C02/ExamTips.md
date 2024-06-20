@@ -118,4 +118,8 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 ## Chapter 7<br>Development, Messaging, and Deployment Technology and Services
 - `Continuous Integration` - integrating or merging small code changes frequently - at least once per day
 - `Continous Development` - aumating the build, test and deployment functions. 
+- `CodeCommit` - Source control service enabling teams to collaborate on code, html pages, scripts, images and binaries
+- `CodeBuild` - compiles source code, runs tests and produces packages that are ready to deploy
+- `CodeDeploy` - automates code deployments, e.g. to EC2, Lambda and on-premises servers.
+- `CodePipeline` end-to-end solution, build, test and deploy your application every time there is a code change.
 - 
