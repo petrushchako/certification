@@ -122,4 +122,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `CodeBuild` - compiles source code, runs tests and produces packages that are ready to deploy
 - `CodeDeploy` - automates code deployments, e.g. to EC2, Lambda and on-premises servers.
 - `CodePipeline` end-to-end solution, build, test and deploy your application every time there is a code change.
+- `CodeArtifact` - an artifact repository that makes it easy for developers to find the software versions they need. Artifacts like documentation, compiled applications, deployable packages and libraries. 
 - 
