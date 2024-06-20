@@ -115,7 +115,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 
 <br>
 
-## Chapter 7<br>Development, Messaging, and Deployment Technology and Services
+### Chapter 7<br>Development, Messaging, and Deployment Technology and Services
 - `Continuous Integration` - integrating or merging small code changes frequently - at least once per day
 - `Continous Development` - aumating the build, test and deployment functions. 
 - `CodeCommit` - Source control service enabling teams to collaborate on code, html pages, scripts, images and binaries
