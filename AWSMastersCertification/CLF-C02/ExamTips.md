@@ -111,3 +111,11 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `MemoryDB` is fully compatible with `Redis` data structures and APIs.
 - Know that `MemoryDB` automatically replicates data across multiple AWS availability zones.
 - It's ideal for real-time analytics, session stores, and gaming leaderboards.
+
+
+<br>
+
+## Chapter 7<br>Development, Messaging, and Deployment Technology and Services
+- `Continuous Integration` - integrating or merging small code changes frequently - at least once per day
+- `Continous Development` - aumating the build, test and deployment functions. 
+- 
