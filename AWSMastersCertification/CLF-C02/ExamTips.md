@@ -143,3 +143,10 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - Messages are delivered once.
   - No duplicates.
   - Good for banking transactions which need to happen in a strict order.
+- `Simple Queue Service Short Polling`
+  - A response is returned immediately even if no messages are in the queue
+  - A cost per response
+- `Simple Queue Service Long Polling`
+  - Periodically poll the queue and only return a response when a message is in queue or the timeout is reached.
+  - Most cost effective option.
+- 
