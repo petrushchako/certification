@@ -130,3 +130,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Simple Notification Service` allows you to send or push notifications (SMS and emails)
 - `Simple Notification Service` uses **pub-sub** model. Subscribers must subscribe to a topic in order to receive notifications.
 - `Simple Notification Service` topic is an access point, allowing subscribers to receive notifications.
+- `Simple Queue Service` is a distributed message queueing system
+- `Simple Queue Service` allow you to decouple the components of an application so that they are independent
+- `Simple Queue Service` is a pull-based, not the push-based service, meaning that consumers pull message(s) from the queue when they're ready.
