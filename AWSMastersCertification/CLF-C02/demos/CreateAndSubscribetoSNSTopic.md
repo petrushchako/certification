@@ -69,4 +69,3 @@
 27. Under `Alarms`, click on `EC2State`.
 28. It may take a few minutes before the state shows `In alarm`. Click on the refresh icon in the top-right corner until the status changes.
 29. Navigate back to the your inbox and confirm you received the AWS notification regarding the alarm state.
-30. 
