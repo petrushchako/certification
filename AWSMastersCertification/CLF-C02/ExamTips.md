@@ -133,3 +133,13 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Simple Queue Service` is a distributed message queueing system
 - `Simple Queue Service` allow you to decouple the components of an application so that they are independent
 - `Simple Queue Service` is a pull-based, not the push-based service, meaning that consumers pull message(s) from the queue when they're ready.
+- `Simple Queue Service Standard queue`
+  - Best-effort ordering.
+  - Message delivered at least once.
+  - Occasional duplicates.
+  - Default queue type.
+- `Simple Queue Service FIFO queue`
+  - First-in-first-out message order is strictly preserved.
+  - Messages are delivered once.
+  - No duplicates.
+  - Good for banking transactions which need to happen in a strict order.
