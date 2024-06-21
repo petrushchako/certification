@@ -149,4 +149,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Simple Queue Service Long Polling`
   - Periodically poll the queue and only return a response when a message is in queue or the timeout is reached.
   - Most cost effective option.
+- `Simple Email Service (SES)` allows you to send richly formatted HTML emails from your applications.
+- `Simple Email Service (SES)` is commonly used for marketing campaigns or confirmation of an order
+- `Simple Notification Service (SNS)` allows you to send or push notifications, e.g. SMS text messages and plain text emails.
 - 
