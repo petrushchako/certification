@@ -127,3 +127,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - **Coupling** interdependencies or connections between components of a system.
 - **Tight coupling** Different parts of the system are highly dependent on each other. If one part fails, it could bring the whole system down.
 - **Loose coupling** Decoupled components can be connected to each other but are not dependent on each other.
+- `Simple Notification Service` allows you to send or push notifications (SMS and emails)
+- `Simple Notification Service` uses **pub-sub** model. Subscribers must subscribe to a topic in order to receive notifications.
+- `Simple Notification Service` topic is an access point, allowing subscribers to receive notifications.
