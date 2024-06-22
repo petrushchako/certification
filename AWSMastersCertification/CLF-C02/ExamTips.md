@@ -156,4 +156,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `EventBridge`. Rules match events and route them to the correct target.
 - `EventBridge`. Targets respond by taking some action, like sending an `SNS` notification.
 - `EventBridge` scheduled events let us schedule an action in advance, e.g. run process one a week or month.
+- `Step Functions` provide a great way to visualize your serverless application.
+- `Step Functions` automatically trigger and track each step.
+- `Step Functions` log the state of each step, so you can track what went wrong and where.
 - 
