@@ -159,4 +159,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Step Functions` provide a great way to visualize your serverless application.
 - `Step Functions` automatically trigger and track each step.
 - `Step Functions` log the state of each step, so you can track what went wrong and where.
+- `CloudFormation` lets you deploy AWS resources using an **Infrastructure as Code** approach
+- `CloudFormation` resources are defined using template written in **YAML** or **JSON**
+- `CloudFormation` allows you to quickly provision AWS resources in a consistent way, with less effort. 
 - 
