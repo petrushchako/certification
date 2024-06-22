@@ -162,4 +162,8 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `CloudFormation` lets you deploy AWS resources using an **Infrastructure as Code** approach
 - `CloudFormation` resources are defined using template written in **YAML** or **JSON**
 - `CloudFormation` allows you to quickly provision AWS resources in a consistent way, with less effort. 
+- `Elastic Beanstalk` deploys ans scales your web applications, including the web application server platform.
+- `Elastic Beanstalk` provisions the AWS resources for you, e.g. EC2, RDS, S3, Elastic Load Balancer, Auto Scaling Groups, etc.
+- `Elastic Beanstalk` supports **Java, .NET, PHP, Node.js, Python, Ruby, Go, Apache Tomcat, IIS, Nginx, Docker**.
+- `Elastic Beanstalk` provides OS and application server updates. Monitoring metrics, and health checks are also included.
 - 
