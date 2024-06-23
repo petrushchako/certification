@@ -175,3 +175,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - **Snowball Edge** you have 10 TB or more to migrate and you also need to process the data.
   - **Snowmobile** you have 10 PT or more to migrate.
   - **Snowcone** small and portable military grade up to 14 TB SSD. 
+- `Database Migration Service` migrates database and analytics workloads to AWS from EC2, on-premises or RDS.
+- `Schema Conversion Tool` converts from one type of databases to another (i.e. Oracle to Aurora MySQL)
