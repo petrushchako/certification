@@ -166,4 +166,12 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Elastic Beanstalk` provisions the AWS resources for you, e.g. EC2, RDS, S3, Elastic Load Balancer, Auto Scaling Groups, etc.
 - `Elastic Beanstalk` supports **Java, .NET, PHP, Node.js, Python, Ruby, Go, Apache Tomcat, IIS, Nginx, Docker**.
 - `Elastic Beanstalk` provides OS and application server updates. Monitoring metrics, and health checks are also included.
-- 
+
+<br>
+
+### Chapter 8<br>Migration and Transfer Technology and Services
+- `Snow Family Services`
+  - **Snowball** you have 10 TB or more to migrate.
+  - **Snowball Edge** you have 10 TB or more to migrate and you also need to process the data.
+  - **Snowmobile** you have 10 PT or more to migrate.
+  - **Snowcone** small and portable military grade up to 14 TB SSD. 
