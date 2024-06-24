@@ -177,3 +177,8 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - **Snowcone** small and portable military grade up to 14 TB SSD. 
 - `Database Migration Service` migrates database and analytics workloads to AWS from EC2, on-premises or RDS.
 - `Schema Conversion Tool` converts from one type of databases to another (i.e. Oracle to Aurora MySQL)
+- `AWS Transfer Family` is all about:
+  - File sharing and transfer with external parties
+  - Files can be transferred out of your storage - e.g. SFTP GET
+  - Files can be transferred in - e.g. SFTP PUT
+  - Multiple protocols supported, like SFTP, AS2, FTPS and FTP.
