@@ -197,3 +197,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - **Automated Lift-and-Shift** Automatically migrates applications to AWS without modifying them.
   - **AWS Replication Agent** Installed on the source server and replicates to a new server in AWS.
   - **Migrate Applications** Running on physical servers, on virtual servers, other cloud providers, and other AWS accounts or regions.
+- `AWS Migration Hub`:
+  - A central place to manage the migration of applications and data into AWS.
+  - Integrated with Application Discovery Service, Application Migration Service, and Database Migration Service.
+  - Group servers together logically so you can plan and track the progress of your migration.
