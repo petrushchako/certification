@@ -193,4 +193,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - A virtual appliance can be deployed on VMware Center systems to avoid using an agent.
   - Server inventory, configuration, operating system, capacity usage, networking.
   - This data can be used to develop a migration plan to move applications and data to AWS.
-- 
+- `Application Migration Service`:
+  - **Automated Lift-and-Shift** Automatically migrates applications to AWS without modifying them.
+  - **AWS Replication Agent** Installed on the source server and replicates to a new server in AWS.
+  - **Migrate Applications** Running on physical servers, on virtual servers, other cloud providers, and other AWS accounts or regions.
