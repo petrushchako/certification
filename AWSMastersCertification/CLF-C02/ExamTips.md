@@ -182,3 +182,9 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - Files can be transferred out of your storage - e.g. SFTP GET
   - Files can be transferred in - e.g. SFTP PUT
   - Multiple protocols supported, like SFTP, AS2, FTPS and FTP.
+- `DataSync`:
+  - Securely transfer TB of data to S3, EFS, FSx
+  - Supports NFS, SMB or object stores
+  - Data can be on premises, in another cloud provider or in AWS storage
+  - Usecases include, migration, replication to low cost storage, archiving and hybrid/multi-cloud
+- 
