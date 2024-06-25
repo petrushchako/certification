@@ -187,4 +187,10 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - Supports NFS, SMB or object stores
   - Data can be on premises, in another cloud provider or in AWS storage
   - Usecases include, migration, replication to low cost storage, archiving and hybrid/multi-cloud
+- `Application Discovery Service`:
+  - Gathers data about your existing on-premises application servers and databases.
+  - Install an agent on each server to collect the data.
+  - A virtual appliance can be deployed on VMware Center systems to avoid using an agent.
+  - Server inventory, configuration, operating system, capacity usage, networking.
+  - This data can be used to develop a migration plan to move applications and data to AWS.
 - 
