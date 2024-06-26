@@ -201,3 +201,16 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - A central place to manage the migration of applications and data into AWS.
   - Integrated with Application Discovery Service, Application Migration Service, and Database Migration Service.
   - Group servers together logically so you can plan and track the progress of your migration.
+
+<br>
+
+## Chapter 9<br>Artificial Intelligence, Machine Learning, and Analytics Technology and Services
+
+- **RedShift**:
+  - Data warehousing service.
+  - Stores huge amounts of data.
+  - Designed for Online Analytics Processing (OLAP).
+
+- **RedShift Serverless**:
+  - Serverless option of RedShift.
+  - No infrastructure management needed.
