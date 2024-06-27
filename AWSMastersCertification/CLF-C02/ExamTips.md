@@ -210,7 +210,12 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - Data warehousing service.
   - Stores huge amounts of data.
   - Designed for Online Analytics Processing (OLAP).
-
 - **RedShift Serverless**:
   - Serverless option of RedShift.
   - No infrastructure management needed.
+- **Kinesis**
+  - Kinesis enables you to collect, process and analyze streaming data in real time
+  - Examples include: website clickstreams, social media feeds, IoT telementry data and stock prices
+  - Kinesis Data Streams and Video Streams
+- **Kinesis Firehouse**
+  - 
