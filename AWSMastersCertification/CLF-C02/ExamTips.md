@@ -218,4 +218,16 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - Examples include: website clickstreams, social media feeds, IoT telementry data and stock prices
   - Kinesis Data Streams and Video Streams
 - **Kinesis Firehouse**
-  - 
+  - Use Cases:
+    - Real-time Analytics
+    - Data Lake Feeding
+    - Log Data Management
+    - IoT Data Integration
+- **Kinesis vs Kinesis Firehose**
+  - **Kinesis Data Streams** capture and store streaming data and video
+  - **Kinesis Data Firehose** captures, fransforms and loads data continuously into data stores.
+- **Athena** is an interactive query service for data in S3.<br>Features:
+  - **Interactive Query** Athena is an interactive query service for data in $3.
+  - **Standard SQL** Allows you to query data stored in $3 using standard SQL.
+  - **Serverless** You don't need to configure any infrastructure to use Athena.
+  - **Use Cases** Querying log files or generating reports from S3 data.
