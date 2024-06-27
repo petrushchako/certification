@@ -206,28 +206,90 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 
 ## Chapter 9<br>Artificial Intelligence, Machine Learning, and Analytics Technology and Services
 
-- **RedShift**:
+- `RedShift`:
   - Data warehousing service.
   - Stores huge amounts of data.
   - Designed for Online Analytics Processing (OLAP).
-- **RedShift Serverless**:
+- `RedShift Serverless`:
   - Serverless option of RedShift.
   - No infrastructure management needed.
-- **Kinesis**
+- `Kinesis`
   - Kinesis enables you to collect, process and analyze streaming data in real time
   - Examples include: website clickstreams, social media feeds, IoT telementry data and stock prices
   - Kinesis Data Streams and Video Streams
-- **Kinesis Firehouse**
+- `Kinesis Firehouse`
   - Use Cases:
     - Real-time Analytics
     - Data Lake Feeding
     - Log Data Management
     - IoT Data Integration
-- **Kinesis vs Kinesis Firehose**
-  - **Kinesis Data Streams** capture and store streaming data and video
-  - **Kinesis Data Firehose** captures, fransforms and loads data continuously into data stores.
-- **Athena** is an interactive query service for data in S3.<br>Features:
+- `Kinesis vs Kinesis Firehose`
+  - `Kinesis Data Streams` capture and store streaming data and video
+  - `Kinesis Data Firehose` captures, fransforms and loads data continuously into data stores.
+- `Athena` is an interactive query service for data in S3.<br>Features:
   - **Interactive Query** Athena is an interactive query service for data in $3.
   - **Standard SQL** Allows you to query data stored in $3 using standard SQL.
   - **Serverless** You don't need to configure any infrastructure to use Athena.
   - **Use Cases** Querying log files or generating reports from S3 data.
+- `AWS Glue` perapres your data for analytics and ML
+  - Data Catalog - Including metadata, e.g. the type of data JSON, CSV, XML etc.
+  - Performs ETL (Extract Transform Load)
+  - Extract - From data sources like RDS, S3, Kinesis etc
+  - Transform - Categorize, clean, remove duplicates join multiple data sets.
+  - Load - Load into RDS, RedShift, $3, or Athena for use by your applications.
+- `AWS Data Exchange`
+  - **Subscribe to Data Products** E.g. Financial services, healthcare, weather, manufacturing and telecommunications.
+  - **Use Cases** - Analyze customer spending patterns based on geographic location, using data from Mastercard.
+  - **Create Your Own Data Products** You can publish your own data product and let other accounts subscribe.
+- `AWS Elastic Map Reduce (EMR)`
+  - **Fully managed Big Data** supports open-source technology like Apache Spark, Apache Hive, Presto and Hadoop
+  - **Petabyte Scale** Parallel data processing and analysis for structured, semi- structured and unstructured data.
+  - **Use cases** Find patterns in genomic data, identify preferences from click-stream or analyze application log data.
+- `AWS OpenSearch`:
+  - **Fully Managed Elasticsearch**, based on open-source technology
+  - Compatible with industry standard Elasticsearch open-source APIs, Logstash and Kibana.
+  - Ingest data from AWS services like `CloudWatch Logs`, `S3`, and `DynamoDB`.
+  - Use cases: Log Analytics Application Monitoring Security Analytics Business Data Analytics
+- `AWS Managed Streaming for Apache Kafka (Amazon MSK)`
+  - Fully managed Apache Kafka
+  - Process streams of events from hundreds of event sources
+  - Real-time data streaming application
+  - Use cases: Track and analyze stock market data in real-time
+- `Amazon QuickSight`
+  - A business analytics service, which lets you make better decisions based on your data
+  - Connect to AWS data and on-premises data sources
+  - Build dashboards to visualize your data
+  - Use Cases: Analyze sales performance and trends, application usage and traffic, and marketing campaign data
+- `AWS SageMaker` is a fully managed Machine Learning service
+  - Import and prepare your data
+  - Build your ML model
+  - Train your model using optimized infrastructure
+  - Deploy your model
+- `Kendra` an intelligent search service
+  - Natural Language Processing (query your data with natural language)
+  - Customized Search (Search your data to find answers)
+  - **Add Custom Search** Users can search based on your data
+  - **Query** Natural Language Processing
+  - **Data Source** S3, FSx, RDS, databases, GitHub, Google Drive
+  - **Data Types** Unstructured or semi-structured
+  - **Simple Fact-Based** Who, what, where?
+  - **Descriptive** How do return a faulty item?
+- `AWS Lex` Lex allows you to build conversational interfaces in your applications using natural language models.
+  - Know `Lex` useed to build conversational chatbots
+  - Understand that `Lex` uses natural language models
+- `AWS Polly` Generate realistic natural sounding speech, from text that you provide (text to speach)
+  - You can provide the text in a variety of languages.
+  - The resulting audio can be streamed, saved, or downloaded.
+  - Can be used to add natural sounding speech to your applications.
+- `AWS Comprehend`
+  - Uses Natural Language Processing (NLP) to process text
+  - Sentiment Analysis
+  - Discover key phrases, topics and languages
+  - Intelligent Search
+- `Textract`, `Transcribe` and `Translate`
+  - **Machine Learning** Perform automated document processing reducing manual effort 
+  - **Amazon Textract** Extracts text and information from documents
+  - **Amazon Transcribe** Speech-to-text service that takes speech as input and transcribes it to text
+  - **Amazon Translate** Accurate, natural sounding language translation
+- `AWS Rekognition` used to analyse images to identify text, objects and people
+- 
