@@ -292,4 +292,11 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   - **Amazon Transcribe** Speech-to-text service that takes speech as input and transcribes it to text
   - **Amazon Translate** Accurate, natural sounding language translation
 - `AWS Rekognition` used to analyse images to identify text, objects and people
-- 
+
+<br>
+
+## Chapter 10<br>Auditing, Monitoring, Logging, and Additional Technology and Services
+- Understand the differences between metrics, logs, and configurations.
+- Know examples of metrics and logs, and how they are used.
+- Be familiar with the role of configuration management in security and operational excellence.
+- Relate monitoring and logging practices to the six pillars of the Well-Architected Framework.
