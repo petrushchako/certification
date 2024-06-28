@@ -204,7 +204,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 
 <br>
 
-## Chapter 9<br>Artificial Intelligence, Machine Learning, and Analytics Technology and Services
+### Chapter 9<br>Artificial Intelligence, Machine Learning, and Analytics Technology and Services
 
 - `RedShift`:
   - Data warehousing service.
@@ -295,7 +295,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 
 <br>
 
-## Chapter 10<br>Auditing, Monitoring, Logging, and Additional Technology and Services
+### Chapter 10<br>Auditing, Monitoring, Logging, and Additional Technology and Services
 - Understand the differences between metrics, logs, and configurations.
 - Know examples of metrics and logs, and how they are used.
 - Be familiar with the role of configuration management in security and operational excellence.
