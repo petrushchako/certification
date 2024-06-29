@@ -301,4 +301,7 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Keep the Well-Architected Framework pillars in mind as we continue through this section.
 - Understand the difference between `CloudTrail` and `CloudWatch`, and how they each contribute to observability and security.
 - Understand what a `CloudWatch` dashboard is and how you can set alarms on them.
+- Understand how to create a `CloudWatch` dashboard from the console
+- Know that by default `CloudWatch` log groups are retained indefinitely.
+- To monitor application logs, you can create a `CloudWatch Log group` and send application logs to created group using AWS SDK. 
 - 
