@@ -299,3 +299,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand why it is important to collect logs and metrics on AWS
 - Understand the differences between metrics, logs, and configurations.
 - Keep the Well-Architected Framework pillars in mind as we continue through this section.
+- Understand the difference between `CloudTrail` and `CloudWatch`, and how they each contribute to observability and security.
+- Understand what a `CloudWatch` dashboard is and how you can set alarms on them.
+- 
