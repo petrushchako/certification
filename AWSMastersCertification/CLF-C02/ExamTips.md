@@ -304,4 +304,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand how to create a `CloudWatch` dashboard from the console
 - Know that by default `CloudWatch` log groups are retained indefinitely.
 - To monitor application logs, you can create a `CloudWatch Log group` and send application logs to created group using AWS SDK. 
-- 
+- Undesrtand how `Tags` can help you sort and visualize your cloud resources on AWS.
+- `Systems Manager` allow you to track resource groups and perform automated actions. 
