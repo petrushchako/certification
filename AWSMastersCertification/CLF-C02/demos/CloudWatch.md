@@ -23,14 +23,23 @@ In this lab you will be taking on the role of a cloud operations expert that is 
     - *Aggregate* `by: Average`
     - *columns*: `1`
     - *rows*: `1`
+
+    ![](../img/CloudWatch-MetricsExplorer.png)
+
 4. Select the `context menu` (3 vertical dots) at the top of the `All resources - CPUUtilization` widget.
 5. Select `View` in metrics.
 6. Find and select the `Pencil Icon` next to the title `All resources - CPUUtilization`.
 7. Enter `Prod EC2 - CPUUtilization` in the `Rename Graph` field.
 8. Select `Apply`.
+
+    ![](../img/CloudWatch-Matrics.png)
+
 9.  From the `Actions` dropdown, select `Add to dashboard`.
 10. Select `my-ec2-dashboard` under `Select a dashboard`.
 11. Click `Add to dashboard`.
+
+    ![](../img/CloudWatch-AddToDashboard.png)
+
 12. At the top right of the screen select `Save`.
 
 
