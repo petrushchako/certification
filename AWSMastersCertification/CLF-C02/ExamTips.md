@@ -306,3 +306,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - To monitor application logs, you can create a `CloudWatch Log group` and send application logs to created group using AWS SDK. 
 - Undesrtand how `Tags` can help you sort and visualize your cloud resources on AWS.
 - `Systems Manager` allow you to track resource groups and perform automated actions. 
+- `AWS Health Dashboard` or `Health API` are used to monitor services health
+- `Trusted Advisor` is the best practice monitoring suggestion tool. 
