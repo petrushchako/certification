@@ -308,3 +308,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Systems Manager` allow you to track resource groups and perform automated actions. 
 - `AWS Health Dashboard` or `Health API` are used to monitor services health
 - `Trusted Advisor` is the best practice monitoring suggestion tool. 
+- `AWS Config` is the backbone of configuration auditing on AWS. You can use it to set rules and detect non-compliant resources.
+- `Audit Manager` and `The Well-Architected Tool` help you assess your AWS resources to achieve best practices and compliance standards. 
+- 
