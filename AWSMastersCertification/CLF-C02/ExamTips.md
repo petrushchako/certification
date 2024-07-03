@@ -310,4 +310,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Trusted Advisor` is the best practice monitoring suggestion tool. 
 - `AWS Config` is the backbone of configuration auditing on AWS. You can use it to set rules and detect non-compliant resources.
 - `Audit Manager` and `The Well-Architected Tool` help you assess your AWS resources to achieve best practices and compliance standards. 
-- 
+- `Amazon Connect` is a Business Service that allows you to provision a contact center in the cloud.
+- `WorkSpaces` and `AppStream` are End User Services that enable you to give access to virtual desktops and applications hosted on AWS.
