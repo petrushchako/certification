@@ -320,4 +320,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - The `Shared Responsibility Model` is divided into two groups:
   1. The **customer** is responsible for security `IN` the cloud
   2. `AWS` is responsible for security `OF` the cloud
-- 
+- Know that the `principle of least privilege` states you should grant only permissions needed to complete a task.
+- Understand that `IAM` is the key AWS service for `Identity and Access Management`, and it allows you to assign granular permissions.
