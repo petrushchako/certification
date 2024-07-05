@@ -320,3 +320,4 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - The `Shared Responsibility Model` is divided into two groups:
   1. The **customer** is responsible for security `IN` the cloud
   2. `AWS` is responsible for security `OF` the cloud
+- 
