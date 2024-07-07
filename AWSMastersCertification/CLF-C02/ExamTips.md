@@ -322,3 +322,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
   2. `AWS` is responsible for security `OF` the cloud
 - Know that the `principle of least privilege` states you should grant only permissions needed to complete a task.
 - Understand that `IAM` is the key AWS service for `Identity and Access Management`, and it allows you to assign granular permissions.
+- Know that `IAM policies` can be attached to users, user groups and roles. These are called identity-based policies
+- Understand that long-lasting access keys and passwords are security liabilities. If possible, use `IAM roles` and authomatically rotating keys.
+- 
