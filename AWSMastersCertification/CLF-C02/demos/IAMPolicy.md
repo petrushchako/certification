@@ -13,24 +13,23 @@ In this lab you will be taking on the role of a cloud engineer. You come to real
 
 ## Solution
 ### Upload an object to the S3 bucket
-1. Log in to the AWS Management Console using the credentials provided on the lab instructions page. Make sure you're using the us-east-1 Region.
-2. Navigate to S3
-3. Find and select the S3 Bucket
-4. Copy and store the full name of the S3 Bucket
-5. Find and select Upload
-6. Select Add Files
-7. Select a small text file named test.txt
-8. From the Add Files screen, finalize your upload by selecting Upload
-9. Copy and store the name of your text file
+1. Navigate to `S3`
+2. Find and select the `S3 Bucket`
+3. Copy and store the full name of the `S3 Bucket`
+4. Find and select `Upload`
+5. Select `Add Files`
+6. Select a small text file named `test.txt`
+7. From the Add Files screen, finalize your upload by selecting `Upload`
+8. Copy and store the name of your text file
 
 <br>
 
 ### Connect to the EC2 instance and attempt to get the object
-1. Navigate to EC2
-2. Find and select Instances (running)
-3. Click on the Instance ID
-4. Click Connect
-5. Click Connect
+1. Navigate to `EC2`
+2. Find and select `Instances (running)`
+3. Click on the `Instance ID`
+4. Click `Connect`
+5. Click `Connect`
 6. Enter the command:
 
     ```sh
@@ -40,11 +39,11 @@ In this lab you will be taking on the role of a cloud engineer. You come to real
 <br>
 
 ### Edit the instance’s IAM Policy to allow access to the S3 Bucket
-1. Switch tabs back to EC2
-2. Find and select the IAM Role
-3. Under Permissions Policies select Add permissions and choose "Attach Policies"
-4. From the Search, search for AmazonS3ReadOnlyAccess
-5. Check the box next to AmazonS3ReadOnlyAccess
+1. Switch tabs back to `EC2`
+2. Find and select the `IAM Role`
+3. Under Permissions Policies select `Add permissions` and choose `Attach Policies`
+4. From the Search, search for `AmazonS3ReadOnlyAccess`
+5. Check the box next to `AmazonS3ReadOnlyAccess`
 6. Click Add permissions
 
 <br>
@@ -56,4 +55,4 @@ In this lab you will be taking on the role of a cloud engineer. You come to real
     ```bash
     aws s3api get-object --bucket <INSERT BUCKET NAME> --key test.txt my-test.txt
     ```
-3. Verify the new file is present with the ls command
+3. Verify the new file is present with the `ls` command
