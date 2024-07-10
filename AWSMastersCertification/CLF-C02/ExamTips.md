@@ -337,3 +337,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - `Amazon Inspector`: Continuously scans workloads for vulnerabilities and network exposures.
 - Know that `Amazon GuardDuty` can intelligently detect threats by analyzing logs such as `CloudTrail`, while `Amazon Detective` assists you in investigating security events.
 - Know that `Amazon Inspector` continuously scans your compute workloads such as `EC2`, and detects software and network vulnerabilities.
+- Understand why a company might want multiple accounts, and how `Organizations` can help. `Control Tower` helps you manage your organization and automates guardrails.
+- Know that `Security Hub` can integrate with `Organizations` to centralize security alerts and compliance status across multiple account.
+- 
