@@ -328,3 +328,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand that `Amazon Cognito` allows you to securely authenticate application users, leveraging web identity federation.
 - Understand the difference between encryption in transit and encryption at rest. `S3` is encrypted by default, other services will use `KMS` for encryption at rest.
 - Know that `Systems Manager Parameter Store` and `Secrets Manager` allow you to protect sensitive parameters. Only `Secrets Manager` allows for rotating secrets.
+- Remember that `AWS WAF` can help you protect your web applications from common exploits, such as SQL injection or cross- site scripting.
+- Know that `AWS Shield` protects your AWS resources from DDoS attacks, and `Shield Advanced` provides additional protection and a 24/7 response team.
+- 
