@@ -331,3 +331,9 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Remember that `AWS WAF` can help you protect your web applications from common exploits, such as SQL injection or cross- site scripting.
 - Know that `AWS Shield` protects your AWS resources from DDoS attacks, and `Shield Advanced` provides additional protection and a 24/7 response team.
 - `AWS Security Hub` aggregate findings across your AWS ecosystem. Prioritize security events and determine the best way to take action.
+-  `AWS Trusted Advisor`: Provides best practice recommendations across multiple domains, including security.
+- `Amazon GuardDuty`: Detects active threats in your AWS environment by analyzing logs.
+- `Amazon Detective`: Investigates security events that have already occurred, helping to understand the cause and impact.
+- `Amazon Inspector`: Continuously scans workloads for vulnerabilities and network exposures.
+- Know that `Amazon GuardDuty` can intelligently detect threats by analyzing logs such as `CloudTrail`, while `Amazon Detective` assists you in investigating security events.
+- Know that `Amazon Inspector` continuously scans your compute workloads such as `EC2`, and detects software and network vulnerabilities.
