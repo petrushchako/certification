@@ -339,4 +339,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Know that `Amazon Inspector` continuously scans your compute workloads such as `EC2`, and detects software and network vulnerabilities.
 - Understand why a company might want multiple accounts, and how `Organizations` can help. `Control Tower` helps you manage your organization and automates guardrails.
 - Know that `Security Hub` can integrate with `Organizations` to centralize security alerts and compliance status across multiple account.
+- Understand that `AWS Artifact` enables you to download security and compliance documents to share with regulators or inform architectural decisions.
+- Know that not all AWS services are in scope for all compliance programs. Be aware of how to transfer data or store security keys in highly regulated industries.
 - 
