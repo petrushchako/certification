@@ -341,4 +341,8 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Know that `Security Hub` can integrate with `Organizations` to centralize security alerts and compliance status across multiple account.
 - Understand that `AWS Artifact` enables you to download security and compliance documents to share with regulators or inform architectural decisions.
 - Know that not all AWS services are in scope for all compliance programs. Be aware of how to transfer data or store security keys in highly regulated industries.
-- 
+
+
+### Chapter 12<br>Pricing, Billing and Support
+- Know the appropriate use cases for `reserved instances (RI)` and `spot instances`.
+- Understand that `Compute Optimizer` can be used to right-size your `EC2` Instances.
