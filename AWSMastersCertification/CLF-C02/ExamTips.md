@@ -346,3 +346,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 ### Chapter 12<br>Pricing, Billing and Support
 - Know the appropriate use cases for `reserved instances (RI)` and `spot instances`.
 - Understand that `Compute Optimizer` can be used to right-size your `EC2` Instances.
+- Know the different `S3 Storage Classes` and how you can use lifecycle configurations and the `Intelligent Tiring class` to transition objects from one to another.
+- Understand that `S3 Storage Lens` examine your `S3 buckets organization`- wide to inspect access patterns and provide storage optimization recommendations.
