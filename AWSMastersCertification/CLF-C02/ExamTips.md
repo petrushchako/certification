@@ -350,4 +350,6 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand that `S3 Storage Lens` examine your `S3 buckets organization`- wide to inspect access patterns and provide storage optimization recommendations.
 - Know that you should always avoid routing traffic to the public internet when it can travel over the AWS network backbone instead.
 - Understand that the cost of data transfer within AWS changes depending on whether you are sending data across AZ's or Regions.
+- Know that can set up custom budgets using `AWS Budgets` and receive alerts when your defined thresholds are breached.
+- Understand the difference between `Cost Explorer` and `Cost and Usage Reports (CURs)`. `Cost Explorer` allows you to visualize and project cloud costs, `Cost and Usage Reports` provide detailed historical data.
 - 
