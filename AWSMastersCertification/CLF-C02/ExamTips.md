@@ -352,4 +352,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand that the cost of data transfer within AWS changes depending on whether you are sending data across AZ's or Regions.
 - Know that can set up custom budgets using `AWS Budgets` and receive alerts when your defined thresholds are breached.
 - Understand the difference between `Cost Explorer` and `Cost and Usage Reports (CURs)`. `Cost Explorer` allows you to visualize and project cloud costs, `Cost and Usage Reports` provide detailed historical data.
-- 
+- Know how to centrally manage costs across accounts using consolidated billing, which is a feature of `AWS Organizations`.
+- Understand that you can further group cost management and billing in your `AWS Organization` using `Billing Conductor`.
