@@ -354,3 +354,5 @@ Instance store's data is ephemeral, meaning the data doesn't persist after the i
 - Understand the difference between `Cost Explorer` and `Cost and Usage Reports (CURs)`. `Cost Explorer` allows you to visualize and project cloud costs, `Cost and Usage Reports` provide detailed historical data.
 - Know how to centrally manage costs across accounts using consolidated billing, which is a feature of `AWS Organizations`.
 - Understand that you can further group cost management and billing in your `AWS Organization` using `Billing Conductor`.
+- Know that a **business support** plan is the lowest cost to achieve phone and chat support and the full set of `Trusted Advisor` checks.
+- **Enterprise support** is needed for concierge- like billing assistance and guidance from **Technical Account Managers**.
