@@ -2,10 +2,6 @@
 
 ### Compute Services
 
-Certainly! Here’s the content for the Compute Services section in your `services.md` file:
-
-### Compute Services
-
 | Service Name |Description | Key Features | Pricing Information |
 |---|---|---|---|
 | **EC2**                  | Amazon Elastic Compute Cloud (EC2) provides scalable computing capacity in the AWS cloud. | - Resizable compute capacity<br>- Wide selection of instance types<br>- Pay-as-you-go pricing<br>- Supports multiple operating systems | Pay for compute capacity by the hour or second, depending on the instance type. Prices vary by instance type, region, and OS. |
@@ -17,8 +13,6 @@ Certainly! Here’s the content for the Compute Services section in your `servic
 | **Batch**                | AWS Batch enables you to run batch computing workloads on the AWS Cloud. | - Dynamically provisions compute resources<br>- Optimizes the workload distribution<br>- Managed service<br>- Integrates with other AWS services | No additional charge for AWS Batch. You pay for the AWS resources (e.g., EC2 instances) you use to store and run your batch jobs. |
 | **Elastic Beanstalk**    | AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services. | - Supports multiple platforms<br>- Managed service<br>- Auto-scaling<br>- Integrated monitoring | No additional charge for Elastic Beanstalk. You pay for the AWS resources (e.g., EC2 instances, S3 storage) you use to store and run your applications. |
 
-
-### Storage Services
 
 ### Storage Services
 
@@ -36,9 +30,18 @@ Certainly! Here’s the content for the Compute Services section in your `servic
 
 ### Database Services
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+| Service Name | Description | Key Features | Pricing Information |
+|---|---|----|---|
+| **RDS**           | Amazon Relational Database Service (RDS) makes it easy to set up, operate, and scale a relational database in the cloud. | - Supports multiple engines (MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, and Aurora)<br>- Automated backups<br>- Multi-AZ deployments<br>- Read replicas | Pay based on instance type, storage, I/O, backups, and data transfer. Pricing varies by database engine and region. |
+| **DynamoDB**            | Amazon DynamoDB is a fast and flexible NoSQL database service for single-digit millisecond performance at any scale. | - Fully managed<br>- Serverless<br>- Automatic scaling<br>- Built-in security<br>- Multi-region replication | Pay based on read and write throughput, storage, data transfer, and optional features like DynamoDB Accelerator (DAX). |
+| **Aurora**              | Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud with up to 5 times the performance of standard MySQL and 3 times the performance of standard PostgreSQL. | - High performance<br>- Highly available<br>- Automatic scaling<br>- Multi-AZ deployments<br>- Global databases | Pay based on instance type, storage, I/O, backups, and data transfer. Pricing varies by instance type and region. |
+| **Redshift**            | Amazon Redshift is a fully managed data warehouse service in the cloud. | - Fast query performance<br>- Columnar storage<br>- Massively parallel processing (MPP)<br>- Integration with BI tools | Pay based on the type and number of nodes, storage, data transfer, and optional features like concurrency scaling and spectrum. |
+| **ElastiCache**         | Amazon ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. | - Supports Redis and Memcached<br>- Low latency<br>- Fully managed<br>- Scalability and flexibility | Pay based on instance type, number of nodes, data transfer, and optional features like backups for Redis. |
+| **DocumentDB**          | Amazon DocumentDB (with MongoDB compatibility) is a scalable, fully managed document database service that supports MongoDB workloads. | - Fully managed<br>- MongoDB compatibility<br>- High performance<br>- Scalability and flexibility | Pay based on instance type, storage, I/O, backups, and data transfer. Pricing varies by instance type and region. |
+| **Neptune**             | Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets. | - Fully managed<br>- High performance<br>- Supports Apache TinkerPop and RDF/SPARQL<br>- Highly available | Pay based on instance type, storage, I/O, backups, and data transfer. Pricing varies by instance type and region. |
+| **QLDB**                | Amazon Quantum Ledger Database (QLDB) is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log. | - Immutable and transparent<br>- Fully managed<br>- Cryptographically verifiable<br>- SQL-like API | Pay based on instance type, storage, I/O, and data transfer. |
+| **Keyspaces**           | Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra-compatible database service. | - Fully managed<br>- Apache Cassandra compatibility<br>- High performance<br>- Scalability and flexibility | Pay based on read and write throughput, storage, and data transfer. |
+
 
 ### Networking and Content Delivery
 
