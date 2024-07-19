@@ -20,9 +20,19 @@ Certainly! Here’s the content for the Compute Services section in your `servic
 
 ### Storage Services
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+### Storage Services
+
+| Service Name | Description | Key Features | Pricing Information |
+|---|---|---|---|
+| **S3**                   | Amazon Simple Storage Service (S3) provides scalable object storage for a wide range of use cases. | - Highly durable and available<br>- Multiple storage classes<br>- Versioning and lifecycle management<br>- Data encryption | Pay only for what you use. Pricing based on storage type, requests, data retrievals, and data transfers. |
+| **EBS**                  | Amazon Elastic Block Store (EBS) provides block storage volumes for use with EC2 instances. | - High performance<br>- Persistent storage<br>- Snapshots<br>- Encryption | Charged based on the amount of data provisioned per month, snapshots, and data transfer. Pricing varies by volume type and region. |
+| **EFS**                  | Amazon Elastic File System (EFS) provides scalable file storage for use with AWS Cloud services and on-premises resources. | - Fully managed<br>- Scalable<br>- Secure<br>- Low latency | Pay only for the storage used. Pricing based on the amount of data stored, data transfer, and access patterns (Standard or Infrequent Access). |
+| **FSx**                  | Amazon FSx provides fully managed third-party file systems, including FSx for Windows File Server and FSx for Lustre. | - Fully managed<br>- High performance<br>- Integration with other AWS services<br>- Secure | Pricing based on the amount of storage provisioned, storage type, throughput capacity, backups, and data transfer. |
+| **Glacier**              | Amazon S3 Glacier and S3 Glacier Deep Archive provide secure, durable, and extremely low-cost storage for data archiving and long-term backup. | - Low-cost<br>- Secure and durable<br>- Flexible retrieval options<br>- Integration with S3 | Pay based on storage used, retrieval requests, data transfer, and optional features like expedited retrievals. |
+| **Storage Gateway**      | AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage. | - Hybrid storage integration<br>- Multiple gateway types (File, Tape, Volume)<br>- Data encryption<br>- Backup and restore capabilities | Pricing based on the type of gateway, amount of data stored, data transfer, and requests. |
+| **Snowball**             | AWS Snowball is a petabyte-scale data transport solution that uses secure appliances to transfer large amounts of data into and out of AWS. | - Secure data transfer<br>- Large capacity<br>- Rugged and portable<br>- Offline data transfer | Pricing includes a service fee per data transfer job and the daily rate for each appliance used, plus data transfer costs. |
+| **Backup**               | AWS Backup is a centralized backup service to automate and manage backups across AWS services. | - Centralized backup management<br>- Automated backup scheduling<br>- Cross-service integration<br>- Compliance and reporting | Pay only for the backup storage and backup requests. Pricing varies by the amount of data backed up, backup storage class, and data transfer. |
+
 
 ### Database Services
 
