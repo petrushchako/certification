@@ -43,11 +43,21 @@
 | **Keyspaces**           | Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra-compatible database service. | - Fully managed<br>- Apache Cassandra compatibility<br>- High performance<br>- Scalability and flexibility | Pay based on read and write throughput, storage, and data transfer. |
 
 
-### Networking and Content Delivery
+### Networking and Content Delivery Services
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+| Service Name | Description | Key Features | Pricing Information |
+|---|---|---|---|
+| **VPC**                  | Amazon Virtual Private Cloud (VPC) lets you provision a logically isolated section of the AWS cloud. | - Customizable network configurations<br>- Security groups<br>- Network ACLs<br>- VPC Peering | Pay based on VPN connections, NAT gateways, traffic mirroring, and data transfer. |
+| **CloudFront**           | Amazon CloudFront is a fast content delivery network (CDN) service. | - Global content delivery<br>- DDoS protection<br>- Integration with AWS services<br>- Lambda@Edge | Pay based on data transfer out, HTTP/HTTPS requests, and invalidation requests. |
+| **Route 53**             | Amazon Route 53 is a scalable Domain Name System (DNS) web service. | - DNS management<br>- Traffic routing<br>- Health checks and monitoring<br>- Domain registration | Pay based on hosted zones, queries, health checks, and domain registration fees. |
+| **Direct Connect**       | AWS Direct Connect allows you to establish a dedicated network connection from your premises to AWS. | - High bandwidth<br>- Low latency<br>- Consistent network performance<br>- Secure connections | Pay based on port hours and data transfer out. Pricing varies by location and connection speed. |
+| **Global Accelerator**   | AWS Global Accelerator is a networking service that improves the availability and performance of applications. | - Global static IP addresses<br>- Automatic health checks<br>- Traffic management<br>- DDoS protection | Pay based on accelerator hours and data transfer out. |
+| **Transit Gateway**      | AWS Transit Gateway connects VPCs and on-premises networks through a central hub. | - Simplified network architecture<br>- Scalable<br>- Centralized management<br>- High performance | Pay based on attachments, data processing, and data transfer. |
+| **PrivateLink**         | AWS PrivateLink provides private connectivity between VPCs and AWS services. | - Private connections<br>- Enhanced security<br>- Simplified network architecture<br>- Integration with AWS services | Pay based on interface endpoints, gateway endpoints, and data processing. |
+| **VPN**                  | AWS VPN allows you to establish a secure and private tunnel from your network to AWS. | - Secure connections<br>- Easy setup<br>- Integration with AWS services<br>- High availability | Pay based on VPN connection hours and data transfer. |
+| **Elastic Load Balancing**| Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets. | - Application Load Balancer (ALB)<br>- Network Load Balancer (NLB)<br>- Classic Load Balancer (CLB)<br>- High availability | Pay based on the type of load balancer, usage, and data transfer. |
+| **App Mesh**             | AWS App Mesh is a service mesh that provides application-level networking to make it easy for your services to communicate with each other. | - Service discovery<br>- Traffic management<br>- Observability<br>- Integration with AWS services | Pay based on the number of Envoy proxies and data transfer. |
+
 
 ### Security, Identity, and Compliance
 
