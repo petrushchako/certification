@@ -1,4 +1,16 @@
 # AWS Services
+- **Compute Services** (EC2, Lambda, ECS, EKS, Fargate, Lightsale, Batch, Elastic Beanstalk)
+- **Storage Services** (S3, EBS, EFS, FSx, Glacier, Storage Gateway, Snowball, Backup)
+- **Database Services** (RDS, DynamoDB, Aurora, Redshift, ElasticCache, DocumentDB, Neptune, QLDB, Keyspaces)
+- **Networking and Content Delivery Services** (VPC, CloudFront, Route 53, Direct Connect, Global Accelerator, Transit Gateway, PrivateLink, VPN, Elastic Load Balancing, App Mesh)
+- **Security, Identity, and Compliance** (IAM, Cognito, GuardDuty, Inspector, Macie, Certificate Manager, Directory Service, WAF, Shield, Secrets Manager, Security Hub)
+- **Management and Governance** (CloudTrail, Config, Systems Manager, Trusted Advisor, CloudFormation, Control Tower, Service Catalog, Oranizations, Auto Scaling, License Manager)
+- **Analytics** (Athena, EMR, Kinesis, QuickSight, Data Pipeline, Glue, Redshift, Managed Streaming for Apache Kafka (MSK), Elasticsearch Service, Lake Formation)
+
+
+
+
+
 
 ### Compute Services
 
@@ -92,39 +104,3 @@
 | **License Manager**      | Makes it easier to manage licenses in AWS and on-premises servers from software vendors like Microsoft, SAP, Oracle, and IBM. | - License tracking<br>- Compliance management<br>- Automated discovery | No additional charge. You pay only for the resources managed.                      |
 | **CloudFormation**       | Provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. | - Infrastructure as code<br>- Stack management<br>- Template creation | No additional charge for using CloudFormation. You pay only for the AWS resources created. |
 
-
-### Analytics
-
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
-
-### Machine Learning
-
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
-
-### Application Integration
-
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
-
-### Developer Tools
-
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
-
-### Cost Management
-
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
-
-### Additional Support Services
-
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
