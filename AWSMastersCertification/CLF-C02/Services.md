@@ -104,3 +104,49 @@
 | **License Manager**      | Makes it easier to manage licenses in AWS and on-premises servers from software vendors like Microsoft, SAP, Oracle, and IBM. | - License tracking<br>- Compliance management<br>- Automated discovery | No additional charge. You pay only for the resources managed.                      |
 | **CloudFormation**       | Provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. | - Infrastructure as code<br>- Stack management<br>- Template creation | No additional charge for using CloudFormation. You pay only for the AWS resources created. |
 
+
+### Analytics
+
+| Service Name| Description| Key Features| Pricing Information|
+|---|---|---|---|
+| **Athena**                 | Interactive query service that makes it easy to analyze data directly in Amazon S3 using standard SQL. | - Serverless<br>- Standard SQL<br>- Integrates with AWS Glue             | Pay per query, based on the amount of data scanned.|
+| **EMR**                    | Managed cluster platform that simplifies running big data frameworks such as Apache Hadoop and Apache Spark. | - Scalable clusters<br>- Integrated with S3, DynamoDB, RDS<br>- Presto, Hive, and Pig support | Pay for the EC2 instances used and the size of the cluster.|
+| **Kinesis**                | Platform on AWS to collect, process, and analyze real-time, streaming data.                  | - Real-time processing<br>- Scalable<br>- Integrates with Lambda and Redshift | Pay for data ingested, storage, and data processing.        |
+| **QuickSight**             | Scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud. | - Data visualization<br>- Interactive dashboards<br>- Machine learning insights | Pay per session, and per user for Enterprise edition.      |
+| **Data Pipeline**          | Web service that helps you reliably process and move data between different AWS compute and storage services, as well as on-premises data sources. | - Data workflow orchestration<br>- Scheduling<br>- Error handling       | Pay based on the frequency and volume of data processed.    |
+| **Glue**                   | Fully managed ETL (extract, transform, load) service that makes it easy to prepare and load data for analytics. | - Serverless ETL<br>- Data catalog<br>- Job scheduling                  | Pay for data processed, crawlers, and data catalog storage. |
+| **Redshift**               | Fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and your existing BI tools. | - Columnar storage<br>- Massively parallel processing<br>- Integrates with BI tools | Pay for the instances and storage used, plus backup storage. |
+| **Managed Streaming for Apache Kafka (MSK)** | Fully managed service that makes it easy to build and run applications that use Apache Kafka to process streaming data. | - Managed Kafka<br>- Integrated with AWS services<br>- High availability | Pay for the broker instance hours, storage, and data transfer. |
+| **Elasticsearch Service**  | Fully managed service that makes it easy to deploy, secure, and run Elasticsearch at scale.  | - Real-time search and analytics<br>- Integrated with Kibana<br>- Scalability | Pay for the instance hours, storage, and data transfer.     |
+| **Lake Formation**         | Service that makes it easy to set up a secure data lake in days.                             | - Centralized data catalog<br>- Data ingestion<br>- Security management | No additional charge. You pay for the AWS resources used for data storage and processing.|
+
+
+### Machine Learning
+
+| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
+|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
+|                      |                                                         |                                                    |                            |
+
+### Application Integration
+
+| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
+|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
+|                      |                                                         |                                                    |                            |
+
+### Developer Tools
+
+| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
+|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
+|                      |                                                         |                                                    |                            |
+
+### Cost Management
+
+| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
+|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
+|                      |                                                         |                                                    |                            |
+
+### Additional Support Services
+
+| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
+|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
+|                      |                                                         |                                                    |                            |
