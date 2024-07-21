@@ -61,9 +61,20 @@
 
 ### Security, Identity, and Compliance
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+| Service Name| Description|Key Features| Pricing Information|
+|---|---|---|---|
+| **IAM** (Identity and Access Management) | Enables you to manage access to AWS services and resources securely.                | - User and group management<br>- Role-based access<br>- Fine-grained permissions | No additional cost. You pay only for the usage of other AWS services. |
+| **Cognito**                  | Provides authentication, authorization, and user management for your web and mobile apps.     | - User pools<br>- Identity pools<br>- Federated identities          | Pay based on the number of active users and federated identities.    |
+| **GuardDuty**                | A threat detection service that continuously monitors for malicious activity and unauthorized behavior. | - Threat detection<br>- Continuous monitoring<br>- Integration with other AWS services | Pay based on the volume of data processed.                         |
+| **Inspector**                | An automated security assessment service that helps improve the security and compliance of applications deployed on AWS. | - Automated security assessments<br>- Network configuration checks<br>- Detailed reports | Pay based on the number of EC2 instances assessed.                  |
+| **Macie**                    | Uses machine learning to automatically discover, classify, and protect sensitive data in AWS. | - Data classification<br>- Sensitive data discovery<br>- Automated alerts | Pay based on the volume of data processed and the number of S3 buckets evaluated. |
+| **Certificate Manager**      | Lets you easily provision, manage, and deploy SSL/TLS certificates for use with AWS services and your internal connected resources. | - SSL/TLS certificate management<br>- Automatic renewal<br>- Free certificates for use with AWS services | No additional cost for provisioning and managing certificates. Charges apply for private CA operations. |
+| **Directory Service**        | A managed Microsoft Active Directory in the AWS Cloud that you can connect to your on-premises directories. | - Managed AD<br>- Seamless integration<br>- Multi-region deployment | Pay based on the type and size of the directory.                    |
+| **WAF** (Web Application Firewall) | Protects your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources. | - Web traffic filtering<br>- Customizable rules<br>- Real-time monitoring | Pay based on the number of web ACLs, rules, and requests processed. |
+| **Shield**                   | A managed DDoS protection service that safeguards applications running on AWS.                | - DDoS protection<br>- Real-time attack mitigation<br>- Comprehensive protection | Shield Standard is free. Shield Advanced is charged based on usage. |
+| **Secrets Manager**          | Helps you protect access to your applications, services, and IT resources without the upfront cost and complexity of managing your own hardware security module (HSM). | - Secret management<br>- Automated rotation<br>- Secure access | Pay based on the number of secrets stored and API requests.         |
+| **Security Hub**             | Gives you a comprehensive view of your high-priority security alerts and compliance status across AWS accounts. | - Centralized security view<br>- Compliance checks<br>- Automated alerts | Pay based on the volume of data processed and the number of compliance checks run. |
+
 
 ### Management and Governance
 
