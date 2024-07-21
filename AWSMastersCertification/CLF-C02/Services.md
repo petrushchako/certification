@@ -78,9 +78,20 @@
 
 ### Management and Governance
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+| Service Name| Description| Key Features| Pricing Information|
+|---|---|---|---|
+| **CloudWatch**           | Monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. | - Metrics collection<br>- Log monitoring<br>- Alarms and events     | Pay for custom metrics, logs, dashboards, and alarms.                               |
+| **CloudTrail**           | Enables governance, compliance, and operational and risk auditing of your AWS account.        | - API activity tracking<br>- Event history<br>- Compliance auditing | Pay based on the number of events recorded and the volume of data logged.          |
+| **Config**               | Enables you to assess, audit, and evaluate the configurations of your AWS resources.          | - Configuration monitoring<br>- Compliance auditing<br>- Resource relationships | Pay based on the number of configuration items recorded and the number of active rules. |
+| **Systems Manager**      | Provides a unified user interface so you can track and resolve operational issues across your AWS applications and resources from a central place. | - Operations management<br>- Patch management<br>- Resource groups  | Pay for the features you use, such as Automation, Session Manager, and OpsCenter.  |
+| **OpsWorks**             | Configuration management service that provides managed instances of Chef and Puppet.          | - Managed Chef and Puppet<br>- Automated deployments<br>- Configuration management | Pay based on the number of nodes managed.                                         |
+| **Trusted Advisor**      | Online resource to help you reduce cost, increase performance, and improve security by optimizing your AWS environment. | - Best practice checks<br>- Recommendations<br>- Cost optimization | Basic checks are free. Advanced checks require Business or Enterprise support plans. |
+| **Service Catalog**      | Allows organizations to create and manage catalogs of IT services that are approved for use on AWS. | - Catalog management<br>- Self-service provisioning<br>- Governance | Pay based on the number of catalog actions and API calls.                          |
+| **Control Tower**        | Provides an easy way to set up and govern a secure, compliant, multi-account AWS environment.  | - Account management<br>- Landing zones<br>- Compliance management  | No additional charge. You pay only for AWS services enabled by Control Tower.       |
+| **AWS Organizations**    | Helps you centrally manage and govern your environment as you grow and scale your AWS resources. | - Account management<br>- Policy-based management<br>- Consolidated billing | No additional charge. You pay only for AWS resources used by your accounts.        |
+| **License Manager**      | Makes it easier to manage licenses in AWS and on-premises servers from software vendors like Microsoft, SAP, Oracle, and IBM. | - License tracking<br>- Compliance management<br>- Automated discovery | No additional charge. You pay only for the resources managed.                      |
+| **CloudFormation**       | Provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. | - Infrastructure as code<br>- Stack management<br>- Template creation | No additional charge for using CloudFormation. You pay only for the AWS resources created. |
+
 
 ### Analytics
 
