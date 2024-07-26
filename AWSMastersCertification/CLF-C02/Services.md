@@ -123,9 +123,24 @@
 
 ### Machine Learning
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+| Service Name| Description| Key Features| Pricing Information|
+|---|---|---|---|
+| **SageMaker**                     | Fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning models quickly. | - Jupyter notebooks<br>- Training and tuning<br>- Deployment                   | Pay for notebook instances, training, and hosting. |
+| **Comprehend**                    | Natural Language Processing (NLP) service that uses machine learning to find insights and relationships in text. | - Sentiment analysis<br>- Entity recognition<br>- Keyphrase extraction         | Pay per unit of text analyzed.                    |
+| **Lex**                           | Service for building conversational interfaces into any application using voice and text.           | - Automatic Speech Recognition (ASR)<br>- Natural Language Understanding (NLU) | Pay per request, with a free tier available.      |
+| **Polly**                         | Service that turns text into lifelike speech using deep learning.                                   | - Wide range of voices<br>- Customization<br>- Real-time streaming             | Pay per character converted to speech.            |
+| **Rekognition**                   | Service that makes it easy to add image and video analysis to your applications.                    | - Object and scene detection<br>- Facial analysis<br>- Celebrity recognition    | Pay per image and video minute analyzed.          |
+| **Translate**                     | Neural machine translation service that delivers fast, high-quality, and affordable language translation. | - Real-time translation<br>- Custom terminology<br>- Scalability               | Pay per character translated.                     |
+| **Transcribe**                    | Automatic speech recognition (ASR) service that makes it easy for you to add speech-to-text capability to your applications. | - Real-time transcription<br>- Custom vocabularies<br>- Speaker identification | Pay per second of transcribed audio.              |
+| **Personalize**                   | Machine learning service that makes it easy to build and deploy recommendation engines.             | - Real-time recommendations<br>- Customizable algorithms<br>- Integration with data sources | Pay for data processing, training, and usage.      |
+| **Forecast**                      | Fully managed service that uses machine learning to deliver highly accurate forecasts.              | - Automated machine learning<br>- Accuracy metrics<br>- Scalable               | Pay for data ingestion, training, and forecast usage. |
+| **Kendra**                        | Highly accurate and easy to use enterprise search service powered by machine learning.              | - Natural language search<br>- Connectors to data sources<br>- Relevance tuning | Pay for index storage, queries, and data transfer.|
+| **DeepRacer**                     | An autonomous 1/18th scale race car designed to test reinforcement learning models.                  | - 3D racing simulator<br>- Community races<br>- Model training                 | Pay for training models and participating in races. |
+| **DeepLens**                      | Deep learning-enabled video camera designed for developers to run and create deep learning models.  | - Integrates with SageMaker<br>- Pre-trained models<br>- Custom models         | Pay for the device and usage of related services. |
+
+
+<br>
+
 
 ### Application Integration
 
