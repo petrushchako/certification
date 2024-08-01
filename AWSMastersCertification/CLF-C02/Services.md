@@ -144,9 +144,18 @@
 
 ### Application Integration
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+| Service Name| Description| Key Features| Pricing Information|
+|---|---|---|---|
+| **Step Functions**                | Serverless orchestration service that lets you coordinate multiple AWS services into serverless workflows. | - Visual workflow editor<br>- Built-in error handling<br>- Integration with AWS services | Pay per state transition and workflow execution. |
+| **SNS (Simple Notification Service)** | Fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication. | - Pub/sub messaging<br>- SMS, email, and mobile push notifications<br>- Serverless event handling | Pay per request and data transfer.                |
+| **SQS (Simple Queue Service)**    | Fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. | - Standard and FIFO queues<br>- Message retention<br>- Dead-letter queues       | Pay per request and data transfer.                |
+| **AppFlow**                       | Integration service that enables you to securely transfer data between AWS services and SaaS applications. | - Bi-directional data transfer<br>- Transformation and filtering<br>- Scheduled and event-driven flows | Pay per flow run and data processing.             |
+| **MQ (Managed Message Broker)**   | Managed message broker service for Apache ActiveMQ and RabbitMQ that makes it easy to set up and operate message brokers on AWS. | - Supports AMQP, MQTT, OpenWire, and STOMP protocols<br>- High availability     | Pay per broker instance and storage usage.        |
+| **EventBridge**                   | Serverless event bus service that makes it easy to connect applications using data from your own apps, integrated SaaS applications, and AWS services. | - Event routing<br>- Schema registry<br>- Event archive and replay              | Pay per event and rule invocation.                |
+| **AppSync**                       | Managed service that uses GraphQL to make it easy for applications to get exactly the data they need. | - Real-time data synchronization<br>- Offline data access<br>- Fine-grained access control | Pay per query and data transfer.                  |
+| **Glue**                          | Fully managed extract, transform, and load (ETL) service that makes it easy to prepare and load data for analytics. | - Automatic schema discovery<br>- Job scheduling<br>- Serverless ETL            | Pay per DPU-hour and data processing.             |
+
+<br>
 
 ### Developer Tools
 
