@@ -9,7 +9,7 @@
 
 
 
-
+<br><br>
 
 
 ### Compute Services
@@ -40,6 +40,8 @@
 | **Backup**               | AWS Backup is a centralized backup service to automate and manage backups across AWS services. | - Centralized backup management<br>- Automated backup scheduling<br>- Cross-service integration<br>- Compliance and reporting | Pay only for the backup storage and backup requests. Pricing varies by the amount of data backed up, backup storage class, and data transfer. |
 
 
+<br><br>
+
 ### Database Services
 
 | Service Name | Description | Key Features | Pricing Information |
@@ -54,6 +56,8 @@
 | **QLDB**                | Amazon Quantum Ledger Database (QLDB) is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log. | - Immutable and transparent<br>- Fully managed<br>- Cryptographically verifiable<br>- SQL-like API | Pay based on instance type, storage, I/O, and data transfer. |
 | **Keyspaces**           | Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra-compatible database service. | - Fully managed<br>- Apache Cassandra compatibility<br>- High performance<br>- Scalability and flexibility | Pay based on read and write throughput, storage, and data transfer. |
 
+
+<br><br>
 
 ### Networking and Content Delivery Services
 
@@ -70,6 +74,7 @@
 | **Elastic Load Balancing**| Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets. | - Application Load Balancer (ALB)<br>- Network Load Balancer (NLB)<br>- Classic Load Balancer (CLB)<br>- High availability | Pay based on the type of load balancer, usage, and data transfer. |
 | **App Mesh**             | AWS App Mesh is a service mesh that provides application-level networking to make it easy for your services to communicate with each other. | - Service discovery<br>- Traffic management<br>- Observability<br>- Integration with AWS services | Pay based on the number of Envoy proxies and data transfer. |
 
+<br><br>
 
 ### Security, Identity, and Compliance
 
@@ -87,6 +92,7 @@
 | **Secrets Manager**          | Helps you protect access to your applications, services, and IT resources without the upfront cost and complexity of managing your own hardware security module (HSM). | - Secret management<br>- Automated rotation<br>- Secure access | Pay based on the number of secrets stored and API requests.         |
 | **Security Hub**             | Gives you a comprehensive view of your high-priority security alerts and compliance status across AWS accounts. | - Centralized security view<br>- Compliance checks<br>- Automated alerts | Pay based on the volume of data processed and the number of compliance checks run. |
 
+<br><br>
 
 ### Management and Governance
 
@@ -104,6 +110,7 @@
 | **License Manager**      | Makes it easier to manage licenses in AWS and on-premises servers from software vendors like Microsoft, SAP, Oracle, and IBM. | - License tracking<br>- Compliance management<br>- Automated discovery | No additional charge. You pay only for the resources managed.                      |
 | **CloudFormation**       | Provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. | - Infrastructure as code<br>- Stack management<br>- Template creation | No additional charge for using CloudFormation. You pay only for the AWS resources created. |
 
+<br><br>
 
 ### Analytics
 
@@ -120,6 +127,7 @@
 | **Elasticsearch Service**  | Fully managed service that makes it easy to deploy, secure, and run Elasticsearch at scale.  | - Real-time search and analytics<br>- Integrated with Kibana<br>- Scalability | Pay for the instance hours, storage, and data transfer.     |
 | **Lake Formation**         | Service that makes it easy to set up a secure data lake in days.                             | - Centralized data catalog<br>- Data ingestion<br>- Security management | No additional charge. You pay for the AWS resources used for data storage and processing.|
 
+<br><br>
 
 ### Machine Learning
 
@@ -139,7 +147,7 @@
 | **DeepLens**                      | Deep learning-enabled video camera designed for developers to run and create deep learning models.  | - Integrates with SageMaker<br>- Pre-trained models<br>- Custom models         | Pay for the device and usage of related services. |
 
 
-<br>
+<br><br>
 
 
 ### Application Integration
@@ -155,19 +163,31 @@
 | **AppSync**                       | Managed service that uses GraphQL to make it easy for applications to get exactly the data they need. | - Real-time data synchronization<br>- Offline data access<br>- Fine-grained access control | Pay per query and data transfer.                  |
 | **Glue**                          | Fully managed extract, transform, and load (ETL) service that makes it easy to prepare and load data for analytics. | - Automatic schema discovery<br>- Job scheduling<br>- Serverless ETL            | Pay per DPU-hour and data processing.             |
 
-<br>
+<br><br>
 
 ### Developer Tools
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+| Service Name| Description| Key Features| Pricing Information|
+|---|---|---|---|
+| **CodeCommit**                    | Fully managed source control service that hosts secure Git-based repositories.                   | - Git compatibility<br>- Encryption<br>- Integration with other AWS services     | Pay per active user and storage usage.            |
+| **CodeBuild**                     | Fully managed build service that compiles source code, runs tests, and produces software packages. | - Continuous scaling<br>- Custom build environments<br>- Integration with CI/CD tools | Pay per minute of build time.                     |
+| **CodeDeploy**                    | Fully managed deployment service that automates software deployments to a variety of compute services. | - Rolling updates<br>- Blue/green deployments<br>- Error handling and rollback    | Pay per instance update.                          |
+| **CodePipeline**                  | Continuous integration and continuous delivery (CI/CD) service for fast and reliable application updates. | - Source, build, test, and deploy stages<br>- Integration with third-party tools  | Pay per active pipeline and actions executed.     |
+| **CodeStar**                      | Integrated development environment that makes it easy to set up, manage, and monitor CI/CD pipelines. | - Project templates<br>- Centralized dashboard<br>- Collaboration tools          | No additional charge; pay for underlying services.|
+| **Cloud9**                        | Cloud-based integrated development environment (IDE) that lets you write, run, and debug your code. | - Code editor<br>- Terminal<br>- Debugger<br>- Collaboration features            | Pay for the compute and storage resources used.   |
+| **X-Ray**                         | Helps developers analyze and debug production, distributed applications.                         | - Distributed tracing<br>- Service maps<br>- Annotations and metadata            | Pay per trace and analyzed data.                  |
+| **Fault Injection Simulator**     | Fully managed service for running fault injection experiments on AWS workloads.                  | - Simulate real-world failures<br>- Prebuilt templates<br>- Detailed experiment analysis | Pay per action and resources used during the experiment. |
+
+<br><br>
 
 ### Cost Management
 
 | Service Name         | Description                                             | Key Features                                       | Pricing Information        |
 |----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
 |                      |                                                         |                                                    |                            |
+
+
+<br><br>
 
 ### Additional Support Services
 
