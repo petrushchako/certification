@@ -178,13 +178,23 @@
 | **X-Ray**                         | Helps developers analyze and debug production, distributed applications.                         | - Distributed tracing<br>- Service maps<br>- Annotations and metadata            | Pay per trace and analyzed data.                  |
 | **Fault Injection Simulator**     | Fully managed service for running fault injection experiments on AWS workloads.                  | - Simulate real-world failures<br>- Prebuilt templates<br>- Detailed experiment analysis | Pay per action and resources used during the experiment. |
 
+
 <br><br>
 
-### Cost Management
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+### Cost Management Services
+
+| Service Name| Description| Key Features| Pricing Information|
+|---|---|---|---|
+| **AWS Cost Explorer**           | Tool for viewing and analyzing costs and usage across AWS accounts.                                | - Custom reports<br>- Forecasting<br>- Cost allocation tags                                    | No additional charge.                                 |
+| **AWS Budgets**                 | Allows you to set custom cost and usage budgets and receive alerts when you exceed them.           | - Budget alerts<br>- Custom budget reports<br>- AWS Budgets Actions                            | Pay per budget and alert action.                      |
+| **AWS Cost and Usage Report**   | Comprehensive data about your AWS costs and usage, down to individual resource IDs.                | - Detailed billing reports<br>- Integration with business intelligence tools                   | No additional charge.                                 |
+| **AWS Pricing Calculator**      | Web-based tool to estimate the cost of your AWS use cases and services.                            | - Service configuration<br>- Cost breakdowns<br>- Export estimates                             | No additional charge.                                 |
+| **AWS Savings Plans**           | Flexible pricing model offering lower prices in exchange for a commitment to a consistent amount of usage. | - Compute Savings Plans<br>- EC2 Instance Savings Plans<br>- Automatic coverage recommendations | Savings Plans are free to use; pay for committed usage.|
+| **AWS Reserved Instances (RIs)**| Discounted billing option in exchange for committing to a one- or three-year term for specific instance types. | - Standard RIs<br>- Convertible RIs<br>- Regional RIs                                          | Free to use; pay for reserved capacity.               |
+| **AWS Cost Anomaly Detection**  | Uses machine learning to detect anomalous spend patterns in your AWS environment.                  | - Automatic detection<br>- Anomaly alerts<br>- Integration with AWS Budgets                     | No additional charge.                                 |
+| **AWS Billing Conductor**       | Customizes billing data and reporting based on your business needs.                                | - Billing groups<br>- Custom pricing rates<br>- Bulk discount distribution                      | Pricing is based on billing group usage.              |
+| **AWS Cost Categories**         | Allows you to organize and categorize your cost and usage information.                             | - Custom cost categories<br>- Automated category assignment<br>- Integration with Cost Explorer | No additional charge.                                 |
 
 
 <br><br>
