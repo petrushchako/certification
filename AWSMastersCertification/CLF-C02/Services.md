@@ -199,8 +199,14 @@
 
 <br><br>
 
+
 ### Additional Support Services
 
-| Service Name         | Description                                             | Key Features                                       | Pricing Information        |
-|----------------------|---------------------------------------------------------|----------------------------------------------------|----------------------------|
-|                      |                                                         |                                                    |                            |
+| Service Name| Description| Key Features| Pricing Information|
+|---|---|---|---|
+| **AWS IQ**                       | Marketplace of AWS-certified experts offering hands-on assistance.                              | - Access to certified professionals<br>- Pay-as-you-go support<br>- Project-based consultations    | Varies by project and consultant.                    |
+| **AWS Managed Services (AMS)**   | Provides ongoing management of AWS infrastructure, including security and operations.           | - Pre-configured management<br>- Compliance support<br>- Incident management                      | Pricing varies based on service package.             |
+| **AWS Professional Services**    | Consultants employed by AWS to help you achieve your desired business outcomes on AWS.          | - Strategic advisory<br>- Technical implementation<br>- Specialized workshops                     | Custom pricing based on engagement.                  |
+| **AWS Activate**                 | Support and exclusive offers for startups, including credits and training.                      | - AWS credits<br>- Training and support<br>- Access to startup resources                          | Free to eligible startups.                           |
+| **AWS Support Plans**            | Tiered support plans offering a range of services from basic support to comprehensive enterprise-level support. | - Various tiers (Basic, Developer, Business, Enterprise On-Ramp, Enterprise)<br>- 24/7 support     | Ranges from free (Basic) to $15,000/month (Enterprise). |
+| **AWS Training and Certification** | Offers a range of training resources, including online courses and certification exams.         | - Digital and classroom training<br>- Certification exams<br>- Learning paths for different roles | Costs vary by course and certification.              |
