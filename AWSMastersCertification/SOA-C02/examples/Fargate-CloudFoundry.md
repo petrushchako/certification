@@ -45,6 +45,7 @@
 - `executionRoleArn`: IAM role that allows Fargate to pull images and write logs.
 - `networkMode`: `awsvpc` mode ensures each task gets its own network interface.
 
+
 <br>
 
 ## CloudFoundry<br>MTA Descriptor
@@ -83,3 +84,50 @@ resources:
   - `parameters.container.image`: Specifies the Docker image (similar to image in Fargate).
 - `resources`: Declares additional dependencies like logging (optional).
 - `provides`: Defines services provided by the module, e.g., exposing a web service.
+
+
+<br><hr>
+
+## AWS Fargate Multi-Container App
+```json
+{
+  "family": "multi-container-app",
+  "taskRoleArn": "arn:aws:iam::123456789012:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::123456789012:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "nodejs-app",
+      "image": "123456789012.dkr.ecr.us-west-2.amazonaws.com/nodejs-app:latest",
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000
+        }
+      ],
+      "essential": true
+    },
+    {
+      "name": "redis-cache",
+      "image": "redis:latest",
+      "portMappings": [
+        {
+          "containerPort": 6379,
+          "hostPort": 6379
+        }
+      ],
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "subnets": ["subnet-abc123"],
+      "securityGroups": ["sg-abc123"],
+      "assignPublicIp": "ENABLED"
+    }
+  }
+}
+```
