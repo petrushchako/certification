@@ -44,3 +44,42 @@
 - `requiresCompatibilities`: Ensures this task runs on Fargate.
 - `executionRoleArn`: IAM role that allows Fargate to pull images and write logs.
 - `networkMode`: `awsvpc` mode ensures each task gets its own network interface.
+
+<br>
+
+## CloudFoundry<br>MTA Descriptor
+```yaml
+_schema-version: "3.1"
+ID: simple-web-app
+version: 1.0.0
+
+modules:
+  - name: web-app
+    type: docker
+    path: .
+    parameters:
+      memory: 512M
+      disk-quota: 512M
+      buildpack: "staticfile_buildpack"
+      container:
+        image: "nginx:latest"
+    provides:
+      - name: web-service
+        properties:
+          port: 80
+          host: web-app
+
+resources:
+  - name: log-group
+    type: log
+    parameters:
+      region: us-east-1
+      group-name: "/ecs/simple-web-app"
+```
+
+### Key Components in mta.yaml
+- `modules`: Represents application modules. Here, web-app is the main module.
+  - `type: docker`: Indicates a Docker-based application.
+  - `parameters.container.image`: Specifies the Docker image (similar to image in Fargate).
+- `resources`: Declares additional dependencies like logging (optional).
+- `provides`: Defines services provided by the module, e.g., exposing a web service.
