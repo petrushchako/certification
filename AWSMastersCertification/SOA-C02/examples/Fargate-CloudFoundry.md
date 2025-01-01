@@ -131,3 +131,55 @@ resources:
   }
 }
 ```
+
+<br>
+
+## Cloud Foundry
+```yaml
+_schema-version: "3.2"
+ID: multi-container-app
+version: 1.0.0
+
+modules:
+  - name: nodejs-app
+    type: nodejs
+    path: nodejs-app
+    provides:
+      - name: nodejs-service
+        properties:
+          url: ${default-url}
+    requires:
+      - name: redis-service
+    parameters:
+      memory: 512M
+      disk-quota: 1G
+      provides-dns: true # For inter-container communication
+      build-parameters:
+        cmd: ["npm", "start"] # Ensures Node.js app starts correctly
+        port: 3000 # Matches the containerPort in Fargate configuration
+
+  - name: redis-cache
+    type: docker
+    path: redis-cache
+    parameters:
+      memory: 256M
+      disk-quota: 512M
+      provides-dns: true # Allows discovery between containers
+      build-parameters:
+        dockerfile: Dockerfile
+        cmd: ["redis-server", "--appendonly", "yes"] # Starts Redis with persistence
+        port: 6379 # Matches the containerPort in Fargate configuration
+
+resources:
+  - name: redis-service
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: redis
+      service-plan: standard
+
+  - name: log-service
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: log-service
+      service-plan: standard
+```
