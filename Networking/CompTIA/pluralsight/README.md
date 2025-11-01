@@ -35,3 +35,9 @@ You should have some familiarity with IT processes and knowledge
 - Use the appropriate network software tools and commands for a given a scenario
 - Troubleshoot common wireless connectivity issues for a given scenario
 - Troubleshoot general networking issues for a given a scenario
+
+## Domain Objectives 
+- 1.0 Networking Concepts (23%)
+    - 1.1 Explain concepts related to the Open Systems Interconnection (OSI) reference model
+    - 1.2 Compare and contrast networking appliances, applications, and functions
+    - 1.3 Summarise cloud concepts and connectivity options 
