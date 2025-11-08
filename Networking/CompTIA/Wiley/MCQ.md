@@ -47,3 +47,23 @@
 <br><br><br>
 
 ## Chapter 2: The Open Systems Interconnection (OSI) Reference Model
+1. Flow control can be found at which layer of the OSI?
+2. What is required before TCP can begin sending segments?
+3. Which layer of the OSI is responsible for dialogue control of applications?
+4. Which layer is responsible for compression and decompression?
+5. Which OSI layer is responsible for logical addressing?
+6. As information travels down the network stack from the Application layer to the Physical layer, what happens?
+7. Which sublayer of the Data Link OSI layer is responsible for identifying Network layer protocols and encapsulating them?
+8. Which is not a benefit to the OSI model?
+9. Which three upper layers operate together?
+10. Which 802 working group defines the LLC sublayer of the Data Link layer?
+11. Which concept describes transmitting multiple segments before the receiving host acknowledges the data?
+12. Which device will stop broadcasts from propagating the network?
+13. Which is used to determine the best path to a destination network?
+14. Which protocol data unit (PDU) is used to describe data at the Physical layer?
+15. Which OSI layers are responsible for framing data and transmitting the data?
+16. Which layer is responsible for creating a virtual circuit?
+17. TCP and UDP reside at which layer of the OSI model?
+18. What is the proper order of data encapsulation?
+19. Which layer is responsible for routing data packets?
+20. Which IEEE standard specifies the protocol for CSMA/CD?
