@@ -42,3 +42,8 @@
     - **Demarc**<br>The demarc, also known as the demarcation point, is a term used to describe a smart jack for a service provider. A network function virtualization (NFV) is a function that is virtualized, such as a router or firewall, to name a few. A load balancer is used to distribute the load for a network service. A router will typically connect to the smart jack for WAN connectivity.
 20. Which protocol is used with dynamic multipoint VPN deployments?
     - **mGRE**<br>Multipoint Generic Routing Encapsulation (mGRE) is used in conjunction with dynamic multipoint VPN to facilitate connections. Multiprotocol Label Switching (MPLS) is a technology that uses labels to switch packets and is an alternative to dynamic multipoint VPN. Software‐defined wide area network (SDWAN) is a virtual WAN architecture that uses software to manage connectivity, devices, and services. A virtual NIC (vNIC) is used to connect a virtual machine to a virtual switch (vSwitch).
+
+
+<br><br><br>
+
+## Chapter 2: The Open Systems Interconnection (OSI) Reference Model
