@@ -78,32 +78,35 @@
    - **802.2**<br>The IEEE 802.2 working group defines the Logic Link Control (LLC) sublayer of the Data Link layer. The IEEE 802.3 and 802.11 working groups define the Media Access Control (MAC) sublayer of the Data Link layer. The IEEE 802.15 working group defines wireless personal area networks (WPANs).
    
 11. Which concept describes transmitting multiple segments before the receiving host acknowledges the data?
-   - ****<br>
+   - **Windowing**<br>The concept of transmitting multiple segments before the receiving host acknowledges the data is windowing. Sequencing is done with each segment so they can be combined back together at the Transport layer. Compression and encryption are found at the Presentation layer, and neither is the correct answer.
    
 12. Which device will stop broadcasts from propagating the network?
-   - ****<br>
+   - **Router**<br>By default, a router will stop broadcasts from propagating the network. A switch, hub, and wireless access point (WAP) will not stop broadcasts from propagating the network.
    
 13. Which is used to determine the best path to a destination network?
-   - ****<br>
+   - **Metric**<br>The route table is checked for a destination packet, but the metric associated with the destination network is how the best path is determined. Acknowledgments are used by the receiving computer to acknowledge the receipt of segments. The network address is the logical addressing of hosts. The interface is the physical connection to the network.
    
 14. Which protocol data unit (PDU) is used to describe data at the Physical layer?
-   - ****<br>
+   - **Bits**<br>The PDU that describes data at the Physical layer is bits. The PDU of datagrams is used to describe data at the upper layers. The PDU of frames is used to describe data at the Data Link layer. The PDU of segments is used to describe data at the Transport layer.
    
 15. Which OSI layers are responsible for framing data and transmitting the data?
-   - ****<br>
+   - **Data Link and Physical layers**<br>The Data Link and Physical layers are responsible for framing data and transmitting it on the media. The LLC is a sublayer that is responsible for encapsulating Network layer protocols. All other answer are incorrect.
    
 16. Which layer is responsible for creating a virtual circuit?
-   - ****<br>
+   - **Transport**<br>The Transport layer is responsible for flow control and creating virtual circuits. The Presentation layer is responsible for compression/decompression and encryption/decryption. The Session layer is responsible for dialogue control. The Network layer is responsible for logical addressing.
    
 17. TCP and UDP reside at which layer of the OSI model?
-   - ****<br>
+   - **Transport**<br>Both TCP and UDP reside at the Transport layer. All other answers are incorrect.
    
 18. What is the proper order of data encapsulation?
-   - ****<br>
+   - **Datagram, segment, packet, frame, bits**<br>
    
 19. Which layer is responsible for routing data packets?
-   - ****<br>
+   - **Network**<br>The Network layer is responsible for routing network packets. The Physical layer is responsible for physical connectivity and transmitting bits. The Data Link layer is responsible for framing bits. The Transport layer is responsible for creating virtual circuits and flow control.
    
 20. Which IEEE standard specifies the protocol for CSMA/CD?
-   - ****<br>
+   - **802.3**<br>The IEEE standard of 802.3 specifies the carrier sense multiple access/collision detection (CSMA/CD) contention method. The IEEE standard of 802.2 specifies how the network layer should be encapsulated for multiprotocol operation. The IEEE standard for 802.5 details the disbanded Token Ring specification. The 802.11 details the wireless specifications.
+
+
+<br><br><br>
    
