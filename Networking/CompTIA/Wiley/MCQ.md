@@ -48,22 +48,62 @@
 
 ## Chapter 2: The Open Systems Interconnection (OSI) Reference Model
 1. Flow control can be found at which layer of the OSI?
+   - **Transport layer**<br>The Transport layer is responsible for flow control via the TCP/IP protocols of TCP and UDP. The Network layer is responsible for the logical addressing of network nodes. The Data Link layer is responsible for the framing of data and the physical addressing of local nodes. The Session layer is responsible for setting up the dialogue between two hosts.
+
 2. What is required before TCP can begin sending segments?
+   - **Three‐way handshake**<br>A three‐way handshake is required between the sender and receiver before TCP can begin sending segments. During this three‐way handshake, the sender’s window buffer size is synchronized with the receiver’s window buffer size. Ports are not agreed upon; they are used to address traffic at the Transport layer. The sequencing and acknowledgment of segments are functions of the TCP protocol.
+   
 3. Which layer of the OSI is responsible for dialogue control of applications?
+   - **Session layer**<br>The Session layer is responsible for offsetting up the dialogue between two hosts. The Application layer is responsible for API access and beginning the network communication process. The Physical layer is responsible for transmitting data over light, electricity, and air waves. The Network layer is responsible for the logical addressing of IP addresses.
+   
 4. Which layer is responsible for compression and decompression?
+   - **Presentation layer**<br>The Presentation layer is responsible for compression and decompression, as well as encryption and decryption. The Application layer is responsible for API access and beginning the network communication process. The Physical layer is responsible for transmitting data over light, electricity, and air waves. The Session layer is responsible for setting up the dialogue between two hosts.
+   
 5. Which OSI layer is responsible for logical addressing?
+   - **Network layer**<br>The Network layer is responsible for logical addressing. Routers use logical addressing to determine the path to remote networks. The Transport layer is responsible for flow control and creating virtual circuits. The Application layer is responsible for API access and beginning the network communication process. The Data Link layer is responsible for the framing of data and the physical addressing of local nodes.
+   
 6. As information travels down the network stack from the Application layer to the Physical layer, what happens?
+   - **Encapsulation**<br>As information travels down the network stack from the Application later to the Physical layer, the information is encapsulated by each layer. The information at the upper layers is referred to as datagrams. The terminology of each type of data as it pertains to the OSI layers is protocol data units (PDUs). Decapsulation is the action of removing the encapsulated information as it goes up the network stack from the Physical layer to the Application layer.
+   
 7. Which sublayer of the Data Link OSI layer is responsible for identifying Network layer protocols and encapsulating them?
+   - **LLC**<br>The logical link control (LLC) sublayer is responsible for managing access to Network layer protocols. The media access control (MAC) sublayer is responsible for physical addressing and framing data for the transmission media. The Data Link layer is responsible for framing data and contains the LLC and MAC sublayers. The Session layer is responsible for dialogue control.
+   
 8. Which is not a benefit to the OSI model?
-9. Which three upper layers operate together?
+   - **Allows software to run at network speeds**<br>The OSI reference model will not aid in allowing software to run at network speeds; this will be up to the developer. The OSI reference standardized model will allow for multivendor development. The OSI reference model will prevent a change in one layer from affecting other layers. The OSI reference model will also allow various network hardware and software to communicate.
+   
+9.  Which three upper layers operate together?
+   - **Application, Presentation, and Session**<br>The Application, Presentation, and Session layers operate together to process datagrams. All other answers are incorrect.
+   
 10. Which 802 working group defines the LLC sublayer of the Data Link layer?
+   - **802.2**<br>The IEEE 802.2 working group defines the Logic Link Control (LLC) sublayer of the Data Link layer. The IEEE 802.3 and 802.11 working groups define the Media Access Control (MAC) sublayer of the Data Link layer. The IEEE 802.15 working group defines wireless personal area networks (WPANs).
+   
 11. Which concept describes transmitting multiple segments before the receiving host acknowledges the data?
+   - ****<br>
+   
 12. Which device will stop broadcasts from propagating the network?
+   - ****<br>
+   
 13. Which is used to determine the best path to a destination network?
+   - ****<br>
+   
 14. Which protocol data unit (PDU) is used to describe data at the Physical layer?
+   - ****<br>
+   
 15. Which OSI layers are responsible for framing data and transmitting the data?
+   - ****<br>
+   
 16. Which layer is responsible for creating a virtual circuit?
+   - ****<br>
+   
 17. TCP and UDP reside at which layer of the OSI model?
+   - ****<br>
+   
 18. What is the proper order of data encapsulation?
+   - ****<br>
+   
 19. Which layer is responsible for routing data packets?
+   - ****<br>
+   
 20. Which IEEE standard specifies the protocol for CSMA/CD?
+   - ****<br>
+   
