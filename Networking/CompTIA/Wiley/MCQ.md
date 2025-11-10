@@ -110,3 +110,45 @@
 
 <br><br><br>
    
+
+## Chapter 3: Networking Connectors and Wiring Standards
+1. You are planning to run fiber‐optic cable between two buildings that are 6,000 feet apart. Which is the best solution to complete this project?
+   - ****<br>
+2. You need to connect a switch to another switch. Which type of cable should you use to properly create the connection between the two switches?
+   - ****<br>
+3. You are designing a network in a building that has arc welders. Which cable should be used to eliminate EMI?
+   - ****<br>
+4. Which connector type is typically found on a Category 6 cable?
+   - ****<br>
+5. You need to make a Category 5e crossover cable. Which wiring standard will you use on both ends?
+   - ****<br>
+6. You need to install cabling in an office space and want to be assured that toxic vapors will not be created in the event of a fire. Which cable type should you choose?
+   - ****<br>
+7. Which serial connection method is typically used for connecting peripherals to a PC?
+   - ****<br>
+8. You need to run a UTP cable for 10 Gbps speeds with a distance of 100 meters. Which minimum cable category rating should you use?
+   - ****<br>
+9. Which is an incorrect statement about smart jacks?
+   - ****<br>
+10. Which term describes what happens to the signal in a network cable as you make the cable’s distance greater?
+   - ****<br>
+11. Which cable has no metallic shielding?
+   - ****<br>
+12. Which connector is typically used on the end of a coaxial cable?
+   - ****<br>
+13. Which fiber‐optic connector uses a BNC style mechanism to lock the cable in place?
+   - ****<br>
+14. Which technique is used to prevent crosstalk on network cables?
+   - ****<br>
+15. Which transceiver will support up to 40 Gbps links?
+   - ****<br>
+16. Which connector will you find on a rolled cable?
+   - ****<br>
+17. What is the main difference between single‐mode fiber (SMF) and multimode fiber (MMF)?
+   - ****<br>
+18. Which fiber‐optic connector has a very small footprint for high‐density installations?
+   - ****<br>
+19. You need to connect a switch that only supports multimode fiber to an existing single‐mode fiber‐optic line. What should you use to create a connection?
+   - ****<br>
+20. Which cable type is considered a patch cable?
+   - ****<br>
