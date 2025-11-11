@@ -113,15 +113,15 @@
 
 ## Chapter 3: Networking Connectors and Wiring Standards
 1. You are planning to run fiber‐optic cable between two buildings that are 6,000 feet apart. Which is the best solution to complete this project?
-   - ****<br>
+   - **SMF**<br>A single‐mode fiber (SMF) cable can carry signals up to 80 km before the signal needs to be repeated. Multimode fiber (MMF) has a maximum distance of 3,000 feet. A main distribution frame (MDF) is a wiring point that’s generally used as a main reference point for telephone lines. An intermediate distribution frame (IDF) is a remote point of reference typically located in an equipment or telecommunications room.
 2. You need to connect a switch to another switch. Which type of cable should you use to properly create the connection between the two switches?
-   - ****<br>
+   - **Crossover cable**<br>A crossover cable is the proper cable to connect a switch to a switch. A straight‐through cable is not the proper cable to connect a switch to a switch and is typically used to connect hosts to a switch. A rolled cable is used for serial connectivity to the switch. A T1 crossover cable is used to connect a router to a router via T1 serial lines.
 3. You are designing a network in a building that has arc welders. Which cable should be used to eliminate EMI?
-   - ****<br>
+   - **Fiber optic**<br>Fiber‐optic cable should be used to eliminate electromagnetic interference (EMI) and radio frequency interference (RFI). Category 5e is a type of unshielded twisted‐pair (UTP); it will not prevent EMI. Twinaxial cable is a type of coaxial cable used to connect network equipment at high speeds for short distances.
 4. Which connector type is typically found on a Category 6 cable?
-   - ****<br>
+   - **RJ‐45**<br>An RJ‐45, also known as a registered jack 45, is used for terminating networking cabling, such as Category 5/6/7/8 cable. An RJ‐11 registered jack is used to terminate phone cabling. A Bayonet Neill–Concelman (BNC) connector is used to terminate coaxial cable. An angled physical contact (APC) is used to terminate fiber‐optic cable.
 5. You need to make a Category 5e crossover cable. Which wiring standard will you use on both ends?
-   - ****<br>
+   - **568B‐to‐568A**<br>When making a crossover cable for any network cable, the 568B wiring standard should be used on one end, and the 568A wiring standard should be used on the other end. A straight‐through cable is created when you crimp the 568A‐to‐568A or 568B‐to‐568B wiring standard on both ends of a network cable. The terms angled physical contact (APC) and ultra physical contact (UPC) are used to describe the finish on a fiber‐optic cable end.
 6. You need to install cabling in an office space and want to be assured that toxic vapors will not be created in the event of a fire. Which cable type should you choose?
    - ****<br>
 7. Which serial connection method is typically used for connecting peripherals to a PC?
