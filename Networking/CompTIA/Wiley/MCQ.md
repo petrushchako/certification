@@ -133,15 +133,15 @@
 10. Which term describes what happens to the signal in a network cable as you make the cable’s distance greater?
    - **Attenuation**<br>The signal on a cable will attenuate as the distance of the cable lengthens. Duplex refers to the path of signaling on a network cable. Demarcation or demarc refers to the point of responsibility for a network provider. Electromagnetic interference (EMI) is interference that is induced into a network cable from an external source.
 11. Which cable has no metallic shielding?
-   - ****<br>
+   - **UTP**<br>Unshielded twisted‐pair (UTP), as its name implies, is unshielded cabling. Shielded twisted‐pair (STP), coaxial, and twinaxial have metallic shielding around the outside of the cabling.
 12. Which connector is typically used on the end of a coaxial cable?
-   - ****<br>
+   - **F‐type**<br>An F‐type or BNC connector is typically found on the end of a coaxial cable. RJ‐45 connectors are typically found on the ends of network cable. RJ‐11 connectors are typically used for phone connection. A subscriber (or square) connector (SC) is used with fiber‐optic cables.
 13. Which fiber‐optic connector uses a BNC style mechanism to lock the cable in place?
-   - ****<br>
+   - **ST**<br>The straight tip (ST) connector uses a BNC style mechanism to lock the fiber‐optic cable in place. The subscriber (or square) connector (SC) is a square plastic connector. The local connector (LC) is a square style connector that is made for high‐density applications. The mechanical transfer registered jack (MT‐RJ or MTRJ) is another small form factor connector.
 14. Which technique is used to prevent crosstalk on network cables?
-   - ****<br>
+   - **T‐568A/B wiring standard**<br>The Telecommunications Industry Association/Electronic Industries Alliance (TIA/EIA) T‐568A/B wiring standard is used to prevent crosstalk. The use of shield twisted‐pair (STP) cabling will prevent electromagnetic interference (EMI). A rolled cable is a type of wiring used with console ports on switches and routers for configuration; it does not prevent crosstalk. Short distance installations will not prevent crosstalk on cables.
 15. Which transceiver will support up to 40 Gbps links?
-   - ****<br>
+   - **QSFP+**<br>The quad small form‐factor pluggable+ (QSFP+) transceiver will support 4x10 Gbps for a total of 40 Gbps. The enhanced small form‐factor pluggable (SFP+) transceiver will support up to 16 Gbps. The QSFP transceiver will support up 4x1 Gbps for a total of 4 Gbps. The QSFP28 will support 4x28 Gbps for a total of 100 Gbps.
 16. Which connector will you find on a rolled cable?
    - ****<br>
 17. What is the main difference between single‐mode fiber (SMF) and multimode fiber (MMF)?
