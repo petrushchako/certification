@@ -123,15 +123,15 @@
 5. You need to make a Category 5e crossover cable. Which wiring standard will you use on both ends?
    - **568B‐to‐568A**<br>When making a crossover cable for any network cable, the 568B wiring standard should be used on one end, and the 568A wiring standard should be used on the other end. A straight‐through cable is created when you crimp the 568A‐to‐568A or 568B‐to‐568B wiring standard on both ends of a network cable. The terms angled physical contact (APC) and ultra physical contact (UPC) are used to describe the finish on a fiber‐optic cable end.
 6. You need to install cabling in an office space and want to be assured that toxic vapors will not be created in the event of a fire. Which cable type should you choose?
-   - ****<br>
+   - **Plenum**<br>You should always use plenum‐rated cable in office spaces to avoid toxic vapors released in the event of a fire. Polyvinyl chloride (PVC) and fluoroethylene propylene (FEP) are plastics that can create poisonous vapers in the event of a fire. Non‐plenum rated cables are typically made from plastics.
 7. Which serial connection method is typically used for connecting peripherals to a PC?
-   - ****<br>
+   - **USB**<br>A Universal Serial Bus (USB) connection method is typically used for connecting peripherals to a PC. A DB‐9 connector is typically used to connect serial connections for router or switch configuration. A Category 3 cable is a network cable specification. A rolled cable is used to connect a router or switch to a PC for configuration.
 8. You need to run a UTP cable for 10 Gbps speeds with a distance of 100 meters. Which minimum cable category rating should you use?
-   - ****<br>
+   - **6A**<br>Category 6A (augmented) will handle speeds of 10 Gbps at a distance of 100 meters. Category 5 is capable of speeds of 100 Mbps at a distance of 100 meters. Category 5e is capable of 1 Gbps at a distance of 100 meters. Category 6 is capable of 10 Gbps up to a maximum distance of 55 meters.
 9. Which is an incorrect statement about smart jacks?
-   - ****<br>
+   - **A smart jack can report trouble in a circuit**<br>A smart jack cannot report trouble in a circuit. The smart jack is typically the demarcation point for a provider. A smart jack can remotely be put into a loopback mode to verify operations. A smart jack is also known as a network interface device (NID) or network interface unit (NIU).
 10. Which term describes what happens to the signal in a network cable as you make the cable’s distance greater?
-   - ****<br>
+   - **Attenuation**<br>The signal on a cable will attenuate as the distance of the cable lengthens. Duplex refers to the path of signaling on a network cable. Demarcation or demarc refers to the point of responsibility for a network provider. Electromagnetic interference (EMI) is interference that is induced into a network cable from an external source.
 11. Which cable has no metallic shielding?
    - ****<br>
 12. Which connector is typically used on the end of a coaxial cable?
