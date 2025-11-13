@@ -143,12 +143,12 @@
 15. Which transceiver will support up to 40 Gbps links?
    - **QSFP+**<br>The quad small form‐factor pluggable+ (QSFP+) transceiver will support 4x10 Gbps for a total of 40 Gbps. The enhanced small form‐factor pluggable (SFP+) transceiver will support up to 16 Gbps. The QSFP transceiver will support up 4x1 Gbps for a total of 4 Gbps. The QSFP28 will support 4x28 Gbps for a total of 100 Gbps.
 16. Which connector will you find on a rolled cable?
-   - ****<br>
+   - **RJ‐45**<br>An RJ‐45 connector also known as a registered jack 45 is used for terminating a rolled cable that is used to connect to a switch or router for configuration. An RJ‐11 connector is used to terminate phone cabling. A Bayonet Neill–Concelman (BNC) connector is used to terminate coaxial cable. The subscriber (or square) connector (SC) is a square plastic fiber‐optic connector.
 17. What is the main difference between single‐mode fiber (SMF) and multimode fiber (MMF)?
-   - ****<br>
+   - **Number of light rays.**<br>The main difference between single‐mode fibers and multimode fibers is in the number of light rays (and thus the number of signals) they can carry. Fiber‐optic cables carry light waves and not electrical signals. Category ratings are used for copper Ethernet Twisted‐pair cables. Single‐mode fiber can run very far distances up to 80 kilometers.
 18. Which fiber‐optic connector has a very small footprint for high‐density installations?
-   - ****<br>
+   - **LC**<br>The local connector (LC) is a small form factor (SFF) connector used for high‐density installations. The subscriber (or square) connector (SC) is a square plastic connector. The straight tip (ST) connector uses a BNC‐style mechanism to lock the fiber‐optic cable in place. Fibre Channel (FC) is a SAN technology that can use any of fiber‐optic connector, but typically the connector is an LC connector for high‐density installation.
 19. You need to connect a switch that only supports multimode fiber to an existing single‐mode fiber‐optic line. What should you use to create a connection?
-   - ****<br>
+   - **Media converter**<br>A media converter that converts single‐mode fiber (SMF) to multimode fiber (MMF) is required to create a solid connection. The angled physical contact (APC) cable end is slightly angled to reduce decibel loss. The ultra physical contact (UPC) cable end is domed to reduce decibel loss. The enhanced small form‐factor pluggable (SFP+) transceiver supports data rates up to 16 Gbps.
 20. Which cable type is considered a patch cable?
-   - ****<br>
+   - **Straight‐through cable**<br>A straight‐through cable is used to patch hosts to a network switch; therefore, it is known as a patch cable. A rolled cable is used for serial connectivity to the switch. A crossover cable is typically used to connect a switch to a switch. Shielded twisted‐pair (STP) cable is a type of cable that has metallic shielding to resist electromagnetic interference (EMI) and radio frequency interference (RFI).
