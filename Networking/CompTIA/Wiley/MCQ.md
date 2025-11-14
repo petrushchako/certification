@@ -190,12 +190,12 @@
 15. Which statement is true when a collision is detected on the network?
     - **A jam signal is sent to all hosts on the segment.**<br>When a collision occurs, a jam signal is sent to all hosts on the segment to notify them of the collision. A random backoff algorithm will take effect, after which all hosts will have equal priority to transmit again. All other answers are incorrect.
 16. How many bits are used to represent the hexadecimal value of 0x0020?
-    - ****<br>
+    - **16**<br>The hexadecimal value of 0x0020 contains 16 bits. Each digit is a hexadecimal value, and there are 4 digits that trail the 0x hex identifier. Each digit has 4 bits and 4 digits × 4 bits = 16 bits. All other answers are incorrect.
 17. Which 3 bytes of the Media Access Control (MAC) address F3‐B2‐CD‐E4‐F4‐42 designate the unique station identifier?
-    - ****<br>
+    - **E4‐F4‐42**<br>The last 3 bytes, E4‐F4‐42, of the Media Access Control (MAC) address designate the unique station identifier. The first 3 bytes, F3‐B2‐CD, are the organizationally unique identifier (OUI). All other answers are incorrect.
 18. Which protocol does a host use to find the hardware address of a neighbor host by using the destination IP address?
-    - ****<br>
+    - **ARP**<br>Address Resolution Protocol (ARP) is used to find the MAC address of another host on the same LAN. On an Ethernet network, the MAC address (hardware address) is used for one host to communicate with another. The Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) are both Transport layer protocols used to transmit segments. The Domain Name System (DNS) protocol is used for name resolution.
 19. What are the speed, maximum distance, and media of 10GBaseT?
-    - ****<br>
+    - **10 Gb/s, 100 meters, and copper**<br>The Ethernet specification of 10GBaseT is 10 Gb/s with a maximum distance of 100 meters over copper. All other answers are incorrect.
 20. How many wire pairs are used with 1000BaseTX?
-    - ****<br>
+    - **Four**<br>1000BaseTX uses two pairs of wires, one pair for transmitting and one pair for receiving. All other answers are incorrect.
