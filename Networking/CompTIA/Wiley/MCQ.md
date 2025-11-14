@@ -152,3 +152,50 @@
    - **Media converter**<br>A media converter that converts single‐mode fiber (SMF) to multimode fiber (MMF) is required to create a solid connection. The angled physical contact (APC) cable end is slightly angled to reduce decibel loss. The ultra physical contact (UPC) cable end is domed to reduce decibel loss. The enhanced small form‐factor pluggable (SFP+) transceiver supports data rates up to 16 Gbps.
 20. Which cable type is considered a patch cable?
    - **Straight‐through cable**<br>A straight‐through cable is used to patch hosts to a network switch; therefore, it is known as a patch cable. A rolled cable is used for serial connectivity to the switch. A crossover cable is typically used to connect a switch to a switch. Shielded twisted‐pair (STP) cable is a type of cable that has metallic shielding to resist electromagnetic interference (EMI) and radio frequency interference (RFI).
+
+
+
+<br><br><br>
+   
+
+## Chapter 4: The Current Ethernet Specifications
+1. Which contention method does 802.3 Ethernet use for collisions?
+    - ****<br>
+2. Which field in an Ethernet frame is used to check the integrity of the frame?
+    - ****<br>
+3. What is the significance of the preamble?
+    - ****<br>
+4. In a layer 2 frame, where is the destination MAC address?
+    - ****<br>
+5. How many bits is the OUI assigned by the IEEE?
+    - ****<br>
+6. If the I/G or Individual/Group bit is set to 1 in the OUI portion of the MAC address, which statement is true?
+    - ****<br>
+7. If the L/G or Local/Group bit is set to 1 in the OUI portion of the MAC address, which statement is true?
+    - ****<br>
+8. Which is a reason that the Ethernet protocol uses physical addresses?
+    - ****<br>
+9. What is the 2‐byte type field used for in an Ethernet frame?
+    - ****<br>
+10. What is the purpose of the State of Frame delimiter byte in a frame?
+    - ****<br>
+11. How many bits are in a nibble?
+    - ****<br>
+12. How many bits are in a MAC address?
+    - ****<br>
+13. You need to connect a fiber‐optic line between two floors of a building that are 200 meters apart. Which Ethernet technology is the most cost effective that will accomplish the task?
+    - ****<br>
+14. Which technology provides Internet connectivity over power lines?
+    - ****<br>
+15. Which statement is true when a collision is detected on the network?
+    - ****<br>
+16. How many bits are used to represent the hexadecimal value of 0x0020?
+    - ****<br>
+17. Which 3 bytes of the Media Access Control (MAC) address F3‐B2‐CD‐E4‐F4‐42 designate the unique station identifier?
+    - ****<br>
+18. Which protocol does a host use to find the hardware address of a neighbor host by using the destination IP address?
+    - ****<br>
+19. What are the speed, maximum distance, and media of 10GBaseT?
+    - ****<br>
+20. How many wire pairs are used with 1000BaseTX?
+    - ****<br>
