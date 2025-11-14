@@ -160,15 +160,15 @@
 
 ## Chapter 4: The Current Ethernet Specifications
 1. Which contention method does 802.3 Ethernet use for collisions?
-    - ****<br>
+    - **CSMA/CD**<br>Ethernet uses carrier sense multiple access with collision detection (CSMA/CD) as the main contention method for collisions with half‐duplex communications. Carrier sense multiple access with collision avoidance (CSMA/CA) is used with 802.11 wireless communications as the main contention method for collisions. Half‐duplex mode requires a contention method since the same pair is used for transmitting and receiving bits. Full‐duplex mode does not require a contention method for collisions since there is a dedicated pair of wires for transmitting and a dedicated pair of wire for receiving bits.
 2. Which field in an Ethernet frame is used to check the integrity of the frame?
-    - ****<br>
+    - **FCS**<br>The frame checking sequence (FCS) is a cyclical redundancy check (CRC) calculation used to check the integrity of the frame. The start of frame (SOF) delimiter is a one‐byte field of alternating 1s and 0s that signifies the start of the frame. The preamble allows the other physical connection to synchronize its clocks for the data that follows. The destination address (DA) is the destination MAC address the frame is destined for.
 3. What is the significance of the preamble?
-    - ****<br>
+    - **The preamble allows the switch to sync timing for the receipt of information to follow.**<br>The preamble allows for the source computer to sync its timing of the physical media–independent interface with the destination computer. It achieves this via an alternating 1 and 0 pattern at a specific frequency depending on data transfer speed. The SFD has an extra bit to let the destination computer know anything that follows is data.
 4. In a layer 2 frame, where is the destination MAC address?
-    - ****<br>
+    - **The destination MAC address is the first 6 bytes after the preamble**<br>The 6‐byte destination MAC address is after the preamble/SFD so that it can be read by the switch for forwarding. All other answers are incorrect.
 5. How many bits is the OUI assigned by the IEEE?
-    - ****<br>
+    - **24 bits**<br>The organizationally unique identifier (OUI) is 24 bits or the first 3 bytes of the MAC address.
 6. If the I/G or Individual/Group bit is set to 1 in the OUI portion of the MAC address, which statement is true?
     - ****<br>
 7. If the L/G or Local/Group bit is set to 1 in the OUI portion of the MAC address, which statement is true?
