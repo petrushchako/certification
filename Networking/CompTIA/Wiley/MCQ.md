@@ -170,15 +170,15 @@
 5. How many bits is the OUI assigned by the IEEE?
     - **24 bits**<br>The organizationally unique identifier (OUI) is 24 bits or the first 3 bytes of the MAC address.
 6. If the I/G or Individual/Group bit is set to 1 in the OUI portion of the MAC address, which statement is true?
-    - ****<br>
+    - **The MAC address is a broadcast or multicast**<br>When the I/G bit is set, it means that the MAC address is intended to be a broadcast or multicast for a group of recipients. All other answers are incorrect.
 7. If the L/G or Local/Group bit is set to 1 in the OUI portion of the MAC address, which statement is true?
-    - ****<br>
+    - **The MAC address is locally governed**<br>When the L/G bit (sometimes referred to as the U/L bit) is set, it means the MAC address is locally governed. This means the user has manually set the MAC address. All other answers are incorrect.
 8. Which is a reason that the Ethernet protocol uses physical addresses?
-    - ****<br>
+    - **It uniquely identifies devices at layer 2**<br>MAC addresses are physical addresses that are burnt into every NIC card and network device. It is unique at the data link layer from direct communication purposes. All other answers are incorrect.
 9. What is the 2‐byte type field used for in an Ethernet frame?
-    - ****<br>
+    - **It identifies the upper‐layer protocol for the data contained within the frame.**<br>The Ethernet type field is 2 bytes, and it identifies at layer 2 which upper‐layer protocol to send the data to. When IPv4 is used, the type field is 0x0800. When IPv6 is used, the type field is 0x86dd. All other answers are incorrect.
 10. What is the purpose of the State of Frame delimiter byte in a frame?
-    - ****<br>
+    - **It provides a means for the receiving node to know when data begins.**<br>The preamble is 7 bytes of alternating 1s and 0s at a frequency that matches the bandwidth of the link. It is important to note that the 1s and 0s pattern starts with a 1 and ends with a 0 for 7 bytes (10101010). The SFD has an extra lower bit signaling the end of timing and the start of data (10101011). All other answers are incorrect.
 11. How many bits are in a nibble?
     - ****<br>
 12. How many bits are in a MAC address?
