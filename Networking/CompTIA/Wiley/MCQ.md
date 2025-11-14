@@ -180,15 +180,15 @@
 10. What is the purpose of the State of Frame delimiter byte in a frame?
     - **It provides a means for the receiving node to know when data begins.**<br>The preamble is 7 bytes of alternating 1s and 0s at a frequency that matches the bandwidth of the link. It is important to note that the 1s and 0s pattern starts with a 1 and ends with a 0 for 7 bytes (10101010). The SFD has an extra lower bit signaling the end of timing and the start of data (10101011). All other answers are incorrect.
 11. How many bits are in a nibble?
-    - ****<br>
+    - **4**<br>There are 4 bits in a nibble. A single bit is the lowest value in the binary system, with a potential value of 0 or 1. There are 8 bits in a byte or octet, depending on the base value. 16 bits is a double byte, also called a word.
 12. How many bits are in a MAC address?
-    - ****<br>
+    - **48**<br>There are 48 bits that compose a MAC address. 24 bits are assigned by the Electrical and Electronics Engineers (IEEE) to the organization. The other 24 bits are assigned by the organization for uniqueness. All other answers are incorrect.
 13. You need to connect a fiber‐optic line between two floors of a building that are 200 meters apart. Which Ethernet technology is the most cost effective that will accomplish the task?
-    - ****<br>
+    - **10GBaseSR**<br>10GBaseSR will support 10 Gb/s for a maximum distance of 300 meters. 10GBaseLR will support 10 Gb/s up to 10 kilometers and will provide ample connectivity between buildings. 10GBaseER will operate at 10 Gb/s for a total of 40 kilometers. 10GBaseT will support 10 Gb/s over copper UTP cables for a maximum distance of 100 meters. Although 10GBaseER and 10GBaseLR can accomplish the task, these technologies are much more expensive than 10GBaseSR.
 14. Which technology provides Internet connectivity over power lines?
-    - ****<br>
+    - **BPL**<br>Broadband over Power Line (BPL) called IEEE 1901 is a technology that provides Internet connectivity over power lines. Multimedia over Coax (MoCA) is a technology that provides network connectivity over coaxial lines. HDMI Ethernet Channel technology consolidates video, audio, and data streams into a single HDMI cable. HomePlug is a technology that allows you to run local area network (LAN) traffic in your home, over your home’s power line.
 15. Which statement is true when a collision is detected on the network?
-    - ****<br>
+    - **A jam signal is sent to all hosts on the segment.**<br>When a collision occurs, a jam signal is sent to all hosts on the segment to notify them of the collision. A random backoff algorithm will take effect, after which all hosts will have equal priority to transmit again. All other answers are incorrect.
 16. How many bits are used to represent the hexadecimal value of 0x0020?
     - ****<br>
 17. Which 3 bytes of the Media Access Control (MAC) address F3‐B2‐CD‐E4‐F4‐42 designate the unique station identifier?
