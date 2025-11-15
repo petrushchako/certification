@@ -206,45 +206,45 @@
 
 ## Chapter 5: Networking Devices
 1. You have been asked to change the IP address in external DNS for a mail server in your organization. Which record can be changed with the least amount of effort?
-   - **<br>
+   - **A record**<br>The alias, or A, record that matches the MX record configured for the mail server should be changed. If you were to change the MX record, a new alias record would need to be created as well, since every MX record contains the FQDN that maps to an alias record. A PTR record is used for reverse DNS and will not solve the problem. A TXT record is used to resolve plaintext and does not solve the problem.
 2. Which is a valid reason to implement a wireless LAN controller?
-   - **<br>
+   - **Centralized provisioning**<br>Centralized provisioning of lightweight wireless access points (LWAPs) is a valid reason to implement a WLAN controller. Although a wireless LAN controller makes it easier to implement multiple SSIDs and VLANs, this task can be performed with autonomous WAPs, each performing its own authentication. The use of autonomous WAPs negates the reasons you would use a WLAN controller because each WAP would be independently managed and no coordination would exist between the autonomous WAPs. The use of multiple SSIDs can be achieved with an autonomous WAP without a WLAN controller. Multiple VLANs can also be used with an autonomous WAP without a WLAN controller.
 3. What is the benefit of network segmentation?
-   - **<br>
+   - **Increased broadcast domains**<br>Network segmentation increases the number of broadcast domains. This effectively decreases the number of broadcasts seen on a network segment and effectively increases bandwidth. All other answers are incorrect.
 4. Which protocol and port do you need to configure on the inbound host‐based firewall for a DHCP server?
-   - **<br>
+   - **UDP/67**<br>The DHCP server waits for connection from clients on UDP/67; the clients will send the requests from UDP/68. Therefore, the inbound host‐based firewall should be configured to accept traffic from UDP/67.
 5. Which type of device will detect but not prevent unauthorized access?
-   - **<br>
+   - **IDS**<br>An IDS, or intrusion detection system, will detect unauthorized access. However, it will not prevent unauthorized access. It is a form of audit control in a network. A firewall will protect your network from attack by placing rules defining how people can connect as well as which traffic can pass. An intrusion protection system (IPS) will detect the presence of an intrusion and alert an administrator. A honeypot will attract a malicious user so that their tactics can be observed. It performs this function by diverting the malicious user from production systems to the honeypot, which is a sacrificial system.
 6. Your organization expects a considerable amount of traffic to your web server, so you plan to install several web servers. How can you maintain one FQDN and allow customers to be directed to the next free web servers?
-   - **<br>
+   - ****<br>
 7. Your organization has deployed several autonomous WAPs. Users complain that they consistently drop the wireless connection when roaming. What should you recommend to resolve this issue?
-   - **<br>
+   - ****<br>
 8. You need to make sure that a printer is configured with the same IP address every time it is turned on. However, the printer is too troublesome to configure a static IP address. What can be done to achieve the goal?
-   - **<br>
+   - ****<br>
 9.  Which record type is used for an IPv4 address mapping to FQDN for DNS queries?
-   - **<br>
+   - ****<br>
 10. Which device will act as a multiport repeater in the network?
-   - **<br>
+   - ****<br>
 11. Which is a correct statement when hubs are replaced with switches?
-   - **<br>
+   - ****<br>
 12. When firewalls are placed in a network, which zone contains Internet‐facing services?
-   - **<br>
+   - ****<br>
 13. Which is a false statement about firewalls?
-   - **<br>
+   - ****<br>
 14. Which statement is correct about reverse lookups?
-   - **<br>
+   - ****<br>
 15. What gets appended to hostname queries for DNS resolution?
-   - **<br>
+   - ****<br>
 16. Which type of DNS record holds the IPv4 IP address for a hostname?
-   - **<br>
+   - ****<br>
 17. Which of the following devices can work at both layers 2 and 3 of the OSI model?
-   - **<br>
+   - ****<br>
 18. What is an advantage of using DHCP in a network environment?
-   - **<br>
+   - ****<br>
 19. What is a benefit to installing a proxy server?
-   - **<br>
+   - ****<br>
 20. Which protocol and port number does DNS use for direct queries?
-   - **<br>
+   - ****<br>
 
 
 
@@ -272,42 +272,42 @@
 
 ## 
 1. 
-   - **<br>
+   - ****<br>
 2. 
-   - **<br>
+   - ****<br>
 3. 
-   - **<br>
+   - ****<br>
 4. 
-   - **<br>
+   - ****<br>
 5. 
-   - **<br>
+   - ****<br>
 6. 
-   - **<br>
+   - ****<br>
 7. 
-   - **<br>
+   - ****<br>
 8. 
-   - **<br>
+   - ****<br>
 9.  
-   - **<br>
+   - ****<br>
 10. 
-   - **<br>
+   - ****<br>
 11. 
-   - **<br>
+   - ****<br>
 12. 
-   - **<br>
+   - ****<br>
 13. 
-   - **<br>
+   - ****<br>
 14. 
-   - **<br>
+   - ****<br>
 15. 
-   - **<br>
+   - ****<br>
 16. 
-   - **<br>
+   - ****<br>
 17. 
-   - **<br>
+   - ****<br>
 18. 
-   - **<br>
+   - ****<br>
 19. 
-   - **<br>
+   - ****<br>
 20. 
-   - **<br>
+   - ****<br>
