@@ -199,3 +199,49 @@
     - **10 Gb/s, 100 meters, and copper**<br>The Ethernet specification of 10GBaseT is 10 Gb/s with a maximum distance of 100 meters over copper. All other answers are incorrect.
 20. How many wire pairs are used with 1000BaseTX?
     - **Four**<br>1000BaseTX uses two pairs of wires, one pair for transmitting and one pair for receiving. All other answers are incorrect.
+
+
+<br><br><br>
+
+
+## Chapter 5: Networking Devices
+1. You have been asked to change the IP address in external DNS for a mail server in your organization. Which record can be changed with the least amount of effort?
+   - **<br>
+2. Which is a valid reason to implement a wireless LAN controller?
+   - **<br>
+3. What is the benefit of network segmentation?
+   - **<br>
+4. Which protocol and port do you need to configure on the inbound host‐based firewall for a DHCP server?
+   - **<br>
+5. Which type of device will detect but not prevent unauthorized access?
+   - **<br>
+6. Your organization expects a considerable amount of traffic to your web server, so you plan to install several web servers. How can you maintain one FQDN and allow customers to be directed to the next free web servers?
+   - **<br>
+7. Your organization has deployed several autonomous WAPs. Users complain that they consistently drop the wireless connection when roaming. What should you recommend to resolve this issue?
+   - **<br>
+8. You need to make sure that a printer is configured with the same IP address every time it is turned on. However, the printer is too troublesome to configure a static IP address. What can be done to achieve the goal?
+   - **<br>
+9.  Which record type is used for an IPv4 address mapping to FQDN for DNS queries?
+   - **<br>
+10. Which device will act as a multiport repeater in the network?
+   - **<br>
+11. Which is a correct statement when hubs are replaced with switches?
+   - **<br>
+12. When firewalls are placed in a network, which zone contains Internet‐facing services?
+   - **<br>
+13. Which is a false statement about firewalls?
+   - **<br>
+14. Which statement is correct about reverse lookups?
+   - **<br>
+15. What gets appended to hostname queries for DNS resolution?
+   - **<br>
+16. Which type of DNS record holds the IPv4 IP address for a hostname?
+   - **<br>
+17. Which of the following devices can work at both layers 2 and 3 of the OSI model?
+   - **<br>
+18. What is an advantage of using DHCP in a network environment?
+   - **<br>
+19. What is a benefit to installing a proxy server?
+   - **<br>
+20. Which protocol and port number does DNS use for direct queries?
+   - **<br>
