@@ -216,15 +216,15 @@
 5. Which type of device will detect but not prevent unauthorized access?
    - **IDS**<br>An IDS, or intrusion detection system, will detect unauthorized access. However, it will not prevent unauthorized access. It is a form of audit control in a network. A firewall will protect your network from attack by placing rules defining how people can connect as well as which traffic can pass. An intrusion protection system (IPS) will detect the presence of an intrusion and alert an administrator. A honeypot will attract a malicious user so that their tactics can be observed. It performs this function by diverting the malicious user from production systems to the honeypot, which is a sacrificial system.
 6. Your organization expects a considerable amount of traffic to your web server, so you plan to install several web servers. How can you maintain one FQDN and allow customers to be directed to the next free web servers?
-   - ****<br>
+   - **Load balancer**<br>A load balancer will direct a user’s request to the next free web server. A router will only route traffic to a destination network. A firewall would not accomplish the requirement of distribution of the load. A proxy is something that might fetch the web page on the web server, but it will not provide load balancing.
 7. Your organization has deployed several autonomous WAPs. Users complain that they consistently drop the wireless connection when roaming. What should you recommend to resolve this issue?
-   - ****<br>
+   - **Wireless LAN controller**<br>Autonomous WAPs do not have any coordination between them for roaming clients. When a client roams from one WAP to another, they must reauthenticate, and this causes a drop. Implementing a wireless LAN controller will coordinate roaming clients and not require reauthentication.
 8. You need to make sure that a printer is configured with the same IP address every time it is turned on. However, the printer is too troublesome to configure a static IP address. What can be done to achieve the goal?
-   - ****<br>
+   - **Configure a DHCP reservation for the printer.**<br>A DHCP reservation will allow for the printer to obtain the same IP address every time it is turned on. The DHCP server will serve the same IP address to the printer based on the printer’s MAC address in the reservation. Configuring an A record will not achieve the goal. Configuring a DHCP exclusion for the printer would work only if you had already set it to a static IP address and didn’t want that IP address assigned to another host. Configuring an PTR record will not achieve the goal.
 9.  Which record type is used for an IPv4 address mapping to FQDN for DNS queries?
-   - ****<br>
+   - **The PTR record**<br>The PTR, or pointer record, is used to look up IP addresses and return FQDNs that are mapped to them. This is helpful to identify an IP address, and in the case of SSH, it is used to positively identify the host you are connecting to. The A record is used to look up an IP address for a given hostname. The CName record is used to look up the alias for a given hostname. The AAAA record is used to look up an IPv6 address for a given hostname.
 10. Which device will act as a multiport repeater in the network?
-   - ****<br>
+   - **Hub**<br>A hub will act as a multiport repeater by repeating the physical bits on an incoming port to all the other connected ports. A switch or bridge will forward the frame only to the port it is destined for. Even when broadcasts are received, the frame is still processed and not blindly repeated. A WAP acts similarly to a switch and will forward frames only to the connected wireless or wired network.
 11. Which is a correct statement when hubs are replaced with switches?
    - ****<br>
 12. When firewalls are placed in a network, which zone contains Internet‐facing services?
