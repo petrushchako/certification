@@ -226,15 +226,15 @@
 10. Which device will act as a multiport repeater in the network?
    - **Hub**<br>A hub will act as a multiport repeater by repeating the physical bits on an incoming port to all the other connected ports. A switch or bridge will forward the frame only to the port it is destined for. Even when broadcasts are received, the frame is still processed and not blindly repeated. A WAP acts similarly to a switch and will forward frames only to the connected wireless or wired network.
 11. Which is a correct statement when hubs are replaced with switches?
-   - ****<br>
+   - **The replacement increases collision domains.**<br>The replacement of hubs with switches increases collision domains and effectively increases bandwidth. The replacement of switches with hubs can decrease the number of collision domains, creating a much larger collision domain. The replacement of hubs with switches has no effect on broadcast domains. Broadcast domains would be affected only if a router was introduced.
 12. When firewalls are placed in a network, which zone contains Internet‐facing services?
-   - ****<br>
+   - **Demilitarized zone**<br>The demilitarized zone (DMZ) or screen subnet is where Internet‐facing servers/services are placed. The outside zone is where the public Internet connection is connected, and it is the least trusted. The enterprise network zone is considered the inside zone. The inside zone is considered to be the highest trusted network because it is the internal network that you control.
 13. Which is a false statement about firewalls?
-   - ****<br>
+   - **Firewalls are commonly deployed to protect a network from internal attacks.**<br>Firewalls are not commonly deployed to provide protection from internal attacks on internal resources. They are designed to protect networks from external attacks or attacks emanating from the outside or directed toward the Internet. Firewalls normally provide stateful packet inspection. Firewalls can also control application traffic by port number and higher‐layer attributes.
 14. Which statement is correct about reverse lookups?
-   - ****<br>
+   - **A reverse lookup is the resolution of an IP address to FQDN.**<br>A reverse lookup is when the fully qualified domain name (FQDN) is resolved from an IP address. This is useful when you want to identify an IP address. From the IP address, you can derive the FQDN. A reverse lookup is not when the request needs to be reversed to another DNS server. A reverse lookup is not when the DNS queried can answer the request without asking another DNS server. A reverse lookup is not the resolution of an FQDN to an IP address; it is the resolution of an IP address to an FQDN.
 15. What gets appended to hostname queries for DNS resolution?
-   - ****<br>
+   - **The DNS suffix**<br>The configured DNS suffix is appended to the hostname query. As an example, if you query a hostname of hosta and the configured domain name is network.local, the DNS server will see a query for hosta.network.local. The DNS zone is the database of records contained in DNS. Host header is a term used with web servers and therefore not relevant to DNS resolution. The hostname PTR record is the reverse DNS record for a given IP address.
 16. Which type of DNS record holds the IPv4 IP address for a hostname?
    - ****<br>
 17. Which of the following devices can work at both layers 2 and 3 of the OSI model?
