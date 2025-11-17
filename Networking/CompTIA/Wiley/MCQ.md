@@ -236,15 +236,15 @@
 15. What gets appended to hostname queries for DNS resolution?
    - **The DNS suffix**<br>The configured DNS suffix is appended to the hostname query. As an example, if you query a hostname of hosta and the configured domain name is network.local, the DNS server will see a query for hosta.network.local. The DNS zone is the database of records contained in DNS. Host header is a term used with web servers and therefore not relevant to DNS resolution. The hostname PTR record is the reverse DNS record for a given IP address.
 16. Which type of DNS record holds the IPv4 IP address for a hostname?
-   - ****<br>
+   - **The A record**<br>The A record is the DNS record that is queried when you want to resolve a hostname to an IP address. The CName record is used to look up the alias for a given hostname. The PTR, or pointer record, is used to look up IP addresses and return FQDNs that are mapped to them. The AAAA record is used to look up an IPv6 address for a given hostname.
 17. Which of the following devices can work at both layers 2 and 3 of the OSI model?
-   - ****<br>
+   - **Multilayer switch**<br>A multilayer switch can provide both routing and switching capabilities since it operates on layers 2 and 3. A hub is a device that operates only on layer 1. A switch or bridge is a layer 2 device that segments the network.
 18. What is an advantage of using DHCP in a network environment?
-   - ****<br>
+   - **Automatically assigns IP addresses to hosts**<br>An advantage to DHCP in a network environment is that it automatically assigns IP addresses to hosts. There is minimal difficulty to administrate DHCP, and this is not considered a benefit. Static IP addressing is used in lieu of a DHCP. DHCP does not send an operating system to a PC, but it can direct it to do so with DHCP options.
 19. What is a benefit to installing a proxy server?
-   - ****<br>
+   - **Web caching**<br>Web caching is a tremendous benefit to employing a proxy server. Commonly accessed web pages will be cached, and subsequent requests will be returned locally from the proxy server. The throughput for the network will not increase. DHCP services will not be provided with a proxy server, only the proxying of web pages. Support for user authentication is not a benefit of employing a proxy server.
 20. Which protocol and port number does DNS use for direct queries?
-   - ****<br>
+   - **UDP/53**<br>Domain Name System (DNS) direct queries are performed over the UDP protocol to port 53. The queries do not require the TCP setup and teardown because the queries are simple request and reply messages, so UDP is used for direct queries. TCP port 53 is used for DNS zone transfers between DNS servers. UDP port 55 is not used for any popular protocols. UDP port 68 is used with the Dynamic Host Configuration Protocol (DHCP).
 
 
 
