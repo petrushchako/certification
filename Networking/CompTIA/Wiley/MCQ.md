@@ -247,9 +247,50 @@
    - **UDP/53**<br>Domain Name System (DNS) direct queries are performed over the UDP protocol to port 53. The queries do not require the TCP setup and teardown because the queries are simple request and reply messages, so UDP is used for direct queries. TCP port 53 is used for DNS zone transfers between DNS servers. UDP port 55 is not used for any popular protocols. UDP port 68 is used with the Dynamic Host Configuration Protocol (DHCP).
 
 
+<br><br><br>
 
 
-
+## Chapter 6: Introduction to the Internet Protocol
+1. Which is a correct statement about the Transmission Control Protocol (TCP)?
+   - ****<br>
+2. How does TCP guarantee delivery of segments to the receiver?
+   - ****<br>
+3. When a programmer decides to use UDP as a transport protocol, what is a decision factor?
+   - ****<br>
+4. Which mechanism allows for the Transport layer to communicate with the Session layer?
+   - ****<br>
+5. Why does DNS use UDP for queries?
+   - ****<br>
+6. Which protocol requires the programmer to deal with lost segments?
+   - ****<br>
+7. Which protocol can encapsulate many different protocols inside an IP tunnel?
+   - ****<br>
+8. Which protocol provides confidentiality?
+   - ****<br>
+9.  Which protocol is used for configuration access to network appliances but is not encrypted?
+   - ****<br>
+10. Which protocol is used by applications that need low overhead at the Transport layer?
+   - ****<br>
+11. Which layer in the DoD model is directly related to the Transport layer of the OSI model?
+   - ****<br>
+12. Which element is used with TCP to provide a virtual circuit?
+   - ****<br>
+13. Which protocol uses UDP/123?
+   - ****<br>
+14. What is the process called when data moves up the OSI model?
+   - ****<br>
+15. What is the process called when data moves up the OSI model?
+   - ****<br>
+16. Which protocol provides an IP address from a physical address?
+   - ****<br>
+17. What protocol from the Internet Protocol (IP) stack is used for diagnostics and error messages?
+   - ****<br>
+18. Which IP service uses the UDP protocol?
+   - ****<br>
+19. You need to make sure that the time is consistent across all your network devices. What protocol do you need to run on your network?
+   - ****<br>
+20. Which of the following allows a server to distinguish among different simultaneous requests from the same host?
+   - ****<br>
 
 
 
