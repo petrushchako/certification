@@ -262,15 +262,15 @@
 5. Why does DNS use UDP for queries?
    - **DNS requests are usually small and do not require connections setup**<br>DNS requests are usually small and do not require the overhead of sequence and acknowledgment of TCP. If a segment is dropped, the DNS protocol will ask again. Acknowledgment of data is not a function of UDP. Flow control is not a function of UDP since UDP does not offer flow control of data other than a stop/go action. UDP does not build temporary virtual circuits; this is a function of TCP.
 6. Which protocol requires the programmer to deal with lost segments?
-   - ****<br>
+   - **UDP**<br>User Datagram Protocol (UDP) does not guarantee segments are delivered. Therefore, the programmer must account for segments that are never received or out of order. Secure Sockets Layer (SSL) is a protocol used to encrypt a network transmission. SSL is the predecessor to the modern TLS encryption used today. Transmission allows for the network to automatically deal with lost segments because TCP guarantees segments are delivered. Network management station (NMS) is a term used with Simple Network Management Protocol (SNMP) to describe the collecting host for SNMP messages.
 7. Which protocol can encapsulate many different protocols inside an IP tunnel?
-   - ****<br>
+   - **GRE**<br>Generic Routing Encapsulation (GRE) is a tunneling protocol that can encapsulate many protocols inside an IP tunnel. Reverse Address Resolution Protocol (RARP) is used to obtain an IP address from a MAC address. Address Resolution Protocol (ARP) is used by the Network layer to obtain a MAC address from an IP address. Internet Control Message Protocol (ICMP) is used by the Network layer to communicate network information such as Ping, Traceroute, and many other information services.
 8. Which protocol provides confidentiality?
-   - ****<br>
+   - **ESP**<br>Encapsulating Security Payload (ESP) is used by IP Security Protocol (IPSec) for the confidentiality of the payload. The AH protocol provides authentication for the data and the IP header of a packet using a one‐way hash for packet authentication. Generic Routing Encapsulation (GRE) is a tunneling protocol that can encapsulate many protocols inside an IP tunnel. The protocol data unit (PDU) is a way to describe the data at each layer of the OSI model.
 9.  Which protocol is used for configuration access to network appliances but is not encrypted?
-   - ****<br>
+   - **Telnet**<br>Telnet is used for configuration access to network appliances, but it is not encrypted. Secure Shell (SSH) has become the successor of Telnet, since it is encrypted and provides configuration access. Hypertext Transfer Protocol Secure (HTTPS) is a secure method to transfer web pages. The Remote Desktop Protocol (RDP) is a Microsoft protocol that provides a secure method to access a server desktop.
 10. Which protocol is used by applications that need low overhead at the Transport layer?
-   - ****<br>
+   - **UDP**<br>The User Datagram Protocol (UDP) is a Transport layer protocol that provides applications with low overhead. The Transmission Control Protocol (TCP) is a connection‐oriented protocol and has higher overhead. The Internet Protocol (IP) is a Network layer protocol. The Address Resolution Protocol (ARP) is Network layer helper protocol that resolves MAC addresses from a known IP address.
 11. Which layer in the DoD model is directly related to the Transport layer of the OSI model?
    - ****<br>
 12. Which element is used with TCP to provide a virtual circuit?
