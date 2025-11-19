@@ -272,15 +272,15 @@
 10. Which protocol is used by applications that need low overhead at the Transport layer?
    - **UDP**<br>The User Datagram Protocol (UDP) is a Transport layer protocol that provides applications with low overhead. The Transmission Control Protocol (TCP) is a connection‐oriented protocol and has higher overhead. The Internet Protocol (IP) is a Network layer protocol. The Address Resolution Protocol (ARP) is Network layer helper protocol that resolves MAC addresses from a known IP address.
 11. Which layer in the DoD model is directly related to the Transport layer of the OSI model?
-   - ****<br>
+   - **Host‐to‐Host layer**<br>The Host‐to‐Host DoD layer is directly related to the Transport layer of the OSI model. The Process/Application DoD layer is related to the Application, Presentation, and Session layers of the OSI model. The Internet DoD layer is related to the Network layer of the OSI model. The Network Access DoD layer is related to the Data Link and Physical layers of the OSI model.
 12. Which element is used with TCP to provide a virtual circuit?
-   - ****<br>
+   - **Port numbers**<br>Port numbers are used to create a virtual circuit with TCP. The port numbers are open and in use during the entire TCP conversation. Sequence and acknowledgment numbers are used to assure data is delivered. Protocol numbers are used to direct communications to the next respective upper layer.
 13. Which protocol uses UDP/123?
-   - ****<br>
+   - **NTP**<br>The Network Time Protocol (NTP) operates on the UDP protocol, port 123. The Trivial File Transfer Protocol operates on the UDP protocol, port 69. The Hypertext Transfer Protocol Secure (HTTPS) operates on the TCP protocol, port 443. The Domain Name Service protocol operates on UDP or TCP, port 53.
 14. What is the process called when data moves up the OSI model?
-   - ****<br>
+   - **Internet layer**<br>The Internet DoD layer is directly related to the Network layer in the OSI model, which is responsible for the logical addressing of hosts. The Process/Application layer is where most networked applications will operate on the Application, Presentation, and Session layers in the OSI model. The Host‐to‐Host DoD layer is directly related to the Transport layer in the OSI model, which is responsible for segmenting data and transporting it. The Network Access DoD layer is directly related to the Data Link and Physical OSI layers.
 15. What is the process called when data moves up the OSI model?
-   - ****<br>
+   - **Decapsulation**<br>Data decapsulation is the process of moving data up the OSI model back up to the receiving application. Data encapsulation is the process of moving data down the OSI model to be transmitted on the network. The Frame Checking Sequence (FCS) is a cyclical redundancy check (CRC0) that is processed on the data at the Data Link layer to validate a frame of data. The protocol data unit (PDU) is the reference to the type of data as it passes up and down the OSI layers.
 16. Which protocol provides an IP address from a physical address?
    - ****<br>
 17. What protocol from the Internet Protocol (IP) stack is used for diagnostics and error messages?
