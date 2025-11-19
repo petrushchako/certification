@@ -282,15 +282,15 @@
 15. What is the process called when data moves up the OSI model?
    - **Decapsulation**<br>Data decapsulation is the process of moving data up the OSI model back up to the receiving application. Data encapsulation is the process of moving data down the OSI model to be transmitted on the network. The Frame Checking Sequence (FCS) is a cyclical redundancy check (CRC0) that is processed on the data at the Data Link layer to validate a frame of data. The protocol data unit (PDU) is the reference to the type of data as it passes up and down the OSI layers.
 16. Which protocol provides an IP address from a physical address?
-   - ****<br>
+   - **RARP**<br>The Reverse Address Resolution Protocol (RARP) provides an IP address from a physical MAC address. Internet Control Message Protocol (ICMP) works at the Network layer and is used by IP for many different services. The Transmission Control Protocol (TCP) is a Transport layer protocol for segmenting and transporting data. The Address Resolution Protocol (ARP) provides a MAC address from an IP address.
 17. What protocol from the Internet Protocol (IP) stack is used for diagnostics and error messages?
-   - ****<br>
+   - **ICMP**<br>Internet Control Message Protocol (ICMP) is used for diagnostics (ping and traceroute) and for sending error messages through the network. The Transmission Control Protocol (TCP) is a Transport layer protocol for segmenting and transporting data. The Address Resolution Protocol (ARP) provides a MAC address from an IP address. The User Datagram Protocol (UDP) is a Transport layer protocol used to send segments of data.
 18. Which IP service uses the UDP protocol?
-   - ****<br>
+   - **DHCP**<br>The Dynamic Host Configuration Protocol (DHCP) operates on UDP port 67 and UDP port 68. The Simple Mail Transport Protocol (SMTP) operates on TCP port 25. The File Transport Protocol (FTP) operates on TCP ports 20 and 21. The Hypertext Transfer Protocol (HTTP) operates on TCP port 80.
 19. You need to make sure that the time is consistent across all your network devices. What protocol do you need to run on your network?
-   - ****<br>
+   - **NTP**<br>The Network Time Protocol (NTP) helps synchronize your computer clock over the Internet with the help of an NTP server. The File Transfer Protocol (FTP) allows you to transfer files across the network. The Secure File Transfer Protocol (SFTP) is used when transferring files over an encrypted connection. The Secure Shell (SSH) protocol sets up a secure console session over a standard TCP/IP connection.
 20. Which of the following allows a server to distinguish among different simultaneous requests from the same host?
-   - ****<br>
+   - **They use different port numbers.**<br>Through the use of port numbers, TCP and UDP can establish multiple sessions between the same two hosts without creating any confusion. The sessions can be between the same or different applications, such as multiple web‐browsing sessions or a web‐browsing session and an FTP session. The IP address that the request originates from does not distinguish among different simultaneous requests. Servers are able to accept multiple simultaneous sessions from the same host. The sequence and acknowledgment numbers do not distinguish among different simultaneous requests from the same host.
 
 
 
