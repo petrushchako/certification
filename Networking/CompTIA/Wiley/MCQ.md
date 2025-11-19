@@ -252,15 +252,15 @@
 
 ## Chapter 6: Introduction to the Internet Protocol
 1. Which is a correct statement about the Transmission Control Protocol (TCP)?
-   - ****<br>
+   - **TCP allows for retransmission of lost segments.**<br>TCP is a connection‐based protocol via the three‐way handshake. It is not faster than UDP. However, it allows for the retransmission of lost segments because of sequences and acknowledgments. TCP does not allow or account for error correction, only the detection of errors and lost or missing segments.
 2. How does TCP guarantee delivery of segments to the receiver?
-   - ****<br>
+   - **Sequence and acknowledgment numbers**<br>TCP guarantees delivery of segments with sequence and acknowledgment numbers. At the Transport layer, each segment is given a sequence number that is acknowledged by the receiver. The source and destination ports are used for the delivery of segments, but they do not guarantee delivery. TCP checksums are used to detect errors in segments but do not guarantee delivery. Window size is used to adjust buffer size on the sending and receiving hosts.
 3. When a programmer decides to use UDP as a transport protocol, what is a decision factor?
-   - ****<br>
+   - **Redundancy of acknowledgment is not needed.**<br>When a programmer decides to use UDP, it is normally because the programmer is sequencing and acknowledging datagrams already. The redundancy of acknowledgments at the Transport layer is not needed. Guaranteed delivery of segments is not a function of UDP. UDP does not provide windowing flow control because acknowledgment is not a function of UDP. A virtual circuit can be created only with a setup and teardown of communications, such as TCP offers.
 4. Which mechanism allows for the Transport layer to communicate with the Session layer?
-   - ****<br>
+   - **Port numbers**<br>Port numbers allow the Transport layer to communicate with the Session layer. An example is a web server binding to the port number of TCP/80. A port is communicated in the header of TCP and UDP segments, but the header does not listen for requests or bind. MAC addresses are physical locations on a local area network (LAN) that are used to transmit framed data. Checksums are used to verify that data are not erroneously modified in transit.
 5. Why does DNS use UDP for queries?
-   - ****<br>
+   - **DNS requests are usually small and do not require connections setup**<br>DNS requests are usually small and do not require the overhead of sequence and acknowledgment of TCP. If a segment is dropped, the DNS protocol will ask again. Acknowledgment of data is not a function of UDP. Flow control is not a function of UDP since UDP does not offer flow control of data other than a stop/go action. UDP does not build temporary virtual circuits; this is a function of TCP.
 6. Which protocol requires the programmer to deal with lost segments?
    - ****<br>
 7. Which protocol can encapsulate many different protocols inside an IP tunnel?
