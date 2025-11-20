@@ -294,6 +294,57 @@
 
 
 
+<br><br><br>
+
+
+
+## Chapter 7: IP Addressing
+1. Which of the following addresses is not allowed on the Internet?
+   - ****<br>
+2. A host automatically configured with an address from which of the following ranges indicates an inability to contact a DHCP server?
+   - ****<br>
+3. Which statement regarding private IP addresses is most accurate?
+   - ****<br>
+4. Which of the following is a valid Class A address?
+   - ****<br>
+5. Which of the following is a valid Class B address?
+   - ****<br>
+6. Which of the following describes a broadcast address?
+   - ****<br>
+7. Which of the following is a layer 2 broadcast?
+   - ****<br>
+8. In a Class C IP address, how long is the network address?
+   - ****<br>
+9.  Which of the following is true when describing a unicast address?
+   - ****<br>
+10. A host is rebooted, and you view the IP address that it was assigned. The address is 169.123.13.34. Which of the following happened?
+   - ****<br>
+11. An IPv4 address uses 32 bits. How many bits is an IPv6 address?
+   - ****<br>
+12. Which of the following is true when describing a multicast address?
+   - ****<br>
+13. Which of the following is true when describing an anycast address?
+   - ****<br>
+14. You want to ping the loopback address of your local host. Which two options could you type? (Choose two.)
+   - ****<br>
+15. What two statements about IPv6 addresses are true? (Choose two.)
+   - ****<br>
+16. What two statements about IPv4 and IPv6 addresses are true? (Choose two.)
+   - ****<br>
+17. Which of the following is a Class C network address?
+   - ****<br>
+18. Which of the following are private IP addresses? (Choose two.)
+   - ****<br>
+19. IPv6 unicast routing is running on the Corp router. Which of the following addresses would be used as the EUI‐64 address?
+    ```sh
+    Corp#sh int f0/0
+    FastEthernet0/0 is up, line protocol is up
+    Hardware is AmdFE, address is 000d.bd3b.0d80 (bia 000d.bd3b.0d80)
+    [output cut]
+    ```
+   - ****<br>
+20. Which of the following is an invalid IP address for a host?
+   - ****<br>
 
 
 
