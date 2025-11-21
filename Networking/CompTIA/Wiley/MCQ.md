@@ -300,42 +300,57 @@
 
 ## Chapter 7: IP Addressing
 1. Which of the following addresses is not allowed on the Internet?
-   - ****<br>
+   - 191.192.168.1
+   - 191.168.169.254
+   - 172.32.255.0
+   - **172.31.12.251**<br>The addresses in the range 172.16.0.0 through 172.31.255.255 are all considered private, based on RFC 1918. Use of these addresses on the Internet is prohibited so that they can be used simultaneously in different administrative domains without concern for conflict. These addresses are not and should not be routable on the public Internet.
 2. A host automatically configured with an address from which of the following ranges indicates an inability to contact a DHCP server?
-   - ****<br>
+   - 169.254.0 × with a mask of 255.255.255.0
+   - **169.254xx with a mask of 255.255.0.0**
+   - 169.254.× × with a mask of 255.255.255.0
+   - 169.255 xx with a mask of 255.255.0.0<br>The Automatic Private IP Addressing (APIPA) uses the link‐local private address range of 169.254.0.0 through 169.254.255.255 and a subnet mask of 255.255.0.0. APIPA addresses are used by DHCP clients that cannot contact a DHCP server and have no static alternate configuration. These addresses are not Internet routable and cannot, by default, be used across routers on an internetwork.
 3. Which statement regarding private IP addresses is most accurate?
-   - ****<br>
+   - Private addresses cannot be used in intranets that require routing.
+   - Private addresses must be assigned by a registrar a or ISP.
+   - **A remote host across the Internet cannot ping your host if it has a private address.**
+   - Private addresses can be used only by a single administrative domain. <br>Private IP addresses are not routable over the Internet, as either source or destination addresses. Therefore, any entity that wants to use such addresses internally can do so without causing conflicts with other entities and without asking permission of any registrar or service provider. Despite not being allowed on the Internet, private IP addresses are fully routable on private intranets.
 4. Which of the following is a valid Class A address?
-   - ****<br>
+   - 191.10.0.1
+   - 127.10.0.1
+   - 128.10.0.1
+   - **126.10.0.1**<br>The Class A range is 1 through 126 for the first octet/byte. The Class B range is 127 through 191 for the first octet/byte. Class C range is 192 through 223 for the first octet/byte.
 5. Which of the following is a valid Class B address?
+   - 10.1.1.1
+   - 126.1.1.1
+   - **129.1.1.1**
+   - 192.168.1.1<br>The Class B range is 128 through 191 in the first octet/byte. The Class A range is 1 through 126 for the first octet/byte. Class C range is 192 through 223 for the first octet/byte.
+1. Which of the following describes a broadcast address?
    - ****<br>
-6. Which of the following describes a broadcast address?
+2. Which of the following is a layer 2 broadcast?
    - ****<br>
-7. Which of the following is a layer 2 broadcast?
+3. In a Class C IP address, how long is the network address?
    - ****<br>
-8. In a Class C IP address, how long is the network address?
+4.  Which of the following is true when describing a unicast address?
    - ****<br>
-9.  Which of the following is true when describing a unicast address?
+5.  A host is rebooted, and you view the IP address that it was assigned. The address is 169.123.13.34. Which of the following happened?
    - ****<br>
-10. A host is rebooted, and you view the IP address that it was assigned. The address is 169.123.13.34. Which of the following happened?
+6.  An IPv4 address uses 32 bits. How many bits is an IPv6 address?
    - ****<br>
-11. An IPv4 address uses 32 bits. How many bits is an IPv6 address?
+7.  Which of the following is true when describing a multicast address?
    - ****<br>
-12. Which of the following is true when describing a multicast address?
+8.  Which of the following is true when describing an anycast address?
    - ****<br>
-13. Which of the following is true when describing an anycast address?
+9.  You want to ping the loopback address of your local host. Which two options could you type? (Choose two.)
    - ****<br>
-14. You want to ping the loopback address of your local host. Which two options could you type? (Choose two.)
+10. What two statements about IPv6 addresses are true? (Choose two.)
    - ****<br>
-15. What two statements about IPv6 addresses are true? (Choose two.)
+11. What two statements about IPv4 and IPv6 addresses are true? (Choose two.)
    - ****<br>
-16. What two statements about IPv4 and IPv6 addresses are true? (Choose two.)
+12. Which of the following is a Class C network address?
    - ****<br>
-17. Which of the following is a Class C network address?
+13. Which of the following are private IP addresses? (Choose two.)
    - ****<br>
-18. Which of the following are private IP addresses? (Choose two.)
-   - ****<br>
-19. IPv6 unicast routing is running on the Corp router. Which of the following addresses would be used as the EUI‐64 address?
+14. IPv6 unicast routing is running on the Corp router. Which of the following addresses would be used as the EUI‐64 address?
     ```sh
     Corp#sh int f0/0
     FastEthernet0/0 is up, line protocol is up
@@ -343,7 +358,7 @@
     [output cut]
     ```
    - ****<br>
-20. Which of the following is an invalid IP address for a host?
+15. Which of the following is an invalid IP address for a host?
    - ****<br>
 
 
