@@ -324,33 +324,57 @@
    - 126.1.1.1
    - **129.1.1.1**
    - 192.168.1.1<br>The Class B range is 128 through 191 in the first octet/byte. The Class A range is 1 through 126 for the first octet/byte. Class C range is 192 through 223 for the first octet/byte.
-1. Which of the following describes a broadcast address?
+6. Which of the following describes a broadcast address?
+   - All network bits are on (1s).
+   - **All host bits are on (1s).**
+   - All network bits are off (Os).
+   - All host bits are off (0s).<br>If you turned on all host bits (all of the host bits are 1s), this would be a broadcast address for that network. Turning all the network bits to 1s would define a different network address. Turning all the network bits to 0s would make the network address invalid. Turning all the host bits to 0s would make the address invalid, as well, since this is how the network is defined.
+7. Which of the following is a layer 2 broadcast?
+   - FF.FF.FF.EE.EE.EE
+   - **FF.FF.FF.FF.FF.FF**
+   - 255.255.255.255
+   - 255.0.0.0<br>A layer 2 broadcast is also referred to as a MAC address broadcast, which is in hexadecimal and is FF.FF.FF.FF.FF.FF. A layer 3 broadcast would have a destination address of 255.255.255.255.
+8. In a Class C IP address, how long is the network address?
+   - 8 bits
+   - 16 bits
+   - **24 bits**
+   - 32 bits<br>A default Class C subnet mask is 255.255.255.0, which means that the first three octets, or first 24 bits, are the network number.
+9.  Which of the following is true when describing a unicast address?
+   - **Packets addressed to a unicast address are delivered to a single interface.**
+   - These are your typical publicly routable addresses, just like regular publicly routable addresses in IPv4.
+   - These are like private addresses in IPv4 in that they are not meant to be routed.
+   - These addresses are meant for nonrouting purposes, but they are almost globally unique, so it is unlikely they will have an address overlap.<br>Packets addressed to a unicast address are delivered to a single interface. For load balancing, multiple interfaces can use the same address.
+10.  A host is rebooted, and you view the IP address that it was assigned. The address is 169.123.13.34. Which of the following happened?
+   - The host received an APIPA address.
+   - The host received a multicast address.
+   - **The host received a public address.**
+   - The host received a private address.<br>
+   I wonder how many of you picked APIPA address as your answer? An APIPA address is 169.254.x.x. The host address in this question is a public address. This was somewhat of a tricky question if you did not read carefully.
+1.  An IPv4 address uses 32 bits. How many bits is an IPv6 address?
    - ****<br>
-2. Which of the following is a layer 2 broadcast?
+   - 
+2.  Which of the following is true when describing a multicast address?
    - ****<br>
-3. In a Class C IP address, how long is the network address?
+   - 
+3.  Which of the following is true when describing an anycast address?
    - ****<br>
-4.  Which of the following is true when describing a unicast address?
+   - 
+4.  You want to ping the loopback address of your local host. Which two options could you type? (Choose two.)
    - ****<br>
-5.  A host is rebooted, and you view the IP address that it was assigned. The address is 169.123.13.34. Which of the following happened?
+   - 
+5.  What two statements about IPv6 addresses are true? (Choose two.)
    - ****<br>
-6.  An IPv4 address uses 32 bits. How many bits is an IPv6 address?
+   - 
+6.  What two statements about IPv4 and IPv6 addresses are true? (Choose two.)
    - ****<br>
-7.  Which of the following is true when describing a multicast address?
+   - 
+7.  Which of the following is a Class C network address?
    - ****<br>
-8.  Which of the following is true when describing an anycast address?
+   - 
+8.  Which of the following are private IP addresses? (Choose two.)
    - ****<br>
-9.  You want to ping the loopback address of your local host. Which two options could you type? (Choose two.)
-   - ****<br>
-10. What two statements about IPv6 addresses are true? (Choose two.)
-   - ****<br>
-11. What two statements about IPv4 and IPv6 addresses are true? (Choose two.)
-   - ****<br>
-12. Which of the following is a Class C network address?
-   - ****<br>
-13. Which of the following are private IP addresses? (Choose two.)
-   - ****<br>
-14. IPv6 unicast routing is running on the Corp router. Which of the following addresses would be used as the EUI‐64 address?
+   - 
+9.  IPv6 unicast routing is running on the Corp router. Which of the following addresses would be used as the EUI‐64 address?
     ```sh
     Corp#sh int f0/0
     FastEthernet0/0 is up, line protocol is up
@@ -358,8 +382,10 @@
     [output cut]
     ```
    - ****<br>
-15. Which of the following is an invalid IP address for a host?
+   - 
+10. Which of the following is an invalid IP address for a host?
    - ****<br>
+   - 
 
 
 
