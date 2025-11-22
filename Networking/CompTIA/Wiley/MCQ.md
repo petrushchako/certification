@@ -494,14 +494,22 @@
    - **A single interface will have multiple IPv6 addresses of different types.**
   
         > To shorten the written length of an IPv6 address, successive fields of zeros may be replaced by double colons. In trying to shorten the address further, leading zeros may also be removed. Just as with IPv4, a single device’s interface can have more than one address; with IPv6, there are more types of addresses, and the same rule applies. There can be link‐local, global unicast, and multicast addresses all assigned to the same interface.
-16.  What two statements about IPv4 and IPv6 addresses are true? (Choose two.)
-   - **** > 
+16.  What two statements about IPv4 and IPv6 addresses are true?
+   - **IPv4 addresses are 32 bits long and are represented in decimal format. IPv6 addresses are 128 bits long and represented in hexadecimal format.**
 17.  Which of the following is a Class C network address?
-   - **** > 
-   - 
+   - 10.10.10.0
+   - 127.0.0.1
+   - 128.0.0.0
+   - **192.255.254.0**
+        >  Only option D is in the Class C range of 192 through 224. It might look wrong because there is a 255 in the address, but this is not wrong—you can have a 255 in a network address, just not in the first octet.
 18.  Which of the following are private IP addresses? (Choose two.)
-   - **** > 
-   - 
+   - 12.0.0.1
+   - 168.172.19.39
+   - **172.20.14.36**
+   - 172.33.194.30
+   - **192.168.24.43**
+  
+        > The Class A private address range is 10.0.0.0 through 10.255.255.255. The Class B private address range is 172.16.0.0 through 172.31.255.255, and the Class C private address range is 192.168.0.0 through 192.168.255.255.
 19.  IPv6 unicast routing is running on the Corp router. Which of the following addresses would be used as the EUI‐64 address?
     ```sh
     Corp#sh int f0/0
@@ -509,12 +517,85 @@
     Hardware is AmdFE, address is 000d.bd3b.0d80 (bia 000d.bd3b.0d80)
     [output cut]
     ```
-   - **** > 
-   - 
+   - FF02::3c3d:0d:bdff:fe3b:0d80
+   - **FE80::3c3d:2d:bdff:fe3b:0d80**
+        > This can be a hard question if you don’t remember to invert the 7th bit! Always look for the 7th bit when studying for the exam. The EUI‐64 autoconfiguration inserts an FF:FE in the middle of the 48‐bit MAC address to create a unique IPv6 address.
+   - FE80::3c3d:0d:bdff:fe3b:0d80
+   - FE80::3c3d:2d:ffbd:3bfe:0d80
 20. Which of the following is an invalid IP address for a host?
-   - **** > 
-   - 
+   - 10.0.0.1
+   - 128.0.0.1
+   - **224.0.0.1**
+   - 172.0.0.1
 
+        > The IP address of 224.0.0.1 is a multicast address and cannot be used to address hosts. The IP address of 10.0.0.1 is a valid IP address for a private host. The IP address of 128.0.0.1 is a valid IP address for a public host. The IP address of 172.0.01 is a valid IP address for a public host.
+
+
+
+<br><br><br>
+
+
+## 
+1. 
+   - **** 
+        > 
+2. 
+   - **** 
+        > 
+3. 
+   - **** 
+        > 
+4. 
+   - **** 
+        > 
+5. 
+   - **** 
+        > 
+6. 
+   - **** 
+        > 
+7. 
+   - **** 
+        > 
+8. 
+   - **** 
+        > 
+9.  
+   - **** 
+        > 
+10. 
+   - **** 
+        > 
+11. 
+   - **** 
+        > 
+12. 
+   - **** 
+        > 
+13. 
+   - **** 
+        > 
+14. 
+   - **** 
+        > 
+15. 
+   - **** 
+        > 
+16. 
+   - **** 
+        >  
+17. 
+   - **** 
+        > 
+18. 
+   - **** 
+        > 
+19. 
+   - **** 
+        > 
+20. 
+   - **** 
+        > 
 
 
 
@@ -533,42 +614,62 @@
 
 ## 
 1. 
-   - **** > 
+   - **** 
+        > 
 2. 
-   - **** > 
+   - **** 
+        > 
 3. 
-   - **** > 
+   - **** 
+        > 
 4. 
-   - **** > 
+   - **** 
+        > 
 5. 
-   - **** > 
+   - **** 
+        > 
 6. 
-   - **** > 
+   - **** 
+        > 
 7. 
-   - **** > 
+   - **** 
+        > 
 8. 
-   - **** > 
+   - **** 
+        > 
 9.  
-   - **** > 
+   - **** 
+        > 
 10. 
-   - **** > 
+   - **** 
+        > 
 11. 
-   - **** > 
+   - **** 
+        > 
 12. 
-   - **** > 
+   - **** 
+        > 
 13. 
-   - **** > 
+   - **** 
+        > 
 14. 
-   - **** > 
+   - **** 
+        > 
 15. 
-   - **** > 
+   - **** 
+        > 
 16. 
-   - **** > 
+   - **** 
+        >  
 17. 
-   - **** > 
+   - **** 
+        > 
 18. 
-   - **** > 
+   - **** 
+        > 
 19. 
-   - **** > 
+   - **** 
+        > 
 20. 
-   - **** > 
+   - **** 
+        > 
