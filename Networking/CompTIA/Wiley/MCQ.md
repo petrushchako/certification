@@ -338,18 +338,26 @@
    - 8 bits
    - 16 bits
    - **24 bits**
-   - 32 bits<br>A default Class C subnet mask is 255.255.255.0, which means that the first three octets, or first 24 bits, are the network number.
+
+    > A default Class C subnet mask is 255.255.255.0, which means that the first three octets, or first 24 bits, are the network number.
+
+   - 32 bits
 9.  Which of the following is true when describing a unicast address?
    - **Packets addressed to a unicast address are delivered to a single interface.**
+
+     > Packets addressed to a unicast address are delivered to a single interface. For load balancing, multiple interfaces can use the same address.
+
    - These are your typical publicly routable addresses, just like regular publicly routable addresses in IPv4.
    - These are like private addresses in IPv4 in that they are not meant to be routed.
-   - These addresses are meant for nonrouting purposes, but they are almost globally unique, so it is unlikely they will have an address overlap.<br>Packets addressed to a unicast address are delivered to a single interface. For load balancing, multiple interfaces can use the same address.
+   - These addresses are meant for nonrouting purposes, but they are almost globally unique, so it is unlikely they will have an address overlap.
 10.  A host is rebooted, and you view the IP address that it was assigned. The address is 169.123.13.34. Which of the following happened?
    - The host received an APIPA address.
    - The host received a multicast address.
    - **The host received a public address.**
-   - The host received a private address.<br>
-   I wonder how many of you picked APIPA address as your answer? An APIPA address is 169.254.x.x. The host address in this question is a public address. This was somewhat of a tricky question if you did not read carefully.
+
+    >  I wonder how many of you picked APIPA address as your answer? An APIPA address is 169.254.x.x. The host address in this question is a public address. This was somewhat of a tricky question if you did not read carefully.
+
+   - The host received a private address.
 1.  An IPv4 address uses 32 bits. How many bits is an IPv6 address?
    - ****<br>
    - 
