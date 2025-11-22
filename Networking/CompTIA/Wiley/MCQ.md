@@ -6,28 +6,28 @@
     - **CAN** 
         > A campus area network (CAN) is a connectivity method that is locally owned and managed by an organization to connect multiple LANs together. A metropolitan area network (MAN) is a connectivity method used in a metropolitan area, but it is owned and managed by someone other than the organization. A wide area network (WAN) is a connectivity method that is used for connectivity in a wide area, and it is owned and managed by someone other than the organization. A personal area network (PAN) is a network that connects personal devices within an extremely close vicinity.
 2. Which network topology design has a centralized switch connecting all of the devices?
-   - **Star topology** 
+    - **Star topology** 
         > A star topology, also known as hub‐and‐spoke topology, has a centralized switch connecting all of the devices outward like a star. A full mesh topology allows for a decentralized switching design, where any link failure will not affect switching. A partial mesh topology is normally performed between the layers of core, distribution, and access to allow for a single link failure while maintaining switching services. A hybrid topology is where several different topologies are employed, such as star and mesh.
 3. Which protocol can be typically found inside a PAN?
-   - **Bluetooth** 
+    - **Bluetooth** 
         > Bluetooth is a common networking protocol found inside a personal area network (PAN) connecting personal devices. Multiprotocol label switching (MPLS) is a technology that uses labels to switch packets. A software‐defined wide area network (SDWAN) is a virtual WAN architecture that uses software to manage connectivity, devices, and services. A virtual NIC (vNIC) is used to connect a virtual machine (VM) to a virtual switch (vSwitch).
 4. When computers are logically grouped on a LAN based upon a functional department in the organization, what is the group called?
-   - **Workgroup** 
+    - **Workgroup** 
         > A workgroup is a logical grouping of computers on a local area network (LAN) based upon a department’s function. A backbone is the connectivity method that connects multiple network segments together. A campus area network (CAN) is a network that connects multiple buildings together in close proximity. A personal area network (PAN) is a network that connects personal devices together in close proximity often using Bluetooth technology.
 5. Which is the primary benefit to using a star topology?
-   - **Easy to troubleshoot** 
+    - **Easy to troubleshoot** 
         > A benefit to the star topology is that it is easy to troubleshoot since each host has its own connection. Equal access is typically a benefit of ring topologies. Bus topologies are typically the simplest network in terms of design, whereas star networks can have redundancy, loops, and many other complex design considerations. Redundancy is not found in star topologies; it is typically in mesh networks.
 6. What type of logical connection does MPLS create to connect networks together?
-   - **Circuit** 
+    - **Circuit** 
         > A circuit is the logical connection that MPLS creates to connect networks together. A peer‐to‐peer connection is a bidirectional logical connection for sharing files and accessing files. A client‐server connection is another logical connection created for accessing information in one direction from client to server. East‐west is a term used to describe traffic within the same network or data center.
 7. Which type of network is used exclusively for storage traffic?
-   - **SAN** 
+    - **SAN** 
         > A storage area network (SAN) is a network that is used exclusively for storage traffic. A campus area network (CAN) is a network that connects buildings together in close proximity. A metropolitan area network (MAN) is a network that connects clients within a metropolitan area, such as a city, together. A local area network (LAN) is a network within a building or residence that connects hosts together.
 8. Which type of traffic flow is routed from your internal network to the Internet?
-   - **North-South** 
+    - **North-South** 
         > North‐south traffic flow describes the flow of information from an internal network to the Internet or other routed destination. East‐west traffic is kept within the internal network or data center and not routed. Wide area network (WAN) and metropolitan area (MAN) network describe a general network type, not traffic flow or a specific connection.
 9. Which topology incorporates some redundancy of equipment and connections to provide fault tolerance but is not completely fault‐tolerant?
-   - **Hybrid** 
+    - **Hybrid** 
         > A mesh topology incorporates redundancy in the form of switches and redundant connections to provide complete fault tolerance to the network design. When a mesh topology is combined with the star (hub‐and‐spoke) topology, it creates a hybrid topology that allows for fault‐tolerant design at a lower cost than a full mesh topology. Ring and bus topology are susceptible to total network failure if there is a failure anywhere in the network.
 10. Which topology should be selected if you have a central office that needs to communicate with several branch offices for WAN connectivity?
     - **Point‐to‐multipoint** 
@@ -68,55 +68,55 @@
 
 ## Chapter 2: The Open Systems Interconnection (OSI) Reference Model
 1. Flow control can be found at which layer of the OSI?
-   - **Transport layer** 
-     > The Transport layer is responsible for flow control via the TCP/IP protocols of TCP and UDP. The Network layer is responsible for the logical addressing of network nodes. The Data Link layer is responsible for the framing of data and the physical addressing of local nodes. The Session layer is responsible for setting up the dialogue between two hosts.
+    - **Transport layer** 
+        > The Transport layer is responsible for flow control via the TCP/IP protocols of TCP and UDP. The Network layer is responsible for the logical addressing of network nodes. The Data Link layer is responsible for the framing of data and the physical addressing of local nodes. The Session layer is responsible for setting up the dialogue between two hosts.
 
 2. What is required before TCP can begin sending segments?
-   - **Three‐way handshake** 
-     > A three‐way handshake is required between the sender and receiver before TCP can begin sending segments. During this three‐way handshake, the sender’s window buffer size is synchronized with the receiver’s window buffer size. Ports are not agreed upon; they are used to address traffic at the Transport layer. The sequencing and acknowledgment of segments are functions of the TCP protocol.
+    - **Three‐way handshake** 
+        > A three‐way handshake is required between the sender and receiver before TCP can begin sending segments. During this three‐way handshake, the sender’s window buffer size is synchronized with the receiver’s window buffer size. Ports are not agreed upon; they are used to address traffic at the Transport layer. The sequencing and acknowledgment of segments are functions of the TCP protocol.
    
 3. Which layer of the OSI is responsible for dialogue control of applications?
-   - **Session layer** 
-     > The Session layer is responsible for offsetting up the dialogue between two hosts. The Application layer is responsible for API access and beginning the network communication process. The Physical layer is responsible for transmitting data over light, electricity, and air waves. The Network layer is responsible for the logical addressing of IP addresses.
+    - **Session layer** 
+        > The Session layer is responsible for offsetting up the dialogue between two hosts. The Application layer is responsible for API access and beginning the network communication process. The Physical layer is responsible for transmitting data over light, electricity, and air waves. The Network layer is responsible for the logical addressing of IP addresses.
    
 4. Which layer is responsible for compression and decompression?
-   - **Presentation layer** 
-     > The Presentation layer is responsible for compression and decompression, as well as encryption and decryption. The Application layer is responsible for API access and beginning the network communication process. The Physical layer is responsible for transmitting data over light, electricity, and air waves. The Session layer is responsible for setting up the dialogue between two hosts.
+    - **Presentation layer** 
+        > The Presentation layer is responsible for compression and decompression, as well as encryption and decryption. The Application layer is responsible for API access and beginning the network communication process. The Physical layer is responsible for transmitting data over light, electricity, and air waves. The Session layer is responsible for setting up the dialogue between two hosts.
    
 5. Which OSI layer is responsible for logical addressing?
-   - **Network layer** 
-     > The Network layer is responsible for logical addressing. Routers use logical addressing to determine the path to remote networks. The Transport layer is responsible for flow control and creating virtual circuits. The Application layer is responsible for API access and beginning the network communication process. The Data Link layer is responsible for the framing of data and the physical addressing of local nodes.
+    - **Network layer** 
+        > The Network layer is responsible for logical addressing. Routers use logical addressing to determine the path to remote networks. The Transport layer is responsible for flow control and creating virtual circuits. The Application layer is responsible for API access and beginning the network communication process. The Data Link layer is responsible for the framing of data and the physical addressing of local nodes.
    
 6. As information travels down the network stack from the Application layer to the Physical layer, what happens?
-   - **Encapsulation** 
-     > As information travels down the network stack from the Application later to the Physical layer, the information is encapsulated by each layer. The information at the upper layers is referred to as datagrams. The terminology of each type of data as it pertains to the OSI layers is protocol data units (PDUs). Decapsulation is the action of removing the encapsulated information as it goes up the network stack from the Physical layer to the Application layer.
+    - **Encapsulation** 
+        > As information travels down the network stack from the Application later to the Physical layer, the information is encapsulated by each layer. The information at the upper layers is referred to as datagrams. The terminology of each type of data as it pertains to the OSI layers is protocol data units (PDUs). Decapsulation is the action of removing the encapsulated information as it goes up the network stack from the Physical layer to the Application layer.
    
 7. Which sublayer of the Data Link OSI layer is responsible for identifying Network layer protocols and encapsulating them?
-   - **LLC** 
-    > The logical link control (LLC) sublayer is responsible for managing access to Network layer protocols. The media access control (MAC) sublayer is responsible for physical addressing and framing data for the transmission media. The Data Link layer is responsible for framing data and contains the LLC and MAC sublayers. The Session layer is responsible for dialogue control.
+    - **LLC** 
+        > The logical link control (LLC) sublayer is responsible for managing access to Network layer protocols. The media access control (MAC) sublayer is responsible for physical addressing and framing data for the transmission media. The Data Link layer is responsible for framing data and contains the LLC and MAC sublayers. The Session layer is responsible for dialogue control.
    
 8. Which is not a benefit to the OSI model?
-   - **Allows software to run at network speeds** 
-    > The OSI reference model will not aid in allowing software to run at network speeds; this will be up to the developer. The OSI reference standardized model will allow for multivendor development. The OSI reference model will prevent a change in one layer from affecting other layers. The OSI reference model will also allow various network hardware and software to communicate.
+    - **Allows software to run at network speeds** 
+        > The OSI reference model will not aid in allowing software to run at network speeds; this will be up to the developer. The OSI reference standardized model will allow for multivendor development. The OSI reference model will prevent a change in one layer from affecting other layers. The OSI reference model will also allow various network hardware and software to communicate.
    
 9.  Which three upper layers operate together?
-   - **Application, Presentation, and Session** 
-     > The Application, Presentation, and Session layers operate together to process datagrams. All other answers are incorrect.
+    - **Application, Presentation, and Session** 
+        > The Application, Presentation, and Session layers operate together to process datagrams. All other answers are incorrect.
    
 10. Which 802 working group defines the LLC sublayer of the Data Link layer?
-   - **802.2** 
-     > The IEEE 802.2 working group defines the Logic Link Control (LLC) sublayer of the Data Link layer. The IEEE 802.3 and 802.11 working groups define the Media Access Control (MAC) sublayer of the Data Link layer. The IEEE 802.15 working group defines wireless personal area networks (WPANs).
+    - **802.2** 
+        > The IEEE 802.2 working group defines the Logic Link Control (LLC) sublayer of the Data Link layer. The IEEE 802.3 and 802.11 working groups define the Media Access Control (MAC) sublayer of the Data Link layer. The IEEE 802.15 working group defines wireless personal area networks (WPANs).
    
 11. Which concept describes transmitting multiple segments before the receiving host acknowledges the data?
-   - **Windowing** 
-     > The concept of transmitting multiple segments before the receiving host acknowledges the data is windowing. Sequencing is done with each segment so they can be combined back together at the Transport layer. Compression and encryption are found at the Presentation layer, and neither is the correct answer.
+    - **Windowing** 
+        > The concept of transmitting multiple segments before the receiving host acknowledges the data is windowing. Sequencing is done with each segment so they can be combined back together at the Transport layer. Compression and encryption are found at the Presentation layer, and neither is the correct answer.
    
 12. Which device will stop broadcasts from propagating the network?
-   - **Router** 
-     > By default, a router will stop broadcasts from propagating the network. A switch, hub, and wireless access point (WAP) will not stop broadcasts from propagating the network.
+    - **Router** 
+        > By default, a router will stop broadcasts from propagating the network. A switch, hub, and wireless access point (WAP) will not stop broadcasts from propagating the network.
    
 13. Which is used to determine the best path to a destination network?
-   - **Metric** 
+    - **Metric** 
         > The route table is checked for a destination packet, but the metric associated with the destination network is how the best path is determined. Acknowledgments are used by the receiving computer to acknowledge the receipt of segments. The network address is the logical addressing of hosts. The interface is the physical connection to the network.
    
 14. Which protocol data unit (PDU) is used to describe data at the Physical layer?
@@ -124,26 +124,26 @@
         > The PDU that describes data at the Physical layer is bits. The PDU of datagrams is used to describe data at the upper layers. The PDU of frames is used to describe data at the Data Link layer. The PDU of segments is used to describe data at the Transport layer.
    
 15. Which OSI layers are responsible for framing data and transmitting the data?
-   - **Data Link and Physical layers** 
+    - **Data Link and Physical layers** 
         > The Data Link and Physical layers are responsible for framing data and transmitting it on the media. The LLC is a sublayer that is responsible for encapsulating Network layer protocols. All other answer are incorrect.
    
 16. Which layer is responsible for creating a virtual circuit?
-   - **Transport** 
+    - **Transport** 
         > The Transport layer is responsible for flow control and creating virtual circuits. The Presentation layer is responsible for compression/decompression and encryption/decryption. The Session layer is responsible for dialogue control. The Network layer is responsible for logical addressing.
    
 17. TCP and UDP reside at which layer of the OSI model?
-   - **Transport** 
+    - **Transport** 
         > Both TCP and UDP reside at the Transport layer. All other answers are incorrect.
    
 18. What is the proper order of data encapsulation?
-   - **Datagram, segment, packet, frame, bits**
+    - **Datagram, segment, packet, frame, bits**
    
 19. Which layer is responsible for routing data packets?
-   - **Network** 
+    - **Network** 
         > The Network layer is responsible for routing network packets. The Physical layer is responsible for physical connectivity and transmitting bits. The Data Link layer is responsible for framing bits. The Transport layer is responsible for creating virtual circuits and flow control.
    
 20. Which IEEE standard specifies the protocol for CSMA/CD?
-   - **802.3** 
+    - **802.3** 
         > The IEEE standard of 802.3 specifies the carrier sense multiple access/collision detection (CSMA/CD) contention method. The IEEE standard of 802.2 specifies how the network layer should be encapsulated for multiprotocol operation. The IEEE standard for 802.5 details the disbanded Token Ring specification. The 802.11 details the wireless specifications.
 
 
@@ -152,64 +152,64 @@
 
 ## Chapter 3: Networking Connectors and Wiring Standards
 1. You are planning to run fiber‐optic cable between two buildings that are 6,000 feet apart. Which is the best solution to complete this project?
-   - **SMF** 
+    - **SMF** 
         > A single‐mode fiber (SMF) cable can carry signals up to 80 km before the signal needs to be repeated. Multimode fiber (MMF) has a maximum distance of 3,000 feet. A main distribution frame (MDF) is a wiring point that’s generally used as a main reference point for telephone lines. An intermediate distribution frame (IDF) is a remote point of reference typically located in an equipment or telecommunications room.
 2. You need to connect a switch to another switch. Which type of cable should you use to properly create the connection between the two switches?
-   - **Crossover cable** 
+    - **Crossover cable** 
         > A crossover cable is the proper cable to connect a switch to a switch. A straight‐through cable is not the proper cable to connect a switch to a switch and is typically used to connect hosts to a switch. A rolled cable is used for serial connectivity to the switch. A T1 crossover cable is used to connect a router to a router via T1 serial lines.
 3. You are designing a network in a building that has arc welders. Which cable should be used to eliminate EMI?
-   - **Fiber optic** 
+    - **Fiber optic** 
         > Fiber‐optic cable should be used to eliminate electromagnetic interference (EMI) and radio frequency interference (RFI). Category 5e is a type of unshielded twisted‐pair (UTP); it will not prevent EMI. Twinaxial cable is a type of coaxial cable used to connect network equipment at high speeds for short distances.
 4. Which connector type is typically found on a Category 6 cable?
-   - **RJ‐45** 
+    - **RJ‐45** 
         > An RJ‐45, also known as a registered jack 45, is used for terminating networking cabling, such as Category 5/6/7/8 cable. An RJ‐11 registered jack is used to terminate phone cabling. A Bayonet Neill–Concelman (BNC) connector is used to terminate coaxial cable. An angled physical contact (APC) is used to terminate fiber‐optic cable.
 5. You need to make a Category 5e crossover cable. Which wiring standard will you use on both ends?
-   - **568B‐to‐568A** 
+    - **568B‐to‐568A** 
         > When making a crossover cable for any network cable, the 568B wiring standard should be used on one end, and the 568A wiring standard should be used on the other end. A straight‐through cable is created when you crimp the 568A‐to‐568A or 568B‐to‐568B wiring standard on both ends of a network cable. The terms angled physical contact (APC) and ultra physical contact (UPC) are used to describe the finish on a fiber‐optic cable end.
 6. You need to install cabling in an office space and want to be assured that toxic vapors will not be created in the event of a fire. Which cable type should you choose?
-   - **Plenum** 
+    - **Plenum** 
         > You should always use plenum‐rated cable in office spaces to avoid toxic vapors released in the event of a fire. Polyvinyl chloride (PVC) and fluoroethylene propylene (FEP) are plastics that can create poisonous vapers in the event of a fire. Non‐plenum rated cables are typically made from plastics.
 7. Which serial connection method is typically used for connecting peripherals to a PC?
-   - **USB** 
+    - **USB** 
         > A Universal Serial Bus (USB) connection method is typically used for connecting peripherals to a PC. A DB‐9 connector is typically used to connect serial connections for router or switch configuration. A Category 3 cable is a network cable specification. A rolled cable is used to connect a router or switch to a PC for configuration.
 8. You need to run a UTP cable for 10 Gbps speeds with a distance of 100 meters. Which minimum cable category rating should you use?
-   - **6A** 
+    - **6A** 
         > Category 6A (augmented) will handle speeds of 10 Gbps at a distance of 100 meters. Category 5 is capable of speeds of 100 Mbps at a distance of 100 meters. Category 5e is capable of 1 Gbps at a distance of 100 meters. Category 6 is capable of 10 Gbps up to a maximum distance of 55 meters.
 9. Which is an incorrect statement about smart jacks?
-   - **A smart jack can report trouble in a circuit** 
+    - **A smart jack can report trouble in a circuit** 
         > A smart jack cannot report trouble in a circuit. The smart jack is typically the demarcation point for a provider. A smart jack can remotely be put into a loopback mode to verify operations. A smart jack is also known as a network interface device (NID) or network interface unit (NIU).
 10. Which term describes what happens to the signal in a network cable as you make the cable’s distance greater?
-   - **Attenuation** 
-        > The signal on a cable will attenuate as the distance of the cable lengthens. Duplex refers to the path of signaling on a network cable. Demarcation or demarc refers to the point of responsibility for a network provider. Electromagnetic interference (EMI) is interference that is induced into a network cable from an external source.
+    - **Attenuation** 
+       > The signal on a cable will attenuate as the distance of the cable lengthens. Duplex refers to the path of signaling on a network cable. Demarcation or demarc refers to the point of responsibility for a network provider. Electromagnetic interference (EMI) is interference that is induced into a network cable from an external source.
 11. Which cable has no metallic shielding?
-   - **UTP** 
-        > Unshielded twisted‐pair (UTP), as its name implies, is unshielded cabling. Shielded twisted‐pair (STP), coaxial, and twinaxial have metallic shielding around the outside of the cabling.
+    - **UTP** 
+       > Unshielded twisted‐pair (UTP), as its name implies, is unshielded cabling. Shielded twisted‐pair (STP), coaxial, and twinaxial have metallic shielding around the outside of the cabling.
 12. Which connector is typically used on the end of a coaxial cable?
-   - **F‐type** 
-        > An F‐type or BNC connector is typically found on the end of a coaxial cable. RJ‐45 connectors are typically found on the ends of network cable. RJ‐11 connectors are typically used for phone connection. A subscriber (or square) connector (SC) is used with fiber‐optic cables.
+    - **F‐type** 
+       > An F‐type or BNC connector is typically found on the end of a coaxial cable. RJ‐45 connectors are typically found on the ends of network cable. RJ‐11 connectors are typically used for phone connection. A subscriber (or square) connector (SC) is used with fiber‐optic cables.
 13. Which fiber‐optic connector uses a BNC style mechanism to lock the cable in place?
-   - **ST** 
+    - **ST** 
         > The straight tip (ST) connector uses a BNC style mechanism to lock the fiber‐optic cable in place. The subscriber (or square) connector (SC) is a square plastic connector. The local connector (LC) is a square style connector that is made for high‐density applications. The mechanical transfer registered jack (MT‐RJ or MTRJ) is another small form factor connector.
 14. Which technique is used to prevent crosstalk on network cables?
-   - **T‐568A/B wiring standard** 
+    - **T‐568A/B wiring standard** 
         > The Telecommunications Industry Association/Electronic Industries Alliance (TIA/EIA) T‐568A/B wiring standard is used to prevent crosstalk. The use of shield twisted‐pair (STP) cabling will prevent electromagnetic interference (EMI). A rolled cable is a type of wiring used with console ports on switches and routers for configuration; it does not prevent crosstalk. Short distance installations will not prevent crosstalk on cables.
 15. Which transceiver will support up to 40 Gbps links?
-   - **QSFP+** 
+    - **QSFP+** 
         > The quad small form‐factor pluggable+ (QSFP+) transceiver will support 4x10 Gbps for a total of 40 Gbps. The enhanced small form‐factor pluggable (SFP+) transceiver will support up to 16 Gbps. The QSFP transceiver will support up 4x1 Gbps for a total of 4 Gbps. The QSFP28 will support 4x28 Gbps for a total of 100 Gbps.
 16. Which connector will you find on a rolled cable?
-   - **RJ‐45** 
+    - **RJ‐45** 
         > An RJ‐45 connector also known as a registered jack 45 is used for terminating a rolled cable that is used to connect to a switch or router for configuration. An RJ‐11 connector is used to terminate phone cabling. A Bayonet Neill–Concelman (BNC) connector is used to terminate coaxial cable. The subscriber (or square) connector (SC) is a square plastic fiber‐optic connector.
 17. What is the main difference between single‐mode fiber (SMF) and multimode fiber (MMF)?
-   - **Number of light rays.** 
+    - **Number of light rays.** 
         > The main difference between single‐mode fibers and multimode fibers is in the number of light rays (and thus the number of signals) they can carry. Fiber‐optic cables carry light waves and not electrical signals. Category ratings are used for copper Ethernet Twisted‐pair cables. Single‐mode fiber can run very far distances up to 80 kilometers.
 18. Which fiber‐optic connector has a very small footprint for high‐density installations?
-   - **LC** 
+    - **LC** 
         > The local connector (LC) is a small form factor (SFF) connector used for high‐density installations. The subscriber (or square) connector (SC) is a square plastic connector. The straight tip (ST) connector uses a BNC‐style mechanism to lock the fiber‐optic cable in place. Fibre Channel (FC) is a SAN technology that can use any of fiber‐optic connector, but typically the connector is an LC connector for high‐density installation.
 19. You need to connect a switch that only supports multimode fiber to an existing single‐mode fiber‐optic line. What should you use to create a connection?
-   - **Media converter** 
+    - **Media converter** 
         > A media converter that converts single‐mode fiber (SMF) to multimode fiber (MMF) is required to create a solid connection. The angled physical contact (APC) cable end is slightly angled to reduce decibel loss. The ultra physical contact (UPC) cable end is domed to reduce decibel loss. The enhanced small form‐factor pluggable (SFP+) transceiver supports data rates up to 16 Gbps.
 20. Which cable type is considered a patch cable?
-   - **Straight‐through cable** 
+    - **Straight‐through cable** 
         > A straight‐through cable is used to patch hosts to a network switch; therefore, it is known as a patch cable. A rolled cable is used for serial connectivity to the switch. A crossover cable is typically used to connect a switch to a switch. Shielded twisted‐pair (STP) cable is a type of cable that has metallic shielding to resist electromagnetic interference (EMI) and radio frequency interference (RFI).
 
 
@@ -288,61 +288,61 @@
    - **A record** 
         > The alias, or A, record that matches the MX record configured for the mail server should be changed. If you were to change the MX record, a new alias record would need to be created as well, since every MX record contains the FQDN that maps to an alias record. A PTR record is used for reverse DNS and will not solve the problem. A TXT record is used to resolve plaintext and does not solve the problem.
 2. Which is a valid reason to implement a wireless LAN controller?
-   - **Centralized provisioning** 
+    - **Centralized provisioning** 
         > Centralized provisioning of lightweight wireless access points (LWAPs) is a valid reason to implement a WLAN controller. Although a wireless LAN controller makes it easier to implement multiple SSIDs and VLANs, this task can be performed with autonomous WAPs, each performing its own authentication. The use of autonomous WAPs negates the reasons you would use a WLAN controller because each WAP would be independently managed and no coordination would exist between the autonomous WAPs. The use of multiple SSIDs can be achieved with an autonomous WAP without a WLAN controller. Multiple VLANs can also be used with an autonomous WAP without a WLAN controller.
 3. What is the benefit of network segmentation?
-   - **Increased broadcast domains** 
+    - **Increased broadcast domains** 
         > Network segmentation increases the number of broadcast domains. This effectively decreases the number of broadcasts seen on a network segment and effectively increases bandwidth. All other answers are incorrect.
 4. Which protocol and port do you need to configure on the inbound host‐based firewall for a DHCP server?
-   - **UDP/67** 
+    - **UDP/67** 
         > The DHCP server waits for connection from clients on UDP/67; the clients will send the requests from UDP/68. Therefore, the inbound host‐based firewall should be configured to accept traffic from UDP/67.
 5. Which type of device will detect but not prevent unauthorized access?
-   - **IDS**
+    - **IDS**
         > An IDS, or intrusion detection system, will detect unauthorized access. However, it will not prevent unauthorized access. It is a form of audit control in a network. A firewall will protect your network from attack by placing rules defining how people can connect as well as which traffic can pass. An intrusion protection system (IPS) will detect the presence of an intrusion and alert an administrator. A honeypot will attract a malicious user so that their tactics can be observed. It performs this function by diverting the malicious user from production systems to the honeypot, which is a sacrificial system.
 6. Your organization expects a considerable amount of traffic to your web server, so you plan to install several web servers. How can you maintain one FQDN and allow customers to be directed to the next free web servers?
-   - **Load balancer** 
+    - **Load balancer** 
         > A load balancer will direct a user’s request to the next free web server. A router will only route traffic to a destination network. A firewall would not accomplish the requirement of distribution of the load. A proxy is something that might fetch the web page on the web server, but it will not provide load balancing.
 7. Your organization has deployed several autonomous WAPs. Users complain that they consistently drop the wireless connection when roaming. What should you recommend to resolve this issue?
-   - **Wireless LAN controller** 
+    - **Wireless LAN controller** 
         > Autonomous WAPs do not have any coordination between them for roaming clients. When a client roams from one WAP to another, they must reauthenticate, and this causes a drop. Implementing a wireless LAN controller will coordinate roaming clients and not require reauthentication.
 8. You need to make sure that a printer is configured with the same IP address every time it is turned on. However, the printer is too troublesome to configure a static IP address. What can be done to achieve the goal?
-   - **Configure a DHCP reservation for the printer.** 
+    - **Configure a DHCP reservation for the printer.** 
         > A DHCP reservation will allow for the printer to obtain the same IP address every time it is turned on. The DHCP server will serve the same IP address to the printer based on the printer’s MAC address in the reservation. Configuring an A record will not achieve the goal. Configuring a DHCP exclusion for the printer would work only if you had already set it to a static IP address and didn’t want that IP address assigned to another host. Configuring an PTR record will not achieve the goal.
 9.  Which record type is used for an IPv4 address mapping to FQDN for DNS queries?
-   - **The PTR record** 
+    - **The PTR record** 
         > The PTR, or pointer record, is used to look up IP addresses and return FQDNs that are mapped to them. This is helpful to identify an IP address, and in the case of SSH, it is used to positively identify the host you are connecting to. The A record is used to look up an IP address for a given hostname. The CName record is used to look up the alias for a given hostname. The AAAA record is used to look up an IPv6 address for a given hostname.
 10. Which device will act as a multiport repeater in the network?
-   - **Hub** 
+    - **Hub** 
         > A hub will act as a multiport repeater by repeating the physical bits on an incoming port to all the other connected ports. A switch or bridge will forward the frame only to the port it is destined for. Even when broadcasts are received, the frame is still processed and not blindly repeated. A WAP acts similarly to a switch and will forward frames only to the connected wireless or wired network.
 11. Which is a correct statement when hubs are replaced with switches?
-   - **The replacement increases collision domains.** 
+    - **The replacement increases collision domains.** 
         > The replacement of hubs with switches increases collision domains and effectively increases bandwidth. The replacement of switches with hubs can decrease the number of collision domains, creating a much larger collision domain. The replacement of hubs with switches has no effect on broadcast domains. Broadcast domains would be affected only if a router was introduced.
 12. When firewalls are placed in a network, which zone contains Internet‐facing services?
-   - **Demilitarized zone** 
+    - **Demilitarized zone** 
         > The demilitarized zone (DMZ) or screen subnet is where Internet‐facing servers/services are placed. The outside zone is where the public Internet connection is connected, and it is the least trusted. The enterprise network zone is considered the inside zone. The inside zone is considered to be the highest trusted network because it is the internal network that you control.
 13. Which is a false statement about firewalls?
-   - **Firewalls are commonly deployed to protect a network from internal attacks.** 
+    - **Firewalls are commonly deployed to protect a network from internal attacks.** 
         > Firewalls are not commonly deployed to provide protection from internal attacks on internal resources. They are designed to protect networks from external attacks or attacks emanating from the outside or directed toward the Internet. Firewalls normally provide stateful packet inspection. Firewalls can also control application traffic by port number and higher‐layer attributes.
 14. Which statement is correct about reverse lookups?
-   - **A reverse lookup is the resolution of an IP address to FQDN.** 
+    - **A reverse lookup is the resolution of an IP address to FQDN.** 
         > A reverse lookup is when the fully qualified domain name (FQDN) is resolved from an IP address. This is useful when you want to identify an IP address. From the IP address, you can derive the FQDN. A reverse lookup is not when the request needs to be reversed to another DNS server. A reverse lookup is not when the DNS queried can answer the request without asking another DNS server. A reverse lookup is not the resolution of an FQDN to an IP address; it is the resolution of an IP address to an FQDN.
 15. What gets appended to hostname queries for DNS resolution?
-   - **The DNS suffix** 
+    - **The DNS suffix** 
         > The configured DNS suffix is appended to the hostname query. As an example, if you query a hostname of hosta and the configured domain name is network.local, the DNS server will see a query for hosta.network.local. The DNS zone is the database of records contained in DNS. Host header is a term used with web servers and therefore not relevant to DNS resolution. The hostname PTR record is the reverse DNS record for a given IP address.
 16. Which type of DNS record holds the IPv4 IP address for a hostname?
-   - **The A record** 
+    - **The A record** 
         > The A record is the DNS record that is queried when you want to resolve a hostname to an IP address. The CName record is used to look up the alias for a given hostname. The PTR, or pointer record, is used to look up IP addresses and return FQDNs that are mapped to them. The AAAA record is used to look up an IPv6 address for a given hostname.
 17. Which of the following devices can work at both layers 2 and 3 of the OSI model?
-   - **Multilayer switch** 
+    - **Multilayer switch** 
         > A multilayer switch can provide both routing and switching capabilities since it operates on layers 2 and 3. A hub is a device that operates only on layer 1. A switch or bridge is a layer 2 device that segments the network.
 18. What is an advantage of using DHCP in a network environment?
-   - **Automatically assigns IP addresses to hosts** 
+    - **Automatically assigns IP addresses to hosts** 
         > An advantage to DHCP in a network environment is that it automatically assigns IP addresses to hosts. There is minimal difficulty to administrate DHCP, and this is not considered a benefit. Static IP addressing is used in lieu of a DHCP. DHCP does not send an operating system to a PC, but it can direct it to do so with DHCP options.
 19. What is a benefit to installing a proxy server?
-   - **Web caching** 
+    - **Web caching** 
         > Web caching is a tremendous benefit to employing a proxy server. Commonly accessed web pages will be cached, and subsequent requests will be returned locally from the proxy server. The throughput for the network will not increase. DHCP services will not be provided with a proxy server, only the proxying of web pages. Support for user authentication is not a benefit of employing a proxy server.
 20. Which protocol and port number does DNS use for direct queries?
-   - **UDP/53** 
+    - **UDP/53** 
         > Domain Name System (DNS) direct queries are performed over the UDP protocol to port 53. The queries do not require the TCP setup and teardown because the queries are simple request and reply messages, so UDP is used for direct queries. TCP port 53 is used for DNS zone transfers between DNS servers. UDP port 55 is not used for any popular protocols. UDP port 68 is used with the Dynamic Host Configuration Protocol (DHCP).
 
 
@@ -351,64 +351,64 @@
 
 ## Chapter 6: Introduction to the Internet Protocol
 1. Which is a correct statement about the Transmission Control Protocol (TCP)?
-   - **TCP allows for retransmission of lost segments.** 
+    - **TCP allows for retransmission of lost segments.** 
         > TCP is a connection‐based protocol via the three‐way handshake. It is not faster than UDP. However, it allows for the retransmission of lost segments because of sequences and acknowledgments. TCP does not allow or account for error correction, only the detection of errors and lost or missing segments.
 2. How does TCP guarantee delivery of segments to the receiver?
-   - **Sequence and acknowledgment numbers** 
+    - **Sequence and acknowledgment numbers** 
         > TCP guarantees delivery of segments with sequence and acknowledgment numbers. At the Transport layer, each segment is given a sequence number that is acknowledged by the receiver. The source and destination ports are used for the delivery of segments, but they do not guarantee delivery. TCP checksums are used to detect errors in segments but do not guarantee delivery. Window size is used to adjust buffer size on the sending and receiving hosts.
 3. When a programmer decides to use UDP as a transport protocol, what is a decision factor?
-   - **Redundancy of acknowledgment is not needed.** 
+    - **Redundancy of acknowledgment is not needed.** 
         > When a programmer decides to use UDP, it is normally because the programmer is sequencing and acknowledging datagrams already. The redundancy of acknowledgments at the Transport layer is not needed. Guaranteed delivery of segments is not a function of UDP. UDP does not provide windowing flow control because acknowledgment is not a function of UDP. A virtual circuit can be created only with a setup and teardown of communications, such as TCP offers.
 4. Which mechanism allows for the Transport layer to communicate with the Session layer?
-   - **Port numbers** 
+    - **Port numbers** 
         > Port numbers allow the Transport layer to communicate with the Session layer. An example is a web server binding to the port number of TCP/80. A port is communicated in the header of TCP and UDP segments, but the header does not listen for requests or bind. MAC addresses are physical locations on a local area network (LAN) that are used to transmit framed data. Checksums are used to verify that data are not erroneously modified in transit.
 5. Why does DNS use UDP for queries?
-   - **DNS requests are usually small and do not require connections setup** 
+    - **DNS requests are usually small and do not require connections setup** 
         > DNS requests are usually small and do not require the overhead of sequence and acknowledgment of TCP. If a segment is dropped, the DNS protocol will ask again. Acknowledgment of data is not a function of UDP. Flow control is not a function of UDP since UDP does not offer flow control of data other than a stop/go action. UDP does not build temporary virtual circuits; this is a function of TCP.
 6. Which protocol requires the programmer to deal with lost segments?
-   - **UDP** 
+    - **UDP** 
         > User Datagram Protocol (UDP) does not guarantee segments are delivered. Therefore, the programmer must account for segments that are never received or out of order. Secure Sockets Layer (SSL) is a protocol used to encrypt a network transmission. SSL is the predecessor to the modern TLS encryption used today. Transmission allows for the network to automatically deal with lost segments because TCP guarantees segments are delivered. Network management station (NMS) is a term used with Simple Network Management Protocol (SNMP) to describe the collecting host for SNMP messages.
 7. Which protocol can encapsulate many different protocols inside an IP tunnel?
-   - **GRE** 
+    - **GRE** 
         > Generic Routing Encapsulation (GRE) is a tunneling protocol that can encapsulate many protocols inside an IP tunnel. Reverse Address Resolution Protocol (RARP) is used to obtain an IP address from a MAC address. Address Resolution Protocol (ARP) is used by the Network layer to obtain a MAC address from an IP address. Internet Control Message Protocol (ICMP) is used by the Network layer to communicate network information such as Ping, Traceroute, and many other information services.
 8. Which protocol provides confidentiality?
-   - **ESP** 
+    - **ESP** 
         > Encapsulating Security Payload (ESP) is used by IP Security Protocol (IPSec) for the confidentiality of the payload. The AH protocol provides authentication for the data and the IP header of a packet using a one‐way hash for packet authentication. Generic Routing Encapsulation (GRE) is a tunneling protocol that can encapsulate many protocols inside an IP tunnel. The protocol data unit (PDU) is a way to describe the data at each layer of the OSI model.
 9.  Which protocol is used for configuration access to network appliances but is not encrypted?
-   - **Telnet** 
+    - **Telnet** 
         > Telnet is used for configuration access to network appliances, but it is not encrypted. Secure Shell (SSH) has become the successor of Telnet, since it is encrypted and provides configuration access. Hypertext Transfer Protocol Secure (HTTPS) is a secure method to transfer web pages. The Remote Desktop Protocol (RDP) is a Microsoft protocol that provides a secure method to access a server desktop.
 10. Which protocol is used by applications that need low overhead at the Transport layer?
-   - **UDP** 
+    - **UDP** 
         > The User Datagram Protocol (UDP) is a Transport layer protocol that provides applications with low overhead. The Transmission Control Protocol (TCP) is a connection‐oriented protocol and has higher overhead. The Internet Protocol (IP) is a Network layer protocol. The Address Resolution Protocol (ARP) is Network layer helper protocol that resolves MAC addresses from a known IP address.
 11. Which layer in the DoD model is directly related to the Transport layer of the OSI model?
-   - **Host‐to‐Host layer**
+    - **Host‐to‐Host layer**
         > The Host‐to‐Host DoD layer is directly related to the Transport layer of the OSI model. The Process/Application DoD layer is related to the Application, Presentation, and Session layers of the OSI model. The Internet DoD layer is related to the Network layer of the OSI model. The Network Access DoD layer is related to the Data Link and Physical layers of the OSI model.
 12. Which element is used with TCP to provide a virtual circuit?
-   - **Port numbers**
+    - **Port numbers**
         > Port numbers are used to create a virtual circuit with TCP. The port numbers are open and in use during the entire TCP conversation. Sequence and acknowledgment numbers are used to assure data is delivered. Protocol numbers are used to direct communications to the next respective upper layer.
 13. Which protocol uses UDP/123?
-   - **NTP**
+    - **NTP**
         > The Network Time Protocol (NTP) operates on the UDP protocol, port 123. The Trivial File Transfer Protocol operates on the UDP protocol, port 69. The Hypertext Transfer Protocol Secure (HTTPS) operates on the TCP protocol, port 443. The Domain Name Service protocol operates on UDP or TCP, port 53.
 14. What is the process called when data moves up the OSI model?
-   - **Internet layer**
+    - **Internet layer**
         > The Internet DoD layer is directly related to the Network layer in the OSI model, which is responsible for the logical addressing of hosts. The Process/Application layer is where most networked applications will operate on the Application, Presentation, and Session layers in the OSI model. The Host‐to‐Host DoD layer is directly related to the Transport layer in the OSI model, which is responsible for segmenting data and transporting it. The Network Access DoD layer is directly related to the Data Link and Physical OSI layers. 
 15. What is the process called when data moves up the OSI model?
-   - **Decapsulation**
+    - **Decapsulation**
         > Data decapsulation is the process of moving data up the OSI model back up to the receiving application. Data encapsulation is the process of moving data down the OSI model to be transmitted on the network. The Frame Checking Sequence (FCS) is a cyclical redundancy check (CRC0) that is processed on the data at the Data Link layer to validate a frame of data. The protocol data unit (PDU) is the reference to the type of data as it passes up and down the OSI layers.
 16. Which protocol provides an IP address from a physical address?
-   - **RARP**
+    - **RARP**
         > The Reverse Address Resolution Protocol (RARP) provides an IP address from a physical MAC address. Internet Control Message Protocol (ICMP) works at the Network layer and is used by IP for many different services. The Transmission Control Protocol (TCP) is a Transport layer protocol for segmenting and transporting data. The Address Resolution Protocol (ARP) provides a MAC address from an IP address.
 17. What protocol from the Internet Protocol (IP) stack is used for diagnostics and error messages?
-   - **ICMP**
+    - **ICMP**
         > Internet Control Message Protocol (ICMP) is used for diagnostics (ping and traceroute) and for sending error messages through the network. The Transmission Control Protocol (TCP) is a Transport layer protocol for segmenting and transporting data. The Address Resolution Protocol (ARP) provides a MAC address from an IP address. The User Datagram Protocol (UDP) is a Transport layer protocol used to send segments of data.
 18. Which IP service uses the UDP protocol?
-   - **DHCP**
+    - **DHCP**
         > The Dynamic Host Configuration Protocol (DHCP) operates on UDP port 67 and UDP port 68. The Simple Mail Transport Protocol (SMTP) operates on TCP port 25. The File Transport Protocol (FTP) operates on TCP ports 20 and 21. The Hypertext Transfer Protocol (HTTP) operates on TCP port 80.
 19. You need to make sure that the time is consistent across all your network devices. What protocol do you need to run on your network?
-   - **NTP**
+    - **NTP**
         > The Network Time Protocol (NTP) helps synchronize your computer clock over the Internet with the help of an NTP server. The File Transfer Protocol (FTP) allows you to transfer files across the network. The Secure File Transfer Protocol (SFTP) is used when transferring files over an encrypted connection. The Secure Shell (SSH) protocol sets up a secure console session over a standard TCP/IP connection.
 20. Which of the following allows a server to distinguish among different simultaneous requests from the same host?
-   - **They use different port numbers.**
+    - **They use different port numbers.**
         > Through the use of port numbers, TCP and UDP can establish multiple sessions between the same two hosts without creating any confusion. The sessions can be between the same or different applications, such as multiple web‐browsing sessions or a web‐browsing session and an FTP session. The IP address that the request originates from does not distinguish among different simultaneous requests. Servers are able to accept multiple simultaneous sessions from the same host. The sequence and acknowledgment numbers do not distinguish among different simultaneous requests from the same host.
 
 
@@ -417,117 +417,116 @@
 
 ## Chapter 7: IP Addressing
 1. Which of the following addresses is not allowed on the Internet?
-   - 191.192.168.1
-   - 191.168.169.254
-   - 172.32.255.0
-   - **172.31.12.251**
+    - 191.192.168.1
+    - 191.168.169.254
+    - 172.32.255.0
+    - **172.31.12.251**
         > The addresses in the range 172.16.0.0 through 172.31.255.255 are all considered private, based on RFC 1918. Use of these addresses on the Internet is prohibited so that they can be used simultaneously in different administrative domains without concern for conflict. These addresses are not and should not be routable on the public Internet.
 
 2. A host automatically configured with an address from which of the following ranges indicates an inability to contact a DHCP server?
-   - 169.254.0 × with a mask of 255.255.255.0
-   - **169.254xx with a mask of 255.255.0.0**
+    - 169.254.0 × with a mask of 255.255.255.0
+    - **169.254xx with a mask of 255.255.0.0**
         > The Automatic Private IP Addressing (APIPA) uses the link‐local private address range of 169.254.0.0 through 169.254.255.255 and a subnet mask of 255.255.0.0. APIPA addresses are used by DHCP clients that cannot contact a DHCP server and have no static alternate configuration. These addresses are not Internet routable and cannot, by default, be used across routers on an internetwork.
-   - 169.254.× × with a mask of 255.255.255.0
-   - 169.255 xx with a mask of 255.255.0.0
+    - 169.254.× × with a mask of 255.255.255.0
+    - 169.255 xx with a mask of 255.255.0.0
 3. Which statement regarding private IP addresses is most accurate?
-   - Private addresses cannot be used in intranets that require routing.
-   - Private addresses must be assigned by a registrar a or ISP.
-   - **A remote host across the Internet cannot ping your host if it has a private address.**
+    - Private addresses cannot be used in intranets that require routing.
+    - Private addresses must be assigned by a registrar a or ISP.
+    - **A remote host across the Internet cannot ping your host if it has a private address.**
         > Private IP addresses are not routable over the Internet, as either source or destination addresses. Therefore, any entity that wants to use such addresses internally can do so without causing conflicts with other entities and without asking permission of any registrar or service provider. Despite not being allowed on the Internet, private IP addresses are fully routable on private intranets.
-   - Private addresses can be used only by a single administrative domain.
+    - Private addresses can be used only by a single administrative domain.
 4. Which of the following is a valid Class A address?
-   - 191.10.0.1
-   - 127.10.0.1
-   - 128.10.0.1
-   - **126.10.0.1**
+    - 191.10.0.1
+    - 127.10.0.1
+    - 128.10.0.1
+    - **126.10.0.1**
         > The Class A range is 1 through 126 for the first octet/byte. The Class B range is 127 through 191 for the first octet/byte. Class C range is 192 through 223 for the first octet/byte.
 5. Which of the following is a valid Class B address?
-   - 10.1.1.1
-   - 126.1.1.1
-   - **129.1.1.1**
+    - 10.1.1.1
+    - 126.1.1.1
+    - **129.1.1.1**
         > The Class B range is 128 through 191 in the first octet/byte. The Class A range is 1 through 126 for the first octet/byte. Class C range is 192 through 223 for the first octet/byte.
-   - 192.168.1.1
+    - 192.168.1.1
 6. Which of the following describes a broadcast address?
-   - All network bits are on (1s).
-   - **All host bits are on (1s).**
+    - All network bits are on (1s).
+    - **All host bits are on (1s).**
         > If you turned on all host bits (all of the host bits are 1s), this would be a broadcast address for that network. Turning all the network bits to 1s would define a different network address. Turning all the network bits to 0s would make the network address invalid. Turning all the host bits to 0s would make the address invalid, as well, since this is how the network is defined.
-   - All network bits are off (Os).
-   - All host bits are off (0s).
+    - All network bits are off (Os).
+    - All host bits are off (0s).
 7. Which of the following is a layer 2 broadcast?
-   - FF.FF.FF.EE.EE.EE
-   - **FF.FF.FF.FF.FF.FF**
+    - FF.FF.FF.EE.EE.EE
+    - **FF.FF.FF.FF.FF.FF**
         > A layer 2 broadcast is also referred to as a MAC address broadcast, which is in hexadecimal and is FF.FF.FF.FF.FF.FF. A layer 3 broadcast would have a destination address of 255.255.255.255.
-   - 255.255.255.255
-   - 255.0.0.0
+    - 255.255.255.255
+    - 255.0.0.0
 8. In a Class C IP address, how long is the network address?
-   - 8 bits
-   - 16 bits
-   - **24 bits**
+    - 8 bits
+    - 16 bits
+    - **24 bits**
         > A default Class C subnet mask is 255.255.255.0, which means that the first three octets, or first 24 bits, are the network number.
-   - 32 bits
+    - 32 bits
 9.  Which of the following is true when describing a unicast address?
-   - **Packets addressed to a unicast address are delivered to a single interface.**
+    - **Packets addressed to a unicast address are delivered to a single interface.**
         > Packets addressed to a unicast address are delivered to a single interface. For load balancing, multiple interfaces can use the same address.
-   - These are your typical publicly routable addresses, just like regular publicly routable addresses in IPv4.
-   - These are like private addresses in IPv4 in that they are not meant to be routed.
-   - These addresses are meant for nonrouting purposes, but they are almost globally unique, so it is unlikely they will have an address overlap.
+    - These are your typical publicly routable addresses, just like regular publicly routable addresses in IPv4.
+    - These are like private addresses in IPv4 in that they are not meant to be routed.
+    - These addresses are meant for nonrouting purposes, but they are almost globally unique, so it is unlikely they will have an address overlap.
 10.  A host is rebooted, and you view the IP address that it was assigned. The address is 169.123.13.34. Which of the following happened?
-   - The host received an APIPA address.
-   - The host received a multicast address.
-   - **The host received a public address.**
+    - The host received an APIPA address.
+    - The host received a multicast address.
+    - **The host received a public address.**
         >  I wonder how many of you picked APIPA address as your answer? An APIPA address is 169.254.x.x. The host address in this question is a public address. This was somewhat of a tricky question if you did not read carefully.
-   - The host received a private address.
+    - The host received a private address.
 11.  An IPv4 address uses 32 bits. How many bits is an IPv6 address?
-   - **128**
+    - **128**
 12.  Which of the following is true when describing a multicast address?
-   - **Packets are delivered to all interfaces identified by the address. This is also called a one‐to‐many address.** 
+    - **Packets are delivered to all interfaces identified by the address. This is also called a one‐to‐many address.** 
         > Packets addressed to a multicast address are delivered to all interfaces identified by the multicast address, the same as in IPv4. A multicast address is also called a one‐to‐many address. You can tell multicast addresses in IPv6 because they always start with FF.
 13.  Which of the following is true when describing an anycast address?
-   - **This address identifies multiple interfaces, and the anycast packet is delivered to only one address: the closest one. This address can also be called one‐to‐nearest.** 
+    - **This address identifies multiple interfaces, and the anycast packet is delivered to only one address: the closest one. This address can also be called one‐to‐nearest.** 
         > Anycast addresses identify multiple interfaces, which is the same as multicast; however, the big difference is that the anycast packet is delivered to only one address: the first one it finds defined in terms of routing distance. This address can also be called one‐to‐one‐of‐many or one‐to‐nearest.
 14.  You want to ping the loopback address of your local host. Which two options could you type? (Choose two.)
-   - **The loopback address with IPv4 is 127.0.0.1. With IPv6, that address is ::1.**
+    - **The loopback address with IPv4 is 127.0.0.1. With IPv6, that address is ::1.**
 15.  What two statements about IPv6 addresses are true? (Choose two.)
-   - Leading zeros are required.
-   - **Two colons (::) are used to represent successive hexadecimal fields of zeros.**
-   - Two colons (::) are used to separate fields.
-   - **A single interface will have multiple IPv6 addresses of different types.**
-  
+    - Leading zeros are required.
+    - **Two colons (::) are used to represent successive hexadecimal fields of zeros.**
+    - Two colons (::) are used to separate fields.
+    - **A single interface will have multiple IPv6 addresses of different types.**
         > To shorten the written length of an IPv6 address, successive fields of zeros may be replaced by double colons. In trying to shorten the address further, leading zeros may also be removed. Just as with IPv4, a single device’s interface can have more than one address; with IPv6, there are more types of addresses, and the same rule applies. There can be link‐local, global unicast, and multicast addresses all assigned to the same interface.
 16.  What two statements about IPv4 and IPv6 addresses are true?
    - **IPv4 addresses are 32 bits long and are represented in decimal format. IPv6 addresses are 128 bits long and represented in hexadecimal format.**
 17.  Which of the following is a Class C network address?
-   - 10.10.10.0
-   - 127.0.0.1
-   - 128.0.0.0
-   - **192.255.254.0**
+    - 10.10.10.0
+    - 127.0.0.1
+    - 128.0.0.0
+    - **192.255.254.0**
         >  Only option D is in the Class C range of 192 through 224. It might look wrong because there is a 255 in the address, but this is not wrong—you can have a 255 in a network address, just not in the first octet.
 18.  Which of the following are private IP addresses? (Choose two.)
-   - 12.0.0.1
-   - 168.172.19.39
-   - **172.20.14.36**
-   - 172.33.194.30
-   - **192.168.24.43**
-  
+    - 12.0.0.1
+    - 168.172.19.39
+    - **172.20.14.36**
+    - 172.33.194.30
+    - **192.168.24.43** 
         > The Class A private address range is 10.0.0.0 through 10.255.255.255. The Class B private address range is 172.16.0.0 through 172.31.255.255, and the Class C private address range is 192.168.0.0 through 192.168.255.255.
 19.  IPv6 unicast routing is running on the Corp router. Which of the following addresses would be used as the EUI‐64 address?
-    ```sh
-    Corp#sh int f0/0
-    FastEthernet0/0 is up, line protocol is up
-    Hardware is AmdFE, address is 000d.bd3b.0d80 (bia 000d.bd3b.0d80)
-    [output cut]
-    ```
-   - FF02::3c3d:0d:bdff:fe3b:0d80
-   - **FE80::3c3d:2d:bdff:fe3b:0d80**
-        > This can be a hard question if you don’t remember to invert the 7th bit! Always look for the 7th bit when studying for the exam. The EUI‐64 autoconfiguration inserts an FF:FE in the middle of the 48‐bit MAC address to create a unique IPv6 address.
-   - FE80::3c3d:0d:bdff:fe3b:0d80
-   - FE80::3c3d:2d:ffbd:3bfe:0d80
-20. Which of the following is an invalid IP address for a host?
-   - 10.0.0.1
-   - 128.0.0.1
-   - **224.0.0.1**
-   - 172.0.0.1
+        ```sh
+        Corp#sh int f0/0
+        FastEthernet0/0 is up, line protocol is up
+        Hardware is AmdFE, address is 000d.bd3b.0d80 (bia 000d.bd3b.0d80)
+        [output cut]
+        ```
 
+- FF02::3c3d:0d:bdff:fe3b:0d80
+- **FE80::3c3d:2d:bdff:fe3b:0d80**
+   > This can be a hard question if you don’t remember to invert the 7th bit! Always look for the 7th bit when studying for the exam. The EUI‐64 autoconfiguration inserts an FF:FE in the middle of the 48‐bit MAC address to create a unique IPv6 address.
+- FE80::3c3d:0d:bdff:fe3b:0d80
+- FE80::3c3d:2d:ffbd:3bfe:0d80
+
+20.  Which of the following is an invalid IP address for a host?
+    - 10.0.0.1
+    - 128.0.0.1
+    - **224.0.0.1**
+    - 172.0.0.1
         > The IP address of 224.0.0.1 is a multicast address and cannot be used to address hosts. The IP address of 10.0.0.1 is a valid IP address for a private host. The IP address of 128.0.0.1 is a valid IP address for a public host. The IP address of 172.0.01 is a valid IP address for a public host.
 
 
@@ -537,64 +536,64 @@
 
 ## 
 1. 
-   - **** 
+    - **** 
         > 
 2. 
-   - **** 
+    - **** 
         > 
 3. 
-   - **** 
+    - **** 
         > 
 4. 
-   - **** 
+    - **** 
         > 
 5. 
-   - **** 
+    - **** 
         > 
 6. 
-   - **** 
+    - **** 
         > 
 7. 
-   - **** 
+    - **** 
         > 
 8. 
-   - **** 
+    - **** 
         > 
 9.  
-   - **** 
+    - **** 
         > 
 10. 
-   - **** 
+    - **** 
         > 
 11. 
-   - **** 
+    - **** 
         > 
 12. 
-   - **** 
+    - **** 
         > 
 13. 
-   - **** 
+    - **** 
         > 
 14. 
-   - **** 
+    - **** 
         > 
 15. 
-   - **** 
+    - **** 
         > 
 16. 
-   - **** 
+    - **** 
         >  
 17. 
-   - **** 
+    - **** 
         > 
 18. 
-   - **** 
+    - **** 
         > 
 19. 
-   - **** 
+    - **** 
         > 
 20. 
-   - **** 
+    - **** 
         > 
 
 
@@ -614,62 +613,62 @@
 
 ## 
 1. 
-   - **** 
+    - **** 
         > 
 2. 
-   - **** 
+    - **** 
         > 
 3. 
-   - **** 
+    - **** 
         > 
 4. 
-   - **** 
+    - **** 
         > 
 5. 
-   - **** 
+    - **** 
         > 
 6. 
-   - **** 
+    - **** 
         > 
 7. 
-   - **** 
+    - **** 
         > 
 8. 
-   - **** 
+    - **** 
         > 
 9.  
-   - **** 
+    - **** 
         > 
 10. 
-   - **** 
+    - **** 
         > 
 11. 
-   - **** 
+    - **** 
         > 
 12. 
-   - **** 
+    - **** 
         > 
 13. 
-   - **** 
+    - **** 
         > 
 14. 
-   - **** 
+    - **** 
         > 
 15. 
-   - **** 
+    - **** 
         > 
 16. 
-   - **** 
+    - **** 
         >  
 17. 
-   - **** 
+    - **** 
         > 
 18. 
-   - **** 
+    - **** 
         > 
 19. 
-   - **** 
+    - **** 
         > 
 20. 
-   - **** 
+    - **** 
         > 
