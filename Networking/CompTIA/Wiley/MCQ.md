@@ -7,28 +7,28 @@
         > A campus area network (CAN) is a connectivity method that is locally owned and managed by an organization to connect multiple LANs together. A metropolitan area network (MAN) is a connectivity method used in a metropolitan area, but it is owned and managed by someone other than the organization. A wide area network (WAN) is a connectivity method that is used for connectivity in a wide area, and it is owned and managed by someone other than the organization. A personal area network (PAN) is a network that connects personal devices within an extremely close vicinity.
 2. Which network topology design has a centralized switch connecting all of the devices?
    - **Star topology** 
-    > A star topology, also known as hub‐and‐spoke topology, has a centralized switch connecting all of the devices outward like a star. A full mesh topology allows for a decentralized switching design, where any link failure will not affect switching. A partial mesh topology is normally performed between the layers of core, distribution, and access to allow for a single link failure while maintaining switching services. A hybrid topology is where several different topologies are employed, such as star and mesh.
+        > A star topology, also known as hub‐and‐spoke topology, has a centralized switch connecting all of the devices outward like a star. A full mesh topology allows for a decentralized switching design, where any link failure will not affect switching. A partial mesh topology is normally performed between the layers of core, distribution, and access to allow for a single link failure while maintaining switching services. A hybrid topology is where several different topologies are employed, such as star and mesh.
 3. Which protocol can be typically found inside a PAN?
    - **Bluetooth** 
-    > Bluetooth is a common networking protocol found inside a personal area network (PAN) connecting personal devices. Multiprotocol label switching (MPLS) is a technology that uses labels to switch packets. A software‐defined wide area network (SDWAN) is a virtual WAN architecture that uses software to manage connectivity, devices, and services. A virtual NIC (vNIC) is used to connect a virtual machine (VM) to a virtual switch (vSwitch).
+        > Bluetooth is a common networking protocol found inside a personal area network (PAN) connecting personal devices. Multiprotocol label switching (MPLS) is a technology that uses labels to switch packets. A software‐defined wide area network (SDWAN) is a virtual WAN architecture that uses software to manage connectivity, devices, and services. A virtual NIC (vNIC) is used to connect a virtual machine (VM) to a virtual switch (vSwitch).
 4. When computers are logically grouped on a LAN based upon a functional department in the organization, what is the group called?
    - **Workgroup** 
-    > A workgroup is a logical grouping of computers on a local area network (LAN) based upon a department’s function. A backbone is the connectivity method that connects multiple network segments together. A campus area network (CAN) is a network that connects multiple buildings together in close proximity. A personal area network (PAN) is a network that connects personal devices together in close proximity often using Bluetooth technology.
+        > A workgroup is a logical grouping of computers on a local area network (LAN) based upon a department’s function. A backbone is the connectivity method that connects multiple network segments together. A campus area network (CAN) is a network that connects multiple buildings together in close proximity. A personal area network (PAN) is a network that connects personal devices together in close proximity often using Bluetooth technology.
 5. Which is the primary benefit to using a star topology?
    - **Easy to troubleshoot** 
-    > A benefit to the star topology is that it is easy to troubleshoot since each host has its own connection. Equal access is typically a benefit of ring topologies. Bus topologies are typically the simplest network in terms of design, whereas star networks can have redundancy, loops, and many other complex design considerations. Redundancy is not found in star topologies; it is typically in mesh networks.
+        > A benefit to the star topology is that it is easy to troubleshoot since each host has its own connection. Equal access is typically a benefit of ring topologies. Bus topologies are typically the simplest network in terms of design, whereas star networks can have redundancy, loops, and many other complex design considerations. Redundancy is not found in star topologies; it is typically in mesh networks.
 6. What type of logical connection does MPLS create to connect networks together?
    - **Circuit** 
-    > A circuit is the logical connection that MPLS creates to connect networks together. A peer‐to‐peer connection is a bidirectional logical connection for sharing files and accessing files. A client‐server connection is another logical connection created for accessing information in one direction from client to server. East‐west is a term used to describe traffic within the same network or data center.
+        > A circuit is the logical connection that MPLS creates to connect networks together. A peer‐to‐peer connection is a bidirectional logical connection for sharing files and accessing files. A client‐server connection is another logical connection created for accessing information in one direction from client to server. East‐west is a term used to describe traffic within the same network or data center.
 7. Which type of network is used exclusively for storage traffic?
    - **SAN** 
-    > A storage area network (SAN) is a network that is used exclusively for storage traffic. A campus area network (CAN) is a network that connects buildings together in close proximity. A metropolitan area network (MAN) is a network that connects clients within a metropolitan area, such as a city, together. A local area network (LAN) is a network within a building or residence that connects hosts together.
+        > A storage area network (SAN) is a network that is used exclusively for storage traffic. A campus area network (CAN) is a network that connects buildings together in close proximity. A metropolitan area network (MAN) is a network that connects clients within a metropolitan area, such as a city, together. A local area network (LAN) is a network within a building or residence that connects hosts together.
 8. Which type of traffic flow is routed from your internal network to the Internet?
    - **North-South** 
-    > North‐south traffic flow describes the flow of information from an internal network to the Internet or other routed destination. East‐west traffic is kept within the internal network or data center and not routed. Wide area network (WAN) and metropolitan area (MAN) network describe a general network type, not traffic flow or a specific connection.
+        > North‐south traffic flow describes the flow of information from an internal network to the Internet or other routed destination. East‐west traffic is kept within the internal network or data center and not routed. Wide area network (WAN) and metropolitan area (MAN) network describe a general network type, not traffic flow or a specific connection.
 9. Which topology incorporates some redundancy of equipment and connections to provide fault tolerance but is not completely fault‐tolerant?
    - **Hybrid** 
-    > A mesh topology incorporates redundancy in the form of switches and redundant connections to provide complete fault tolerance to the network design. When a mesh topology is combined with the star (hub‐and‐spoke) topology, it creates a hybrid topology that allows for fault‐tolerant design at a lower cost than a full mesh topology. Ring and bus topology are susceptible to total network failure if there is a failure anywhere in the network.
+        > A mesh topology incorporates redundancy in the form of switches and redundant connections to provide complete fault tolerance to the network design. When a mesh topology is combined with the star (hub‐and‐spoke) topology, it creates a hybrid topology that allows for fault‐tolerant design at a lower cost than a full mesh topology. Ring and bus topology are susceptible to total network failure if there is a failure anywhere in the network.
 10. Which topology should be selected if you have a central office that needs to communicate with several branch offices for WAN connectivity?
     - **Point‐to‐multipoint** 
         > A point‐to‐multipoint topology should be selected if a central office needs to connect with several branch offices. Popular point‐to‐multipoint connection technologies are frame relay and MPLS, to name a few. A point‐to‐point connection is typically used to connect two offices together. Mesh and bus topologies are not used for WAN connectivity.
@@ -478,23 +478,24 @@
         >  I wonder how many of you picked APIPA address as your answer? An APIPA address is 169.254.x.x. The host address in this question is a public address. This was somewhat of a tricky question if you did not read carefully.
    - The host received a private address.
 11.  An IPv4 address uses 32 bits. How many bits is an IPv6 address?
-   - **** > 
-   - 
+   - **128**
 12.  Which of the following is true when describing a multicast address?
-   - **** > 
-   - 
+   - **Packets are delivered to all interfaces identified by the address. This is also called a one‐to‐many address.** 
+        > Packets addressed to a multicast address are delivered to all interfaces identified by the multicast address, the same as in IPv4. A multicast address is also called a one‐to‐many address. You can tell multicast addresses in IPv6 because they always start with FF.
 13.  Which of the following is true when describing an anycast address?
-   - **** > 
-   - 
+   - **This address identifies multiple interfaces, and the anycast packet is delivered to only one address: the closest one. This address can also be called one‐to‐nearest.** 
+        > Anycast addresses identify multiple interfaces, which is the same as multicast; however, the big difference is that the anycast packet is delivered to only one address: the first one it finds defined in terms of routing distance. This address can also be called one‐to‐one‐of‐many or one‐to‐nearest.
 14.  You want to ping the loopback address of your local host. Which two options could you type? (Choose two.)
-   - **** > 
-   - 
+   - **The loopback address with IPv4 is 127.0.0.1. With IPv6, that address is ::1.**
 15.  What two statements about IPv6 addresses are true? (Choose two.)
-   - **** > 
-   - 
+   - Leading zeros are required.
+   - **Two colons (::) are used to represent successive hexadecimal fields of zeros.**
+   - Two colons (::) are used to separate fields.
+   - **A single interface will have multiple IPv6 addresses of different types.**
+  
+        > To shorten the written length of an IPv6 address, successive fields of zeros may be replaced by double colons. In trying to shorten the address further, leading zeros may also be removed. Just as with IPv4, a single device’s interface can have more than one address; with IPv6, there are more types of addresses, and the same rule applies. There can be link‐local, global unicast, and multicast addresses all assigned to the same interface.
 16.  What two statements about IPv4 and IPv6 addresses are true? (Choose two.)
    - **** > 
-   - 
 17.  Which of the following is a Class C network address?
    - **** > 
    - 
