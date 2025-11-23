@@ -534,22 +534,22 @@
 <br><br><br>
 
 
-## 
-1. 
-    - **** 
-        > 
-2. 
-    - **** 
-        > 
-3. 
-    - **** 
-        > 
-4. 
-    - **** 
-        > 
-5. 
-    - **** 
-        > 
+## Chapter 8: IP Subnetting, Troubleshooting IP, and Introduction to NAT
+1. Which is true of the IP address 135.20.255.255?
+    - **It is a broadcast address.** 
+        > The IP address 135.20.255.255 is a Class B broadcast address. It is not a Class A address, nor is it the default gateway address. The default mask of a Class B address is 255.255.0.0.
+2. You have been given an IP address network of 203.23.23.0. You are asked to subnet it for two hosts per network. What is the subnet mask you will need to use to maximize networks?
+    - **255.255.255.252** 
+        > The mask you will need to use is 255.255.255.252. This will allow for two hosts per network for a total of 64 networks. The formula for solving for hosts is 2^X – 2 is equal to or greater than 2(hosts), which in this case is (22 – 2) = (4 – 2) = 2. So 2 bits are used for the host side, leaving 6 bits for the subnet side. 6 bits + 24 bits (original subnet mask) = /30, or 255.255.255.252. All of the other answer options are incorrect.
+3. You require the subnetting of the network address 192.168.1.0 to allow for 10 hosts per subnet while maintaining the maximum number of subnets. What should the subnet mask be?
+    - **255.255.255.240** 
+        > The subnet mask of 255.255.255.240 will allow for 14 hosts per subnet and a maximum of 16 subnets. No other answer options are correct.
+4. You have been assigned a network ID of 131.44.0.0/16 by your ISP. Your organization needs to use this network ID over four campuses. What mask should be used to subnet it to achieve the goal while maximizing host IP addresses?
+    - **255.255.192.0** 
+        > The network ID granted to your organization is a Class B address, in which the last 16 bits can be subnetted. Using the formula of 2 to the power of 2 gives you a perfect result of 4. Using 2 bits for the subnet mask would make the subnet mask 255.255.192.0 (128 + 64 = 192). This would leave you with 14 bits for further subnetting or host IDs.
+5. What is the CIDR notation for a subnet mask of 255.255.240.0?
+    - **/20** 
+        > The CIDR notation for 255.255.240.0 is /20. The first two subnets are 8 bits (8 × 2 = 16), and the 240 is 4 more bits (16 + 4 = 20). All of the other options are incorrect.
 6. 
     - **** 
         > 
