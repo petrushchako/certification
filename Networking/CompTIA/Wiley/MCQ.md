@@ -553,43 +553,53 @@
 6. You have been given an IP address network of 213.43.53.0. You are asked to subnet it for 22 hosts per network. What is the subnet mask you will need to use to maximize networks?
     - **255.255.255.224** 
         > The mask you will need to use is 255.255.255.224. This will allow for 30 hosts per network for a total of 8 networks. The formula for solving for hosts is 2X – 2 is equal to or greater than 2 hosts, which in this case is (25 – 2) = (32 – 2) = 30. So 5 bits are used for the host side, leaving 3 bits for the subnet side. 3 bits + 24 bits (original subnet mask) = /27, or 255.255.255.224. All of the other answer options are incorrect.
-7. 
+7. Which valid IP is in the same network as 192.168.32.61/26?
+    - **192.168.32.59** 
+        > The valid IP address range for the 192.168.32.0/26 network is 192.168.32.1 to 192.168.32.62, 192.168.32.65 to 192.168.32.126, etc. Therefore, 192.168.32.59 is within the valid IP range of 192.168.32.61/26. 192.168.32.63 is the broadcast address for the 192.168.32.0/26 network. 192.168.32.64 is the network ID for the 192.168.32.64/26 network. 192.168.32.72 is a valid IP address in the 192.168.32.64/26 network.
+8. You are setting up a network in which you need 15 subnetworks. You have been given a network address of 153.20.0.0, and you need to maximize the number of hosts in each network. Which subnet mask will you use?
+    - **255.255.240.0** 
+        > The subnet mask will be 255.255.240.0. Since you need to solve for the number of networks, the equation is as follows: 2^X is equal to or greater than 15 networks. 2^4 = 16 completed the equation; the 4 bits represent the subnet side; you add the 4 bits to the 16 bits of the class B subne
+
+        | Subnet # | Network (CIDR) | First usable | Last usable   | Broadcast     |
+        |:--------:|----------------|--------------|---------------|---------------|
+        | 1        | 153.20.0.0/20	| 153.20.0.1   | 153.20.15.254 | 153.20.15.255 |
+        | 2	       | 153.20.16.0/20	| 153.20.16.1  | 153.20.31.254 | 153.20.31.255 |
+        | 3        | 153.20.32.0/20	| 153.20.32.1  | 153.20.47.254 | 153.20.47.255 |
+        | 4        | 153.20.48.0/20	| 153.20.48.1  | 153.20.63.254 | 153.20.63.255 |
+        | 5        | 153.20.64.0/20	| 153.20.64.1  | 153.20.79.254 | 153.20.79.255 |
+
+9.  An ISP gives you an IP address of 209.183.160.45/30 to configure your end of the serial connection. Which IP address will be on the ISP side?
+    - **209.183.160.46/30** 
+        > The valid IP address range for 209.183.160.45/30 is 209.183.160.45–209.183.160.46. Both IP addresses are part of the 209.183.160.44/30 network. The IP address 209.183.160.47/30 is the broadcast address for the 209.182.160.44/30 network. The IP address 209.183.160.43/30 is the broadcast IP address for the 209.183.160.40/30 network.
+10. In the following exhibit, what needs to be changed for Computer A to successfully communicate with Computer B (assume the least amount of effort to fix the problem)?<br>
+![](img/7.10.MCQ.jpeg)
+    - **The default gateway IP address for Computer A needs to be changed.** 
+        > 
+11.  
     - **** 
         > 
-8. 
+12.  
     - **** 
         > 
-9.  
+13.  
     - **** 
         > 
-10. 
+14.  
     - **** 
         > 
-11. 
+15.  
     - **** 
         > 
-12. 
-    - **** 
-        > 
-13. 
-    - **** 
-        > 
-14. 
-    - **** 
-        > 
-15. 
-    - **** 
-        > 
-16. 
+16.  
     - **** 
         >  
-17. 
+17.  
     - **** 
         > 
-18. 
+18.  
     - **** 
         > 
-19. 
+19.  
     - **** 
         > 
 20. 
