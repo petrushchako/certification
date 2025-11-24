@@ -550,9 +550,9 @@
 5. What is the CIDR notation for a subnet mask of 255.255.240.0?
     - **/20** 
         > The CIDR notation for 255.255.240.0 is /20. The first two subnets are 8 bits (8 × 2 = 16), and the 240 is 4 more bits (16 + 4 = 20). All of the other options are incorrect.
-6. 
-    - **** 
-        > 
+6. You have been given an IP address network of 213.43.53.0. You are asked to subnet it for 22 hosts per network. What is the subnet mask you will need to use to maximize networks?
+    - **255.255.255.224** 
+        > The mask you will need to use is 255.255.255.224. This will allow for 30 hosts per network for a total of 8 networks. The formula for solving for hosts is 2X – 2 is equal to or greater than 2 hosts, which in this case is (25 – 2) = (32 – 2) = 30. So 5 bits are used for the host side, leaving 3 bits for the subnet side. 3 bits + 24 bits (original subnet mask) = /27, or 255.255.255.224. All of the other answer options are incorrect.
 7. 
     - **** 
         > 
