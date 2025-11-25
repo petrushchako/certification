@@ -572,24 +572,32 @@
     - **209.183.160.46/30** 
         > The valid IP address range for 209.183.160.45/30 is 209.183.160.45–209.183.160.46. Both IP addresses are part of the 209.183.160.44/30 network. The IP address 209.183.160.47/30 is the broadcast address for the 209.182.160.44/30 network. The IP address 209.183.160.43/30 is the broadcast IP address for the 209.183.160.40/30 network.
 10. In the following exhibit, what needs to be changed for Computer A to successfully communicate with Computer B (assume the least amount of effort to fix the problem)?<br>
-![](img/7.10.MCQ.jpeg)
+    ![](img/8.10.MCQ.jpeg)
     - **The default gateway IP address for Computer A needs to be changed.** 
-        > 
-11.  
-    - **** 
-        > 
-12.  
-    - **** 
-        > 
-13.  
-    - **** 
-        > 
-14.  
-    - **** 
-        > 
-15.  
-    - **** 
-        > 
+        > The default gateway address for Computer A is 192.168.1.63. The IP address on the router (default gateway) is the broadcast address for the 192.168.1.0/26 network and cannot be used as that network’s gateway. If you were to change Computer A’s IP address, it would still not be able to communicate with Computer B because of the incorrect gateway address. Computer B’s IP address and default gateway are fine, and both will function properly.
+        ```txt
+        Network 1: 192.168.1.0     – 192.168.1.63
+        Network 2: 192.168.1.64    – 192.168.1.127
+        Network 3: 192.168.1.128   – 192.168.1.191
+        Network 4: 192.168.1.192   – 192.168.1.255
+        ```
+11.  In the following exhibit, what needs to be changed for Computer A to successfully communicate with Computer B (assume the least amount of effort to fix the problem)?
+    ![](img/8.11.MCQ.jpeg)
+    - **Computer A needs to have its IP address changed.** 
+        > Computer A needs to have its IP address changed to align with the network that its gateway is in. Computer A is in the 192.168.1.32/27 network, while its gateway address is in the 192.168.1.0/27 network. Although changing the gateway address would work, the solution needs to be the one with the least amount of effort. Changing the gateway address, which is a valid IP address, would create more work for other clients. Computer B’s IP address and default gateway are fine, and both will function properly.
+12.  Which subnet does host 131.50.39.23/21 belong to?
+    - **131.50.32.0/21** 
+        > The /21 subnet mask has subnets in multiples of 8. So the networks would be 131.50.8.0/21, 131.50.16.0/21, 131.50.24.0/21, 131.50.32.0/21, and 131.50.40.0/21. The IP address of 131.50.39.23/21 would belong to the 131.50.32.0/21 network with a valid range of 131.50.32.1 to 131.50.39.254. Therefore, the network 131.50.39.0/21 cannot be a network ID because it belongs to the 131.50.32.0/21 network. Both the 131.50.16.0/21 and 131.50.8.0/21 network IDs are outside of the range for the host used in this question.
+13.  A computer has an IP address of 145.50.23.1/22. What is the broadcast address for that computer?
+    - **145.50.23.255** 
+        > The network for the computer with an IP address of 145.50.23.1/22 is 145.50.20.0/22. Its valid range is 145.50.20.1 to 145.50.23.254; the broadcast address for the range is 145.50.23.255. All of the other answer options are incorrect.
+14.  Which method will allow you to use RFC 1918 addresses for Internet requests?
+    - **NAT** 
+        > Network address translation (NAT) was created to slow the depletion of Internet addresses. It does this by translating RFC 1918 privatized addresses to one or many public IP addresses. It allows the packets to masquerade as the public IP address on the Internet until it is translated back to the private IP address. Classless Inter‐Domain Routing (CIDR) is a notation used to express the network for a host. Classful addressing is the original addressing scheme for the Internet. Virtual private networks (VPNs) are used for remote access.
+15.  In the following exhibit, what is the inside local IP address?
+    ![](img/8.15.MCQ.jpeg)
+    - **192.168.1.2 Host A** 
+        > The inside local address is the address local to the enterprise (private), and the address is inside the enterprise. The inside local address will almost always be an RCF 1918 address, unless NAT is being used for purposes other than enterprise Internet access. If NAT is used for Internet access, then the inside local address is any host address destined for the Internet through NAT. 192.168.1.1 is the router’s interface address used to communicate with inside local hosts during the NAT process. 179.43.44.1 is the inside global address for the NAT process. 198.23.53.3 is the outside global address for the NAT process.
 16.  
     - **** 
         >  
