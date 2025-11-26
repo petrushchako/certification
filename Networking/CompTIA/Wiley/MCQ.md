@@ -598,21 +598,23 @@
     ![](img/8.15.MCQ.jpeg)
     - **192.168.1.2 Host A** 
         > The inside local address is the address local to the enterprise (private), and the address is inside the enterprise. The inside local address will almost always be an RCF 1918 address, unless NAT is being used for purposes other than enterprise Internet access. If NAT is used for Internet access, then the inside local address is any host address destined for the Internet through NAT. 192.168.1.1 is the router’s interface address used to communicate with inside local hosts during the NAT process. 179.43.44.1 is the inside global address for the NAT process. 198.23.53.3 is the outside global address for the NAT process.
-16.  
-    - **** 
-        >  
-17.  
-    - **** 
-        > 
-18.  
-    - **** 
-        > 
-19.  
-    - **** 
-        > 
-20. 
-    - **** 
-        > 
+16.  In the following exhibit, what is the inside global IP address?
+    ![](img/8.15.MCQ.jpeg)
+    - **179.43.44.1 Router A S0/0**
+        >  The inside global address is the address public to the enterprise. The address is inside of or controlled by the enterprise. The inside global address in this case is the public side of the NAT, which is Router A’s S0/0 IP address. 192.168.1.2 is the inside local address of the host computer. 192.168.1.1 is the router’s interface address used to communicate with inside local hosts during the NAT process. 198.23.53.3 is the outside global address for the NAT process.
+17.  In the following exhibit, what is the outside global IP address?
+    ![](img/8.15.MCQ.jpeg)
+    - **198.23.53.3 web server** 
+        > The outside global address is the address public to the enterprise. The address is outside of the enterprise or outside of its control. When using NAT for Internet access, the outside global address is the destination host on the Internet. The outside global address in this exhibit is the web server. 192.168.1.2 is the inside local address of the host computer. 192.168.1.1 is the router’s interface address used to communicate with inside local hosts during the NAT process. 179.43.44.1 is the inside global address for the NAT process.
+18.  What is the maximum number of IP addresses that can be assigned to hosts on a local subnet that uses the 255.255.255.248 subnet mask?
+    - **6** 
+        > A /29 (255.255.255.248) is 5 bits for the network mask and 3 bits for the hosts. This provides 32 subnets, each with 6 hosts. Does it matter if this mask is used with a Class A, B, or C network address? Not at all. The number of host bits would never change.
+19.  If a host on a network has the address 172.16.45.14/30, what is the subnetwork this host belongs to?
+    - **172.16.45.12** 
+        > A /30, regardless of the class of address, has a 252 in the fourth octet. This means we have a block size of 4, and our subnets are 0, 4, 8, 12, 16, and so on. Address 14 is obviously in the 12 subnet.
+20. On which of the following devices are you typically able to implement NAT?
+    - **Router** 
+        > Devices with layer 3 awareness, such as routers and firewalls, are the only ones that can manipulate the IP header in support of NAT. A hub operates at the physical layer and cannot perform NAT. Ethernet switches and bridges operate at the Data Link layer and cannot perform NAT.
 
 
 
