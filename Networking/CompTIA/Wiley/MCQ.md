@@ -617,10 +617,80 @@
         > Devices with layer 3 awareness, such as routers and firewalls, are the only ones that can manipulate the IP header in support of NAT. A hub operates at the physical layer and cannot perform NAT. Ethernet switches and bridges operate at the Data Link layer and cannot perform NAT.
 
 
+<br><br><br>
 
+## Chapter 9: Introduction to IP Routing
+1. Which is required for the successful routing of a packet through a router?
+    - **** 
+        > 
+2. Which Cisco IOS command will display the route table?
+    - **** 
+        > 
+3. Which is true about static routes?
+    - **** 
+        > 
+4. Using the following example, what does the C in the route statement mean?
 
+        Gateway of last resort is not set
+        C      192.168.1.0/24 is directly connected, FastEthernet0/0
+        C      192.168.2.0/24 is directly connected, FastEthernet0/1
+    - **** 
+        > 
+5. What happens when the destination IP address of a packet is not in the same network as the host?
+    - **** 
+        > 
+6. Which command can be used on a Cisco router to view the ARP cache?
+    - **** 
+        > 
+7. What is the term used to describe the map of the internetwork inside a router?
+    - **** 
+        > 
+8. Which protocol is used to derive the MAC address of the default gateway?
+    - **** 
+        > 
+9.  What is the Ether‐Type field set to for the IPv4 protocol?
+    - **** 
+        > 
+10. You are the network administrator for a small network that has multiple locations. You expect to add more in the future and want to ensure that routing is not troublesome and will be automated. Which should you employ?
+    - **** 
+        > 
+11. What will happen if the router does not have a route to the destination network for a ping packet? (Choose two.)
+    - **** 
+        > 
+12. What is at the end of a frame that allows the destination to verify that the frame was transmitted intact?
+    - **** 
+        > 
+13. What is the message if an ICMP ping packet is lost along the way en route to the destination?
+    - **** 
+        > 
+14. Which interface will the router switch the packet to for a destination of 172.16.20.94?
 
+        Gateway of last resort is not set
 
+        C       172.16.20.0/27  is directly connected, FastEthernet 0/0
+        C       172.16.20.32/27 is directly connected, FastEthernet 0/1
+        C       172.16.20.64/27 is directly connected, FastEthernet 0/2
+        C       172.16.20.128/27 is directly connected, FastEthernet 0/3
+    - **** 
+        > 
+15. Which of these statements best describes dynamic routing?
+    - **** 
+        > 
+16. Which of these statement regarding MAC addresses is true correct?
+    - **** 
+        >  
+17. What is the term used to describe the result of all routes being updated in the routing table via a dynamic routing protocol?
+    - **** 
+        > 
+18. What command would be used to view the ARP cache on your host?
+    - **** 
+        > 
+19. Where along the IP routing process does a packet get changed?
+    - **** 
+        > 
+20. What is the term used to describe a collection of networks or subnets that are in the same administrative domain?
+    - **** 
+        > 
 
 
 
