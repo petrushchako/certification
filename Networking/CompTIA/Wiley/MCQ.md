@@ -621,24 +621,24 @@
 
 ## Chapter 9: Introduction to IP Routing
 1. Which is required for the successful routing of a packet through a router?
-    - **** 
-        > 
+    - **Destination host of a packet** 
+        > Routing decisions are based upon the route table contained in the router’s memory and knowledge of the destination network of a packet. The originating network of a packet is not needed throughout the entire routing process. The return path of the network packet is not needed on its journey but will be needed when a packet is sent back from the destination host. The destination of the specific host is not required as long as the destination network is known; routing is typically done by network.
 2. Which Cisco IOS command will display the route table?
-    - **** 
-        > 
+    - **`show ip route`** 
+        > The command `show ip route` will display the route table contained in the router’s memory. All other commands are incorrect.
 3. Which is true about static routes?
-    - **** 
-        > 
+    - **All routes must be manually configured.** 
+        > All routes must be manually configured when you use static routes. Routes are not automatically updated because they are statically assigned. The learning of new routes and updating of existing routes is a function of dynamic routing protocols. Static routes are not the best for network traffic since a packet will always take the same route regardless of network status.
 4. Using the following example, what does the C in the route statement mean?
 
         Gateway of last resort is not set
         C      192.168.1.0/24 is directly connected, FastEthernet0/0
         C      192.168.2.0/24 is directly connected, FastEthernet0/1
-    - **** 
-        > 
+    - **The network is configured on the interface.** 
+        > The C in the route statement means that the network is directly connected on the interface because it is configured on the interface. The gateway of last resort is the default gateway and has no influence on the individual route statement. If the route was statically configured, the letter would be an S. A network that is a continuation of another network is called a summary route and not depicted as another route entry.
 5. What happens when the destination IP address of a packet is not in the same network as the host?
-    - **** 
-        > 
+    - **The destination MAC address is set to the default gateway.** 
+        > When the destination IP address of a packet is not in the same network as the host, the host will set the destination MAC address to the default gateway. The destination IP address will never change throughout the IP routing process. The source IP address and MAC address have no influence over the routing process.
 6. Which command can be used on a Cisco router to view the ARP cache?
     - **** 
         > 
