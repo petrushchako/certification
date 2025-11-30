@@ -640,20 +640,20 @@
     - **The destination MAC address is set to the default gateway.** 
         > When the destination IP address of a packet is not in the same network as the host, the host will set the destination MAC address to the default gateway. The destination IP address will never change throughout the IP routing process. The source IP address and MAC address have no influence over the routing process.
 6. Which command can be used on a Cisco router to view the ARP cache?
-    - **** 
-        > 
+    - **`show ip arp`** 
+        > The command show ip arp can be used on a Cisco router to view the ARP cache. The commands show arp and show arp-cache are invalid commands. The command arp -g can be used on a Windows computer to view the ARP cache.
 7. What is the term used to describe the map of the internetwork inside a router?
-    - **** 
-        > 
+    - **Route table** 
+        > The route table is the term used to describe the map of the internetwork inside a router. The route table is used to make routing decisions based upon the destination network address of the packet. A route map is not a valid answer for this question. A dynamic route is a route derived from a dynamic routing protocol. A static route is a route that has been explicitly configured.
 8. Which protocol is used to derive the MAC address of the default gateway?
-    - **** 
-        > 
+    - **ARP** 
+        > Address Resolution Protocol (ARP) is used to derive the MAC address of the default gateway, in the event that a packet must be routed. The Internet Control Message Protocol (ICMP) is used to convey messages about layer 3 connectivity. Reverse Address Resolution Protocol (RARP) is used to derive an IP address from a known MAC address, similar to DHCP.
 9.  What is the Ether‐Type field set to for the IPv4 protocol?
-    - **** 
-        > 
+    - **0x0800** 
+        > The Ether‐Type field will always be set to 0x800 for the IPv4 protocol. When data is destined for the ARP protocol, the Ether‐Type field will contain 0x806. These are the two common Ether‐Types you will commonly see. All other answers are incorrect.
 10. You are the network administrator for a small network that has multiple locations. You expect to add more in the future and want to ensure that routing is not troublesome and will be automated. Which should you employ?
-    - **** 
-        > 
+    - **Dynamic routing** 
+        > Dynamic routing will ensure that routing in the network is automated as new locations are added to the network. Static routing will require manual intervention by the administrator updating all routing tables. Dynamic Host Configuration Protocol (DHCP) will automate the serving of IP addresses to hosts, but it will not update route tables. Reverse Address Resolution Protocol (RARP) is like DHCP in its utility, but it will not update routing tables.
 11. What will happen if the router does not have a route to the destination network for a ping packet? (Choose two.)
     - **** 
         > 
