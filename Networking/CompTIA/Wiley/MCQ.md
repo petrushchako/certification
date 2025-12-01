@@ -655,14 +655,15 @@
     - **Dynamic routing** 
         > Dynamic routing will ensure that routing in the network is automated as new locations are added to the network. Static routing will require manual intervention by the administrator updating all routing tables. Dynamic Host Configuration Protocol (DHCP) will automate the serving of IP addresses to hosts, but it will not update route tables. Reverse Address Resolution Protocol (RARP) is like DHCP in its utility, but it will not update routing tables.
 11. What will happen if the router does not have a route to the destination network for a ping packet? (Choose two.)
-    - **** 
-        > 
+    - **The packet will be dropped.**
+    - **An ICMP packet is sent to the sender.** 
+        > If a route is not present for the destination network, the packet will be dropped. An Internet Control Message Protocol (ICMP) destination unreachable packet will be sent back to the sender to notify them the route is unreachable. The original packet is never sent back to the sender; it is just dropped. Packet logging happens only when it is appropriately configured. Routers will not request dynamic routing updates upon an unknown destination network.
 12. What is at the end of a frame that allows the destination to verify that the frame was transmitted intact?
-    - **** 
-        > 
+    - **FCS** 
+        > The frame checking sequence (FCS) is a cyclical redundancy check (CRC) at the end of the frame that is 4 bytes long. The FCS allows the destination to verify that the frame has been received intact. The source MAC address, destination MAC address, and Ether‐Type have no significance to the validity of the frame other than they are included in the CRC when it is calculated.
 13. What is the message if an ICMP ping packet is lost along the way en route to the destination?
-    - **** 
-        > 
+    - **Request timed out** 
+        > When an ICMP ping packet or any packet is lost along its route, the result will be “Request timed out.” A ping or tracert to the destination will return the message, where normal application will just result in a timeout. The request timeout is an unknown error, but the message “Unknown error” will not be returned for the ping command. “Destination unreachable” will be returned as an error if a router does not have the route in its route table. “Problem occurred” is not an error message returned.
 14. Which interface will the router switch the packet to for a destination of 172.16.20.94?
 
         Gateway of last resort is not set
@@ -671,11 +672,11 @@
         C       172.16.20.32/27 is directly connected, FastEthernet 0/1
         C       172.16.20.64/27 is directly connected, FastEthernet 0/2
         C       172.16.20.128/27 is directly connected, FastEthernet 0/3
-    - **** 
-        > 
+    - **FastEthernet 0/2** 
+        > The destination IP address of 172.16.20.94 is within the 172.16.20.64/27 network; the exit interface will be FastEthernet 0/2. All other answers are incorrect.
 15. Which of these statements best describes dynamic routing?
-    - **** 
-        > 
+    - **Routing tables are updated automatically when changes occur in the network.** 
+        > In dynamic routing, routers update each other about all the networks they know about and place this information into the routing table. This is possible because a protocol on one router communicates with the same protocol running on neighbor routers. If changes occur in the network, a dynamic routing protocol automatically informs all routers about the event. The network and host IDs do not need to be manually entered unless you are static routing. Dynamic routing is not the default for all routers static routing is the default.
 16. Which of these statement regarding MAC addresses is true correct?
     - **** 
         >  
