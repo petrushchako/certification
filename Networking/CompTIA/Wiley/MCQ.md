@@ -678,20 +678,20 @@
     - **Routing tables are updated automatically when changes occur in the network.** 
         > In dynamic routing, routers update each other about all the networks they know about and place this information into the routing table. This is possible because a protocol on one router communicates with the same protocol running on neighbor routers. If changes occur in the network, a dynamic routing protocol automatically informs all routers about the event. The network and host IDs do not need to be manually entered unless you are static routing. Dynamic routing is not the default for all routers static routing is the default.
 16. Which of these statement regarding MAC addresses is true correct?
-    - **** 
-        >  
+    - **MAC addresses are always local on the LAN and never routed.** 
+        > MAC addresses are always local to the LAN, since they are used for physical addressing. IP addresses are routed through the router and not MAC addresses. During the routing process the MAC address is changed to the next physical address of the next device accepting the frame. The default gateway MAC address will always be unique on all the interfaces. Route decisions are made based only upon the destination IP address.
 17. What is the term used to describe the result of all routes being updated in the routing table via a dynamic routing protocol?
-    - **** 
-        > 
+    - **Convergence** 
+        > Convergence is the term used to describe the result of all routes updated in a routing table via a dynamic routing protocol. The fastest convergence is always desirable to keep packets routing properly. Convergence is achieved by dynamic route updates from other routers. DNS resolution is not a component of routing.
 18. What command would be used to view the ARP cache on your host?
-    - **** 
-        > 
+    - **`arp -a`** 
+        > The command `arp -a` will show the ARP cache on your host. The command show ip route will display the route table on a router. The command show ip arp will display the ARP cache on a router or switch. The command show protocols will display all the configured layer 3 protocols on the router.
 19. Where along the IP routing process does a packet get changed?
-    - **** 
-        > 
+    - **Destination host** 
+        > A frame changes at each hop, but the packet is never changed in any way until it reaches the destination host. Once it reaches the destination host, the packet is moved up the network stack and to the respective application. This is where the packet is modified and sent back to the originating host.
 20. What is the term used to describe a collection of networks or subnets that are in the same administrative domain?
-    - **** 
-        > 
+    - **Autonomous system** 
+        > An autonomous system is the term used to describe a collection of networks or subnets that are in the same administrative domain. An interior gateway protocol (IGP) is a dynamic routing protocol that is used inside of a network. The administrative distance (AD) is used to decide the most trusted route when two or more routes to the same network exist. An exterior gateway protocol (EGP) is a dynamic routing protocol used outside of the network.
 
 
 
