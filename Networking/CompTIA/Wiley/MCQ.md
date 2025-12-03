@@ -763,6 +763,89 @@
 <br><br><br>
 
 
+## Chapter 11: Switching and Virtual LANs
+1. Which devices provide the lowest latency and highest bandwidth for connectivity?
+    - **** 
+        > 
+2. Which is a function of a layer 2 switch?
+    - **** 
+        > 
+3. Which quality of service (QoS) method is used at layer 2 of the OSI?
+    - **** 
+        > 
+4. You need to trunk two switches from two different vendors together. Which trunking protocol should you use?
+    - **** 
+        > 
+5. When calculating Spanning Tree Protocol (STP), which switch will always become the root bridge?
+    - **** 
+        > 
+6. You need to restrict a switch port to a maximum of two devices. What should you implement to guarantee only two devices can communicate on the switch port?
+    - **** 
+        > 
+7. Which is a benefit to converting a network from a flat layer 2 network to a routed layer 3 VLAN‐enabled network?
+    - **** 
+        > 
+8. Which is a correct statement about frames and VLANs?
+    - **** 
+        > 
+9. Static VLANs are being used on a switch’s interface. Which of the following statements is correct?
+    - **** 
+        > 
+10. What is a direct benefit of adding VLANs?
+    - **** 
+        > 
+11. Which statement describes dynamic VLANs?
+    - **** 
+        > 
+12. Which type of port removes the VLAN ID from the frame before it egresses the interface?
+    - **** 
+        > 
+13. When you are protecting an interface with port security, to which mode should you set the switch port?
+    - **** 
+        > 
+14. Which VLAN is the default VLAN used to configure all switches from the factory?
+    - **** 
+        > 
+15. You have been asked to segment the network for an R&D workgroup. The requirement is to allow the R&D group access to the existing servers, but no other VLANs should be able to access R&D. How can this be achieved with maximum flexibility?
+    - **** 
+        > 
+16. How does IEEE 802.1Q tag frames?
+    - **** 
+        >  
+17. Which of the following is a true statement about static access ports?
+    - **** 
+        > 
+18. You want to delete VLAN 1 for security reasons. However, the switch will not let you. What is the reason you cannot delete VLAN 1?
+    - **** 
+        > 
+19. Which statement is correct about native VLANs?
+    - **** 
+        > 
+20. What is the function of the VTP?
+    - **** 
+        > 
+
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -793,7 +876,7 @@
 8. 
     - **** 
         > 
-9.  
+9. 
     - **** 
         > 
 10. 
@@ -829,3 +912,6 @@
 20. 
     - **** 
         > 
+
+
+<br><br><br>
