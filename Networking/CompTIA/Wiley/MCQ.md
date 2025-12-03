@@ -896,6 +896,72 @@
 <br><br><br>
 
 
+## Chapter 13: Remote Network Access
+1. A serial console cable is an example of which of the following technologies?
+    - **** 
+        > 
+2. You need to implement a secure connection for your users to access sensitive sites internally for your organization. Which technology should you select?
+    - **** 
+        > 
+3. Which of the following is an operating system image delivered over the network at each startup?
+    - **** 
+        > 
+4. Which of the following is not a component of Virtual Network Computing (VNC)?
+    - **** 
+        > 
+5. Which of the following is a network protocol that is designed as an alternative to command‐based utilities such as Telnet?
+    - **** 
+        > 
+6. Which of the following allows you to tunnel directly to the remote server with no VPN?
+    - **** 
+        > 
+7. Which of the following was formerly called Terminal Services Client?
+    - **** 
+        > 
+8. Which of the following operates somewhat like Telnet, except instead of getting a command‐line prompt as you do with Telnet, you get the actual graphical user interface (GUI) of the remote computer?
+    - **** 
+        > 
+9. Which of the following is not an example of a remote desktop connection?
+    - **** 
+        > 
+10. Split tunnel and full tunnel are examples of which type of VPN?
+    - **** 
+        > 
+11. You have several remote offices that you need to connect securely over the Internet. Which technology would best suit the connectivity for this requirement?
+    - **** 
+        > 
+12. Why should Telnet be replaced with SSH?
+    - **** 
+        > 
+13. What type of encryption does a clientless VPN use?
+    - **** 
+        > 
+14. What are the terminal parameters that are the most common for serial configuration of a Cisco router or switch?
+    - **** 
+        > 
+15. You are connecting to a network switch with the SSH protocol. Which type of connection is this considered?
+    - **** 
+        > 
+16. Which of the following is an operating system image delivered over the network?
+    - **** 
+        >  
+17. Which port and protocol does the VNC protocol operate on?
+    - **** 
+        > 
+18. What is the most common way to access resource‐based APIs?
+    - **** 
+        > 
+19. Which out‐of‐band management connectivity method provides for up to 115,200 Kbps?
+    - **** 
+        > 
+20. Which port and protocol are used for the Remote Desktop Gateway connection?
+    - **** 
+        > 
+
+
+<br><br><br>
+
+
 
 
 
