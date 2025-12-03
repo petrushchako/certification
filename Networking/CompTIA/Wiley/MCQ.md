@@ -830,6 +830,72 @@
 
 
 
+## Chapter 12: Wireless Networking
+1. Which wireless standard first introduced channel bonding?
+    - **** 
+        > 
+2. Which three wireless channels on 2.4 GHz wireless are nonoverlapping?
+    - **** 
+        > 
+3. You are setting up a wireless network for a client. Their requirements are to minimize the infrastructure and support the highest security. Which wireless encryption standard should be configured to satisfy the requirements?
+    - **** 
+        > 
+4. You are configuring a WPA2 WLAN. Which security configuration should you use for the highest level of security?
+    - **** 
+        > 
+5. How many pre‐shared keys can be configured for a specific WPA2 WLAN?
+    - **** 
+        > 
+6. After configuring a WLAN, your users complain that they do not see the SSID. What could be wrong?
+    - **** 
+        > 
+7. What is the mechanism that allows for authentication using a symmetrical key with WPA2?
+    - **** 
+        > 
+8. When configuring WPA2, you want to ensure that it does not fall back to the older WPA specification. What parameter should you disable?
+    - **** 
+        > 
+9. Which mode of encryption does 802.11i (WPA2) introduce?
+    - **** 
+        > 
+10. Which statement is correct about WPA?
+    - **** 
+        > 
+11. Matilda is interested in securing her SOHO wireless network. What should she do to be assured that only her devices can join her wireless network?
+    - **** 
+        > 
+12. Which device is the supplicant during the 802.1X authentication process?
+    - **** 
+        > 
+13. What is the access point called in an 802.1X configuration?
+    - **** 
+        > 
+14. You need to install wireless Internet access in an open warehouse environment. After installing the equipment, the technician notices varying signal strengths throughout the warehouse. How do you make sure there is full coverage?
+    - **** 
+        > 
+15. What is the frequency range of the IEEE 802.11g standard?
+    - **** 
+        > 
+16. Which devices can interfere with the operation of a wireless network because they operate on similar frequencies? (Choose two.)
+    - **** 
+        >  
+17. Which wireless standard allows you to channel‐bond to increase bandwidth and uses both the 2.4 GHz and 5 GHz frequencies?
+    - **** 
+        > 
+18. You have installed a point‐to‐point connection using wireless bridges and Omni directional antennas between two buildings. The throughput is low. What can you do to improve the link?
+    - **** 
+        > 
+19. Which wireless LAN design ensures that a mobile wireless client will not lose connectivity when moving from one access point to another (roaming)?
+    - **** 
+        > 
+20. Which spread‐spectrum technology does the 802.11b standard define for operation?
+    - **** 
+        > 
+
+
+<br><br><br>
+
+
 
 
 
