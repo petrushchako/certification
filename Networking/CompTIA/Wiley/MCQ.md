@@ -694,7 +694,73 @@
         > An autonomous system is the term used to describe a collection of networks or subnets that are in the same administrative domain. An interior gateway protocol (IGP) is a dynamic routing protocol that is used inside of a network. The administrative distance (AD) is used to decide the most trusted route when two or more routes to the same network exist. An exterior gateway protocol (EGP) is a dynamic routing protocol used outside of the network.
 
 
+<br><br><br>
 
+
+## Chapter 10: Routing Protocols
+1. Which high‐availability protocol is an open standard?
+    - **** 
+        > 
+2. How are routers managed with interior gateway protocols?
+    - **** 
+        > 
+3. What is the maximum hop count for RIP?
+    - **** 
+        > 
+4. Which statement is true about RIPv2 advertisements?
+    - **** 
+        > 
+5. Which multicast address does RIPv2 use for advertising routes?
+    - **** 
+        > 
+6. Which routing protocol will not contain a topology of the network?
+    - **** 
+        > 
+7. When a static route is made, what is the default AD?
+    - **** 
+        > 
+8. Why are ADs used with routing tables?
+    - **** 
+        > 
+9. What is the metric for OSPF?
+    - **** 
+        > 
+10. You are examining a router and discover that there is a static default route configured for a next hop of 192.168.1.2. You also notice that there is a default route being populated from RIP for a next hop of 192.168.2.2. Which default route will be selected?
+    - **** 
+        > 
+11. Which routing protocol is a distance‐vector routing protocol?
+    - **** 
+        > 
+12. Which statement accurately describes a routing loop?
+    - **** 
+        > 
+13. What is the AD of RIP?
+    - **** 
+        > 
+14. Which routing protocol is a link‐state routing protocol?
+    - **** 
+        > 
+15. Which routing technique requires no administrator intervention when a route goes down?
+    - **** 
+        > 
+16. Which is an advantage of dynamic routing protocols?
+    - **** 
+        >  
+17. Which routing protocol broadcasts updates for routes?
+    - **** 
+        > 
+18. What is an advantage of dynamic routing protocols?
+    - **** 
+        > 
+19. Which protocol is considered a hybrid protocol?
+    - **** 
+        > 
+20. What is a characteristic of distance‐vector protocols?
+    - **** 
+        > 
+
+
+<br><br><br>
 
 
 
