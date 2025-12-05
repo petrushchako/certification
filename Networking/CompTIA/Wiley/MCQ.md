@@ -943,20 +943,20 @@
     - **In‐band management** 
         > Connecting to a network switch with the Secure Shell (SSH) protocol is an example of in‐band management. An example of out‐of‐band management is connecting to a router or switch with a serial connection. An example of GUI‐based management is Remote Desktop Protocol (RDP). An example of API‐based management is configuration through the REST protocol.
 16. Which of the following is an operating system image delivered over the network?
-    - **** 
-        >  
+    - **Virtual desktop** 
+        >  A virtual desktop requires less computing power, especially if the applications are also delivered virtually and those applications are running in a VM in the cloud rather than in the local desktop eating up local resources. Virtual Network Computing (VNC) is a protocol that is used for remote desktop access. A VPN is used to create an encrypted tunnel over the insecure public Internet. Remote Desktop Protocol (RDP) is a Microsoft protocol used for remote desktop access.
 17. Which port and protocol does the VNC protocol operate on?
-    - **** 
-        > 
+    - **5900/TCP** 
+        > The VNC protocol operates on 5900/TCP. Port 443 protocol TCP is used for HTTPS communications. Port 5900 protocol UDP is a wrong answer. Port 3389 protocol TCP is used for Remote Desktop Protocol (RDP).
 18. What is the most common way to access resource‐based APIs?
-    - **** 
-        > 
+    - **REST** 
+        > Representational State Transfer (REST) is the most common way to access resource‐based APIs. Remote Desktop Protocol (RDP) is a Microsoft protocol used to deliver remote access to desktops and applications. Terminal‐based access is used by terminal emulation programs to access routers and switches. GUI‐based remote access allows remote control of servers and workstation.
 19. Which out‐of‐band management connectivity method provides for up to 115,200 Kbps?
-    - **** 
-        > 
+    - **USB** 
+        > A USB connection is an out‐of‐band management connectivity method that provides for up to 115,200 Kbps speeds. EIA‐TIA 232 connections are typically low‐speed connections. COM is short for the communications port that the EIA‐TIA 232 connection would connect to. Secure Shell (SSH) is an in‐band management protocol used to connect to routers and switches over the network.
 20. Which port and protocol are used for the Remote Desktop Gateway connection?
-    - **** 
-        > 
+    - **443/TCP** 
+        > The Remote Desktop Gateway provides security via TLS and operates on port 443 with protocol TCP. Port 3389 and TCP are used for the Remote Desktop Protocol (RDP). Port 5900 and TCP are used for the Virtual Network Computing (VNC) protocol. Port 80 and TCP are used for HTTP communications.
 
 
 <br><br><br>
