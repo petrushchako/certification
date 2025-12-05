@@ -898,20 +898,20 @@
 
 ## Chapter 13: Remote Network Access
 1. A serial console cable is an example of which of the following technologies?
-    - **** 
-        > 
+    - **Out‐of‐band management** 
+        > Out‐of‐band management refers to any method of managing the server that does use the network. An example of out‐of‐band management is the use of a console port to configure a switch or router. A captive portal is used to verify credentials or assert a policy, before access is given to the network for a client. A clientless VPN is a VPN connection that does not require a client, only a web browser, for a secure connection. An AAA server is used to authenticate, authorize, and account for connections.
 2. You need to implement a secure connection for your users to access sensitive sites internally for your organization. Which technology should you select?
-    - **** 
-        > 
+    - **Clientless VPN** 
+        > A clientless VPN allows users to access internal sensitive sites via a secure tunnel. A captive portal is used to verify credentials or assert a policy, before access is given to the network for a client. The Lightweight Directory Access Protocol (LDAP) is used by Active Directory to look up objects. The Remote Directory Protocol (RDP) is used by Microsoft for remote access.
 3. Which of the following is an operating system image delivered over the network at each startup?
-    - **** 
-        > 
+    - **Virtual desktop** 
+        > A virtual desktop requires less computing power, especially if the applications are also delivered virtually and those applications are running in a VM in the cloud rather than in the local desktop eating up local resources. Virtual Network Computing (VNC) is a protocol used for remote access. Remote desktop is a method of remote access, and it is provided by the Remote Desktop Protocol (RDP).
 4. Which of the following is not a component of Virtual Network Computing (VNC)?
-    - **** 
-        > 
+    - **VNC desktop** 
+        > VNC includes the following components: VNC server, VNC client (or viewer), and VNC protocol. The VNC server allows the VNC client to connect and provide the VNC desktop over the VNC protocol.
 5. Which of the following is a network protocol that is designed as an alternative to command‐based utilities such as Telnet?
-    - **** 
-        > 
+    - **SSH** 
+        > Secure Shell (SSH) creates a secure channel between the devices and provides confidentiality and integrity of the data transmission. It uses public‐key cryptography to authenticate the remote computer and allow the remote computer to authenticate the user, if necessary. Secure Sockets Layer (SSL) is a suite of encryption protocols that includes Transport Layer Security (TLS). Spanning Tree Protocol (STP) is a protocol used to prevent loops in networks with redundant links. Secure File Transfer Protocol (SFTP) is a file transfer protocol that uses encryption.
 6. Which of the following allows you to tunnel directly to the remote server with no VPN?
     - **** 
         > 
