@@ -913,20 +913,20 @@
     - **SSH** 
         > Secure Shell (SSH) creates a secure channel between the devices and provides confidentiality and integrity of the data transmission. It uses public‐key cryptography to authenticate the remote computer and allow the remote computer to authenticate the user, if necessary. Secure Sockets Layer (SSL) is a suite of encryption protocols that includes Transport Layer Security (TLS). Spanning Tree Protocol (STP) is a protocol used to prevent loops in networks with redundant links. Secure File Transfer Protocol (SFTP) is a file transfer protocol that uses encryption.
 6. Which of the following allows you to tunnel directly to the remote server with no VPN?
-    - **** 
-        > 
+    - **RDP Gateway** 
+        > Using a TLS channel, the RDP Gateway can tunnel directly to the remote server to increase the security of Remote Desktop Services (RDS). Split tunnel is a type of VPN connection that allows Internet traffic to flow around the VPN connection. A full tunnel is a type of VPN connection, in which all traffic is sent through the VPN connection. Virtual Network Computing (VNC) is an open‐source protocol that supports a remote desktop connection.
 7. Which of the following was formerly called Terminal Services Client?
-    - **** 
-        > 
+    - **Remote Desktop Connection** 
+        > Microsoft began calling all terminal services products Remote Desktop Connection with Windows Server 2008 R2. Virtual desktop is a type of remote access. Virtual Network Computing (VNC) is an open‐source protocol that supports a remote desktop connection. The RDP Gateway provides secure access for an RDP client to allow access to RDP applications and desktops.
 8. Which of the following operates somewhat like Telnet, except instead of getting a command‐line prompt as you do with Telnet, you get the actual graphical user interface (GUI) of the remote computer?
-    - **** 
-        > 
+    - **RDP** 
+        > The Remote Desktop Protocol (RDP) is a proprietary protocol developed by Microsoft. It allows you to connect to another computer and run programs. RDP operates somewhat like Telnet, except instead of getting a command‐line prompt as you do with Telnet, you get the actual graphical user interface (GUI) of the remote computer. Role‐based access control (RBAC) is a method of assigning permissions to users based upon their role. Secure Shell Protocol (SSH) is an encrypted alternative to the insecure Telnet protocol. Secure Sockets Layer (SSL) is a suite of encryption protocols that includes Transport Layer Security (TLS).
 9. Which of the following is not an example of a remote desktop connection?
-    - **** 
-        > 
+    - **SSH** 
+        > Secure Shell (SSH) is a terminal‐based remote access method. Remote Desktop Protocol (RDP) is a Microsoft protocol used for remote desktop connections. LogMeIn and GoToMyPC are proprietary third‐party remote desktop assistance tools.
 10. Split tunnel and full tunnel are examples of which type of VPN?
-    - **** 
-        > 
+    - **Client‐to‐site** 
+        > When a client‐to‐site VPN is created, it is possible to do so in two ways, split tunnel and full tunnel. The difference is whether the user uses the VPN for connecting to the Internet as well as for connecting to the office. A site‐to‐site VPN is used to connect branch offices together over an encrypted tunnel via the Internet. There is no such thing as a Remote Desktop Protocol (RDP) VPN. A clientless VPN allows access to specific services behind the VPN server.
 11. You have several remote offices that you need to connect securely over the Internet. Which technology would best suit the connectivity for this requirement?
     - **** 
         > 
