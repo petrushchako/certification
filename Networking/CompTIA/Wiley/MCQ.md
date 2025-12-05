@@ -928,20 +928,20 @@
     - **Client‐to‐site** 
         > When a client‐to‐site VPN is created, it is possible to do so in two ways, split tunnel and full tunnel. The difference is whether the user uses the VPN for connecting to the Internet as well as for connecting to the office. A site‐to‐site VPN is used to connect branch offices together over an encrypted tunnel via the Internet. There is no such thing as a Remote Desktop Protocol (RDP) VPN. A clientless VPN allows access to specific services behind the VPN server.
 11. You have several remote offices that you need to connect securely over the Internet. Which technology would best suit the connectivity for this requirement?
-    - **** 
-        > 
+    - **Site‐to‐site VPN** 
+        > Site‐to‐site VPN connections are intended for connecting sites or remote offices to each other via an encrypted tunnel over the Internet. A GRE tunnel is unencrypted and will not provide any security. A wireless WAN can be used to connect VPN clients to the Internet. A client‐to‐site VPN allows remote workers to telecommute securely over the Internet.
 12. Why should Telnet be replaced with SSH?
-    - **** 
-        > 
+    - **SSH is encrypted.** 
+        > SSH is encrypted, and Telnet is in clear text. To keep passwords and configuration safe, SSH should always be used. Telnet contains no encryption whatsoever, and all usernames, passwords, and commands are sent in clear text. SSH allows for file copy if it is turned on in the IOS, but it is not a main reason to replace Telnet. Telnet and SSH make it equally easy to create ACLs for access.
 13. What type of encryption does a clientless VPN use?
-    - **** 
-        > 
+    - **SSL/TLS** 
+        > Secure Sockets Layer/Transport Layer Security (SSL/TLS) encryption is used for encryption of clientless VPNs. Secure Shell (SSH) is a type of remote access that provides encrypted terminal‐based access. Remote Desktop Protocol (RDP) is a Microsoft GUI‐based remote access technology. Access control lists (ACLs) are permissions rules that protect network and file access.
 14. What are the terminal parameters that are the most common for serial configuration of a Cisco router or switch?
-    - **** 
-        > 
+    - **9600 baud, 8 data bits, parity none, 1 stop bit** 
+        > Most network equipment that uses serial connection, such as Cisco routers and switches, will connect with 9600 baud, 8 data bits, no parity, and 1 stop bit. All other answers are incorrect.
 15. You are connecting to a network switch with the SSH protocol. Which type of connection is this considered?
-    - **** 
-        > 
+    - **In‐band management** 
+        > Connecting to a network switch with the Secure Shell (SSH) protocol is an example of in‐band management. An example of out‐of‐band management is connecting to a router or switch with a serial connection. An example of GUI‐based management is Remote Desktop Protocol (RDP). An example of API‐based management is configuration through the REST protocol.
 16. Which of the following is an operating system image delivered over the network?
     - **** 
         >  
