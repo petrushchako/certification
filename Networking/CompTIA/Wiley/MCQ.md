@@ -714,20 +714,20 @@
     - **224.0.0.9** 
         > RIPv2 uses the multicast address 224.0.0.9 to advertise routes. The multicast address 224.0.0.5 is used by OSPF for hello messages. The multicast address 224.0.0.6 is also used by OSPF for hello messages for designated routers (DRs) and backup designated routers (BDRs). The multicast address 224.0.0.2 is a special multicast group for all routers, and it is not used by any particular routing protocol.
 6. Which routing protocol will not contain a topology of the network?
-    - **** 
-        > 
+    - **RIP** 
+        > Routing Information Protocol (RIP) does not contain a topology table. RIP compiles its table from multiple broadcasts or multicasts in the network from which it learns routes. However, it never has a full topological diagram of the network like OSPF, EIGRP, and BGP.
 7. When a static route is made, what is the default AD?
-    - **** 
-        > 
+    - **AD of 1** 
+        > Static routes are highly trusted routes, since an administrator created them. Therefore, they have the lowest administrative distance (AD) with a number of 1. The administrative of 0 is used for connected interfaces. The administrative distance of 2 is a wrong answer and does not map to a route source. The administrative distance of 255 is reserved for unknown sources and is entered into the route process.
 8. Why are ADs used with routing tables?
-    - **** 
-        > 
+    - **ADs define reliability of routing protocols.** 
+        > Administrative distance (AD) is an order of reliability between dynamic routing protocols and static routes. Administrative distances do not define protocol standards; they only reference them. Administrative distances do not allow for the shortest distance between routers; they allow the router to choose the best path to the destination network. Although administrative distances are programmed into route statements by administrators, they do not calculate path selection.
 9. What is the metric for OSPF?
-    - **** 
-        > 
+    - **Bandwidth** 
+        > Cisco uses a metric for OSPF that is calculated as 10 to the power of 8/bandwidth. This cost value is of 100 Mbps (reference bandwidth) divided by the interface bandwidth. Delay, bandwidth, reliability, and load are used as a composite metric with EIGRP. K metrics are used to weight the calculation of the composite metric used with EIGRP. Link is not used as a metric; if the link is not present, the route will not populate.
 10. You are examining a router and discover that there is a static default route configured for a next hop of 192.168.1.2. You also notice that there is a default route being populated from RIP for a next hop of 192.168.2.2. Which default route will be selected?
-    - **** 
-        > 
+    - **The route with the lowest AD** 
+        > Since both routes are default routes, the route with the lowest administrative distance (AD) will be selected. The route with the highest administrative distance will never be selected first. The route with the lowest metric will be used only if two routes exist to the same destination network and have equal administrative distances. The RIP routing protocol has an administrative distance of 120; therefore, it has a higher administrative distance over a statically defined default route and will not be selected.
 11. Which routing protocol is a distance‐vector routing protocol?
     - **** 
         > 
