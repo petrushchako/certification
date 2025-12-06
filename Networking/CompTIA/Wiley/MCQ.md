@@ -699,20 +699,20 @@
 
 ## Chapter 10: Routing Protocols
 1. Which high‐availability protocol is an open standard?
-    - **** 
-        > 
+    - **VRRP** 
+        > Virtual Router Redundancy Protocol (VRRP) is an open standard protocol that is used for high availability of default gateways. Network Load Balancing (NLB) is a Windows service that allows for load balancing of network services. Hot Standby Router Protocol (HSRP) is a Cisco proprietary high availability protocol. Open Shortest Path First (OSPF) is a dynamic routing protocol.
 2. How are routers managed with interior gateway protocols?
-    - **** 
-        > 
+    - **Routers are grouped into autonomous systems.** 
+        > Routers are grouped into the same autonomous system (AS). When they are within the same AS, they can exchange information such as routes to destination networks and converge their routing tables. Routing protocols are not normally redistributed between ASs because the network is usually managed as one AS. All routers do not necessarily use the same routing protocols; many different portions of the network can use different protocols. All network IDs are not advertised with the same autonomous system number. Routers are normally grouped into one AS logically, such as an organization. Inside that organization (AS), many different autonomous system numbers can be used.
 3. What is the maximum hop count for RIP?
-    - **** 
-        > 
+    - **15 hops** 
+        > The maximum hop count for RIP is 15. A hop count over 15 hops is considered non‐routable or unreachable, so the other options are incorrect.
 4. Which statement is true about RIPv2 advertisements?
-    - **** 
-        > 
+    - **RIPv2 multicasts the full routing table every 30 seconds.** 
+        > By default, RIPv2 multicasts the full routing table on all active interfaces every 30 seconds. RIPv2 does not allow for neighborship through hello packets, such as link‐state and hybrid dynamic routing protocols. RIPv2 uses multicasts, not broadcasts. RIPv2 multicasts the full routing table every 30 seconds, not every 60 seconds.
 5. Which multicast address does RIPv2 use for advertising routes?
-    - **** 
-        > 
+    - **224.0.0.9** 
+        > RIPv2 uses the multicast address 224.0.0.9 to advertise routes. The multicast address 224.0.0.5 is used by OSPF for hello messages. The multicast address 224.0.0.6 is also used by OSPF for hello messages for designated routers (DRs) and backup designated routers (BDRs). The multicast address 224.0.0.2 is a special multicast group for all routers, and it is not used by any particular routing protocol.
 6. Which routing protocol will not contain a topology of the network?
     - **** 
         > 
