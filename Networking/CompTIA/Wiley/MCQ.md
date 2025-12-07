@@ -744,20 +744,20 @@
     - **Dynamic routing** 
         > Dynamic routing does not require any administrator intervention when routes go down. This is because dynamic routes send route notifications and recalculate the routing tables of all participating routers. Directly connected routes will require administrator intervention if the admin is relying upon the connected route as the route source and an interface goes down. Default routing requires administrator intervention if the default route goes down; the admin will need to pick a new default route and configure it. Static routing always requires an amount of administrator intervention for setup and maintenance of the routes since they are all done manually.
 16. Which is an advantage of dynamic routing protocols?
-    - **** 
-        >  
+    - **Resiliency when routes become unavailable** 
+        > The benefit of a dynamic routing protocol is that it creates resiliency when routes become unavailable. It does this by recalculating the best route in the network around the outage. When using dynamic routing protocols, there is a higher RAM usage because of the route tables collected. CPU usage is also higher with dynamic routing protocols because of calculations. Bandwidth usage is also higher with dynamic routing protocols because of the traffic involved learning the various routes.
 17. Which routing protocol broadcasts updates for routes?
-    - **** 
-        > 
+    - **RIPv1** 
+        > The Routing Information Protocol version 1 (RIPv1) broadcasts updates for routing tables. Open Shortest Path First (OSPF) exclusively uses multicast to send updates. EIGRP uses multicast to send updates as well and has a backup of direct unicast. BGP uses unicast to retrieve updates on network paths.
 18. What is an advantage of dynamic routing protocols?
-    - **** 
-        > 
+    - **Optimized route selection** 
+        > Optimized route selection is a direct advantage of using dynamic routing protocols. A protocol such as OSPF uses the shortest path first algorithm for route selection. Routing tables will not be centralized since all routers participating in dynamic routing will contain their own routing tables. Dynamic routing is not easier to configure due to the up‐front planning and configuration. A portion of the available bandwidth will also be consumed for the dynamic routing protocol.
 19. Which protocol is considered a hybrid protocol?
-    - **** 
-        > 
+    - **EIGRP** 
+        > The Enhanced Interior Gateway Routing Protocol (EIGRP) is a hybrid protocol. It has features of a vector‐based protocol and a link‐state protocol; hence, it is considered a hybrid protocol. RIP is a distance‐vector routing protocol that is used for small networks. OSPF is an extremely scalable link‐state protocol. Border Gateway Protocol (BGP) is the routing protocol that is used to route packets on the Internet, and it is considered a path‐vector protocol.
 20. What is a characteristic of distance‐vector protocols?
-    - **** 
-        > 
+    - **They re‐advertise routes learned.** 
+        > Protocols such as Routing Information Protocol (RIP) re‐advertise routes learned. This can be problematic since it is the equivalent of gossiping about what they have heard. Routes learned through this method are never tracked for status or double‐checked for validity. Distance‐vector protocols do not keep a topology database; they just feed routes to the route table. Distance‐vector protocols never check the routes they learn because of the method of routing through rumor.
 
 
 <br><br><br>
