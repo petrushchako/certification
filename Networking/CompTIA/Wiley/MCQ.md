@@ -729,20 +729,20 @@
     - **The route with the lowest AD** 
         > Since both routes are default routes, the route with the lowest administrative distance (AD) will be selected. The route with the highest administrative distance will never be selected first. The route with the lowest metric will be used only if two routes exist to the same destination network and have equal administrative distances. The RIP routing protocol has an administrative distance of 120; therefore, it has a higher administrative distance over a statically defined default route and will not be selected.
 11. Which routing protocol is a distance‐vector routing protocol?
-    - **** 
-        > 
+    - **RIP** 
+        > The Routing Information Protocol (RIP) is a distance‐vector protocol. Open Shortest Path First (OSPF) is a link‐state protocol. Enhanced Interior Gateway Routing Protocol is a hybrid protocol that more closely resembles a link‐state protocol. Border Gate‐way Protocol (BGP) is a path‐vector protocol used for Internet routing.
 12. Which statement accurately describes a routing loop?
-    - **** 
-        > 
+    - **Packets are transmitted within a series of routers and never reach the destination.** 
+        > A routing loop occurs when packets are routed between two or more routers and never make it to their destination. Routing loops can occur with more than two routers; it is in effect making the packet travel in a loop till its TTL expires. When packets are routed out one interface and come back in on a different interface, this is considered asynchronous routing and not typical of a routing loop. Packets reaching the expiry TTL could mean that there are too many hops to the destination network, but not that a routing loop is occurring. Packets being routed via an inefficient path is not a symptom of a routing loop.
 13. What is the AD of RIP?
-    - **** 
-        > 
+    - **AD of 120** 
+        > The administrative distance of the Routing Information Protocol (RIP) is 120. The administrative distance of 90 is used for internal Enhanced Interior Gateway Routing Protocol (EIGRP). The administrative distance of 100 is used for Interior Gateway Routing Protocol (IGR). The administrative distance of 110 is used for Open Shortest.
 14. Which routing protocol is a link‐state routing protocol?
-    - **** 
-        > 
+    - **OSPF** 
+        > Open Shortest Path First (OSPF) is a link‐state protocol. A link‐state protocol tracks the state of a link between two routers and chooses the most efficient routes based upon the shortest path. Routing Information Protocol (RIP) is a distance‐vector protocol. Enhanced Interior Gateway Routing Protocol (EIGRP) is considered a hybrid protocol. Interior Gateway Routing Protocol (IGRP) is a distance‐vector protocol.
 15. Which routing technique requires no administrator intervention when a route goes down?
-    - **** 
-        > 
+    - **Dynamic routing** 
+        > Dynamic routing does not require any administrator intervention when routes go down. This is because dynamic routes send route notifications and recalculate the routing tables of all participating routers. Directly connected routes will require administrator intervention if the admin is relying upon the connected route as the route source and an interface goes down. Default routing requires administrator intervention if the default route goes down; the admin will need to pick a new default route and configure it. Static routing always requires an amount of administrator intervention for setup and maintenance of the routes since they are all done manually.
 16. Which is an advantage of dynamic routing protocols?
     - **** 
         >  
