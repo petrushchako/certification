@@ -765,20 +765,20 @@
 
 ## Chapter 11: Switching and Virtual LANs
 1. Which devices provide the lowest latency and highest bandwidth for connectivity?
-    - **** 
-        > 
+    - **Switches** 
+        > Switches provide the lowest latency with the use of application‐specific integrated circuits (ASICs). Hubs are multiport repeaters and diminish usable bandwidth. Bridges are software‐based switches and provide higher latency than switches. Routers introduce latency because of decapsulation, routing, and encapsulation of the packets.
 2. Which is a function of a layer 2 switch?
-    - **** 
-        > 
+    - **Determining the forwarding interfaces based upon the destination MAC address and tables** 
+        > Switches learn MAC addresses based upon incoming ports and examination of the source MAC address. It will build a MAC address table for future lookups. It then determines forwarding interfaces based upon the destination MAC address contained in the frame. Forwarding of data is based upon physical addresses “burned” into the network interface card (NIC) called MAC addresses. Repeating electrical signals to all ports describes how a dumb hub would operate. MAC addresses are learned by the source MAC address on incoming frames to the switch, not the destination frames.
 3. Which quality of service (QoS) method is used at layer 2 of the OSI?
-    - **** 
-        > 
+    - **CoS** 
+        > The Class of Service (CoS) marking is a 3‐bit field in the 802.1Q trunk frame. This 3‐bit field contains eight possible queues for QoS at layer 2. Although the 802.1Q protocol supports quality of service (QoS) via the CoS field, 802.1Q is a trunking protocol. Type of Services (ToS) and Diffserv are layer 3 methods for QoS.
 4. You need to trunk two switches from two different vendors together. Which trunking protocol should you use?
-    - **** 
-        > 
+    - **802.1Q** 
+        > The 802.1Q protocol is an open standard trunking protocol. Inter‐Switch Link (ISL) is another trunking protocol, but it can be used only on Cisco devices. Because your switches are from two different vendors, they are not both Cisco devices; therefore, 802.1Q must be used. The 802.1D protocol is Spanning Tree Protocol (STP), used to prevent loops in networks. The 802.1w protocol is Rapid Spanning Tree Protocol (RSTP), which is also used to prevent loops in networks.
 5. When calculating Spanning Tree Protocol (STP), which switch will always become the root bridge?
-    - **** 
-        > 
+    - **The switch with the lowest priority** 
+        > When calculating Spanning Tree Protocol (STP), the switch with the lowest MAC address will become the root bridge if all of the priorities are set to the default. However, if the priority on a particular switch is lower than the others, it will always become the root bridge. All other answers are incorrect.
 6. You need to restrict a switch port to a maximum of two devices. What should you implement to guarantee only two devices can communicate on the switch port?
     - **** 
         > 
