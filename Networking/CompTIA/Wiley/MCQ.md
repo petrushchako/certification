@@ -795,20 +795,20 @@
     - **An increase of broadcast domains while increasing collision domains** 
         > When adding VLANs, you immediately increase the number of broadcast domains. At the same time, you increase collision domains. If a switch had 12 ports and they all negotiated at 100 Mb/s half‐duplex (one collision domain), when a VLAN is added, you will automatically create two collision domains while adding an additional broadcast domain.
 11. Which statement describes dynamic VLANs?
-    - **** 
-        > 
+    - **The access port is switched into the respective VLAN based upon the computer’s MAC address.** 
+        > Dynamic VLANs are deprecated, but you may still see them in operations. A switch configured with dynamic VLANs checks a VLAN Management Policy Server (VMPS) when clients plug in. The VMPS has a list of MAC addresses to their respective VLANs. It is now recommended that dynamic VLAN installations are converted to 802.1X. The access port cannot be controlled with a VMPS based upon user credentials. The access port is also not switched into the respective VLAN based upon the computer’s IP address, because the IP address is normally associated based upon the VLAN. The access port cannot be switched into a respective VLAN based upon ACLs since ACLs are used to restrict layer 3 traffic and not layer 2 traffic.
 12. Which type of port removes the VLAN ID from the frame before it egresses the interface?
-    - **** 
-        > 
+    - **Access port**
+        > All VLAN tagging is removed from the frame before it egresses an access port to the end device. Trunk ports carry the VLAN tagging from end to end. Voice ports tag packets only when the CoS value is modified from the default. Native ports are used when frames arrive on a trunk and do not contain any tagging information.
 13. When you are protecting an interface with port security, to which mode should you set the switch port?
-    - **** 
-        > 
+    - **Access mode**
+        > When you are configuring port security on an interface, the switch port should have a mode of access configured. This will also protect the switch from transitioning into a trunk if another switch is connected. There is no such mode as dynamic mode. If the interface is configured in trunk mode, port security will not be effective since many different MAC addresses can traverse the link. Voice mode is not a mode; it is a function of an access port that tags traffic when a CoS value is detected.
 14. Which VLAN is the default VLAN used to configure all switches from the factory?
-    - **** 
-        > 
+    - **VLAN 1** 
+        > All switches are configured by default with all interfaces in VLAN 1. This simplifies configuration if the switch is to be used as a direct replacement for a hub since nothing needs to be configured. All of the other options are incorrect.
 15. You have been asked to segment the network for an R&D workgroup. The requirement is to allow the R&D group access to the existing servers, but no other VLANs should be able to access R&D. How can this be achieved with maximum flexibility?
-    - **** 
-        > 
+    - **Create a new VLAN, configure a routed SVI interface, and apply ACLs to the VLAN.** 
+        > Creating the new VLAN will logically segment this work group. Creating a Switched Virtual Interface (SVI) will allow routing on the layer 3 switch. The ACLs should be applied only to VLAN interfaces. Although the other solutions achieve a similar goal, they do not provide flexibility. Extended ACLs cannot be applied to the R&D switch ports since they are layer 2 ports and extended ACLs are layer 3 entries. Creating a new VLAN for R&D and placing the R&D server in the VLAN will not accomplish the goal of restricting the server. Creating a new VLAN and using a trunk to connect the production and R&D network will not accomplish the task.
 16. How does IEEE 802.1Q tag frames?
     - **** 
         >  
