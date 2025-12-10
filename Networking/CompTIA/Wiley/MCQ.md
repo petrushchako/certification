@@ -780,20 +780,20 @@
     - **The switch with the lowest priority** 
         > When calculating Spanning Tree Protocol (STP), the switch with the lowest MAC address will become the root bridge if all of the priorities are set to the default. However, if the priority on a particular switch is lower than the others, it will always become the root bridge. All other answers are incorrect.
 6. You need to restrict a switch port to a maximum of two devices. What should you implement to guarantee only two devices can communicate on the switch port?
-    - **** 
-        > 
+    - **Port security** 
+        > Port security can restrict a switch port to a specific number of ports configured by the administrator. The specific MAC addresses can be preconfigured or learned dynamically. The use of jumbo frames will allow 9000 bytes to be framed, in lieu of 1500 bytes normally in a frame. The use of 802.1X will restrict users from communicating on a switch, but it does not limit the number of devices communicating on a switchport. Access control lists are used to restrict traffic based upon IP address and destination port, among other attributes.
 7. Which is a benefit to converting a network from a flat layer 2 network to a routed layer 3 VLAN‐enabled network?
-    - **** 
-        > 
+    - **Flexibility of user management and design** 
+        > The flexibility of design for workgroups of clients, servers, services, etc., and the ongoing management of moving and adding people is a benefit of a routed VLAN‐enabled network. Migrating from a flat layer 2 network to a routed layer 3 network will not increase collision domains for increased bandwidth. When you add a layer 3 routed infrastructure to your flat layer 2 network, the network complexity of design and operation will increase. You will increase the number of broadcast domains for increased bandwidth when you add multiple routed VLANs.
 8. Which is a correct statement about frames and VLANs?
-    - **** 
-        > 
+    - **Frames with a destination MAC that are not in the MAC address table are flooded to only ports in the respective VLAN.** 
+        > Frames with MAC addresses that are not in the MAC address table are flooded only to the ports in the respective VLAN. Broadcast frames will not be sent outside of the VLAN they originate from because they cannot traverse a router. Unicast frames are not flooded to all ports in all VLANs; they are only flooded to all ports in the VLAN the frame has originated from. The ports that link switches together are usually trunk links so that multiple VLANs can traverse the connection.
 9. Static VLANs are being used on a switch’s interface. Which of the following statements is correct?
-    - **** 
-        > 
+    - **Nodes are unaware of the VLAN in which they are configured.** 
+        > Static VLANs are VLANs that have been manually configured versus dynamic VLANs, which are configured via a VLAN Membership Policy Server (VMPS). A node will not know which VLAN it is assigned to when it is statically set via the command switchport access vlan 3. Nodes use a VLAN Membership Policy Server (VMPS) if the VLAN is dynamically configured. Nodes are not assigned VLANs based on their MAC addresses when they are statically configured. All nodes are not necessarily in the same VLAN when static VLANs are being used.
 10. What is a direct benefit of adding VLANs?
-    - **** 
-        > 
+    - **An increase of broadcast domains while increasing collision domains** 
+        > When adding VLANs, you immediately increase the number of broadcast domains. At the same time, you increase collision domains. If a switch had 12 ports and they all negotiated at 100 Mb/s half‐duplex (one collision domain), when a VLAN is added, you will automatically create two collision domains while adding an additional broadcast domain.
 11. Which statement describes dynamic VLANs?
     - **** 
         > 
