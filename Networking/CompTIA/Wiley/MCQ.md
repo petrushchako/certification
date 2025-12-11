@@ -810,20 +810,20 @@
     - **Create a new VLAN, configure a routed SVI interface, and apply ACLs to the VLAN.** 
         > Creating the new VLAN will logically segment this work group. Creating a Switched Virtual Interface (SVI) will allow routing on the layer 3 switch. The ACLs should be applied only to VLAN interfaces. Although the other solutions achieve a similar goal, they do not provide flexibility. Extended ACLs cannot be applied to the R&D switch ports since they are layer 2 ports and extended ACLs are layer 3 entries. Creating a new VLAN for R&D and placing the R&D server in the VLAN will not accomplish the goal of restricting the server. Creating a new VLAN and using a trunk to connect the production and R&D network will not accomplish the task.
 16. How does IEEE 802.1Q tag frames?
-    - **** 
-        >  
+    - **802.1Q inserts a 32‐bit field between the source MAC address and the type field.** 
+        > 802.1Q inserts a field containing the 16‐bit Tag Protocol ID of 0x8100, a 3‐bit COS field, a 1‐bit drop‐eligible indicator (used with COS), and the 12‐bit VLAN ID, which equals 32 bits, or 4 bytes. All of the other options are incorrect.
 17. Which of the following is a true statement about static access ports?
-    - **** 
-        > 
+    - **A client computer cannot see any VLAN tagging information.** 
+        > The client computer connected to an access port cannot see any VLAN tagging information. It is removed before the frame egresses the interface. An access port cannot carry VLAN tagging information because it is stripped. The client computer cannot request the VLAN that it wants to operate in. The administrator must manually configure the VLAN. A client computer cannot see the VLAN tagging information because it is stripped out as it egresses an access port.
 18. You want to delete VLAN 1 for security reasons. However, the switch will not let you. What is the reason you cannot delete VLAN 1?
-    - **** 
-        > 
+    - **The VLAN is protected from deletion.** 
+        > VLANs 1 and 1002 through 1005 are protected by the IOS and cannot be changed, renamed, or deleted. VLAN 1 cannot be deleted, regardless of whether it is still configured on a port. The VLAN that serves as the switch’s main management IP can be changed to any other VLAN; it only defaults to VLAN 1 from the factory. VLAN 1 cannot be deleted regardless of whether it is configured as a native VLAN on a trunk.
 19. Which statement is correct about native VLANs?
-    - **** 
-        > 
+    - **Any traffic not tagged will be placed on the native VLAN.** 
+        > Native VLANs are used only for traffic that is not tagged, in which untagged frames are placed on a trunk link. A common use for native VLANs is management traffic between switches, before both sides are configured as a trunk. Traffic that is tagged will traverse the trunk link and not use the native VLAN. Native VLANs are not used for disallowed VLANs on a trunk link. Any traffic that is tagged with ISL on an 802.1Q trunk will not be distinguishable on either side since the frame will be mismatched.
 20. What is the function of the VTP?
-    - **** 
-        > 
+    - **VTP allows for propagation of the VLAN database.** 
+        > VLAN Trunking Protocol, or VTP, propagates the VLAN database from an initial master copy on the “server” to all of the “clients.” VTP does not help facilitate the dynamic trunking between links. VTP does not detect trunk encapsulation and negotiate trunks. VTP allows for the propagation of the VLAN database, not the trunking database.
 
 
 <br><br><br>
