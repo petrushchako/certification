@@ -847,20 +847,20 @@
     - **One PSK (one hex or one ASCII)** 
         > A single pre‐shared key (PSK) is configured for a WPA2 WLAN. The PSK can be either one hex or one ASCII key, but it cannot be both. If you need multiple keys, then WPA2‐Enterprise should be used. Keep in mind that a PSK is symmetrical encryption, whereas WPA2‐Enterprise uses certificates and asymmetrical encryption. All of the other options are incorrect.
 6. After configuring a WLAN, your users complain that they do not see the SSID. What could be wrong?
-    - **** 
-        > 
+    - **SSID beaconing is disabled.** 
+        > SSID beaconing is enabled by default; if it were disabled, the clients would not see the SSID. Multicast support is used for multimedia applications and would not prevent the SSID from being seen by clients. The Radio Policy could possibly restrict clients from seeing the SSID depending on what it is set to. However, when it is set to all, there are no restrictions.
 7. What is the mechanism that allows for authentication using a symmetrical key with WPA2?
-    - **** 
-        > 
+    - **PSK** 
+        > A pre‐shared key (PSK) is the mechanism used for configuring authentication with WPA2 using a symmetrical key. Advanced Encryption Standard (AES) is an encryption protocol that is used in conjunction with WPA2. AES is not used for authentication of hosts. Certificates are used with WPA2‐Enterprise; they are asymmetrical keys used for authentication. The Temporal Key Integrity Protocol (TKIP) is used alongside the RC4 protocol to provide encryption for WPA; it is not used for authentication.
 8. When configuring WPA2, you want to ensure that it does not fall back to the older WPA specification. What parameter should you disable?
-    - **** 
-        > 
+    - **TKIP** 
+        > You should disable the Temporal Key Integrity Protocol (TKIP) when configuring WPA. Since WPA relies on TKIP and WPA2 requires AES‐Counter Mode CBC‐MAC Protocol (AES‐CCMP). This will ensure that the WAP and client do not fall back to the older WPA protocol. 802.1X will operate independently from the WPA2 and WPA fallback mechanism. Advanced Encryption Standard (AES) is an encryption protocol that is used in conjunction with WPA2; therefore, it should not be disabled. MAC filtering is not related to WPA or WPA2 and works independently as a security mechanism.
 9. Which mode of encryption does 802.11i (WPA2) introduce?
-    - **** 
-        > 
+    - **AES‐CCMP** 
+        > The 802.11i (WPA2) specification introduced a specific mode of Advanced Encryption Standard (AES) encryption called Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP). The Rivest Cipher 4 (RC4) algorithm is used by Wired Equivalent Privacy (WEP) and Wi‐Fi Protected Access (WPA) as an encryption protocol. Message‐Digest algorithm 5 (MD5) and Secure Hash Algorithm 1 (SHA1) are popular hashing algorithms but not related to wireless communications.
 10. Which statement is correct about WPA?
-    - **** 
-        > 
+    - **WPA was released as a fix for poor encryption.** 
+        > After the weaknesses in WEP encryption were discovered, the Wi‐Fi Alliance rushed the release of the WPA security protocol. The WPA security protocol incorporated the 802.11i standard of TKIP, which allowed for better integrity of 802.11 transmissions. The WPA security protocol was released after the WEP security protocol. The WPA security protocol did not address any problems related to coverage. It was not a rebranding of the WEP security protocol; it was intended to be a replacement.
 11. Matilda is interested in securing her SOHO wireless network. What should she do to be assured that only her devices can join her wireless network?
     - **** 
         > 
