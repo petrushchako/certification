@@ -832,20 +832,20 @@
 
 ## Chapter 12: Wireless Networking
 1. Which wireless standard first introduced channel bonding?
-    - **** 
-        > 
+    - **802.11n** 
+        > The 802.11n wireless standard introduced channel bonding. The 802.11n standard allows for the bonding of up to two channels to provide a 40 MHz channel. All other answers are incorrect.
 2. Which three wireless channels on 2.4 GHz wireless are nonoverlapping?
-    - **** 
-        > 
+    - **1, 6, and 11** 
+        > The 2.4 GHz wireless band has three nonoverlapping channels: 1, 6, and 11. Although they overlap with other channels, these three channels do not overlap between themselves. All other answers are incorrect.
 3. You are setting up a wireless network for a client. Their requirements are to minimize the infrastructure and support the highest security. Which wireless encryption standard should be configured to satisfy the requirements?
-    - **** 
-        > 
+    - **WPA2‐Personal** 
+        > To satisfy the requirements of the client, WPA2‐Personal should be configured for the wireless network. WPA2‐Personal will allow for 128‐bit AES‐CCMP encryption and work with a pre‐shared key (PSK) to minimize infrastructure. WPA‐Enterprise and WPA3‐Enterprise require certificate services and an AAA server. WPA‐Personal is weaker encryption than WPA2‐Personal.
 4. You are configuring a WPA2 WLAN. Which security configuration should you use for the highest level of security?
-    - **** 
-        > 
+    - **WPA2‐AES** 
+        > The Wi‐Fi Protected Access 2 (WPA2) protocol can be configured with Advanced Encryption Standard (AES) encryption to provide the highest level of security. Wi‐Fi Protected Access (WPA) cannot be configured with AES encryption; therefore, this is a wrong answer. WPA2 cannot be configured with Temporal Key Integrity Protocol (TKIP); only WPA uses the RC4 encryption algorithm and TKIP.
 5. How many pre‐shared keys can be configured for a specific WPA2 WLAN?
-    - **** 
-        > 
+    - **One PSK (one hex or one ASCII)** 
+        > A single pre‐shared key (PSK) is configured for a WPA2 WLAN. The PSK can be either one hex or one ASCII key, but it cannot be both. If you need multiple keys, then WPA2‐Enterprise should be used. Keep in mind that a PSK is symmetrical encryption, whereas WPA2‐Enterprise uses certificates and asymmetrical encryption. All of the other options are incorrect.
 6. After configuring a WLAN, your users complain that they do not see the SSID. What could be wrong?
     - **** 
         > 
