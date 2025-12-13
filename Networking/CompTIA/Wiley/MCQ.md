@@ -862,20 +862,20 @@
     - **WPA was released as a fix for poor encryption.** 
         > After the weaknesses in WEP encryption were discovered, the Wi‐Fi Alliance rushed the release of the WPA security protocol. The WPA security protocol incorporated the 802.11i standard of TKIP, which allowed for better integrity of 802.11 transmissions. The WPA security protocol was released after the WEP security protocol. The WPA security protocol did not address any problems related to coverage. It was not a rebranding of the WEP security protocol; it was intended to be a replacement.
 11. Matilda is interested in securing her SOHO wireless network. What should she do to be assured that only her devices can join her wireless network?
-    - **** 
-        > 
+    - **Enable MAC filtering** 
+        > Enabling MAC filtering on the access point will allow the devices that she specifies. Enabling WPA2 encryption will not prevent unauthorized access to the SOHO network. Port security is enabled on wired network switches to prevent unauthorized access. Disabling the SSID from broadcasting will not prevent unauthorized access.
 12. Which device is the supplicant during the 802.1X authentication process?
-    - **** 
-        > 
+    - **The device requesting access** 
+        > The device requesting access is the supplicant. The supplicant is built into the operating system in which it is authenticating. The server that is providing authentication is the authentication server, which is commonly the AAA RADIUS server. The device that is controlling the access via the 802.1X protocol is the authenticator. The device connecting the layer 3 network is normally a router or layer 3 switch.
 13. What is the access point called in an 802.1X configuration?
-    - **** 
-        > 
+    - **Authenticator** 
+        > The access point is responsible for communicating with the supplicant and sending information to the authenticating server. This device is called the authenticator. The end device that sends credentials is called the supplicant. The supplicant is a piece of software in the operating system that supplies the credentials for AAA authentication. The AAA server is normally a RADIUS server or TACACS+ server that is configured for 802.1X.
 14. You need to install wireless Internet access in an open warehouse environment. After installing the equipment, the technician notices varying signal strengths throughout the warehouse. How do you make sure there is full coverage?
-    - **** 
-        > 
+    - **Change the antenna placement.** 
+        > It is imperative that a good site survey is completed before you install your wireless network. Trying various types of antennas and their placements is the key to covering the whole wireless area. Turning on broadcast key rotation is a security‐related setting and will not affect signal strength. Changing the encryption method used at all the APs will change only the level of encryption and not signal strength. The use of channel bonding and traffic shaping will help increase throughput, but not signal strength.
 15. What is the frequency range of the IEEE 802.11g standard?
-    - **** 
-        > 
+    - **2.4 GHz**
+        > The IEEE 802.11b and IEEE 802.11g both run in the 2.4 GHz RF range. 2.4 Gbps and 5 Gbps describe a bandwidth speed and not a frequency range. 5 GHz is a wrong answer.
 16. Which devices can interfere with the operation of a wireless network because they operate on similar frequencies? (Choose two.)
     - **** 
         >  
