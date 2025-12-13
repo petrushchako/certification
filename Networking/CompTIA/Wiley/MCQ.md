@@ -877,20 +877,21 @@
     - **2.4 GHz**
         > The IEEE 802.11b and IEEE 802.11g both run in the 2.4 GHz RF range. 2.4 Gbps and 5 Gbps describe a bandwidth speed and not a frequency range. 5 GHz is a wrong answer.
 16. Which devices can interfere with the operation of a wireless network because they operate on similar frequencies? (Choose two.)
-    - **** 
-        >  
+    - **Microwave oven**
+    - **Cordless phone** 
+        > If you are running 802.11b/g frequency, then you can receive interference from microwave ovens and cordless phones. Copiers, toasters, and IP phones will not interfere with wireless because they are typically wired. An AM radio receives radio waves and will not interfere with wireless.
 17. Which wireless standard allows you to channel‐bond to increase bandwidth and uses both the 2.4 GHz and 5 GHz frequencies?
-    - **** 
-        > 
+    - **802.11n**
+        > 802.11n uses channel bonding of both the 2.4 GHz range and the 5 GHz range to get increased bandwidth of over 100 Mbps. All other answers are incorrect.
 18. You have installed a point‐to‐point connection using wireless bridges and Omni directional antennas between two buildings. The throughput is low. What can you do to improve the link?
-    - **** 
-        > 
+    - **Replace the Omni directional antennas with Yagis.** 
+        > You need to use directional antennas, like a Yagi, to get the best signal between antennas. Replacing bridges with APs will have no difference on a point‐to‐point connection. Configuring 802.11a on the links will require more power than 2.4GHz. Installing amps to boost the signal could violate wireless regulations.
 19. Which wireless LAN design ensures that a mobile wireless client will not lose connectivity when moving from one access point to another (roaming)?
-    - **** 
-        > 
+    - **Overlapping the wireless cell coverage by at least 10 percent** 
+        > If you are running an extended service set (meaning more than one AP with the same SSID), you need to overlap the cell coverage by 10% or more so clients will not drop out while roaming. Using adapters and access points manufactured by the same vendor is not required, since the adapters and APs are manufactured with standards. Configuring all access points to use the same channel is not recommended when using multiple access points. Utilizing MAC address filtering is a security method and is not attributed to coverage.
 20. Which spread‐spectrum technology does the 802.11b standard define for operation?
-    - **** 
-        > 
+    - **DSSS**
+        > The IEEE 802.11b standard uses direct‐sequence spread spectrum (DSSS). If you are running 802.11g, it uses orthogonal frequency‐division multiplexing (OFDM). All other answers are incorrect.
 
 
 <br><br><br>
