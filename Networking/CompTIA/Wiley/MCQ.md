@@ -996,20 +996,20 @@
     - **** 
         > 
 11. What is the database of variables that SNMP uses to allow for collection of data?
-    - **** 
-        > 
+    - **Management information base** 
+        > The management information base (MIB) is a database of variables in which SNMP allows retrieval of information. The attributes in the MIB are the description, variable type, and read‐write status. Object identifiers (OIDs) are the addressable counters that are arranged in a hierarchical fashion. The SNMP agent is the software on the client that allows SNMP to collect or pass information. The SNMP community string is used to restrict communications to only the clients or servers that have a matching SNMP community string.
 12. Which of the following can be used in conjunction with an SNMP agent configuration for added security?
-    - **** 
-        > 
+    - **Access control lists** 
+        > Standard access control lists (ACLs) can be used in conjunction with the SNMP agent configuration. There is no such thing as encrypted communities. There is no such thing as SNMP callback security; callback security is related to PPP. SNMP does not employ SHA‐256 as its encryption protocol.
 13. Which protocol and port number does SNMP use for trap and inform messages to the NMS?
-    - **** 
-        > 
+    - **UDP/162** 
+        > SNMP uses UDP port 162 for communication from an SNMP agent to the network management station (NMS) for trap and inform messages. SNMP agents listen on UDP/161. SNMP does not use TCP for messaging. UDP/514 is used for Syslog messaging.
 14. Which syslog severity level is used to convey a failure of a component?
-    - **** 
-        > 
+    - **Level 0** 
+        > The severity levels are from 0 to 7, where 0 is an emergency and 7 is debugging. A component failure would be categorized as a level 0 (emergency). All other answers are incorrect.
 15. Which SNMP component is installed on a network device that will respond to NMS queries?
-    - **** 
-        > 
+    - **SNMP agent** 
+        > The SNMP agent is the software on the client (network device) that allows SNMP to collect, respond, or pass information to the network management station (NMS). Object identifiers (OIDs) are the addressable counters that are arranged in a hierarchical fashion. The management information base (MIB) is a database of variables in which SNMP allows retrieval of information. The SNMP community string is used to restrict communications to only the clients or servers that have a matching SNMP community string.
 16. What type of SNMP message is sent from a network management station to an agent for retrieving information?
     - **Get‐request message** 
         > The get‐request message is used by a network management station (NMS) to request information from an SNMP agent. The get‐response message is the message sent back from the client to the NMS, after a get‐request message is received. The set‐request message is sent by the NMS to the SNMP client requesting a specific writable counter be set to the specified value. Trap messages are sent from the network device to the SNMP network management station when an event has triggered over a set threshold on the device.
