@@ -964,22 +964,70 @@
 
 
 
+## Chapter 14: Using Statistics and Sensors to Ensure Network Availability
+1. Which measurement describes the delay a packet incurs from source to destination?
+    - ****
+        > 
+2. You are using a network management station (NMS) to collect data for network devices. What must be loaded before you can capture data from the network devices via the Simple Network Management Protocol (SNMP)?
+    - ****
+        > 
+3. Which service can identify major users of the network, meaning top talkers?
+    - ****
+        > 
+4. Which of the following refers to the standard level of performance of a certain device or to the normal operating capacity for your whole network?
+    - ****
+        > 
+5. Which version of SNMP supports authentication and encryption?
+    - **** 
+        > 
+6. Which component receives information from an SNMP agent?
+    - **** 
+        > 
+7. Which metric is the variation from the delay between the source and destination?
+    - **** 
+        > 
+8. Which SNMP component is used to address a performance counter?
+    - **** 
+        > 
+9. What type of SNMP message is sent to a network management station when an interface goes down?
+    - **** 
+        > 
+10. Which security method does SNMP version 2c employ?
+    - **** 
+        > 
+11. What is the database of variables that SNMP uses to allow for collection of data?
+    - **** 
+        > 
+12. Which of the following can be used in conjunction with an SNMP agent configuration for added security?
+    - **** 
+        > 
+13. Which protocol and port number does SNMP use for trap and inform messages to the NMS?
+    - **** 
+        > 
+14. Which syslog severity level is used to convey a failure of a component?
+    - **** 
+        > 
+15. Which SNMP component is installed on a network device that will respond to NMS queries?
+    - **** 
+        > 
+16. What type of SNMP message is sent from a network management station to an agent for retrieving information?
+    - **** 
+        >  
+17. Which of the following is not a commonly used NetFlow identifier?
+    - **** 
+        > 
+18. Which provides the ability to mirror port traffic on a switch?
+    - **** 
+        > 
+19. Which device components should never be allowed to reach full capacity? (Choose two.)
+    - **** 
+        > 
+20. Which network metric will describe the utilization for a connection?
+    - **** 
+        > 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br><br>
 
 
 
@@ -1044,6 +1092,92 @@
         > 
 20. 
     - **** 
+        > 
+
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 
+1. 
+    - ****
+        > 
+2. 
+    - ****
+        > 
+3. 
+    - ****
+        > 
+4. 
+    - ****
+        > 
+5. 
+    - ****
+        > 
+6. 
+    - ****
+        > 
+7. 
+    - ****
+        > 
+8. 
+    - ****
+        > 
+9. 
+    - ****
+        > 
+10. 
+    - ****
+        > 
+11. 
+    - ****
+        > 
+12. 
+    - ****
+        > 
+13. 
+    - ****
+        > 
+14. 
+    - ****
+        > 
+15. 
+    - ****
+        > 
+16. 
+    - ****
+        > 
+17. 
+    - ****
+        > 
+18. 
+    - ****
+        > 
+19. 
+    - ****
+        > 
+20. 
+    - ****
         > 
 
 
