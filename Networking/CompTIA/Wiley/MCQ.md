@@ -1011,20 +1011,21 @@
     - **** 
         > 
 16. What type of SNMP message is sent from a network management station to an agent for retrieving information?
-    - **** 
-        >  
+    - **Get‐request message** 
+        > The get‐request message is used by a network management station (NMS) to request information from an SNMP agent. The get‐response message is the message sent back from the client to the NMS, after a get‐request message is received. The set‐request message is sent by the NMS to the SNMP client requesting a specific writable counter be set to the specified value. Trap messages are sent from the network device to the SNMP network management station when an event has triggered over a set threshold on the device.
 17. Which of the following is not a commonly used NetFlow identifier?
-    - **** 
-        > 
+    - **Layer 2 protocol field** 
+        > Commonly used NetFlow flows include the following identifiers: source IP address, destination IP address, source port number, destination port number, layer 3 protocol field, Type of Service (ToS) marking, and input logical interface.
 18. Which provides the ability to mirror port traffic on a switch?
-    - **** 
-        > 
+    - **SPAN**
+        > Switched Port Analyzer (SPAN) is a Cisco proprietary method used to mirror port traffic on a switch. Simple Network Management Protocol (SNMP) is a protocol used to capture performance statistics of servers, applications, and network devices. The NetFlow protocol provides session information including the source and destination addresses, applications, and traffic volume. Syslog is a method of collecting system messages to identify problems, or it can be used for post‐mortem analysis.
 19. Which device components should never be allowed to reach full capacity? (Choose two.)
-    - **** 
-        > 
+    - **Memmory** 
+    - **CPU**
+        > When a system uses all available memory or CPU resources, it may become very unstable and fail. Devices must have available memory and CPU capacity available to be able to function. Voltage is not typically measured as a metric and should always remain at a certain voltage level. Delay is related to network functionality and not part of a component.
 20. Which network metric will describe the utilization for a connection?
     - **** 
-        > 
+        > Throughput is the utilization for a given connection. Latency is the measurement of the time it takes for a packet or frame to traverse the network. Jitter is the variance of latency for packets and frames. Bandwidth is the total speed of a connection.
 
 
 <br><br><br>
