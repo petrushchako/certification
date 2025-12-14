@@ -981,20 +981,20 @@
     - **** 
         > 
 6. Which component receives information from an SNMP agent?
-    - **** 
-        > 
+    - **Network management station** 
+        > The network management station (NMS) is a server to which SNMP is polled back or in which SNMP information is trapped (sent to). The NMS can escalate problems via email, text message, or even visual indicators. Examples of NMS systems are SolarWinds Orion and OpenNMS. The Syslog is a logging file where system messages are sent. The object identifier (OID) is used to describe the SNMP counter being requested. The management information base (MIB) is a sort of database of counters that SNMP can use for a specific device.
 7. Which metric is the variation from the delay between the source and destination?
-    - **** 
-        > 
+    - **Jitter** 
+        > Jitter is the variation of latency (delay) between the source and destination, and it is measured in milliseconds. Latency is the time it takes for a packet or frame to travel from source to destination. Bandwidth is the speed of a connection, and throughput is the utilization of the connection.
 8. Which SNMP component is used to address a performance counter?
-    - **** 
-        > 
+    - **Object identifier** 
+        > The object identifier (OID) is used to describe the SNMP counter being requested. The Syslog is a logging file where system messages are sent. The network management station (NMS) is a server to which SNMP is polled back or in which SNMP information is trapped. The NMS can escalate problems via email, text message, or even visual indicators. The management information base (MIB) is a sort of database of counters that SNMP can use for a specific device.
 9. What type of SNMP message is sent to a network management station when an interface goes down?
-    - **** 
-        > 
+    - **Trap message** 
+        > Trap messages are sent from the network device to the SNMP network management station when an event has triggered over a set threshold on the device. An example of an event to be trapped is an interface going down or a restriction by port security. The get‐request message is used by an NMS to request information from an SNMP agent. The get‐response message is the message sent back from the client to the NMS after a get‐request message is received. The set‐request message is sent by the NMS to the SNMP client requesting a specific writable counter be set to the specified value.
 10. Which security method does SNMP version 2c employ?
-    - **** 
-        > 
+    - **Community strings** 
+        > SNMP version 2c is identical to SNMP version 1 with respect to security. Both transmit information in clear text and use the security of community strings to authenticate users for access to information. SNMP version 2c does not employ encryption. SNMP version 2c does not employ user authentication. SNMP version 2c does not employ message integrity.
 11. What is the database of variables that SNMP uses to allow for collection of data?
     - **Management information base** 
         > The management information base (MIB) is a database of variables in which SNMP allows retrieval of information. The attributes in the MIB are the description, variable type, and read‐write status. Object identifiers (OIDs) are the addressable counters that are arranged in a hierarchical fashion. The SNMP agent is the software on the client that allows SNMP to collect or pass information. The SNMP community string is used to restrict communications to only the clients or servers that have a matching SNMP community string.
