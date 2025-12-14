@@ -966,20 +966,20 @@
 
 ## Chapter 14: Using Statistics and Sensors to Ensure Network Availability
 1. Which measurement describes the delay a packet incurs from source to destination?
-    - ****
-        > 
+    - **Latency**
+        > Latency is the delay typically incurred in the processing of network data from source to destination. Bandwidth is the measured maximum of throughput for a connection. Jitter is the difference between the delay of packets. Loss is the measurement of packets lost in the transfer of data.
 2. You are using a network management station (NMS) to collect data for network devices. What must be loaded before you can capture data from the network devices via the Simple Network Management Protocol (SNMP)?
-    - ****
-        > 
+    - **MIB**
+        > Before an NMS can collect SNMP statistics, the management information base (MIB) from the manufacturer must be loaded. The object ID (OID) is the hierarchal notation of the counter. An SNMP trap command is a message from the SNMP agent to the NMS when a threshold for a counter is exceeded. A SNMP get command is a request message from the NMS to the SNMP agent for the value of a counter.
 3. Which service can identify major users of the network, meaning top talkers?
-    - ****
-        > 
+    - **NetFlow**
+        > NetFlow statistics can analyze the traffic on your network by showing the major users of the network, meaning top talkers, top listeners, top protocols, and so on. Syslog can identify problems or be used for post‐mortem analysis. Security information and event management (SIEM) is used to capture security events for further analysis. The Simple Network Management Protocol (SNMP) is a protocol used to capture performance statistics of servers, applications, and network devices.
 4. Which of the following refers to the standard level of performance of a certain device or to the normal operating capacity for your whole network?
-    - ****
-        > 
+    - **Baseline**
+        > In networking, a baseline can refer to the standard level of performance of a certain device or to the normal operating capacity for your whole network. All other answers are incorrect.
 5. Which version of SNMP supports authentication and encryption?
-    - **** 
-        > 
+    - **SNMP version 3** 
+        > SNMP version 3 introduced message integrity, authentication, and encryption to the SNMP suite. SNMP version 1 was the first release of SNMP, and it is considered deprecated. SNMP version 2e is not a valid version of SNMP. SNMP version 2c is an amendment of SNMP version 2 that added the set command and other improvements.
 6. Which component receives information from an SNMP agent?
     - **Network management station** 
         > The network management station (NMS) is a server to which SNMP is polled back or in which SNMP information is trapped (sent to). The NMS can escalate problems via email, text message, or even visual indicators. Examples of NMS systems are SolarWinds Orion and OpenNMS. The Syslog is a logging file where system messages are sent. The object identifier (OID) is used to describe the SNMP counter being requested. The management information base (MIB) is a sort of database of counters that SNMP can use for a specific device.
