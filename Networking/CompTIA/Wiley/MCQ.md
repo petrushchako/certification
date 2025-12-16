@@ -1033,65 +1033,65 @@
 
 
 
-## 
-1. 
+## Chapter 15: Organizational Documents and Policies
+1. The way to properly install or remove software on the servers is an example of which of the following?
     - **** 
         > 
-2. 
+2. Which of the following is a plan for reversing changes and recovering from any adverse effects from the changes?
     - **** 
         > 
-3. 
+3. Which of the following is the amount of time a system will be down or unavailable during the implementation of changes?
     - **** 
         > 
-4. 
+4. Which of the following is not a device hardening technique?
     - **** 
         > 
-5. 
+5. Which policy automatically logs a user out after a specified period without activity?
     - **** 
         > 
-6. 
+6. BYOD policies apply to what type of device?
     - **** 
         > 
-7. 
+7. Which tool can prevent the emailing of a document to anyone other than Sales group members?
     - **** 
         > 
-8. 
+8. Which of the following connects equipment (inside plant) to cables and subscriber carrier equipment (outside plant)?
     - **** 
         > 
-9. 
+9. Which of the following is not part of the information gathering step of a site survey?
     - **** 
         > 
-10. 
+10. Device baselines include information about all but which of the following components?
     - **** 
         > 
-11. 
+11. You just finished repairing a network connection, and in the process, you traced several network connections. Which type of documentation should you create so that another technician does not need to repeat the task of tracing connections?
     - **** 
         > 
-12. 
+12. You just had an outage of Internet connectivity due to a denial‐of‐service attack. Which document should you follow during the outage?
     - **** 
         > 
-13. 
+13. You are currently troubleshooting a network issue. Which type of diagram allows you to view the flow of information from a high‐level overview?
     - **** 
         > 
-14. 
+14. End users are abusing the email system by selling personal items. Which policy would detail the proper use of the email system for business purposes?
     - **** 
         > 
-15. 
+15. Why should performance baselines be captured over a long period of time?
     - **** 
         > 
-16. 
+16. Which policy would you create to define the minimum specification if an employee wanted to use their own device for email?
     - **** 
         >  
-17. 
+17. You are contracting with a new service provider and are reviewing their service level agreement (SLA). The SLA states that their commitment to uptime is 99.99%. What is the expected downtime per year?
     - **** 
         > 
-18. 
+18. You have been informed that all material must be removed from your desk before you leave for the day. What type of policy is this?
     - **** 
         > 
-19. 
+19. Which type of document will contain heat maps of wireless equipment after installation?
     - **** 
         > 
-20. 
+20. You have been tasked with planning the IP addressing in your organization. Which tool should you employ to help you with this task?
     - **** 
         > 
 
