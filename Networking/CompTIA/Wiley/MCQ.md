@@ -1065,35 +1065,38 @@
     - **Display** 
         > For networks and networked devices, baselines include information about four key components: processor, memory, hard‐disk (or other storage) subsystem, and wired/wireless utilization.
 11. You just finished repairing a network connection, and in the process, you traced several network connections. Which type of documentation should you create so that another technician does not need to repeat the task of tracing connections?
-    - **** 
-        > 
+    - **Physical diagram** 
+        > A physical network diagram details all connections so that the next technician does not need to trace connections. A logical network diagram shows the flow of information. A knowledge base article documents a symptom and solution for a problem but not the connections. A change management document is used to evaluate a potential change to a network.
 12. You just had an outage of Internet connectivity due to a denial‐of‐service attack. Which document should you follow during the outage?
-    - **** 
-        > 
+    - **Incident response plan** 
+        > The incident response plan should be followed during the event since the event is a security incident. A change management plan is used for proposed changes to the network. Knowledge base articles are used to document symptoms and solutions. An acceptable use policy (AUP) is used to protect an organization’s resources from user abuse.
 13. You are currently troubleshooting a network issue. Which type of diagram allows you to view the flow of information from a high‐level overview?
-    - **** 
-        > 
+    - **Logical diagram** 
+        > A logical diagram is a high‐level overview of a system so that you can see the flow of information. A physical diagram shows specifics, and although it can be used to trace the flow of information, it is not used as a high‐level overview. A symbol diagram is not a type of diagram. A knowledge base article details a solution for symptoms and is not used to view the flow of information.
 14. End users are abusing the email system by selling personal items. Which policy would detail the proper use of the email system for business purposes?
-    - **** 
-        > 
+    - **AUP** 
+        > The acceptable use policy (AUP) details the acceptable use of the email system for business purposes. The bring your own device (BYOD) policy defines the use of personal devices for organization business. A password policy details the appropriate handling and management of passwords. An incident response plan is how a network or security incident is handled.
 15. Why should performance baselines be captured over a long period of time?
-    - **** 
-        > 
-16. Which policy would you create to define the minimum specification if an employee wanted to use their own device for email?
-    - **** 
-        >  
-17. You are contracting with a new service provider and are reviewing their service level agreement (SLA). The SLA states that their commitment to uptime is 99.99%. What is the expected downtime per year?
-    - **** 
-        > 
-18. You have been informed that all material must be removed from your desk before you leave for the day. What type of policy is this?
-    - **** 
-        > 
-19. Which type of document will contain heat maps of wireless equipment after installation?
-    - **** 
-        > 
-20. You have been tasked with planning the IP addressing in your organization. Which tool should you employ to help you with this task?
-    - **** 
-        > 
+    - **A. To define normal operations and activity**
+    - **To define a historical representation of activity**
+    - **To help validate when a problem is solved**
+    - **All of the above** 
+        > Performance baselines gathered over time help create a historical representation of activity and normal operations. When a server is performing poorly, the baseline can validate both the problem and implemented solution.
+16.  Which policy would you create to define the minimum specification if an employee wanted to use their own device for email?
+    - **BYOD** 
+        > A bring your own device (BYOD) policy defines the minimum specifications for an employee’s device used for work‐related access. The mobile device management (MDM) software would usually dictate these specifications. The acceptable use policy (AUP) defines acceptable usage on the network. The network disclosure agreement (NDA) is an agreement that includes specifics that are not disclosed outside of an organization.
+17.  You are contracting with a new service provider and are reviewing their service level agreement (SLA). The SLA states that their commitment to uptime is 99.99%. What is the expected downtime per year?
+    - **52.56 minutes** 
+        > An SLA of 4 nines is 52.56 minutes per year of expected downtime. This equates to 4.38 minutes per month that the service can be down. All other answers are incorrect.
+18.  You have been informed that all material must be removed from your desk before you leave for the day. What type of policy is this?
+    - **Clean‐desk policy** 
+        > A clean‐desk policy requires all materials to be removed from your desk before you leave for the day. A nondisclosure agreement (NDA) defines the confidentiality of the organization and what can’t be disclosed. The password policy defines the length, complexity, history, and validity time of a user’s password. A bring your own device (BYOD) policy defines the use of personal devices for organizational use.
+19.  Which type of document will contain heat maps of wireless equipment after installation?
+    - **Site survey report** 
+        > The site survey report is the document that is prepared before equipment is purchased and deployed. The site survey is then used post‐deployment to verify coverage and any adjustments for coverage, and will contain heat maps. Logical network diagrams define the flow of network traffic. Physical network diagrams define how everything is connected for the flow of information. A baseline is captured to establish normal operations, so it can be contrasted upon times of trouble to define the issue.
+20.  You have been tasked with planning the IP addressing in your organization. Which tool should you employ to help you with this task?
+    - **IPAM** 
+        > The tool you should employ is IP address management (IPAM). This tool will help you plan the allocation of IP addressing for your organization. A service level agreement (SLA) is used to establish a level of service expected from a provider. A memorandum of understanding (MOU) is a mutual agreement between two or more parties. A nondisclosure agreement (NDA) is an agreement in which you agree not to disclose organizational information.
 
 
 <br><br><br>
