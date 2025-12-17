@@ -1035,35 +1035,35 @@
 
 ## Chapter 15: Organizational Documents and Policies
 1. The way to properly install or remove software on the servers is an example of which of the following?
-    - **** 
-        > 
+    - **Procedure** 
+        > For every policy on your network, there should be a credible related procedure that clearly dictates the steps to take in order to fulfill it. All other answers are incorrect.
 2. Which of the following is a plan for reversing changes and recovering from any adverse effects from the changes?
-    - **** 
-        > 
+    - **Rollback** 
+        > Those making the changes should be completely briefed in these rollback procedures, and they should exhibit a clear understanding of them prior to implementing the changes. All other answers are incorrect.
 3. Which of the following is the amount of time a system will be down or unavailable during the implementation of changes?
-    - **** 
-        > 
+    - **Maintenance window** 
+        > A maintenance window is an amount of time a system will be down or unavailable during the implementation of changes.
 4. Which of the following is not a device hardening technique?
-    - **** 
-        > 
+    - **Deploy an access control vestibule.** 
+        > An access control vestibule is a physical access control solution, not a device hardening technique. Removing unnecessary applications, blocking unrequired ports, and disabling unnecessary services are all device hardening techniques.
 5. Which policy automatically logs a user out after a specified period without activity?
-    - **** 
-        > 
+    - **Authentication period** 
+        > Authentication period controls how long a user can remain logged in. If a user remains logged in for the specified period without activity, the user will be automatically logged out. The password complexity policy specifies how complex a password is required to be. A password history policy specifies how many passwords should be kept in cache, so the user does not reuse the password. The password length policy specifies how long a password is required to be in length.
 6. BYOD policies apply to what type of device?
-    - **** 
-        > 
+    - **Mobile** 
+        > Bring your own device (BYOD) initiatives can be successful if implemented correctly. The key is to implement control over these personal mobile devices that leave the safety of your network and return later after potentially being exposed to environments that are out of your control. BYOD initiatives do not apply to routers, servers, and firewalls.
 7. Which tool can prevent the emailing of a document to anyone other than Sales group members?
-    - **** 
-        > 
+    - **DLP** 
+        > Data loss prevention (DLP) software attempts to prevent data leakage. It does this by maintaining awareness of actions that can and cannot be taken with respect to a document. A bring your own device (BYOD) policy defines how personal devices can be used in the organization. A password policy defines the life, history, and complexity of passwords in the organization. An acceptable use policy (AUP) defines the acceptable use of organizational resources.
 8. Which of the following connects equipment (inside plant) to cables and subscriber carrier equipment (outside plant)?
-    - **** 
-        > 
+    - **MDF** 
+        > The main distribution frame (MDF) connects equipment (inside plant) to cables and subscriber carrier equipment (outside plant). It also terminates cables that run to intermediate distribution frames (IDFs) distributed throughout the facility. The hardware rack houses equipment such as servers and equipment. An access control vestibule is used for physical security.
 9. Which of the following is not part of the information gathering step of a site survey?
-    - **** 
-        > 
+    - **Verify optimal distances between prospective AP locations.** 
+        > Verifying optimal distances between prospective AP locations is part of the Predeployment Site Survey step.
 10. Device baselines include information about all but which of the following components?
-    - **** 
-        > 
+    - **Display** 
+        > For networks and networked devices, baselines include information about four key components: processor, memory, hard‐disk (or other storage) subsystem, and wired/wireless utilization.
 11. You just finished repairing a network connection, and in the process, you traced several network connections. Which type of documentation should you create so that another technician does not need to repeat the task of tracing connections?
     - **** 
         > 
