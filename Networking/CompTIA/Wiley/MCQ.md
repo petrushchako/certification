@@ -1118,24 +1118,24 @@
 5. What is the HSRP group number of the group with the following HSRP MAC address?
 
     0000.0c07.ac0a
-    
+
     - **10**
         > The last 8 bits (0a) are the only variable bits and represent the HSRP group number that you assign. In this case, the group number is 10 and converted to hexadecimal when placed in the MAC address, where it becomes the 0a that you see. All other answers are incorrect.
 6. Which of the following provides only fault tolerance?
-    - ****
-        > 
+    - **Three servers in an active/passive configuration with two on standby**
+        > With three servers in an active/passive configuration with two on standby, only one is doing work. Therefore, it does not provide load balancing, only fault tolerance. Having two servers in an active/active configuration provides a scale‐out of services. Having three servers in an active/passive configuration with one in standby does not provide fault tolerance because it requires two in standby to match the active count. Having three servers in an active/active configuration does not allow for any failure.
 7. Which site type mimics your on‐premises network yet is totally virtual?
-    - ****
-        > 
+    - **Cloud site**
+        > A cloud recovery site is an extension of the cloud backup services that have developed over the years. These are sites that while mimicking your on‐premises network are totally virtual. Cold sites require equipment to be installed and configured. Warm sites are between cold and hot sites and require some intervention. Hot sites typically do not require any intervention, except for organizational data restoration.
 8. Which of the following fire suppression systems is not a good choice where computing equipment will be located?
-    - ****
-        > 
+    - **Deluge**
+        > Deluge systems allow large amounts of water to be released into the room, which obviously makes this not a good choice where computing equipment will be located. CO2, argon, and NAF‐S‐III systems use heavy gases to extinguish a fire.
 9. Which of the following protocols gives you a way to configure more than one physical router to appear as if they were only a single logical one?
-    - ****
-        > 
+    - **FHRP**
+        > First‐hop redundancy protocols (FHRPs) work by giving you a way to configure more than one physical router to appear as if they were only a single logical one. This makes client configuration and communication easier because you can simply configure a single default gateway, and the host machine can use its standard protocols to communicate. Network address translation (NAT) is used to route packets from a private network through the Internet. NIC teaming is not a protocol; it is a method of combining two or more network cards for load balancing or fault tolerance. Spanning Tree Protocol (STP) is switching the protocol used to prevent switching loops for redundant links.
 10. Which of the following provides a method to join multiple physical switches into a single logical switching unit?
-    - ****
-        > 
+    - **Stacking**
+        > Switch stacking is the process of connecting multiple switches together (usually in a stack) that are managed as a single switch. All other answers are incorrect.
 11. Which type of recovery is the least expensive to maintain over time?
     - ****
         > 
