@@ -1137,20 +1137,21 @@
     - **Stacking**
         > Switch stacking is the process of connecting multiple switches together (usually in a stack) that are managed as a single switch. All other answers are incorrect.
 11. Which type of recovery is the least expensive to maintain over time?
-    - ****
-        > 
+    - **Cold site recovery**
+        > A cold site is the least expensive to maintain over time because very little or no hardware is at the site. If a disaster occurs, it will take time to acquire hardware and configure it. A warm site contains equipment but requires intervention to bring it online. A host site or cloud site contains a replica of the organization’s servers and is probably the most expensive. The difference between a hot and cloud site is where the servers are running.
 12. A recovery from tape will take 4 hours; what is this an example of?
-    - ****
-        > 
+    - **The recovery time objective (RTO)**
+        > The recovery time objective (RTO) is a measurement of how quickly you can recover from data loss using backup. The recovery point objective (RPO) is the point in time to which you can recover in the event of a disaster. The grandfather, father, son (GFS) rotation is a systematic way to archive backup media. The backup window is the window of time in which a backup can be performed.
 13. You need to purchase a power backup system for a mission critical data center. Which backup systems will ensure long‐term power that has a flawless AC signal?
-    - ****
-        > 
+    - **Online UPS**
+    - **Generator**
+        > An online UPS will supply a flawless AC signal since the DC power source is fed into the rectifier and the AC power only charges the DC batteries. A generator will supply long‐term AC power to charge the DC batteries in the event of a power failure. A line interactive and standby UPS does not supply flawless power because the load is shifted during a power outage.
 14. Which allows for the feedback and revision of plans, procedures, and policies?
-    - ****
-        > 
+    - **Validation tests**
+        > During the validation tests, the team has the opportunity to give feedback and revise the plans, procedures, and policies. The tabletop exercise is when you should follow the plans, procedures, and policies for your organization. The standard operating procedures (SOPs) are defined by your organization as step‐by‐step directions. The recovery time objective (RTO) is how long it takes to recover from the failure or deletion of files.
 15. Which fire suppression system is normally found in data centers?
-    - ****
-        > 
+    - **Clean agent**
+        > Clean agent systems are normally found in data centers because the suppression agent is in the form of a gas and will not hurt electronics. A deluge system dumps water out of all the fire suppression nozzles. A preaction system requires a detector to pre‐charge the system before water is released. A dry pipe system doesn’t contain water in the pipes. When the pressure drops, the water will be released from the nozzles.
 16. Which environmental factor can cause the potential for electrostatic discharge?
     - ****
         > 
