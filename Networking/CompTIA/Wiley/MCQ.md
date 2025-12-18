@@ -1153,21 +1153,20 @@
     - **Clean agent**
         > Clean agent systems are normally found in data centers because the suppression agent is in the form of a gas and will not hurt electronics. A deluge system dumps water out of all the fire suppression nozzles. A preaction system requires a detector to pre‐charge the system before water is released. A dry pipe system doesn’t contain water in the pipes. When the pressure drops, the water will be released from the nozzles.
 16. Which environmental factor can cause the potential for electrostatic discharge?
-    - ****
-        > 
+    - **Humidity**
+        > When humidity falls below 20%, there is a huge potential for electrostatic discharge (ESD). Although lower temperatures create lower humidity levels, they do not directly attribute to ESD. Electrical factors are related to power surges, sags, and spikes. Flooding will not cause electrostatic discard, but it will cause electrical shorts.
 17. Which type of uninterruptable power supplies (UPS), often found in data centers, provides constant power from the battery‐powered inverter circuit?
-    - ****
-        > 
+    - **Online UPS**
+        > An online UPS uses the AC power for the rectifier/charging circuit that maintains a charge for the batteries. The batteries then supply the inverter with a constant DC power source. The inverter converts the DC power source back into an AC power circuit again that supplies the load. A line interactive UPS starts inverting power when the power is lost. A standby UPS shifts the load to a separate inverter circuit. There is no such thing as a failover UPS.
 18. You need to choose a vendor based on their speed in fixing issues. Which metric should you evaluate?
-    - ****
-        > 
+    - **MTTR**
+        > The mean time to repair (MTTR) is the average time it takes to repair a component and get the system running. Virtual Router Redundancy Protocol (VRRP) is an open standard first hop redundancy protocol (FHRP). Host Standby Router Protocol (HSRP) is a Cisco proprietary FHRP. The mean time between failures (MTBF) is the average time between failures for a device.
 19. You need to supply power for a rack of servers. Which device should you use?
-    - ****
-        > 
+    - **PDU**
+        > A power distribution unit (PDU) is a device used to supply power for servers and devices; it is similar to a power strip. An inverter is a component of an uninterruptable power supply (UPS). Heating, ventilation, and air conditioning (HVAC) units are used to cool data centers and office spaces. An uninterruptable power supply (UPS) is used to supply short‐term power during a power outage.
 20. You have a server in a data center that has two interfaces. What should you employ to make sure that a switch failure will not impede network function of the server?
-    - ****
-        > 
-
+    - **NIC teaming**
+        > NIC teaming will allow you to use both network interfaces connected to independent switches. If one switch fails, the NIC team will allow failure of the NIC to the functioning switch. Hot Standby Router Protocol (HSRP) and Virtual Router Redundancy Protocol (VRRP) are First Hop Redundancy Protocols (FHRPs) used for redundancy of upstream routers. Spanning Tree Protocol (STP) is used to prevent loops in switching networks with redundant paths.
 
 <br><br><br>
 
