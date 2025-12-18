@@ -1104,22 +1104,23 @@
 
 ## Chapter 16: High Availability and Disaster Recovery
 1. You have a high demand of normal requests on the company’s web server. Which strategy should be implemented to avoid issues if demand becomes too high? (Choose the best answer.)
-    - ****
-        > 
+    - **Load balancing**
+        > Load balancing should be implemented with two or more web servers to scale out the servers and lower demand on any one single web server. Clustering creates high availability for an application or operating system. Port aggregation combines two or more connections to aggregate their combined bandwidth. Fault tolerance is the ability of a system to remain running after a component failure.
 2. Which of the following is a measure back in time to when your data was preserved in a usable format, usually to the most recent backup?
-    - ****
-        > 
+    - **RPO**
+        > The recovery point objective (RPO) is a measurement of time from a failure, disaster, or comparable loss‐causing event. RPOs measure back in time to when your data was preserved in a usable format, usually to the most recent backup. The recovery time objective (RTO) is how long it takes to recover your data back to the RPO. The mean time between failures (MTBF) is an average time between failures. The mean time to repair (MTTR) is the average time it takes for a vendor to repair a failure.
 3. Which of the following is an IEEE standard (RFC 2338) for router redundancy?
-    - ****
-        > 
+    - **VRRP**
+        > Virtual Router Redundancy Protocol (VRRP) is an IEEE standard (RFC 2338) for router redundancy; Hot Standby Router Protocol (HSRP) is a Cisco proprietary protocol. All other answers are incorrect.
 4. Which of the following is the defined interval during which each of the routers send out Hello messages in HSRP?
-    - ****
-        > 
+    - **Hello timer**
+        > The Hello timer is the defined interval during which each of the routers sends out Hello messages. Their default interval is 3 seconds, and they identify the state that each router is in. The Hold timer is the amount of time before the Active router is considered offline. The Active timer monitors the state of the Active router and resets each time a Hello packet is seen from the active router. The Standby timer is used to monitor the state of the Standby router and resets each time a Hello packet is seen from the Standby router.
 5. What is the HSRP group number of the group with the following HSRP MAC address?
 
-0000.0c07.ac0a
-    - ****
-        > 
+    0000.0c07.ac0a
+    
+    - **10**
+        > The last 8 bits (0a) are the only variable bits and represent the HSRP group number that you assign. In this case, the group number is 10 and converted to hexadecimal when placed in the MAC address, where it becomes the 0a that you see. All other answers are incorrect.
 6. Which of the following provides only fault tolerance?
     - ****
         > 
