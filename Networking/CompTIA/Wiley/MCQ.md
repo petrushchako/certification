@@ -1102,6 +1102,72 @@
 <br><br><br>
 
 
+## Chapter 16: High Availability and Disaster Recovery
+1. You have a high demand of normal requests on the company’s web server. Which strategy should be implemented to avoid issues if demand becomes too high? (Choose the best answer.)
+    - ****
+        > 
+2. Which of the following is a measure back in time to when your data was preserved in a usable format, usually to the most recent backup?
+    - ****
+        > 
+3. Which of the following is an IEEE standard (RFC 2338) for router redundancy?
+    - ****
+        > 
+4. Which of the following is the defined interval during which each of the routers send out Hello messages in HSRP?
+    - ****
+        > 
+5. What is the HSRP group number of the group with the following HSRP MAC address?
+
+0000.0c07.ac0a
+    - ****
+        > 
+6. Which of the following provides only fault tolerance?
+    - ****
+        > 
+7. Which site type mimics your on‐premises network yet is totally virtual?
+    - ****
+        > 
+8. Which of the following fire suppression systems is not a good choice where computing equipment will be located?
+    - ****
+        > 
+9. Which of the following protocols gives you a way to configure more than one physical router to appear as if they were only a single logical one?
+    - ****
+        > 
+10. Which of the following provides a method to join multiple physical switches into a single logical switching unit?
+    - ****
+        > 
+11. Which type of recovery is the least expensive to maintain over time?
+    - ****
+        > 
+12. A recovery from tape will take 4 hours; what is this an example of?
+    - ****
+        > 
+13. You need to purchase a power backup system for a mission critical data center. Which backup systems will ensure long‐term power that has a flawless AC signal?
+    - ****
+        > 
+14. Which allows for the feedback and revision of plans, procedures, and policies?
+    - ****
+        > 
+15. Which fire suppression system is normally found in data centers?
+    - ****
+        > 
+16. Which environmental factor can cause the potential for electrostatic discharge?
+    - ****
+        > 
+17. Which type of uninterruptable power supplies (UPS), often found in data centers, provides constant power from the battery‐powered inverter circuit?
+    - ****
+        > 
+18. You need to choose a vendor based on their speed in fixing issues. Which metric should you evaluate?
+    - ****
+        > 
+19. You need to supply power for a rack of servers. Which device should you use?
+    - ****
+        > 
+20. You have a server in a data center that has two interfaces. What should you employ to make sure that a switch failure will not impede network function of the server?
+    - ****
+        > 
+
+
+<br><br><br>
 
 
 
