@@ -1171,6 +1171,68 @@
 <br><br><br>
 
 
+## Chapter 17: Data Center Architecture and Cloud Concepts
+1. Amazon Web Services (AWS) and Microsoft Azure are examples of what?
+    - **Public cloud providers**
+2. A hosted medical records service is an example of which cloud model?
+    - **SaaS**
+3. Which is not a NIST criterion for cloud computing?
+    - **Automated billing**
+        > Automated billing is not a NIST criterion for cloud computing. It is essential for the cloud computing vendor but is not relevant if you are hosting your own private cloud. The five NIST criteria for cloud computing are on‐demand self‐service, broad network access, resource pooling, rapid elasticity, and measured service.
+4. Which term describes the type of cloud an internal IT department hosting virtualization for a company would host?
+    - **Private cloud**
+5. Hosting a disaster recovery (DR) site on Microsoft Azure is an example of which National Institute of Standards and Technology (NIST) type of cloud service?
+    - **IaaS**
+        > The National Institute of Standards and Technology (NIST) defines three cloud types: platform as a service (PaaS), software as a service (SaaS), and infrastructure as a service (IaaS). A DR site hosting at a cloud provider is an example of IaaS. Although DRaaS can be used as a term to advertise a type of cloud service, it is not defined by NIST as a type of service.
+6. 
+    - ****
+        > 
+7. 
+    - ****
+        > 
+8. 
+    - ****
+        > 
+9. 
+    - ****
+        > 
+10. 
+    - ****
+        > 
+11. 
+    - ****
+        > 
+12. 
+    - ****
+        > 
+13. 
+    - ****
+        > 
+14. 
+    - ****
+        > 
+15. 
+    - ****
+        > 
+16. 
+    - ****
+        > 
+17. 
+    - ****
+        > 
+18. 
+    - ****
+        > 
+19. 
+    - ****
+        > 
+20. 
+    - ****
+        > 
+
+
+<br><br><br>
+
 
 
 
