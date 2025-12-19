@@ -1213,21 +1213,22 @@
 15. What are machine‐to‐machine configuration interfaces called?
     - **APIs**
         > Machine‐to‐machine configuration interfaces are called application programming interfaces (APIs) and are used to communicate with each other instead of human‐based interfaces such as a GUI or the command line. The northbound interface (NBI) is responsible for allowing communication between applications and the core of the controller. The southbound interface (SBI) directly communicates with the SDN devices. A software‐defined network (SDN) is a network that is managed and controlled by a network controller.
-16. 
-    - ****
-        > 
-17. 
-    - ****
-        > 
-18. 
-    - ****
-        > 
-19. 
-    - ****
-        > 
-20. 
-    - ****
-        > 
+16. Public clouds are divided into logical groupings that allow many different customers to access a section as if it were their own private data center. What is this known as?
+    - **Multitenancy**
+        > Multitenancy or multitenant clouds offer isolated space in the data centers to run services such as compute, storage, and databases. Scalability is the strategic ability to scale network operations. Elasticity is the tactical ability to scale network operations by adding resources. Platform as a service (PaaS) is a cloud service development environment that allows code to be executed on.
+17. Which of the following are methods used to connect a private cloud to a public cloud?
+    - **Internet**
+    - **VPN**
+    - **Direct Connect**
+18. Which protocol allows for the tunneling of layer 2 traffic over a layer 3 network?
+    - **VXLAN**
+        > The Virtual eXtensible LAN (VXLAN) protocol is used to create layer 2 tunnels over a layer 3 network. The VXLAN protocol functions by encapsulating layer 2 traffic inside of a layer 3 packet. Generic Router Encapsulation (GRE) is a protocol for encapsulation IP packets inside other IP packets. Virtual local area network (VLAN) is a switching technology that creates network segmentation by creating logical networks in a physical switch. Spanning Tree Protocol (STP) prevents loops in networks with redundant switch links.
+19. Which function does Ansible, Chef, and Puppet perform in the network?
+    - **Automation and orchestration**
+        > Ansible, Chef, and Puppet are configuration management tools that perform automation and orchestration. A network management station (NMS) is typically used with the Simple Network Management Protocol (SNMP) to centralize polling of SNMP counters and allow for devices to send alerts. Software‐defined networking is a method of centralizing the control and management planes of a network so that the network device can focus on the data plane. Centralized logging is used with Syslog so that all logs can be sent to a centralized area for analysis.
+20. Which concept assumes a user or device is not trusted, regardless of whether it was previously authenticated?
+    - **ZTA**
+        > Zero trust architecture (ZTA) assumes a user or device is not trusted, regardless of whether it was previously authenticated. Software‐defined networking is a method of centralizing the control and management planes of a network so that the network device can focus on the data plane. Infrastructure as code (IaC) is a method of provisioning and configuring network resources via code. Infrastructure as a service (IaaS) is a cloud type that provides the underlying infrastructure to virtualize a network.
 
 
 <br><br><br>
