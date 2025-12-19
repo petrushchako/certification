@@ -1184,21 +1184,20 @@
 5. Hosting a disaster recovery (DR) site on Microsoft Azure is an example of which National Institute of Standards and Technology (NIST) type of cloud service?
     - **IaaS**
         > The National Institute of Standards and Technology (NIST) defines three cloud types: platform as a service (PaaS), software as a service (SaaS), and infrastructure as a service (IaaS). A DR site hosting at a cloud provider is an example of IaaS. Although DRaaS can be used as a term to advertise a type of cloud service, it is not defined by NIST as a type of service.
-6. 
-    - ****
-        > 
-7. 
-    - ****
-        > 
-8. 
-    - ****
-        > 
-9. 
-    - ****
-        > 
-10. 
-    - ****
-        > 
+6. A hosted environment that allows you to write and run programs is an example of which cloud model?
+    - **PaaS**
+7. You purchase a VM on a public cloud and plan to create a VPN tunnel to the cloud provider. Your IP network is 172.16.0.0/12, and the provider has assigned an IP address in the 10.0.0.0/8 network. What virtual network function (VNF) will you need from the provider to communicate with the VM?
+    - **Virtual router**
+        > You will need a virtual router running static NAT to translate the two different IP networks. This type of service is called a virtual network function (VNF). A virtual switch is built into just about every virtualization platform, since layer 2 communications are normally required. A virtual firewall is a piece of software that allows you to protect your virtualization infrastructure, just like their hardware counterparts. Another IP scheme at the provider could help, but a router would still be required for connectivity.
+8. Where does the SDN controller interface with the switching fabric?
+    - **Control plane**
+        > The software‐defined networking controller provides the control plane for an SDN‐based switching fabric.
+9. You are running several web servers in a cloud with a server load balancer. As demand increases, you add web servers. According to the NIST standard of cloud computing, which feature can you use to increase your compute capability for demand?
+    - **Rapid elasticity**
+        > Rapid elasticity is the ability to add and remove compute capability in the cloud. As demand increases, compute power can be increased by adding more CPUs or servers. As demand for compute power decreases, CPUs or servers can be removed. Resource pooling is the concept that all of the physical hosts the provider has are pooled together to provide a customer with resources. Measured services is the concept that the provider can determine the amount of computing, network, or storage a customer has used so that they can be billed or a report can be created. Broad network access is the concept that the resources can be accessed from anywhere on the Internet.
+10. Abstracting the cloud hardware into software objects for automated configuration is referred to as which of the following?
+    - **Infrastructure as code**
+        > The practice of creating infrastructure definitions in software is called infrastructure as code (IaC).
 11. 
     - ****
         > 
