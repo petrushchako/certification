@@ -1198,21 +1198,21 @@
 10. Abstracting the cloud hardware into software objects for automated configuration is referred to as which of the following?
     - **Infrastructure as code**
         > The practice of creating infrastructure definitions in software is called infrastructure as code (IaC).
-11. 
-    - ****
-        > 
-12. 
-    - ****
-        > 
-13. 
-    - ****
-        > 
-14. 
-    - ****
-        > 
-15. 
-    - ****
-        > 
+11. Which network plane is used by SSH for command‐line configuration?
+    - **Management plane**
+        > The management plane is any mechanism that helps in the management of a router or switch. Some of the common mechanisms are SSH and Telnet. The control plane refers to any mechanism that controls the data plane. The data plane is responsible for switching and routing data. Any data that is destined for endpoints is switched or routed on the data plane. Switch plane is not a term normally used to describe data types; therefore, option D is an invalid answer.
+12. Which is used for communicating directly to the SDN devices in the network?
+    - **The southbound interface (SBI)**
+        > The southbound interface (SBI) directly communicates with the SDN devices. This control is done via several different types of SBI protocols, such as OpenFlow, OpFlex, and CLI (Telnet/SSH). The northbound interface (NBI) is responsible for allowing communication between applications and the core of the controller. The core of the controller is the mechanism that connects the NBI to the SBI. Applications hosted on the controller interface with the NBI.
+13. When the vendor provides the hardware platform or data center and the company installs and manages its own operating systems and application systems, which service type is being used?
+    - **Infrastructure as a service**
+        > There are many different service type offerings from the cloud providers. IaaS, or infrastructure as a service, is when the cloud vendor provides the hardware platform and the company installs and manages its own operating systems. An example of software as a service is an email provider or CRM application. An example of platform as a service is any platform in which you can develop and not maintain the underlying infrastructure. An example of desktop as a service is a platform that offers a virtual desktop login over the Internet.
+14. When an application communicates with an SDN controller, which mechanism does it use to communicate?
+    - **The northbound interface (NBI)**
+        > The northbound interface (NBI) is responsible for allowing communication between applications and the core of the controller. Applications therefore directly communicate with the core through the northbound interface. The southbound interface (SBI) directly communicates with the SDN devices. The core of the controller is the mechanism that connects the NBI to the SBI. The Simple Network Management Protocol (SNMP) is used for the monitoring and collection of device metrics.
+15. What are machine‐to‐machine configuration interfaces called?
+    - **APIs**
+        > Machine‐to‐machine configuration interfaces are called application programming interfaces (APIs) and are used to communicate with each other instead of human‐based interfaces such as a GUI or the command line. The northbound interface (NBI) is responsible for allowing communication between applications and the core of the controller. The southbound interface (SBI) directly communicates with the SDN devices. A software‐defined network (SDN) is a network that is managed and controlled by a network controller.
 16. 
     - ****
         > 
