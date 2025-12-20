@@ -1257,20 +1257,20 @@
     - **A bad patch cable**
         > Because of all the tests given and their results, you can narrow the problem down to the network connectivity of that workstation. And because no other users in this user’s area are having the same problem, it can’t be the hub or server. You can log in as the user from your workstation, so you know it isn’t a rights issue or username/password issue. The only possible answer listed is a bad patch cable.
 6. A user is experiencing problems logging into a Linux server. He can connect to the Internet over the LAN. Other users in the same area aren’t experiencing any problems. You attempt logging in as this user from your workstation with his username and password and don’t experience any problems. However, you cannot log in with either his username or yours from his workstation. What is a likely cause of the problem?
-    - ****
-        > 
+    - **The Caps Lock key is pressed.**
+        > Because other users in the same area aren't having a problem, it can’t be a downed server, network hub, or jabbering NIC. And because both you and the user can’t log in, more than likely it’s a problem specific to that workstation. The only one that would affect your ability to log in from that station is the Caps Lock key being pressed. That will cause the password to be in all uppercase (which most server operating systems treat as a different password), and thus it will probably be rejected.
 7. You receive a call from a user who is having issues connecting to a new VPN. Which is the first step you should take?
-    - ****
-        > 
+    - **Identify the symptoms and potential causes.**
+        > Since this is a new connection, you need to start by troubleshooting and identify the symptoms and potential causes. Testing a theory is done after you have established a theory and identified the symptoms and potential causes. Rebooting the workstation will probably not fix the issue. Documenting the solution is the last step.
 8. A workstation presents an error message to a user. The message states that a duplicate IP address has been detected on the network. After establishing what has changed in the network, what should be the next step using the standard troubleshooting model?
-    - ****
-        > 
+    - **Select the most probable cause.**
+        > According to the Network+ troubleshooting model, the next step would be step 2, establishing the most probable cause.
 9. You have gathered information on a network issue and determined the affected areas of the network. What is your next step in resolving this issue?
-    - ****
-        > 
+    - **You should check to see if there have been any recent changes to this affected part of the network.**
+        > After determining the affected area, you need to find out if any changes have taken place. All other answers are incorrect.
 10. A user calls you, reporting a problem logging in to the corporate intranet. You can access the website without problems using the user’s username and password. At your request, the user has tried logging in from other workstations but has been unsuccessful. What is the most likely cause of the problem?
-    - ****
-        > 
+    - **The user is logging in incorrectly.**
+        > Because the user can’t log in correctly from any machine, more than likely he is using the wrong procedure for logging in. Because no one else is having that problem (including yourself), the problem must be related to that user.
 11. You have just implemented a solution, and you want to celebrate your success. But what should you do next before you start your celebration?
     - ****
         > 
