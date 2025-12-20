@@ -1256,49 +1256,49 @@
 5. A user can’t log into the network. She can’t even connect to the Internet over the LAN. Other users in the same area aren’t experiencing any problems. You attempt to log in as this user from your workstation with her username and password and don’t experience any problems. However, you cannot log in with either her username or yours from her workstation. What is a likely cause of the problem?
     - **A bad patch cable**
         > Because of all the tests given and their results, you can narrow the problem down to the network connectivity of that workstation. And because no other users in this user’s area are having the same problem, it can’t be the hub or server. You can log in as the user from your workstation, so you know it isn’t a rights issue or username/password issue. The only possible answer listed is a bad patch cable.
-6. 
+6. A user is experiencing problems logging into a Linux server. He can connect to the Internet over the LAN. Other users in the same area aren’t experiencing any problems. You attempt logging in as this user from your workstation with his username and password and don’t experience any problems. However, you cannot log in with either his username or yours from his workstation. What is a likely cause of the problem?
     - ****
         > 
-7. 
+7. You receive a call from a user who is having issues connecting to a new VPN. Which is the first step you should take?
     - ****
         > 
-8. 
+8. A workstation presents an error message to a user. The message states that a duplicate IP address has been detected on the network. After establishing what has changed in the network, what should be the next step using the standard troubleshooting model?
     - ****
         > 
-9. 
+9. You have gathered information on a network issue and determined the affected areas of the network. What is your next step in resolving this issue?
     - ****
         > 
-10. 
+10. A user calls you, reporting a problem logging in to the corporate intranet. You can access the website without problems using the user’s username and password. At your request, the user has tried logging in from other workstations but has been unsuccessful. What is the most likely cause of the problem?
     - ****
         > 
-11. 
+11. You have just implemented a solution, and you want to celebrate your success. But what should you do next before you start your celebration?
     - ****
         > 
-12. 
+12. You can ping the local router and web server that a local user is trying to reach, but you cannot reach the web page that resides on that server. From step 2 of the troubleshooting model, what is a possible problem that would lead to this situation?
     - ****
         > 
-13. 
+13. When troubleshooting an obscure network problem, what physical conditions should be reviewed to make sure the network device is operating correctly?
     - ****
         > 
-14. 
+14. Which of the following is not a basic physical issue that can occur on a network when a user is connected via cable?
     - ****
         > 
-15. 
+15. You are troubleshooting a LAN switch and have identified the problem is complex. What is the next step you should take?
     - ****
         > 
-16. 
+16. A user calls you complaining that he can’t access the corporate intranet web server. You try the same address, and you receive a Host Not Found error. Several minutes later, another user reports the same problem. You can still send email and transfer files to another server. What is the most likely cause of the problem?
     - ****
         > 
-17. 
+17. You have implemented and tested a solution and identified any other effects the solution may have. What is your next step?
     - ****
         > 
-18. 
+18. Users are reporting that they can access the Internet but not the internal company website. Which of the following is the most likely problem?
     - ****
         > 
-19. 
+19. Several users have complained about the server’s poor performance as of late. You know that the memory installed in the server is sufficient. What could you use to determine the source of the problem?
     - ****
         > 
-20. 
+20. You lose power to your computer room, and the switches in your network do not come back up when everything is brought online. After you have identified the affected areas, established the cause, and escalated this problem, what do you do next?
     - ****
         > 
 
