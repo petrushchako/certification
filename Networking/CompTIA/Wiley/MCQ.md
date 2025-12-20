@@ -1234,6 +1234,77 @@
 <br><br><br>
 
 
+## Chapter 18: Network Troubleshooting Methodology
+1. Which of the following are not specific steps in the Network+ troubleshooting methodology model?
+    - **Reboot the servers**
+    - Identify the problem.
+    - Test the theory to determine the cause.
+    - Implement the solution or escalate as necessary.
+    - Document findings, actions, outcomes, and lessons learned.
+    - **Reboot all the routers**
+
+        > Rebooting servers and rebooting routers are not specifically part of the troubleshooting methodology model. All other answers are incorrect.
+2. You have a user who cannot connect to the network. What is the first thing you could check to determine the source of the problem?
+    - **Connectivity**
+        > You need to check basic connectivity. The link light indicates that the network card is making a basic‐level connection to the rest of the network. It is a very easy item to check, and if the link light is not lit, it is usually a very simple fix (like plugging in an unplugged cable). All other answers are incorrect.
+3. When wireless users complain that they are losing their connection to applications during a session, what is the source of the problem?
+    - **Latency**
+        > When wireless users complain that the network is slow (latency) or that they are losing their connection to applications during a session, it is usually latency arising from a capacity issue. An incorrect SSID, encryption, or MAC address filter would prevent the user from ever connecting to the wireless network.
+4. Several users can’t log in to the server. Which action would help you to narrow the problem down to the workstations, network, or server?
+    - **Check server console for user connections**
+        > Although all of these are good tests for network connectivity (`tracert`, `netstat`), checking the server console for user connections will tell you whether other users are able to log into the server. If they can, the problem is most likely related to one of those users’ workstations. If they can’t, the problem is either the server or network connection. This helps narrow down the problem.
+5. A user can’t log into the network. She can’t even connect to the Internet over the LAN. Other users in the same area aren’t experiencing any problems. You attempt to log in as this user from your workstation with her username and password and don’t experience any problems. However, you cannot log in with either her username or yours from her workstation. What is a likely cause of the problem?
+    - **A bad patch cable**
+        > Because of all the tests given and their results, you can narrow the problem down to the network connectivity of that workstation. And because no other users in this user’s area are having the same problem, it can’t be the hub or server. You can log in as the user from your workstation, so you know it isn’t a rights issue or username/password issue. The only possible answer listed is a bad patch cable.
+6. 
+    - ****
+        > 
+7. 
+    - ****
+        > 
+8. 
+    - ****
+        > 
+9. 
+    - ****
+        > 
+10. 
+    - ****
+        > 
+11. 
+    - ****
+        > 
+12. 
+    - ****
+        > 
+13. 
+    - ****
+        > 
+14. 
+    - ****
+        > 
+15. 
+    - ****
+        > 
+16. 
+    - ****
+        > 
+17. 
+    - ****
+        > 
+18. 
+    - ****
+        > 
+19. 
+    - ****
+        > 
+20. 
+    - ****
+        > 
+
+
+<br><br><br>
+
 
 
 
