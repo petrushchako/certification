@@ -1272,20 +1272,22 @@
     - **The user is logging in incorrectly.**
         > Because the user can’t log in correctly from any machine, more than likely he is using the wrong procedure for logging in. Because no one else is having that problem (including yourself), the problem must be related to that user.
 11. You have just implemented a solution, and you want to celebrate your success. But what should you do next before you start your celebration?
-    - ****
-        > 
+    - **Test the solution and identify other effects it may have.**
+        > After you have implemented a solution, you need to test if the solution works and identify other effects it may have. Gathering information about the issue is one of the first steps. Documenting the issue and the solution that was implemented is the very last step. Escalating the issue is usually done in the middle of troubleshooting when knowledge is exhausted or a fast answer can be derived.
 12. You can ping the local router and web server that a local user is trying to reach, but you cannot reach the web page that resides on that server. From step 2 of the troubleshooting model, what is a possible problem that would lead to this situation?
-    - ****
-        > 
+    - **There is a problem with your browser.**
+        > Because you cannot reach the web page that resides on the server, the problem is most likely related to your browser. If your cable was unplugged or your NIC had failed, you would not get a ping back from the network. If the web server was unplugged, you would not get a ping back from the web server.
 13. When troubleshooting an obscure network problem, what physical conditions should be reviewed to make sure the network device is operating correctly?
-    - ****
-        > 
+    - **Excessive heat**
+    - **Low/excessive humidity**
+    - **ESD problems**
+        > From a design standpoint, the physical environment for a server should be optimized for items such as placement, temperature, and humidity. When troubleshooting, don’t forget to check the physical conditions under which the network device is operating. Check for problems such as those mentioned here as well as EMI/RFI problems, power problems, and unplugged cables. The time of day typically does not have any effect on the problem or solution.
 14. Which of the following is not a basic physical issue that can occur on a network when a user is connected via cable?
-    - ****
-        > 
+    - **DNS configurations**
+        > Because most of today’s networks still consist of large amounts of copper cable, networks can suffer from the physical issues that have plagued all networks since the very beginning of networking (and the answers here are not a complete list). Newer technologies and protocols have lessened these issues but have not resolved them completely. Crosstalk, shorts, and open impedance mismatch are all basic physical issues that can occur.
 15. You are troubleshooting a LAN switch and have identified the problem is complex. What is the next step you should take?
-    - ****
-        > 
+    - **Escalate the issue.**
+        > Once you have determined that the switch or the configuration of the switch is complex, you should escalate the issue. Creating an action plan and implementing a solution should be done after a possible solution is derived. Determining the scope of the problem is one of the first steps that should be accomplished.
 16. A user calls you complaining that he can’t access the corporate intranet web server. You try the same address, and you receive a Host Not Found error. Several minutes later, another user reports the same problem. You can still send email and transfer files to another server. What is the most likely cause of the problem?
     - ****
         > 
