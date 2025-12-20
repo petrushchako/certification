@@ -1289,20 +1289,20 @@
     - **Escalate the issue.**
         > Once you have determined that the switch or the configuration of the switch is complex, you should escalate the issue. Creating an action plan and implementing a solution should be done after a possible solution is derived. Determining the scope of the problem is one of the first steps that should be accomplished.
 16. A user calls you complaining that he can’t access the corporate intranet web server. You try the same address, and you receive a Host Not Found error. Several minutes later, another user reports the same problem. You can still send email and transfer files to another server. What is the most likely cause of the problem?
-    - ****
-        > 
+    - **The web server is down.**
+        > Because other people are experiencing the problem, most likely it is either network‐or server‐related. Because you can transfer files to and from another server, it can’t be the network. Thus, the problem is related to the web server.
 17. You have implemented and tested a solution and identified any other effects the solution may have. What is your next step?
-    - ****
-        > 
+    - **Document the solution.**
+        > After investigating the problem thoroughly and successfully testing and resolving an issue, you need to document the solution. All other answers are incorrect.
 18. Users are reporting that they can access the Internet but not the internal company website. Which of the following is the most likely problem?
-    - ****
-        > 
+    - **The intranet server is down.**
+        > Since users can get to the Internet, this means the DNS server is working, and they have the correct default gateway. The intranet server is probably down.
 19. Several users have complained about the server’s poor performance as of late. You know that the memory installed in the server is sufficient. What could you use to determine the source of the problem?
-    - ****
-        > 
+    - **Performance‐monitoring tools**
+        > Performance‐monitoring tools can give you an idea of how busy the server and the rest of the network are. These tools use graphs to indicate how much traffic is going through the server. The server’s NIC link light will only verify the physical connection. A protocol analyzer will allow you to diagnose applications problems at a very finite level. The server’s system log file will only detail failures.
 20. You lose power to your computer room, and the switches in your network do not come back up when everything is brought online. After you have identified the affected areas, established the cause, and escalated this problem, what do you do next?
-    - ****
-        > 
+    - **Meet with the emergency response team to determine the next step.**
+        > Once you escalate the problem, you are done with the seven‐step troubleshooting model. Meet with the escalation team to determine the next step. All other answers are incorrect.
 
 
 <br><br><br>
