@@ -1308,6 +1308,82 @@
 <br><br><br>
 
 
+## Chapter 19: Network Software Tools and Commands
+1. Which TCP/IP utility is most often used to test whether an IP host is up and functional?
+    - **`ping`**
+        > The program Packet Internet Groper (ping) is used to find out if a host has the IP stack initialized. File Transfer Protocol (FTP) is a protocol used to transfer files. Telnet is an unencrypted terminal‐based emulator that operates across TCP/IP. The netstat command will detail all of the connections to the operating system.
+2. Which TCP/IP utility will produce the following result?
+
+    ```sh
+    Interface: 199.102.30.152
+    Internet Address   Physical Address   Type
+    199.102.30.152     A0-ee-00-5b-0e-ac   dynamic
+    ```
+    - **`arp`**
+        > The arp utility is used to display the contents of the ARP cache, which tracks the resolution of IP addresses to physical (MAC) addresses and will produce the displayed output. The netstat command will detail all of the connections to the operating system. The tracert command will display the path a packet will take through the network to the destination. The tcpdump command will display all packets that are seen by the network interface card (NIC).
+3. Which Windows utility can you use to connect to a machine 50 miles away to troubleshoot?
+    - **Remote Desktop**
+        > The Microsoft operating system has a Remote Desktop software built in called Remote Desktop. Connections can be made from anywhere in the world, permitting that it is enabled on the destination computer. The netstat command will detail all of the connections to the operating system. The arp utility is used to display the contents of the ARP cache, which tracks the resolution of IP addresses to physical (MAC) addresses and will produce the displayed output. Wireshark is a packet capture and analyzer tool used to determine issues.
+4. Which TCP/IP utility might produce the following output?
+    ```sh
+    Reply from 204.153.163.2: bytes=32 time=1ms TTL=128
+    Reply from 204.153.163.2: bytes=32 time=1ms TTL=128
+    Reply from 204.153.163.2: bytes=32 time=1ms TTL=128
+    Reply from 204.153.163.2: bytes=32 time˃10ms TTL=128
+    ```
+    - **`ping`**
+        > The purpose of the ping utility is to test the communications between two IP hosts as well as how long it takes the packets to get from one host to another. The tracert command will display the path a packet will take through the network to the destination. The arp utility is used to display the contents of the ARP cache, which tracks the resolution of IP addresses to physical (MAC) addresses and will produce the displayed output. The ipconfig command is used on Microsoft operating systems to display the IP address configuration.
+5. Which utility can you use to find the MAC and TCP/IP addresses of your Windows workstation?
+    - **`ipconfig /all`**
+        > The ipconfig /all utility will display the current configuration of TCP/IP on a given workstation—including the current IP address, DNS configuration, and default gateway. The purpose of the ping utility is to test the communications between two IP hosts as well as how long it takes the packets to get from one host to another. The ipconfig command alone will display basic IP configuration information, such as IP address, subnet mask, and default gateway. The tracert command will display the path a packet will take through the network to the destination.
+6. 
+    - ****
+        > 
+7. 
+    - ****
+        > 
+8. 
+    - ****
+        > 
+9. 
+    - ****
+        > 
+10. 
+    - ****
+        > 
+11. 
+    - ****
+        > 
+12. 
+    - ****
+        > 
+13. 
+    - ****
+        > 
+14. 
+    - ****
+        > 
+15. 
+    - ****
+        > 
+16. 
+    - ****
+        > 
+17. 
+    - ****
+        > 
+18. 
+    - ****
+        > 
+19. 
+    - ****
+        > 
+20. 
+    - ****
+        > 
+
+
+<br><br><br>
 
 
 
