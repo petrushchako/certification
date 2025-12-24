@@ -1336,21 +1336,22 @@
 5. Which utility can you use to find the MAC and TCP/IP addresses of your Windows workstation?
     - **`ipconfig /all`**
         > The ipconfig /all utility will display the current configuration of TCP/IP on a given workstation—including the current IP address, DNS configuration, and default gateway. The purpose of the ping utility is to test the communications between two IP hosts as well as how long it takes the packets to get from one host to another. The ipconfig command alone will display basic IP configuration information, such as IP address, subnet mask, and default gateway. The tracert command will display the path a packet will take through the network to the destination.
-6. 
-    - ****
-        > 
-7. 
-    - ****
-        > 
-8. 
-    - ****
-        > 
-9. 
-    - ****
-        > 
-10. 
-    - ****
-        > 
+6. Which ping commands will verify that your local TCP/IP interface is working?
+    - **`ping 127.0.0.1`**
+    - **`ping localhost`**
+        > The address 127.0.0.1 is the special IP address designated for the local TCP/IP interface. The hostname localhost is the hostname given to the local interface. Therefore, pinging either the IP address or the hostname for the local interface will tell you whether the local interface is working. All other answers are incorrect.
+7. Which newer Linux command was added recently to configure IP and interface parameters?
+    - **`ip`**
+        > The command ip was added to most Linux distributions and is replacing the depreciated ifconfig command. The netstat command will detail all of the connections to the operating system. The ipconfig command is a Microsoft command‐line tool that will display basic IP configuration information.
+8. You need to find a NIC’s specific MAC address and IP address. Which command‐line tool can you use to find this information without physically going to the computer?
+    - **arp**
+        > The arp utility will show you the resolved MAC to IP address of all hosts on your network segment. Remember, this will work for only local hosts, not remote hosts. The ping command tests connectivity and round‐trip time between two hosts. The ipconfig command is a Microsoft command‐line tool that will display basic IP configuration information. The netstat command will detail all of the connections to the operating system. The ftp command will transfer files between two hosts.
+9. Which netstat utility switch displays all connections and listening ports?
+    - **`-a`**
+        > The `netstat -a` command will display all connections and listening ports on the host computer. Remember that the -a must be lowercase and that it will not work correctly without the hyphen before it. The lowercase -p switch selects the protocol for the output of the netstat command. The -f and -t are not valid switches for the netstat command.
+10. Wireshark is an example of which of the following?
+    - **Protocol analyzer**
+        > Commercial sniffers like Wireshark and Omnipeek can capture any packets because they set the NIC to operate in promiscuous mode, which means the NIC processes all packets that it sees. All other answers are incorrect.
 11. 
     - ****
         > 
