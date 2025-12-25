@@ -1352,21 +1352,36 @@
 10. Wireshark is an example of which of the following?
     - **Protocol analyzer**
         > Commercial sniffers like Wireshark and Omnipeek can capture any packets because they set the NIC to operate in promiscuous mode, which means the NIC processes all packets that it sees. All other answers are incorrect.
-11. 
-    - ****
-        > 
-12. 
-    - ****
-        > 
-13. 
-    - ****
-        > 
-14. 
-    - ****
-        > 
-15. 
-    - ****
-        > 
+11. Which utility produces output similar to the following?
+    ```
+    1  110 ms  96 ms  107 ms fgo1.corpcomm.net [209.74.93.10]
+    2  96 ms  126 ms  95 ms someone.corpcomm.net [209.74.93.1]
+    3  113 ms  119 ms  112 ms Serial5-1-1.GW2.MSP1.alter.net     [157.130.100.185]
+    4  133 ms  123 ms  126 ms 152.ATM3-0.XR2.CHI6.ALTER.NET      [146.188.209.126]
+    5  176 ms  133 ms  129 ms 290.ATM2-0.TR2.CHI4.ALTER.NET   [146.188.209.10]
+    6  196 ms  184 ms  218 ms 106.ATM7-0.TR2.SCL1.ALTER.NET   [146.188.136.162]
+    7  182 ms  187 ms  187 ms 298.ATM7-0.XR2.SJC1.ALTER.NET   [146.188.146.61]
+    8  204 ms  176 ms  186 ms 192.ATM3-0-0.SAN-JOSE9- GW.ALTER.NET [146.188.144.133]
+    9  202 ms  198 ms  212 ms atm3-0-622M.cr1.sjc.globalcenter.net [206.57.16.17]
+    10 209 ms  202 ms  195 ms pos3-1-155M.br4.SJC.globalcenter.net [206.132.150.98]
+    11 190 ms   *   191 ms pos0-0-0-155M.hr3.SNV.globalcenter.net [206.221.5.93]
+    12 195 ms  188 ms  188 ms pos4-1-0-   155M.hr2.SNV.globalcenter.net [206.132.150.206]
+    13 198 ms  202 ms  197 ms www10.yahoo.com [204.71.200.75]
+    ```
+    - **`tracert`**
+        > The tracert utility will give you that output. The tracert command (or trace for short) traces the route from the source IP host to the destination host. The arp utility is used to display the contents of the ARP cache, which tracks the resolution of IP addresses to physical (MAC) addresses and will produce the displayed output. The tcpdump command will display all packets that are seen by the network interface card (NIC).
+12. You are the network administrator. A user calls you complaining that the performance of the intranet web server is sluggish. When you try to ping the server, it takes several seconds for the server to respond. You suspect that the problem is related to a router that is seriously overloaded. Which workstation utility could you use to find out which router is causing this problem?
+    - **`tracert`**
+        > The tracert utility will tell you which router is having the performance problem and how long it takes to move between each host. The tracert command can be used to locate problem areas in a network. The netstat command will detail all of the connections to the operating system. The purpose of the ping utility is to test the communications between two IP hosts as well as how long it takes the packets to get from one host to another. The arp utility is used to display the contents of the ARP cache, which tracks the resolution of IP addresses to physical (MAC) addresses and will produce the displayed output.
+13. Which ipconfig switch will display the most complete listing of IP configuration information for a station?
+    - **`/all`**
+        > The `ipconfig /all` switch will display the most complete listing of TCP/IP configuration information, also displaying the MAC address, DHCP lease times, and the DNS addresses. The `/renew` switch will renew the current DHCP lease. The `/release` switch will release the current DHCP lease. The `/?` switch will display the help for the ipconfig command.
+14. Which utility will display a list of all the routers that a packet passes through on the way to an IP destination?
+    - **`tracert`**
+        > The tracert utility returns the names and addresses of all routers through which a packet passes on its way to a destination host. The netstat command will detail all of the connections to the operating system. The purpose of the ping utility is to test the communications between two IP hosts as well as how long it takes the packets to get from one host to another. The arp utility is used to display the contents of the ARP cache, which tracks the resolution of IP addresses to physical (MAC) addresses and will produce the displayed output.
+15. You are inspecting traffic to and from your workstation. When you issue the netstat command, you don’t see any UDP entries. What could be the reason for a lack of UDP entries?
+    - **There is no UDP traffic**
+        > Although UDP traffic is connectionless and a state will not be shown in the netstat command output, traffic will still show if there is traffic. When you issue the command netstat without any switches, listening ports will not be shown. Only when you issue the command netstat -n will you see listening ports.
 16. 
     - ****
         > 
