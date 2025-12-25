@@ -1382,21 +1382,26 @@
 15. You are inspecting traffic to and from your workstation. When you issue the netstat command, you don’t see any UDP entries. What could be the reason for a lack of UDP entries?
     - **There is no UDP traffic**
         > Although UDP traffic is connectionless and a state will not be shown in the netstat command output, traffic will still show if there is traffic. When you issue the command netstat without any switches, listening ports will not be shown. Only when you issue the command netstat -n will you see listening ports.
-16. 
-    - ****
+16. Which arp command can you use to display the currently cached ARP entries?
+    - **`arp -a`**
+        > The arp -a command will display the current contents of the ARP cache on the local workstation. All other answers are incorrect.
+17. Which command‐line tool would best be used to verify DNS functionality in Linux?
+    - **`dig`**
+        > The dig command is a UNIX/Linux command that will show you DNS server information. The netstat command will detail all of the connections to the operating system. ICMP is the protocol that ping and tracert operate on. The arp -a command will display the current contents of the ARP cache on the local workstation.
+18. Which of the following arp utility switches perform the same function?
+    - **`-a`**
+    - **`-g`**
+        > The arp command’s -a and -g switches perform the same function. They both show the current ARP cache. All other answers are incorrect.
+19. Which of the following is not a chain type used by iptables?
+    - **Backward**
+        > There are three different chain types:
         > 
-17. 
-    - ****
-        > 
-18. 
-    - ****
-        > 
-19. 
-    - ****
-        > 
-20. 
-    - ****
-        > 
+        >   Input: Controls behavior for incoming connections
+        >   Forward: Used for incoming connections that aren't being delivered locally (like a router would receive)
+        >   Output: Used for outgoing connections
+20. Which command captures traffic on all interfaces?
+    - **` tcpdump -i any`**
+        > To capture traffic on all interfaces, use the any keyword with the -i (interface) switch. All other answers are incorrect.
 
 
 <br><br><br>
