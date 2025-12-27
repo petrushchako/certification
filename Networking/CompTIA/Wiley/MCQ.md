@@ -1407,6 +1407,72 @@
 <br><br><br>
 
 
+## Chapter 20: Network Security Concepts
+1. Which element of the CIA triad ensures that information can always be accessed?
+    - **Availability**
+        > The availability element of the CIA triad ensures that information can be accessible. The integrity element ensures that information is not tampered with. The confidentiality element ensures that information is kept confidential and can’t be viewed by others, only its intended audience. Accessibility is not an element of the CIA triad.
+2. You are implementing an encryption key for backups to tape. Which encryption concept is being exercised?
+    - **Data at rest**
+        > Data at rest is the encryption concept being exercised when you implement an encryption key for backup to tape. The data is at rest on its storage device. Data in use is protection for data in memory. Data in transit is protection for data being transmitted. Data on tape is not an encryption concept and falls under data at rest.
+3. Which of the following is not an external threat?
+    - **Virus via an unknown USB drive**
+        > The introduction of a virus with an unknown USB drive is an inadvertent insider threat. It could be controlled with education and vigilance. Ransomware via a threat actor, a DoS, and the exploitation of a web server would all be considered external threats, out of your control.
+4. The system used to create a common naming scheme for vulnerabilities is called?
+    - **CVE**
+        > The common vulnerabilities and exposures (CVE) system is used by all major software vendors to create a common naming scheme for vulnerabilities. A zeroday is an exploit in which no patch is available for. Identity and access management (IAM) is a security framework adopted by service providers. Multifactor authentication (MFA) is the use of multiple factors to authenticate a user.
+5. Which security concept dictates that a user be given only the permission to perform their job?
+    - **Least privilege**
+        > The principle of least privilege dictates that a user be given the least permission to perform their job. Zero trust is a method of requiring the user to authenticate for each resource they access, regardless of where the asset is located. Role‐based access is a method of granting permissions based upon a role in the organization. The defense‐in‐depth security concept is a layered approach to security, where several layers are used to protect the organization.
+6. 
+    - ****
+        > 
+7. 
+    - ****
+        > 
+8. 
+    - ****
+        > 
+9. 
+    - ****
+        > 
+10. 
+    - ****
+        > 
+11. 
+    - ****
+        > 
+12. 
+    - ****
+        > 
+13. 
+    - ****
+        > 
+14. 
+    - ****
+        > 
+15. 
+    - ****
+        > 
+16. 
+    - ****
+        > 
+17. 
+    - ****
+        > 
+18. 
+    - ****
+        > 
+19. 
+    - ****
+        > 
+20. 
+    - ****
+        > 
+
+
+<br><br><br>
+
+
 
 
 
