@@ -1423,21 +1423,20 @@
 5. Which security concept dictates that a user be given only the permission to perform their job?
     - **Least privilege**
         > The principle of least privilege dictates that a user be given the least permission to perform their job. Zero trust is a method of requiring the user to authenticate for each resource they access, regardless of where the asset is located. Role‐based access is a method of granting permissions based upon a role in the organization. The defense‐in‐depth security concept is a layered approach to security, where several layers are used to protect the organization.
-6. 
-    - ****
-        > 
-7. 
-    - ****
-        > 
-8. 
-    - ****
-        > 
-9. 
-    - ****
-        > 
-10. 
-    - ****
-        > 
+6. Which principle describes the process of verification of a user’s identity?
+    - **Authentication**
+        > Authentication is the process of verifying a user’s identify. It can be performed with various factors such as something you know, something you are, or something you have, in addition to other factors. Authorization is the process of checking the permission of the authenticated user for the resource. Accounting is the principle that describes the process of recording a user’s action based upon the AAA security model of authentication, authorization, and accounting. Auditing is typically performed for compliance or review of log files.
+7. Which authentication system is an open standard originally proposed by the Internet Engineering Task Force (IETF)?
+    - **RADIUS**
+        > Remote Authentication Dial‐In User Service (RADIUS) was originally proposed by the IETF and became an open standard for authentication, often used with wireless. TACACS+ is a Cisco technology that became an open standard. Kerberos is exclusively used by Microsoft for the authentication of users. Lightweight Directory Access Protocol (LDAP) is a protocol that is also exclusively used by Microsoft for looking up objects in Active Directory.
+8. Which protocol is used with single sign‐on (SSO) to exchange credentials in the form of a claim?
+    - **SAML**
+        > Security Assertion Markup Language (SAML) is an open‐standard XML‐based framework used for transmitting authentication and authorization information of users and computers. Lightweight Directory Access Protocol (LDAP) is a protocol that is exclusively used by Microsoft for looking up objects in Active Directory. Active Directory (AD) is Microsoft’s directory services product. Kerberos is exclusively used by Microsoft for authenticating users with Active Directory.
+9. Which principle describes the process of verifying a user’s permissions?
+    - **Authorization**
+        > Authorization is the process of verifying whether a user has permission for a specific action; it is followed by the authentication of the user. Authentication is the process of verifying the user’s identify. It can be performed with various factors such as something you know, are, or have, in addition to other factors. Accounting is the principle that describes the process of recording a user’s action based upon the AAA security model of authentication, authorization, and accounting. Auditing is typically performed for the compliance or review of log files.
+10. What protocol and port number does LDAP use for directory lookups?
+    - **TCP/389**
 11. 
     - ****
         > 
