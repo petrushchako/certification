@@ -1452,21 +1452,21 @@
 15. Which factor of authentication requires you to present something that is unique to you and can’t be copied?
     - **Fingerprint**
         > Your fingerprint is an example of something that you are, because it is unique to you. A password is something that you know. A signature is something that you do, as it is unique to how you sign and can be forged. A location is somewhere you are, according to your GPS location.
-16. 
-    - ****
-        > 
-17. 
-    - ****
-        > 
-18. 
-    - ****
-        > 
-19. 
-    - ****
-        > 
-20. 
-    - ****
-        > 
+16. Which European law protects consumers?
+    - **GDPR**
+        > The General Data Protection Regulation (GDPR) is a European law that protects consumers and regulates how their data can be used. The Sarbanes–Oxley Act (SOX) is a federal law and regulates how financial records are kept. The Health Insurance Portability and Accountability Act is a law that regulates how patient information is protected. The Gramm–Leach–Bliley Act (GLBA) is a Federal Trade Commission (FTC) regulation that protects US consumers.
+17. You are asked to secure records and prevent them from being viewed off‐site. Which authorization method would prevent someone from viewing records off‐site?
+    - **Geofencing**
+        > Geofencing is a technique to protect data, so it is viewed only within a geographic location. The principle of least privilege is a concept where you only grant the necessary permissions to do a task. Role‐based access control (RBAC) is a system in which people are given roles and the roles contain the permissions to complete a task. Identity and access management (IAM) is a security framework for creating users and granting permissions.
+18. Which PKI element is used to check to see if a certificate has been revoked?
+    - **CRL**
+        > The certificate revocation list (CRL), which is located in the public certificate, is checked to make sure that a certificate has not been revoked. The root certificate authority (CA) is the root of all trust for an issued certificate. The Authority Information Access (AIA) defines how the client can obtain the public certificate for a presented certificate. The private key is used to sign and decrypt.
+19. You are designing a security strategy for a cloud‐based application. You want to make it simple for other administrators to grant permissions without complexity. Which security strategy should you implement?
+    - **RBAC**
+        > Role‐based access control (RBAC) is a strategy where you grant roles to users that contain the various permissions. Another admin simply needs to place the user into the role to grant permissions. Terminal Access Controller Access‐Control System + (TACACS+) and Remote Authentication Dial‐In User Service (RADIUS) are authentication/authorization servers used for wired and wireless access. Public key infrastructure (PKI) is a system that is used for encryption and signing.
+20. Which protocol uses public/private keys for encryption?
+    - **TLS**
+        > The Transport Layer Security (TLS) protocol uses public/private key pairs for encryption. The Authority Information Access (AIA) defines how the client can obtain the public certificate for a presented certificate. The certificate revocation list (CRL) contains a location to check to make sure that a certificate has not been revoked. Identity and access management (IAM) is a security framework for creating users and granting permissions.
 
 
 <br><br><br>
