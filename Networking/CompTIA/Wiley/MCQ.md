@@ -1437,21 +1437,21 @@
         > Authorization is the process of verifying whether a user has permission for a specific action; it is followed by the authentication of the user. Authentication is the process of verifying the user’s identify. It can be performed with various factors such as something you know, are, or have, in addition to other factors. Accounting is the principle that describes the process of recording a user’s action based upon the AAA security model of authentication, authorization, and accounting. Auditing is typically performed for the compliance or review of log files.
 10. What protocol and port number does LDAP use for directory lookups?
     - **TCP/389**
-11. 
-    - ****
-        > 
-12. 
-    - ****
-        > 
-13. 
-    - ****
-        > 
-14. 
-    - ****
-        > 
-15. 
-    - ****
-        > 
+11. Which option accurately describes an exploit?
+    - **A technique used to gain unauthorized access**
+        > An exploit is a script, code, application, or technique used to gain unauthorized access to an operating system through a vulnerability. A weakness in the operating system and a known operating system security flaw are considered vulnerabilities. A configuration that weakens the security of the operating system is considered a threat.
+12. Which of the following occurs when a threat agent takes advantage of a weakness and uses it to advance an attack?
+    - **Exploit**
+        > An exploit is an attack against a weakness, also known as a vulnerability. The threat is the potential for an exploit to be carried out. The risk is the potential for the threat to become exploited. The vulnerability is the weakness in the system.
+13. You are seeing a large number of packets for UDP port 1813 on the network. What is this traffic likely to be for?
+    - **RADIUS accounting**
+        > The protocol is most likely for RADIUS accounting, which uses UDP port 1813. RADIUS authentication uses UDP port 1812. TACACS+ authentication uses TCP port 49. LDAP queries Active Directory on TCP port 389.
+14. You receive an SSL error when you visit a network appliance that has a self‐signed certificate in use. What can you do to fix the issue?
+    - **Add the network appliance public certificate to the trusted root CA certificate st**
+        > To fix the issue, you will need to add the network appliance public certificate to the trusted root CA certificate store on your computer. This will allow your computer to trust the self‐signed certificate and validate the signing. Adding the public certificate for the network appliance to the root CA certificate revocation list (CRL) is incorrect. Adding the network appliance public certificate to the root CA AIA is incorrect. Adding the network appliance private certificate to the trusted root CA certificate store will not fix the issue.
+15. Which factor of authentication requires you to present something that is unique to you and can’t be copied?
+    - **Fingerprint**
+        > Your fingerprint is an example of something that you are, because it is unique to you. A password is something that you know. A signature is something that you do, as it is unique to how you sign and can be forged. A location is somewhere you are, according to your GPS location.
 16. 
     - ****
         > 
