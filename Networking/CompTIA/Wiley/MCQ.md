@@ -1476,20 +1476,20 @@
 
 ## Chapter 21: Common Types of Attacks
 1. Which of the following is not a technology‐based attack?
-    - ****
-        > 
+    - **Shoulder surfing**
+        > Shoulder surfing is not a technology‐based attack. It is a social engineering attack. Denial of service (DoS), rogue DHCP, and malware are all technology‐based attacks.
 2. A command‐and‐control server is a part of which of the following attacks?
-    - ****
-        > 
+    - **DDoS**
+        > The command‐and‐control server is used to control a botnet, which is part of a distributed denial‐of‐service (DDoS) attack. All other answers are incorrect.
 3. Which attack involves the attacker impersonating both sides of a conversation between two hosts?
-    - ****
-        > 
+    - **On‐path attack**
+        > An on‐path attack, also known as a man‐in‐the‐middle (MiTM) attack, allows the attacker to impersonate both parties involved in a network conversation. A deauthentication attack is a method of deauthenticating all of the wireless users in an attempt to hijack the access point. A denial‐of‐service (DoS) attack attempts to run a service out of resources, thereby denying valid service requests. Spoofing is the act of impersonating a user or computer.
 4. Which type of attack will attempt to configure hosts with a malicious default gateway?
-    - ****
-        > 
+    - **Rogue DHCP**
+        > A rogue DHCP is an attack in which another DHCP serves out IP addresses along with a malicious default gateway. User traffic is then redirected through the malicious gateway in an attempt to steal information. A denial‐of‐service (DoS) attack is an attempt to deny legitimate service requests, by overutilizing resources. VLAN hopping is an attack in which malicious traffic is double‐tagged in an attempt to hop to another VLAN. Deauthentication is an attack that attempts to deauthenticate 802.11 traffic and hijack a wireless SSID.
 5. In which of the following does the attacker (and his bots) send a UDP packet to vulnerable NTP servers that requests that a large amount of data (megabytes worth of traffic) be sent to the DDoS’s target IP address?
-    - ****
-        > 
+    - **NTP amplification**
+        > An NTP amplification attack is carried out by sending a small UDP packet to a vulnerable NTP server. The server then sends a large amount of data to the victim, amplifying the attack. A distributed denial‐of‐service (DDoS) attack happens when many hosts attack a central host. A reflective attack happens when the threat actor requests data from a third party with a return address to the victim. DNS amplification attacks are similar in design to NTP amplification attacks, except they use a different protocol.
 6. Which of the following was previously known as a man‐in‐the‐middle attack?
     - ****
         > 
