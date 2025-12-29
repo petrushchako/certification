@@ -1469,84 +1469,70 @@
         > The Transport Layer Security (TLS) protocol uses public/private key pairs for encryption. The Authority Information Access (AIA) defines how the client can obtain the public certificate for a presented certificate. The certificate revocation list (CRL) contains a location to check to make sure that a certificate has not been revoked. Identity and access management (IAM) is a security framework for creating users and granting permissions.
 
 
-<br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 
-1. 
-    - ****
-        > 
-2. 
-    - ****
-        > 
-3. 
-    - ****
-        > 
-4. 
-    - ****
-        > 
-5. 
-    - ****
-        > 
-6. 
-    - ****
-        > 
-7. 
-    - ****
-        > 
-8. 
-    - ****
-        > 
-9. 
-    - ****
-        > 
-10. 
-    - ****
-        > 
-11. 
-    - ****
-        > 
-12. 
-    - ****
-        > 
-13. 
-    - ****
-        > 
-14. 
-    - ****
-        > 
-15. 
-    - ****
-        > 
-16. 
-    - ****
-        > 
-17. 
-    - ****
-        > 
-18. 
-    - ****
-        > 
-19. 
-    - ****
-        > 
-20. 
-    - ****
-        > 
-
 
 <br><br><br>
+
+
+
+## Chapter 21: Common Types of Attacks
+1. Which of the following is not a technology‐based attack?
+    - ****
+        > 
+2. A command‐and‐control server is a part of which of the following attacks?
+    - ****
+        > 
+3. Which attack involves the attacker impersonating both sides of a conversation between two hosts?
+    - ****
+        > 
+4. Which type of attack will attempt to configure hosts with a malicious default gateway?
+    - ****
+        > 
+5. In which of the following does the attacker (and his bots) send a UDP packet to vulnerable NTP servers that requests that a large amount of data (megabytes worth of traffic) be sent to the DDoS’s target IP address?
+    - ****
+        > 
+6. Which of the following was previously known as a man‐in‐the‐middle attack?
+    - ****
+        > 
+7. Double tagging is a part of which of the following attacks?
+    - ****
+        > 
+8. Which of the following is the process of adopting another system’s MAC address for the purpose of receiving data meant for that system?
+    - ****
+        > 
+9. Which of the following is connected to your wired infrastructure without your knowledge?
+    - ****
+        > 
+10. Which of the following uses the same SSID as your AP?
+    - ****
+        > 
+11. What attack vector can be used for an on‐path attack?
+    - ****
+        > 
+12. Which attack can be used on a native VLAN?
+    - ****
+        > 
+13. Which form of social engineering is nothing more than looking over someone’s shoulder while they enter or view sensitive information?
+    - ****
+        > 
+14. You need to protect your users from Trojans, viruses, and phishing emails. What should you implement?
+    - ****
+        > 
+15. What can you use to protect against spoofing of internal IP addresses on the perimeter of your network?
+    - ****
+        > 
+16. You are implementing a public guest wireless network and require that users accept an acceptable use policy (AUP). What should you implement to accomplish the goal?
+    - ****
+        > 
+17. You are implementing a wireless network and need to make sure that only hosts that have up‐to‐date antivirus protection can join. Which technology should you implement?
+    - ****
+        > 
+18. Which statement is correct about applying ACLs to an interface?
+    - ****
+        > 
+19. As part of your training program, you’re trying to educate users on the importance of security. You explain to them that not every attack depends on implementing advanced technological methods. Some attacks, you explain, take advantage of human shortcomings to gain access that should otherwise be denied. Which term do you use to describe attacks of this type?
+    - ****
+        > 
+20. You’ve discovered that credentials to a specific application have been stolen. The application is accessed from only one computer on the network. Which type of attack is this most likely to be?
+    - ****
+        > 
+
