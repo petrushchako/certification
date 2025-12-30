@@ -1506,20 +1506,22 @@
     - **Evil twin**
         > This ugly trick is achieved by placing their AP on a different channel from your legitimate APs and then setting its SSID in accordance with your SSID. A rogue access point (AP) is wireless equipment that is connected to your network without your permission or knowledge. A rogue DHCP is used by a threat actor to populate malicious IP addresses to DHCP clients. DNS poisoning is an attack in which the victim’s DNS cache is attacked with malicious answers.
 11. What attack vector can be used for an on‐path attack?
-    - ****
-        > 
+    - **DHCP**
+    - **DNS**
+    - **Wireless**
+        > Any service that allows the user to create a connection or access to information can be used as an attack vector. In the case of DHCP, the attacker will set the gateway to their IP address. In the case of DNS, the attacker could spoof a request to redirect the traffic. In the case of wireless, the attacker can spoof the secure set identifier (SSID).
 12. Which attack can be used on a native VLAN?
-    - ****
-        > 
+    - **Double tagging**
+        > Double tagging is an attack that can be used against the native VLAN. The attacker will tag the native VLAN on a frame and then tag another inside that frame for the VLAN that the attacker intends to compromise. When the switch receives the first frame, it removes the default VLAN tag and forwards it to other switches via a trunk port. When the other switch receives the frame with the second VLAN tag, it forwards it to the VLAN upon which the attacker is targeting the attack. VLAN traversal is not an attack; it is a term to describe a VLAN traversing a trunk link between two switches. Trunk popping is not a valid attack; it is not a term used in networking, and therefore, it is an invalid answer. A denial‐of‐service (DoS) attack is an attack in which an attempt to exhaust a service’s resources is launched to knock the service offline.
 13. Which form of social engineering is nothing more than looking over someone’s shoulder while they enter or view sensitive information?
-    - ****
-        > 
+    - **Shoulder surfing**
+        > Shoulder surfing involves looking over someone’s shoulder as they enter information. Phishing is the act of attempting to steal credentials by sending an email that takes the recipient to a fraudulent login. Tailgating is the act of following a person through an access control point using their credentials. Whaling is a form of phishing that targets high‐profile individuals.
 14. You need to protect your users from Trojans, viruses, and phishing emails. What should you implement?
-    - ****
-        > 
+    - **Antimalware**
+        > Antimalware covers a wide array of security threats to users, including Trojans, viruses, and phishing emails. Multifactor authentication combines two or more single‐factor authentication methods to create very secure authentication for users. Software firewalls will not prevent threats such as Trojans, viruses, and phishing emails. Antivirus software protects you only from viruses and Trojans, not phishing emails.
 15. What can you use to protect against spoofing of internal IP addresses on the perimeter of your network?
-    - ****
-        > 
+    - **Access control lists**
+        > Access control lists (ACLs) are an effective way to mitigate spoofing of internal IPs from outside the trusted network. ACLs are used to control traffic by allowing, denying, or logging traffic depending on specific conditions. An intrusion detection system (IDS) can be used to notify you if it detects an attack, but it will not prevent an attack. Transport Layer Security (TLS) communications offer both encryption and authentication of the data via certificate signing. This would prevent tampering of the data end to end, but it will not prevent spoofing. A host intrusion detection system (HIDS) is an application that runs on a host to detect intrusions. An HIDS is similar to an IDS, but it is all software‐based and resides on the host it is to protect.
 16. You are implementing a public guest wireless network and require that users accept an acceptable use policy (AUP). What should you implement to accomplish the goal?
     - ****
         > 
