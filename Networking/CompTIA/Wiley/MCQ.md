@@ -1523,18 +1523,20 @@
     - **Access control lists**
         > Access control lists (ACLs) are an effective way to mitigate spoofing of internal IPs from outside the trusted network. ACLs are used to control traffic by allowing, denying, or logging traffic depending on specific conditions. An intrusion detection system (IDS) can be used to notify you if it detects an attack, but it will not prevent an attack. Transport Layer Security (TLS) communications offer both encryption and authentication of the data via certificate signing. This would prevent tampering of the data end to end, but it will not prevent spoofing. A host intrusion detection system (HIDS) is an application that runs on a host to detect intrusions. An HIDS is similar to an IDS, but it is all software‐based and resides on the host it is to protect.
 16. You are implementing a public guest wireless network and require that users accept an acceptable use policy (AUP). What should you implement to accomplish the goal?
-    - ****
-        > 
+    - **Captive portal**
+        > A captive portal will capture the users’ first web page request and redirect them to either a login page or an AUP. Access control lists (ACLs) and MAC filtering restrict specific traffic. The 802.1X protocol is used to authenticate users and devices to control a layer 2 switchport.
 17. You are implementing a wireless network and need to make sure that only hosts that have up‐to‐date antivirus protection can join. Which technology should you implement?
-    - ****
-        > 
+    - **NAC**
+        > Network access control (NAC) is used in conjunction with 802.1X and can restrict clients if specific security policies are not met, such as current antivirus and software updates. The 802.1X protocol is used to authenticate users and devices to control a layer 2 switchport. EAP‐TLS is a protocol used to authenticate users and computers. Access control lists (ACLs) are used to restrict specific traffic.
 18. Which statement is correct about applying ACLs to an interface?
-    - ****
-        > 
+    - **An access control list can be applied in only one direction.**
+    - **An access control list can be applied only to a single protocol.**
+    - **An access control list can be applied only to a single port.**
+        > Access lists can be applied to a port, to a protocol, and in a direction. For example, you could apply only one ACL to the interface Fa0/1 to the protocol IP in the inbound direction.
 19. As part of your training program, you’re trying to educate users on the importance of security. You explain to them that not every attack depends on implementing advanced technological methods. Some attacks, you explain, take advantage of human shortcomings to gain access that should otherwise be denied. Which term do you use to describe attacks of this type?
-    - ****
-        > 
+    - **Social engineering**
+        > Social engineering uses the inherent trust in the human species, as opposed to technology, to gain access to your environment. IDSs are network‐based systems that detect intrusions. Perimeter security describes physical security. Biometrics describes an authentication method based on human physical traits.
 20. You’ve discovered that credentials to a specific application have been stolen. The application is accessed from only one computer on the network. Which type of attack is this most likely to be?
-    - ****
-        > 
+    - **On‐path attack**
+        > An on‐path attack intercepts data and then sends the information to the server as if nothing were wrong while collecting the information. Zero‐day attacks are attacks in which a developer has not properly patched a hole yet and is unaware of the hole. A denial‐of‐service (DoS) attack is used to disrupt legitimate requests from being answered. An ARP spoofing attack occurs when the threat actor spoofs a legitimate MAC address.
 
