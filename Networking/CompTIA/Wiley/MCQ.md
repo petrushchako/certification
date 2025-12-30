@@ -1491,20 +1491,20 @@
     - **NTP amplification**
         > An NTP amplification attack is carried out by sending a small UDP packet to a vulnerable NTP server. The server then sends a large amount of data to the victim, amplifying the attack. A distributed denial‐of‐service (DDoS) attack happens when many hosts attack a central host. A reflective attack happens when the threat actor requests data from a third party with a return address to the victim. DNS amplification attacks are similar in design to NTP amplification attacks, except they use a different protocol.
 6. Which of the following was previously known as a man‐in‐the‐middle attack?
-    - ****
-        > 
+    - **On‐path attack**
+        > A man‐in‐the‐middle attack (also known as an on‐path attack) happens when someone intercepts packets intended for one computer and reads the data. A VLAN hopping attack happens when frames are double tagged in an effort to hop VLANs. A denial‐of‐service (DoS) attack happens when a threat actor denies service to other users by attacking the intended victim. A deauthentication attack is carried out by sending deauthentication frames to wireless clients to disassociate them with the SSID they are connected to.
 7. Double tagging is a part of which of the following attacks?
-    - ****
-        > 
+    - **VLAN hopping**
+        > The threat actor can attack a VLAN they are not permitted to by a process called double tagging; this attack is called VLAN hopping. A man‐in‐the‐middle attack (also known as an on‐path attack) happens when someone intercepts packets intended for one computer and reads the data. A distributed denial‐of‐service (DDoS) attack is comprised of many hosts that attack a central victim. Malware is a generic term used to describe a number of infections, such as ransomware, Trojans, and key loggers, just to mention a few.
 8. Which of the following is the process of adopting another system’s MAC address for the purpose of receiving data meant for that system?
-    - ****
-        > 
+    - **ARP spoofing**
+        > ARP spoofing is the process of adopting another system’s MAC address for the purpose of receiving data meant for that system. A rogue DHCP attack happens when a threat actor introduces a DHCP server to the network that populates the threat actor’s IP address. IP spoofing is an attack when a threat actor imposters a legitimate IP address. DNS spoofing is an attack when the DNS answers are spoofed coming from the threat actor.
 9. Which of the following is connected to your wired infrastructure without your knowledge?
-    - ****
-        > 
+    - **Rogue AP**
+        > Rogue access points are access points (APs) that have been connected to your wired infrastructure without your knowledge. The rogue may have been placed there by a determined hacker who snuck into your facility and put it in an out‐of‐the‐way location or, more innocently, by an employee who just wants wireless access and doesn’t get just how dangerous doing this is. Command‐and‐control servers are used to control botnets. Malware is an infection that has malicious intent of the network or user. A botnet is a group of computers controlled by a command‐and‐control server for malicious purposes.
 10. Which of the following uses the same SSID as your AP?
-    - ****
-        > 
+    - **Evil twin**
+        > This ugly trick is achieved by placing their AP on a different channel from your legitimate APs and then setting its SSID in accordance with your SSID. A rogue access point (AP) is wireless equipment that is connected to your network without your permission or knowledge. A rogue DHCP is used by a threat actor to populate malicious IP addresses to DHCP clients. DNS poisoning is an attack in which the victim’s DNS cache is attacked with malicious answers.
 11. What attack vector can be used for an on‐path attack?
     - ****
         > 
