@@ -4,12 +4,16 @@
 
 1. Which mechanism is used by TCP to set up and synchronize a new TCP/IP connection?
     > **Three-way handshake**
+
 2. A network engineer must ensure communications between an organization's branch offices and main HQ cannot be eavesdropped on. What should the engineer do?
     > **Configure site-to-site VPN between locations.**
+
 3. A company is installing a large rack-mounted infrastructure to support a web server farm. High-availability is a critical concern for the company. You need to recommend a solution that will ensure continued availability without interruption if AC line power is lost. What type of technology does the company need to ensure this?
     > **UPS**
+
 4. PC1 is unable to access the Internet in the network shown in the exhibit. What is the MOST likely cause? <br> ![](img/quiz-1.jpg)
     > **A rogue DHCP server**
+
 5. A policy includes the following statement:<br>"Employees are not allowed to use company equipment to copy or distribute copyrighted material without the written permission of the holder of the copyright."<br>Which policy would this statement be part of?
     > **AUP**
     >
@@ -17,6 +21,7 @@
     > - This would not be part of a non-disclosure agreement (NDA). An NDA is a confidentiality agreement. It is a legally binding contract between two or more entities, such as between a company and an employee, designed to protect proprietary information and trade secrets. It does not address data or activity outside of the scope of the contract principals.
     > - This would not be part of a service level agreement (SLA). An SLA defines levels of service provided by a customer to its customers. For example, an SLA could define items such as performance metrics and guaranteed availability.
     > - This would not be part of a bring your own device (BYOD) policy. If personal devices are authorized through a BYOD policy, their acceptable use would be outlined in the AUP. The specific content of a BYOD varies by organization depending on its needs, security concerns, and network support for devices. Where possible, policies are typically enforced through network configurations and settings.
+
 6. Match the network requirements to the network devices. Drag the appropriate device to each requirement. A device may be used once, more than once, or not at all:
     - A company needs a device to help centralize authentication, mitigate radio interference, provide load balancing, and improve bandwidth usage.
     - A company needs to evenly distribute traffic between web servers deployed in its perimeter network.
@@ -28,8 +33,10 @@
     > - A **Remote Authentication Dial-In User Service (RADIUS)** server does not match any of the scenarios. A RADIUS server provides a central point for managing authentication, authorization, and accounting (AAA).
     > - A **content filter** does not match any of the scenarios. A content filter can be software installed on a computer or a combination of software and a filtering device. A content filter is most commonly used to block objectionable content from websites or email. It may be used to block outgoing access to inappropriate or potentially hazardous websites. The use of content filters has expanded on wireless networks as more companies have introduced bring-your-own-device (BYOD) policies.
     > - A **VPN concentrator** does not match any of the scenarios. A VPN concentrator is a device that can access and manage multiple secure VPN tunnel connections.
+
 7. A company wants to connect a remote office using a satellite internet service. What should be the main concern for this deployment?
     > **Latency**
+
 8. A restaurant offers public Wi-Fi access to the Internet for its customers. A customer is prompted with a web page that requires the customer to agree to abide by use policies while connected. What is this an example of?
     > **Captive portal**
     >
@@ -42,12 +49,15 @@
     >   - Somewhere you are
     >   - Something you do
     > - This is not an example of **media access control (MAC) address filtering**, though MAC address filtering can be integrated with captive portal. MAC address filtering would not be practical in this scenario because there is no way to know in advance the MAC address of customer devices.
+
 9. A company has its own comms rooms and an on-premises data center containing all its servers and network devices. A network engineer wants to add some cloud on-demand solutions to the existing infrastructure. Which cloud model should the company use?
     > **Hybrid**
+
 10. A company wants to configure a site-to-site VPN link between two offices. Users in each office should have access to resources in the other office, including shared folders and network services. What type of VPN should the company use?
     > **IPSec VPN**<br>The company should use an IPSec VPN. An IPSec VPN can be used for remote client connections and to create site-to-site VPN connections. An IPSec VPN creates a full WAN link between the sites, with the ability to access resources from either end of the connection. Resource access is limited based on permissions, not on technology support.
     > - The company should not use an SSL VPN or TLS VPN. In common usage, the term SSL VPN is used to describe both types of VPN connections. This type of VPN supports a connection over port 443, making easy to implement for most network firewalls. This is the same port used for HTTPS connections. A significant limit is that access is limited to websites, web applications, and web-aware applications rather than providing support for full site-to-site connections.
     > - PPTP is an older remote access protocol and is no longer in common use. It can be used to create a VPN link, but this is not recommended, especially because of potential security issues.
+
 11. Compare characteristics of NAS and SAN storage technologies. To answer, choose the appropriate storage type from the drop-down menus.
     > **SAN**:
     >   - Emulates directly attached storage for servers accessing storage.
@@ -58,15 +68,164 @@
 
     > Network attached storage (NAS) refers to a single storage device connected directly to the network. It is recognized and accessed through its IP address. The device maintains its own file system, and data access is through remote file system 1/O, like any other shared network file server. NAS is necessary to support applications that require file-level access.
     > A storage area network (SAN) is a dedicated network of storage devices. A SAN can support an assortment of storage devices, including disk arrays and tape libraries. Because storage is structured as block storage, it emulates directly attached storage for servers accessing storage. The accessing server is responsible for the file system. This is the preferred storage solution when extreme high-speed data transfer is required.
+
 12. A NIDS reports several attempts to download files from an external IP address. The Technical Services department determines that the source is a website that is made to look like a site from which network users download reference materials and blank PDF forms. Users enter the correct URL for the website but are being sent to a different IP address. Which type of attack is this?
     > **DNS poisoning**<br>The redirection is through a DNS poisoning attack. In a DNS poisoning attack, a fake IP address replaces the valid IP address for a server or other device. When users attempt to navigate to the server, they are sent to a different server.<br>This result of the redirection, users being sent to a fake website that looks like a valid website, is often referred to as a pharming attack. This is one of the forms that a pharming attack can take. Another is to use a close variation of a valid sites name and URL as a destination in a link.
     > - This is not an example of ARP poisoning. ARP poisoning is used to inject or replace Media Access Control (MAC) addresses in a host's ARP cache. The MAC address is used for final delivery of packets on a network, so ARP poisoning can be used to redirect traffic from its target to an attacker's computer. ARP poisoning is one of the ways that a man-in-the-middle attack is executed, where transmissions between two computers are monitored by a third computer.
     > - This is not an example of VLAN hopping. VLAN hopping is used to gain access to VLANs to which the attack would not have access. The attack is used as a way to intercept and collect data.
     > - This is not an example of an evil twin. An evil twin is a rogue access point that is set up to look like a valid access point. The rogue can be a wireless access point or a computer configured to act as a wireless access point.
+
 13. Which of the following is an example of valid multifactor authentication factors?
     > **Facial recognition and PIN**
+
 14. What type of attack is designed to flood a server with traffic, either crashing the server or making it unavailable?
     > **DoS**
+
 15. A recent security audit reveals that users from all locations have full remote access to network devices. Which solution should be implemented to address that problem?
     > **ACL**
-16. 
+
+16. Part of a company's network is shown in the exhibit. Client computers are configured to receive IP addresses automatically from the DHCP server. All client computers currently have valid IP addresses. Computers on the 192.168.1.0 subnet are unable to resolve host names in other subnets but can access resources by IP address. Computers on other subnets are not experiencing this problem. What is the most likely cause?<br>![](img/quiz-2.jpg)
+    > **Port 53 is blocked on the 192.168.1.1 interface.**
+    > The most likely cause is that port 53 is blocked on the 192.168.1.1 interface. DNS name resolution uses port 53. Because name resolution is failing on the 192.168.1.0 subnet only, the most likely problem is that the port is blocked on the interface facing that subnet.
+    > 
+    > Port 53 is not blocked on the 192.168.1.129 interface. If it were, then other subnets would also be experiencing name resolution problems.
+    >
+    > The 192.168.1.1 interface is not failing. If the interface were failing, then computers on the 192.168.1.0 would be unable to access resources in other subnets.
+    > 
+    > You know that the DNS server is not failing because name resolution works for other subnets.
+
+17. A junior network engineer receives a new router to configure. Which two configuration tasks should the engineer perform BEFORE he copies a standard configuration template onto the router?
+    > - **Update the firmware**
+    > - **Change the default username and password**
+
+18. A company opens new warehouse space on its company campus. Network wiring for the warehouse is routed through a 110 punch block and patch panel. Wiring out to devices uses Cat 5e UP cable. Several devices in warehouse experience communication problems. After extensive testing, the problem is determined to be crosstalk. The company needs to correct the problem. Infrastructure changes should be kept to a minimum. What should the company do?
+    > **Replace the failing cables with Cat 6 cables.**
+    > The company should replace the failing cables with Cat 6 cables. Crosstalk occurs when a signal on one cable pair creates transmission errors with another pair through inductive or capacitive coupling. Crosstalk is minimized in copper wires through the twists placed in the pairs. Cat 6 cable is produced with much more stringent specifications for preventing crosstalk than Cat 5 or Cat 5e cable.
+    >
+    > The company should not replace the failing cables with Cat 5e STP cables. Shielded Twister Pair (STP) cable adds a shielding not present in Unshielded Twister Pair (UTP) cable to prevent electromagnetic interference (EMI). STP cable is no less susceptible to crosstalk than UTP cable.
+    > 
+    > The company should not replace the 110 punchdown block with a 66 punchdown block. A 66 punchdown block is not rated for network cabling above Cat 3. A 110 block can be used with Cat 5 and Cat 6 cable types.
+    >
+    > The company should not replace all cabling with fiber optic cable. This would solve the problem but would require significant infrastructure changes to add support for fiber optic. In addition, a media converter would likely be needed to transfer signals from copper cable to fiber optic.
+
+19. A company wants to support multiple client computers running an application installed on a computer that runs Windows Server 2016. The clients should be able to take advantage of the memory and processor resources on the server. Each client will have a unique data set. Which technology should the company use?
+    > **RDP**<br>The company should use Remote Desktop Protocol (RDP). RDP is a Microsoft-proprietary desktop sharing protocol. Different operating systems are supported as clients, but the server must be a Microsoft Windows server. A new session is started as each client's user logs on, and each client can launch a new instance of the application. Key presses and mouse clicks are passed to the server, and changes to the display screen are returned to the client. Data is stored on the client computer.
+
+20. A network engineer has installed three gigabit switches. The switches will provide access to NAS devices for end users. What should the engineer configure to avoid a bottleneck in the network with big file transfers?
+    > **Trunks with port aggregation**
+    > The engineer should configure trunks with port aggregation to avoid a bottleneck. A trunk is a special type of link that can carry traffic from multiple VLANs across switches. Port aggregation allows the network engineer to combine two or more ports on a switch to improve the aggregated file transfer speeds. Even though the company has ordered gigabit switches, a link between them would provide 1 Gbps only for all users, which could cause a bottleneck in the network.
+    >
+    > Port security will not improve the file transfer speeds. The network engineer could use port security to filter Media Access Control (MAC) addresses and limit the number of hosts in the network.
+    >
+    > The engineer should not use file transfer protocol (FTP) with secure shell (SSH) in this scenario. This would not help avoid a bottleneck. FTP with SSH is called FTPS and is used for secure file transfers.
+    > 
+    > The engineer should not implement a quality of service (QoS) policy here. It would not increase the bandwidth that is needed between all switches. QoS could improve overall user experience, but it will not help to prevent a bottleneck. The engineer should use port aggregation to improve the file transfer speeds between switches.
+    > 
+    > The engineer should not use Hot Standby Router Protocol (HSRP) or Virtual Router Redundancy Protocol (VRRP). HSRP and VRRP are designed to provide a virtual gateway for end devices and do not offer any aggregation services.
+
+21. A network technician wants to deploy a new virtual firewall. The firewall has to support three interfaces: G0/0, G0/1, and G0/2. What should the technician configure at the VM level for these interfaces?
+    > **vNIC**<br>The technician should configure a virtual Network Interface Card (vNIC). Each interface requires a separate virtual NIC to operate. The technician should add three vNICs during the creation of a virtual machine (VM).
+    >
+    > Internet **SCSI** (iSCSI) cannot be used here. SCSI is a storage networking standard and does not offer virtual interfaces.
+    >
+    > The technician should not configure a **trunk**. A trunk is used to pass VLAN information between two switches.
+    >
+    > Finally, **VLAN** is not enough here. The technician should create a vNIC first, which could be associated with a VLAN, if necessary.
+
+22. Which type of vulnerability would NOT be reported by a vulnerability scan?
+    > **Zero day**<br>One type of vulnerability that would not be reported by a vulnerability scan is a zero day vulnerability. By definition, a zero day vulnerability is unknown and previously undetected. Because there is no current reference by which to identify the vulnerability, it would go undetected.
+    > 
+    > A vulnerability scan is designed to look for a wide range of vulnerabilities, such as: 
+    >   - Missing patches 
+    >   - Missing passwords 
+    >   - Configuration errors
+    >   - Out-of-date virus definitions
+    >   - Unnecessary open ports
+    >   - Unnecessary running services
+    >
+    > Vulnerability scans are typically run on a periodic basis by in-house personnel. Many commercial security software suites include vulnerability scanners. There are also stand- alone versions. You should exercise caution before using web-based vulnerability scanners if you are not familiar with the source. These are often scams to sell you software you might not need or malicious software that will try to install malware on the computer being scanned.
+
+23. Identify which statements describe exploits and vulnerabilities. To answer, select the appropriate threat category from the drop- down lists next to each statement.
+    - **Vulnerabilities**:
+      - An application has an open maintenance hook that provides access to configuration settings.
+      - A database server's operating system is missing several security patches.
+      - User login accounts have administrative rights to client computers.
+    - **Exploits**:
+      - Deceptive calls are used to gather critical information about network servers.
+      - A data breach exposes personal information about customers.
+
+    > A **vulnerability** is a flaw or a weakness in security that could lead to a security breach. Vulnerabilities can include things such software bugs, improper configuration settings, default administrators and passwords, or poorly trained users. An open maintenance hook, which may be left by programmers to get "back door" access to an application, missing patches, or assigning more rights than necessary are all vulnerabilities.
+    >
+    > An **exploit** is an attack that takes advantage of a vulnerability. This can be a program designed to breach security or a social engineering attack that employs deceptive practices to gain information. Deceptive calls to employees and data breaches that release information are both examples of exploits.
+    >
+    > Penetration testing is one way to find known vulnerabilities and test defenses against common exploits.
+
+24. A company has deployed a new Microsoft Windows server behind a firewall. A systems administrator has been experiencing problems querying and modifying items in Active Directory from a remote location using an LDAP-based application. Which protocol should be allowed through the firewall?
+    > **TCP port 636**
+    > TCP port 636 should be allowed through the firewall. Lightweight Directory Access Protocol (LDAP) over SSL is a secure protocol used to query and modify items in directory services such as Active Directory.
+    >
+    > Remote Desktop Protocol (RDP) uses TCP port 3389. RDP can be used to connect to a server remotely. However, RDP does not support querying and modifying items in Active Directory. By default, RDP does not use SSL and is vulnerable to a man-in-the-middle attack.
+    >
+    > Secure Shell (SSH) uses TCP port 22 to provide secure remote access to a system, for example a router, a switch, or Linux server. SSH was created to replace telnet, which does not support public-key cryptography features. SSH does not offer a direct way to connect to directory services.
+    >
+    > Trivial File Transfer Protocol (TFTP) uses UDP port 69. TFTP is used to send and receive files on network devices. TFTP is not used to connect to Active Directory.
+    >
+    > Domain Name System (DNS) uses UDP port 53 for DNS queries. DNS uses TCP for larger packets and zone database transfers. DNS is required for Active Directory to run but is not used to query or modify directory items.
+
+25. A company wants to deploy a new WLAN topology without running new electrical wiring. The solution has to support the 5Ghz band, MU-MIMO, and offer speeds of at least 2100 Mbps. The company wants to use a PoE solution providing at least 25W of power for a connected device. Which two components should be used? (Choose two.)
+    > The company should use a switch supporting the 802.3at standard and an 802.11ac Wave 2 access point. There are multiple Power over Ethernet (Po) standards. The most common one is PoE+ described as 802.3at, which offers the maximum power of 25.5W and 600mA to a connected device.
+    > 
+    > The 802.11ac Wave 2 standard uses the 5Ghz frequency and offers downstream communications to many wireless devices using the multiuser multiple input, multiple output (MU-MIMO) technology. The 802.11ac standard supports a throughput of 2 Gbps and more (The physical layer (PHY) rate is up to 3.47 Gbps.).
+    >
+    > The 802.11ac Wave 1 standard does not meet the company's requirements. It offers single-user multiple input, multiple output (SU-MIMO) technology only and a throughput of around 850 Mbps (PHY of 1.3 Gbps).
+    >
+    > The 802.11n standard cannot be used for this scenario. The 802.11n offers single-user multiple input, multiple output (SU-MIMO) technology and a throughput of around 390 Mbps (PHY of 600 Mbps) only.
+    >
+    > The 802.3af standard (Po) does not meet the company's requirements because it offers no more than 12.95W of power to a connected device.
+    >
+    > The 802.1x is an authentication protocol for wired and wireless connections. There is nothing in the requirements that requires this standard to be implemented.
+
+26. Users report that they cannot access any resources on the Internet using an FTP client. It is determined that the connections have been denied by the firewall. All hosts from the local subnet of 192.168.1.0/25 should have access. Which ACL rule should the company implement?
+    > **An outbound rule: permit hosts from 192.168.1.0 255.255.255.128 to access any hosts on TCP ports 20 and 21**
+
+27. The nslookup command fails and shows the error in the exhibit. What should the support team create to fix the problem?
+    > The support team should create a **reverse lookup zone**. The error indicates a missing Pointer (PTR) record. PTR records resolve IP addresses to fully-qualified domain names (FQDN). The team should create a reverse lookup zone on a domain name system (DNS) server and verify the PTR records.
+    >
+    > The support team should not create a **Canonical Name (CNAME) record**. A CAME record creates an alias by mapping a name to another name. The error suggests a problem with a PT record.
+    >
+    > The team should not use a **TXT record**. TXT records contain information for sources outside of the main domain and are not related to reverse lookups.
+    >
+    > **Automatic Private IP Addressing (APIPA)** is a feature of Microsoft Windows operating systems. APIPA allows a computer to automatically assign an IP address when there is no DHCP server in the network. APIPA is not related to DNS records and zones.
+    >
+    > Creating a **static route entry** will not solve the problem. The problem is not related to the routing of packets. The team has to create a reverse DNS zone.
+
+28. A technician configures an access point as shown in the exhibit. He creates a list of MAC addresses to allow on the network using MAC filtering. The technician realizes that despite this configuration, any device can still connect. What should the technician do?<br>![](img/quiz-3.jpg)
+    > The MAC address filtering option has not been enabled. The technician can create a list of allowed MAC addresses, but he has to enable it globally for it to be used by the access point. 
+    > 
+    > MAC address filtering allows the technician to create a list of devices that are allowed to connect to the wireless network. Many reports suggest that it does not increase the security in the network, and it is rarely used in a production network. 
+    > 
+    > The technician should not change the method to Blacklisting. The technician wants to create a list of devices th to connect to the network. He should use a whitelist for that. 
+    >
+    > Changing the order of IDs will not fix the issue. The access point processes all IDs in the list, and the order is irrelevant. 
+    >
+    > The technician should not reboot the access point since this could cause a disruption to other authenticated users. The technician should enable the MAC filtering option.
+
+29. A company is replacing a portion of its wired LAN with a wireless LAN configured for Wi-Fi Protected Access I1 (WPA2). The company needs to use the most secure encryption protocol for WPA2. Which protocol should the company implement?
+    > **CCMP-AES**
+    > The Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP) with Advanced Encryption Standard (AES) is the default encryption protocol for Wi-Fi Protected Access II (WPA2). The standard requires mandatory use o CCMP-AES. Devices must support CCMP-AES to be certified as WPA2 devices. In addition to a high level of encryption, CCMP-AES supports data integrity and authentication.
+    >
+    > Temporal Key Integrity Protocol (KIP) with Rivest Cipher 4 (RC4) is supported by WPA2 devices and can be implemented in addition to CCMP-AES to provide backward compatibility for legacy devices. If it is not needed for legacy device support, you are not required to configure TKIP-RC4. TKIP-RC4 was the default encryption protocol for the earlier WPA standard.
+    >
+    > Extensible Authentication Protocol-Transport Layer Security (EAP-TLS) and EAP-Flexible Authentication via Secure Tunneling (EAP-FAST) are authentication protocols for initial client authentication, for when the client first connects to an access point, not encryption protocols for wireless broadcasts. Both are supported by WPA2 and provide for secure authentication.
+
+30. A company must implement additional monitoring and analysis to meet compliance requirements related to work done for new customers. The company needs a solution that can collect log, event, and other security information from a variety of sources and correlate and analyze the data to identify threats. It should provide for long-term storage of the data collected and be able to identify trending threats. What type of device solution should the company use?
+    > **SIEM**
+    > The company should implement a security information and event management (SIEM) device or service. SIEM solutions vary in the functionality that they provide but most, at minimum, meet the scenario requirements. SIEM devices can collect data from network devices directly or through the use of client agents. Data is accepted in different formats. They provide for both real- time monitoring and reporting as well as analysis over time. One of the most common reasons for implementing SIEM technologies is to assist with meeting compliance requirements.
+    >
+    > An **intrusion detection system (IDS)** does not meet the scenario requirements. There are two common versions of IDS system. A signature-based system is designed to identify potential threats based on software signatures. An anomaly-based system relies on unexpected or "odd" network activity as opposed to a baseline. An IDS does not collect log or event data and does not provide the type of analysis needed.
+    > 
+    > A **server log** does not meet the scenario requirements. A server log is a network collection device, but it is limited to log information only and supports limited data formats. Usually, it is also restricted to a limited set of devices. A server log is primarily for collection and storage and is not designed to perform detailed analysis.
+    > 
+    > **Simple Network Management Protocol (SNMP)** is a standard protocol for collecting information from network devices and sending configuration requests to devices. Data collection is limited to information such as device type, configuration parameters, device properties, and so forth. It does not perform the type of data collection, correlation, and analysis needed.
+
+31. 
