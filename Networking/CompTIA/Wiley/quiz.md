@@ -351,6 +351,7 @@
 <br>
 
 41. A company is setting up the wireless LAN (WLAN) shown in the answer area. The company must determine which antennas to use. The risk of intercepting the signal between the buildings must be minimized. Full coverage must be provided inside of each building. Which antennas should the company use? To answer, drag the appropriate antenna type to each access point. An antenna type may be used once, more than once, or not at all.
+    >
     > ![](img/quiz-4.png)
     > 
     > An antenna's gain is measured in relative decibels (dB) in relation to a standard antenna used for reference. Gain refers to the relative measure of an antenna's ability to direct a signal in a specific direction. The dBi value is commonly used, which is decibels measured relative to an isotopic reference antenna. An isotropic antenna is one that radiates equally in all directions. This helps determine the antenna's coverage area.
