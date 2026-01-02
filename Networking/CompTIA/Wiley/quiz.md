@@ -431,104 +431,108 @@
     
 <br>
 
-51. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+51. A company is changing its network design as shown in the exhibit. The company plans to deploy a web server and a honeypot in the DMZ. Which two documents does the company need to update?
+    > The company should update the logical and physical network diagrams. A logical network diagram shows network hierarchies, server roles, naming conventions, and so forth. A physical network diagram shows the servers and network devices on a network and their relative locations. The proposed changes impact both diagrams.
+    >
+    > The company should not update a rack diagram. A rack diagram does not apply in this scenario. A rack diagram is a two-dimensional representation of organization of equipment in a rack enclosure.
+    >
+    > Standard operating procedure (SOP) does not apply in this scenario. An SOP is step-by-step instructions to help workers complete a complex task.
+    >
+    > A change management document does not apply in this scenario. A change management document gives the guidelines for proposing, implementing, and tracking changes to the network. 
+    
 <br>
 
-52. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+52. A company deploys a server on its perimeter network. The server will be used for transferring files. Specific requirements include:<br>- Users authenticate with a user ID and password.<br>- - All communication between the server and client is encrypted.<br>- Open ports on the perimeter firewall are kept to a minimum.<br>- No certificate is required at the server or client.<br>What should the company select as a solution?
+
+    > **SFTP**<br>The company should select FTP over SSH (SFTP) as its file transfer method. SFTP uses the secure shell (SSH) protocol for authentication and data security. SFTP supports simple authentication based on user ID and password but can optionally be implemented using certificate-based authentication if greater security is required. All communication between the server and client is encrypted, including the user ID and password used for authentication. SFTP uses a single port, port 22, on both the client and server.
+    >
+    > FTP over SSL (FTPS) is another secure transfer option, but there are some significant differences between FTPS and SFTP. FTPS can be configured for authentication through user ID and password, but connecting with a server through FTPS requires a server certificate for SSL authentication. Also, FTPS requires multiple ports. By default, you must open either port 21 or 990 as the command and control port and identify a range of data ports, typically 2000 through 2500.
+    >
+    > FTP and Trivial FTP (TFTP) are not secure transfer options. FTP can be configured to require user ID and password, but this information is passed in clear text. TFTP is used when less command and control is required and is often referred to as a lightweight protocol, meaning it has minimal overhead. FTP requires ports 20 and 21. TFTP uses port 69.
+    
 <br>
 
-53. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+53. Users report that they have lost access to a network shared drive. They open a new help ticket and expect a quick resolution to the problem. What should a technician do next?
+    > **Gather more information from users**<br>The technician should gather more information from users. Even if a ticket has a higher priority, the technician should follow the network troubleshooting methodology. The first step recommends questioning users and collecting information about the problem. The issue has not been described in detail and requires more information. At this stage, the technician could try and recreate the problem. Then, the technician should establish and test a theory of probable cause and establish a plan of action. They could then escalate the issue to another department at this stage. Finally, the technician can implement the solution, verify all systems, and document their findings.
+    
 <br>
 
-54. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+54. A company runs call center services with 25 agents. Agents report that their softphones have random quality issues. Which performance parameter should be verified in the network?
+    > **Maximum of 150 ms of delay**
+    > The company should verify the delay parameter. The recommended design recommendations for Voice over IP (VoIP) are:
+    >   - No more than 150 ms one-way end-to-end delay
+    >   - No more than 1% of packet loss
+    >   - No more than 30 ms of jitter
+    > Users will notice quality issues if any of these parameters is not met. A network administrator could also verify the Quality of Service (QoS) settings to make sure that the VoiP traffic is isolated and receives the highest priority.
+    >
+    > The maximum packet loss value should be kept below 1%, not 10% for a quality VoIP call.
+    >
+    > The available bandwidth is not a key factor for most VoiP networks and depends on the number of concurrent calls, codecs in use, and QoS settings. On average, the company should provide at least 10 Mbps for 100 phone lines. It is It more important to verify the delay, packet loss, and jitter values, which may affect the quality of calls.
+    >
+    > The frame size of 9k is not required to provide the highest quality of VoiP network. A standard frame supports up to 1500 bytes, but a network administrator can enable jumbo frames to support up to 9000 bytes of data. Jumbo frames can improve network performance but can increase the packet loss. It is not a recommended setting to improve the quality of a VoiP network.
+    
 <br>
 
-55. 
+55. Which two attack types are examples of social engineering attacks?
+    > Phishing and tailgating are examples of social engineering attacks. Phishing attacks use deceptive emails to try to collect sensitive or personal information. Users can be trained to recognize phishing attempts and the actions to take when they occur. This can be enhanced through technical controls, such as email filtering. Tailgating is a physical attack in which someone enters a secure area simply by following someone who is authorized to enter into the area
     > 
+    > A man-in-the-middle attack is not a type of social engineering attack. In this type of attack, the attacker enters the communication path between two computers, usually a client and a server, and collects the data passed between the computers.
     > 
+    > A spoofing attack is not considered a type of social engineering attack. In a spoofing attack, the attacker's computer masquerades as a valid network client by using its IP address and, in some cases, its Media Access Control (MAC) address. For example, an attacker can connect to a port protected by MAC filtering by spoofing a valid MAC address. It should be noted that social engineering might be one of the methods used to gather information that is used to launch a spoofing attack.
     > 
-    > 
-    > 
-    > 
-    > 
+    > A logic bomb is not a type of social engineering attack. A logic bomb is malicious code left in an application that executes when specific conditions are met. The form that the attack takes and the impact of the attack when it executes vary depending on the programmer's goals. Because custom code is used, logic bombs usually go undetected by antimalware software. In some cases, a logic bomb is the result of an insider threat, left behind by a disgruntled employee.
 <br>
 
-56. 
+56. Users complain about intermittent connection issues with a file server. A junior technician has gathered all information and determined that no changes have been made in the network. What should the technician do next?
+    > **Use the OSI model to establish a theory of probable cause**
+    > The technician should use the Open Systems Interconnection (SI) model to establish a theory of probable cause. There are steps in the Structured Troubleshooting Methodology. The technician has completed Step 1 by questioning all users and checking whether anything has been changed in the network. Step 2 requires brainstorming ideas to establish a theory of probable cause.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > Here is the seven-step methodology:
+    >   - Identify the problem
+    >   - Establish a theory of probable cause
+    >   - Test the theory to determine the cause
+    >   - Establish a plan of action to resolve the problem and identify potential effects
+    >   - Implement the solution or escalate as necessary
+    >   - Verify full system functionality and, if applicable, implement preventative measures
+    >   - Document findings, actions, and outcomes
+     
 <br>
 
-57. 
+57. A large organization has offices in several locations around the world. Each geographic location has primary responsibility for its network administration and management. The company wants to ensure consistent instructions and management throughout the company. What should the company use to help ensure this?
+    > **Standard Operating Procedure (SOP)**<br>The company should implement standard operating procedures (SOP) to help ensure consistent management throughout all locations. An SOP identifies step-by-step instructions to help workers complete a complex periodic or repeated task. This will ensure that administrators are taking the same actions in the same way throughout the company.
     > 
+    > The company should not use **change management** in this scenario. Change management deals with the guidelines for proposing, implementing, and tracking changes to the network. Documented change management is useful in tracking some activities but does not provide guidelines for how to perform the activities.
     > 
+    > Network configuration baselines do not apply in this situation. These refer to initial network configuration rather than ongoing management activities.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The company should not use an acceptable use policy (AUP) to ensure consistent management. An AUP provides guidelines for the appropriate use of company resources. For example, an AUP might specify that company computers cannot be used to download games or entertainment content from the Internet.
+    >
+    > The company should not use a service level agreement (SLA) to ensure consistent management. An SLA is an agreement between an organization and its customers that defines minimum expectations for services provided. This includes issues such as maximum downtime and service availability.
 <br>
 
-58. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+58. A technician has established a plan of action to resolve a problem on a network switch. The solution has been tested in a lab environment, and the technician has a list of commands to execute. After logging into the device, the technician realizes that the TACACS server blocks the commands they have to implement. What should the technician do?
+    > **Assign the task to another person or department.**<br>If the technician has insufficient admin rights, the Structured Troubleshooting Methodology model recommends escalating the issue. After establishing a plan of action, the solution should be implemented. If the technician does not have access to a system r has insufficient admin rights, the issue should be escalated to the appropriate person or department for implementation.
+    
 <br>
 
-59. 
+59. What is the role of an MIB when implementing SNMP for network management?
+    > **It is a collection of manageable device definitions that identifies device property information.**<br>A management information base (MIB) is a database of device definitions. The MIB contains information about device properties necessary for device management. Simple Network Management Protocol (SNMP) uses the MIB for device-specific management information. MB files are available for various sources, including device manufacturers, to facilitate network management.
     > 
+    > The device configured to collect device information and issue command requests is known as the Network management station (NMS). The NMS uses GetRequest messages to retrieve information from managed devices and SetRequest messages to issue changes to properties and variables to manage devices.
     > 
+    > The software installed on managed devices is known as the SNMP agent. For many devices, the SNMP agent is installed by default.
     > 
-    > 
-    > 
-    > 
-    > 
+    > Transport Security Model (TSM) provides the method for authentication and encryption of messages used for device management. The TSM specification supports SSH and TLS for encrypted communication.
 <br>
 
-60. 
+60. Users report that messages about duplicate IP addresses keep displaying on their computers.<br>What should technicians suspect as a cause?
+    > **Rogue DHCP server**<br>The likely problem is a rogue DHCP server with a duplicate scope or duplicate addresses within its defined scopes. When a device requests to lease an IP address, any DHCP server with a valid available IP address will respond to the request. If a rogue DHCP server has duplicate addresses available, it can result in duplicate IP address assignments.
     > 
+    > The problem is not an exhausted IP address scope. A device will configure itself with an Automatic Private IP Addressing (APIPA) address if it is unable to lease an address due to an exhausted scope.
     > 
+    > IP address assignment is not related to name resolution. A name resolution error would not result in duplicate IP address assignment.
     > 
-    > 
-    > 
-    > 
-    > 
+    > Host firewall settings can control the data into or out of a host computer. Host firewall settings could prevent a device from being a able to lease an address from a DHCP server but would not cause duplicate IP addresses.
 <br>
 
 61. 
@@ -961,7 +965,7 @@
     > 
 <br>
 
-104. 
+1.   
     > 
     > 
     > 
@@ -971,7 +975,7 @@
     > 
 <br>
 
-105. 
+1.   
     > 
     > 
     > 
@@ -981,7 +985,7 @@
     > 
 <br>
 
-106. 
+1.   
     > 
     > 
     > 
@@ -991,7 +995,7 @@
     > 
 <br>
 
-107. 
+1.   
     > 
     > 
     > 
@@ -1001,7 +1005,7 @@
     > 
 <br>
 
-108. 
+1.   
     > 
     > 
     > 
@@ -1011,7 +1015,7 @@
     > 
 <br>
 
-109. 
+1.   
     > 
     > 
     > 
@@ -1021,7 +1025,7 @@
     > 
 <br>
 
-110. 
+1.   
     > 
     > 
     > 
@@ -1031,7 +1035,7 @@
     > 
 <br>
 
-111. 
+1.   
     > 
     > 
     > 
@@ -1041,7 +1045,7 @@
     > 
 <br>
 
-112. 
+1.   
     > 
     > 
     > 
@@ -1051,7 +1055,7 @@
     > 
 <br>
 
-113. 
+1.   
     > 
     > 
     > 
@@ -1061,7 +1065,7 @@
     > 
 <br>
 
-114. 
+1.   
     > 
     > 
     > 
@@ -1071,7 +1075,7 @@
     > 
 <br>
 
-115. 
+1.   
     > 
     > 
     > 
@@ -1081,7 +1085,7 @@
     > 
 <br>
 
-116. 
+1.   
     > 
     > 
     > 
@@ -1091,7 +1095,7 @@
     > 
 <br>
 
-117. 
+1.   
     > 
     > 
     > 
@@ -1101,7 +1105,7 @@
     > 
 <br>
 
-118. 
+1.   
     > 
     > 
     > 
@@ -1111,7 +1115,7 @@
     > 
 <br>
 
-119. 
+1.   
     > 
     > 
     > 
@@ -1121,7 +1125,7 @@
     > 
 <br>
 
-120. 
+1.   
     > 
     > 
     > 
@@ -1131,7 +1135,7 @@
     > 
 <br>
 
-121. 
+1.   
     > 
     > 
     > 
@@ -1141,7 +1145,7 @@
     > 
 <br>
 
-122. 
+1.   
     > 
     > 
     > 
@@ -1151,7 +1155,7 @@
     > 
 <br>
 
-123. 
+1.   
     > 
     > 
     > 
@@ -1161,7 +1165,7 @@
     > 
 <br>
 
-124. 
+1.   
     > 
     > 
     > 
@@ -1171,7 +1175,7 @@
     > 
 <br>
 
-125. 
+1.   
     > 
     > 
     > 
@@ -1181,7 +1185,7 @@
     > 
 <br>
 
-126. 
+1.   
     > 
     > 
     > 
@@ -1191,7 +1195,7 @@
     > 
 <br>
 
-127. 
+1.   
     > 
     > 
     > 
@@ -1201,7 +1205,7 @@
     > 
 <br>
 
-128. 
+1.   
     > 
     > 
     > 
@@ -1211,7 +1215,7 @@
     > 
 <br>
 
-129. 
+1.   
     > 
     > 
     > 
@@ -1221,7 +1225,7 @@
     > 
 <br>
 
-130. 
+1.   
     > 
     > 
     > 
@@ -1231,7 +1235,7 @@
     > 
 <br>
 
-131. 
+1.   
     > 
     > 
     > 
@@ -1241,7 +1245,7 @@
     > 
 <br>
 
-132. 
+1.   
     > 
     > 
     > 
@@ -1251,7 +1255,7 @@
     > 
 <br>
 
-133. 
+1.   
     > 
     > 
     > 
@@ -1261,7 +1265,7 @@
     > 
 <br>
 
-134. 
+1.   
     > 
     > 
     > 
