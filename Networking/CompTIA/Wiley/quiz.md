@@ -535,104 +535,116 @@
     > Host firewall settings can control the data into or out of a host computer. Host firewall settings could prevent a device from being a able to lease an address from a DHCP server but would not cause duplicate IP addresses.
 <br>
 
-61. 
+61. A company has offices on several floors of a building. All connections to external public lines come in through a central area and are routed to distribution points on each floor. The distribution points on each floor connect to the internal network. Where is the cabling and equipment for the central area documented in detail?
+    > **MDF documentation**<br>The area described is referred to as the main distribution frame (MDF). This is a cable rack with the external telecommunication wiring. This is documented in the MDF documentation.
     > 
+    > The distribution points on each floor are intermediate distribution frames (IDFs). This is where the connection is made between the MDF and the internal network and is documented in the IDF documentation.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > This does not describe a logical or physical network diagram. A logical network diagram shows network hierarchies, server roles, naming conventions, and so forth. A physical network diagram shows the servers and network devices on a network and their relative locations. Neither provides the detailed documentation described.
+    
 <br>
 
-62. 
+62. A medium-sized company is moving into a new office space. The office is being prewired with Cat 6 cabling. Employees will be moving their own equipment and will need to connect into the network. Technical Services wants to help ensure that the move goes as smoothly as possible. What should Technical Services use to ensure this?
+    > **Labeling**<br>Technical Services should use labeling to help ensure that the move goes smoothly. Each cable should be clearly labeled as to the device that should be connected at that point. This will enable employees with little or no technical experience to connect their own devices.
     > 
+    > Technical Services should not prepare logical or physical network diagram for this purpose, although both are recommended as ways to document the network. A logical network diagram shows network hierarchies, server roles, naming conventions, and so forth. A physical network diagram shows the servers and network devices on a network and their relative locations. Neither has the information that employees would need to correctly connect their devices.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > Technical Services should not provide work instructions. Work instructions provide the information needed to perform a task. It would not include information about cable and device locations.
+    
 <br>
 
-63. 
+63. One of a company's office areas is shown in the exhibit. The shaded area shows where devices can get a reliable connection with the access point (AP). Devices in the unshaded area are either unable to connect to the AP or have a weak connection. The company plans to deploy a wireless range extender. The possible locations (A, B, C and D) are shown in the answer area. Where should the company deploy the wireless range extender? Click to indicate the BEST location for the device.<br>![](img/quiz-5.jpeg)
+    > **Location B**<br>The wireless range extender should be deployed at location B. The device acts as a wireless repeater, rebroadcasting the signals it receives. The device must be in the broadcast range of the AP and as close as possible to the devices it needs to connect to. this scenario, B is the location that better fulfills these requirements.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The wireless range extender should not be deployed at location A or D. Because these locations are so near the AP, it would provide little, if any, improvement.
+    >
+    > The wireless range extender should not be deployed at location C or E. These locations are outside of the broadcast range of the AP and would do nothing to improve support for the devices.
+    
 <br>
 
-64. 
+64. Which network device uses ASICs to handle the packet switching for inter-VLAN communication?
+    > **L3 switch**<br>An L3 switch uses an application-specific integrated circuit (ASIC) to perform packet-switching operations. Routers and firewalls perform routing in software. The Network layer (Layer 3) is responsible for addressing, packet-forwarding, and routing services. The Data Link layer (Layer 2) encapsulates packets into network frames and works with physical addresses (MAC addresses) in a local area network (LAN). Switches can work at layer 2 and layer 3 at the same time to provide efficient inter- VLAN routing.
     > 
+    > Virtual Local Area Networks (VLANs) are logical subnetworks that can be created on a switch. A Layer 3 device (for example a router, L3 switch, or firewall) is required for inter-vlan communication. By default, all traffic between VLANs will be allowed. A network administrator can create an access control list (ACL) to deny data flows.
     > 
+    > An L2 switch works at the Data Link Layer of the OS model (Layer 2) and does not offer routing capabilities.
     > 
-    > 
-    > 
-    > 
-    > 
+    > L4 routers and firewalls offer inter-VLAN routing, but they do not use ASICs to handle the packet switching.
 <br>
 
-65. 
+65. A consultant is helping set up an office in a remote rural area. The office needs a high bandwidth WAN link with the main office, which is located several hundred miles away. Which type of transmission medium should the consultant recommend?
+    > **Satellite**<br>The consultant should recommend using a satellite link to create a satellite-based WAN connection. This s likely the only high bandwidth option available in a rural area. This solution would require the installation of a dish for sending and receiving data at the remote office. One potential concern with satellite internet is latency, due to signal delays because of the distances traveled.
     > 
+    > Copper and fiber optic are not realistic options in this scenario, even though they are higher bandwidth solutions than satellite WAN. The options that a remote office is likely to use, either cable modem or telephone company DSL, would not be available in a remote rural area.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > Cellular-based wireless WAN is not a good option in this scenario. Cellular coverage has expanded but is still not available in all areas. Even if it is available, this option provides limited bandwidth.
 <br>
 
-66. 
+66. A company is configuring an internal network with routed subnets based on the following class B address range:<br><br>172.30.8.0/21<br><br>The company wants to set up the following subnets:<br>- Network A - 600 hosts<br>- Network B - 100 hosts<br>- Network C - 56 hosts<br>- Network D - 40 hosts<br><br>The company wants to keep the unused addresses in each subnet to a minimum. Which network address ranges should the company use?
+    > The base address, 172.30.8.0/21, supports up to 2046 host addresses with an address range of 172.30.8.1 through 172.30.15.254. You should use the following subnets:
+    >   - Network A: 172.30.8.0/22
+    >   - Network B: 172.30.12.0/25
+    >   - Network C: 172.30.12.128/26
+    >   - Network D: 172.30.12.192/26
+    >
+    > This is an example of Classless Inter-Domain Routing (CIDR), or supernetting, using variable length subnet masks (VLSMs) to configure subnets of various sizes. Network A supports up to 1022 hosts. Network B supports up to 126 hosts. Networks C and D support up to 62 hosts each. The host address ranges are:
+    >   - Network A: 172.30.8.1 through 172.30.11.254
+    >   - Network B: 172.30.12.1 through 172.30.12.126
+    >   - Network C: 172.30.12.129 through 172.30.12.190
+    >   - Network D: 172.30.12.193 through 172.30.12.254
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The company should not use the following:
+    >   - Network A: 172.30.8.0/22
+    >   - Network B: 172.30.10.0/25
+    >   - Network C: 172.30.10.128/26
+    >   - Network D: 172.30.10.192/26
+    >
+    > This would not work because the address ranges for Network B, Network C, and Network D all overlap with Network A.
+    
 <br>
 
-67. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+67. A server on the internal network is determined to be at risk for potential attack. The Technical Services team is directed to harden the server to minimize this risk. The network supports wired and wireless access. The server is connected through a wired connection. The computer is backed up to a network location once a week, over the weekend. The computer is rebooted after the backup. Which two actions should hardening include?
+    > Actions the company can take to harden the server include bringing patches and other updates up-to-date and disabling unused ports. Patching the server helps to close any known vulnerabilities. Disabling ports reduces the access footprint of the server so that there are fewer potential attack paths. Other actions that could be taken include:
+    >   - Update firmware, if it is out-of-date
+    >   - Strengthen passwords
+    >   - Change credentials on any default accounts
+    >   - Use secure protocols for communication
+    >   - Disable unnecessary services
+    >
+    > The company should not limit itself to stopping unnecessary services rather than disabling them. Stopping a service does not change how startup is configured. If the service is configured to start automatically, it will start again the next time the server is restarted.
+    >
+    > The company should not treat backups as device hardening. Backups are important and can be key to data recovery after an attack or data loss but do not do anything to prevent attacks directed at the server.
+    >
+    > The company should not add wireless access. This makes the server more susceptible to attacks because it opens an additional communication path. Also, wireless communication is sometimes less secure than wired connections, depending on how it is configured.
+    
 <br>
 
-68. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+68. An office is configured with APs as shown in the exhibit. The office was originally configured with AP1 only, but the users farthest from the AP had problems connecting. There were also intermittent problems with bandwidth saturation. After installing AP2, users near the center of the office have trouble connecting and communicating and are experiencing latency problems. What should technicians do to correct the problem? <br>![](img/quiz-6.jpeg)
+    > **Change AP2 to channel 6**<br>Technicians should change AP2 to channel 6. The problem is that the channels used by AP1 and AP2 overlap and are interfering with each other. Reconfiguring AP2 for channel 6 or higher would prevent the overlap and correct the problem.
+    >
+    > Technicians should not change AP1 to channel 3. This would increase the interference between the APs and make the problem
+    >
+    > Technicians should not change the SSID for AP2 to OfficeAP2. This would do nothing to correct the problem. There is no problem with both APs having the same SSID as long as they are part of the same network.
+    >
+    > Technicians should not move both APs to the center of the room. The would increase the amount of overlap because of the close proximity and would probably make the problem worse.
+    >
+    > Technicians should not uninstall AP2 and move AP1 to the center of the room. This would resolve the problem with interference but users would still experience problems with bandwidth saturation (overcapacity).
+    
 <br>
 
-69. 
+69. Which protocol provides time synchronization service over the global Internet?
+    > **NTP**<br>Network Time Protocol (NTP) is a clock synchronization protocol that provides synchronization services over the internet. Time synchronization is based on Coordinated Universal Time (UTC) and is designed to allow no more than a few milliseconds variance between computers subscribing to the service.
     > 
+    > IPAM<br>IP address management (IPAM) is not related to time synchronization. IPAM supports tracking and information associated with a network's IP address space. It can provide detailed information such as subnets in use, free IP address space, and host names associated with IP addresses.
     > 
+    > SNMP<br>Simple Network Management Protocol (SNMP) is used to monitor and manage network devices. It is not a time synchronization service. SNMP lets you collect information about network devices in a multivendor environment and issue configuration commands.
     > 
-    > 
-    > 
-    > 
-    > 
+    > ICMP<br>Internet Control Message Protocol (ICMP) is not a time synchronization protocol. It is a messaging protocol used for error reporting, troubleshooting, and diagnostics. ICMP is used by various commands, such as ping and tracert (traceroute), and it can also be used by the map command when attempting to map a network.
 <br>
 
-70. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+70. A company is developing several web applications. The company does not have the hardware resources to support the development and does not want to incur the expense of additional hardware. The company wants to use its own development application and data, but it wants hardware, operating system and storage management to be the responsibility of a third-party provider. Which type of service does this describe?
+    > **PaaS**
+    
 <br>
 
 71. 
