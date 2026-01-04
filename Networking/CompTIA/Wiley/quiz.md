@@ -647,54 +647,47 @@
     
 <br>
 
-71. 
+71. In-house technicians plan to emulate a penetration attempt. They want to see if they can learn what services are running on network. What should they use?
+    > **Port scanning**<br>The technicians should use port scanning. A port scanner attempts to connect to ports on a computer and determine which ports are open. Most services have well-known ports associated with them. By identifying the ports that are open on a computer, you can get some idea of the services configured on that computer. This information can be used to identify the services running on a server. This is a relatively passive activity and can often go undetected. A port scanner can be used for both valid network management and malicious purposes. You could use a port scanner to look for services installed and configured on a computer, but it can also be used to identify vulnerabilities in preparation for hacking into a network.
     > 
+    > Technicians should not use vulnerability scanning. This looks for known vulnerabilities, but it does not necessarily report all services running on a server.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > Technicians should not use packet or traffic analysis. These terms are often used interchangeably because the same utilities are frequently used for both purposes. This is the process of capturing and storing network traffic for analysis. You can analyze traffic patterns for potential anomalies and look at packet content in detail.
+     
 <br>
 
-72. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+72. A company contracts with a cloud provider. The cloud provider is responsible for virtualized hardware, storage, and network support. The company is responsible for installing, licensing, and maintaining the operating system and server applications. Which type of service does this describe?
+    > **IaaS**
+    
 <br>
 
-73. 
+73. A network administrator has been tasked with deploying a new wireless LAN controller. Which protocol is recommended for integrity checking and encryption?
+    > **AES-based CCMP**<br>The network administrator should use the Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP) with Advanced Encryption Standard (AES). Wi-Fi Protected Access II (WPA2) is a recommended protocol for wireless communications, sometimes referred to as WPA2-CCMP/AES. WPA2 is backwards compatible and supports Temporal Key Integrity Protocol (TIP). Wireless Lan Controllers (WLC) manage and configure wireless access points.
     > 
+    > TKIP should not be used to secure a wireless network. TKIP is a legacy protocol that is vulnerable to a number of attacks. The network administrator should use CCMP/AES instead.
     > 
+    > Internet Protocol Security (IPsec) is used to protect VPN traffic, not wireless networks. IPsec is an umbrella of protocols that can be deployed to secure remote and site-to-site tunnels.
     > 
-    > 
-    > 
-    > 
-    > 
+    > Transport Layer Security (TLS) is not a recommended protocol here. TLS allows a client and a server to establish an encrypted connection over a public network using certificates.
+    >
+    > The Secure Hash Algorithm (SHA) is not used to protect wireless networks. SHA could be implemented to verify the integrity of a file or VPN traffic.
 <br>
 
-74. 
+74. A company deploys a host as shown in the exhibit. The host needs to be configured with a static address. What values should be used to configure the host? To answer, drag the appropriate value to each configuration parameter. A value may be used once, more than once, or not at all.
+    > ![](img/quiz-7.png)
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The address 192.168.4.57 is a valid host address on the 192.168.4.0/26 subnet. Valid addresses range from 192.168.4.1 through 192.168.4.62. A subnet mask of 255.255.255.192 is equivalent to a Classless Inter-Domain Routing (CIDR) value of /26. The default gateway is the router interface facing the subnet, which is 192.168.4.1 in this scenario.
+    
 <br>
 
-75. 
+75. A company's wireless LAN is configured with three access points configured as follows: <br><br>AP1:<br>- SSID: CompAP<br>- Channel: 1<br>- Security: WPA2-PSK<br><br>AP2:<br>- SSID: CompAP<br>- Channel: 6<br>- Security: WPA2-PSK<br><br>AP3:<br>- SSID: CompAP<br>- Channel: 11<br>- Security: WPA2-PSK<br><br>A user is moved to a cubicle in a different part of the office building. The user is prompted for a passphrase when attempting to connect to any wireless device to the network.<br><br>Why is this happening?
+    > **The user is connecting to an AP with a different passphrase.**<br>The most likely problem is that the user is connecting to an AP with a different passphrase. WPA2-PSK uses a passcode or passphrase for authentication when a device connects. The user's devices are attempting to connect to an AP. After a user successfully connects, it persists the passphrase used. If the passphrase is changed or if the user attempts to connect to an AP with a different passphrase, the user is prompted for the passphrase.
     > 
+    > The problem is not that the AP is operating on a different channel. The client will reconfigure itself automatically to match the AP's channel.
     > 
+    > The problem is not that the client device is outside of the range of any AP. If the devices were out of range, the user would not be prompted for connection information.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The problem is not related to MAC filtering. If the client were being blocked by MAC filtering, it would not prompt for authentication information.
 <br>
 
 76. 
