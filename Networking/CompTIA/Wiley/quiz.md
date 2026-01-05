@@ -690,54 +690,42 @@
     > The problem is not related to MAC filtering. If the client were being blocked by MAC filtering, it would not prompt for authentication information.
 <br>
 
-76. 
+76. Which policy sets guidelines for allowing employees to use their own personal devices for work-related tasks?
+    > **BYOD**<br>A bring your own device (BYOD) policy sets guidelines for allowing employees to use their own personal devices for work-related tasks. The specific content of a BYOD varies by organization depending on its needs, security concerns, and network support for devices. Where possible, policies are typically enforced through network configurations and settings, such as Active Directory Domain Services (AD DS) Group Policy.
     > 
+    > An acceptable use policy (AUP) defines allowed and appropriate use of company data, software, and computers. For example, an AUP might state that users are not authorized to install games on company computers.
     > 
+    > A non-disclosure agreement (NDA) is confidentiality agreement. It is a legally binding contract between two or more entities, such as between a company and an employee, designed to protect proprietary information and trade secrets.
     > 
-    > 
-    > 
-    > 
-    > 
+    > A service-level agreement (SLA) defines levels of service provided by a customer to its customers. For example, an SLA could define items such as performance metrics and guaranteed availability.
 <br>
 
-77. 
+77. A small company subscribes to a popular productivity application suite. All employees access the applications through a web browser interface. Employees store their data locally on their own computers.<br>Which cloud delivery model does this describe?
+    > **Public**<br>This is an example of a public cloud. Multiple users and organizations have access to applications or other services through a subscription agreement. This is essentially a shared software model. Subscribers have minimal control over the application, such as personal preference settings and data storage locations. Many public cloud applications also provide storage support ir addition to other application infrastructure.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > This is not an example of a hybrid cloud. A hybrid cloud combines cloud-based and on-premises service and resources. This could be, for example, a cloud-based application that uses secure on-premises data with a secure communication channel between the two.
+    
 <br>
 
-78. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+78. Which mechanism monitors and manages virtual machine instances?
+    > **Hypervisor**<br>A hypervisor manages virtual machine instances and is called a Virtual Machine Monitor (VMM). A hypervisor allows an administrator to deploy multiple virtual machines and control all virtualized hardware resources. There are two types of hypervisors: type 1 (bare-metal) and type 2 (hosted).
+    
 <br>
 
-79. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+79. A company is preparing to deploy a wireless LAN (WLAN) in a newly constructed office space. The network design specifies the minimum channel bandwidth requirement as 80 MHz. <br>Which standard should the access points support?
+    > **802.11ac**<br>Access points used in the deployment should support the 802.11ac standard. 802.11ac supports an 80 MHz channel configuration. 802.11ac and 802.11ax support bandwidth configurations for 20 MHz, 40 MHz, 80 MHz, and 160 MHz.
+    
 <br>
 
-80. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+80. Which two items would be specified as part of an SLA? (Choose two.)
+    > A service level agreement (SLA) is an agreement between a service provider and its customers that defines performance standards that the provider is required to meet. Typical items in an SLA include:
+    >   - Availability and uptime
+    >   - Help desk response time
+    >   - Performance benchmarks
+    >   - Application response time
+    >
+    > It will also identify what usage statistics will be provided to the customer.
+
 <br>
 
 81. 
