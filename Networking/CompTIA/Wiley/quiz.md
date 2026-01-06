@@ -728,8 +728,70 @@
 
 <br>
 
-81. 
+81. The support team has been tasked with creating an alias name for a newly deployed server. What should the team do? To answer, complete the statement by choosing the correct answers from the drop-down menus.
+    > The team should connect to a Domain Name System (DNS) server and configure a Canonical Name (CNAME) record. DNS is a service that translates domain names into IP addresses. There are multiple records in use. One of them is NAME, which allows the team to create an alias for an existing entry.
+
+<br>
+
+82. A company routes Cat 5e UTP cabling through a part of its manufacturing floor that generates a great deal of Electromagnetic interference (EMI). The cables are routed loosely through the ceiling, about 3 meters above the equipment. Computers connected to the cabling experience communication errors any time the equipment is running. The company needs a reliable, cost-effective solution. Management will not authorize converting to fiber optic cabling. What should the company do?
+    > **Replace the Cat 5e UTP cable with Cat 5e STP cable.**<br>The company should replace the Cat 5e unshielded twisted pair (UTP) cable with Cat 5e shielded twisted pair (STP) cable. Electromagnetic interference (EMI) can come from several sources, such as compressors, cutting equipment, and other manufacturing equipment. EMI can induce stray signals in UTP cabling, degrading communication. The preferred solution is usually to avoid EMI sources. Otherwise, STP cable should be used to block the EMI
     > 
+    > The company should not use Cat 6 UTP. Cat 6 cable is an improvement over Cat 5e cable, supporting higher data rates and making crosstalk less likely, but it is still susceptible to EMI.
+    >
+    > You should not route the cable through the existing power conduit. This can cause excessive voltages to be induced on the data cable, which can result in equipment damage.
+    > 
+    > You should not route the cable along the floor. This will not fix the problem and, since the cable would be closer to the equipment, could make the problem worse. It would also make the cable susceptible to physical damage.
+    
+<br>
+
+83. Which layer of the OSI model are web browsers and email clients implemented at?
+    > **Layer 7**<br>Web browsers and email clients are implemented at Layer 7, the Application layer, of the OS model. This includes the protocols supporting these functions, including HTTP, HTTPS, POP3, and SMTP. High-level functions are implemented at this layer, such as remote file and printer access, resource sharing, and virtual terminals. 
+    >
+    > Layer 6 is the Presentation layer. The Presentation layer handles character code translation, such as EBCDIC to ASCII, data compression, and data encryption.
+    
+<br>
+
+84. A user complains about the transfer rates from a server VLAN 4. A network administrator connects to a switch and receives the output shown in the exhebit. Which parameter is MOST likely misconfigured on the switch? <br>![](img/quiz-8.jpeg)
+    > **Duplex**<br>The duplex settings should be verified. The exhibit shows an output from a switch representing port status. There is only one active port in VLAN 4 - Port 5. The exhibit shows that the negotiated mode is 100HDx, which means 100 Mbps and half-duplex. Half-duplex indicates that frames can be transmitted in both directions, but not at the same time, which will heavily impact the performance of the network. The network administrator might also encounter a situation called a duplex mismatch error, where he side uses half-duplex and the other side uses full-duplex.
+    > 
+    > The speed setting is not a problem here. The exhibit shows that all ports use 100 Mbps.
+    > 
+    > The flow control will not fix the issue. Flow control could be enabled for high-performance servers that require loss-sensitive protocols.
+    >
+    > The medium dependent interface (MDI) setting is not the issue here. The Auto MD mode is used to identify and correct cabling issues such as using a straight through cable instead of a crossover cable.
+    
+<br>
+
+85. Which device should a company use to configure a new area within OSPF?
+    > **Router**<br>The company should use a router to configure a new area in Open Shortest Path First (OSPF). OSPF is a link-state routing protocol and uses areas to group routers. The company could configure OSPF on a router to enable a dynamic exchange of routing tables and achieve fast convergence times.
+    > 
+    > The company should not use a Layer 2 (L2) switch. L2 switches work at the Data Link layer and do not support routing.
+    > 
+    > An Intrusion Prevention Systems (IPS) and an Intrusion Detection Systems (IDS) do not support OSPF. The company could use an IPS or IDS to protect the network against malicious activity. An IDS is a passive device that can identify a network attack, while an IPS can identify and stop a threat.
+
+<br>
+
+86. A company has configured some services and applications using a PaaS platform. The network team wants to create a secure connection from an onsite router to the new platform. Which of the following would be the BEST protocol to implement?
+    > **IPSec**<br>The network team should use Internet Protocol Security (IPsec). IPsec is an umbrella of protocols that the team can use to create a site-to-site virtual private network (VPN) between an on-site router and the Platform as a Service (PaaS) platform.
+    > 
+    > Point-to-Point Tunneling Protocol (PPTP) should not be used because it has proven vulnerabilities. PPTP used to be deployed as a remote-access VPN solution. The team should use IPsec instead.
+    >
+    > Transport Layer Security (TLS) is not an optimal choice here. The team has to create a site-to-site VPN tunnel. There are no industry standards for site-to-site tunnels based on TLS/SSL. The team could use TLS to provide remote access VPN with certificates. IPsec is a better choice here. The company could use TLS to create a web portal for remote users and provide access to internal resources.
+    >
+    > Layer 2 Tunneling Protocol (L2TP) should not be used in this scenario, as it does not offer any encryption. L2TP can be combined with IPsec to provide a secure connection. L2TP/IPsec is a popular solution for remote access VPN.
+    
+<br>
+
+87. What are two main differences between a hub and a switch?
+    > Hubs are obsolete devices that work at the physical layer of the OSI model (Layer 1). When a frame arrives at a hub, it performs frame flooding. All the ports of a hub form a single collision domain.
+    >
+    > A switch works at the Data Link layer of the OSI model (Layer 2) and works with MAC addresses to identify a network device in the network. MAC addresses are stored in a Content Addressable Memory (CAM) table. When a new frame arrives at a switch, it is identified and kept in the CAM table for a short period of time. Hubs do not work with MAC addresses. They flood all frames to all ports. 
+    >
+    > Hubs are not limited to four ports. There are hubs with 8, 16, and more ports.
+    >
+    > Hubs do not unicast packets. Hubs broadcast all messages and have no control over traffic. Switches work with MAC addresses and can unicast packets.
+    >
+    > Hubs are Layer 1 devices and cannot be managed using a web browser. Switches, on the other hand, can be accessed using the command-line interface, SNMP, and HTTP/HTTPS. Switches offer a lot of security features, such as DHCP snooping, ARP inspection, and port security.
     > 
     > 
     > 
@@ -738,94 +800,40 @@
     > 
 <br>
 
-82. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+88. What is the last step in a systematic troubleshooting methodology?
+    > A systematic troubleshooting methodology typically includes the following steps:
+    >   - Identify the problem (gather information, duplicate the problem if possible, question users, identify symptoms, determine if anything has changed, approach multiple problems individually)
+    >   - Establish a theory of probable cause (question the obvious, consider multiple approaches)
+    >   - Test the theory to determine cause (Once theory is confirmed determine next steps to resolve problem; if theory is not confirmed, establish new theory or escalate.)
+    >   - Establish a plan of action to resolve the problem and identify potential effects
+    >   - Implement the solution or escalate as necessary
+    >   - Verify full system functionality and if applicable implement preventative measures
+    >   - Document findings, actions, and outcomes
+    
 <br>
 
-83. 
+89. A company needs to use physical security devices to secure a server room. The following requirements must be met:<br>- Entrance to the storage area should be limited to select employees only.<br>- It should be possible to track any equipment removed from the room.<br>- It should be possible to configure an alarm to sound if anyone is in the room after normal business hours. <br>What should the company do? To answer, drag the appropriate physical security device to each location. A physical security device may be used once, more than once, or not at all.
+    > ![](img/quiz-9.png)
     > 
+    > The company should place a biometric lock on the door, asset tracking tags on equipment, and install a motion detector inside the room.
     > 
+    > A biometric lock requires a personally identifying feature, such as finger or thumb print, retinal scan, or facial recognition. Thislimits access to only those employees identified as having authorization.
     > 
+    > Asset tracking tags enable tracking of assets after they are removed. The signal sent by the tag can be tracked by various types of devices, including smart phones.
     > 
+    > A motion detector is activated by motion in the room. This can be connected to an alarm that is turned on after hours only.
     > 
-    > 
-    > 
+    > There is no requirement for video surveillance. Video surveillance could be used for additional monitoring of the area.
+    
 <br>
 
-84. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-85. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-86. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-87. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-88. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-89. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-90. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+90. Which statement BEST describes a warm backup recovery site?
+    > A warm site is a site that has computer equipment, network hardware, and data communication installed and configured, but which does not have recent backups of corporate data. A warm site is designed to be able to continue operations once current backups are delivered and applied.
+    >
+    > A site that has the necessary facilities infrastructure to support business operations, but which does not have any equipment set up and configured, is a cold site. This applies whether or not the necessary equipment is stored onsite. It takes significant effort and can take several days to resume operations using a cold site.
+    >
+    > A hot site has computer equipment, network hardware, and data communication installed and configured with a current duplicate of critical data. This enables operations to continue most quickly, usually in no more than a few hours.
+    
 <br>
 
 91. 
