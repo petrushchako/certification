@@ -836,104 +836,111 @@
     
 <br>
 
-91. 
+91. Which protocol is an open, vendor-neutral standard protocol for accessing and maintaining directory services?
+    > **LDAP**<br>Lightweight Directory Access Protocol (LDAP) is an open, vendor-neutral standard protocol for accessing and maintaining directory services. LDAP can be used to locate organizations and resources in a directory services network and supports several operations used for maintaining the directory database. A common use of LDAP is user object management. Because LDAP is vendor-neutral, it is not limited to any directory services implementation, such as Microsoft's Active Directory Domain Services (AD DS).
     > 
+    > Simple Network Management Protocol (SNMP) is an industry-standard protocol used to collect information about and manage network devices. Its use is specific to devices, not directory services.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > Simple Mail Transfer Protocol (SMTP) and Internet Message Access Protocol (IMAP) are both industry-standard protocols that support email. SMTP is used for clients to send email messages to mail servers and to transfer messages between servers. IMAP is used by clients to retrieve email messages from mail servers.
+    
 <br>
 
-92. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+92. A company wants to connect devices so that there are many redundant interconnections. Which topology should the company use?
+    > **Mesh**
+    
 <br>
 
-93. 
+93. Threat of flooding causes a company to move large vertical filing cabinets from the basement to the main office area. Users start complaining of problems connecting to the WLAN and delayed response from the network. Network analysis shows a high level of corrupted packets. What is the most likely cause?
+    > **Reflection**<br>The most likely problem is reflection, also referred to as signal bounce. Introduction of the vertical filing cabinets means that signals can bounce off of the filing cabinets, and multiple paths of propagation are created. This causes bits and partial packets to be received at delayed intervals. This can cause corruption of the transmitted data and result in latency issues.
     > 
+    > The problem is not absorption, which is when signals are absorbed by materials through which they pass near or through and lost. Highly absorbent materials include water, concrete, ceramic, and brick.
     > 
+    > The problem is not interference. There is nothing in the scenario to indicate that a new signal source was introduced. Interference occurs when the Wi-Fi signal must compete with another signal source operating in the same bandwidth.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The problem is not attenuation, which is loss of signal strength over distance. Wireless LAN (WLAN) components have not moved. so attenuation has not changed.
 <br>
 
-94. 
+94. A company recently implemented a bring your own device (BYOD) policy and is adding security controls over personal devices. The company wants to ensure that some managed apps and most company data will be unavailable when a device leaves the corporate campus. What should the company use to implement this?
+    > **Geofencing**<br>The company should use geofencing. Geofencing is a way of establishing an electronic perimeter. This can be done through GPS, radio frequency identification (RFID), cellular triangulation, or a combination of methods to establish a boundary. Features can be enabled or disabled when entering or leaving an area.
     > 
+    > The company should not use **geotagging**. Geotagging refers to associating a geographic location with a photo, video, text, or other post or data. This is typically discouraged from a security standpoint because it enables someone to track your location.
     > 
+    > The company should not use **Wi-Fi Protected Access II (WPA2)**. WPA2 is a means of securing a wireless network through secure authentication and encrypted communication. WPA2 is built on the IEEE 802.11i wireless security standard. WPA2 does not provide for interactive BOD feature control based on location.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The company should not use **Extensible Authentication Protocol-Flexible Authentication via Secure Tunneling (EAP-FAST)**. EAP- FAST is a secure authentication protocol that establishes a secure communication tunnel for passing client certification credentials. It is not related to location-based awareness.
 <br>
 
-95. 
+95. A company needs to support a secure link for remote users to a web-aware application that is deployed on a server in the perimeter network. The Technical Services department recommends using an SSL VPN to minimize the configuration changes needed in network firewalls. The solution will use certificate-based authentication. What is the minimum certificate requirement for this configuration?
+    > **A server-side certificate only**<br>The minimum requirement for certificate-based authentication is a server-side certificate only. Many authentication methods do not require a certificate, but when one is required for server authentication, a server certificate is required. The server will present the public certificate to the client during the initial handshake. A client certificate is not required.
     > 
+    > If you want to require mutual authentication, in which the client authenticates the server and the server authenticates the client, both client and server certificates are required. The client and server will have different certificates.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > It is important to note that even though the term SSL is commonly used to refer to this type of security, SSL is an older standard and TLS is in more common use in its place. The basic functionality, authentication procedures, and supported authenticated types are effectively the same between the two.
+    
 <br>
 
-96. 
+96. A company wants to deploy a web server in a new DZ. Which device should the company use to configure a new network zone and Layer 7 filtering policies?
+    > **Firewall**<br>The company should use a firewall to configure a new network zone and apply Layer 7 filtering policies. A firewall guards the network and monitors all traffic. Firewalls can work at Layer 7 to offer application-awareness services. Next-generation firewalls (NGFWs) offer more features and can block network attacks. A demilitarized zone (DMZ) is a special network area kept separate from the internal network. The company could use a DM to deploy internet-facing servers and applications.
     > 
+    > The company should not use a switch for this deployment. A switch supports VLANs and access control lists (ACLs), but is very limited when it comes to security features and does not allow the company to monitor data at the Application Layer (Layer 7) the OSI model. An ACL is a list of statements specifying an allowed or denied action. An ACL might allow traffic from one security zone (area) to another.
     > 
+    > A hub is a legacy Layer 1 device. Hubs do not support zones or any security options. The company should use a firewall to configure a new network zone.
     > 
-    > 
-    > 
-    > 
-    > 
+    > A proxy server acts as a gateway between a local computer and a resource on the Internet. Web proxy servers focus on web traffic and allow users to hide their real IP address or bypass security restrictions. The company could use a proxy server to monitor and filter outgoing traffic. A web proxy is not designed to configure a DMZ with Layer 7 filtering.
 <br>
 
-97. 
+97. PC1 fails to receive an IP address in the network shown in the exhibit. What should be configured to fix the problem?<br>![](img/quiz-10.jpeg)
+    > **IP helper address on Router 1**<br>The company should configure an IP helper address on Router 1. An IP helper is also called DHCP relay. It forwards DHCP packets between a client and an external DHCP server. This configuration is required because PC1 and the DHCP server are not connected to the same network segment.
     > 
+    > Port forwarding will not fix the issue. DHCP messages are dropped by Router 1 and cannot be forwarded without a DHCP relay agent. Port forwarding is used to open ports on a router or firewall, for example for an internal email server.
     > 
+    > DHCP option 66 is used for specifying a Trivial File Transfer Protocol (TFTP) server. The company could use this feature for a Voice over IP (VoIP) network.
     > 
-    > 
-    > 
-    > 
-    > 
+    > A conditional forwarder cannot be used in this scenario. Conditional forwarders are configured on domain name system (DNS) servers to redirect traffic to other DNS servers.
+
 <br>
 
-98. 
+98. A systems administrator cannot ping a file server running Windows Server. Users can access files on the server without any problems. What should the administrator check?
+    > **Local firewall rules**<br>The administrator should check local firewall rules. Many servers and network devices block Internet Control Message Protocol (ICMP) packets for security reasons. The administrator should open a local firewall on the server and verify all settings. He should create a new inbound rule and allow ICMP packets. The ping command uses ICMP to verify host reachability. ICMP is a control protocol that can report a number of errors, for example destination unreachable, time exceeded, and more.
     > 
+    > It is unlikely that the problem is with TCP/IP settings, because users can access files on the server.
     > 
+    > New Technology File System (NTFS) permissions are granted to a group or a particular user. NTFS permissions apply to file and folder access rights. NTFS does not block ICMP packets.
     > 
-    > 
-    > 
-    > 
-    > 
+    > It is unlikely the problem is with the Address Resolution Protocol (ARP) cache. Users can access files on the server, which suggests that there is no connectivity problem. ARP maps an IP address to a physical media access control (MAC) address in a local area network.
 <br>
 
-99. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+99. Match each statement with the appropriate switch port protection. To answer, select the appropriate switch port protection from the drop-down menus.
+    > **Root guard** enforces the placement of root bridges in the network to provide a consistent network environment. Root guard can be enabled on all switch ports that should not be able to negotiate a root bridge. The root bridge is the switch that is at the root of your spanning tree, defining communication between multiple switches. Spanning Tree Protocol (STP) is used to build a logical, loop-free topology that branches out from the root bridges.
+    >
+    > **BPDU guard** helps ensure a predictable active network topology by denying ports that should not participate in STP from receiving topology change notifications (TCNs) by way of Bridge Protocol Data Unit (BPDU) frames. BPDU frames are used Co initiate STP network reconfiguration in response to network changes. This is one of the methods used to prevent introducing rogue switches into a network.
+    >
+    > **Flood guard** refers to a device that monitors traffic to identify high levels of traffic, traffic floods, as a way to mitigate and hopefully stop denial-of-service (DoS) and distributed DoS (DoS) attacks. This is typically implemented through an external device, such as a firewall.
+    >
+    > **DHCP snooping** is the process of monitoring DHCP activity and tracking IP address assignments. It is primarily used as a way to detect rogue DHCP servers.
+    >
+    > **Switch port mode** refers to a port's Dynamic Trunking Protocol (DTP) setting as a way to configure trunking between switches and preventing rogue trunks. If an attacker is able to establish a rogue trunk, the trunk can then be used to gain access to all VLANs configured on a network.
+    
 <br>
 
-100. 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+100. Headquarters requests a new IP subnet. The solution must meet the following requirements: <br>- IPv4 class A address type <br>- Private IP address<br>- At least 15 usable IP addresses within the range<br><br>Which subnet would meet the requirements?
+    > The subnet 10.10.10.128/27 matches the requirements. The first requirement is to use a class A address type, which means the first octet will range from 0-126.
+    >
+    > The following private IP address spaces are assigned by IETF:
+    > - Class A: 10.0.0.0 - 10.255.255.255
+    > - Class B: 172.16.0.0 - 172.31.255.255
+    > - Class C: 192.168.0.0 - 192.168.255.255
+    >
+    > Finally, the new subnet should offer at least 15 usable IP addresses. The subnet mask of /27 means 255.255.255.224 and provides space for 30 hosts.
+    >
+    > The subnet 10.10.10.0/30 offers two hosts only and is mainly used for a point-to-point connection.
+    >
+    > The subnet 110.10.0/27 is a class A address and provides enough IP addresses, but it is not a private IP address.
+    >
+    > The subnet 10.1.1.32/28 gives 14 usable IP addresses (hosts) only and does not meet the requirements.
+    >
+    > Finally, 172.16.1.0/27 is a class B address.
+    
 <br>
 
 101. 
