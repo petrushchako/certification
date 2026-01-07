@@ -943,7 +943,61 @@
     
 <br>
 
-101. 
+101. Match network protocols and services to the OS model layer in which they are implemented. To answer, drag the appropriate OSI layer to each protocol or service. An OSI layer may be used once, more than once, or not at all.
+    > **Application**:
+    > - DHCP<br>Dynamic Host Configuration Protocol (DHCP) is the service that provides automatic IP address assignment and automatic network property configuration. The protocol and service are implemented at the Application layer.
+    > - SMTP<br>Simple Mail Transfer Protocol (SMTP) is an Internet-standard protocol for sending and receiving email. SMTP is implemented at the Application layer. Two other email protocols, Post Office Protocol 3 (POP3) and Internet Message Access Protocol (IMAP), are also implemented at this layer, along with email clients.
+    > - DNS<br>The Domain Name Service (DNS) provides resolution between host names and IP addresses and is implemented at the Application layer.
+    > - FTP<br>The File Transfer Protocol (FTP) supports remote delivery of files and is implemented at the Application layer. FTP clients are also implemented at the Application layer.
+    > 
+    > **Network**:
+    > - ICMP<br>Internet Control Message Protocol (ICMP) is used for error reporting, diagnostics, and troubleshooting. ICMP is implemented at the Network layer.
+    > 
+    > **Transport**:
+    > - TCP<br>Transmission Control Protocol (TCP) is one of the core protocols of the TCP/IP protocol suite. TCP is a connection-oriented communication protocol that provides rules for establishing connections and sending data between applications. TCP is implemented at the Transport layer, along with the connectionless User Datagram Protocol (UDP).
+    > 
+    > > No protocol or service listed is implemented at the Physical, Data link, Session, or Presentation layers. Physical network characteristics, such as transmission media, are defined at the Physical layer. The Data link layer is where physical addressing is managed through MAC addresses. It is also responsible for establishing and en g links between hosts and managing data frames. The Session layer establishes, manages, and terminates communication sessions. It manages the dialog between two hosts. The Presentation layer handles character code translation, such as EBCDIC to ASCII, data compression, and data encryption.
+<br>
+
+102. The host shown in the exhibit is unable to communicate with other network hosts. This is a recent problem.<br><br>Each subnet has a subnet mask of 255.255.255.0.<br><br>The technical team needs to determine whether the TCP/IP protocol stack loaded and whether the computer's NIC is working.<br><br>Which command should they run?
+    > **ping 127.0.0.1**<br>This is the IPv4 loopback address, which is used to test the TCP/IP stack and NIC without sending traffic out to the network.
+    > 
+    > The team should not run the following:
+    > - ping 192.168.5.2<br>This would attempt to contact the router interface facing the subnet, but it has already been determined that the host cannot contact other devices.
+    > - ping 233.0.0.1<br>This is a multicast address (Class D address). This is used when you want to send data out to multiple multicast hosts at the same time.
+    > - ping 192.168.5.255<br>This is not a valid host address. This is the broadcast address for the subnet. This address is used when traffic needs to be received and processed by all hosts on the subnet.
+<br>
+
+103. An on-site inspection finds that one fiber optic cable exceeds the bend radius that is recommended by the manufacturer. What should be the main concern for the company?
+    > **Attenuation**<br>Exceeding the bend radius (macrobends) can cause attenuation in a fiber optic network. A macrobend is easily recognizable as a visible bend in a cable, which might cause significant radiation loss (light attenuation) and unseen damage to the fiber. A fiber cable manufacturer specifies the bending radius values that have to be followed by a technician during the installation process. Fiber attenuation is called signal loss or fiber loss.
+    > 
+    > Electromagnetic interference (EMI) is not caused by exceeding the bend radius in a fiber cable. EMI is an electromagnetic disturbance that might affect copper cables.
+    > 
+    > Optical fiber is immune to EMI and near end crosstalk (NEXT). NEXT means that one pair of cables can interfere with another pair at the end.
+    > 
+    > Duplex identifies a bidirectional communication system, in which data can be transmitted in both directions at the same time. Macrobends are not related to duplex.
+<br>
+
+104. A company wants to implement an authentication and authorization solution for network devices that also directly supports device management. What should the company use?
+    > **TACACS+**<br>The company should use Terminal Access Controller Access-Control System Plus (TACACS+). TACACS+ is a proprietary set of protocols that supports authentication, authorization, and accounting (AAA). It also provides support for network device management by authorizing router commands on a per-user or per-group basis. All TACAC+ traffic is encrypted, helping make it a secure solution.
+    > 
+    > **Remote Authentication Dial-In User Service (RADIUS)** is a network protocol that provides for centralized authentication, authorization, and accounting support for internal networks and the Internet. Authentication information is maintained in a RADIUS server. However, RADIUS does not provide support for device management.
+    > 
+    > **Simple Network Management Protocol (SNMP)** is a network protocol that supports network device monitoring and management. It supports a wide variety of network devices and is well-suited for use in a multivendor environment. SNMP does not provide any support for authentication and authorization.
+    > 
+    > **Kerberos** is an authentication protocol that is commonly used on the Internet and on directory service networks. It provides secure authentication and supports Windows, Linux, UNIX, and other operating systems. Kerberos provides authentication only and does not perform authorization or provide for device management.
+<br>
+
+105. A consultant is helping a company design a wireless LAN implementation. Network requirements include internal access points for network host connections and external wireless connections between buildings. The consultant needs to help the company choose appropriate antennas. What does the dBi rating of an antenna represent?
+    > A higher dBi antenna has more gain and a narrower field pattern than a lower dBi antenna.
+    >
+    > An antenna's gain is measured in relative decibels (dB) in reference to a standard antenna used for reference. Gain refers to the relative measure of an antenna's ability to direct a signal in a specific direction. dBi value is commonly used, which is decibels measured relative tr In isotropic reference antenna. An isotopic antenna is one that radiates equally in all directions.
+    >
+    > The field pattern refers to the coverage area. For example, you would expect a 2 dBi antenna to have a 360 degree field of coverage, making it appropriate for use as an internal antenna for host connections. A higher dBi antenna has a narrower field and a more directional signal. This makes it well suited for applications such as connecting buildings on a corporate campus. The narrow field pattern makes it less likely that someone would be able to intercept the signal.
+
+<br>
+
+106. 
     > 
     > 
     > 
@@ -953,7 +1007,7 @@
     > 
 <br>
 
-102. 
+107. 
     > 
     > 
     > 
@@ -963,7 +1017,7 @@
     > 
 <br>
 
-103. 
+108.   
     > 
     > 
     > 
@@ -973,7 +1027,7 @@
     > 
 <br>
 
-1.   
+109.   
     > 
     > 
     > 
@@ -983,7 +1037,7 @@
     > 
 <br>
 
-1.   
+110.   
     > 
     > 
     > 
@@ -993,7 +1047,7 @@
     > 
 <br>
 
-1.   
+111.   
     > 
     > 
     > 
@@ -1003,7 +1057,7 @@
     > 
 <br>
 
-1.   
+112.   
     > 
     > 
     > 
@@ -1013,7 +1067,7 @@
     > 
 <br>
 
-1.   
+113.   
     > 
     > 
     > 
@@ -1023,7 +1077,7 @@
     > 
 <br>
 
-1.   
+114.   
     > 
     > 
     > 
@@ -1033,7 +1087,7 @@
     > 
 <br>
 
-1.   
+115.   
     > 
     > 
     > 
@@ -1043,7 +1097,7 @@
     > 
 <br>
 
-1.   
+116.   
     > 
     > 
     > 
@@ -1053,7 +1107,7 @@
     > 
 <br>
 
-1.   
+117.   
     > 
     > 
     > 
@@ -1063,7 +1117,7 @@
     > 
 <br>
 
-1.   
+118.   
     > 
     > 
     > 
@@ -1073,7 +1127,7 @@
     > 
 <br>
 
-1.   
+119.   
     > 
     > 
     > 
@@ -1083,7 +1137,7 @@
     > 
 <br>
 
-1.   
+120.   
     > 
     > 
     > 
@@ -1093,7 +1147,7 @@
     > 
 <br>
 
-1.   
+121.   
     > 
     > 
     > 
@@ -1103,7 +1157,7 @@
     > 
 <br>
 
-1.   
+122.   
     > 
     > 
     > 
@@ -1113,7 +1167,7 @@
     > 
 <br>
 
-1.   
+123.   
     > 
     > 
     > 
@@ -1123,7 +1177,7 @@
     > 
 <br>
 
-1.   
+124.   
     > 
     > 
     > 
@@ -1133,7 +1187,7 @@
     > 
 <br>
 
-1.   
+125.   
     > 
     > 
     > 
@@ -1143,7 +1197,7 @@
     > 
 <br>
 
-1.   
+126.   
     > 
     > 
     > 
@@ -1153,7 +1207,7 @@
     > 
 <br>
 
-1.   
+127.   
     > 
     > 
     > 
@@ -1163,7 +1217,7 @@
     > 
 <br>
 
-1.   
+128.   
     > 
     > 
     > 
@@ -1173,7 +1227,7 @@
     > 
 <br>
 
-1.   
+129.   
     > 
     > 
     > 
@@ -1183,7 +1237,7 @@
     > 
 <br>
 
-1.   
+130.   
     > 
     > 
     > 
@@ -1193,7 +1247,7 @@
     > 
 <br>
 
-1.   
+131.   
     > 
     > 
     > 
@@ -1203,7 +1257,7 @@
     > 
 <br>
 
-1.   
+132.   
     > 
     > 
     > 
@@ -1213,7 +1267,7 @@
     > 
 <br>
 
-1.   
+133.   
     > 
     > 
     > 
@@ -1223,57 +1277,7 @@
     > 
 <br>
 
-1.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-1.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-1.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-1.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-1.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-1.   
+134.   
     > 
     > 
     > 
