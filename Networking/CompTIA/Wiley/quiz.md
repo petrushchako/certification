@@ -997,54 +997,51 @@
 
 <br>
 
-106. 
+106. Users connect to a network using wireless laptops and report intermittent access issues with a NAS server. The access point and the NAS server are connected to a switch using a 100 Mbps link. The status of the access point is shown in the exhibit. What should the support team do to fix the connectivity issue?<br>![](img/quiz-12.jpeg)
+    > **Install more access points**<br>The support team should install more access points. The exhibit shows 125 connected clients. Access points support hundreds of concurrent associated devices, but it is not a recommended approach to have that many. In this case, 125 users will probably exceed the bandwidth that the access point can provide. This phenomenon is called overcapacity. There is no clear indication how many clients can be connected to a single access point, but most network engineers limit this number to 30-50 clients.
     > 
+    > Changing the security settings is not going to fix the issue. Although the access point uses an insecure legacy protocol V Protected Access (WPA) with Temporal Key Integrity Protocol (TIP), changing it to WPA2-AES will not increase the available bandwidth. WPA2-AES will improve the security of the wireless network.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The access point uses the IEEE 802.11ac Wave 1 standard, which supports gigabit speeds. The 802.11n standard is slower and offers the maximum data rate of 450 Mbps. Changing to 802.11n will decrease wireless performance.
+    >
+    > SSID isolation cannot fix the problem. The team could use the SSID isolation feature to prevent wireless clients from accessing resources on the local area network or other wireless clients.
+    
 <br>
 
-107. 
+107. For redundancy purposes, a network engineer installs a new router and enables a load balancing protocol. What type of address should he assign as a default gateway to end devices?
+    > **Virtual IP**<br>The network engineer should configure a virtual IP address (VIP). End users will use the VIP as their default gateway. A VIP is a virtual IP address that is shared between compatible network devices that are running a dedicated protocol. The network engineer has deployed a new router and has enabled load balancing for efficiency and redundancy purposes. The main advantage of using a VIP is that it is a transparent solution for end users. Both routers in the load balancing set can be reached with the same VIP. If one router fails, the second can take over.
     > 
+    > The network engineer should not use a loopback address. A loopback address uses the special-purpose IP address of 127.0.0.1 and is called localhost. The engineer could use the loopback address to test the local TCP/IP stack.
     > 
+    > An Automatic Private IP Addressing (APIPA) address cannot be used in this scenario. APIPA allows a Windows-based device to automatically self-configure an IP address if there is no DHCP server available. APIPA uses a range of IP addresses: 169.254.0.1- 169.254.255.254 with a subnet mask of 255.255.0.0.
     > 
-    > 
-    > 
-    > 
-    > 
+    > IPv6 does not offer any built-in redundancy or load balancing options. Routers can use an IPv6 address, but the network engineer has to assign a VIP address as a virtual IP address on both devices. IPv6 is the successor protocol to IPv4.
 <br>
 
-108.   
+108. A network consultant determines that a company can improve its performance by implementing jumbo frames. The networkis configured with 10/100/1000 switches, and all hosts are configured with Gigabit Ethernet network adapters. The network is wired with Cat 5e UTP cable. What must the company do to support jumbo frames?
+    > **Increase the MTU to 9000**<br>The company should increase the maximum transmission unit (MTU) to 9000 on all network devices. The default MTU, and therefore the default maximum frame size, on an Ethernet network is 1500 bytes. Jumbo frames can have a maximum size of up to 9000 bytes. The MTU needs to be increased on all network devices. Mixed MT values can degrade network performance.
     > 
+    > The company should not replace the cable with Cat 6 UTP cable. Jumbo frame support requires, at a minimum, gigabit network adapters (1000BaseT), which is supported by the existing Cat 5e cable. If the cable did not support the traffic, you would expect to already have communication errors and performance problems.
     > 
+    > There is no reason to enable spanning tree protocol (STP) to support jumbo frames. STP is not related to frame size. STP is designed to prevent transmission loops from being created when a network has multiple switches.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The company should not configure each switchport in dynamic auto mode. Dynamic auto mode means that a port can be used to create a trunk connection with another port. Trunk connections are used to make connections between switches. Enabling dynamic auto mode on each switchport puts the network at greater risk of attack. A rogue switch could be used to create a trunk connection, giving the attacker access to all VLANs.
+
 <br>
 
-109.   
+109. Which command line interface command should a systems administrator use to verify the hardware address of a device connected to a local area network?
+    > **arp**<br>The systems administrator should use the arp command. The arp command shows a table with the Address Resolution Protocol (ARP) cache. ARP is a mapping of IP addresses to hardware addresses (MAC addresses). If a device is in the same LAN and is actively used, it will be visible in the ARP cache table. Here is the full Windows command that displays the current ARP entries: `arp -a`
     > 
+    > The systems administrator should not use the `ipconfig` command. The ipconfig command shows TCP/IP settings, including the local hardware address only. The systems administrator wants to verify a MAC address of a remote device, which cannot be achieved using the ipconfig command.
     > 
+    > The `nslookup` command cannot be used in this scenario. The systems administrator could use the nslookup command to troubleshoot Domain Name System (DNS) issues.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The `pathing` command does not provide information about MAC addresses. The pathping command combines the functionality of the ping and tracert commands to provide a table with routing hops.
 <br>
 
-110.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+110. A company is deploying a new computer as shown in the exhibit. The company will have a static IPv4 address. What should technicians use as the computer's default gateway?<br>![](img/quiz-13.jpeg)
+    > **192.168.1.1**<br>The default gateway should be set to 192.168.1.1. The default gateway is the path traffic takes when being routed from one subnet into another subnet. The default gateway should be the address of the router interface facing the subnet, so this is the only appropriate value. The other IP addresses are for interfaces that face other subnets.
+    
 <br>
 
 111.   
