@@ -1044,104 +1044,89 @@
     
 <br>
 
-111.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+111. A network administrator implements a change on a switch to fix a network issue. According to the troubleshooting methodology, what should the network administrator do next?
+    > **Implement preventative measures.**<br>The network administrator should implement preventative measures, as defined in step 6 of the Structured Troubleshooting Methodology. The solution has been implemented successfully (step 5), and the issue should now be fixed. Step 6 specifies verifying the network functionality and recommends implementing preventative measures.
+    
 <br>
 
-112.   
+112. What should a company use as an authentication and authorization server for WPA2-Enterprise?
+    > **RADIUS**<br>Wi-Fi Protected Access II (WPA2)-Enterprise requires a RADIUS server for authentication and authorization. This is the only authentication option supported for WPA2-Enterprise. This is also referred to as WPA2-802.1x mode.
+    >
+    > WPA2 can also be implemented as WPA2-PSK (WPA2-Personal). This uses a string of 64 hexadecimal digits or a passcode (password) of up to 63 printable ASCII characters for authentication.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > Kerberos is an authentication protocol that is commonly used on the Internet and on directory service networks. It provides authentication and supports Windows, Linux, UNIX, and other operating systems. Kerberos cannot be used for WPA2-Enterprise authentication.
+     
 <br>
 
-113.   
+113. A company's network is shown in the exhibit. PC1 is unable to access any resources in network B. What should the company do to fix the issue?<br>![](img/quiz-14.jpeg)
+    > The company should change the IP address on PC1. PC1 and the router are not in the same subnet and cannot communicate. The subnet mask has been configured as 255.255.255.128, which means /25 using CIDR notation. The router has the IP address of 10.10.10.10/25. The useable IP range in this subnet is 10.10.10.1 - 10.10.10.126. PC1 uses the IP address of 192.168.1.199, which is not in the same subnet.
     > 
+    > Changing any settings on the router is unnecessary and could affect multiple devices in the network. PC1 has been configured using the correct default gateway of 10.10.10.10.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The company should not change the subnet mask on PC1. PC1 and the router are in the same local area network and should use the same subnet mask to communicate.
+    
 <br>
 
-114.   
+114. A company's WLAN is configured with one access point (AP) named AP1. AP1 has an SSID of AP1, is configured to use channel 1, and is configured for WPA2-PSK.<br>The company deploys a second AP named AP2 and with an SSID of AP2. The AP is configured to use channel 6 and is configured for WPA2-PSK. It is also configured with a unique IP address range. The remaining configuration settings are left at the defaults.<br>Technical Services discovers that someone has been hacking into AP2 and changing configuration settings. After the settings are corrected, they are changed again in a few days.<br>How should Technical Services implement device hardening to prevent this from occurring?
+    > **Change the default administrator's password on AP2.**<br>They should change the administrative password on AP2 from the default. There is nothing in the scenario to indicate that Technical Services changed the default administrative password. Default administrative passwords for most devices are listed in various locations on the Internet. Not changing the password from the default leaves the access point (AP) open to hacking.
     > 
+    > They should not disable SSID broadcasting. This would not correct the problem. The SSID is used to identify the AP so a client can select an AP for a connection. The hacker probably already knows the SSIDs. Also, the hacker is likely connecting to the web interface screen using the IP address of the AP. Disabling SSID broadcasting does not prevent a serious hacker from finding and attacking an AP.
     > 
+    > The should not reconfigure APs to use Wi-Fi Protected Access II-Enterprise (WPA2-Enterprise). WPA2 is a security protocol used to authenticate clients when they connect and encrypt wireless communication. Changing from WPA2-PSK, which uses a passcode for access, to WPA2-Enterprise would not correct the problem because WPA2 is not used to secure administrative access. This solution would also require deploying a RADIUS server to provide centralized authentication and authorization.
     > 
-    > 
-    > 
-    > 
-    > 
+    > They should not change AP2 to channel 1. This would do nothing to correct the problem. The channel sets the specific frequency used for communication. Having both APs configured for channel 1 could cause interference between the APs and could result ir communication problems.
 <br>
 
-115.   
+115. A network administrator has captured the following messages on the firewall:<br>10.10.10.10:64391 > 188.12.11:80<br>188.12.1.1:80 > 10.10.10.10:64391<br>10.10.10.10:64392 > 83.122.1.1:80<br>Which application has generated that traffic?
+    > **Web browser**<br>The output has been generated by a web browser. The destination port number is port 80, which identifies HT TP. The source port number is dynamically created by a local device (from the range of ports 49152- 65535). Instead of a firewall capture, a network administrator could use the netstat command on a local computer to display protocol statistics and current TCP/IP connections.
     > 
+    > DNS would use port 53, not 80. DNS converts website names into numerical IP addresses.
     > 
+    > FTP uses TCP ports 20 and 21 for file transfers. FTP is considered insecure because it does not encrypt the network traffic. FTP can be protected by implementing SSH or SSL (SFTP and FTPS).
     > 
-    > 
-    > 
-    > 
-    > 
+    > Voice over IP (VoIP) systems do not use TCP port 80. Depending on the protocol, the capture would have a set of UDP protocols, for example ports 16376-32767 for RT traffic.
 <br>
 
-116.   
+116. A company expands its corporate campus. All new buildings are configured to support wireless LANs. The company wants to use WPA2-Enterprise to ensure wireless security and provide for centralized control of authentication and authorization. What type of network device is needed to provide centralized authentication and authorization?
+    > **RADIUS server**<br>The company needs to use a Remote Authentication Dial-In User Service (RADIUS) server to support WPA2-Enterprise. In this configuration, the RADIUS server is responsible for authentication and authorization, as well as related accounting activities (also known as AAA). The wireless access point (WAP) or wireless LAN controller is configured as a RADIUS client. The WAP passes the authentication request to the RADIUS server.
     > 
+    > A wireless LAN controller is a network device that provides for central control and management of multiple WAPs. A wireless controller does not provide centralized authentication and authorization. It can forward authentication requests from clients to the RADIUS server for authentication, but it cannot perform the authentications. A wireless LAN controller can also mitigate radio interference, provide load balancing, provide for failover, and improve bandwidth usage.
     > 
+    > The company should not use a proxy server. A proxy server adds a layer of protection between internal network hosts and external websites. The proxy server uses its own address instead of the internal host's when connecting to an external site a returns the result to the originally requesting host. Most web proxy servers will also cache the result and serve subsequent requests from the cache instead of issuing a new request to the external server.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The company should not use a Next-Generation Firewall (NGFW). An NGFW provides traditional firewall functionality but adds advanced functionality, including acting as an application-level firewall with deep packet inspection. An NGFW does not provide support for centralized authentication and authorization.
+
 <br>
 
-117.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+117. At what point in a troubleshooting methodology is it appropriate to escalate a problem?
+    > It is appropriate to escalate a problem if the technician is unable to confirm a theory and unable to establish a new theory or if no appropriate solution is available. Either of these situations indicates that the person troubleshooting the problem is unable to make any further progress. A problem should be escalated when either of these situation occurs.
+    
 <br>
 
-118.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+118. The marketing team uses a SaaS service to store raw video files. The team reports slow access to some resources on the SaaS platform. What should the network team do?
+    > **Check the bandwidth**<br>The network team should use a bandwidth speed tester to verify the available bandwidth. The marketing team uses a software- as-a-service (SaaS) solution to upload raw video files, which is a bandwidth-consuming process. SaaS provides access to software on a subscription basis.
+    
 <br>
 
-119.   
+119. A company's network is shown in the exhibit. The DHCP server is configured with a scope for each network. Clients in the 192.168.4.0 and 192.168.4.128 subnets are unable to lease addresses from the DHCP server. Clients in the 192.168.2.0 subnet are able to lease addresses. What should the company do?
+    > **Deploy DHCP relay agents in the 192.168.4.0 and 192.168.4.128 subnets.**<br>The company should deploy DHCP relay agents in the 192.168.4.0 and 192.168.4.128 subnets. The most likely problem is that the routers are not passing the DHCP client requests to the DHCP server. DHCP uses the same UDP ports as the BOOTP protocol, 67 and 68. If BOOTP relay is not enabled on or supported by the router, it will not pass the requests. A DHCP relay agent accepts requests from the clients and then sends them to the DHCP server i a packet structure passed by the router.
+    >
+    > The other option (not listed) is to enable BOOTP forwarding on each router.
     > 
+    > The company should not deploy a DHCP relay agent in the 192.168.2.0 subnet. This would not accomplish anything towards fixing the problem. The DHCP relay agent must be deployed on the same subnet(s) as the clients attempting to lease IP addresses.
     > 
+    > The company should not open UP port 53 on each of the routers as a fix for DHCP address assignment. Port 53 is used for DNS services.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The company should not configure IP exclusions for the 192.168.4.0 and 192.168.4.128 subnets. IP exclusions are used to identify IP addresses that should not be assigned by the DHCP server.
 <br>
 
-120.   
+120. A company expands its corporate campus and builds new facilities for its warehouse and additional offices. The company needs to run a high-bandwidth link between the buildings. The buildings are approximately 4 km (about 2.5 miles) apart. What kind of cable should the company use?
+    > **Single-mode fiber**<br>The company should use single-mode fiber. The primary factor that determines this is the distance between the buildings. Single-mode fiber supports distances of 15 km (10 miles) or more. This cable carries a single mode, or a single broadcast signal.
     > 
+    > Multimode fiber would not be appropriate for this application. Depending on the specific construction and the cable's use, maximum cable length is typically a value between 500 m (546 yards) and 2 km (1.2 miles). Multimode cable carries multiple signals through the same fiber core. Because of its design to carry multiple modes, the cable has a higher attenuation (signal loss over distance) than single-mode cable.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > Cat 5e and Cat 7 are both high-bandwidth copper cables but support maximum lengths of no more than 100 m (328 feet). Cat 5e is readily available in unshielded twisted pair (UTP) and shielded twisted pair (STP) versions. Cat 7 is STP only.
+    
 <br>
 
 121.   
