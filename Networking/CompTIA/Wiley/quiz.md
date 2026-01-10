@@ -1129,54 +1129,50 @@
     
 <br>
 
-121.   
+121. While discussing a configuration issue with a switch manufacturer's technical support team, the in-house support team learns of a switch vulnerability. The vulnerability was fixed with a recent update. The support team needs to mitigate the vulnerability and avoid a potential attack with minimum risk to the network, downtime, and cost. What should in-house support do?
+    > **Download and install the most recent firmware update.**<br>The in-house support team should download and install the most recent firmware update. The team should download the update from the manufacturer or, based on manufacturer instructions, check the file hash to ensure that it has not changed and then apply the update. This is the correct way to update a network device. This will apply any vulnerability fixes included in the update.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The team should not deploy an intrusion detection system (IDS) to closely monitor activity with the switch. This would not prevent an attack. If an attack is detected, the IDS could send an alert so that the appropriate personnel could response to the attack.
+    
 <br>
 
-122.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+122. The network support team needs to determine whether data is being encrypted when it is sent over the network. Which process should the team use?
+    > **Packet analysis**<br>The team should use packet analysis or traffic analysis. This is the process of capturing network traffic and analyzing the traffic content. This would enable the team to determine if the data portion of the packet is encrypted.
+    
 <br>
 
-123.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+123. Match network devices with their role in 802.1x port-based authentication. To answer, drag the appropriate 802.1x role to each network device. A role may be used once, more than once, or not at all.<br>![](img/quiz-16.png)
+    > 802.1x port-based authentication is one way to prevent unauthorized connections to a wired Ethernet switch or 802.11 wireless access point. 802.1x authentication is designed around three roles:
+    >   - Supplicant: the client device requesting authentication
+    >   - Authenticator: the device receiving the request from the supplicant and passing it on for authentication
+    >   - Authentication server: the device responsible for authentication
+    >
+    > In this scenario, the tablet and the laptop are supplicants, the access point and switch are authenticators, and the Remote Access Dial in User Service (RADIUS) server is an authentication server.
+    >
+    > There is no surrogate role in 802.1x authentication.
+    
 <br>
 
-124.   
+124. A company has two access points, as shown in the exhibit. Users report intermittent access issues. What could the company do to fix the problem?<br>![](img/quiz-17.jpeg)
+    > - **Assign AP1 to channel 11**
+    > - **Change to 5 Ghz**
     > 
+    > The company could change the channel on the access points (APs) or move to the 5Ghz band. The exhibit shows two access points using the 2.4Ghz band. This frequency offers only three non-overlapping channels: 1, 6, and 11. The company should either change the channels, so that they do not overlap, or move both access points to the 5Ghz band, which offers more channels to
     > 
+    > The company should not assign a different service set identifier (SSID) to AP1. Both access points should use the same SSID to allow users to roam between two access points in the same network. An SSID is the name for a Wi-Fi network. SSIDs are created on a wireless router or an access point.
     > 
-    > 
-    > 
-    > 
-    > 
+    > Both access points have been configured using a very secure protocol, Wi-Fi Protected Access II (WPA2) with Advanced Encryption Standard (AES). This is an optimal choice and should not be changed to a legacy solution, for example WPA or WEP.
+    >
+    > The overlapping area is within an accepted range of between 10% to 15%. Reducing the overlapping area to 5% might cause connectivity issues. To decrease the signal strength, the engineer could change the AP's transmit power settings.
 <br>
 
-125.   
+125. A company deploys six new computers that are configured for automatic address assignment to the 192.168.4.0/26 subnet. The DHCP server that hosts the scope for the subnet is deployed on the same subnet.<br>Four of the new computers are able to lease valid IP addresses. The remaining two computers have the following addresses:<br>169.254.12.7<br>169.254.14.2<br><br>What is most likely wrong?
+    > **The DHCP scope is exhausted.**<br>The most likely problem is that the DHCP scope is exhausted. The computers are configured with Automatic Private IP Addressing (APIPA) addresses. APIPA addresses are used when a computer is configured for automatic IP addressing and is unable to lease an address from a DHCP server. If the scope is exhausted, then there are no addresses available for lease, so the computers would configure themselves with APIPA addresses.
     > 
+    > The other new computers were able to lease valid IP addresses, which indicates that the DHCP server is working.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > You know that the TCP/IP stack loaded on the computers because they have IP addresses. If the TCP/IP stack did not load, the computers would not have IP addresses.
+    
 <br>
 
 126.   
