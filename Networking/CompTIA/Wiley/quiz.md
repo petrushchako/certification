@@ -1175,94 +1175,97 @@
     
 <br>
 
-126.   
+126. A company has a Dynamic Host Configuration Protocol (DHCP) server with all of the subnet addresses specified as an IP address scope. The company deploys a new physical server as a database server in the 192.168.4.0/24 subnet. Applications that use the database server require the server to always have the same IP address. Company policy forbids the use of static addressing. What should the company do to set the addressing for the database server?
+    > **Configure an IP address reservation.**<br>An IP address reservation should be configured on the DHCP server for the database server. This sets aside an address out of a configured address scope and ensures that the server always leases the same address. The computer to receive the reserved IF address is identified by its MAC address.
     > 
+    > An IP address exclusion should not be specified. An IP address exclusion is used when an address that is part of an address scope is configured as static on a device. This prevents the address from being leased to another device by the DHCP server. The excluded address is still part of the address scope.
     > 
+    > A VIP should not be used. A VIP is used when it is necessary to assign a shared IP address to multiple domain names, multiple servers, or multiple application instances (such as web servers) running on the same server. VIPs are also used with Network Address Translation (NAT) servers.
     > 
+    > An Automatic Private IP Addressing (APIPA) address should not be used. An APIPA address is generated automatically when a host configured for automatic address assignment is unable to lease an address from a DHCP server.
+<br>
+
+127. A company deploys a new computer. When the cable to the computer is plugged in at the switch, the network link LED does not light. When the cable is plugged in to a different open port, the LED lights up. When plugged back in to the original port, the LED does not light. What is the most likely problem?
+    > **Bad port**<br>The most likely problem is a bad port. Because the LED lit when the cable was plugged in to a different port, you have eliminated the cable type and computer network adapter as possible problems. The LED lights indicate that a signal is detected on the cable. Because you have eliminated the cable and client network adapter by testing with a different port, the option left is a problem with the switch, specifically with the one switch port. It was necessary to eliminate other possibilities because an unlit link LED could also indicate a damaged cable or connector, a plug not fully plugged in, or that the port is disabled.
+    > 
+    > Virtual Local Area Network (VLAN) mismatch or duplicate IP address are both configuration errors that could prevent computer from communicating with the network, but they would not prevent the network link LED from lighting. VLAN mismatch can occur when a device is connected to a port configured for a different VLAN than the one intended. IP address problems can come from several causes, including Dynamic Host Configuration Protocol (DHCP) scope configuration errors and mixing automatic and static IP address assignments.
+    
+<br>
+
+128. What is the first step when troubleshooting a network problem?
+    > **Identify the problem**<br>The first thing you should do is identify the problem. This starts by gathering as much information as you can about the problem, such as problem symptoms and recent changes. You would also talk to users to get their input about the problem. You need as much information about what is wrong before you can start trying to determine how to fix it.
+    > 
+    > A systematic troubleshooting methodology typically includes the following steps:
+    > - Identify the problem (gather information, duplicate the problem if possible, question users, identify symptoms, determine if anything has changed, approach multiple problems individually).
+    > - Establish a theory of probable cause (question the obvious, consider multiple approaches).
+    > - Test the theory to determine cause (Once theory is confirmed determine next steps to resolve problem; if theory is not confirmed, establish new theory or escalate).
+    > - Establish a plan of action to resolve the problem and identify potential effects.
+    > - Implement the solution or escalate as necessary.
+    > - Verify full system functionality and if applicable implement preventative measures.
+    > - Document findings, actions, and outcomes.
+    
+<br>
+
+129. Match network types with their descriptions. To answer, drag the appropriate network type to each description. A network type may be used once, more than once, or not at all.
+    > A wide area network (WAN) is a collection of connected LANs over a large geographic area, enabling devices in different locations to communicate. A WAN can include connections over a very large area, including across different states or different countries. Connections are usually over public carriers, such as telephone lines or the internet.
+    >
+    > A personal area network (PAN) is an interconnection of devices near each other, such as in an office, organized around an individual, and often using Bluetooth connections. A home office is often a PAN connecting a computer, smartphone, printer, and other personal devices. A PAN can include wired and wireless connections.
+    >
+    > A campus area network (CAN) is a group of connected LANs over a relatively small geographic area, such as those of a company's buildings in the same location. It is often referred to as a corporate campus. College and university networks are usually considered CANs.
+    >
+    > A storage area network (SAN) is a high-speed data network giving several LAN servers access to consolidated block-level storage, using either FC or SCSI based-networks. This gives you a way to implement a high-performance storage infrastructure that is available to network devices.
+    >
+    > None of the descriptions accurately defines a metropolitan area network (MAN), which is a set of LANs connected over a metropolitan area. A MAN falls between a WAN and a CAN in size.
+    >
+    > None of the descriptions accurately defines a wireless local area network (WLAN). This is simply a LAN built on wireless instead of wired connections.
+    
+<br>
+
+130. Which layer of the OSI model do routers operate at?
+    > **Routers** operate at the Network layer (Layer 3) of the OSI model. The network layer manages host IP addresses and maps IP addresses to physical Media Access Control (MAC) addresses. Routers are responsible for directing traffic between subnets and provide the boundary between subnets.
+    > 
+    > The Data Link layer (Layer 2) is where physical addressing is managed through MAC addresses. It is also responsible for establishing and ending links between hosts and managing data frames.
     > 
     > 
     > 
     > 
 <br>
 
-127.   
+131. A recent network audit has highlighted the security issues on the access point shown in the exhibit. What should the company do?<br>![](img/quiz-18.jpeg)
+    > **Change the authentication method to WPA2-AES.**<br>The company should change the authentication method to Wi-Fi Protected Access II (WPA2). There are two algorithms used for message integrity and confidentiality: TKIP, which is less secure, and AES. Sometimes this is referred to as WPA2-CCMP/AES. Open System means that there is no security in place and leaves the network open to everybody.
     > 
+    > The WPA protocol uses TKIP and is considered insecure. The company should use WPA2-AES instead.
     > 
+    > Hiding the SSID is not necessary to improve the wireless security. Some reports indicate that hiding SSID can expose your network to new attacks and makes it very difficult for end users to connect to the access point.
     > 
-    > 
-    > 
-    > 
-    > 
+    > Changing the channel width will not improve security in this case. This setting might impact the performance and available bandwidth for wireless devices.
 <br>
 
-128.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+132. A service technician tests and confirms a theory for the probable cause of a problem. What should the technician do next?
+    > **Create a plan of action.**<br>After confirming a theory and the probable cause of a problem, the next step is to create a plan of action that identifies the actions that need to be taken to resolve the problem. The number and type of actions required depend on the problem specifics.
+    
 <br>
 
-129.   
+133. What is the topology of a network that uses a multilayer switch?
+    > **Star**<br>The topology of a network that uses a multilayer switch is star. This is because each device on the network is connected directly to a central switch, resembling the points of a star radiating from the center. The switch facilitates direct connections among devices without the need for passing data through multiple devices, characteristic of the star topology.
     > 
+    > A multilayer switch is a network device that operates at both the data link layer (Layer 2) and the network layer (Layer 3). It performs switching like a standard switch but can also handle routing functions.
     > 
+    > The topology of a network that uses a multilayer switch is not bus. A bus topology involves all devices sharing a single communication line where data travels along this single channel. Multilayer switches, on the other hand, use individual ports to connect devices directly, thereby avoiding the shared medium that defines a bus network.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The topology is not ad ho because ad hoc networks are typically characterized by direct device-to-device connections without any intervening networking hardware.
+    >
+    > The topology is not mesh. In a mesh topology each node might connect directly to any other node. In a network with a multilayer switch, although it can manage paths dynamically much like a mesh, devices are still centrally connected to the switch rather than directly to each other, distinguishing it from a full mesh topology.
 <br>
 
-130.   
+134. A technician has configured a new SSID on an AP using the 5Ghz frequency. He has connected to it with a mobile phone. A test laptop is unable to show the new SSID in the list of available networks. What would be the MOST likely reason for that?
+    > **The laptop has a single-band wireless card.**<br>The test laptop has a single-band wireless card. The technician should install a dual-band card. A dual band card uses the 2.4Ghz and the 5Ghz bands to receive wireless signals. The 5Ghz frequency offers better speeds and more channels. The latest wireless standard 802.11ac utilizes the 5Ghz band for gigabit wireless connections and is backwards compatible with legacy devices and standards.
     > 
+    > It is unlikely that there is a problem with the driver. The technician can see a list of available networks, which indicates the card is working without any problems.
     > 
+    > The technician has tested the new SSID using a mobile phone, which indicates that there is no misconfiguration on the access point (AP) itself.
     > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-131.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-132.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-133.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-<br>
-
-134.   
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The issue is not with a pre-shared key. The technician cannot see the SSID in the list of available networks. A pre-shared key has to be entered after selecting a network.
 
 
 <br><br><br>
