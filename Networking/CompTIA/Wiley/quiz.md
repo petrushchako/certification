@@ -1268,7 +1268,916 @@
     > The issue is not with a pre-shared key. The technician cannot see the SSID in the list of available networks. A pre-shared key has to be entered after selecting a network.
 
 
+<br><br><br><hr>
+
+
+## Moderate (84)
+1. Which of the following is the primary benefit of moving a datacenter to the cloud?
+    > **Increased elasticity in response to seasonal workload**<br>Moving a datacenter to the cloud will increase elasticity in response to seasonal workload. As it relates to IT infrastructure resources, elasticity is the ability to expand or reduce allocated resources based on compute and storage requirements. For example, an e-commerce site could scale out its web server farm during busy shopping times or seasons.
+    
+<br>
+
+2. Which is used with multimode fiber?
+    > **SFP**<br>Small form-factor pluggable (SFP) transceivers are used with multimode fiber. SFPs are often referred to as optics because they contain the laser circuitry used to transmit pulses of light over fiber optic cables. Most modern enterprise switches include a block of SFP ports and many vendors offer core and other high-capacity switches that only include SFP ports.
+    > 
+    > Register jack 45 (RJ45) connectors are not used with multimode fiber. RJ45 connectors support eight conductors and are used to terminate Ethernet cables.
+    > 
+    > F-type connectors are not used with multimode fiber. F-type connectors are used to terminate coax cables.
+    > 
+    > 110 blocks are not used with multimode fiber. 110 blocks, also known as punch down blocks, are used to connect telephone or data lines.
+    
+<br>
+
+3. Which is the most cost-effective standard that supports 10 Gbps transfers up to distances of 300 meters?
+    > **10 GBASE-SR**<br>10 Gigabit baseband - short-range (10GBASE-SR) is the most cost-effective standard that supports 10Gbps transfers up to distances of 300 meters. 10GBASE-SR uses multi-mode fiber with a 62.5 micron core. While the 10GBASE-SR specification calls for 10Gbps, the maximum distance depends on the type and quality of the fiber optic cable used. For example, optical multimode 4 (OM4) cable supports lengths up to 400 meters. In this scenario, OM3 or higher fiber is required.
+    > 
+    > 10 Gigabit baseband - twisted-pair (10GBASE-T) uses twisted pair, copper cable to transmit at 10Gbps over distances up to 100 meters.
+    > 
+    > 10 Gigabit baseband - long-range (10GBASE-LR) uses single-mode fiber optic cable to transmit at 10Gbps over to distances of 10 kilometers.
+    > 
+    > 10 Megabit baseband - twisted-pair (10BASE-T) used twisted pair, copper cable to transmit at 10Mbps over distances up to 100 meters.
+    
+<br>
+
+4. Which type of cable uses an 8-10 micron core?
+    > **Single-mode**<br>Single-mode cable uses an 8-10 micron core. Single-mode, fiber optic cable uses a glass core to transmit pulses of light. By comparison, the diameter of a human hair is around 75 microns. I b tests, single-mode fiber can transmit data in the terabits r second range. Due to low attenuation, single-mode fiber c n transmit data up to and beyond 10 kilometers.
+    > 
+    > Multimode cable uses a 50 micron or 62.5 micron core, depending on the type. The larger core makes multimode cable less expensive than single-mode but results in lower throughput and shorter maximum cable lengths.
+    > 
+    > RG-6 is common coaxial cable which uses an 18 American wire gauge (AWG) core, which is 1 millimeter in diameter.
+    > 
+    > Category 8 (Cat 8) cable is shielded twisted pair cable. Internally, Cat 8 cable consists of eight individually shielded copper strands.
+    
+<br>
+
+5. Which of the following is a limitation of Switch technology?
+    > **Network traffic cannot flow between Switches on the same host.**<br>One limitation of the Switch technology is that network traffic cannot flow between Switches on the same host. A Switch, or virtual switch, is the software equivalent of a physical Layer 2 switch. Switch technology is used by most virtualization platforms to provide connectivity between virtual machines (VMs) and the physical network. Each VM has one or more virtual network adapters (vNICs) which connect to a virtual switch, and each virtual switch is linked to the physical network by one or more physical network adapters. Traffic cannot flow between Switches on the same host because popular Switch platforms, such as VMware Sphere Switch, do not allow Switches on the same host to be connected. As a result, switch loops cannot be created, which negates the need for loop detection and prevention protocols such as Spanning Tree Protocol (STP).
+    > 
+    > VM hosts are not limited to one Switch with a maximum of 256 virtual ports. The number of supported Switches and ports varies between platforms, but even type 2 hypervisors like VMware Workstation support multiple Switches per host.
+    > 
+    > Each Switch on a host does not require a minimum of two physical NICs. Only one physical NIC per Switch is required. It is important to note that Switches cannot share the same physical NIC.
+    > 
+    > Each Switch on a host must not be configured to use the same pIC. In order to maintain Switch autonomy and prevent switching loops, each Switch requires at least one dedicated pNIC.
+    
+<br>
+
+6. An organization deploys loT sensors at a remote location that is not reachable using traditional cabled internet services. Which technology should the organization deploy to provide the highest bandwidth available for this location?
+    > **5G**<br>The organization should deploy fifth-generation wireless (5G). 5G is a wireless networking technology that is used to provide broadband mobile communications and offers the highest throughput in this scenario. 5G is meant to replace 4G and offers significant performance increases. Peak download speeds on 5G can reach 20 Gbps under ideal conditions. Some mobile companies are now offering 5G routers with Wi-Fi for home internet use.
+    > 
+    > Like 5G, fourth-generation wireless (4G) is a wireless networking technology that is used to provide broadband mobile communications. Peak download speeds on 4G approach 50 Mbps with enhanced versions of 4G providing up to 300 Mbps throughput.
+    > 
+    > A satellite Internet connection requires a receiver, usually a disk, to be installed at the remote site. Traffic is then sent and received using communications satellites. Download speeds may approach 20 Mbps, depending on the provider.
+    > 
+    > Digital subscriber line (DSL) requires physical cabling. DSL is designed to run over existing telephone lines.
+    
+<br>
+
+7. An organization wants to maximize performance for its wireless network. Which technology should the organization deploy?
+    > **802.11ax**<br>The organization should deploy 802.11ax. 802.11ax is a wireless networking standard. Also known as Wi-Fi 6, 802.11ax offers over 3Gbps per stream and works well in dense environments.
+    > 
+    > 802.1q allows tags to be added to an Ethernet frame for Virtual Local Area Network (VLAN) identification. 802.1q is also known as VLAN or port tagging. It is not used to maximize wireless performance.
+    > 
+    > 802.1x facilitates centralized authentication for wireless networks. It is not used to maximize wireless performance.
+    > 
+    > 802.3an uses twisted pair cabling to support speeds up to 10Gbps. 802.3an is also known as 10GBASE-T.
+    
+<br>
+
+8. A technician plans to install Cat 7 cable to support a 10Gbps application. What is the maximum supported cable length for this application?
+    > **100m**<br>The maximum supported cable length using Cat 7 cable to support a 10 Gigabit per second (Gbps) application is 100 meters. While Cat 6a can also support 10Gbps in some applications, Cat 7 cable is the first cable specification that stipulates 10Gbps at 100 meters. Unlike previous specifications, Cat 7 and later only support shielded twisted pair (STP) cabling. In theory, Cat 7 can support speeds up to 40Gbps over shorter distances (50m or less).
+    > 
+    > Depending on the cable used, Cat 6a can support 10Gbps at 50 meters. However, the actual distance varies and is not guaranteed.
+    > 
+    > The Cat8 specification stipulates support for 25Gbps and 40Gbps up at distances up to 30m.
+    > 
+    > Optical fiber mode 1 (OM1) supports 10Gbps over short range, up to 33m.
+    
+<br>
+
+9. What is the PRIMARY benefit of using power distribution units (PDUs) in a datacenter?
+    > **Remote switching for equipment reboots.**<br>A primary benefit of using power distribution units (PDUs) in a datacenter is remote switching for equipment reboots. As their name indicates, PUs facilitate power distribution and are comparable to power strips. However, most PUs are designed to be rack-mountable and are therefore preferred for usage in datacenters and network distribution closets. PUs are often connected to an uninterruptible power supply (UPS), generator, or some other backup power source. Among other features, some PUs support remote connectivity and management, including the ability to turn individual outlets on or off.
+    > 
+    > A primary benefit of using PDUs is not continuous power the event of an outage. This describes a UPS. PDUs do not store power in batteries, though they are often connected to backup power systems and aggregate power connectivity for devices like servers or network switches.
+    > 
+    > A primary benefit of using PDUs is not protection against over voltages. This functionality is usually performed by a UPS.
+    > 
+    > A primary benefit of using PUs is not power conditioning during brownouts. Power conditioning is usually performed by a power conditioner or a UPS.
+    
+<br>
+
+10. What is the PRIMARY use of an intermediate distribution frame (IF) in a network infrastructure?
+    > **To facilitate connectivity for end-users and devices**<br>An intermediate distribution frame (IDF) is used to facilitate connectivity for end-users and devices. An IDF, or network closet as they are often called, consists of basic networking equipment used to service a small building, or floor within a building. In a two-tier network design, end-user devices such as computers and printers would connect to an access switch located in an IDF. IDF is then connected to the main distribution frame (MDF). The MDF is typically located in a data center and houses the core switching and routing equipment. Public connections to resources like the internet are often terminated in an MDF.
+    > 
+    > An IDF is not used to route traffic between different VLAN segments. Routing is done by Layer 3 switches or routers. While these types of devices may be located in an IDF, this is not a requirement.
+    > 
+    > An IDF is not used to protect the network from external threats. Technologies like an Intrusion Prevention System (IPS) can provide this functionality. Most modern firewalls include IPS features and functionality.
+    > 
+    > An ID is not used to perform Network Address Translation (NAT) for devices. NAT is frequently used to allow Local Area Network (LAN) users to share a common internet connection. The device running NAT, which is typically a firewall, translates all internal requests to use a public IP address. External users cannot connect directly to LAN devices, they must rely on the NAT device to facilitate this connectivity.
+    
+<br>
+
+11. A network administrator is concerned about ED in a data center. Which monitor will the administrator MOST likely deploy to validate this concern?
+    > **Humidity**<br>The network administrator should deploy humidity monitors. As humidity drops in a data center, the air becomes dry. This increases the risk of electrostatic discharge (ESD). ESD can damage sensitive electronic components.
+    > 
+    > The administrator should not deploy power monitors. Power monitoring may be used to ensure continuous operations or efficient electricity usage.
+    > 
+    > The administrator should not deploy flooding monitors. Flooding monitors detect water pooling.
+    > 
+    > The administrator should not deploy temperature monitors. Temperature monitors may be used to ensure equipment does not get too hot. Though temperature and humidity are related environmental factors, a humidity sensor is the best option for validating ESD concerns.
+    
+<br>
+
+12. A network technician is concerned about electrostatic discharge (ESD) in a large IDF. What should the technician do to address this concern?
+    > **Ensure that the humidity is 40%-60%**<br>The network technician should ensure that the humidity is 40%-60%. This is the ideal humidity range for datacenters, intermediate distribution frames (IDFs), and other locations that house compute, network, and other equipment. If humidity is too high, there is a risk of condensation, which can damage electronics. If humidity is too low, there is a risk of electrostatic discharge (ESD), which can also destroy or damage electronics. For these reasons, humidity in these locations should be actively monitored and controlled using heating, ventilation, and air conditioning (HVAC) or other similar solutions.
+    > 
+    > The network technician should not ensure that the humidity is 60%-80%. Condensation can occur when humidity is over 60%.
+    > 
+    > The network technician should not ensure that the humidity is 30%-50%. ESD can occur when humidity is below 40%.
+    > 
+    > The network technician should not ensure that the humidity is 50%-70%. Condensation can occur when humidity is over 60%.
+    
+<br>
+
+13. A network administrator is configuring NAT to facilitate connectivity between a LAN and the Internet. The administrator has decided to use **RFC1918** compatible addressing. Which range should the administrator configure?
+    > **172.30.16.0/20**<br>The administrator should configure the 172.30.16.0/20 range. Request for Comments (RFC) 1918 specifies three address ranges for internal use. All three ranges have been reserved for use exclusively on intranets and are not routable on the public Internet. Any packets with private source or destination IP addresses should be dropped by Internet routers. The ranges are: 10.0.0.0 to 10.255.255.255, 192.168.0.0 to 192.168.255.255, and 172.16.0.0 to 172.31.255.255. The proposed range 172.30.16.0/20 fits in this last range.
+    > 
+    > 239.12.0.0/16 is not reserved for private use per RFC1918. This address is part of the dedicated multicast range.
+    > 
+    > 192.186.1.0/27 is not reserved for private use per RFC1918. This is a valid address for use on the Internet.
+    > 
+    > 11.10.10.0/24 is not reserved for private use per RFC1918. This is a valid address for use on the Internet.
+    
+<br>
+
+14. A client is configured with an IP address, 192.168.1.2/16. Which address will the client use for subnet broadcasts?
+    > **192.168.255.255**<br>The client will use 192.168.255.255 for subnet broadcasts. This client is configured with a 16 bit subnet mask, as indicated by the /16 classless inter-domain routing (CIDR) notation. The subnet broadcast address is the last viable address on a subnet. Subnet broadcasts are processed by all nodes on a subnet.
+    
+<br>
+
+15. In a multi-tier networking architecture, where is VLAN routing MOST likely to occur?
+    > **Distribution**<br>In a multi-tier networking architecture, routing is most likely to occur at the distribution layer. The distribution layer is plemented using routers or layer 3 switches. Virtual Local Area Networks (VLANs) are defined on access switches and traffic between VLANs can be routed at the distribution layer. While some routing also likely occurs at the core, most modern network architectures dedicate the core to high-speed switching.
+    > 
+    > Top-of-rack switches are common in medium to large datacenters and facilitate connectivity for devices mounted in datacenter racks. The top-of-rack switches are designed to provide high throughput between servers, and between clients and servers. Due to the overhead and latency it introduces, routing is not typically done on top-of-rack switches.
+    > 
+    > The access layer provides connectivity for endpoints. Though LANs are often defined on access switches, routing between these VLANs happens at the distribution layer. This reduces overhead, complexity, and costs as layer 3 switches, switches that can perform routing, are more expensive to purchase and maintain.
+    > 
+    > In some designs, access switches are referred to as edge switches. The term might also be used for switches at an organization's Internet border, or edge.
+    
+<br>
+
+1.  Which two are benefits of mesh-connected distribution routers?
+    > **Multipathing and load balancing**<br>Multipathing, or multipath routing, and load balancing are benefits of mesh-connected distribution routers. In a three-tier network architecture, distribution routers sit between edge or access routers and the network core. To increase availability and performance, distribution routers are often connected to the core and to each other to form a mesh. In the event a connection is unavailable or congested, routers can utilize alternative paths for communications.
+    > 
+    > Network interface card (NIC) teaming is not a benefit of mesh-connected distribution routers. N C teaming allows multiple NICs to be combined to increase throughput and availability.
+    > 
+    > Bridging is not a benefit of mesh-connected distribution routers. Bridging is commonly used to connect different types of networks.
+    > 
+    > Simplified routing is not a benefit of mesh-connected distribution routers. Due to the increase in path diversity, routing configuration becomes more complex. In many cases, dynamic routing protocols are deployed to automate the mesh network configuration.
+    
+<br>
+
+17. Where in a network architecture is STP MOST likely to be disabled?
+    > **Access layer**<br>Spanning Tree Protocol (STP) will most likely be disabled at the access layer. In a switched Ethernet network, STP ensures a loop-free topology. Loops in a layer 2 network can cause frames to be forwarded repeatedly, significantly impacting network performance. To prevent STP recalculations, which can cause brief network outages, and to protect the STP structure, STPis often disabled on access ports. These are the ports that host connectivity from user computers, servers, and other endpoints.
+    > 
+    > STP is often a critical component at the core layer of a multi-tier network. Depending on how the network is designed, all distribution layer switches should be connected to one or more core switches. This approach likely includes re connections that may create switching loops.
+    > 
+    > Like the core layer, distribution layers are often connected to each other and to the core. As a result, STP is often configured on distribution switches.
+    > 
+    > Top-of-rack switches are common in medium to large datacenters and facilitate connectivity for devices mounted in datacenter racks. The top-of-rack switches are often connected redundantly to the core or to a distribution switch. As in those cases, STP becomes essential for preventing switching loops.
+    
+<br>
+
+18. In a two-tier datacenter network, servers are connected to which type of switch?
+    > **Leaf**<br>In a two-tier datacenter network, servers are connected to leaf switches. Two-tier datacenter networks use spine and leaf switches to provide low-latency, high-throughput connectivity. Spine switches are mesh connected to leaf switches and servers, storage devices, and other datacenter endpoints connect directly to leaf switches.
+    > 
+    > In multi-tier architectures, servers do not connect directly to the core. Instead, they connect to top-of-rack or leaf switches. Spine and distribution switches connect to the core.
+    >
+    > In a two-tier datacenter network, spine switches aggregate leaf switch connections. Each leaf switch is typically connected to all spine switches.
+    >
+    > Distribution switches are part of a three-tier network architecture. Access switches connect to distribution switches, which in turn connect to the core.
+    
+<br>
+
+19. A network engineer is concerned about the security of sensitive east-west traffic flows. Which is the BEST option for addressing this concern?
+    > **Place firewalls between datacenter network segments.**<br>The best option for securing sensitive east-west traffic flows is to place firewalls between datacenter network segments. East-west traffic flows describe traffic that flows between endpoints within the same datacenter. By placing firewalls between datacenter network segments, traffic can be scanned, and Access Control Lists (ACLs) can be used to block access to unnecessary services. East-west traffic is also known as lateral traffic.
+    > 
+    > Placing a firewall at the public/private network perimeter will protect north-south traffic flows. North-south traffic flows outside a datacenter network, typically between trusted and untrusted networks.
+    > 
+    > Site-to-site Virtual Private Networks (VPN) protect north-south traffic flows. Data flows from a datacenter to the remote site and back.
+    > 
+    > Requiring Transport Layer Security (TLS) for customer connections to cloud resources will protect north-south traffic flows. Data flows from remote customers to the datacenter and back.
+    
+<br>
+
+20. A user reports their laptop cannot connect to the network. Which action is a network technician MOST likely to perform after establishing a theory of probable cause?
+    > **Test connectivity to a remote server with ping.**<br>Th network technician will most likely test connectivity to a remote server with ping after establishing a theory of probable cause. During this step, the technician will test their theory to determine the cause of an issue. Depending on the output received from the ping command, the technician may determine the network interface card (NIC) is faulty.
+    > 
+    > During the first step of the troubleshooting methodology, identifying the problem, the technician would question the user to determine if they recently made changes.
+    > 
+    > If the technician anticipated making changes to the laptop's configuration, the technician may decide to create an image of the laptop's hard drive during the first step of the troubleshooting methodology.
+    > 
+    > The technician would search a knowledge base for related issues immediately after identifying the problem as part of establishing a theory of probably cause.
+    
+<br>
+
+21. A network technician has confirmed that faulty DNS records are causing connection timeouts. Which step of the troubleshooting methodology should the technician take NEXT?
+    > **Establish an action plan**<br>The network technician should establish an action plan. This is step 4 of the troubleshooting methodology. The admin has identified the problem (step 1) as connection timeouts and established a theory (step 2) that faulty Domain Name System (DNS) records are causing the issue. The admin has tested the theory (step 3) to confirm this assumption. In step 4, the admin will determine which actions are required to resolve the issue.
+    
+<br>
+
+22. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+23. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+24. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+25. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+26. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+27. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+28. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+29. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+30. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+31. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+32. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+33. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+34. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+35. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+36. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+37. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+38. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+39. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+40. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+41. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+42. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+43. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+44. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+45. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+46. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+47. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+48. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+49. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+50. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+51. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+52. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+53. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+54. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+55. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+56. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+57. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+58. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+59. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+60. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+61. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+62. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+63. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+64. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+65. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+66. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+67. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+68. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+69. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+70. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+71. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+72. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+73. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+74. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+75. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+76. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+77. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+78. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+79. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+80. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+81. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+82. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+83. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+    
+<br>
+
+84. 
+    > ****<br>
+    > 
+    > 
+    > 
+    > 
+    > 
+    > 
+
+
 <br><br><br>
 
 
-## 
+##
