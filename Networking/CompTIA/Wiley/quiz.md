@@ -1485,234 +1485,230 @@
     
 <br>
 
-22. 
-    > ****<br>
+22. A company's ecommerce platform frequently crashes due to heavy traffic loads. Which is the BEST option for improving site availability for end users?
+    > **Deploy a web server farm and configure active/active load balancing**<br>The best option for improving site availability for end users is to deploy a web server farm and configure active/active load balancing. In active/active load balancing, a hardware or software load balancer distributes traffic across two or more nodes. In this scenario, the provider could build a web farm with all web servers hosting the same content. A load balancer could then be configured to distribute requests using the round-robin method. If any single server fails or is otherwise busy, the remaining servers can service requests.
     > 
+    > The provider should not place the web server on the demilitarized zone (DMZ) and configure restrictive Access Control Lists (ACLs). A DMZ, also known as a screened subnet, is used a to host Internet-accessible servers on a protected network that is separate from the production Local Area Network (LAN). This approach will not necessarily enhance availability.
     > 
+    > The provider should not deploy a Network Address Translation (NAT) gateway and configure port forwarding rules. NAT is often used to enhance network privacy by hiding a network behind one or more public Internet Protocol (IP) addresses. This approach will not necessarily enhance availability.
     > 
-    > 
-    > 
-    > 
+    > The provider should not deploy an Intrusion Detection System (IDS) between the network firewall and the web server. An IDS monitors and analyzes traffic and reports intrusion attempts.
     
 <br>
 
-23. 
-    > ****<br>
+23. Which is the BEST option for increasing availability of a network's gateway router group?
+    > **FHRP**<br>First Hop Redundancy Protocol (FHRP) is the best option for increasing availability of a network's gateway router group. FHRP allows a cluster of two or more routers to share a single virtual IP address. Depending on the implementation, a FHRP router group may have one active and one or more passive routers, or all routers may be active.
     > 
+    > Network Time Protocol (NTP) is not used to increase router availability. NTP is used to synchronize time on network nodes.
     > 
+    > Spanning Tree Protocol (STP) is not used to increase router availability. STP is used to prevent layer 2 switching loops in networks with redundant paths.
     > 
-    > 
-    > 
-    > 
+    > Remote Authentication Dial-In User Service (RADIUS) is not used to increase router availability. RADIUS can be used to facilitate authenticated network access.
     
 <br>
 
-24. 
-    > ****<br>
+24. Following a disaster, a network administrator is attempting to prioritize system restores. What should the admin do FIRST?
+    > **Check the RTO**<br>The administrator should first check the Recovery Time Objective (RTO). The RTO specifies the amount of time allowed for system to be restored. Lower RTOs are reserved for mission critical systems. Additionally, as some systems rely on others, RTOs will differ between system types.
     > 
+    > Mean time to repair (MTTR) measures the amount of time between a system's failure and when it is again operational. Organizations use this metric to plan backup and restore strategies.
     > 
+    > Recovery Point Objective (RPO) defines a point in time in the past that the organization wants to recover to. The RPO will not impact restoration priorities.
     > 
-    > 
-    > 
-    > 
+    > Mean time between failures (MTBF) attempt to predict how long a system can operate before a failure will occur. This metric does not impact restoration priorities.
     
 <br>
 
-25. 
-    > ****<br>
+25. An organization plans to contract with a cloud service provider (CSP) for a disaster recovery site that will host backup critical system hardware. When the primary datacenter fails, data will be restored, and the secondary site will be activated. Costs must be minimized. Which type of disaster recovery site should the organization deploy?
+    > **Warm site**<br>The organization should deploy a warm site. A warm site includes power, networking, and server hardware. In the event of a disaster, the servers must be powered on, and operating systems installed or updated. Data from the most recent primary site backups can then be restored. A warm site does not typically host all the same hardware as the primary site, and often provides just enough processing capability for the organization to operate while the primary site is restored.
     > 
+    > A hot site mirrors primary site and includes all the hardware, software, and connectivity required to support full operations. Data is mirrored from the primary to the hot site on a frequent schedule, if not in real time.
     > 
+    > A mobile site can be compared to a warm site. The provider supplies a trailer with power, networking, and hardware, and systems must be configured, and data restored.
     > 
-    > 
-    > 
-    > 
+    > A cold site is a facility with power, but typically does not host any server hardware. During a failover, hardware must be installed, network connectivity provisioned, and data restored. Cold sites are the least expensive recovery option but require the longest time to spin up.
     
 <br>
 
-26. 
-    > ****<br>
+26. The connection between an access and distribution is over utilized. Which should a network engineer use to increase bandwidth between the switches?
+    > **LACP**<br>Link Aggregation Control Protocol (LACP) can be used to increase bandwidth between the switches. LACP aggregates two or more Ethernet interfaces. This allows the interfaces to operate as a single virtual interface, which increases throughput and enhances availability. In this scenario, LACP must be configured on both switches and the same number of ports must be added to the LACP channel on both ends. If two 1Gbps interfaces are configured with LACP, the effective bandwidth should be close to 2Gbps.
     > 
+    > 802.11ax is a wireless networking standard. Also known as Wi-Fi 6, 802.11ax offers over 3Gbps per stream and works well in dense environments. It is not used to increase bandwidth between switches.
     > 
+    > Code Division Multiple Access (CDMA) is a cellular technology used on 2G and 3G cellular networks. It is not used to increase bandwidth between switches.
     > 
-    > 
-    > 
-    > 
+    > Flow control can be used to manage data transfer rates between switches. However, it is not used to increase bandwidth between switches.
     
 <br>
 
-27. 
-    > ****<br>
+27. To enhance performance and security, an organization defines VLANs on L2 switches. Switches will not host the same VLANs, but traffic for all VLANs must flow between switches. Which solution BEST meets this requirement?
+    > **Configure tagging on switch interconnects**<br>Tagging should be configured on switch interconnects. A Virtual Local Area Network (VLAN) allows devices to be grouped logically with other nodes. In scenarios where multiple LANs are used, the interconnected ports between switches must be able to carry traffic for more than one VLAN. Configuring 802.1Q tagging on a port makes this possible. Once configured, the switch uniquely tags traffic for each VLAN sot he remote switch can forward traffic to ports on that VLAN. 802.1Q ports are also known as trunk ports.
     > 
+    > Switches should not be connected on access ports. Access ports can carry traffic for only one VLAN. Endpoints are typically connected to access ports.
+    >
+    > Interfaces for each VLAN should not be created on all switches. This would be done on a Layer 3 switch to allow routing between the VLANs.
+    >
+    > All switches do not need to be connected to a Layer 3 switch. This is not required to pass traffic for all VLANs. If required, a Layer 3 switch or router can be used to route traffic between VLANs.
+
+<br>
+
+28. A network administrator connects finance and marketing PCs to the same L2 switch. The administrator must ensure that marketing PCs do not communicate with finance PCs. Which is the BEST solution the administrator should deploy?
+    > **Define data VLANs.**<br>The administrator should define data Virtual Local Area Networks (VLANs). A VLAN allows devices to be grouped logically with other nodes connected across multiple network switches. VLANs increase network efficiency by reducing the size of broadcast domains and enhance network security by segmenting the network and isolating nodes from one another. Communications between VLANs are facilitated using routers.
     > 
+    > The administrator should not configure a screened subnet. A screened subnet is used to host Internet-accessible servers on a protected network that is separate from the production Local Area Network (LAN). A screened subnet is also known as a demilitarized zone (DMZ).
     > 
+    > The administrator should not disable Spanning Tree Protocol (STP). In a switched Ethernet network, STP ensures a loop-free topology.
     > 
+    > The administrator should not deploy an Intrusion Prevention System (IPS). An IPS is used to detect and block malicious activity.
+
+<br>
+
+29. An organization plans to deploy WAPs in all its offices. Due to cost constraints, some mounting locations will only be reachable using Cat 6a cabling. Which of the following should the organization also plan to deploy to ensure that WAPs function properly?
+    > **PoE+**<br>The organization should also deploy Power over Ethernet+ (PoE+). PoE+ can delivery up to 30 watts of power over Category 5 or higher twisted pair cabling. This can be used in scenarios where installing traditional power outlets is cost prohibitive or otherwise not feasible. PoE+ provides enough power to run Wireless Access Points (WAPs), Voice over Internet Protocol (VoIP) phones, cameras, and other similar devices.
     > 
+    > Link Aggregation Control Protocol (LACP) is used on Ethernet networks to aggregate interfaces. This allows the interfaces to operate as a single virtual interface, which increases throughput and enhances availability. LACP is not used to deliver power to devices.
     > 
+    > 802.1q allows tags to be added to an Ethernet frame for Virtual Local Area Network (VLAN) identification. 802.1q is also known as VLAN or port tagging. It is not used to deliver power to WAPs.
+    > 
+    > Spanning Tree Protocol (STP) is not used to deliver power to devices. STP ensures a loop-free topology in switched Ethernet networks.
     
 <br>
 
-28. 
-    > ****<br>
+30. A network technician has been asked to create a DNS record so that users can browse to the company's main website, www.example.com. Additionally, users must be able to use example.com to get to the website. The website is hosted using a single IP address, 192.168.0.100. What should the technician do to complete this assignment?
+    > **Create an A record for www.example.com that points to the website's IP address and create a NAME record for example.com that points to www.example.com.**<br>The network technician should create an address (A) record for www.example.com that points to the website's IP address and create a canonical name (CNAME) record for example.com that points to www.example.com. An A record is used to map a hostname or fully qualified domain name (FQDN) to an IP address. A NAME record is used to map one hostname, or alias, to another hostname. In this scenario, once the A record for www.example.com is created and the NAME, or alias, is created, queries for example.com will resolve to www.example.com, which in turn resolves to the website's IP address, 192.168.0.100.
     > 
+    > The network technician should not create a NAME record for www.example.com that points to www.example.com and an A record for www.example.com that points to 192.160.0.100. While this will allow users to browse to www.example.com, it does not provide resolution for example.com.
     > 
+    > The network technician should not create an A record for example.com that points to www.example.com and a NAME record that points www.example.com to the website's IP address. CNAME records are used to map one hostname to another, not to an IP address.
     > 
-    > 
-    > 
-    > 
+    > The network technician should not create a NAME record that points www.example.com to 192.168.0.100 and an A record that points www.example.com to example.com. NAME records are used to map one hostname to another, not to an IP address. Additionally, A records are used to map hostnames to IP addresses, not to other hostnames.
     
 <br>
 
-29. 
-    > ****<br>
+31. A network engineer must ensure internet-based SMTP servers can locate their organization's SMTP servers. Which record should the engineer create on a public DNS server?
+    > **MX**<br>The engineer should create a mail exchanger (MX) record for the organization's Simple Mail Transfer Protocol (SMTP) servers. When an SMTP server has an email addressed to an organization, the server performs an MX record lookup to determine the name or names of the destination organization's SMTP servers. These names can in turn be matched to Internet Protocol (IP) addresses using address (A) records which the server can use to initiate an SMTP session.
     > 
+    > Service (SRV) records are not used to locate SMTP servers. SRV records are used to facilitate services such as voice over IP (VoIP). SRV records map services to ports.
     > 
+    > Text (TXT) records are not used to locate SMTP servers. TXT records can hold human readable text for a variety of purposes. Protocols like Sender of Policy Framework (SPF) use TXT records to combat email SPAM.
     > 
-    > 
-    > 
-    > 
+    > Pointer (PTR) records are not used to locate SMTP servers. PTR records map IP addresses to hostnames. PTR records facilitate reverse lookups, which resolve IP addresses to hostnames.
     
 <br>
 
-30. 
-    > ****<br>
+32. An attacker steals backup tapes from a datacenter. Which is the BEST option for detecting such physical breaches?
+    > **Cameras**<br>Cameras are the best option for detecting physical breaches. Cameras can perform ongoing surveillance of an area. Depending on the complexity of the monitoring system, the camera may only get activated when motion is detected. Additionally, advanced monitoring systems can identify human activity and can be configured to send alerts to security staff.
     > 
+    > A badge reader uses an electronic lock that is deactivated when an employee swipes their badge through a reader. Badge readers are considered physical prevention controls.
     > 
+    > Biometric authentication uses uniquely identifiable attributes such as fingerprints or retinal scans to authenticate users. Biometric devices are considered physical prevention controls.
     > 
+    > An access control vestibule, also known as a mantrap, is a room with locking doors on each end. They are considered physical prevention controls.
+
+<br>
+
+33. An attacker posing as a janitor manages to access a storage cabinet where sensitive printed documents are kept. Which physical preventative control should the organization implement to address this ri:
+    > **Install a locked cabinet that limits access to the documents.**<br>The organization should install a locked cabinet that limits access to the documents. A control's function defines what the control does, and includes detective, corrective, and preventative features, among others. A physical preventative control is a physical component, such as a lock, a wall, or a fence, that prevents access to a secure location.
     > 
+    > The organization should not install surveillance cameras throughout the storage area. Cameras are physical detective controls.
     > 
+    > The organization should not define a policy that forbids unauthorized access to the storage cabinet. Such a policy is an administrative preventative control, not a physical control.
     > 
+    > The organization should not install alarms on all doors leading to the storage cabinet. Alarms are physical detective controls.
+
+<br>
+
+34. Which technology will an organization MOST likely deploy to manage industrial machinery?
+    > **SCADA**<br>The organization will most likely deploy Supervisory Control and Data Acquisition (SCADA). SCADA is a type of Industrial Control System (ICS) that is deployed to monitor and manage production machinery, plant operations, and energy and water distribution systems. SCADA devices can be placed locally in production facilities or in the field, such as a flow monitoring sensor on a water a supply pipe. Some SCADA devices passively monitor using sensors, while others actively control pumps, valves, motors, and other machine components.
+    > 
+    > A Security Information and Event Management (SIEM) is designed to ingest data from a variety of network components, such as user workstations or laptops, network routers and switches, firewalls, servers, and other appliances. The SIEM then analyzes the data to identify trends, pending security issues, and security breaches. A SIEM does not manage industrial machinery.
+    > 
+    > Simple Network Management Protocol (SNMP) is used to send status, diagnostic, and event information from network nodes to a centralized server. SNMP can also collect performance and event information from network devices. SNMP is not used to manage industrial machinery.
+    > 
+    > Session Initiation Protocol (SIP) is used to initiate and manage sessions for real-time communications such as voice over IP (VoIP) and video conferencing. SIP is not used to manage industrial machinery.
     
 <br>
 
-31. 
-    > ****<br>
+35. Which statement describes a primary benefit provided by multifactor authentication?
+    > **Mitigation of phishing attacks**<br>Multifactor authentication can help reduce the impact from successful phishing attacks. Multifactor authentication requires at least two different authentication factors for successful authentication. Authentication factors can be something you know, something you have, or something you are. Multifactor authentication mitigates phishing and other social engineering attacks that successfully compromise a user's password, as the attack will be unable to provide a second factor.
     > 
+    > Multifactor authentication does not protect data in motion. Data in motion can be protected using transport encryption protocols such as Transport Layer Security (TLS) and Internet Protocol Security (IPsec).
     > 
+    > Multifactor authentication does not necessarily facilitate federated authentication. In federated authentication, trusted partner organizations are allowed to authenticate user access to an organization's resources. For example, a shopping site may allow a user to authenticate using their Google account.
     > 
-    > 
-    > 
-    > 
+    > Multifactor authentication does not require the use of biometrics. Multifactor authentication requires two or more authentication factors, and many multifactor authentication systems utilize something you have and something you know as factors.
     
 <br>
 
-32. 
-    > ****<br>
+36. A user reports odd behavior when attempting to access network resources from their Windows laptop. While reviewing the laptop's configuration, a network technician discovers that the hosts file has been modified. Which type of attack has the security administrator likely uncovered?
+    > **DNS poisoning**<br>A Domain Name System (DNS) poisoning attack adds new or overwrites existing cached hostname to Internet Protocol (IP) address entries. For example, an attacker could add in invalid DNS cache entry for comptia.org so that when a user navigates to comptia.org, they are instead directed to a malicious website. On a Windows system, the file that initially populates the DNS cache is known as the hosts file and is stored in the C:windows \system32 \driversletc directory.
     > 
+    > Media Access Control (MAC) spoofing does not rely on changes to system files. MAC spoofing involves mimicking the MAC address of a target host. By imitating another host in this way, an attacker can intercept network traffic meant for the target.
+    >
+    > Domain hijacking involves manipulating domain registrations in public domain name registries. In domain hijacking, the attacker is attempting to steal a domain name.
     > 
-    > 
-    > 
-    > 
-    > 
+    > An on-path attack occurs when an attacker intercepts communications between two nodes. Depending on the sophistication of the attack, the attacker may be able to read and even modify data in transit between the nodes. DNS poisoning, Address Resolution Protocol (ARP) poisoning, and Dynamic Host Configuration Protocol (DHCP) spoofing can all be used to perpetrate an on-path attack.
     
 <br>
 
-33. 
-    > ****<br>
+37. A network technician is concerned about the risk of tailgating in their environment. What should the technician do to mitigate this risk?
+    > **Implement an access control vestibule.**<br>The network technician should implement an access control vestibule. Tailgating occurs when an unauthorized individual follows an authorized individual through a locked door, badge swipe, or similar physical security mechanism. This type of social engineering attack plays on a person's desire to be helpful by holding a door open for someone. An access control vestibule is designed so that only a single person can enter a secure area after presenting valid credentials. For example, a secure datacenter might allow badge access to a controlled room, where identity is manually verified by a security guard, who then lets the person into the datacenter.
     > 
+    > The network technician should not implement a shredding policy. A shredding policy could be used to mitigate the risk of dumpster diving. This type of attack involves an attacker going through an organization's garbage, looking for sensitive information.
     > 
+    > The network technician should not implement a data lifecycle policy. A data lifecycle policy defines how an organization's data is stored, where it can be stored, and for how long. It is considered good cybersecurity practice to only retain data as long as necessary.
     > 
-    > 
-    > 
-    > 
+    > The network technician should not implement multifactor authentication (MFA). MFA is used to require two or more authentication factors to prove a user's identity. MFA increases security by ensuring that even if an attacker has a user's password, they will not be able to log on as the user without the second factor.
     
 <br>
 
-34. 
-    > ****<br>
+38. A network administrator wants to ensure duplex mismatches are identified quickly. Which statistic should the administrator monitor?
+    > **CRC errors**<br>The network administrator should monitor cyclic redundancy check (CRC) errors. When a frame is transmitted, a CRC function runs, and the resulting value is added to the frame. When the frame is received, the same function runs. If the frame has been changed, the values will not match. In this scenario, if a port is configured to use full-duplex, carrier-sense multiple access with collision detection (CSMA/CD) is disabled. This means collisions are likely to occur, which can cause CRC errors.
     > 
+    > The administrator should not monitor for giants. On an Ethernet network, giant frames are larger than the 1500 byte maximum transmission unit (MTU). Duplex mismatches will not necessarily cause giant frames. Giants are also known as jumbo frames.
     > 
+    > The administrator should not monitor for link state changes. Link state is a port status and changes occur when a port is enabled or disabled, or when a device is plugged into or unplugged from a port. Duplex mismatches will not cause link state changes.
     > 
-    > 
-    > 
-    > 
+    > The administrator should not monitor for latency. Latency measures how long it takes for data to travel from source to destination. Duplex mismatches do not have a major impact on latency.
     
 <br>
 
-35. 
-    > ****<br>
+39. A technician is troubleshooting a faulty single mode connection between two network switches. The technician has determined that the issue is with the cabling. What should the technician do to address this issue?
+    > **Ensure that the cable core diameter is 9 microns.**<br>The technician should ensure that the cable core diameter is 9 microns. Single mode fiber is one of two types of fiber 9 optic cable used in modern networks. Single mode gets its name from the fact that it is designed to force light to travel in a single mode, or ray. This design allows the light to travel further than it would in multimode cable. Restricting light to a single mode requires a much smaller core than is found on multimode cable, which typically has core sizes from 50 to 62.5 microns.
     > 
+    > The technician should not ensure that the cables support transmissions at the 850 nanometers (nm) wavelength. Multimode cable supports this wavelength. By comparison, single mode cable supports wavelengths of 1310nm and 1550nm.
+    >
+    > The technician should not ensure that the cables support transmissions at the 1300nm wavelength. This wavelength is supported by multimode cable.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The technician should not ensure that the cable classification is OM3 or OM4. These are multimode classifications, which range from OM1 to OM5. Common single mode cable classifications are OS1 and OS2, with the latter supporting speeds of 100Gbps or greater at distances of 125 miles.
     
 <br>
 
-36. 
-    > ****<br>
+40. A technician attempts to install a device that requires power over Ethernet. However, the device will not power on. The technician has verified that the device is functional and suspects that the upstream switch is not providing enough power. The device requires a port that supports a maximum power of 100 watts. What should the technician do to ensure that the device functions properly while optimizing power usage?
+    > **Verify that the switch supports Type 4 PoE++.**<br>The technician should verify that the switch supports Type 4 Power over Ethernet++ (PoE++). Type 4 PoE++ supports a maximum power of 100 watts per port, which means that it can deliver up to 71.3 watts to a powered device (PD). PoE is popular for surveillance equipment, alarm systems, and wireless access points because it allows the device to be network connected and powered using a single cable. Type 4 PoE++ is also known as high-power PoE.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The technician should not verify that the switch supports PoE+. PoE+, or Po Type 2, supports a maximum of 30 watts per port.
+    >
+    > The technician should not verify that the switch supports Type 1 PoE. Type 1 PoE supports a maximum of 15.4 watts per port.
+    >
+    > The technician should not verify that the switch supports IEEE 802.3bt Type 3. Type 3 PoE, or PoE++ Type 3 supports a maximum of 60 watts per port.
     
 <br>
 
-37. 
-    > ****<br>
+41. An ISP has suffered several unscheduled outages every day for a week. What is the MOST likely result of this activity?
+    > **The SLA will be violated.**<br>If an Internet Service Provider (ISP) suffers unscheduled outages every day for a week, the most likely outcome is that the service-level agreement (SLA) will be violated. SLAs are designed to define a level of service an ISP is contractually obligated to provide, and ISPs often tout their SLA uptime guarantees. For example, an ISP may advertise 99.99999% uptime, indicating that outages are rare. Most SLAs outline penalties, which usually equate to refunds, when its requirements are not met.
     > 
+    > A Memorandum of Understanding (MOU) is an agreement between two or more parties. Typically, an MOU is created as part of a mutually beneficial partnership between organizations. t is unlikely a client will have an MOU with an ISP.
     > 
+    > Change management is designed to evaluate the impact of changes before they occur and track changes once they are made. If the ISP's outages were cause by configuration change errors, change management may be implemented. However, it is not clear that is the case in this scenario.
     > 
-    > 
-    > 
-    > 
+    > NetFlow is a network protocol that is used to capture packets and analyze traffic statistics on network nodes. It is unlikely NetFlow data will be reviewed in this scenario.
     
 <br>
 
-38. 
-    > ****<br>
+42. An employee wants to install an AP at their desk. Which should they consult FIRST?
+    > **AUP**<br>The employee should consult the Acceptable Use Policy (AUP). An AUP defines the allowed and prohibited activities for a compute environment. As installing an access point (AP) can impact wireless network performance and introduce unwanted security risks, it is likely the AUP will prevent users from installing personal APs
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    
-<br>
-
-39. 
-    > ****<br>
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    
-<br>
-
-40. 
-    > ****<br>
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    
-<br>
-
-41. 
-    > ****<br>
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    
-<br>
-
-42. 
-    > ****<br>
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > A disaster recovery (DR) plan defines the procedures required to restore compute services in the event of a disaster. DR plans are not used to manage user hardware.
     
 <br>
 
