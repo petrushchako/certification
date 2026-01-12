@@ -1712,91 +1712,93 @@
     
 <br>
 
-43. 
-    > ****<br>
+43. A user reports their VoIP calls seem choppy. A network administrator is concerned congestion may be causing variation in packet delays. What should the administrator monitor to confirm this concern?
+    > **Jitter**<br>If the network administrator is concerned congestion may be causing variation in packet delays, they should monitor jitter. Jitter aims to quantify the variation in timings for packet arrival. In Voice over IP (VoIP) calls on a high-performing network, packet delivery should be relatively smooth, with packets arriving in order at a similar rate. While some jitter is expected, values over 15 milliseconds may be a concern for VoIP calls.
     > 
+    > Latency measures how long it takes for data to travel from source to destination. Like jitter, high latencies can cause issues for some applications, like VoIP. In essence, latency measures network delay and jitter measures the variations in latency.
     > 
+    > In networks, duplex settings control whether a node can send and receive simultaneously. In half-duplex mode, a node cannot send and receive simultaneously. In full-duplex mode, a node can do both at the same time. Typically, a node can only be configured for full-duplex if directly connected to a switch port.
     > 
-    > 
-    > 
-    > 
+    > When a frame is transmitted, a cyclic redundancy check (CRC) function runs, and the resulting value is added to the frame. When the frame is received, the same function runs. If the frame has been changed, the values will not match and a CRC error will be logged.
     
 <br>
 
-44. 
-    > ****<br>
+44. A wireless client reports their VoIP calls are choppy and sometimes drop. What should a network administrator do FIRST to troubleshoot this issue?
+    > **Check the client's RSSI.**<br>The network administrator should first check the client's Relative Received Signal Strength (RSS). RSS is a measurement of how well a wireless client can hear a wireless access point. In simple terms, RSS measures the power of a received radio signal. RSSI is expressed in decibels per milliwatt, or dBm.
     > 
+    > The administrator should not reduce Effective Isotopic Radiated Power (EIRP). EIRP is used to express how much transmit energy an antenna radiates and reducing EIRP in this scenario will exacerbate the problem.
     > 
+    > The administrator should not add another Service Set Identifier (SSID). An SSID is also known as a network name and users specify the SSID when connected to a wireless network. Adding an SSID will not address VoIP performance issues.
     > 
-    > 
-    > 
-    > 
+    > The administrator should not install omnidirectional antennas. Omnidirectional antennas are designed to spread the signal as evenly as possible in all directions. Depending on where the client is located in relation to the current antenna, this may or may not alleviate performance issues. However, the administrator must know the client's RSS before placing a new antenna.
     
 <br>
 
-45. 
-    > ****<br>
+45. A network administrator prepares to install an outdoor WAP and determines EIRP is lower than the install requires. What should the administrator do to address this issue?
+    > **Replace the antenna cables.**<br>The administrator should replace the antenna cables. Effective Isotopic Radiated Power (EIRP) is used to express how much transmit energy an antenna radiates. Calculating EIRP requires knowing the transmit power of the wireless access point (WAP), the gain provided by the antenna, and the loss introduced by an / antenna cables and connectors. Replacing the antenna cables with lower loss cables will improve EIRP.
     > 
+    > The administrator should not reorient the WAP. For WAPs with internal antennas, AP orientation is important when maximizing signal strength for intended clients. However, AP orientation will not alter EIRP calculations.
     > 
+    > The administrator should not decrease the WAP transmit power. WAP transmit power is part of the EIRP equation and directly affects signal strength. Reducing transmit power will lower EIRP.
     > 
-    > 
-    > 
-    > 
+    > The administrator should not disable Service Set Identifier (SSID) broadcast. The SSID is the wireless network name. If SSID broadcast is disabled, users will need to manually enter the SSID when connecting to the network.
     
 <br>
 
-46. 
-    > ****<br>
+46. Users complain that as they walk from one location to another in an office complex, they lose wireless connectivity. What should a network administrator do to troubleshoot this issue?
+    > **Architect overlapping wireless cells.**<br>The network administrator should architect overlapping wireless cells. This will ensure clients can roam gracefully. Client roaming is the process where a wireless client session is transferred seamlessly across access points. For example, a client may be using a wireless tablet while walking through a library. As the Relative Received Signal Strength (RSSI) decreases on one wireless access point (WAP), the wireless system can ensure the session is transferred to a neighboring WAP without requiring the client to disconnect and then reconnect. Depending on the vendor, it is recommended that wireless cells should overlap 10%-15% for data, and 15%-20% for voice.
     > 
+    > The network administrator should not increase WAP transmit power, as this will not guarantee that clients can roam gracefully. I this scenario, it is likely new WAPs will need to be deployed.
     > 
+    > The administrator should not configure unique Service Set Identifiers (SSIDs) per WAP. An SSID is a wireless network name, and adding SSIDs does not increase wireless coverage.
     > 
-    > 
-    > 
-    > 
+    > The administrator should not ensure a low signal-to-noise ratio (SNR). SNR is the difference between a received signal and noise floor measured in decibels. The noise floor is background noise, and wireless receivers must be able to discern the "real" wireless signal from this background noise. The impact of SNR might be compared to two individuals having a conversation in a crowded room. The louder the background noise, the more difficult it is for the individuals to hear one another.
     
 <br>
 
-47. 
-    > ****<br>
+47. Following updates to A records, a client is no longer able to connect a web server. What should be done FIRST?
+    > **Run `ipconfig /flushdns` on the client.**<br>The ipconfig /flushdns command can be used on Windows-based systems to flush hostname to IP address mappings that have been previously resolved and are now stored in a local cache. In this scenario, the web server is using the cached IP address for the database server.
     > 
+    > The traceroute command can be used to verify and troubleshoot connectivity between endpoints. Traceroute reports the latency at each router hop between a source and destination. This command is not used to troubleshoot Domain Name System (DNS) related issues.
     > 
+    > The netstat command can be used to show the active and listening connections on a host. This is useful for investigating local network issues but is not used to troubleshoot DNS-related issues.
     > 
-    > 
-    > 
-    > 
+    > A packet analyzer is used to capture and view the contents of network packets. While a packet analyzer could be used in this case to evaluate the requests made by the web server, this tool is best used for complex network issues that cannot be resolved using other tools.
     
 <br>
 
-48. 
-    > ****<br>
+48. An alert indicates the loss of connectivity with a router. The log shows the following line: `EGP: Sending 19 bytes keepalive to 11.17.2.1 (External AS 1471) Failed, Neighbor down. TCP/179`. Which routing protocol should be investigated?
+    > **BGP**<br>Border Gateway Protocol (BGP) should be investigated. BGP uses the concept of an autonomous system (AS). An AS is a group of networks managed by a single enterprise or internet service provider. ARIN assigns a unique AS number to every AS. There are also private AS numbers that cannot be used on the internet (64512-65535).
     > 
+    > BGP is divided into internal and external BGP (iBGP and eBGP). iBGP is formed between routers within the same AS, while eBGP is formed between devices in different ASs. BGP uses TCP port 179 and is considered an exterior gateway protocol (EGP) or external routing protocol.
     > 
+    > In the log provided, there is an external AS number, EGP, and TCP port which identify the BGP protocol.
     > 
-    > 
-    > 
-    > 
+    > Enhanced Interior Gateway Routing Protocol (EIGRP) also uses the concept of autonomous system (AS). However, it is considered a hybrid internal routing protocol. EIGRP runs directly on top of IP using port 88.
+    >
+    > RIP and OSPF are also considered interior gateway protocols (IGP). RIP and OSPF do not use TCP for information exchange.
     
 <br>
 
-49. 
-    > ****<br>
+49. Which routing protocol requires each node to build a complete network map?
+    > **OSPF**<br>Open Shortest Path First (OSPF) requires each node to build a complete network map. OSPF is considered a link-state routing protocol and routers share link-state data with neighboring routers. As link-state data is shared, each router learns the complete network topology of an Autonomous System (AS). The routers then use the Shortest Path First (SPF) algorithm to calculate routes to all destinations in the AS.
     > 
+    > Enhanced Interior Gateway Routing Protocol (EIGRP) combines features from link-state and distance vector routing protocols. As a result, EIGRP is referred to as a hybrid routing protocol. EIGRP uses hop count and other metrics, such as bandwidth, when making routing decisions. EIGRP routers do not build a complete network map.
     > 
+    > Routing Information Protocol (RIP) is considered a distance vector protocol and RIP routers share the routes they have learned with neighboring routers. Each route includes a metric that represents the hop count, or distance, to a route destination. When making routing decisions, a RIP router chooses the route with the lowest distance. RIP routers do not build a complete network map.
     > 
-    > 
-    > 
-    > 
+    > Border Gateway Protocol (BGP) is considered a path-vector routing protocol and is the routing protocol used on the internet. BGP routers do not build a complete network map.
     
 <br>
 
-50. 
-    > ****<br>
+50. What does a router use when routes from different routing protocols exist for the same destination?
+    > **Administrative distance**<br>If routes from different routing protocols exist for the same destination, a router uses administrative distance as part of best-path selection. Administrative distance is a numeric value between 0 and 255, with lower administrative distances reserved for more preferable route sources. Most vendors assign default administrative distance values based on the routing protocol that provides the route. For example, a static route has a default administrative distance of 1, while an Open Shortest Path First (OSPF) route has an administrative distance of 110.
     > 
+    > Routers do not use hop count when routes from different routing protocols exist for the same destination. However, some routing protocols, such as Routing Information Protocol (RIP), use hop count as a metric to measure how far away a destination is.
     > 
+    > Routers do not use latency when routes from different routing protocols exist for the same destination. Some routing protocols, like Enhanced Interior Gateway Routing Protocol (EIGRP), use latency as part of a route's metrics.
     > 
-    > 
-    > 
-    > 
+    > Routers do not use the Shortest Path First (SPF) algorithm when routes from different routing protocols exist for the same destination. Protocols like OSPF use the Shortest Path First algorithm to locate the most preferable path to a destination.
     
 <br>
 
