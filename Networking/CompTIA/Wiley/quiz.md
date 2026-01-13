@@ -1802,114 +1802,114 @@
     
 <br>
 
-51. 
-    > ****<br>
+51. Which is considered an exterior routing protocol?
+    > **BGP**<br>Border Gateway Protocol (BGP) is considered an exterior routing protocol. In the context of interior and exterior routing protocols, routing environments are divided into routing domains, also known as an Autonomous System (AS). Exterior routing protocols are designed to manage routing between Autonomous Systems. Currently BGP is used to route between the AS group known as the internet.
     > 
+    > Open Shortest Path First (OSPF) is considered an interior routing protocol. Each router learns the complete network topology of a single Autonomous System.
+    >
+    > Routing Information Protocol (RIP) is considered an interior routing protocol. RIP routers learn routes from their neighbors within an AS.
+    >
+    > Enhanced Interior Gateway Routing Protocol (EIGRP) is considered an internal routing protocol. EIGRP uses features from both distance vector and link-state routing protocols to build routes.
+
+<br>
+
+52. Which primary benefit does VRRP provide?
+    > **Availability**<br>Virtual Router Redundancy Protocol (VRRP) provides high availability and is a standards-based First Hop Redundancy Protocol (FHRP). VRRP, defined in Request for Comments (RFC) 3768, provides network redundancy grouping two or more routers to form a single virtual router. The virtual router presents IP and Media Access Control (MAC) addresses that are shared across all VRRP group members. VRRP selects a master router, and the remaining routers are designated as backup routers. In the event the master router fails, a backup router becomes the new master router.
     > 
+    > VRRP does not provide integrity. In network communications, data integrity is ensured by using digital signing and hashing algorithms.
     > 
-    > 
-    > 
-    > 
+    > VRRP does not provide confidentiality. In network communications, data confidentiality is provided by encryption algorithms.
+    >
+    > VRRP does not provide authentication. Authentication is provided by protocols such as Remote Authentication Dial-In User Service (RADIUS).
     
 <br>
 
-52. 
-    > ****<br>
+53. A router must forward a packet to a subnet for which it does not have a route. Which route will the router MOST likely utilize?
+    > **Default route**<br>The router will most likely utilize a default route. Depending on the routing protocols in use and the size of the routing table, routers may not store routes to every possible network destination. If a router does not have a route to a destination, it will discard packets clients sent to that destination. To prevent this, a default route can be created. Default routes are used to determine where packets should be sent when a more specific route cannot be determined.
     > 
+    > A static route is typically manually configured on a router, as opposed to being learned using a routing protocol. A default route may be static or dynamic.
     > 
+    > A dynamic route is learned from another router using a routing protocol, such as Open Shortest Path First (OSPF). A default route may be static or dynamic.
     > 
-    > 
-    > 
-    > 
+    > Exterior routes are creating using exterior routing protocols, such as Exterior Border Gateway Protocol (eBGP).
     
 <br>
 
-53. 
-    > ****<br>
+54. Which device would be used to distribute user requests across all servers in a farm?
+    > **Load balancer**<br>A load balancer is used to distribute user requests across all servers in a farm. Load balancers use one of several algorithms for distributing loads across multiple servers. For example, a simple load balancer alternates between two servers by sending one request to the first server and sending the next request to the second server. Load balancers can also facilitate redundancy by only sending requests to live servers.
     > 
+    > A proxy server is not used to distribute user requests across all servers in a farm. A proxy server acts as an intermediary between a client and a server and makes requests on behalf of clients such that the requests appear to come from the proxy itself.
     > 
+    > A Domain Name System (DNS) server is not used to distribute user requests across all servers in a farm. A DNS server resolves hostnames to IP addresses.
     > 
-    > 
-    > 
-    > 
+    > A firewall is not used to distribute user requests across all servers in a farm. A firewall is a security device which uses rules and built-in logic to examine requests and allow or deny packets.
     
 <br>
 
-54. 
-    > ****<br>
+55. Which statement describes traffic shaping?
+    > **Excess traffic is buffered until bandwidth is available.**<br>With traffic shaping, excess traffic is buffered until bandwidth is available. This feature is provided by Quality of Service (QoS), which uses two primary mechanisms to classify traffic and enforce rate limiting techniques, policing and shaping. Depending on the vendor, these methods use a token bucket method to track a flow's rate of transfer, with each token representing a unit of traffic. In traffic shaping, if all the tokens have been consumed, packets are buffered until bandwidth is available for consumption. This bandwidth is represented as tokens.
     > 
+    > With traffic shaping, excess traffic is not immediately dropped. This occurs in QoS traffic policing. Like a shaper, a policer also uses the token bucket algorithm. When all the tokens have been consumed, traffic is not queued and is dropped.
     > 
+    > With traffic shaping, excess traffic is not marked with a decreased priority. Depending on how a traffic policer is configured, traffic can be marked down rather than dropped. oS uses a packet marking mechanism, comparable to tagging, to identify a packet's priority. A policer can change this marking to indicate a lower priority.
     > 
-    > 
-    > 
-    > 
+    > With traffic shaping, excess traffic is not returned to the sending node. Some rate limiting algorithms will either return the excess traffic or notify the sending node that the requests have been dropped and should be resubmitted at a later time.
     
 <br>
 
-55. 
-    > ****<br>
+56. A switch is unable to learn the MAC address for VMs on a directly connect host. What should a network technician do to address this issue?
+    > **Create static ARP entries on the switch.**<br>The technician should create static Address Resolution Protocol (ARP) entries on the switch. ARP is used to resolve IF addresses to Media Access Control (MAC) addresses. MAC addresses are designed to be globally unique and are critical to layer 2 communications. Following resolution, the IP-to-MAC mapping is added to an ARP cache for a pre-determined amount of time. In scenarios where ARP resolution does not work properly, static ARP mappings can be defined.
     > 
+    > In this scenario, a default route for the VM host is not required. A default route is used when a route to a destination cannot be found. Defining a default gateway on a device creates a default route. A default route is a layer 3 construct.
     > 
+    > Static routes are used to specify a route to a network. Every router requires routes to properly process traffic and these routes can be dynamically learned via a routing protocol, statically created, or a combination of both. Static routes are layer 3 constructs.
     > 
-    > 
-    > 
-    > 
+    > Pointer Record (PTR) do not map MAC addresses. PTR records map IP addresses to hostnames. PTR records facilitate reverse lookups, which resolve IP addresses to hostnames.
     
 <br>
 
-56. 
-    > ****<br>
+57. Which is the BEST tool or technology for ensuring the performance of Voice over IP (VoIP) applications?
+    > **QoS**<br>Quality of Service (oS) is the best technology for ensuring the performance of Voice over IP (VoIP) applications. OoS is a feature on network devices that helps to manage bandwidth usage and reserve bandwidth for latency sensitive applications such as voice, IPTV, and video conferencing. Once QoS priorities are configured on a router or switch, QoS marks packets based on service type and then uses these markings to prioritize the desired traffic types.
     > 
+    > Simple Network Management Protocol (SNMP) is used to send status, diagnostic, and event information from network nodes to a centralized server. SNMP can also collect performance and event information from network devices. SNMP is not used to ensure the performance of Voice over IP (VoIP) applications.
     > 
+    > On its own, a Next-Generation Firewall (NGFW) does not ensure the performance of VoIP applications. Some firewalls include support for QoS, but this is not guaranteed. Firewalls are used to control network access to resources.
     > 
-    > 
-    > 
-    > 
+    > NetFlow is a network protocol that is used to capture packets and analyze traffic statistics on network nodes. NetFlow does not ensure the performance of VoIP applications.
     
 <br>
 
-57. 
-    > ****<br>
+58. Refer to the exhibit. Which device allows node D to communicate with node E?<br>![](img/quiz-19.jpeg)
+    > **Switch**<br>Node B, a network switch, allows nodes D and E to communicate. Network switches provide connectivity to wired network nodes. Traditionally, switches function at layer 2 (Data Link) of the Open Systems Interconnection model (OSI model). A layer 3 (Network) switch also offers routing capabilities.
     > 
+    > A load balancer does not allow nodes D and E to communicate. A load balancer is used to distribute user requests across all servers in a farm. Load balancers use one of several algorithms for distributing loads across multiple servers. For example, a simple load balancer alternates between two servers by sending one request to the first server and sending the next request to the second server. Load balancers can also facilitate redundancy by only sending requests to live servers. In this graphic, node C is a load balancer.
     > 
+    > A proxy server does not allow nodes D and E to communicate. A proxy server acts as an intermediary between a client and a server and makes requests on behalf of clients such that the requests appear to come from the proxy itself. Although proxies can technically be used in Local Area Network (LAN) environments, they are most used between LANs and the Internet. In this graphic, a proxy server would mostly likely be placed at node A's location.
     > 
-    > 
-    > 
-    > 
+    > A default gateway does not allow nodes D and E to communicate. In IP networking, a node uses its default gateway when it needs to send a packet to a node on a different subnet. A default gateway often also functions as a gateway of last resort and is used when a node does not know how to route a packet to its destination. Default gateways provide routing capabilities and allow hosts to communicate across subnets. In this graphic, node D would use node A as its default gateway. This would allow it to communicate with nodes F and G.
     
 <br>
 
-58. 
-    > ****<br>
+59. A network technician receives a report which includes the following output.<br>![](img/quiz-20.png)<br>Which tool should the technician use to recreate this data?
+    > **`dig`**<br>The Domain Information Groper (dig) utility generated the provided output. dig can be used to issue queries to Domain Name System (DNS) servers. This is useful for troubleshooting name resolution issues. In the output, dig locates the address (A) record for comptia.org and displays the IP address associated with that name. The bottom half of the output displays information about the query, including the IP address of the responding DNS server, 8.8.8.8.
     > 
+    > tracert did not generate the provided output. This utility traces the network path a packet may take from its source node to the destination endpoint.
     > 
+    > nslookup did not generate the provided output. Like dig, nslookup is used to query DNS servers. However, nslookup is primarily used on Windows systems and formats its output differently from dig.
     > 
-    > 
-    > 
-    > 
+    > netstat did not generate the provided output. netstat displays detailed information about outbound and inbound connections on a host.
     
 <br>
 
-59. 
-    > ****<br>
+60. A network technician troubleshoots connectivity to a server. The technician needs to determine if a connection from a client is active as well as the port being used for the connection. Which tool should the technician use?
+    > **`netstat`**<br>The technician should use netstat. Without parameters, this tool displays information about active connections on a node, including the port being used. netstat parameters can be used to gather additional information such as which executables are associated with a connection, Ethernet metrics, and other networking statistics.
     > 
+    > The technician should not use route. The route tool can be used to view and modify the routing table on a host.
     > 
-    > 
-    > 
-    > 
-    > 
-    
-<br>
+    > The technician should not use tracert. This tool traces the network path a packet may take from its source node to the destination endpoint.
+    >
+    > The technician should not use arp. This tool displays the contents of the Address Resolution Protocol (ARP) cache.
 
-60. 
-    > ****<br>
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
-    
 <br>
 
 61. 
