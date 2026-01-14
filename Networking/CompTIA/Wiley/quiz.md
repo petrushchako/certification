@@ -1912,113 +1912,107 @@
 
 <br>
 
-61. 
-    > ****<br>
+61. A network administrator wants to secure a server. Which is the BEST tool for determining which services or applications are responding to network requests?
+    > **Port scanner**<br>A port scanner is the best tool for determining which services or applications are responding to network requests. A port scanner is a tool that scans network nodes and attempts to identify which ports are responding. For example, if a web service is running on a server, a port scanner will likely detect that ports 80 and 443 are open. Nmap is the most popular and widely used port scanner available today. Other tools, such as vulnerability scanners, also use port scanning techniques.
     > 
+    > Security Information and Event Management (SIEM) software is designed to ingest data from a variety of network components, such as user workstations or laptops, network routers and switches, firewalls, servers, and other appliances. The software then analyzes the data to identify trends, pending security issues, and security breaches. While SIEM software might record information about applications or services running on the server, it is not the best tool for determining which of those are responding to network requests.
     > 
+    > A protocol analyzer can be used to capture network packets and investigate packet headers and payloads. Like SIEM software, a protocol analyzer may help the administrator discover information about the server. However, it is not the best tool fr determining which of those are responding to network requests. Wireshark and tcpdump are popular protocol analyzers.
     > 
-    > 
-    > 
-    > 
+    > The Domain Information Groper (dig) utility can be used to issue queries to Domain Name System (DNS) servers. This is useful for troubleshooting name resolution issues.
     
 <br>
 
-62. 
-    > ****<br>
+62. A network engineer is troubleshooting a network performance issue. Which tool can the engineer use to view packet headers and content in ASCII or hex?
+    > **tcpdump**<br>The engineer can use tcpdump. tcpdump is a popular, command-line protocol analyzer used on *nix operating systems. tcpdump includes many features, including the ability to view the contents of network packets in hex or ASCII. Additionally, each packet's headers, which include source and destination addresses, ports, and protocols in use are also displayed.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > netstat is not used to view packet content. netstat displays detailed information about outbound and inbound connections on a host.
+    >
+    > NetFlow is a network protocol that is used to capture and analyze traffic statistics on network nodes. NetFlow is not used to view packet content.
+    >
+    > nmap is network scanner utility supported on a variety of operating systems. nap is not used to view packet content.
     
 <br>
 
-63. 
-    > ****<br>
-    > 
-    > 
-    > 
-    > 
-    > 
-    > 
+63. Which OS layer relies on burned-in hardware addresses?
+    > **Data Link**<br>The Data Link layer, layer 2 of the Open Systems Interconnection (OSI) model, relies on burned-in hardware addresses. These addresses are known as Media Access Control (MAC) addresses and are burned-in, or programmed, into a network controller by the manufacturer. In theory, MAC addresses are globally unique.
     
 <br>
 
-64. 
-    > ****<br>
+64. Which OSI layer uses segments as its PDU?
+    > **Transport**<br>The Transport layer of the Open Systems Interconnection (OSI) model uses segments as its protocol data unit (PDU). The OSI model serves as a blueprint for network communications and is divided into seven distinct layers. Each layer performs a specific set of tasks and runs its own protocols. Protocols like Transmission Control Protocol (TCP) run at layer 4, the Transport layer. TCP stores its header, trailer, and data in segments.
     > 
+    > The Physical layer, layer 1 of the OS model, uses bits as its PDU.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The Data Link layer, layer 2 of the OSI model, uses frames as its PDU.
+    >
+    > The Network layer, layer 3 of the OSI model, uses packets as its PDU.
     
 <br>
 
-65. 
-    > ****<br>
+65. A network administrator connects all top-of-rack switches using a mesh architecture. Which of the following is required for error-free operations in this environment?
+    > **STP**<br>Spanning Tree Protocol (STP) is required to operate effectively in this environment. In a switched Ethernet network, STP ensures a loop-free topology. Loops in a layer 2 network can cause frames to be forwarded repeatedly, impacting network performance significantly. In this scenario, the switches are connected using a mesh architecture, which means that each switch is connected to all the other switches. STP will evaluate switch-to-switch connections and block redundant connections that would create switching loops.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > Virtual Local Area Networks (VLANs) are not required to operate effectively in this environment. A Virtual Local Area Network (VLAN) allows devices to be grouped logically with other nodes.
+    >
+    > Link Aggregation Control Protocol (LACP) is used on Ethernet networks to aggregate interfaces. This allows the interfaces to operate as a single virtual interface, which increases throughput and enhances availability. LACP is not required in this scenario and will not prevent switching loops.
+    >
+    > Power over Ethernet (Po) is not required to operate effectively in this environment. PoE is used to deliver power to devices like Wireless Access Points (WAPs) over twisted pair cabling. Po will not prevent switching loops.
     
 <br>
 
-66. 
-    > ****<br>
+66. A user complains they are unable to connect to the corporate network. A network administrator has verified other users are able to browse network resources without issues. The administrator runs ipconfig on the user's workstation, which returns the following result:<br>![](img/quiz-21.png)<br>What should the administrator do to troubleshoot the issue?
+    > **Verify the DHCP scope is not exhausted.**<br>The administrator should verify the Dynamic Host Configuration Protocol (DHCP) scope is not exhausted. Microsoft operating systems include a feature known as Automatic Private IP Addressing (APIPA). APIPA allows a Windows system to self-assign an IP address from a predefined range (169.254.0.1 to 169.254.255.254) if it is unable to obtain an address via the DHCP process. If DHCP has allocated all addresses in a scope, the client will use APIPA.
     > 
+    > The administrator should not manually enter a default gateway address. Though a default gateway is required to communicate across subnets, it is not required for local communications. Even if a default gateway address were assigned, unless other nodes used the same addressing scheme, communications would fail.
     > 
+    > The administrator should not enter a correct subnet mask for the address. The subnet mask used in this scenario is correct for APIPA. A subnet mask is used to determine which subnet a node resides on.
     > 
-    > 
-    > 
-    > 
+    > The administrator should not verify the local firewall is deactivated. Though a misconfigured firewall could interrupt communications, the administrator needs to resolve the IP address issue first.
     
 <br>
 
-67. 
-    > ****<br>
+67. A network administrator must configure a wireless controller to allow authentication for devices that do not support EAP. Once configured, client authentication must be automatic. However, unauthorized users should not be able to access network resources. Which of the following actions should the administrator take?
+    > **Enable PSK authentication on the controller.**<br>The administrator should enable Pre-Shared Key (PSK) authentication on the controller, preferably Wi-Fi Protected Access 2 PSK (WPA2-PSK). WPA2-PSK uses pre-shared keys to facilitate authentication. This is useful in scenarios where clients do not support Extensible Authentication Protocol (EAP). This is also useful in scenarios where clients may support EAP, but the network does not support centralized authentication using 802.1x, such as in a home network.
     > 
+    > The administrator should not require clients to use certificates to authenticate. Certificate-based authentication for wireless networks is facilitated by EAP-based protocols, such as Extensible Authentication Protocol - Transport Layer Security (EAP-TLS).
     > 
+    > The administrator should not configure 802.1x on the controller and setup Remote Authentication Dial-In User Service (RADIUS). 802.1x facilitates centralized authentication for wireless networks and does not support pre-shared keys. This approach requires EAP, and therefore does not meet the requirements listed in the question.
     > 
-    > 
-    > 
-    > 
+    > The administrator should not configure the controller to support Transport Layer Security (TLS). TLS is used to encrypt network traffic.
     
 <br>
 
-68. 
-    > ****<br>
+68. An organization plans a new 802.11 deployment. The organization wants to maximize performance by allowing simultaneous communication streams between clients and WAPs. Which should the organization deploy?
+    > **MU-MIMO**<br>The organization should deploy Multiuser - Multiple Input, Multiple Output (MU-MIMO). MU-MIMO allows a Wireless Access Point (WAP) to communicate simultaneously with multiple users, using multiple communication streams per user. For example, a WAP could simultaneously send and receive data with three users using the same airspace. This significantly increases network throughput and allows each WAP to support more users. MU-MIMO was introduced in the 802.11ac wireless specification and has been enhanced in the 802.11ax specification.
     > 
+    > Link Aggregation Control Protocol (LACP) is used on Ethernet networks to aggregate interfaces. This allows the interfaces to operate as a single virtual interface, which increases throughput and enhances availability. LACP is not used in wireless networks.
     > 
-    > 
-    > 
-    > 
-    > 
+    > First Hop Redundancy Protocol (FHRP) allows a cluster of two or more routers to share a single virtual IP address. FHRP is not used in wireless networks.
+    >
+    > Global System for Mobile Communications (GSM) is a cellular technology used on 2G and 3G cellular networks. GSM is not used in 802.11 deployments.
     
 <br>
 
-69. 
-    > ****<br>
+69. A network administrator is troubleshooting poor wireless performance used for a building-to-building backhaul and suspects the WAP antenna needs to be replaced. Which antenna type should the administrator deploy to maximize gain?
+    > **Parabolic dish**<br>The network administrator should deploy a parabolic dish antenna. A parabolic dish antenna is like a satellite dish and heavily focuses radio frequency (RF) energy in a tight beam. Parabolic dish antennas are used to connect wireless LANs across areas where cabling might be difficult to install. Some parabolic antennas can send 5 GHz signals over 10 miles. A parabolic antenna offers about 20 dBi gain.
     > 
+    > The network administrator should not deploy a ye ji antenna. A yagi antenna is a type of directional antenna that can also be used for short-haul point-to-point installations. A yagi antenna offers about 10 Bi gain.
+    >
+    > The network administrator should not deploy an omnidirectional antenna. Omnidirectional antennas are cylindrical in shape, and the wireless signal radiates outward from the antenna in a donut shape. Dipole antennas, a common type of omnidirectional antenna, are sometimes referred to as rubber duck antennas. An omnidirectional antenna offers about 5 dBi gain.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The network administrator should not deploy a directional antenna. Directional antennas are designed to radiate RF energy in a particular direction. The coverage pattern is often described as egg-shaped. Directional antennas offer about 10 dBi gain.
     
 <br>
 
-70. 
-    > ****<br>
+70. A network administrator plans to deploy a wireless network. What should they use to provide the strongest encryption for wireless communications?
+    > **WPA2 Enterprise**<br>The network administrator should deploy Wi-Fi Protected Access 2 (WPA2). WPA2 uses Advanced Encryption Standard (AES) as its cipher. Depending on the wireless system in use, AES uses 128, 192, or 256-bit encryption keys. AES has not been officially cracked.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
+    > The network administrator should not use Wi-Fi Protected Access ( PA) Enterprise. WPA Enterprise uses Temporal Key Integrity Protocol (TKIP) encryption. Though TKIP uses 128-bit keys, it has been cracked. WPA2 and WPA Enterprise use Remote Authentication Dial-In User Service (RADIUS) based authentication. 
+    >
+    > The network administrator should not use WPA with TKIP. WPA with TKIP usually refers to WPA with pre-shared key (PSK) authentication. This is also sometimes called WPA Personal. 
+    >
+    > The network administrator should not use WPA2 with TIP. TKIP provides key rotation for wireless communications. However, it has been deprecated in favor of AES.
     
 <br>
 
