@@ -2008,7 +2008,7 @@
 70. A network administrator plans to deploy a wireless network. What should they use to provide the strongest encryption for wireless communications?
     > **WPA2 Enterprise**<br>The network administrator should deploy Wi-Fi Protected Access 2 (WPA2). WPA2 uses Advanced Encryption Standard (AES) as its cipher. Depending on the wireless system in use, AES uses 128, 192, or 256-bit encryption keys. AES has not been officially cracked.
     > 
-    > The network administrator should not use Wi-Fi Protected Access ( PA) Enterprise. WPA Enterprise uses Temporal Key Integrity Protocol (TKIP) encryption. Though TKIP uses 128-bit keys, it has been cracked. WPA2 and WPA Enterprise use Remote Authentication Dial-In User Service (RADIUS) based authentication. 
+    > The network administrator should not use Wi-Fi Protected Access (WPA) Enterprise. WPA Enterprise uses Temporal Key Integrity Protocol (TKIP) encryption. Though TKIP uses 128-bit keys, it has been cracked. WPA2 and WPA Enterprise use Remote Authentication Dial-In User Service (RADIUS) based authentication. 
     >
     > The network administrator should not use WPA with TKIP. WPA with TKIP usually refers to WPA with pre-shared key (PSK) authentication. This is also sometimes called WPA Personal. 
     >
@@ -2016,159 +2016,158 @@
     
 <br>
 
-71. 
-    > ****<br>
+71. A network technician discovers a router being managed on port 23. What should the technician do FIRST?
+    > **Configure SSH**<br>The technician should configure Secure Shell (SSH). In this scenario, the router is being managed on port 23, which is the standard port for Telnet. As Telnet does not support transport encryption and allows passwords to easily be captured, SSH should be configured so that administrators can connect securely to the router.
     > 
+    > The firewall should not be enabled. While a firewall can be used to reduce the attack surface of a host, it will not enforce transport encryption.
     > 
+    > Complex passwords should not be configured. As the passwords will be sent as clear text using Telnet, complexity will not reduce the risk presented by packet sniffing.
     > 
-    > 
-    > 
-    > 
+    > An Intrusion Detection System (IDS) should not be installed. An IDS is designed to detect and alert on suspicious behavior.
     
 <br>
 
-72. 
-    > ****<br>
+72. During a DDoS attack, a technician is unable to access a critical router. What should the technician do to prevent this issue in the future?
+    > **Implement out-of-band management.**<br>The technician should implement out-of-band management. Out-of-band management uses isolated networks and connectivity options to manage network nodes. This is done to increase security as well as availability in the event the primary network fails. In this scenario, the Distributed Denial-of-Service (DoS) attack is likely flooding the network, making the router unreachable. If it existed, the technician could use the isolated out-of-band network to manage the router.
     > 
+    > The technician should not place the router in a screened subnet as this will not mitigate the DDoS attack. A screened subnet, also known as a demilitarized zone (DMZ), is used to host Internet-accessible servers on a protected network that is separate from the production Local Area Network (LAN).
     > 
+    > The technician should not require multifactor authentication. In this scenario, multifactor authentication will not reduce the impact of the DDoS attack. Multifactor authentication requires at least two different authentication factors for successful authentication. Authentication factors can be something you know, something you have, or something you are.
     > 
-    > 
-    > 
-    > 
+    > The technician should not deploy an Intrusion Detection System (IDS) on the router network. An IDS is designed to detect and alert on suspicious behavior. However, it will not prevent a DDoS.
     
 <br>
 
-73. 
-    > ****<br>
+73. What are the implications of allowing inbound port 3389 on a NAT gateway?
+    > **Attackers can attempt brute force attacks on user desktops.**<br>If port 3389 is allowed on a Network Address Translation (NAT) gateway, attackers can attempt brute force attacks on user desktops. Port 3389 is the standard port used for Remote Desktop Protocol (RDP), which facilitates access to a desktop across a network. In this scenario, the best option would be to only allow RDP access once a user is authenticated across a Virtual Private Network (VPN).
     > 
+    > Unencrypted communications will not allow passwords to be sniffed. RDP encrypts all traffic, so eavesdropping will be mitigated.
     > 
+    > Network switches will not be directly accessible from the internet. Network switches do not run RDP and are instead managed using protocols like Secure Shell (SSH).
     > 
-    > 
-    > 
-    > 
+    > Out-of-band device management will not be easier to perform. Out-of-band management uses isolated networks and connectivity options to manage network nodes. This is done to increase security as well as availability in the event the primary network fails.
     
 <br>
 
-74. 
-    > ****<br>
+74. A network administrator wants to monitor the impact of logging to a router's console. What should the administrator monitor for FIRST?
+    > **CPU usage**<br>The administrator should first monitor for Central Processing Unit (CPU) usage. Most switches and routers support different logging levels and facilities. If an intense logging level such as debugging is activated, the CPU must process and display all the logged events. This can overwhelm the CPU, making it difficult to manage the switch.
     > 
+    > The administrator should not monitor memory. Routers and switches use memory to store routing tables, configurations, and other information. It is not likely console logging will impact memory.
     > 
+    > The administrator should not monitor for giants. On an Ethernet network, giant frames are larger than the 1500 byte maximum transmission unit (MTU). Giants are also known as jumbo frames. Console logging will not cause jumbo frames.
     > 
-    > 
-    > 
-    > 
+    > The administrator should not monitor jitter. Jitter tracks the variation in packet latencies. Console logging may impact jitter if a router or switch CPU is at high utilization, but it is not the first metric that should be monitored in this scenario.
     
 <br>
 
-75. 
-    > ****<br>
+75. A network engineer needs to be able to identify anomalies in LAN performance and availability. What should the engineer do FIRST?
+    > **Create network baselines**<br>The network engineer should first create network baselines. Baselines aim to track the performance of a system, application, o network over time. Using this information, the engineer can accurately plan the network capacity that will be required to support the services, servers, and applications deployed in an organization. Additionally, once normal network performance is documented, performance changes or anomalies can be identified. This allows an organization to respond proactively to performance issues before they escalate.
     > 
+    > The network engineer should not first deploy Simple Network Management Protocol (SNMP) agents. SNMP can collect performance and event information from network. However, without a network baseline, the engineer will not be able to identify performance anomalies.
     > 
+    > The network engineer should not first configure audit logs. On a network device, an audit log typically records administration and configuration activities. This will not aid in identifying network performance anomalies.
     > 
-    > 
-    > 
-    > 
+    > The network engineer should not first verify the network Service Level Agreement (SLA). An SLA outlines an expected level of service, typically from a vendor. An SLA in this scenario might be used to identify what occurs when performance or availability anomalies are identified.
     
 <br>
 
-76. 
-    > ****<br>
+76. A network administrator must capture all north-south packets at line rate for long-term storage and analysis. Traffic flows should not be impeded or interrupted. Which is the BEST option for meeting this requirement?
+    > **Configure a port mirror.**<br>The administrator should configure a port mirror. Port mirroring is a feature offered by high-end network switches, firewalls, and other devices that copies all traffic from a source port to a destination port. This can be useful for traffic analysis, troubleshooting, and intrusion detection functions. Port mirrors do not impede or interrupt traffic. The administrator just needs to be sure the switch has enough processing power to handle the duplicate load and that the device connected to the mirrored port can capture traffic at line rate.
     > 
+    > The administrator should not deploy a proxy server. A proxy server does not facilitate a north-south packets capture. A proxy server is used to mediate requests between clients and web servers such that all requests appear to come from the proxy server.
     > 
+    > The administrator should not deploy a L2 switch. A Layer 2 switch does not necessarily facilitate a north-south packets capture. This depends on the capabilities offered by the hardware and software the switch uses. Most low-end switches do not support port mirroring.
     > 
-    > 
-    > 
-    > 
+    > The administrator should not configure an inline Intrusion Prevention System (IPS). IPS can capture and analyze north-south traffic. However, installing the IPS inline means it will likely impede or interrupt flows. An IPS is used to detect and block malicious activity and is not designed for line-rate packet capture and storage.
     
 <br>
 
-77. 
-    > ****<br>
+77. A network administrator is configuring SNMP and needs to specify an element in an MIB hierarchy for monitoring. What should the administrator enter?
+    > **`1.3.6.1.2.1.14.2`**<br>The network administrator should enter 1.3.6.1.2.1.14.2. This is an object identifier (OID). OIDs are pointers to elements in an Simple Network Management Protocol (SNMP) anagement information base (MIB), which are hierarchical representations of systems or nodes. The 1.3.6.1.2.1.14.2 points to Open Shortest Path First (OSPF) metrics on a Cisco router. Many network equipment vendors create and publish MIBs for their products.
     > 
+    > 172.30.12.155 is an IP version 4 (IPv4) address. IP addresses are used on TCP/IP networks to uniquely identify nodes at layer 3 of the Open Systems Interconnection (OSI) model.
     > 
+    > 3FFE:0:0:1:200:F8FF:FE75:50DF is an IPv6 address. Like IPv4 addresses, IPv6 addresses identify network nodes. IPv6 addresses are used on networks running IP version 6.
     > 
-    > 
-    > 
-    > 
+    > 00-14-22-01-23-45 is a Media Access Control (MAC) address. MAC addresses are burned-in, or programmed, into a network controller by the manufacturer. They uniquely identify nodes at layer 2 of the OSI model.
     
 <br>
 
-78. 
-    > ****<br>
+78. A network administrator needs to ensure network availability by sending status, diagnostic, and event information from network nodes to a centralized server. Which technology should the administrator use?
+    > **Syslog**<br>Syslog is used to send status, diagnostic, and event information from network nodes to a centralized server. Syslog is a standardized protocol that is used widely on network devices and servers. A syslog agent or process runs on these devices and can be configured to send syslog messages to a centralized server. Depending on the syslog server implementation used, the server may provide additional data analysis, log aggregation and search functions, and alerting.
     > 
+    > Remote Authentication Dial-In User Service (RADIUS) is not used to send status, diagnostic, and event information from network nodes to a centralized server. RADIUS provides Authentication, Authorization, and Accounting (AAA) functionality for networked systems.
     > 
+    > First Hop Redundancy Protocol (FHRP) is not used to send logging information to a centralized server. FHRP allows a cluster of two or more routers to share a single virtual IP address.
     > 
-    > 
-    > 
-    > 
+    > map is a network scanner utility supported on a variety of operating systems. nmap is not used to send logging information to a centralized server.
     
 <br>
 
-79. 
-    > ****<br>
+79. A network technician must ensure that nodes can send traps when performance thresholds are breached. Which solution BEST meets this requirement?
+    > **Deploy an SNMP management system and configure agents on nodes.**<br>The engineer should deploy a Simple Network Management Protocol (SNMP) management system and configure SNMP agents on nodes. SNMP can collect performance and event information from network devices and modify device configurations. When predefined performance thresholds are breached, SNMP agents can send trap notifications to an SNMP server. Many SNMP management systems can also be configured to alert on performance thresholds and system availability.
     > 
+    > The engineer should not configure a syslog server and forward syslog information from endpoints. Syslog is a standardized protocol that is used widely on network devices and servers. Syslog agents do not send traps.
+    >
+    > The engineer should not install Intrusion Detection System (IDS) software on each network node and define performance alerts. An IDS is designed to detect, record, and alert on malicious behavior, but does not send traps.
     > 
-    > 
-    > 
-    > 
-    > 
+    > The engineer should not configure network nodes to synchronize with a centralized Network Time Protocol (NTP) server. NTP is used to keep time synchronized between network devices, but does not send traps.
     
 <br>
 
-80. 
-    > ****<br>
+80. An organization upgrades the network cabling in some of its buildings from copper to fiber optic. However, a network administrator is concerned that some of the cabling may be faulty. What should the administrator monitor FIRST to determine if their concern is valid?
+    > **An increased number of CRC errors**<br>The administrator should monitor for an increased number of Cyclic Redundancy Check (CRC) errors. When a frame is transmitted, a CRC function runs, and the resulting value is added to the frame. When the frame is received, the same function runs. If the frame has been changed, the values will not match. Though not a thorough test, this helps to identify problems caused by faulty network components or configuration errors. In this scenario, if the new fiber optic cable has internal impurities or has been installed incorrectly, it is likely CRC errors will increase. CRC errors typically indicate issues at the bottom two layers of the Open Systems Interconnection (OS) model.
     > 
+    > A Domain Name System (DNS) query most likely fa s when the requested hostname does not exist. Though physical cable errors can cause a variety of issues, DNS failures occur at higher OSI layers.
+    >
+    > Like failing DNS queries, an increase in improperly routed packets is not likely a result of faulty cabling. Routing issues typically occur when routes have been incorrectly created or routing protocol is not properly configured.
     > 
-    > 
-    > 
-    > 
-    > 
+    > Maximum Transmission Unit (MTU) defines the maximum acceptable frame size on a network. Mismatched MTUs can cause a variety of errors that are difficult to troubleshoot, including dropped packets. Though it is possible faulty cabling could lead to MTU issues, this is not likely. CRC errors should be checked first.
     
 <br>
 
-81. 
-    > ****<br>
+81. Which of the following is used to create point-to-multipoint tunnels by encapsulating Layer 2 traffic for transmission over a Layer 3 underlay network?
+    > **Virtual extensible LAN (VXLAN)**<br>Virtual extensible LAN (VXLAN) is used to create point-to-multipoint tunnels by encapsulating Layer 2 traffic for transmission Layer 3 underlay network. This virtualization technique can be used to extend Layer 2 networks across private wide area network (WAN) links, including connections to cloud resources. VXLAN works by encapsulating Ethernet frames in User Datagram Protocol (UDP) packets. The UP packets can then be routed across any Layer 3 capable network. Among other users, VXLAN can be deployed as a core component of software-defined networking (SDN).
     > 
+    > Switch Virtual Interface (SVI) is not used to create point-to-multipoint tunnels by encapsulating Layer 2 traffic for transmission over a Layer 3 underlay network. An SVI is a virtual interface on a switch that can be used for inter-VLAN routing. SVIs do not encapsulate Layer 2 frames.
     > 
+    > Generic Routing Encapsulation (GRE) is not used tc create point-to-multipoint tunnels by encapsulating Layer 2 traffic for transmission over a Layer 3 underlay network. GRE is a tunneling protocol that can be used to create point-to-point connections.
     > 
-    > 
-    > 
-    > 
+    > Quality of Service (QoS) is not used to create point-to-multipoint tunnels by encapsulating Layer 2 traffic for transmission over a Layer 3 underlay network. oS is used to ensure that critical or latency-sensitive applications, such as video conferencing, have access to the bandwidth they need.
     
 <br>
 
-82. 
-    > ****<br>
+82. Which of the following BEST describes a primary use case for infrastructure as code (laC)?
+    > **Automated provisioning**<br>Automated provisioning describes primary use case for infrastructure as code (laC). laC is designed to store network device configurations in human-readable, editable templates. These templates can then be applied to devices as part of automated provisioning. For example, a network engineer could create templates used to set up a virtual test network, with firewalls, routers, and other networking devices. When the test network is needed, it can be automatically provisioned. When testing is complete, the virtual network can be decommissioned. Beyond automation, laC can also be used for disaster recovery as well as for periodic configuration verification.
     > 
+    > Policy-based authentication is not a primary use case for laC. Technologies like zero trust architecture (ZTA) can provide this technology. ZTA increases security by assuming no implicit trust for any service, user, or application. In ZTA, granular policies can be used to authenticate a user or device based on attributes like its location, the time of day, or even the application or service being requested.
     > 
+    > Transport agnostic networking is not a primary use case for laC. Technologies like software-defined wide area networking (SD-WAN) can provide this functionality. SD-WAN uses concepts from software-defined networking (SD) to define a virtual wide area network (WAN) architecture. This approach allows a virtualized network, also known as an overlay network, to be created and isolated from the underlying network, or underlay.
     > 
-    > 
-    > 
-    > 
+    > Data center interconnections are not a primary use case for laC. Technologies like virtual extensible LAN (VXLAN) can provide this functionality. VXLAN is used to create point-to-multipoint tunnels by encapsulating Layer 2 traffic for transmission over a Layer 3 underlay network. This virtualization technique can be used to extend Layer 2 networks across private wide area network (WAN) links, including connections to cloud resources.
     
 <br>
 
-83. 
-    > ****<br>
+83. Users who work in remote branches report performance issues when trying to access applications hosted in the corporate data center. A network engineer has been asked to evaluate the reports and recommend an application aware solution that will include latency, packet loss, and jitter when computing optimal data paths. Which technology should the engineer recommend?
+    > **Software-defined wide area networking (SD-WAN)**<br>The network engineer should recommend software-defined wide area networking (SD-WAN). SD-WAN uses concepts from software-defined networking (SDN) to define a virtual wide area network (WAN) architecture. This approach allows a virtualized network, also known as an overlay network, to be created and isolated from the underlying network, or underlay. Among other benefits, SD-WAN uses centralized management and control planes to dynamically route traffic based on characteristics like latency, packet loss, and jitter. For example, if a primary link between a branch office and the corporate data center is experiencing congestion, SD-WAN can dynamically route packets based on traffic characteristics, such as client-to-server requests.
     > 
+    > The engineer should not recommend infrastructure as code (laC). laC is designed to store network device configurations in templates that can be used to automate the provisioning and management of network infrastructure. While this is useful for automation, laC does not inherently monitor traffic for latency or packet loss and is not used to directly influence routing decisions.
     > 
+    > The engineer should not recommend virtual extensible local area network (VXLAN). VXLAN is used to create Layer 2 virtual networks that span Layer 3 underlay networks. Among other users, VXLAN can be deployed as a core component of SDN.
     > 
-    > 
-    > 
-    > 
+    > The engineer should not recommend dual stack. In a dual stack network, both Internet Protocol version Four (IPv4) and IPv6 protocols are supported. Implementing a dual stack network alone would not meet the requirements in this scenario.
     
 <br>
 
-84. 
-    > ****<br>
+84. Which statement describes SDN?
+    > **The control plane is decoupled from the data plane.**<br>In Software-Defined Networking (SDN), the control plane is decoupled from the data plane. SDN is designed to abstract network management from vendor-specific hardware and distributed configuration management. In traditional networking architecture, the control and data planes are tied closely together and are managed at the device, such as a router. SDN consolidates management centrally and makes the network programmable.
     > 
-    > 
-    > 
-    > 
-    > 
-    > 
-
-
+    > In SDN, each router does not run a dedicated routing protocol process. Routing processes are instead managed on centralized controllers.
+    >
+    > In SD, the application and infrastructure layers are not combined. The SD architecture deploys three layers, application, control, and infrastructure.
+    >
+    > In SDN, each layer does not employ distributed management. SDN aims to centralize management using SDN controllers. This allows network functions to be separated from underlying configurations.
+    
 <br><br><br>
 
 
