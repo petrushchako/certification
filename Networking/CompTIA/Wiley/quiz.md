@@ -2167,8 +2167,16 @@
     > In SD, the application and infrastructure layers are not combined. The SD architecture deploys three layers, application, control, and infrastructure.
     >
     > In SDN, each layer does not employ distributed management. SDN aims to centralize management using SDN controllers. This allows network functions to be separated from underlying configurations.
-    
+
 <br><br><br>
 
 
-##
+## Expert (1)
+1. An email server responds to a client's EHLO as shown below.<br>![](img/quiz-22.png)<br>What should be done to enhance the system's security?
+    > **Enable transport encryption on port 587**To enhance the system's security, transport encryption should be enabled on port 587. By default, Simple Mail Transfer Protocol (SMTP) does not require transport encryption. In this example, the server does not announce that it supports Transport Layer Security (TLS). It also advertises AUTH PLAIN LOGIN, meaning login credentials can be sent in clear text. If TLS is configured, the STARTTLS directive will be issued by the server. Port 587 is the standard client email submission port and is reserved for this purpose.
+    >
+    > In this scenario, email encryption should not be enabled. Secure/Multipurpose Internet Mail Extensions (S/MIME) uses Public Key Infrastructure (PKI) to ensure the integrity, authenticity, and confidentiality of email. However, S/MIME does not encrypt SMTP conversations.
+    >
+    > To enhance the system's security, password complexity should not be required. Password complexity will not mitigate the risk posed in the scenario. Until the transport encryption issue is resolved, an attacker can easily intercept complex passwords.
+    >
+    > To enhance the system's security, port 587 should not be used for email transfers. Port 587 is the default client-to-server email submission port. This port does not inherently require transport encryption.
