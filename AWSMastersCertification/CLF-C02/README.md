@@ -1,5 +1,6 @@
 # AWS Certified Cloud Practitioner (CLF-C02)
 
+> [AWS Whitepapers](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
 
 ### Course Outline
 
