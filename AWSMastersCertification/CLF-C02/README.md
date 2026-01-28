@@ -1,6 +1,41 @@
 # AWS Certified Cloud Practitioner (CLF-C02)
 
 > [AWS Whitepapers](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
+> 
+> Free courses:
+> 
+> https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/
+> 
+> https://pages.awscloud.com/GLOBAL-other-T2-Traincert-Twitch-AWS-Power-Hour-CP-2022.html
+> 
+> https://www.udemy.com/course/amazon-web-services-aws-v/
+> 
+> Exam Readiness:
+> 
+> https://pages.awscloud.com/TC\_Get-AWS-Certified.html#ERW
+> 
+> Free questions:
+> 
+> https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner\_Sample-Questions.pdf
+> 
+> https://www.whizlabs.com/blog/aws-cloud-practitioner-certification-questions/
+> 
+> Cheat sheets:
+> 
+> https://rishabkumar7.github.io/CloudNotes/CPP.html
+> 
+> https://github.com/kennethleungty/AWS-Certified-Cloud-Practitioner-Notes
+> 
+> 50% discount on exam:
+> 
+> https://pages.awscloud.com/GLOBAL-ln-GC-TrainCert-Cloud-Practitioner-Challenge-2022-reg.html
+> 
+> You can find more details about these materials on my blog: https://www.czerniga.it/2022/09/12/free-aws-cloud-practitioner-materials/
+
+
+<br><br><br>
+
+
 
 ### Course Outline
 
