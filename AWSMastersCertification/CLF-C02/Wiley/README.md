@@ -400,165 +400,169 @@
 
 
 
-## 
+## Chapter 4: Understanding the AWS Environment
 
-1. 
-    - 
+1. Which of the following designations would refer to the AWS US West (Oregon) region?
+    - us‐west‐2
     <br>
     
-    > 
+    > The letter (a, b...) at the end of a designation indicates an availability zone. us‐east‐1 would never be used for a region in the western part of the United States.
 
 <br>
 
-2. 
-    - 
+2. Which of the following is an AWS region for which customer access is restricted?
+    - AWS GovCloud
     <br>
     
-    > 
+    > The AWS GovCloud region is restricted to authorized customers only. Asia Pacific (Tokyo) is a normal region. AWS Admin and US‐DOD don’t exist (as far as we know, at any rate).
 
 <br>
 
-3. 
-    - 
+3. When you request a new virtual machine instance in EC2, your instance will automatically launch into the currently selected value of which of the following?
+    - Region
     <br>
     
-    > 
+    > EC2 instances will automatically launch into the region you currently have selected. You can manually select the subnet that’s associated with a particular availability zone for your new EC2 instance, but there’s no default choice.
 
 <br>
 
-4. 
-    - 
+4. Which of the following are globally based AWS services? (Choose two.)
+    - Route 53
+    - CloudFront
     <br>
     
-    > 
+    > Relational Database Service (RDS) and EC2 both use resources that can exist in only one region. Route 53 and CloudFront are truly global services in that they’re not located in or restricted to any single AWS region.
 
 <br>
 
-5. 
-    - 
+5. Which of the following would be a valid endpoint your developers could use to access a particular Relational Database Service instance you’re running in the Northern Virginia region?
+    - `rds.us-east-1.amazonaws.com`
     <br>
     
-    > 
+    > The correct syntax for an endpoint is <service-designation>.<region-designation>.amazonaws.com—meaning, in this case, rds.us-east-1.amazonaws.com.
 
 <br>
 
-6. 
-    - 
+6. What are the most significant architectural benefits of the way AWS designed its regions? (Choose two.)
+    - It can make applications available to end users with lower latency.
+    - It can make applications more compliant with local regulations.
     <br>
     
-    > 
+    > For most uses, distributing your application infrastructure between multiple AZs within a single region gives them sufficient fault tolerance. While AWS services do enjoy a significant economy of scale—bringing prices down—little of that is due to the structure of their regions. Lower latency and compliance are the biggest benefits from this list.
 
 <br>
 
-7. 
-    - 
+7. Why is it that most AWS resources are tied to a single region?
+    - Because those resources are run on a physical device, and that device must live somewhere
     <br>
     
-    > 
+    > Sharing a single resource among regions wouldn’t cause any particular security, networking, or latency problems. It’s a simple matter of finding a single physical host device to run on.
 
 <br>
 
-8. 
-    - 
+8. You want to improve the resilience of your EC2 web server. Which of the following is the most effective and efficient approach?
+    - Launch parallel, load‐balanced instances in multiple availability zones within a single AWS region.
     <br>
     
-    > 
+    > Autoscaling is an important working element of application high availability, but it’s not what most directly drives it (that’s load balancing). The most effective and efficient way to get the job done is through parallel, load‐balanced instances in multiple availability zones, not regions.
 
 <br>
 
-9. 
-    - 
+9. Which of the following is the most accurate description of an AWS availability zone?
+    - One or more independently powered data centers running a wide range of hardware host types
     <br>
     
-    > 
+    > “Data centers running uniform host types” would describe an edge location. The data centers within a “broad geographic area” would more closely describe an AWS region. AZs aren’t restricted to a single data center.
 
 <br>
 
-10. 
-    - 
+10. Which of the following most accurately describes a subnet within the AWS ecosystem?
+    - The block of IP addresses assigned for use within a single availability zone
     <br>
     
-    > 
+    > Imposing virtual networking limits on an instance would be the job of a security group or access control list. IP address blocks are not assigned at the region level. Customers have no access to or control over AWS networking hardware.
 
 <br>
 
-11. 
-    - 
+11. What determines the order by which subnets/AZ options are displayed in EC2 configuration dialog boxes?
+    - They (appear) to be displayed in random order.
     <br>
     
-    > 
+    > AWS displays AZs in (apparently) random order to prevent too many resources from being launched in too few zones.
 
 <br>
 
-12. 
-    - 
+12. What is the primary goal of autoscaling?
+    - To ensure that a predefined service level is maintained regardless of external demand or instance failures
     <br>
     
-    > 
+    > Autoscaling doesn’t focus on any one resource (physical or virtual) because it’s interested only in the appropriate availability and quality of the overall service. The job of orchestration is for load balancers, not autoscalers.
 
 <br>
 
-13. 
-    - 
+13. Which of the following design strategies is most effective for maintaining the reliability of a cloud application?
+    - Resource redundancy
     <br>
     
-    > 
+    > Resource isolation can play an important role in security, but not reliability. Automation can improve administration processes, but neither it, nor geolocation, is the most effective reliability strategy.
 
 <br>
 
-14. 
-    - 
+14. Which of the following AWS services are not likely to benefit from Amazon edge locations? (Choose two.)
+    - RDS
+    - Elastic Block Store (EBS)
     <br>
     
-    > 
+    > RDS database instances and Lambda functions are not qualified CloudFront origins. EC2 load balancers can be used as CloudFront origins.
 
 <br>
 
-15. 
-    - 
+15. Which of the following is the primary benefit of using CloudFront distributions?
+    - Reduced latency access to your content no matter where your end users live
     <br>
     
-    > 
+    > CloudFront can’t protect against spam, and although it can complement your application’s existing redundancy and encryption, that is not its primary purpose.
 
 <br>
 
-16. 
-    - 
+16. What is the main purpose of Amazon Route 53?
+    - Managing domain name registration and traffic routing
     <br>
     
-    > 
+    > Countering the threat of DDoS attacks is the job of AWS Shield. Protecting web applications from web‐based threats is done by AWS Web Application Firewall. Using Lambda to customize CloudFront behavior is for Lambda Edge.
 
 <br>
 
-17. 
-    - 
+17. According to the AWS Shared Responsibility Model, which of the following are responsibilities of AWS? (Choose two.)
+    - The security of the cloud
+    - Patching underlying virtualization software running in AWS data centers
     <br>
     
-    > 
+    > What’s in the cloud is your responsibility—it includes the administration of EC2‐based operating systems.
 
 <br>
 
-18. 
-    - 
+18. According to the AWS Shared Responsibility Model, what’s the best way to define the status of the software driving an AWS managed service?
+    - Whatever the customer can control (application code and/or configuration settings) is the customer’s responsibility.
     <br>
     
-    > 
+    > There’s no one easy answer, as some managed services are pretty much entirely within Amazon’s sphere, and others leave lots of responsibility with the customer. Remember, “if you can edit it, you own it.”
 
 <br>
 
-19. 
-    - 
+19. Which of the following is one of the first places you should look when troubleshooting a failing application?
+    - Service Health Dashboard
     <br>
     
-    > 
+    > The AWS Billing Dashboard is focused on your account billing issues. Neither the AWS Acceptable Use Monitor nor the Service Status Dashboard actually exists. But nice try.
 
 <br>
 
-20. 
-    - 
+20. Where will you find information on the limits AWS imposes on the ways you can use your account resources?
+    - AWS Acceptable Use Policy
     <br>
     
-    > 
+    > The correct document (and web page https://aws.amazon.com/aup) for this information is the AWS Acceptable Use Policy.
     
 <br>
 
