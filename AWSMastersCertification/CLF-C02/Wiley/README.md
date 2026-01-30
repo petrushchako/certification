@@ -240,6 +240,332 @@
 
 
 
+## Chapter 3: Getting Support on AwS
+
+1. Your company is planning a major deployment on AWS. While the design and testing stages are still in progress, which of the following plans will provide the best blend of support and cost savings?
+    - Business
+    <br>
+    
+    > The Basic plan won’t provide any personalized support. The Developer plan is cheaper, but there is limited access to support professionals. The Business plan does offer 24/7 email, chat, and phone access to an engineer, so until you actually deploy, this will make the most sense. At a $15,000 monthly minimum, the Enterprise plan won’t be cost effective.
+
+<br>
+
+2. Your web development team is actively gearing up for a deployment of an e‐commerce site. During these early stages of the process, individual developers are running into frustrating conflicts and configuration problems that are highly specific to your situation. Which of the following plans will provide the best blend of support and cost savings?
+    - Developer
+    <br>
+    
+    > Using the public documentation available through the Basic plan won’t be enough to address your specific needs. The Business and Enterprise plans are not necessary as you don’t yet have production deployments.
+
+<br>
+
+3. Your corporate website was offline last week for more than two hours—which caused serious consequences, including the early retirement of your CTO. Your engineers have been having a lot of trouble tracking down the source of the outage and admit that they need outside help. Which of the following will most likely meet that need?
+    - Enterprise
+    <br>
+    
+    > The lower three support tiers provide limited access to only lower‐level support professionals, whereas the Enterprise plan provides full access to senior engineers and dedicates a technical account manager (TAM) as your resource for all your AWS needs.
+
+<br>
+
+4. For which of the following will AWS provide direct 24/7 support to all users—even those on the Basic Support plan?
+    - elp with making a bill payment to AWS
+    <br>
+    
+    > Basic plan customers are given customer support access only for account management issues and not for technical support or security breaches.
+
+<br>
+
+5. The primary purpose of an AWS technical account manager is to:
+    -  Provide deployment guidance and advocacy for Enterprise Support customers.
+    <br>
+    
+    > The TAM is available only for Enterprise Support customers. The primary function is one of guidance and advocacy.
+
+<br>
+
+6. Your Linux‐based EC2 instance requires a patch to a Linux kernel module. The problem is that patching the module will, for some reason, break the connection between your instance and data in an S3 bucket. Your team doesn’t know if it’s possible to work around this problem. Which is the most cost‐effective AWS plan through which support professionals will try to help you?
+    - Business.
+    <br>
+    
+    > Only the Business and Enterprise plans include help with troubleshooting interoperability between AWS resources and third‐party software and operating systems. The Business plan is the least expensive that will get you this level of support.
+
+<br>
+
+7. Your company enrolled in the Developer Support plan and, through the course of one month, consumed $4,000 USD of AWS services. How much will the support plan cost the company for the month?
+    - $120
+    <br>
+    
+    > The Developer plan costs the greater of $29 or 3 percent of the monthly usage. In this case, 3 percent of the month’s usage is $120.
+
+<br>
+
+8. Your company enrolled in the Business Support plan and, through the course of three months, consumed $33,000 of AWS services (the consumption was equally divided across the months). How much will the support plan cost the company for the full three months?
+    - $3,310
+    <br>
+    
+    > The Business plan costs $1,000 (10 percent) for the first $10,000 of usage, and then 7 percent for the next level. In our case, that would come to $3,310 for the full three months.
+
+<br>
+
+9. Which of the following AWS support services does not offer free documentation of some sort?
+    - AWS Partner Network
+    <br>
+    
+    > The AWS Professional Services site includes tech talk webinars, white papers, and blog posts. The Basic Support plan includes AWS documentation resources. The Knowledge Center consists of FAQ documentation.
+
+<br>
+
+10. What is the key difference between the roles of AWS Professional Services and a technical account manager (TAM)?
+    - The Professional Services product helps AWS Partner Network cloud professionals work alongside your own team to help you administer your cloud infrastructure. The TAM is a cloud professional employed by AWS to guide you through the planning and execution of your infrastructure.
+    <br>
+    
+    > The TAM is an AWS employee dedicated to guiding your developer and admin teams. There is no such thing as a network appliance for workload testing.
+
+<br>
+
+11. Which of the following documentation sites are most likely to contain code snippets for you to cut and (after making sure you understand exactly what they’ll do) paste into your AWS operations? (Choose two.)
+    - https://repost.aws/knowledge-center
+    - https://docs.aws.amazon.com
+    <br>
+    
+    > The https://aws.amazon.com/premiumsupport/compare-plans site provides general information about support plans, and the https://aws.amazon.com/professional-services site describes accessing that particular resource. Neither directly includes technical guides.
+
+<br>
+
+12. What is the primary function of the content linked from the Knowledge Center?
+    - To present solutions to commonly encountered technical problems using AWS infrastructure
+    <br>
+    
+    > The Knowledge Center is a FAQ for technical problems and their solutions. The main documentation site is much better suited to introduction‐level guides. The https://forums.aws.amazon.com site is the discussion forum for AWS users.
+
+<br>
+
+13. On which of the following sites are you most likely to find information about encrypting your AWS resources?
+    - https://aws.amazon.com/security/security-resources
+    <br>
+    
+    > The Knowledge Center is a general FAQ for technical problems and their solutions. The docs.aws.amazon.com site is for general documentation. There is no https://aws.amazon.com/security/encryption page.
+
+<br>
+
+14. When using AWS documentation pages, what is the best way to be sure the information you’re reading is up‐to‐date?
+    - The page URL will include the word latest.
+    <br>
+    
+    > Version numbers are not publicly available, and the word Current isn’t used in this context.
+
+<br>
+
+15. Which of the following is not a Trusted Advisor category?
+    - Replication
+    <br>
+    
+    > Replication is, effectively, a subset of Fault Tolerance and therefore would not require its own category.
+
+<br>
+
+16. “Data volumes that aren’t properly backed up” is an example of which of these Trusted Advisor categories?
+    - Fault Tolerance
+    <br>
+    
+    > Performance identifies configuration settings that might be blocking performance improvements. Security identifies any failures to use security best‐practice configurations. Cost Optimization identifies any resources that are running and unnecessarily costing you money.
+
+<br>
+
+17. Instances that are running (mostly) idle should be identified by which of these Trusted Advisor categories?
+    - Cost Optimization
+    <br>
+    
+    > Performance identifies configuration settings that might be blocking performance improvements. Service Limits identifies resource usage that’s approaching AWS region or service limits. There is no Replication category.
+
+<br>
+
+18. Within the context of Trusted Advisor, what is a false positive?
+    - An alert for a service state that was actually intentional
+    <br>
+    
+    > An OK status for a failed state is a false negative. There is no single status icon indicating that your account is completely compliant in Trusted Advisor.
+
+<br>
+
+19. Which of the following Trusted Advisor alerts is available only for accounts on the Business or Enterprise Support plan? (Choose two.)
+    - Load Balancer Optimization
+    - IAM Access Key Rotation
+    <br>
+    
+    > Both the MFA and Service Limits checks are available for all accounts.
+
+
+
+<br><br><br>
+
+
+
+## 
+
+1. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+2. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+3. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+4. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+5. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+6. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+7. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+8. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+9. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+10. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+11. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+12. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+13. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+14. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+15. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+16. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+17. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+18. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+19. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+20. 
+    - 
+    <br>
+    
+    > 
+    
+<br>
+
+
+
+
+<br><br><br>
 
 
 
