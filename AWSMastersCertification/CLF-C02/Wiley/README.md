@@ -744,6 +744,207 @@
 
 
 
+<br><br><br>
+
+
+
+## Chapter 6: Working with Your AWS Resources
+
+1. Which of the following credentials can you use to log into the AWS Management Console?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+2. How long will your session with the AWS Management Console remain active?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+3. When looking at the EC2 service console in the AWS Management Console while logged in as the root user, you notice all of your instances are missing. What could be the reason?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+4. Which of the following is true regarding a resource tag?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+5. Which of the following is required to use the AWS Command‐Line Interface (CLI)?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+6. Which of the following are options for installing the AWS CLI on Windows 10? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+7. After installing the AWS Command‐Line Interface, what should you do before using it to securely manage your AWS resources?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+8. Which output format does the AWS CLI support?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+9. Which of the following programming languages are AWS software development kits available for? (Choose three.)
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+10. Which of the following software development kits (SDKs) enable developers to write mobile applications that run on both Apple and Android devices? (Choose two.)
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+11. Which of the following programming languages are AWS Internet of Things (IoT) device software development kits available for? (Choose two.)
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+12. What’s the difference between the AWS Command‐Line Interface (CLI) and the AWS software development kits (SDK)? (Choose two.)
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+13. Which of the following CloudWatch features store performance data from AWS services?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+14. For which of the following scenarios can you create a CloudWatch alarm to send a notification?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+15. Which of the following Simple Notification Service (SNS) protocols can you use to send a notification? (Choose two.)
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+16. Which of the following are true regarding CloudWatch Events? (Choose two.)
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+17. Which of the following trigger an API action? (Choose two.)
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+18. What’s the most cost‐effective way to view and search only the last 60 days of management API events on your AWS account?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+19. You want to log every object downloaded from an S3 bucket in a specific region. You want to retain these logs indefinitely and search them easily. What’s the most cost‐effective way to do this? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+20. What is a benefit of using CloudTrail log file integrity validation?
+    - 
+    <br>
+    
+    > 
+    
+<br>
+
+21. Which of the following Cost Explorer report types can show you the monthly costs for your reserved EC2 instances?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+22. Which of the following services allow you to purchase reserved instances to save money?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+23. Which Cost Explorer report shows the amount of money you’ve saved using reserved instances?
+
+
+
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+24. You’ve been running several Elasticsearch instances continuously for the past three months. You check the reserved instance recommendations in Cost Explorer but see no recommendations. What could be a reason for this?
+    - 
+    <br>
+    
+    > 
+
 
 
 <br><br><br>
@@ -911,4 +1112,173 @@
     > 
     
 <br>
+
+
+
+<br><br><br>
+
+
+
+## 
+
+1. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+2. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+3. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+4. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+5. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+6. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+7. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+8. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+9. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+10. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+11. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+12. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+13. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+14. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+15. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+16. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+17. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+18. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+19. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+20. 
+    - 
+    <br>
+    
+    > 
+    
+<br>
+
 
