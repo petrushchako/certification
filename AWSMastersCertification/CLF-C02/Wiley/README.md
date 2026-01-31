@@ -573,6 +573,183 @@
 
 
 
+## Chapter 5: Securing Your AWS Resources
+
+1. What is the primary function of the AWS IAM service?
+    - Identity and access management
+    <br>
+    
+    > Identity and Access Management (IAM) is primarily focused on helping you control access to your AWS resources. KMS handles access keys. EC2 manages SSH key pairs. While IAM does touch on federated management, that’s not its primary purpose.
+
+<br>
+
+2. Which of the following are requirements you can include in an IAM password policy? (Choose three.)
+    - Require at least one uppercase letter.
+    - Require at least one number.
+    - Require at least one nonalphanumeric character.
+    <br>
+    
+    > Including a space or null character is not a password policy option.
+
+<br>
+
+3. Which of the following should you do to secure your AWS root user? (Choose two.)
+    - Enable MFA.
+    - Create a strong password.
+    <br>
+    
+    > The root user should not be used for day‐to‐day administration tasks—even as part of an “admin” group. The goal is to protect root as much as possible.
+
+<br>
+
+4. How does multifactor authentication work?
+    - Users authenticate using a password and also either a physical or virtual MFA device.
+    <br>
+    
+    > MFA requires at least two (“multi”) authentication methods. Those will normally include a password (something you know) and a token sent to either a virtual or a physical MFA device (something you have).
+
+<br>
+
+5. Which of the following SSH commands will successfully connect to an EC2 Amazon Linux instance with an IP address of 54.7.35.103 using a key named mykey.pem?
+    - `ssh -i mykey.pem ec2-user@54.7.35.103`
+    <br>
+    
+    > The -i argument should point to the name (and location) of the key stored on the local (client) machine. By default, the admin user on an Amazon Linux instance is named ec2-user.
+
+<br>
+
+6. What’s the most efficient method for managing permissions for multiple IAM users?
+    - Assign users requiring similar permissions to IAM groups.
+    <br>
+    
+    > While assigning permissions and policy‐based roles will work, it’s not nearly as efficient as using groups, where you need to set or update permissions only once for multiple users.
+
+<br>
+
+7. What is an IAM role?
+    - Permissions granted a trusted entity over specified AWS resources
+    <br>
+    
+    > An IAM role is meant to be assigned to a trusted entity (like another AWS service or a federated identity). A “set of permissions” could refer to a policy. A set of IAM users could describe a group.
+
+<br>
+
+8. How can federated identities be incorporated into AWS workflows? (Choose two.)
+    -  You can provide users authenticated through a third‐party identity provider access to backend resources used by your mobile app.
+    - You can provide admins authenticated through AWS Microsoft AD with access to a Microsoft SharePoint farm running on AWS.
+    <br>
+    
+    > Federated identities are for permitting authenticated entities access to AWS resources and data. They’re not for importing anything from external accounts—neither data nor guidance.
+
+<br>
+
+9. Which of the following are valid third‐party federated identity standards? (Choose two.)
+    - SAML 2.0
+    - Active Directory
+    <br>
+    
+    > Secure Shell (SSH) is an encrypted remote connectivity protocol, and SSO (single sign‐on) is an interface feature—neither is a standard for federated identities.
+
+<br>
+
+10. What information does the IAM credential report provide?
+    - The current state of security of your IAM users’ access credentials
+    <br>
+    
+    > The credential report focuses only on your users’ passwords, access keys, and MFA status. It doesn’t cover actual activities or general security settings.
+
+<br>
+
+11. What text format does the credential report use?
+    - CSV
+    <br>
+    
+    > The credential report is saved to the comma‐separated values (spreadsheet) format.
+
+<br>
+
+12. Which of the following IAM policies is the best choice for the admin user you create in order to replace the root user for day‐to‐day administration tasks?
+    - AdministratorAccess
+    <br>
+    
+    > Your admin user will need broad access to be effective, so AmazonS3FullAccess and AmazonEC2FullAccess—which open up only S3 and EC2, respectively—won’t be enough. There is no AdminAccess policy.
+
+<br>
+
+13. What will you need to provide for a new IAM user you’re creating who will use “programmatic access” to AWS resources?
+    - An access key ID and secret access key
+    <br>
+    
+    > “Programmatic access” users don’t sign in through the AWS Management Console; they access through APIs or the AWS CLI. They would therefore not need passwords or MFA. An access key ID alone without a matching secret access key is worthless.
+
+<br>
+
+14. What will IAM users with AWS Management Console access need to successfully log in?
+    - Their username and password
+    <br>
+    
+    > When the correct login page (such as https://291976716973.signin.aws.amazon.com/console) is loaded, an IAM user only needs to enter a username and a valid password. Account numbers and secret access keys are not used for this kind of authentication.
+
+<br>
+
+15. Which of the following will encrypt your data while in transit between your office and Amazon S3?
+    - A client‐side master key
+
+    <br>
+    
+    > In‐transit encryption requires that the data be encrypted on the remote client before uploading. Server‐side encryption (either SSE‐S3 or SSE‐KMS) only encrypts data within S3 buckets. DynamoDB is a NoSQL database service.
+
+<br>
+
+16. Which of the following AWS resources cannot be encrypted using KMS?
+    - Existing AWS Elastic Block Store volumes
+    <br>
+    
+    > You can only encrypt an EBS volume at creation, not later.
+
+<br>
+
+17. What does KMS use to encrypt objects stored on your AWS account?
+    - Customer master key
+    <br>
+    
+    > A client‐side master key is used to encrypt objects before they reach AWS (specifically S3). There are no keys commonly known as either SSH or KMS master keys.
+
+<br>
+
+18. Which of the following standards governs AWS‐based applications processing credit card transactions?
+    - PCI DSS
+    <br>
+    
+    > SSE‐KMS are KMS‐managed server‐side keys. FedRAMP is the U.S. government’s Federal Risk and Authorization Management Program (within which transaction data protection plays only a relatively minor role). ARPA is the Australian Prudential Regulation Authority.
+
+<br>
+
+19. What is the purpose of the Service Organization Controls (SOC) reports found on AWS Artifact?
+    - They attest to AWS infrastructure compliance with data accountability standards like Sarbanes–Oxley.
+    <br>
+    
+    > SOC isn’t primarily about guidance or risk assessment, and it’s definitely not a guarantee of the state of your own deployments. SOC reports are reports of audits on AWS infrastructure that you can use as part of your own reporting requirements.
+
+<br>
+
+20. What role can the documents provided by AWS Artifact play in your application planning? (Choose two.)
+    - They can help you confirm that your deployment infrastructure is compliant with regulatory standards.
+    - They can provide insight into various regulatory and industry standards that represent best practices.
+    <br>
+    
+    > AWS Artifact documents are about AWS infrastructure compliance with external standards. They tangentially can also provide insight into best practices. They do not represent internal AWS design or policies.
+    
+<br>
+
+
+
+
+
+<br><br><br>
+
+
+
 ## 
 
 1. 
