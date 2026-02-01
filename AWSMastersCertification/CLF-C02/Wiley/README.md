@@ -955,9 +955,9 @@
 
 
 
-## 
+## Chapter 7: The Core Compute Services
 
-1. 
+1. What is the function of an EC2 AMI?
     - 
     <br>
     
@@ -965,7 +965,7 @@
 
 <br>
 
-2. 
+2. Where can you find a wide range of verified AMIs from both AWS and third‐party vendors?
     - 
     <br>
     
@@ -973,7 +973,7 @@
 
 <br>
 
-3. 
+3. Which of the following could be included in an EC2 AMI? (Choose two.)
     - 
     <br>
     
@@ -981,7 +981,7 @@
 
 <br>
 
-4. 
+4. Which of the following are EC2 instance type families? (Choose two.)
     - 
     <br>
     
@@ -989,7 +989,7 @@
 
 <br>
 
-5. 
+5. When describing EC2 instance types, what is the role played by the vCPU metric?
     - 
     <br>
     
@@ -997,7 +997,7 @@
 
 <br>
 
-6. 
+6. Which of the following describes an EC2 dedicated instance?
     - 
     <br>
     
@@ -1005,7 +1005,7 @@
 
 <br>
 
-7. 
+7. Which of the following describes an EBS volume?
     - 
     <br>
     
@@ -1013,7 +1013,7 @@
 
 <br>
 
-8. 
+8. Why might you want to use an instance store volume with your EC2 instance rather than a volume from the more common EBS service? (Choose two.)
     - 
     <br>
     
@@ -1021,7 +1021,7 @@
 
 <br>
 
-9. 
+9. Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for those extra instances?
     - 
     <br>
     
@@ -1029,7 +1029,7 @@
 
 <br>
 
-10. 
+10. Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for the “base” instances that will run constantly?
     - 
     <br>
     
@@ -1037,7 +1037,7 @@
 
 <br>
 
-11. 
+11. Which of the following best describes what happens when you purchase an EC2 reserved instance?
     - 
     <br>
     
@@ -1045,7 +1045,7 @@
 
 <br>
 
-12. 
+12. Which of the following use cases are good candidates for spot instances? (Choose two.)
     - 
     <br>
     
@@ -1053,7 +1053,7 @@
 
 <br>
 
-13. 
+13. Which AWS services simplify the process of bringing web applications to deployment? (Choose two.)
     - 
     <br>
     
@@ -1061,7 +1061,7 @@
 
 <br>
 
-14. 
+14. Which of the following services bills at a flat rate regardless of how it’s consumed?
     - 
     <br>
     
@@ -1069,7 +1069,7 @@
 
 <br>
 
-15. 
+15. Which of these stacks are available from Lightsail blueprints? (Choose two.)
     - 
     <br>
     
@@ -1077,7 +1077,7 @@
 
 <br>
 
-16. 
+16. Which of these AWS services use primarily EC2 resources under the hood? (Choose two.)
     - 
     <br>
     
@@ -1085,7 +1085,7 @@
 
 <br>
 
-17. 
+17. Which of the following AWS services are designed to let you deploy Docker containers? (Choose two.)
     - 
     <br>
     
@@ -1093,7 +1093,7 @@
 
 <br>
 
-18. 
+18. Which of the following directly use container technologies? (Choose two.)
     - 
     <br>
     
@@ -1101,7 +1101,7 @@
 
 <br>
 
-19. 
+19. What role can the Python programming language play in AWS Lambda?
     - 
     <br>
     
@@ -1109,7 +1109,7 @@
 
 <br>
 
-20. 
+20. What is the maximum time a Lambda function may run before timing out?
     - 
     <br>
     
