@@ -751,199 +751,203 @@
 ## Chapter 6: Working with Your AWS Resources
 
 1. Which of the following credentials can you use to log into the AWS Management Console?
-    - 
+    - Identity and Access Management (IAM) username
     <br>
     
-    > 
+    > You can sign in as the root user or as an IAM user. Although you need to specify the account alias or account ID to log in as an IAM user, those are not credentials. You can’t log in to the console using an access key ID.
 
 <br>
 
 2. How long will your session with the AWS Management Console remain active?
-    - 
+    - 12 hours
     <br>
     
-    > 
+    > Once you’re logged in, your session will remain active for 12 hours. After that, it will expire and log you out to protect your account.
 
 <br>
 
 3. When looking at the EC2 service console in the AWS Management Console while logged in as the root user, you notice all of your instances are missing. What could be the reason?
-    - 
+    - You’ve selected the wrong region in the navigation bar.
     <br>
     
-    > 
+    > If a resource that should be visible appears to be missing, you may have the wrong region selected. Since you’re logged in as the root, you have view access to all resources in your account. You don’t need an access key to use the console. You can’t select an availability zone in the navigation bar.
 
 <br>
 
 4. Which of the following is true regarding a resource tag?
-    - 
+    - It must have a key.
     <br>
     
-    > 
+    > Each resource tag you create must have a key, but a value is optional. Tags don’t have to be unique within an account, and they are case‐sensitive.
 
 <br>
 
 5. Which of the following is required to use the AWS Command‐Line Interface (CLI)?
-    - 
+    - A secret key
     <br>
     
-    > 
+    > The AWS CLI requires an access key ID and secret key. You can use those of an IAM user or the root user. Outbound network access to TCP port 443 is required, not port 80. Linux is also not required, although you can use the AWS CLI with Linux, macOS, or Windows. You also can use the AWS Console Mobile Application with Android or iOS devices.
 
 <br>
 
 6. Which of the following are options for installing the AWS CLI on Windows 10? (Choose two.)
-    - 
-    - 
+    - The MSI installer
+    - Using Python and pip
     <br>
     
-    > 
+    > You can use Python and the pip package manager or (with the exception of Windows Server 2008) the MSI installer to install the AWS CLI on Windows. AWS SDKs don’t include the AWS CLI. Yum and Aptitude are package managers for Linux only.
 
 <br>
 
 7. After installing the AWS Command‐Line Interface, what should you do before using it to securely manage your AWS resources?
-    - 
+    - Issue the aws configure command.
     <br>
     
-    > 
+    > The aws configure command walks you through setting up the AWS CLI to specify the default region you want to use as well as your access key ID and secret key. The aws --version command displays the version of the AWS CLI installed, but running this command isn’t necessary to use the AWS CLI to manage your resources. Rebooting is also not necessary. Using your root user to manage your AWS resources is insecure, so there’s no need to generate a new access key ID for your root user.
 
 <br>
 
 8. Which output format does the AWS CLI support?
-    - 
+    - JavaScript Object Notation (JSON)
     <br>
     
-    > 
+    > The AWS CLI can display output in JSON, text, or table formats. It doesn’t support CSV or TSV.
 
 <br>
 
 9. Which of the following programming languages are AWS software development kits available for? (Choose three.)
-    - 
+    - JavaScript
+    - Java
+    - PHP
     <br>
     
-    > 
-
+    > AWS offers SDKs for JavaScript, Java, and PHP. There are no SDKs for Fortran. JSON is a format for representing data, not a programming language.
 <br>
 
 10. Which of the following software development kits (SDKs) enable developers to write mobile applications that run on both Apple and Android devices? (Choose two.)
-    - 
+    - AWS Mobile SDK for Unity
+    - AWS Mobile SDK for .NET and Xamarin
     <br>
     
-    > 
+    > The AWS Mobile SDK for Unity and the AWS Mobile SDK for .NET and Xamarin let you create mobile applications for both Android and Apple iOS devices. The AWS SDK for Go doesn’t enable development of mobile applications for these devices. The AWS Mobile SDK for iOS supports development of applications for Apple iOS devices but not Android.
 
 <br>
 
 11. Which of the following programming languages are AWS Internet of Things (IoT) device software development kits available for? (Choose two.)
-    - 
+    - JavaScript
+    - C++
     <br>
     
-    > 
+    > AWS IoT device SDKs are available for C++, Python, Java, JavaScript, and Embedded C. There isn’t one available for Ruby or Swift.
 
 <br>
 
 12. What’s the difference between the AWS Command‐Line Interface (CLI) and the AWS software development kits (SDK)? (Choose two.)
-    - 
+    - The AWS SDKs allow you to use popular programming languages to write applications that interact with AWS services.
+    - The AWS CLI allows you to interact with AWS services from a terminal.
     <br>
     
-    > 
+    > The AWS CLI is a program that runs on Linux, macOS, or Windows and allows you to interact with AWS services from a terminal. The AWS SDKs let you use your favorite programming language to write applications that interact with AWS services.
 
 <br>
 
 13. Which of the following CloudWatch features store performance data from AWS services?
-    - 
+    - Metrics
     <br>
     
-    > 
+    > CloudWatch metrics store performance data from AWS services. Logs store text‐based logs from applications and AWS services. Events are actions that occur against your AWS resources. Alarms monitor metrics. Metric filters extract metric information from logs.
 
 <br>
 
-14. For which of the following scenarios can you create a CloudWatch alarm to send a notification?
-    - 
+14.  For which of the following scenarios can you create a CloudWatch alarm to send a notification?
+    - A metric that exceeds a given threshold
     <br>
     
-    > 
+    > A CloudWatch alarm monitors a metric and triggers when that metric exceeds a specified threshold. It will not trigger if the metric doesn’t change. Termination of an EC2 instance is an event, and you can’t create a CloudWatch alarm to trigger based on an event. You also can’t create an alarm to trigger based on the presence of an IP address in a web server log. But you could create a metric filter to look for a specific IP address in the log and increment a custom metric when that IP address appears in the log.
 
 <br>
 
 15. Which of the following Simple Notification Service (SNS) protocols can you use to send a notification? (Choose two.)
-    - 
+    - Short Message Service (SMS) text message
+    - Simple Queue Service (SQS)
     <br>
     
-    > 
+    > SNS supports the SMS and SQS protocols for sending notifications. You can’t send a notification to a CloudWatch event. There is no such thing as a mobile pull notification.
 
 <br>
 
 16. Which of the following are true regarding CloudWatch Events? (Choose two.)
-    - 
+    - It can send an SNS notification when an IAM user logs in to the AWS Management Console.
+    - It can shut down an EC2 instance at a specific time.
     <br>
     
-    > 
+    > CloudWatch Events monitors events that cause changes in your AWS resources as well as AWS Management Console sign‐in events. In response to an event, CloudWatch Events can take an action, including sending an SNS notification or rebooting an EC2 instance. CloudWatch Events can also perform actions on a schedule. It doesn’t monitor logs or metrics.
 
 <br>
 
 17. Which of the following trigger an API action? (Choose two.)
-    - 
+    - Viewing an S3 bucket from the AWS Management Console
+    - Listing IAM users from the AWS CLI
     <br>
     
-    > 
+    > Viewing an AWS resource triggers an API action regardless of whether it’s done using the AWS Management Console or the AWS CLI. Configuring the AWS CLI doesn’t trigger any API actions. Logging into the AWS Management Console doesn’t trigger an API action.
 
 <br>
 
 18. What’s the most cost‐effective way to view and search only the last 60 days of management API events on your AWS account?
-    - 
+    - Use CloudTrail event history.
     <br>
     
-    > 
+    > The CloudTrail event history log stores the last 90 days of management events for each region. Creating a trail is overkill and not as cost‐effective since it would involve storing logs in an S3 bucket. Streaming CloudTrail logs to CloudWatch would r
 
 <br>
 
 19. You want to log every object downloaded from an S3 bucket in a specific region. You want to retain these logs indefinitely and search them easily. What’s the most cost‐effective way to do this? (Choose two.)
-    - 
-    - 
+    - Stream CloudTrail logs to CloudWatch Logs.
+    - Create a trail to log S3 data events.
     <br>
     
-    > 
+    > Creating a trail in the region where the bucket exists will generate CloudTrail logs, which you can then stream to CloudWatch for viewing and searching. CloudTrail event history doesn’t log data events. CloudTrail logs global service events by default, but S3 data events are not included.
 
 <br>
 
 20. What is a benefit of using CloudTrail log file integrity validation?
-    - 
+    - It lets you assert that no CloudTrail log files have been deleted from S3.
     <br>
     
-    > 
+    > Log file integrity validation uses cryptographic hashing to help you assert that no CloudTrail log files have been deleted from S3. It doesn’t prevent tampering or deletion and can’t tell you how a file has been tampered with. Log file integrity validation has nothing to do with CloudWatch.
     
 <br>
 
 21. Which of the following Cost Explorer report types can show you the monthly costs for your reserved EC2 instances?
-    - 
+    - Costs and usage reports
     <br>
     
-    > 
+    > The costs and usage reports show you your monthly spend by service. The reserved instances reports and reserved instance recommendations don’t show actual monthly costs.
 
 <br>
 
 22. Which of the following services allow you to purchase reserved instances to save money?
-    - 
+    - Amazon Relational Database Service (RDS)
     <br>
     
-    > 
+    > RDS lets you purchase reserved instances to save money. Lambda, S3, and Fargate don’t use instances.
 
 <br>
 
-23. Which Cost Explorer report shows the amount of money you’ve saved using reserved instances?
-
-
-
-    - 
+23.  Which Cost Explorer report shows the amount of money you’ve saved using reserved instances?
+    - Reserved Instances Utilization
     <br>
     
-    > 
+    > The Reserved Instances Utilization report shows how much you have saved using reserved instances. The Reserved Instances Utilization report shows how much you could have potentially saved had you purchased reserved instances. The daily costs and monthly EC2 running hours costs and usage reports don’t know how much you’ve saved using reserved instances.
 
 <br>
 
 24. You’ve been running several Elasticsearch instances continuously for the past three months. You check the reserved instance recommendations in Cost Explorer but see no recommendations. What could be a reason for this?
-    - 
+    - Your instances are already covered by reservations.
     <br>
     
-    > 
+    > Cost Explorer will make reservation recommendations for EC2, RDS, ElastiCache, Redshift, and Elasticsearch instances. You need to select the service you want it to analyze for recommendations. But Cost Explorer will not make recommendations for instances that are already covered by reservations. Because your Elasticsearch instances have been running continuously for at least the past seven days, that usage would be analyzed.
 
 
 
