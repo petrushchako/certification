@@ -1135,176 +1135,176 @@
 ## Chapter 8: The Core Storage Services
 
 1. When you’re trying to create an S3 bucket named documents, AWS informs you that the bucket name is already in use. What should you do in order to create a bucket?
-    - 
+    - Use a globally unique bucket name.
     <br>
     
-    > 
+    > Bucket names must be globally unique across AWS, regardless of region. The length of the bucket name isn’t an issue since it’s between 3 and 63 characters long. Storage classes are configured on a per‐object basis and have no impact on bucket naming.
 
 <br>
 
 2. Which S3 storage classes are most cost‐effective for infrequently accessed data that can’t be easily replaced? (Choose two.)
-    - 
-    - 
+    - STANDARD_IA
+    - GLACIER
     <br>
     
-    > 
+    > STANDARD_IA and GLACIER storage classes offer the highest levels of redundancy and are replicated across at least three availability zones. Due to their low level of availability (99.9 and 99.5 percent, respectively), they’re the most cost‐effective for infrequently accessed data. ONEZONE_IA stores objects in only one availability zone, so the loss of that zone could result in the loss of all objects. The STANDARD and INTELLIGENT_TIERING classes provide the highest levels of durability and cross‐zone replication but are also the least cost‐effective for this use case.
 
 <br>
 
 3. What are the major differences between Simple Storage Service (S3) and Elastic Block Store (EBS)? (Choose two.)
-    - 
-    - 
+    - EBS stores volumes.
+    - S3 stores objects.
     <br>
     
-    > 
+    > S3 is an object storage service, whereas EBS is a block storage service that stores volumes. EBS snapshots are stored in S3. S3 doesn’t store volumes, and EBS doesn’t store objects.
 
 <br>
 
 4. Which tasks can S3 object life‐cycle configurations perform automatically? (Choose three.)
-    - 
-    - 
-    - 
+    - Deleting old object versions
+    - Moving objects to Glacier
+    - Deleting old objects
     <br>
     
-    > 
+    > Object life‐cycle configurations can perform transition or expiration actions based on an object’s age. Transition actions can move objects between storage classes, such as between STANDARD and GLACIER. Expiration actions can delete objects and object versions. Object life‐cycle configurations can’t delete buckets or move objects to an EBS volume.
 
 <br>
 
 5. What methods can be used to grant anonymous access to an object in S3? (Choose two.)
-    - 
-    - 
+    - Bucket policies
+    - Access control lists
     <br>
     
-    > 
+    > You can use bucket policies or access control lists (ACLs) to grant anonymous users access to an object in S3. You can’t use user policies to do this, although you can use them to grant IAM principals access to objects. Security groups control access to resources in a virtual private cloud (VPC) and aren’t used to control access to objects in S3.
 
 <br>
 
 6. Your budget‐conscious organization has a 5 TB database file it needs to retain off‐site for at least 5 years. In the event the organization needs to access the database, it must be accessible within 8 hours. Which cloud storage options should you recommend, and why? (Choose two.)
-    - 
-    - 
+    - S3 Glacier.
+    - Glacier is the most cost‐effective.
     <br>
     
-    > 
+    > Both S3 and Glacier are designed for durable, long‐term storage and offer the same level of durability. Data stored in Glacier can be reliably retrieved within 8 hours using the Expedited or Standard retrieval options. Data stored in S3 can be retrieved even faster than Glacier. S3 can store objects up to 5 TB in size, and Glacier can store archives up to 40 TB. Both S3 or Glacier will meet the given requirements, but Glacier is the more cost‐effective solution.
 
 <br>
 
 7. Which of the following actions can you perform from the S3 Glacier service console?
-    - 
+    - Create a vault.
     <br>
     
-    > 
+    > You can create or delete vaults from the Glacier service console. You can’t upload, download, or delete archives. To perform archive actions, you must use the AWS Command‐Line Interface, an AWS SDK, or a third‐party program. Glacier doesn’t use buckets.
 
 <br>
 
 8. Which Glacier retrieval option generally takes 3 to 5 hours to complete?
-    - 
+    - Standard
     <br>
     
-    > 
+    > The Standard retrieval option typically takes 3 to 5 hours to complete. Expedited takes 1 to 5 minutes, and Bulk takes 5 to 12 hours. There is no Provisioned retrieval option, but you can purchase provisioned capacity to ensure Expedited retrievals complete in a timely manner.
 
 <br>
 
 9. What’s the minimum size for a Glacier archive?
-    - 
+    - 1 byte
     <br>
     
-    > 
+    > A Glacier archive can be as small as 1 byte and as large as 40 TB. You can’t have a zero‐byte archive.
 
 <br>
 
 10. Which types of AWS Storage Gateway let you connect your servers to block storage using the iSCSI protocol? (Choose two.)
-    - 
-    - 
+    - Tape gateway
+    - File gateway
     <br>
     
-    > 
+    > The tape gateway and volume gateway types let you connect to iSCSI storage. The file gateway supports NFS. There’s no such thing as a cached gateway.
 
 <br>
 
 11. Where does AWS Storage Gateway primarily store data?
-    - 
+    - S3 buckets
     <br>
     
-    > 
+    > All AWS Storage Gateway types—file, volume, and tape gateways—primarily store data in S3 buckets. From there, data can be stored in Glacier or EBS snapshots, which can be instantiated as EBS volumes.
 
 <br>
 
 12. You need an easy way to transfer files from a server in your data center to S3 without having to install any third‐party software. Which of the following services and storage protocols could you use? (Choose four.)
-    - 
-    - 
-    - 
-    - 
+    - AWS Storage Gateway—file gateway
+    - iSCSI
+    - SMB
+    - AWS Storage Gateway—volume gateway
     <br>
     
-    > 
+    > The AWS Storage Gateway allows transferring files from on‐premises servers to S3 using industry‐standard storage protocols. The AWS Storage Gateway functioning as a file gateway supports the SMB and NFS protocols. As a volume gateway, it supports the iSCSI protocol. AWS Snowball and the AWS CLI also provide ways to transfer data to S3, but using them requires installing third‐party software.
 
 <br>
 
 13. Which of the following are true regarding the AWS Storage Gateway volume gateway configuration? (Choose three.)
-    - 
-    - 
-    - 
+    - Stored volumes asynchronously back up data to S3 as EBS snapshots.
+    - Cached volumes locally store only a frequently used subset of data.
+    - Cached volumes can be up to 32 TB in size.
     <br>
     
-    > 
+    > The volume gateway type offers two configurations: stored volumes and cached volumes. Stored volumes store all data locally and asynchronously back up that data to S3 as EBS snapshots. Stored volumes can be up to 16 TB in size. In contrast, cached volumes locally store only a frequently used subset of data but do not asynchronously back up the data to S3 as EBS snapshots. Cached volumes can be up to 32 TB in size.
 
 <br>
 
 14. What’s the most data you can store on a single Snowball device?
-    - 
+    - 72 TB
     <br>
     
-    > 
+    > The 80 TB Snowball device offers 72 TB of usable storage and is the largest available. The 50 TB Snowball offers 42 TB of usable space.
 
 <br>
 
 15. Which of the following are security features of AWS Snowball? (Choose two.)
-    - 
-    - 
+    - It enforces encryption at rest.
+    - It uses a Trusted Platform Module (TPM) chip.
     <br>
     
-    > 
+    > AWS Snowball enforces encryption at rest and in transit. It also uses a TPM chip to detect unauthorized changes to the hardware or software. Snowball doesn’t use NFS encryption, and it doesn’t have tamper‐resistant network ports.
 
 <br>
 
 16. Which of the following might AWS do after receiving a damaged Snowball device from a customer?
-    - 
+    - Securely erase the customer’s data from the device.
     <br>
     
-    > 
+    > If AWS detects any signs of tampering or damage, it will not replace the TPM chip or transfer customer data from the device. Instead, AWS will securely erase it.
 
 <br>
 
 17. Which of the following can you use to transfer data to AWS Snowball from a Windows machine without writing any code?
-    - 
+    - The Snowball Client
     <br>
     
-    > 
+    > The Snowball Client lets you transfer files to or from a Snowball using a machine running Windows, Linux, or macOS. It requires no coding knowledge, but the S3 SDK Adapter for Snowball does. Snowball doesn’t support the NFS, iSCSI, or SMB storage protocols.
 
 <br>
 
 18. How do the AWS Snowball and Snowball Edge devices differ? (Choose two.)
-    - 
-    - 
+    - Snowball devices can be clustered together for storage.
+    - Snowball Edge can run EC2 instances.
     <br>
     
-    > 
+    > Snowball Edge offers compute power to run EC2 instances and supports copying files using the NFSv3 and NFSv4 protocols. Snowball devices can’t be clustered and don’t have a QFSP+ port.
 
 <br>
 
 19. Which of the following Snowball Edge device options is the best for running machine learning applications?
-    - 
+    - Compute Optimized with GPU
     <br>
     
-    > 
+    > The Snowball Edge Compute Optimized with GPU option is optimized for machine learning and high‐performance computing applications. Although the Compute Optimized and Storage Optimized options could work, they aren’t the best choices. There’s no Network Optimized option.
 
 <br>
 
 20. Which of the following hardware devices offers a network interface speed that supports up to 100 Gbps?
-    - 
+    - Snowball Edge with the Compute Optimized configuration
     <br>
     
-    > 
+    > Snowball Edge with the Compute Optimized configuration includes a QSFP+ network interface that supports up to 100 Gbps. The Storage Optimized configuration has a QSFP+ port that supports only up to 40 Gbps. The 80 TB Snowball supports only up to 10 Gbps. A storage gateway is a virtual machine, not a hardware device.
     
 <br>
 
