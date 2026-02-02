@@ -1491,167 +1491,168 @@
 ## Chapter 10: The Core Networking Services
 
 1. Which of the following are true of a default VPC? (Choose two.)
-    - 
+    - AWS creates a default VPC in each region.
+    - By default, each default VPC is available to one AWS account.
     <br>
     
-    > 
+    > For each account, AWS creates a default VPC in each region. A VPC spans all availability zones within a region. VPCs do not span regions.
 
 <br>
 
 2. Which of the following is a valid CIDR for a VPC or subnet?
-    - 
+    - 10.0.0.0/28
     <br>
     
-    > 
+    > A VPC or subnet CIDR can have a size between /16 and /28 inclusive, so 10.0.0.0/28 would be the only valid CIDR.
 
 <br>
 
 3. Which of the following are true regarding subnets? (Choose two.)
-    - 
-    - 
+    - A subnet must have a CIDR that’s a subset of the CIDR of the VPC in which it resides.
+    - A subnet spans one availability zone.
     <br>
     
-    > 
+    > A subnet exists in only one availability zone, and it must have a CIDR that’s a subset of CIDR of the VPC in which it resides. There’s no requirement for a VPC to have two subnets, but it must have at least one.
 
 <br>
 
 4. Which of the following is true of a new security group?
-    - 
+    - It contains an outbound rule allowing access to any IP address.
     <br>
     
-    > 
+    > When you create a security group, it contains an outbound rule that allows access to any IP address. It doesn’t contain an inbound rule by default. Security group rules can only permit access, not deny it, so any traffic not explicitly allowed will be denied.
 
 <br>
 
 5. What’s the difference between a security group and a network access control list (NACL)? (Choose two.)
-    - 
-    - 
+    - A security group operates at the instance level.
+    - A network access control list operates at the subnet level.
     <br>
     
-    > 
+    > A network access control list is a firewall that operates at the subnet level. A security group is a firewall that operates at the instance level.
 
 <br>
 
 6. Which of the following is true of a VPC peering connection?
-    - 
+    - It’s a private connection between two VPCs.
     <br>
     
-    > 
+    > A VPC peering connection is a private connection between only two VPCs. It uses the private AWS network, and not the public Internet. A VPC peering connection is different than a VPN connection.
 
 <br>
 
 7. What are two differences between a virtual private network (VPN) connection and a Direct Connect connection? (Choose two.)
-    - 
-    - 
+    - A Direct Connect connection offers predictable latency because it doesn’t traverse the Internet.
+    - A VPN connection uses the Internet for transport.
     <br>
     
-    > 
+    > A Direct Connect link uses a dedicated link rather than the Internet to provide predictable latency. Direct Connect doesn’t use encryption but provides some security by means of a private link. A VPN connection uses the Internet for transport, encrypting data with AES 128‐ or 256‐bit encryption. A VPN connection doesn’t require proprietary hardware.
 
 <br>
 
 8. Which of the following are true about registering a domain name with Route 53? (Choose two.)
-    - 
-    - 
+    - You can register a domain name for a term of up to 10 years.
+    - Route 53 creates a public hosted zone for the domain.
     <br>
     
-    > 
+    > When you register a domain name, you can choose a term between 1 year and 10 years. If you use Route 53, it will automatically create a public hosted zone for the domain. The registrar and DNS hosting provider don’t have to be the same entity, but often are.
 
 <br>
 
 9. Which of the following Route 53 routing policies can return a set of randomly ordered values?
-    - 
+    - Multivalue Answer
     <br>
     
-    > 
+    > A Multivalue Answer routing policy can return a set of multiple values, sorted randomly. A simple routing policy returns a single value. A Failover routing policy always routes users to the primary resource unless it’s down, in which case it routes users to the secondary resource. A Latency routing policy sends users to the resource in the AWS region that provides the least latency.
 
 <br>
 
 10. Which of the following Route 53 routing policies doesn’t use health checks?
-    - 
+    - Simple
     <br>
     
-    > 
+    > All Route 53 routing policies except for Simple can use health checks.
 
 <br>
 
 11. Which of the following types of Route 53 health checks works by making a test connection to a TCP port?
-    - 
+    - Endpoint
     <br>
     
-    > 
+    > An Endpoint health check works by connecting to the monitored endpoint via HTTP, HTTPS, or TCP. A CloudWatch alarm health check simply reflects the status of a CloudWatch alarm. A Calculated health check derives its status from multiple other health checks. There is no such thing as a Simple health check.
 
 <br>
 
 12. You have two EC2 instances hosting a web application. You want to distribute 20 percent of traffic to one instance and 80 percent to the other. Which of the following Route 53 routing policies should you use?
-    - 
+    - Weighted
     <br>
     
-    > 
+    > A Weighted routing policy lets you distribute traffic to endpoints according to a ratio that you define. None of the other routing policies allows this.
 
 <br>
 
 13. Resources in a VPC need to be able to resolve internal IP addresses for other resources in the VPC. No one outside of the VPC should be able to resolve these addresses. Which of the following Route 53 resources can help you achieve this?
-    - 
+    - A private hosted zone
     <br>
     
-    > 
+    > A private hosted zone is associated with a VPC and allows resources in the VPC to resolve private domain names. A public hosted zone is accessible by anyone on the Internet. Domain name registration is for public domain names. Health checks aren’t necessary for name resolution to work.
 
 <br>
 
 14. You want to provide private name resolution for two VPCs using the domain name company.pri. How many private hosted zones do you need to create?
-    - 
+    - 1
     <br>
     
-    > 
+    > Route 53 private hosted zones provide DNS resolution for a single domain name within multiple VPCs. Therefore, to support resolution of one domain name for two VPCs, you’d need one private hosted zone.
 
 <br>
 
-15. You want to provide private name resolution for two VPCs using the domain name company.pri. How many private hosted zones do you need to create?
-    - 
+15. On how many continents are CloudFront edge locations distributed?
+    - 6
     <br>
     
-    > 
+    > CloudFront has edge locations on six continents (Antarctica is a hard place to get to).
 
 <br>
 
 16. From where does CloudFront retrieve content to store for caching?
-    - 
+    - Origins
     <br>
     
-    > 
+    > A CloudFront origin is the location that a distribution sources content from. Content is stored in edge locations. A distribution defines the edge locations and origins to use.
 
 <br>
 
 17. Which CloudFront distribution type requires you to provide a media player?
-    - 
+    - RTMP
     <br>
     
-    > 
+    > The RTMP distribution type is for delivering streaming content and requires you to provide a media player. A Web distribution can also stream audio or video content but doesn’t require you to provide a media player. Streaming and Edge are not distribution types.
 
 <br>
 
 18. You need to deliver content to users in the United States and Canada. Which of the following edge location options will be the most cost‐effective for your CloudFront distribution?
-    - 
+    - United States, Canada, and Europe
     <br>
     
-    > 
+    > The more edge locations you use for a distribution, the more you’ll pay. Selecting the minimum number of locations will be the most cost‐effective.
 
 <br>
 
 19. Approximately how many different CloudFront edge locations are there?
-    - 
+    - More than 150
     <br>
     
-    > 
+    > There are more than 150 edge locations throughout the world.
 
 <br>
 
 20. Which of the following are valid origins for a CloudFront distribution? (Choose two.)
-    - 
-    - 
+    - EC2 instance
+    - A public S3 bucket
     <br>
     
-    > 
+    > An origin can be an EC2 instance or a public S3 bucket. You can’t use a private S3 bucket as an origin.
     
 <br>
 
