@@ -1314,7 +1314,179 @@
 
 
 
-## 
+## Chapter 9: The Core Database Services
+
+1. Which type of database stores data in columns and rows?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+2. Which of the following Structured Query Language (SQL) statements can you use to write data to a relational database table?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+3. Which of the following statements is true regarding nonrelational databases?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+4. What is a no‐SQL database?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+5. What do new Relational Database Service (RDS) instances use for database storage?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+6. Which of the following are database engine options for Amazon Relational Database Service (RDS)? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+7. What two databases is Amazon Aurora compatible with? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+8. Which of the following features of Relational Database Service (RDS) can prevent data loss in the event of an availability zone failure? (Choose two.)
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+9. Which RDS database engine offers automatically expanding database storage up to 64 TB?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+10. Which of the following Relational Database Service (RDS) features can help you achieve a monthly availability of 99.95 percent?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+11. What is true regarding a DynamoDB partition? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+12. What is the minimum monthly availability for DynamoDB in a single region?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+13. Which of the following statements is true regarding a DynamoDB table?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+14. Which configuration parameters can you adjust to improve write performance against a DynamoDB table? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+15. Which DynamoDB operation is the most read‐intensive?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+16. Which of the following would be appropriate to use for a primary key in a DynamoDB table that stores a customer list?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+17. Which type of Redshift node uses magnetic storage?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+18. Which Redshift feature can analyze structured data stored in S3?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+19. What is the term for a relational database that stores large amounts of structured data from a variety of sources for reporting and analysis?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+20. What’s the maximum amount of data you can store in a Redshift cluster when using dense storage nodes?
+    - 
+    <br>
+    
+    > 
+    
+<br>
+
+
+
+<br><br><br>
+
+
+
+## Chapter 10: The Core Networking Services
 
 1. 
     - 
@@ -1475,3 +1647,337 @@
     > 
     
 <br>
+
+
+
+<br><br><br>
+
+
+
+## Chapter 11: Automating Your AWS Workloads
+
+1. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+2. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+3. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+4. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+5. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+6. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+7. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+8. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+9. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+10. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+11. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+12. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+13. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+14. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+15. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+16. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+17. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+18. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+19. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+20. 
+    - 
+    <br>
+    
+    > 
+    
+<br>
+
+
+
+<br><br><br>
+
+
+
+## Chapter 12: Common Use-case Scenarios
+
+1. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+2. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+3. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+4. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+5. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+6. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+7. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+8. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+9. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+10. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+11. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+12. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+13. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+14. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+15. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+16. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+17. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+18. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+19. 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+20. 
+    - 
+    <br>
+    
+    > 
