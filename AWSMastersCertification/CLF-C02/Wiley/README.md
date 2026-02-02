@@ -1490,7 +1490,7 @@
 
 ## Chapter 10: The Core Networking Services
 
-1. 
+1. Which of the following are true of a default VPC? (Choose two.)
     - 
     <br>
     
@@ -1498,7 +1498,7 @@
 
 <br>
 
-2. 
+2. Which of the following is a valid CIDR for a VPC or subnet?
     - 
     <br>
     
@@ -1506,7 +1506,8 @@
 
 <br>
 
-3. 
+3. Which of the following are true regarding subnets? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1514,7 +1515,7 @@
 
 <br>
 
-4. 
+4. Which of the following is true of a new security group?
     - 
     <br>
     
@@ -1522,7 +1523,8 @@
 
 <br>
 
-5. 
+5. What’s the difference between a security group and a network access control list (NACL)? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1530,7 +1532,7 @@
 
 <br>
 
-6. 
+6. Which of the following is true of a VPC peering connection?
     - 
     <br>
     
@@ -1538,7 +1540,8 @@
 
 <br>
 
-7. 
+7. What are two differences between a virtual private network (VPN) connection and a Direct Connect connection? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1546,7 +1549,8 @@
 
 <br>
 
-8. 
+8. Which of the following are true about registering a domain name with Route 53? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1554,7 +1558,7 @@
 
 <br>
 
-9. 
+9. Which of the following Route 53 routing policies can return a set of randomly ordered values?
     - 
     <br>
     
@@ -1562,7 +1566,7 @@
 
 <br>
 
-10. 
+10. Which of the following Route 53 routing policies doesn’t use health checks?
     - 
     <br>
     
@@ -1570,7 +1574,7 @@
 
 <br>
 
-11. 
+11. Which of the following types of Route 53 health checks works by making a test connection to a TCP port?
     - 
     <br>
     
@@ -1578,7 +1582,7 @@
 
 <br>
 
-12. 
+12. You have two EC2 instances hosting a web application. You want to distribute 20 percent of traffic to one instance and 80 percent to the other. Which of the following Route 53 routing policies should you use?
     - 
     <br>
     
@@ -1586,7 +1590,7 @@
 
 <br>
 
-13. 
+13. Resources in a VPC need to be able to resolve internal IP addresses for other resources in the VPC. No one outside of the VPC should be able to resolve these addresses. Which of the following Route 53 resources can help you achieve this?
     - 
     <br>
     
@@ -1594,7 +1598,7 @@
 
 <br>
 
-14. 
+14. You want to provide private name resolution for two VPCs using the domain name company.pri. How many private hosted zones do you need to create?
     - 
     <br>
     
@@ -1602,7 +1606,7 @@
 
 <br>
 
-15. 
+15. You want to provide private name resolution for two VPCs using the domain name company.pri. How many private hosted zones do you need to create?
     - 
     <br>
     
@@ -1610,7 +1614,7 @@
 
 <br>
 
-16. 
+16. From where does CloudFront retrieve content to store for caching?
     - 
     <br>
     
@@ -1618,7 +1622,7 @@
 
 <br>
 
-17. 
+17. Which CloudFront distribution type requires you to provide a media player?
     - 
     <br>
     
@@ -1626,7 +1630,7 @@
 
 <br>
 
-18. 
+18. You need to deliver content to users in the United States and Canada. Which of the following edge location options will be the most cost‐effective for your CloudFront distribution?
     - 
     <br>
     
@@ -1634,7 +1638,7 @@
 
 <br>
 
-19. 
+19. Approximately how many different CloudFront edge locations are there?
     - 
     <br>
     
@@ -1642,7 +1646,8 @@
 
 <br>
 
-20. 
+20. Which of the following are valid origins for a CloudFront distribution? (Choose two.)
+    - 
     - 
     <br>
     
