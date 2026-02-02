@@ -1132,6 +1132,188 @@
 
 
 
+## Chapter 8: The Core Storage Services
+
+1. When you’re trying to create an S3 bucket named documents, AWS informs you that the bucket name is already in use. What should you do in order to create a bucket?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+2. Which S3 storage classes are most cost‐effective for infrequently accessed data that can’t be easily replaced? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+3. What are the major differences between Simple Storage Service (S3) and Elastic Block Store (EBS)? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+4. Which tasks can S3 object life‐cycle configurations perform automatically? (Choose three.)
+    - 
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+5. What methods can be used to grant anonymous access to an object in S3? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+6. Your budget‐conscious organization has a 5 TB database file it needs to retain off‐site for at least 5 years. In the event the organization needs to access the database, it must be accessible within 8 hours. Which cloud storage options should you recommend, and why? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+7. Which of the following actions can you perform from the S3 Glacier service console?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+8. Which Glacier retrieval option generally takes 3 to 5 hours to complete?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+9. What’s the minimum size for a Glacier archive?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+10. Which types of AWS Storage Gateway let you connect your servers to block storage using the iSCSI protocol? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+11. Where does AWS Storage Gateway primarily store data?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+12. You need an easy way to transfer files from a server in your data center to S3 without having to install any third‐party software. Which of the following services and storage protocols could you use? (Choose four.)
+    - 
+    - 
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+13. Which of the following are true regarding the AWS Storage Gateway volume gateway configuration? (Choose three.)
+    - 
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+14. What’s the most data you can store on a single Snowball device?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+15. Which of the following are security features of AWS Snowball? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+16. Which of the following might AWS do after receiving a damaged Snowball device from a customer?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+17. Which of the following can you use to transfer data to AWS Snowball from a Windows machine without writing any code?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+18. How do the AWS Snowball and Snowball Edge devices differ? (Choose two.)
+    - 
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+19. Which of the following Snowball Edge device options is the best for running machine learning applications?
+    - 
+    <br>
+    
+    > 
+
+<br>
+
+20. Which of the following hardware devices offers a network interface speed that supports up to 100 Gbps?
+    - 
+    <br>
+    
+    > 
+    
+<br>
+
+
+
+<br><br><br>
+
+
+
 ## 
 
 1. 
@@ -1293,5 +1475,3 @@
     > 
     
 <br>
-
-
