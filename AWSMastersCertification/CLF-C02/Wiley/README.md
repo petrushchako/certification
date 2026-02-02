@@ -1317,166 +1317,168 @@
 ## Chapter 9: The Core Database Services
 
 1. Which type of database stores data in columns and rows?
-    - 
+    - Relational
     <br>
     
-    > 
+    > A relational database stores data in columns called attributes and rows called records. Nonrelational databases—including key‐value stores and document stores—store data in collections or items but don’t use columns or rows.
 
 <br>
 
 2. Which of the following Structured Query Language (SQL) statements can you use to write data to a relational database table?
-    - 
+    - `INSERT`
     <br>
     
-    > 
+    > The SQL INSERT statement can be used to add data to a relational database. The QUERY command is used to read data. CREATE can be used to create a table but not add data to it. WRITE is not a valid SQL command.
 
 <br>
 
 3. Which of the following statements is true regarding nonrelational databases?
-    - 
+    - You don’t have to define all the types of data that a table can store before adding data to it.
+
     <br>
     
-    > 
+    > A nonrelational database is schemaless, meaning that there’s no need to predefine all the types of data you’ll store in a table. This doesn’t preclude you from storing data with a fixed structure, as nonrelational databases can store virtually any kind of data. A primary key is required to uniquely identify each item in a table. Creating multiple tables is allowed, but most applications that use nonrelational databases use only one table.
 
 <br>
 
 4. What is a no‐SQL database?
-    - 
+    - A schemaless nonrelational database
     <br>
     
-    > 
+    > A no‐SQL database is another term for a nonrelational database. By definition, nonrelational databases are schemaless and must use primary keys. There’s no such thing as a schemaless relational database. No‐SQL is never used to describe a relational database of any kind.
 
 <br>
 
 5. What do new Relational Database Service (RDS) instances use for database storage?
-    - 
+    - Elastic Block Store (EBS) volumes
     <br>
     
-    > 
+    > RDS instances use EBS volumes for storage. They no longer can use magnetic storage. Instance volumes are for temporary, not database storage. You can take a snapshot of a database instance and restore it to a new instance with a new EBS volume, but an RDS instance can’t use a snapshot directly for database storage.
 
 <br>
 
 6. Which of the following are database engine options for Amazon Relational Database Service (RDS)? (Choose two.)
-    - 
-    - 
+    - PostgreSQL
+    - Amazon Aurora
     <br>
     
-    > 
+    > PostgreSQL and Amazon Aurora are options for RDS database engines. IBM dBase and the nonrelational databases DynamoDB and Redis are not available as RDS database engines.
 
 <br>
 
 7. What two databases is Amazon Aurora compatible with? (Choose two.)
-    - 
-    - 
+    - MySQL
+    - PostgreSQL
     <br>
     
-    > 
+    > Aurora is Amazon’s proprietary database engine that works with existing PostgreSQL and MySQL databases. Aurora doesn’t support MariaDB, Oracle, or Microsoft SQL Server.
 
 <br>
 
 8. Which of the following features of Relational Database Service (RDS) can prevent data loss in the event of an availability zone failure? (Choose two.)
-    - 
+    - Multi‐AZ
+    - Snapshots
     <br>
     
-    > 
+    > Multi‐AZ and snapshots can protect your data in the event of an availability zone failure. Read replicas don’t use synchronous replication and may lose some data. IOPS is a measurement of storage throughput. Vertical scaling refers to changing the instance class but has nothing to do with preventing data loss.
 
 <br>
 
 9. Which RDS database engine offers automatically expanding database storage up to 64 TB?
-    - 
+    - Amazon Aurora
     <br>
     
-    > 
+    > Amazon Aurora uses a shared storage volume that automatically expands up to 64 TB. The Microsoft SQL Server and Oracle database engines don’t offer this. Amazon Athena is not a database engine.
 
 <br>
 
 10. Which of the following Relational Database Service (RDS) features can help you achieve a monthly availability of 99.95 percent?
-    - 
+    - Multi‐AZ
     <br>
     
-    > 
+    > Multi‐AZ lets your database withstand the failure of an RDS instance, even if the failure is due to an entire availability zone failing. Read replicas are a way to achieve horizontal scaling to improve performance of database reads but don’t increase availability. Point‐in‐time recovery allows you to restore a database up to a point in time but doesn’t increase availability.
 
 <br>
 
 11. What is true regarding a DynamoDB partition? (Choose two.)
-    - 
-    - 
+    - It’s backed by solid‐state drives.
+    - It’s replicated across multiple availability zones.
     <br>
     
-    > 
+    > A partition is an allocation of storage backed by solid‐state drives and replicated across multiple availability zones. Tables are stored across partitions, but tables do not contain partitions. A primary key, not a partition, is used to uniquely identify an item in a table.
 
 <br>
 
 12. What is the minimum monthly availability for DynamoDB in a single region?
-    - 
+    - 99.99 percent
     <br>
     
-    > 
+    > The minimum monthly availability for DynamoDB is 99.99 percent in a single region. It’s not 99.95 percent, 99.9 percent, or 99.0 percent.
 
 <br>
 
 13. Which of the following statements is true regarding a DynamoDB table?
-    - 
+    - Items in a table don’t have to have all the same attributes.
     <br>
     
-    > 
+    > Items in a DynamoDB table can have different attributes. For example, one item can have five attributes, while another has only one. A table can store items containing multiple data types. There’s no need to predefine the number of items in a table. Items in a table can’t have duplicate primary keys.
 
 <br>
 
 14. Which configuration parameters can you adjust to improve write performance against a DynamoDB table? (Choose two.)
-    - 
-    - 
+    - Increase write capacity units (WCU).
+    - Enable DynamoDB Auto Scaling.
     <br>
     
-    > 
+    > Increasing WCU or enabling Auto Scaling will improve write performance against a table. Increasing or decreasing RCU won’t improve performance for writes. Decreasing WCU will make write performance worse.
 
 <br>
 
 15. Which DynamoDB operation is the most read‐intensive?
-    - 
+    - Scan
     <br>
     
-    > 
+    > A scan requires reading every partition on which the table is stored. A query occurs against the primary key, enabling DynamoDB to read only the partition where the matching item is stored. Writing and updating an item are not read‐intensive operations.
 
 <br>
 
 16. Which of the following would be appropriate to use for a primary key in a DynamoDB table that stores a customer list?
-    - 
+    - A randomly generated customer ID number
     <br>
     
-    > 
+    > A primary key must be unique within a table. A full name, phone number, or city may not be unique, as some customers may share the same name or phone number. A randomly generated customer ID number would be unique and appropriate for use as a primary key.
 
 <br>
 
 17. Which type of Redshift node uses magnetic storage?
-    - 
+    - Dense compute
     <br>
     
-    > 
+    > Dense compute nodes use magnetic disks. Dense storage nodes use SSDs. There are no such nodes as dense memory or cost‐optimized.
 
 <br>
 
 18. Which Redshift feature can analyze structured data stored in S3?
-    - 
+    - Redshift Spectrum
     <br>
     
-    > 
+    > Redshift Spectrum can analyze structured data stored in S3. There is no such service as Redshift S3. Amazon Athena can analyze structured data in S3, but it’s not a feature of Redshift. Amazon RDS doesn’t analyze data stored in S3.
 
 <br>
 
 19. What is the term for a relational database that stores large amounts of structured data from a variety of sources for reporting and analysis?
-    - 
+    - Data warehouse
     <br>
     
-    > 
+    > A data warehouse stores large amounts of structured data from other relational databases. It’s not called a data storehouse or a report cluster. Dense storage node is a type of Redshift compute node.
 
 <br>
 
 20. What’s the maximum amount of data you can store in a Redshift cluster when using dense storage nodes?
-    - 
+    - 2 PB
     <br>
     
-    > 
+    > Dense storage nodes can be used in a cluster to store up to 2 PB of data. Dense compute nodes can be used to store up to 326 TB of data.
     
 <br>
 
