@@ -958,162 +958,171 @@
 ## Chapter 7: The Core Compute Services
 
 1. What is the function of an EC2 AMI?
-    - 
+    - To serve as a source image from which an instance’s primary storage volume is built
     <br>
     
-    > 
+    > An instance’s hardware profile is defined by the instance type. High‐volume (or low‐volume) data processing operations and data streams can be handled using any storage volume or on any instance (although some may be better optimized than others).
 
 <br>
 
 2. Where can you find a wide range of verified AMIs from both AWS and third‐party vendors?
-    - 
+    - AWS Marketplace
     <br>
     
-    > 
+    > The Quick Start includes only the few dozen most popular AMIs. The Community tab includes thousands of publicly available AMIs—whether verified or not. The My AMIs tab only includes AMIs created from your account.
 
 <br>
 
 3. Which of the following could be included in an EC2 AMI? (Choose two.)
-    - 
+    - A software application stack
+    - An operating system
     <br>
     
-    > 
+    > AMIs can be created that provide both a base operating system and a preinstalled application. They would not, however, include any networking or hardware profile information—which are largely determined by the instance type.
 
 <br>
 
 4. Which of the following are EC2 instance type families? (Choose two.)
-    - 
+    - Compute optimized
+    - Accelerated computing
     <br>
     
-    > 
+    > c5d.18xlarge and t2.micro are the names of EC2 instance types, not instance type families.
 
 <br>
 
 5. When describing EC2 instance types, what is the role played by the vCPU metric?
-    - 
+    - vCPUs represent an instance type’s compute power compared to the number of processors on a physical machine.
     <br>
     
-    > 
+    > A virtual central processing unit (vCPU) is a metric that roughly measures an instance type’s compute power in terms of the number of processors on a physical server. It has nothing to do with resilience to high traffic, system memory, or the underlying AMI.
 
 <br>
 
 6. Which of the following describes an EC2 dedicated instance?
-    - 
+    - An EC2 instance running on a physical host reserved for the exclusive use of a single AWS account
     <br>
     
-    > 
+    > An EC2 instance that runs on a physical host reserved for and controlled by a single AWS account is called a dedicated host. A dedicated host is not an AMI, nor is it an instance type.
 
 <br>
 
 7. Which of the following describes an EBS volume?
-    - 
+    - A virtualized partition of a physical storage drive that’s not directly connected to the EC2 instance it’s associated with
     <br>
     
-    > 
+    > A virtualized partition of a physical storage drive that is directly connected to the EC2 instance it’s associated with is known as an instance store volume. A software stack archive packaged to make it easy to copy and deploy to an EC2 instance describes an EC2 AMI. It’s possible to encrypt EBS volumes, but encryption doesn’t define them.
 
 <br>
 
 8. Why might you want to use an instance store volume with your EC2 instance rather than a volume from the more common EBS service? (Choose two.)
-    - 
+    - Instance store volumes provide faster data read/write performance.
+    - Instance store volumes are connected directly to your EC2 instance.
     <br>
     
-    > 
+    > Instance store volumes cannot be encrypted, nor will their data survive an instance shutdown. Those are features of EBS volumes.
 
 <br>
 
 9. Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for those extra instances?
-    - 
+    - On‐demand
     <br>
     
-    > 
+    > Spot instances are unreliable for this sort of usage since they can be shut down unexpectedly. Reserved instances make economic sense where they’ll be used 24/7 over long stretches of time. “Dedicated” isn’t a pricing model.
 
 <br>
 
 10. Your web application experiences periodic spikes in demand that require the provisioning of extra instances. Which of the following pricing models would make the most sense for the “base” instances that will run constantly?
-    - 
+    - Reserved
     <br>
     
-    > 
+    > Reserved instances will work here because your “base” instances will need to run 24/7 over the long term. Spot and spot fleet instances are unreliable for this sort of usage since they can be shut down unexpectedly. On‐demand instances will incur unnecessarily high costs over such a long period.
 
 <br>
 
 11. Which of the following best describes what happens when you purchase an EC2 reserved instance?
-    - 
+    - Charges for any instances you run matching the reserved instance type will be covered by the reservation.
     <br>
     
-    > 
+    > There’s no real need for guaranteed available capacity since it’s extremely rare for AWS to run out. You choose how you’ll pay for a reserved instance. All Upfront, Partial Upfront, and No Upfront are available options, and there is no automatic billing. An instance would never be launched automatically in this context.
 
 <br>
 
 12. Which of the following use cases are good candidates for spot instances? (Choose two.)
-    - 
+    - Big data processing workloads
+    - Continuous integration development environments
     <br>
     
-    > 
+    > Because spot instances can be shut down, they’re not recommended for applications that provide any kind of always‐on service.
 
 <br>
 
 13. Which AWS services simplify the process of bringing web applications to deployment? (Choose two.)
-    - 
+    - Elastic Beanstalk
+    - Lightsail
     <br>
     
-    > 
+    > Elastic Block Store provides storage volumes for Lightsail and Beanstalk (and for EC2, for that matter). Elastic Compute Cloud (EC2) provides application deployment, but no one ever accused it of being simple.
 
 <br>
 
 14. Which of the following services bills at a flat rate regardless of how it’s consumed?
-    - 
+    - Lightsail
     <br>
     
-    > 
+    > Beanstalk, EC2 (unreserved instances), and RDS all bill according to actual usage.
 
 <br>
 
 15. Which of these stacks are available from Lightsail blueprints? (Choose two.)
-    - 
+    - Gitlab
+    - LAMP
     <br>
     
-    > 
+    > Ubuntu is an OS, not a stack. WordPress is an application, not an OS.
 
 <br>
 
 16. Which of these AWS services use primarily EC2 resources under the hood? (Choose two.)
-    - 
+    - Lightsail
+    - Elastic Beanstalk
     <br>
     
-    > 
+    > Elastic Block Store is, for practical purposes, an EC2 resource. RDS is largely built on its own infrastructure.
 
 <br>
 
 17. Which of the following AWS services are designed to let you deploy Docker containers? (Choose two.)
-    - 
+    - Elastic Container Service
+    - Elastic Beanstalk
     <br>
     
-    > 
+    > While you could, in theory at least, manually install Docker Engine on either a Lightsail or an EC2 instance, that’s not their primary function.
 
 <br>
 
 18. Which of the following directly use container technologies? (Choose two.)
-    - 
+    - Docker
+    - Kubernetes
     <br>
     
-    > 
+    > Both Lambda and Lightsail are compute services that—while they might possibly make use of containers under the hood—are not themselves container technologies.
 
 <br>
 
 19. What role can the Python programming language play in AWS Lambda?
-    - 
+    - It can be set as the runtime environment for a function.
     <br>
     
-    > 
+    > Python is, indeed, a valid choice for a function’s runtime environment. There is no one “primary” language for Lambda API calls.
 
 <br>
 
 20. What is the maximum time a Lambda function may run before timing out?
-    - 
+    - 15 minutes
     <br>
     
-    > 
+    > While the maximum time was, at one point, 5 minutes, that’s been changed to 15.
     
 <br>
 
