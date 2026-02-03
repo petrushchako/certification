@@ -1664,7 +1664,7 @@
 
 ## Chapter 11: Automating Your AWS Workloads
 
-1. 
+1. Which of the following is an advantage of using CloudFormation?
     - 
     <br>
     
@@ -1672,7 +1672,8 @@
 
 <br>
 
-2. 
+2. What formats do CloudFormation templates support? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1680,7 +1681,7 @@
 
 <br>
 
-3. 
+3. What’s an advantage of using parameters in a CloudFormation template?
     - 
     <br>
     
@@ -1688,7 +1689,8 @@
 
 <br>
 
-4. 
+4. Why would you use CloudFormation to automatically create resources for a development environment instead of creating them using AWS CLI commands? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1696,7 +1698,8 @@
 
 <br>
 
-5. 
+5. What are two features of CodeCommit? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1704,7 +1707,7 @@
 
 <br>
 
-6. 
+6. In the context of CodeCommit, what can differencing accomplish?
     - 
     <br>
     
@@ -1712,7 +1715,7 @@
 
 <br>
 
-7. 
+7. What software development practice regularly tests new code for bugs but doesn’t do anything else?
     - 
     <br>
     
@@ -1720,7 +1723,8 @@
 
 <br>
 
-8. 
+8. Which CodeBuild build environment compute types support Windows operating systems? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1728,7 +1732,7 @@
 
 <br>
 
-9. 
+9. What does a CodeBuild environment always contain? (Choose two.)
     - 
     <br>
     
@@ -1736,7 +1740,9 @@
 
 <br>
 
-10. 
+10. Which of the following can CodeDeploy do? (Choose three.)
+    - 
+    - 
     - 
     <br>
     
@@ -1744,7 +1750,7 @@
 
 <br>
 
-11. 
+11. What is the minimum number of actions in a CodePipeline pipeline?
     - 
     <br>
     
@@ -1752,7 +1758,7 @@
 
 <br>
 
-12. 
+12. You want to predefine the configuration of EC2 instances that you plan to launch manually and using Auto Scaling. What resource must you use?
     - 
     <br>
     
@@ -1760,7 +1766,7 @@
 
 <br>
 
-13. 
+13. What Auto Scaling group parameters set the limit for the number of instances that Auto Scaling creates? (Choose two.)
     - 
     <br>
     
@@ -1768,7 +1774,7 @@
 
 <br>
 
-14. 
+14. An Auto Scaling group has a desired capacity of 7 and a maximum size of 7. What will Auto Scaling do if someone manually terminates one of these instances?
     - 
     <br>
     
@@ -1776,7 +1782,7 @@
 
 <br>
 
-15. 
+15. What Auto Scaling feature creates a scaling schedule based on past usage patterns?
     - 
     <br>
     
@@ -1784,7 +1790,7 @@
 
 <br>
 
-16. 
+16. What type of AWS Systems Manager document can run Bash or PowerShell scripts on an EC2 instance?
     - 
     <br>
     
@@ -1792,7 +1798,7 @@
 
 <br>
 
-17. 
+17. What type of AWS Systems Manager document can take a snapshot of an EC2 instance?
     - 
     <br>
     
@@ -1800,7 +1806,7 @@
 
 <br>
 
-18. 
+18. Which of the following OpsWorks services uses Chef recipes?
     - 
     <br>
     
@@ -1808,7 +1814,7 @@
 
 <br>
 
-19. 
+19. What configuration management platforms does OpsWorks support? (Choose two.)
     - 
     <br>
     
@@ -1816,7 +1822,7 @@
 
 <br>
 
-20. 
+20. Which of the following OpsWorks Stacks layers contains at least one EC2 instance?
     - 
     <br>
     
