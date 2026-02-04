@@ -1665,168 +1665,171 @@
 ## Chapter 11: Automating Your AWS Workloads
 
 1. Which of the following is an advantage of using CloudFormation?
-    - 
+    - It lets you create multiple separate AWS environments using a single template.
     <br>
     
-    > 
+    > CloudFormation can create AWS resources and manages them collectively in a stack. Templates are written in the CloudFormation language, not Python. CloudFormation can’t create resources outside of AWS. It also doesn’t prevent manual changes to resources in a stack.
 
 <br>
 
 2. What formats do CloudFormation templates support? (Choose two.)
-    - 
-    - 
+    - YAML
+    - JSON
     <br>
     
-    > 
+    > CloudFormation templates are written in the YAML or JSON format.
 
 <br>
 
 3. What’s an advantage of using parameters in a CloudFormation template?
-    - 
+    - Allow customizing a stack without changing the template.
     <br>
     
-    > 
+    > Parameters let you input customizations when creating a CloudFormation stack without having to modify the underlying template. Parameters don’t prevent stack updates or unauthorized changes. A template can be used to create multiple stacks, regardless of whether it uses parameters.
 
 <br>
 
 4. Why would you use CloudFormation to automatically create resources for a development environment instead of creating them using AWS CLI commands? (Choose two.)
-    - 
-    - 
+    - The resources CloudFormation creates are organized into stacks and can be managed as a single unit.
+    - CloudFormation stack updates help ensure that changes to one resource won’t break another.
     <br>
     
-    > 
+    > The resources CloudFormation creates are organized into stacks. When you update a stack, CloudFormation analyzes the relationships among resources in the stack and updates dependent resources as necessary. This does not, however, mean that any resource you create using CloudFormation will work as you expect. Provisioning resources using CloudFormation is not necessarily faster than using the AWS CLI.
 
 <br>
 
 5. What are two features of CodeCommit? (Choose two.)
-    - 
-    - 
+    - Versioning
+    - Differencing
     <br>
     
-    > 
+    > CodeCommit is a private Git repository that offers versioning and differencing. It does not perform deployments.
 
 <br>
 
 6. In the context of CodeCommit, what can differencing accomplish?
-    - 
+    - Understanding what code change introduced a bug
     <br>
     
-    > 
+    > Differencing lets you see the differences between two versions of a file, which can be useful when figuring out what change introduced a bug. Versioning, not differencing, is what allows reverting to an older version of a file. Differencing doesn’t identify duplicate lines of code or tell you when an application was deployed.
 
 <br>
 
 7. What software development practice regularly tests new code for bugs but doesn’t do anything else?
-    - 
+    - Continuous integration
     <br>
     
-    > 
+    > Continuous integration is the practice of running code through a build or test process as soon as it’s checked into a repository. Continuous delivery and continuous deployment include continuous integration but add deployment to the process. Differencing only shows the differences between different versions of a file but doesn’t perform any testing.
 
 <br>
 
 8. Which CodeBuild build environment compute types support Windows operating systems? (Choose two.)
-    - 
-    - 
+    - `build.general1.medium`
+    - `build.general1.large`
     <br>
     
-    > 
+    > Build.general1.medium and build.general1.large support Windows and Linux operating systems. Build.general1.small supports Linux only. The other compute types don’t exist.
 
 <br>
 
 9. What does a CodeBuild environment always contain? (Choose two.)
-    - 
+    - An operating system
+    - Docker image
     <br>
     
-    > 
+    > A CodeBuild build environment always contains an operating system and a Docker image. It may contain the other components but doesn’t have to.
 
 <br>
 
 10. Which of the following can CodeDeploy do? (Choose three.)
-    - 
-    - 
-    - 
+    - Deploy an application to an on-premises Windows instance.
+    - Deploy a Docker container to the Elastic Container Service.
+    - Upgrade an application on an EC2 instance running Red Hat Enterprise Linux.
     <br>
     
-    > 
+    > CodeDeploy can deploy application files to Linux or Windows EC2 instances and Docker containers to ECS. It can’t deploy an application to smartphones, and it can’t deploy files to an S3 bucket.
 
 <br>
 
 11. What is the minimum number of actions in a CodePipeline pipeline?
-    - 
+    - 2
     <br>
     
-    > 
+    > At the very least, a CodePipeline must consist of a source stage and a deploy stage.
 
 <br>
 
 12. You want to predefine the configuration of EC2 instances that you plan to launch manually and using Auto Scaling. What resource must you use?
-    - 
+    - Launch template
     <br>
     
-    > 
+    > A launch template can be used to launch instances manually and with EC2 Auto Scaling. A launch configuration can’t be used to launch instances manually. An instance role is used to grant permissions to applications running on an instance. Auto Scaling can’t provision instances using a CloudFormation template.
 
 <br>
 
 13. What Auto Scaling group parameters set the limit for the number of instances that Auto Scaling creates? (Choose two.)
-    - 
+    - Maximum
+    - Minimum
     <br>
     
-    > 
+    > The maximum and minimum group size values limit the number of instances in an Auto Scaling group. The desired capacity (also known as the group size) is the number of instances that Auto Scaling will generally maintain, but Auto Scaling can launch or terminate instances if dynamic scaling calls for it.
 
 <br>
 
 14. An Auto Scaling group has a desired capacity of 7 and a maximum size of 7. What will Auto Scaling do if someone manually terminates one of these instances?
-    - 
+    - It will launch one new instance.
     <br>
     
-    > 
+    > Auto Scaling will use self‐healing to replace the failed instance to maintain the desired capacity of 7. Terminating an instance or failing to replace the failed one will result in 6 instances. Auto Scaling won’t ever change the desired capacity in response to a failed instance.
 
 <br>
 
 15. What Auto Scaling feature creates a scaling schedule based on past usage patterns?
-    - 
+    - Predictive scaling
     <br>
     
-    > 
+    > Predictive scaling creates a scheduled scaling action based on past usage patterns. Scheduled scaling and dynamic scaling do not create scheduled scaling actions. There is no such thing as pattern scaling.
 
 <br>
 
 16. What type of AWS Systems Manager document can run Bash or PowerShell scripts on an EC2 instance?
-    - 
+    - Command document
     <br>
     
-    > 
+    > A Command document can execute commands on an EC2 instance. An Automation document can perform administrative tasks on AWS, such as starting or stopping an instance. There is no such thing as a Script document or a Run document.
 
 <br>
 
 17. What type of AWS Systems Manager document can take a snapshot of an EC2 instance?
-    - 
+    - Automation document
     <br>
     
-    > 
+    > An Automation document can perform administrative tasks on AWS, such as starting or stopping an instance. A Command document can execute commands on an EC2 instance. There is no such thing as a Script document or a Run document.
 
 <br>
 
 18. Which of the following OpsWorks services uses Chef recipes?
-    - 
+    - AWS OpsWorks Stacks
     <br>
     
-    > 
+    > AWS OpsWorks Stacks uses Chef recipes, whereas AWS OpsWorks for Puppet Enterprise uses Puppet modules. There is no service called AWS OpsWorks Layers or AWS OpsWorks for Automation.
 
 <br>
 
 19. What configuration management platforms does OpsWorks support? (Choose two.)
-    - 
+    - Puppet Enterprise
+    - Chef
     <br>
     
-    > 
+    > OpsWorks supports the Puppet Enterprise and Chef configuration management platforms. It doesn’t support SaltStack, Ansible, or CFEngine.
 
 <br>
 
 20. Which of the following OpsWorks Stacks layers contains at least one EC2 instance?
-    - 
+    - OpsWorks layer
     <br>
     
-    > 
+    > Only an OpsWorks layer contains at least one EC2 instance. There’s no such thing as an EC2 Auto Scaling layer.
     
 <br>
 
