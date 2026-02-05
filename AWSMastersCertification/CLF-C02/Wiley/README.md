@@ -1841,7 +1841,7 @@
 
 ## Chapter 12: Common Use-case Scenarios
 
-1. 
+1. Which of the following is not one of the pillars of the Well‐Architected Framework?
     - 
     <br>
     
@@ -1849,7 +1849,8 @@
 
 <br>
 
-2. 
+2. Which of the following are examples of applying the principles of the security pillar of the Well‐Architected Framework? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1857,7 +1858,8 @@
 
 <br>
 
-3. 
+3. You’re hosting a web application on two EC2 instances in an Auto Scaling group. The performance of the application is consistently acceptable. Which of the following can help maintain or improve performance efficiency? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1865,7 +1867,8 @@
 
 <br>
 
-4. 
+4. Which of the following can help achieve cost optimization? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1873,7 +1876,7 @@
 
 <br>
 
-5. 
+5. Which of the following is a key component of operational excellence?
     - 
     <br>
     
@@ -1881,7 +1884,7 @@
 
 <br>
 
-6. 
+6. Your default VPC in the us‐west‐1 region has three default subnets. How many availability zones are in this region?
     - 
     <br>
     
@@ -1889,7 +1892,7 @@
 
 <br>
 
-7. 
+7. Your organization is building a database‐backed web application that will sit behind an application load balancer. You add an inbound security group rule to allow HTTP traffic on TCP port 80. Where should you apply this security group to allow users to access the application?
     - 
     <br>
     
@@ -1897,7 +1900,7 @@
 
 <br>
 
-8. 
+8. How does an application load balancer enable reliability?
     - 
     <br>
     
@@ -1905,7 +1908,7 @@
 
 <br>
 
-9. 
+9. Which of the following contains the configuration information for instances in an Auto Scaling group?
     - 
     <br>
     
@@ -1913,7 +1916,7 @@
 
 <br>
 
-10. 
+10. You’ve created a target tracking policy for an Auto Scaling group. You want to ensure that the number of instances in the group never exceeds 5. How can you accomplish this?
     - 
     <br>
     
@@ -1921,7 +1924,7 @@
 
 <br>
 
-11. 
+11. Which of the following is an example of a static website?
     - 
     <br>
     
@@ -1929,7 +1932,8 @@
 
 <br>
 
-12. 
+12. Which of the following features of S3 improve the security of data you store in an S3 bucket? (Choose two.)
+    - 
     - 
     <br>
     
@@ -1937,7 +1941,7 @@
 
 <br>
 
-13. 
+13. Which of the following is required to enable S3 static website hosting on a bucket?
     - 
     <br>
     
@@ -1945,7 +1949,7 @@
 
 <br>
 
-14. 
+14. You’ve created a static website hosted on S3 and given potential customers the URL that consists of words and numbers. They’re complaining that it’s too hard to type in. How can you come up with a friendlier URL?
     - 
     <br>
     
@@ -1953,7 +1957,7 @@
 
 <br>
 
-15. 
+15. Which of the following is true regarding static websites hosted in S3?
     - 
     <br>
     
@@ -1961,7 +1965,7 @@
 
 <br>
 
-16. 
+16. Which of the following can impact the reliability of a web application running on EC2 instances?
     - 
     <br>
     
@@ -1969,7 +1973,7 @@
 
 <br>
 
-17. 
+17. You have a public web application running on EC2 instances. Which of the following factors affecting the performance of your application might be out of your control?
     - 
     <br>
     
@@ -1977,7 +1981,7 @@
 
 <br>
 
-18. 
+18. An Auto Scaling group can use an EC2 system health check to determine whether an instance is healthy. What other type of health check can it use?
     - 
     <br>
     
@@ -1985,7 +1989,7 @@
 
 <br>
 
-19. 
+19. You’re hosting a static website on S3. Your web assets are stored under the STANDARD storage class. Which of the following is true regarding your site?
     - 
     <br>
     
@@ -1993,7 +1997,7 @@
 
 <br>
 
-20. 
+20. You’re hosting a static website on S3. Your web assets are stored in the US East 1 Region in the bucket named mygreatwebsite. What is the URL of the website?
     - 
     <br>
     
