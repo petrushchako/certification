@@ -1842,163 +1842,163 @@
 ## Chapter 12: Common Use-case Scenarios
 
 1. Which of the following is not one of the pillars of the Well‐Architected Framework?
-    - 
+    - Resiliency
     <br>
     
-    > 
+    > The pillars of the Well‐Architected Framework are reliability, performance efficiency, security, cost optimization, operational excellence, and sustainability. Resiliency is not one of them.
 
 <br>
 
 2. Which of the following are examples of applying the principles of the security pillar of the Well‐Architected Framework? (Choose two.)
-    - 
-    - 
+    - Granting each AWS user their own IAM username and password
+    - Enabling S3 versioning
     <br>
     
-    > 
+    > Security is about protecting the confidentiality, integrity, and availability of data. Granting each AWS user their own IAM username and password makes it possible to ensure the confidentiality of data. Enabling S3 versioning protects the integrity of data by maintaining a backup of an object. Deleting an empty S3 bucket doesn’t help with any of these. It’s not possible to create a security group rule that denies access to unused ports since security groups deny any traffic that’s not explicitly allowed.
 
 <br>
 
 3. You’re hosting a web application on two EC2 instances in an Auto Scaling group. The performance of the application is consistently acceptable. Which of the following can help maintain or improve performance efficiency? (Choose two.)
-    - 
-    - 
+    - Implementing policies to prevent the accidental termination of EC2 instances in the same Auto Scaling group
+    - Using CloudFront
     <br>
     
-    > 
+    > Preventing the accidental termination of an EC2 instance in the Auto Scaling group can avoid overburdening and causing performance issues on the remaining instance, especially during busy times. Using CloudFront can help improve performance for end users by caching the content in an edge location close to them. Doubling the number of instances might improve performance, but because performance is already acceptable, doing this would be inefficient. Monitoring for unauthorized access alone won't improve performance or performance efficiency.
 
 <br>
 
 4. Which of the following can help achieve cost optimization? (Choose two.)
-    - 
-    - 
+    - Deleting unused S3 objects
+    - Deleting unused application load balancers
     <br>
     
-    > 
+    > Deleting unused S3 objects and unused application load balancers can reduce costs since you’re charged for both. Deleting unused VPCs and empty S3 buckets won’t reduce costs since they don’t cost anything.
 
 <br>
 
 5. Which of the following is a key component of operational excellence?
-    - 
+    - Automating manual processes
     <br>
     
-    > 
+    > Operational excellence is concerned with strengthening the other pillars of reliability, performance efficiency, security, cost optimization, and sustainability; automation is the key to achieving each of these. Improving bad processes and making people work longer hours run counter to achieving operational excellence. Adding more security personnel may be a good idea, but it isn’t a key component of operational excellence.
 
 <br>
 
 6. Your default VPC in the us‐west‐1 region has three default subnets. How many availability zones are in this region?
-    - 
+    - 3
     <br>
     
-    > 
+    > In a default VPC, AWS creates a subnet for each availability zone in the region. Hence, if there are three in the dafault VPC, there must be three availability zones.
 
 <br>
 
 7. Your organization is building a database‐backed web application that will sit behind an application load balancer. You add an inbound security group rule to allow HTTP traffic on TCP port 80. Where should you apply this security group to allow users to access the application?
-    - 
+    - The application load balancer listener
     <br>
     
-    > 
+    > Application load balancer listeners use security groups to control inbound access, so you need to apply a security group that has an inbound rule allowing HTTP access. Applying the security group rule to the database instance won’t help, since users don’t connect directly to the database instance. You can’t apply a security group to a subnet, only a network access control list.
 
 <br>
 
 8. How does an application load balancer enable reliability?
-    - 
+    - By routing traffic away from failed instances
     <br>
     
-    > 
+    > An application load balancer can use health checks to identify failed instances and remove them from load balancing. This can prevent a user from ever reaching a failed instance. A load balancer can’t replace a failed instance, but Auto Scaling can. An application load balancer distributes traffic to instances using a round‐robin algorithm, not based on how busy those instances are. An application load balancer doesn’t cache content.
 
 <br>
 
 9. Which of the following contains the configuration information for instances in an Auto Scaling group?
-    - 
+    - Launch template
     <br>
     
-    > 
+    > A launch template tells Auto Scaling how to configure the instances it provisions. A dynamic scaling policy controls how Auto Scaling scales in and out based on CloudWatch metrics. There’s no such thing as a launch directive. Auto Scaling does not reference a CloudFormation template, but you can use a CloudFormation template to create a stack that contains a launch template.
 
 <br>
 
 10. You’ve created a target tracking policy for an Auto Scaling group. You want to ensure that the number of instances in the group never exceeds 5. How can you accomplish this?
-    - 
+    - Set the maximum group size to 5.
     <br>
     
-    > 
+    > The maximum group size limits the number of instances in the group. Setting the group size (also known as the desired capacity) or minimum group size to 5 would increase the number of instances to 5 but would not stop Auto Scaling from subsequently adding more instances. Deleting the target tracking policy would not necessarily prevent the number of instances in the group from growing, as another process such as a scheduled scaling policy could add more instances to the group.
 
 <br>
 
 11. Which of the following is an example of a static website?
-    - 
+    - A website hosted on S3
     <br>
     
-    > 
+    > A static website serves content just as it’s stored without changing the content on the fly. A WordPress blog, a social media website, and a web‐based email application all compile content from a database and mix it in with static content before serving it up to the user.
 
 <br>
 
 12. Which of the following features of S3 improve the security of data you store in an S3 bucket? (Choose two.)
-    - 
-    - 
+    - Objects in S3 are not public by default.
+    - By default, S3 removes ACLs that allow public read access to objects.
     <br>
     
-    > 
+    > Objects you upload to an S3 bucket are not public by default, nor are they accessible to all AWS users. Even if you try to make an object public using an ACL, S3 will immediately remove the ACL, but you can disable this behavior. S3 never removes objects by default.
 
 <br>
 
 13. Which of the following is required to enable S3 static website hosting on a bucket?
-    - 
+    - Enable bucket hosting in the S3 service console.
     <br>
     
-    > 
+    > To have S3 host your static website, you need to enable bucket hosting in the S3 service console. It’s not necessary to disable or enable default encryption or object versioning. There’s also no need to make all objects in the bucket public, but only those that you want S3 to serve up.
 
 <br>
 
 14. You’ve created a static website hosted on S3 and given potential customers the URL that consists of words and numbers. They’re complaining that it’s too hard to type in. How can you come up with a friendlier URL?
-    - 
+    - Use a custom domain name.
     <br>
     
-    > 
+    > Purchasing and using a custom domain name is the best option for a friendly URL. You need to name the bucket the same as the domain name. Creating a bucket name with only words is unlikely to work, regardless of region, as bucket names must be globally unique. A bucket name can’t start with a number.
 
 <br>
 
 15. Which of the following is true regarding static websites hosted in S3?
-    - 
+    - The content served is not encrypted in transit.
     <br>
     
-    > 
+    > Websites hosted in S3 are served using unencrypted HTTP, not secure HTTPS. The content is publicly readable, but that doesn’t mean the public can modify it. You don’t have to use a custom domain name, as S3 provides an endpoint URL for you. A website hosted in S3 is stored in a bucket, and a bucket exists in only one region.
 
 <br>
 
 16. Which of the following can impact the reliability of a web application running on EC2 instances?
-    - 
+    - Not replacing a misconfigured resource that the application depends on.
     <br>
     
-    > 
+    > The reliability of an application can be impacted by the failure of resources the application depends on. One way a resource can fail is if it’s misconfigured. Taking EBS snapshots of an instance or provisioning more instances than you need won’t impact reliability. The user interface being difficult to use might be an annoyance for the user but doesn’t affect the actual reliability of the application.
 
 <br>
 
 17. You have a public web application running on EC2 instances. Which of the following factors affecting the performance of your application might be out of your control?
-    - 
+    - Network
     <br>
     
-    > 
+    > You may have control over your VPC, but the rest of the network between your application and users on the Internet is not under your control. Compute, storage, and any database your application uses are, or at least theoretically could be, under your control.
 
 <br>
 
 18. An Auto Scaling group can use an EC2 system health check to determine whether an instance is healthy. What other type of health check can it use?
-    - 
+    - ELB
     <br>
     
-    > 
+    > An Auto Scaling group can use an ELB health check to determine whether an instance is healthy. There is no such thing as an S3 health check, a VPC health check, or an SNS health check.
 
 <br>
 
 19. You’re hosting a static website on S3. Your web assets are stored under the STANDARD storage class. Which of the following is true regarding your site?
-    - 
+    - You’re responsible for S3 charges.
     <br>
     
-    > 
+    > You’re responsible for S3 charges related to your static website. You’re not charged for compute with S3. No one may modify the content of your site unless you give them permission. The S3 STANDARD storage class keeps objects in multiple availability zones, so the outage of one won’t affect the site.
 
 <br>
 
 20. You’re hosting a static website on S3. Your web assets are stored in the US East 1 Region in the bucket named mygreatwebsite. What is the URL of the website?
-    - 
+    - `http://mygreatwebsite.s3-website-us-east-1.amazonaws.com`
     <br>
     
-    > 
+    > The format of the URL is the bucket name, followed by s3‐website‐, the region identifier, and then amazonaws.com.
