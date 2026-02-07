@@ -50,3 +50,19 @@ The AWS Well-Architected Framework is a set of best practices and guidance for b
   - Choosing energy-efficient AWS regions.
   - Right-sizing compute resources.
   - Using managed services (e.g. AWS Lambda, Amazon S3) to optimize resource consumtion
+
+
+<br><br><br>
+
+### Difference between the Well-Archotected Framework Pillars
+
+| **Pillar**                 | **Focus Area**                                   | **Key Practices**                                           |
+|----------------------------|--------------------------------------------------|-------------------------------------------------------------|
+| **Operational Excelence**  | Monitoring, automation, continuous impovement    | Automates tasks, define procedures, use monitoring tools    |
+| **Security**               | Data protection, access control, compliance      | Encrypt data, apply the least privilege, use IAM & MFA      |
+| **Reliability**            | Fault tolerance, disaster recovery, availability | Use multi-AZ deployments, backups, Auto Scaling             |
+| **Performance Efficiency** | Resource optimisation, scaling, right-sizing     | Choose correct instance types, auto-scale, monitor          |
+| **Cost Optimisation**      | Reduce waste, optimise experienses               | Use Reserved Instances, cost tracking, serverless           |
+| **Sustainability**         | Environmental impact, energy efficiency          | Use efficient regions, optimise workloads, managed services |
+
+
