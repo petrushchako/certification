@@ -37,4 +37,34 @@ AWS offers multiple strategies for migrating workloads to the cloud. The **6 R's
 | **Retire**                              | Decomissioning unnecessary workloads                | Removing outdated applications to reduce costs                         |
 | **Retain**                              | Keeping certain workloads on-premises               | Keeping sensistive regulatory workloads on-prem while migrating others |
 
+<br>
 
+### AWS Resources for Cloud Migration
+AWS provides a range of tools and services to facilitate cloud migration:
+
+#### Database Migration Strategies
+- **AWS Database Migration Service (AWS DMS)** - Supports replication from on-premises databases (e.g. MySQL, PostgreSQL, Oracle) to AWS databases (e.g. Amazon RDS, DynamoDB).
+- **AWS Schema Conversion Tool (AWS SCT)** - Helps convert databse schemas between different database engines.
+
+#### Data Transfer and Migration Tools
+| **AWS Service**         | **Use Case**                              | **Benefit**                                    |
+|-------------------------|-------------------------------------------|------------------------------------------------|
+| **AWS Snowball**        | Large-scale data transfer                 | Moves petabytes of data using physical devices |
+| **AWS Snowmobile**      | Massive data migration (Exabyte-scale)    | Transfers huge datasets for enterpises         |
+| **AWS DataSync**        | Aumoted data transfer from on-prem to AWS | Reduces manual effort, accelerates transfer    |
+| **AWS Transfer Family** | Secure file transfer to AWS (FTP, SFTP)   | Enables seamless cloud integration             |
+
+
+#### Migration Planning and Automation
+- **AWS Migration Hub** – Centralized migration tracking and planning.
+- **AWS Application Migration Service (AWS MGN)** – Automates rehosting of applications.
+- **AWS Server Migration Service (AWS SMS)** – Migrates on-premises servers to AWS with minimal downtime.
+
+<br>
+
+### Migration Best Practices
+- **Assess Readiness** – Use AWS Migration Evaluator to determine costs and feasibility.
+- **Optimise Before Moving** – Reduce unnecessary workloads before migration.
+- **Use Phased Migration** – Migrate in stages to minimise risk.
+- **Monitor Performance** – Leverage AWS CloudWatch for real-time insights.
+- **Implement Security Best Practices** – Use IAM, encryption, and compliance tools.
