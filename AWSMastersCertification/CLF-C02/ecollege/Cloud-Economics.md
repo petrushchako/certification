@@ -26,10 +26,16 @@ Cloud computing offers several economic advantages, including:
 
 
 
+3. Licensing Strategies in the Cloud
+
+AWS offers different licensing models to optimise software costs:
 
 
-
-
+| **Licensing Model**               | **Description**                                               | **Example Use Case**                                  |
+|-----------------------------------|---------------------------------------------------------------|-------------------------------------------------------|
+| **Bring Your Own License (BYOL)** | Allows organizations to use existing software licenses in AWS | Migrating licensed database like Microsoft SQL Server |
+| **Included License**              | AWS provides the software license as part of the service      | Running Amazon RDS with built-in SQL Server licensing |
+| **Subscription-Based License**    | Pay for software on a usage basis                             | Amazon WorkSpace for Windows virtual desktops         |
 
 
 
