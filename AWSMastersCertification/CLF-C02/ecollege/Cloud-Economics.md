@@ -39,6 +39,40 @@ AWS offers different licensing models to optimise software costs:
 
 
 
+4. Understanding the concept of Rightsizing
+#### What is Rightsizing
+Rightsizing refers to optimising AWS resources to mach actual workload demands. This prevents over-provisioning and reduces costs.
+
+#### Strategies of Rightsizing
+- **Monitoring Usage**<br>Use AWS CloudWatch and AWS Cost Explorer to analyse usage patterns.
+- **CHoose the Right Instance Type**<br>Select the appropriate EC2 instance based on CPU, memory, and nework requirements.
+- **Use Auto Scaling**<br>Automatically scale resources up or down.
+- **Switch to Serverless**<br>Use AWS Lambda, Amazon DynamoDB, or AWS Fargate to avoid unnecessary infrastructure costs.
 
 
-                  
+<br>
+
+5. Benefits of Automation in Cloud Cost Optimisation
+
+#### How Automation Reduces Costs
+Automation minimises manual intervention, improves efficiency, and reduces errors. AWS provides several automation tools:
+
+| **AWS Automation Service** | **Benefit** |
+|----------------------------|-------------|
+| **AWS CloudFormation** | Automates provisioning and infrastructure management |
+| **AWS Auto Scaling** | Adjusts resources dynamically to meet demand |
+| **AWS Systems Manager** | Automates patching, updates, and maintenance tasks |
+| **AWS Lambda** | Serverless computing reduces infrastructure management overhead |
+
+<br>
+
+6. Managed AWS Services and Their Cost Benefits
+
+| **Managed Service**                   | **Use Case** | **Cost Savings** |
+|---------------------------------------|------|------|
+| **Amazon RDS**                        | Managed relational database | Eliminates database maintenance costs |
+| **Amazon DynamoDB**                   | Serverless NoSQL databse | No promovisioning os scaling costs |
+| **Amazon Elastic Container Service**  | Container orchestration | Reduces infrastructure management costs |
+| **Amazon Elastic Kubernetes Service** | Managed Kubernetes | There is no need to manage Kubernetes clusters manually |
+
+
