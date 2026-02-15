@@ -34,3 +34,72 @@ AWS is responsible for protecting the global infrastructure that runs cloud serv
 - **AWS Identity and Access Management (IAM)** – Secure authentication and authorisation.
 - **AWS Key Management Service (KMS)** – Secure encryption key storage.
 - **AWS Security Hub** – Security best practices monitoring.
+
+
+
+### Customer Responsibilities (Security in the Cloud)
+Customers are responsible for securing their applications, workloads and configuration on AWS.
+
+#### Key Customer Responsibilities
+1. **Data Security**
+    - Encypt data at rest and in transit (AWS KMS, SSL/TLS)
+    - Implement access control for databases and storage (IAM, S3 bucket policies)
+2. **Identity & Access Management**
+    - Use IAM roles and policies with least privilege access
+    - Implement MFA for added security
+3. **Application Security**
+    - Secure application code from vulnerabilities
+    - Regularly update software and dependencies
+4. **Networking Security**
+    - Configure VPC Security Groups and Network ACLs to restrict access
+    - Use AWS Web Application Firewall (WAF) to protect against threats
+5. **Monitoring & Logging**
+    - Enable AWS CloudTrail for API activity tracking
+    - Use Amazon CloudWatch for real-time monitoring
+
+
+<br>
+
+### Shared Responsibilities
+
+Some responsibilities are jointly managed by AWS and the customer, including:
+
+| **Shared Responsibility** | **AWS Responsibility** | **Customer Responsibility** |
+|------|------|------|
+| **Patching & Updates** | AWS patches infra, hypervisors and managed services | Customer patch app, DB and OS on EC2 |
+| **Configuration Management** | AWS provides default security config | Customers must correctly configure (e.g. S3 bucket permissions) |
+| **Compliance & Gocernance** | AWS maintains conpmliance with global regulations | Customers ensure data security compliance (e.g. GDPR, HIPAA) |
+
+<br>
+
+
+### How Responsibilities Shift Based on AWS Services
+
+The level of customer responsibility varies depending on the type of AWS service used:
+
+#### Compute Services
+| **AWS Service** | **AWS Responsibility** | **Customer Responsibility** |
+| --------------- | ------------- | -------------- |
+| **EC2<br>IaaS** | AWS secures hardware, networking and virtualization layers | Customers manage OS, App security and firewall settings |
+| **RDS<br>PaaS** | AWS manageds databse infra, backup and patching | Customers configure database access, encryption and IAM policies |
+| **Lambda<br>SaaS** | AWS sercures runtime, environment, networking and scaling | Customer manages function code, IAM permissions an data security |
+
+
+#### Storage
+| **AWS Service** | **AWS Responsibility** | **Customer Responsibility** |
+| --------------- | ------------- | -------------- |
+| **S3** | AWS secures the underlying storage infrastructure | Customers configure bucket policies, access permissions and encryption |
+| **EBS** | AWS provides secure storage infrastructure | Customer manage snashot security, backups and access control |
+
+| **AWS Service** | **AWS Responsibility** | **Customer Responsibility** |
+| --------------- | ------------- | -------------- |
+| **VPC** | AWS secures networking infrastructure and connectivity | Customers configure subnets, security groups and routing rules |
+
+
+
+
+
+
+
+
+
