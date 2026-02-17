@@ -66,12 +66,53 @@ AWS provides tools for capturing and analyzing security-related logs to maintain
 | **Network Logs**        | VPC Flow Logs           | Captures inbound/outbound network traffic |
 | **Threat Detection**    | Amazon GuardDuty        | Detects suspicious activity               |
 
-
+<br>
 
 > **Security Logging Best Practices**
 > - **Enable AWS CloudTrail** to track all API activity
 > - **Use AWS Config** to monitor configuration changes
 > - **Integrate logs with Amazon CloudWatch** for real-time analysis
 
+<br>
 
 
+### AWS Security Services for Protecting Cloud Resources
+AWS provides various security tools to detect threats, secure workloads and enforce compliance
+
+#### AWS Security Tools and Their Functions
+| **AWS Security Service** | **Purpose**                                                               |
+|--------------------------|---------------------------------------------------------------------------|
+| **AWS Inspector**        | Automed scurity vulnerability assessments for EC2 and container workloads |
+| **AWS Security Hub**     | Unified scurity dashboard with compliance monitoring                      |
+| **Amazon GuardDuty**     | AI-driven threat detection (e.g. malware, unathorised access)             |
+| **AWS Shield**           | Protections agains DDoS                                                   |
+| **AWS WAF**              | Protects against SQL injection and XSS attacks                            |
+
+<br>
+
+### AWS Governance and Compliance Services
+AWS governance services help businesses monitor compliance, enforce security
+policies, and generate audit reports.
+
+#### AWS Governance Tools
+| **Service**             | **Function**                                            |
+|-------------------------|---------------------------------------------------------|
+| **AWS Config**          | Track AWS resource changes and configuration compliance |
+| **AWS CloudTrail**      | Logs all AWS API activity for auditing                  |
+| **AWS Audit Manager**   | Automates audit preparation and compliance checks       |
+| **IAM Access Analyzer** | Identifies overly permissive IAM roles and policies     |
+| **AWS Organizations**   | Manages multiple AWS accounts with centralised policies |
+
+<br>
+
+### Compliance Requirements Across AWS Services
+Security and compliance requirements vary depending on the AWS service used
+
+#### Security Considerations for Different AWS Services
+| **AWS Service** | **Security Consideration**                            |
+|-----------------|-------------------------------------------------------|
+| **Amazon S3**   | Use bucket policies and encryption SSE-S3, SSE-KMS    |
+| **Amazon EC2**  | Implment security groups, IAM roles and patch updates |
+| **Amazon RDS**  | Enable encryption and restrict database access        |
+| **AWS Lambda**  | Secure IAM permissions and function execution roles   |
+| **Amazon VPM**  | Configure firewasll (security group and NACLs)        |
