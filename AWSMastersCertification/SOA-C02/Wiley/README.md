@@ -156,4 +156,315 @@
     > The AWS Pricing Calculator is available at https://calculator.aws.
     > 
     > The older, simple monthly calculator and TCO calculator have been deprecated.
+
+
+
+<br><br><br>
+
+
+
+## Chapter 2: Account Creation, Security, and Compliance
+
+1. You have been asked by your manager to gather the AWS reports for an upcoming SOC 3 audit. Which tool would you open to find the report?
+   - **AWS Artifact**
+
+   > Remember that compliance in the cloud is two parts: AWS and what the customer builds using AWS services. AWS Artifact is used to retrieve security and compliance reports and some online agreements related to AWS’s part of the equation. AWS Artifact is accessed through the management console. AWS Audit Manager could easily be confused as the correct answer. However, AWS Audit Manager is used for continual monitoring of compliance, whereas AWS Artifact is used simply to pull reports of AWS compliance.
+
 <br>
+
+2. You are setting up a directory service for your small but growing company. There are currently about 5,000 objects, but the plan is to double the number of employees over the next three years. You have been directed to use Microsoft Active Directory and the company is cloud native. Which option would be the most cost‐effective and lowest management overhead solution for your organization at this time?
+   - **AWS Directory Services for Microsoft Active Directory Standard Edition**
+
+   > Any time there are several services doing something similar, know the use cases for each. Directory services is an example. AWS Simple AD will not work because the requirements specify using Microsoft AD. Deploying on EC2 in two AZs seems like a plausible solution, but a managed service is typically a better option for the customer based on price and management overhead unless the question gives some detail that makes the managed service not feasible. That leaves Microsoft AD Standard and Enterprise Editions. In this case you do not need to know the details of Microsoft AD capacity planning. Simple AD is not recommended for more than 5,000 users, whereas AWS Directory Service for Microsoft AD is. Remember that objects do not equal users and there will generally be more objects than users. That strongly suggests Standard Edition would suffice and that Enterprise Edition would most likely be more expense for capacity that is not yet needed.
+
+<br>
+
+3. What are the two types of behavior guardrails on AWS Control Tower?
+   - **Preventive and detective**
+
+   > Control Tower and its guardrails are a critical part of governing an enterprise. Be sure to know AWS Control Tower and AWS Organizations and how they work together. Know the various types of policies and when to use each. The structure of guardrails and their terminology can be confusing. Behavioral controls either detect noncompliance or prevent noncompliance.
+
+<br>
+
+4. A service control policy (SCP) was created in your organization that will allow all users of the Admin role permission to schedule KMS key deletion ("Action": "kms:*"). However, when administrators attempt to actually schedule key deletion, they report error messages. Why might this error be occurring?
+   - **Service control policies do not grant permissions, so allowing an action in an SCP has no effect.**
+
+   > While all of these seem plausible, ultimately SCPs are not the correct place to grant permissions. Be sure to know what each policy type does (and doesn’t do).
+
+<br>
+
+5. Inline IAM policies are best used when:
+   - **Inline policies are not recommended.**
+
+   > While inline policies are available as an option, they are not recommended. Inline policies can be difficult to troubleshoot, and there are almost always better options.
+
+<br>
+
+6. What are the three required elements of an identity‐based IAM policy? (Choose three.)
+   - **Action**
+   - **Effect**
+   - **Resource**
+
+   > Remember EAR (Effect, Action, Resource). A fourth common policy option (but not required) is Conditions.
+
+<br>
+
+7. Which of the following is a way in which AWS License Manager can track Bring Your Own Licenses (BYOLs) consumed by launched instances?
+   - **By associating a license configuration with an AMI.**
+
+   > Recall that licenses from AWS Marketplace will automatically be tracked. What we are considering here would be Bring Your Own Licenses (BYOLs), which License Manager does not automatically know how to associate with an instance. The easiest solution is to associate the license with the AMI. In this way, any instance launched from that AMI will be associated with that license and tracked.
+
+<br>
+
+8. Your client with over 50,000 directory objects has an on‐premises Active Directory domain running Windows Server 2016. They need to have users access Amazon WorkDocs and Amazon WorkMail using single sign‐on. No directory data should be cached in the cloud, but the directory service must be highly available. Which solution best solves the customer’s requirements?
+   - **Active Directory Connector**
+
+   > The key criterion in the question is that no data can be cached in the cloud. Options B, C, and D all store data in the cloud. AD Connector does not.
+
+<br>
+
+9. When creating an AWS Organizations member account in your own organization. you notice that you do not have permissions for some actions. The error states that “AWS Account Management trusted access is not enabled. Enable it to view this content.” Which of the following will grant the required permissions?
+   ![](img/ch2-9)
+   - **Navigate to AWS Organizations Services and enable trusted access on AWS Account Management.**
+
+   > Option A is not correct because SCPs cannot grant permissions. Option C is also incorrect since you want to follow the principle of least privilege and granting administrator rights necessarily would violate that principle. Option D is incorrect because creating an account can be done when logged in as either an IAM user or root user, or by assuming a role. However, remember that using the root user account is not best practice when a role can be used instead.
+
+<br>
+
+10. 
+   - 
+
+   > 
+
+<br>
+
+11. 
+   - 
+
+   > 
+
+<br>
+
+12. 
+   - 
+
+   > 
+
+<br>
+
+13. 
+   - 
+
+   > 
+
+<br>
+
+14. 
+   - 
+
+   > 
+
+<br>
+
+15. 
+   - 
+
+   > 
+
+<br>
+
+16. 
+   - 
+
+   > 
+
+<br>
+
+17. 
+   - 
+
+   > 
+
+<br>
+
+18. 
+   - 
+
+   > 
+
+<br>
+
+19. 
+   - 
+
+   > 
+
+<br>
+
+20. 
+   - 
+
+   > 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 
+
+1. 
+   - 
+
+   > 
+
+<br>
+
+2. 
+   - 
+
+   > 
+
+<br>
+
+3. 
+   - 
+
+   > 
+
+<br>
+
+4. 
+   - 
+
+   > 
+
+<br>
+
+5. 
+   - 
+
+   > 
+
+<br>
+
+6. 
+   - 
+
+   > 
+
+<br>
+
+7. 
+   - 
+
+   > 
+
+<br>
+
+8. 
+   - 
+
+   > 
+
+<br>
+
+9. 
+   - 
+
+   > 
+
+<br>
+
+10. 
+   - 
+
+   > 
+
+<br>
+
+11. 
+   - 
+
+   > 
+
+<br>
+
+12. 
+   - 
+
+   > 
+
+<br>
+
+13. 
+   - 
+
+   > 
+
+<br>
+
+14. 
+   - 
+
+   > 
+
+<br>
+
+15. 
+   - 
+
+   > 
+
+<br>
+
+16. 
+   - 
+
+   > 
+
+<br>
+
+17. 
+   - 
+
+   > 
+
+<br>
+
+18. 
+   - 
+
+   > 
+
+<br>
+
+19. 
+   - 
+
+   > 
+
+<br>
+
+20. 
+   - 
+
+   > 
