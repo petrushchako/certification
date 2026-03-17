@@ -117,7 +117,7 @@
 
 9. A company is looking to deploy a new application using the Amazon Elastic Compute Cloud (EC2) service and wants to minimize the associated operational costs. The business application must be available 24/7 and be licensed to use for a period of three years.<br>Which EC2 instance pricing model is the BEST choice to minimize costs?
     - [ ] Spot Instances
-    - [x] Standard Reserved Instances with a fixed three-year term
+    - [x] **Standard Reserved Instances with a fixed three-year term**
     - [ ] On-Demand Instances
     - [ ] Convertible Reserved Instances with fixed three-year term
 
@@ -143,8 +143,87 @@
     >
     > AWS Compute Optimizer does not reduce expenses by taking advantage of unutilized EC2 capacity. Compute Optimizer evaluates EC2 instance usage and makes recommendations that optimize instance type based on historical usage.
 
-11. 
+11. A company is looking to improve its AWS cost analysis and management capabilities.<br>Which statement describes use of AWS Cost Explorer?
+    - [ ] Recommendations for Spot and On-Demand Amazon Elastic Compute Cloud (EC2) instances can be generated.
+    - [ ] Cost Explorer should be disabled if its features are no longer required.
+    - [x] **Spending forecasts can be generated for up to the next 12 months.**
+    - [ ] Up to 36 months of historical spend data can be reviewed.
 
+    > Using AWS Cost Explorer, customer spending forecasts can be generated for up to the next 12 months. Cost Explorer can be used to visualize AWS usage and costs incurred over time. Cost Explorer evaluates historical usage information and trends in order to generate a spending forecast for the next 12 months. This information can be used to ensure that AWS services and resources are properly sized and improve the accuracy of allocated budgets.
+    >
+    > AWS Cost Explorer does not display up to 36 months of historical spend data. Only data for the last 13 months can be reviewed.
+    >
+    > AWS Cost Explorer does not generate recommendations for Spot and On-demand Amazon Elastic Compute Cloud (EC2) instances. Cost Explorer does generate recommendations for which Reserved Instances the customer should be purchased to maximize cost savings.
+    >
+    > Once enabled, AWS Cost Explorer cannot be disabled if its features are no longer required. Cost Explorer is free to use, unless accessed via its Application Programming Interface (API).
 
+12. A company is considering using the AWS Budgets service to better management AWS costs.<br>Which AWS Budgets budget type should be used to optimize billing by determining the number of Amazon Elastic Compute Cloud (EC2) service usage hours that did not use an EC2 Reserved Instance?
+    - [ ] Reserved Instance (RI) utilization budget
+    - [ ] Usage budget
+    - [ ] Cost budget
+    - [x] **Reserved Instance (RI) coverage budget**
 
+    > The AWS Budgets Reserved Instance (RI) coverage budget should be used to optimize billing by determining the number of Amazon Elastic Compute Cloud (EC2) service usage hours that did not use an EC2 Reserved Instance (RI). Ris provide costs savings by allowing an organization to commit to one or three- year terms that offer lower usage costs than use of On-Demand Instances. Using an RI coverage budget, a customer can receive alerts when instance usage does not fall under a reservation and is therefore incurring higher per-hour charges.
+    >
+    > RI utilization budgets are not used to determine the number of EC2 hours that did not use a reservation. These budgets can trigger alerts when Is are under-utilized.
+    >
+    > Usage budgets are not used to determine the number of EC2 hours that did not use a reservation. Usage budgets define target usage for a nominated AWS service.
+    >
+    > Cost budgets are not used to determine the number of EC2 hours that did not use a reservation. Cost budgets are similar t usage budgets but focus on service costs.
 
+13. Which of the following statements describe AWS Developer Support? (Select TWO.)
+    - [ ] AWS Develoepr Support response times for impaired systems are eight hours or less
+    - [x] **One nominated primary contact can open as many support cases as required.**
+    - [x] **Email-based AWS Developer support is offered during normal business hours.**
+    - [ ] Telephone, email, and chat-based support is available 24/7.
+    - [ ] AWS Developer Support includes access to an AWS Technical Account Manager (TAM).
+
+    > With an AWS Developer Support plan, one nominated primary contact can open as many support cases as required. Developer support is email-based and is offered during normal business hours. This support level is best suited for the development and testing phases of an AWS-based project.
+    >
+    > AWS Developer Support response times for impaired systems is not eight hours or less. AWS Response times on the AWS Developer Support plan for general guidance is less than 24 business hours, and less than 12 business hours for impaired systems.
+    >
+    > AWS Developer Support does not include access to a Technical Account Manager (TAM), as is the case for the AWS enterprise-level support plans. AWS Enterprise level support is intended for organizations that have invested in AWS cloud resources for production services.
+    >
+    > Telephone, email and chat-based support are not available 24/7 for Developer support, as is the case for AWS Enterprise support. Email-based support from AWS Cloud Support engineers is available within business hours only.
+
+14. Which of the following statements describes a capability of the AWS Trust and Safety team?
+    - [ ] Ensuring all AWS Support requests are handled in a timely manner
+    - [ ] Investigating customer reports of incorrect AWS billing
+    - [ ] Investigating reports of malicious network activity originating from sanctioned or politically-sensitive countries
+    - [x] **Investigating reports of excessive network activity originating from an AWS resource on a customer account**
+
+    > Investigating reports of excessive network activity originating from an AWS resource is a capability of the AWS Trust and Safety Team. The Trust and Safety Team is an AWS security team tasked with assisting AWS customers involved in reported incidents of abuse involving AWS resources. The AWS Trust and Safety team will contact AWS customers if associated AWS resources are alleged to be sources of copyright breaches, email abuse or of generating excessive or malicious network traffic.
+    >
+    > Ensuring all AWS Support requests are handled in a timely manner is not a capability of the AWS Trust and Safety team. The AWS Support team, rather than the AWS Trust and Safety team, is responsible for ensuring that customer support requests are handled in a timely manner.
+    >
+    > Investigating reports of malicious network activity originating from sanctioned or politically- sensitive countries is not a capability of the AWS Trust and Safety team. The AWS Trust and Safety team is responsible for investigating malicious network activity only when the source is suspected to be associated with the use of AWS resources.
+    >
+    > Investigating customer reports of incorrect AWS billing is not a capability of the AWS Trust and Safety team. This scenario should be resolved by the AWS Support team.
+
+15. A company is reassessing its AWS support plan coverage as it plans to deploy its first production workloads in the AWS cloud.<br>For paid AWS support plans, which case severity offers a maximum one-hour response time?
+    - [ ] Production system impaired
+    - [x] **Production system down**
+    - [ ] System impaired
+    - [ ] Business-critical system down
+
+    > Production system down case severities offer a maximum 1-hour response time. This case severity is available to customers with AWS Business or Enterprise Support plans.
+    >
+    > Business/Mission-critical system down is offered at maximum 15-minute response time on the AWS Enterprise Support plan and 30-minutes on the Enterprise On-Ramp plan.
+    >
+    > Production system impaired offers a maximum 4-hour response time. This case severity is available to customers with AWS Business or Enterprise Support plans.
+    >
+    > System impaired offers a maximum 12-hour response time time. This case severity is available to any AWS customer with a paid support plan.
+
+16. A company is considering which AWS support plan is the most suitable for its needs.<br>Which AWS support plan 24/7 phone, email, and chat access but does not provide access to dedicated AWS Technical Account Managers?
+    - [ ] Basic Support
+    - [x] **AWS Business Support**
+    - [ ] AWS Enterprise On-Ramp Support
+    - [ ] AWS Developer Support
+
+    > The AWS Business Support plan offers 24/7 phone, email, and chat access to the AWS Support team but not access to AWS Technical Account Managers (TAM). An AWS TAM is a customer advocate and trusted advisor who can assist with the optimization of the customer's cloud solution.
+    >
+    > The Enterprise On-Ramp plan offers elevated benefits comparable with the AWS Enterprise Support plan. The Enterprise Support plan provides a customer with a dedicated TAM who can deliver account-specific advice and guidance. Customers on the Enterprise On-Ramp plan receive support from a pool of available TAMs resources.
+    >
+    > The AWS Developer Support plan is designed for those experimenting or testing in AWS rather than for running production workloads. Cases can be raised with AWS Support via email, but responses will be restricted to during business hours. Response times are significantly longer than for Business and Enterprise Support customers.
+    >
+    > AWS Basic Support is available for all AWS customers at no additional cost, but has a limited offering. Basic Support offers access to customer services, AWS Trusted Advisor, and the AWS Personal Health Dashboard.
