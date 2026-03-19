@@ -227,3 +227,74 @@
     > The AWS Developer Support plan is designed for those experimenting or testing in AWS rather than for running production workloads. Cases can be raised with AWS Support via email, but responses will be restricted to during business hours. Response times are significantly longer than for Business and Enterprise Support customers.
     >
     > AWS Basic Support is available for all AWS customers at no additional cost, but has a limited offering. Basic Support offers access to customer services, AWS Trusted Advisor, and the AWS Personal Health Dashboard.
+
+
+
+
+
+
+<br><br><br>
+
+## Easy Beginner
+1. Which AWS Global Infrastructure component represents a discrete data center that is geographically distant from others of its type?
+
+    - [ ] AWS Outposts
+    - [ ] Edge Location
+    - [ ] Region
+    - [x] **Availability Zone**
+
+    > An Availability Zone (AZ) is a discrete physical data center that is positioned so as to be geographically distant from one or more other data centers (AZs) within the same AWS Region.
+    >
+    > An AWS Region is a group (cluster) of AZs that are geographically dispersed.
+    >
+    > An Edge Location is a discrete physical location available to customers as a low latency access point to join the AWS network.
+    >
+    > AWS Outposts is an AWS-managed service offering to customers which runs specific AWS services on-premises. The primary use cases are to provision workloads using localized AWS services to meet specific certain regulatory and compliance requirements, for ultra-low network latency, or to support dependencies on local physical hardware.
+
+2. Which of the following is NOT a general design principle of the Well-Architected Framework in AWS?
+
+    - [ ] Test systems at production scale.
+    - [ ] Drive architectures using data.
+    - [x] **Create static architecture.**
+    - [ ] Stop guessing your capacity needs.
+
+    > Static architecture is often a characteristic of traditional data centers. Designs and architectures are created as one-time events and do not change. AWS design principles allow for dynamic, flexible architecture that evolves over time. The design framework offers best practices for designing and operating reliable, secure, efficient, and cost- effective systems in the cloud.
+    >
+    > Not guessing your capacity needs, and having a design underpinned by data allows the correct allocation of resources as a tenant of the AWS cloud.
+    >
+    > Testing systems at production scale had always been a challenge to the industry before cloud architectures. Cloud computing facilitates pre-production testing at scale without having to invest in additional capital resources. The design principles support this dynamic and agile methodology of testing systems before going into production.
+    >
+    > Driving architectures using data takes the guesswork out of delivering reliable, secure, efficient and cost-effective AWS cloud infrastructure.
+
+3. A company is looking to improve its security posture in AWS following a number of security breaches involving shared credentials.<br>What is a benefit of enabling multi-factor authentication (MFA) for an AWS Identity and Access Management (IAM) user?
+
+    - [ ] Applications and services can consume AWS resources automatically, without requiring AWS Identity and Access Management (IAM) service interaction.
+    - [ ] An AWS Identity and Access Management (IAM) user can log on by using a code or token and does not need to provide a password.
+    - [ ] Passwords are stored in encrypted format in the AWS account.
+    - [x] **If an AWS account password is compromised, the account is still protected from unauthorized access.**
+
+    > Once AWS Multi-Factor Authentication (MFA) is enabled, even if an AWS Identity and Access Management (IAM) user password is compromised, the account is still protected from unauthorized access. MFA authentication requires at least two authentication factors before an AWS IAM user will be allowed to access the account. The IAM user's password serves as the first factor, and an authentication code generated on their smartphone can serve as the second factor. AWS also supports hardware-based key fobs and other similar devices as the second authentication factor.
+    >
+    > Enabling AWS MFA does not allow an IAM user to log on using only a code or token. With MFA, a user is required to provide at least two authentication factors.
+
+
+
+
+<br><br><br>
+
+## Expert
+
+1. An administrator plans to deploy General Purpose solid state drive (SSD) volumes for several Amazon Elastic Compute Cloud (EC2) instances.<br>Which statement BEST describes General Purpose SSD volume capabilities?
+
+    - [ ] General Purpose solid state drive (SSD) volumes have excellent durability with an annual failure rate less than 0.1%.
+    - [ ] General Purpose solid state drive (SSD) volumes support 32,000 IOPS per volume.
+    - [ ] General Purpose solid state drive (SSD) volumes are the most cost-effective storage for static data.
+    - [x] **General Purpose solid state drive (SSD) volumes can be used for boot volumes.**
+
+    > The use of General Purpose SSD volumes for boot volumes is an AWS-supported use case. The Amazon Elastic Block Store (EBS) service offers several types of block level storage volumes that can be used with Amazon Elastic Compute Cloud (EC2) instances. General Purpose SSD volumes are designed to facilitate most non-specialized storage workloads. These volumes are ideal for test and development environments.
+    >
+    > General Purpose SSD volumes are not the most cost-effective storage for static data. Cold hard-disk drive (HDD) storage is the most cost-effective EBS option for storing static data. Cold HDD storage is ideal for large volumes that store infrequently accessed data.
+    >
+    > General Purpose SSD volumes support a maximum of 16,000 Input/Output Operations Per Second (I0PS) per volume. For higher lOPS requirements, customers should deploy Provisioned IOPS SSD volumes, which supports IOPS up to 256,000.
+    >
+    > General Purpose SSD volumes have an annual failure rate of 0.1 to 0.2%. For more durable volumes, implement Provisioned IOPS SSD volumes which provide an annual failure rate of 0.001% or less.
