@@ -298,3 +298,86 @@
     > General Purpose SSD volumes support a maximum of 16,000 Input/Output Operations Per Second (I0PS) per volume. For higher lOPS requirements, customers should deploy Provisioned IOPS SSD volumes, which supports IOPS up to 256,000.
     >
     > General Purpose SSD volumes have an annual failure rate of 0.1 to 0.2%. For more durable volumes, implement Provisioned IOPS SSD volumes which provide an annual failure rate of 0.001% or less.
+
+
+<br><br><br>
+
+
+## Moderate
+
+1. A company is looking to improve its AWS cost analysis and management capabilities. Which statement describes use of AWS Cost Explorer?
+    - [x] **Spending forecasts can be generated for up to the next 12 months.**
+    - [ ] Cost Explorer should be disabled if its features are no longer required.
+    - [ ] Up to 36 months of historical spend data can be reviewed.
+    - [ ] Recommendations for Spot and On-Demand Amazon Elastic Compute Cloud (EC2) instances can be generated.
+
+    > Using AWS Cost Explorer, customer spending forecasts can be generated for up to the next 12 months. Cost Explorer can be used to visualize AWS usage and costs incurred over time. Cost Explorer evaluates historical usage information and trends in order to generate a spending forecast for the next 12 months. This information can be used to ensure that AWS services and resources are properly sized and improve the accuracy of allocated budgets.
+    > 
+    > AWS Cost Explorer does not display up to 36 months of historical spend data. Only data for the last 13 months can be reviewed.
+    >
+    > AWS Cost Explorer does not generate recommendations for Spot and On-demand Amazon Elastic Compute Cloud (EC2) instances. Cost Explorer does generate recommendations for which Reserved Instances the customer should be purchased to maximize cost savings.
+    >
+    > Once enabled, AWS Cost Explorer cannot be disabled if its features are no longer required. Cost Explorer is free to use, unless accessed via its Application Programming Interface (API).
+
+2. Which of the following is NOT a feature of AWS Billing and Cost Management?
+    - [ ] AWS Cost Explorer
+    - [ ] AWS Budgets
+    - [ ] Consolidated billing
+    - [x] **AWS Pricing Calculator**
+
+    > AWS Pricing Calculator is not a feature of AWS Billing and Cost Management. Pricing Calculator can be used to estimate costs based on customer-defined usage scenarios. These cost estimates can help an organization clarify the financial overheads for a planned AWS deployment or migration.
+    >
+    > AWS Cost Explorer is a feature of AWS Billing and Cost Management. Cost explorer can be used to visualize AWS usage and customer costs incurred over time.
+    >
+    > AWS Budgets is a feature of AWS Billing and Cost Management. AWS Budgets is used to monitor usage metrics and establish service budgets. Alerts can be configured when spending approaches a budgeted limit.
+    >
+    > Consolidated billing is a feature of AWS Billing and Cost Management. Use of the AWS Organization service allows a customer to centralize the monthly charges for all member accounts into a consolidated bill payable in the AWS Organization Management account.
+
+3. Which statement BEST describes the consolidated billing available for use with AWS Organizations?
+    - [x] **Usage from all member accounts is aggregated to calculate a service's pricing tier.**
+    - [ ] The AWS Organizations Management account pays the prior month's usage for new member accounts.
+    - [ ] All AWS Support plan fees are consolidated in the AWS Organization's monthly consolidated bill.
+    - [ ] Consolidated billing requires an AWS Organization to be defined using AWS Budgets.
+
+    > Usage from all member accounts is aggregated to calculate a service's pricing tier. Aside from ease of management, one of the primary benefits of consolidated billing is that volume pricing discounts can be shared across accounts. For services or features that support volume pricing discounts, such as Amazon S3, usage is combined across all member accounts to provide greater discounts. For example, if each member account transfers 10 gigabytes (GB) of data in a given month, the usage is aggregated to provide the lowest price for the total data transferred.
+    >
+    > Consolidated billing does not require an AWS Organization to be defined using AWS Budgets. Organizations are defined using AWS Organizations, not AWS Budgets which is used to predict and manage usage costs and establish customer service budgets.
+    >
+    > The AWS Organizations Management account does not pay the prior month's usage for new member accounts. The AWS usage charges for the current month are split based on the date in the month when the member account was added to the AWS Organization. Any monthly charges incurred prior to joining the master account are paid by the account.
+    >
+    > All AWS Support plan fees are not consolidated in the AWS Organization's monthly consolidated bill. Support plan fees are based on monthly AWS usage and are calculated and billed on each account independently. The Enterprise Support plan offers a feature to a include multiple accounts in an aggregated monthly support plan bill.
+
+4. Which AWS billing tool can be used to automatically deliver report files to an S3 bucket?
+    - [ ] Amazon CloudWatch
+    - [ ] Amazon EC2 Usage Reports
+    - [ ] AWS Trusted Advisor
+    - [x] **AWS Cost and Usage Reports**
+
+    > AWS Cost and Usage Reports deliver report files to your nominated S3 bucket, can be updated up to three times a day, and are manipulated via API (Application Programming Interface). Cost and Usage Reports give a comprehensive set of cost and usage data for your AWS account.
+    >
+    > Amazon EC2 Usage Reports are created by AWS Cost Explorer to report on the cost and usage of your EC2 instances and the usage of your Reserved Instances. This EC2 usage and costing data is accessible using the AWS Cost Explorer user interface to view charts and download data files from within the AWS console.
+    >
+    > Amazon CloudWatch is a monitoring service that collects and reports on performance and operational data. CloudWatch can be used to trigger actions when events happen. One example is Auto Scaling where additional EC2 instances can be provisioned if CPU or memory usage exceeds pre-defined threshold values.
+    >
+    > AWS Trusted Advisor is a tool to review your AWS environment against AS best practice benchmarks. The recommendations cover cost optimization, performance, security, fault tolerance and service limits checks.
+
+5. What can be used to generate recommendations for cost optimization? (Select TWO.)
+    - [ ] AWS Pricing Calculator
+    - [x] **AWS Cost Explorer**
+    - [ ] Amazon Inspector
+    - [x] **AWS Trusted Advisor**
+    - [ ] AWS Budgets
+
+    > AWS Trusted Advisor and AWS Cost Explorer can be used to generate recommendations for cost optimization.
+    >
+    > Trusted Advisor can be used to evaluate the configuration and customer operations within an AWS environment, and make recommendations in six categories; Cost optimization, Performance, Security, Fault tolerance, Service limits and Operational Excellence.
+    >
+    > Cost Explorer can be used to visualize AWS usage and customer costs incurred over time. Cost Explorer evaluates historical usage information and trends in order to generate spending forecasts and will make recommendations based on EC2 resource usage. These recommendations can for example allow a customer to identify and right-size underutilized EC2 instances.
+    >
+    > AWS Pricing Calculator does not generate recommendations for cost optimization. Pricing Calculator can be used to estimate costs based on customer-defined usage scenarios. These estimates can help an organization undertake project costings for a planned AWS deployment or migration scenario.
+    >
+    > Amazon Inspector does not generate recommendations for cost optimization. Inspector evaluates the security configuration and scans for vulnerabilities in running Amazon Elastic Compute Cloud (EC2) environment instances.
+    >
+    > AWS Budgets does not generate recommendations for cost optimization. AWS Budgets can be used to establish service budgets and raise alerts when spending approaches a customer budgeted limit.
+
+
