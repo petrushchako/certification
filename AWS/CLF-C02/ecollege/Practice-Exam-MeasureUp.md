@@ -381,3 +381,74 @@
     > AWS Budgets does not generate recommendations for cost optimization. AWS Budgets can be used to establish service budgets and raise alerts when spending approaches a customer budgeted limit.
 
 
+6. Which of the following is NOT a feature of AWS Organizations consolidated billing?
+    - [x] **Consolidated billing for AWS Organizations incurs a small monthly maintenance fee.**
+    - [ ] Volume pricing discounts can be shared across member accounts.
+    - [ ] A single bill is generated for all AWS Organization member accounts.
+    - [ ] Cost and usage data are collected for all member accounts in the AWS Organization.
+
+    > Consolidated billing for AWS Organizations does not incur a small monthly maintenance fee. Using consolidated billing, a company has a management account that accrues and pays the charges of all member accounts. This AWS Organizations feature is offered at no additional cost.
+    >
+    > With consolidated billing, volume pricing discounts can be shared across member accounts. For AWS services and features that support volume pricing discounts, such as AWS Data Transfer and Amazon S3, usage is combined across all member accounts to provision greater discounts.
+    > 
+    > With consolidated billing, a single bill is generated aggregating costs across all AWS organization member accounts. The costs incurred by each member account are itemised, but total charges are paid in one financial transaction.
+    > 
+    > With consolidated billing, cost and usage data is collected and available for all member accounts in the AWS Organization. Customers can access this information via the AWS organizations' management account.
+
+7. A company is considering using the AWS Budgets service to better management AWS costs.<br>Which AWS Budgets budget type should be used to optimize billing by determining the number of Amazon Elastic Compute Cloud (EC2) service usage hours that did not use an EC2 Reserved Instance?
+    - [ ] Reserved Instance (RI) utilization budget
+    - [x] **Reserved Instance (RI) coverage budget**
+    - [ ] Cost budget
+    - [ ] Usage budget
+
+    > The AWS Budgets Reserved Instance (RI) coverage budget should be used to optimize billing by determining the number of Amazon Elastic Compute Cloud (EC2) service usage hours that did not use an EC2 Reserved Instance (RI). Ris provide costs savings by allowing an organization to commit to one or three-year terms that offer lower usage costs than use of On-Demand Instances. Using an RI coverage budget, a customer can receive alerts when instance usage does not fall under a reservation and is therefore incurring higher per-hour charges.
+    >
+    > RI utilization budgets are not used to determine the number of EC2 hours that did not use a reservation. These budgets can trigger alerts when RIs are under-utilized.
+    >
+    > Usage budgets are not used to determine the number of EC2 hours that did not use a reservation. Usage budgets define target usage for a nominated AWS service.
+    >
+    > Cost budgets are not used to determine the number of EC2 hours that did not use a reservation. Cost budgets are similar to usage budgets but focus on service costs.
+
+8. A company is considering replacing a number of its data centres in specific european countries with use of the AWS cloud. Which statement regarding AWS Regions is correct?
+    - [ ] Each region hosts at least one Local Zone for latency-sensitive apps.
+    - [x] **Each AWS Region is composed of multiple Availability Zones (AZ) connected with redundant low-latency, fiber optic network links.**
+    - [ ] For high availability, customer applications should be distributed across at least multiple regions.
+    - [ ] A minimum of two fault-tolerant data centers are located in each region.
+
+    > Each AWS Region is composed of multiple Availability Zones (AZ) connected with redundant low-latency, fiber optic network links. The AWS global infrastructure is designed to maximize network availability and throughput while reducing latency for customers. Regions are geographically distinct areas that operate independently.
+    >
+    > A minimum of three, not two, fault tolerant data centers are located in each region. Each region contains at least three AZs, and each AZ contains at least one data center.
+    >
+    > For high availability, customer applications must be distributed across at least multiple AZs, not regions. Distributing applications across multiple regions can enhance high availability but is not the minimum requirement. High availability iS met by distributing an application across multiple AZs within a single region.
+    >
+    > Local Zones are not available in every AWS Region. Local Zones are extensions of AWS Regions that place AWS infrastructure in metropolitan locations near large populations centers within the broad geographic area. Local Zones are designed to reduce latency for applications such as video streaming and real-time gaming.
+
+9. An accounting company has a historical document archive containing handwritten paper tax returns. Each paper form has been scanned to generate a digital image. Which AWS machine learning service is BEST suited to extract the content in each scanned image?
+    - [ ] Amazon Transcribe
+    - [ ] Amazon Polly
+    - [ ] Amazon Rekognition
+    - [x] 
+    
+    > The Amazon Textract machine learning service is best suited to extract the content in each scanned image. The Amazon Textract API can be used to automatically process text including handwriting and document layout information from scanned images and generate digital output in text.
+    >
+    > The Amazon Polly machine learning service is not best suited in this scenario. Amazon Polly is designed to convert text data into audible life-like speech, providing a choice of natural-sounding human voices.
+    >
+    > The Amazon Transcribe machine learning service is not best suited in this scenario. Amazon Transcribe uses machine learning to convert audio data into text, for example using a recorded speech.
+    > 
+    > The Amazon Rekognition machine learning service is not best suited in this scenario. Amazon Rekognition provides image processing and video analysis capabilities, supporting many different face recognition system use cases.
+
+10. A company wants to implement improved network security on an existing AWS Virtual Private Cloud (VPC). Which of the following can be used to implement VPC subnet security by restricting inbound requests by protocol and port?
+    - [ ] Security Groups
+    - [ ] AWS Identity and Access Management (IAM) Groups
+    - [ ] AWS PrivateLink
+    - [x] **Network ACLs**
+
+    > A network Access Control List (ACL) can be used to support VPC subnet security by screening inbound requests. A subnet is a building block of an Internet Protocol (IP) network for connectivity and security configuration purposes. An AWS Subnet does not provide firewalling features and need to be secured with a network ACL. ACLs are used to block traffic based on IP addresses and Transmission Control Protocol (TCP) port numbers.
+    >
+    > AWS Security groups control traffic for Amazon Elastic Compute Cloud (EC2) instances and can be compared to a firewall at the instance level. Customers are responsible for creating and configuring security groups based on the messaging requirements for application running in their AWS environments.
+    >
+    > Identity and Access Management (IAM) groups are used to group IAM users based on attributes and characteristics such as job function. IAM policies are linked to an 1AM group to provide specific access permissions to all members of the IAM group. IAM groups do not control inbound requests at the network level.
+    >
+    > AWS PrivateLink facilitates secure connectivity between AWS PCs, and between VPCs and AWS services. Network traffic on a Private Link connection does not traverse the Internet. PrivateLink does not filter specific inbound requests at the subnet level.
+
+11. 
