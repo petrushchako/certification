@@ -526,3 +526,67 @@
     >
     > Investigating customer reports of incorrect AWS billing is not a capability of the AWS Trust and Safety team. This scenario should be resolved by the AWS Support team.
 
+16. company is considering which AWS support plan is the most suitable for its needs. Which AWS support plan has Infrastructure Event Management (IEM) included as part of its offering at no additional cost?
+    - [x] **AWS Enterprise Support**
+
+    > AWS Infrastructure Event Management (IEM) is a consultation service to assist organizations with architecture, scaling guidance and operational support during the preparation and execution of significant planned events. For example, during times of peak usage such as a new product launch, data migration, or predictable high-demand online shopping periods (e.g. Black Friday).
+    > 
+    > IEM is offered only with the AWS Enterprise Support and (more limited) AWS Enterprise On-Ramp Support plans, as an integral part of these service bundles.
+    >
+    > IEM is available with the AWS Business Support plan but at additional cost.
+    >
+    > IEM is not available on the Basic Support and Developer Support plans.
+
+17. A company is reassessing its AWS support plan coverage as it plans to deploy its first production workloads in the AWS cloud. For paid AWS support plans, which case severity offers a maximum one-hour response time?
+    - [ ] Production system impaired
+    - [ ] Business-critical system down
+    - [x] **Production system down**
+    - [ ] System impaired
+
+    > Production system down case severities offer a maximum 1-hour response time. This case severity is available to customers with AWS Business or Enterprise Support plans.
+    >
+    > Business/Mission-critical system down is offered at maximum 15-minute response time on the AWS Enterprise Support plan and 30-minutes on the Enterprise On-Ramp plan.
+    >
+    > Production system impaired offers a maximum 4-hour response time. This case severity isavailable to customers with AWS Business or Enterprise Support plans.
+    >
+    > System impaired offers a maximum 12-hour response time time. This case severity is available to any AWS customer with a paid support plan.
+
+18. Which AWS support plans offer 24/7 access to a Cloud Support Engineer via email, chat, or telephone for technical support? (Select TWO.)
+    - [ ] AWS Basic Support
+    - [x] **AWS Business Support**
+    - [ ] AWS Developer Support
+    - [x] **AWS Enterprise Support**
+
+    > AWS Enterprise and Business support plans offer 24/7 access to a Cloud Support Engineer via email, chat, or telephone. Support cases for both of these plans can be created by any member of an organization and there is no limit to the number of cases that can be created. AWS Response times for general guidance is less than 24 hours, system impaired is less than 12 hours, production system impaired is less than four hours, and production system down is less than one hour.
+    >
+    > With a Developer Support plan, I nominated primary contact can open as many support cases as required. Developer support is email-based and is offered during normal business hours (not 24/7). This support level is best suited for the development and testing phases of an AWS-based project.
+    >
+    > Basic Support offers 24/7 access to customer services for account-related questions, such as a billing enquiry. However, this plan, which is free to all AWS customers, does not offer technical support from the AWS Support team.
+
+19. Which statement regarding use of EC2Rescue for Windows Server is correct?
+    - [ ] EC2Rescue for Windows Server runs on Windows 7 or later.
+    - [ ] EC2Rescue for Windows Server cannot help with commonly-called blue screen errors.
+    - [ ] EC2Rescue for Windows Server can only analyze online volumes, not offline volumes.
+    - [x] **EC2Rescue for Windows Server requires an RDP connection.**
+
+    > Use of EC2Rescue for Windows Server requires a Remote Desktop Protocol (RDP) connection. EC2Rescue is an Amazon Elastic Compute Cloud (EC2) service troubleshooting tool for EC2 windows environments that requires the instance to be accessible via a RDP connection.
+    >
+    > The EC2Rescue for Windows Server tool can assist in diagnosing and resolving connectivity issues, boot issues, volume corruption and other instance issues that impact operating system performance or stability.
+    >
+    > EC2Rescue for Windows Server will not run on Windows 7. EC2Rescue runs on Windows Server 2008 R2 or later.
+    >
+    > EC2Rescue for Windows Server can analyze both online and offline volumes. This is useful if volume corruption is causing instance issues or boot errors.
+    >
+    > EC2Rescue for Windows Server can help with commonly-called blue screen errors. It can also be used to analyze and resolve boot errors and corruption in the windows registry.
+
+20. A third-party AWS consultancy is considering joining the AWS Partner Network. Which of the following statements describes a benefit of joining the AWS Partner Network?
+    - [ ] The opportunity to perform comprehensive AWS technical and business audits on AWS Professional Services implementations
+    - [ ] Opportunities to network with experts from other public cloud providers
+    - [x] **Increased visibility of offered services and capabilities with other AWS customers**
+    - [ ] Access to AWS funding for the provision of training on third-party software packages not related to the use of the AWS cloud.
+
+    > A benefit of joining the AWS Partner Network is increased visibility of offered services and capabilities with other AWS customers. The AWS Partner Network is an AWS program that assesses, develops and promotes third-party companies that have achieved verified AWS competencies and capabilities. Companies participating in the AWS Partner Network program are provided with opportunities to promote offered services and capabilities to other AWS customers.
+    >
+    > Opportunities to network with experts with other public cloud providers is not a benefit of joining the AWS Partner Network. The AWS Partner Network can provide opportunities to network with AWS experts, rather than with experts of other public cloud providers.
+
+21. 
