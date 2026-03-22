@@ -589,4 +589,115 @@
     >
     > Opportunities to network with experts with other public cloud providers is not a benefit of joining the AWS Partner Network. The AWS Partner Network can provide opportunities to network with AWS experts, rather than with experts of other public cloud providers.
 
-21. 
+21. A company is considering which AWS support plan is the most suitable for its needs. Which AWS support plan 24/7 phone, email, and chat access but does not provide access to dedicated AWS Technical Account Managers?
+    - [ ] AWS Enterprise On-Ramp Support
+    - [x] **AWS Business Support**
+
+    > The AWS Business Support plan offers 24/7 phone, email, and chat access to the AWS Support team but not access to AWS Technical Account Managers (TAM). An AWS TAM is a customer advocate and trusted advisor who can assist with the optimization of the customer's cloud solution.
+    >
+    > The Enterprise On-Ramp plan offers elevated benefits comparable with the AWS Enterprise Support plan. The Enterprise Support plan provides a customer with a dedicated TAM who can deliver account-specific advice and guidance. Customers on the Enterprise On-Ramp plan receive support from a pool of available TAMs resources.
+
+
+22. Which of the following can be created by customers with an AWS Basic Support plan? (Select TWO.)
+    - [x] **Account and billing support cases**
+    - [ ] Technical support cases
+    - [ ] Third-party software support requests
+    - [x] **Service limit increase requests**
+    - [ ] AWS Support API requests
+
+    > Customers with an AWS Basic Support plan can create account and billing support cases, and service limit increase requests. Basic Support is offered 24/7 for account and billing- related questions, such as a billing enquiry. Service limit increases may be required when a pre-defined quota has been reached. Basic Support is free and is provided by default to all AWS customers.
+    >
+    > Technical support cases cannot be created by Basic Support users. Customers must have at least a Developer Support plan in order to receive technical support.
+    >
+    > AWS Support Application Programming Interface (API) requests are only available to Business and Enterprise-level Support customers. The AWS Support API can be used to automate ticket generation and case management.
+    >
+    > Third-party software support requests are only available to Business and Enterprise-level Support customers. Third-party software support may include operating systems running in an EC2 instance, or a third-party Amazon Relational Database Service (RDS) engine such as Oracle.
+
+23. A company is assessing its responsibilities within the AWS Shared Responsibility Model. In the AWS Shared Responsibility Model, which controls are shared between AWS and the customer? (Select TWO.)
+    - [ ] Data Center environmental controls
+    - [x] **Configuration management**
+    - [x] **Patch management**
+    - [ ] Data Center physical controls
+    - [ ] Application network security in an Amazon Virtual Private Cloud (VPC)
+
+    > Patch management and configuration management responsibilities are shared between AWS and the customer. The AWS Shared Responsibility Model is used to define which AWS operations are managed by AWS and which are the agreed responsibility of the customer. AWS manages configuration and patching for its cloud infrastructure, while the customer is responsible for configuring, updating and patching the Amazon Elastic Compute Cloud (EC2) virtual machines (VMs) and the applications they deploy.
+    >
+    > The customer is responsible for application network security in an Amazon Virtual Private Cloud (VPC). Customer PCs running applications need to be secured to protect cloud resources such as EC2 instances using available security control and conventions including Network Access Control Lists and Security Groups.
+
+24. A company, as a new AWS customer, is assessing its responsibilities within the AWS Shared Responsibility Model. In the AWS Shared Responsibility Model, which of the following is managed by the customer?
+    - [ ] IP addresses used for Elastic IPs
+    - [ ] AZ network connectivity
+    - [ ] Physical access to data centers
+    - [x] **TLS connections between EC2 instances**
+
+    > Transport Layer Security (TLS) based connectivity between EC2 instances is managed by the customer. The TLS protocol provides encryption for data-in-flight and is most commonly used in client-to-web-server https-based communications. In a scenario where traffic between EC2 instances needs to be secured, the customer is responsible for obtaining the TLS certificate (s) and configuring encrypted https-based messaging.
+    >
+    > An Elastic IP address is a public address owned and provisioned by AWS. Elastic IPs can be used by customers to make resources available on the Internet using a static address. Elastic IP address pools are managed by AWS, but customers associate these IPs to EC2 instances or network interfaces. Elastic IPs should not be confused with Bring Your Own IP (BYOIP) addresses. While Elastic IPs are owned by AWS, BYOIP addresses are owned by the customer.
+
+25. A company would like to understand how the allocation of static IP addresses is managed for resources within the AWS cloud. According to the AWS shared responsibility model, a customer is responsible for assigning which of the following IP addresses?
+    - [x] **Static IP addresses to Amazon Elastic Compute Cloud (EC2) instances**
+    - [ ] Static IP addresses to CloudFront edge servers
+    - [ ] Static IP addresses to Aurora instances
+    - [ ] Static IP addresses to Amazon Relational Database Service (RDS) DB instances
+
+    > According to the AWS shared responsibility model, a customer is responsible for assigning static Internet Protocol (IP) addresses to Amazon Elastic Compute Cloud (EC2) instances. The shared responsibility model is used to define which AWS operations are managed by AWS and which are managed by the customer. EC2 allows customers to deploy virtualized servers suitable for a range of customer purposes using a variety of a available operating systems. While AWS is responsible for managing the underling hypervisor and virtualization infrastructure, the customer is responsible for managing all EC2 configuration, including any static Elastic IP addresses assigned to specific instances.
+    > 
+    > AWS is responsible for assigning static IP addresses to Amazon Relational Database Service (RDS) DB instances. RDS is a fully-managed, cloud-based relational database platform. Each DB instance runs one from a wide range of supported database engine types including Microsoft SQL Server, Oracle, Amazon Aurora, MySQL and PostgreSQL.
+    >
+    > AWS is responsible for assigning static IP addresses to Aurora instances. Aurora is the Amazon RDS platform and is fully managed by AWS. 
+    >
+    > AWS is responsible for assigning static IP addresses to CloudFront edge servers. CloudFront is a content caching service that stores copies of distributed web application and website content such as HTML files, scripts, videos and other data at strategic locations worldwide. While customers manage the type of content that will be cached, AWS manages the caching infrastructure, including the edge servers.
+
+26. An company is making enquires about the current AWS Identity and Access Management (IAM) password policy for IAM users. Which statement regarding the default AWS IAM password policy is correct?
+    - [x] **Passwords cannot match an AWS Identity and Access Management (IAM) user's AWS account name.**
+    - [ ] Passwords must include uppercase and lowercase characters.
+    - [ ] Passwords expire after 90 days and must be reset.
+    - [ ] Passwords must be at least six characters in length.
+
+    > The default AWS Identity and Access Management (IAM) password policy for IAM users requires that passwords do not match a user's AWS account name. Password policies are used to enhance password security by specifying a minimum password length and password complexity rules. AWS requires that passwords cannot match the IAM user's AWS account name or email address. Note the default IAM password policy does not apply to the AWS account root user, which has a separate password policy.
+    >
+    > The default password policy requires that passwords be at least eight characters in length, not six. The default password policy supports password lengths from 8 to 128 characters.
+    >
+    > The default password policy does not require that passwords include uppercase and lowercase characters. Passwords must include at least three characters types, from uppercase, lowercase, numbers and special characters, the latter being the `! @ # $%^ & * () _ + - = [] {} | '` characters.
+    >
+    > The default password policy does not require passwords to expire after 90 days. The default policy does not specify a password expiration period.
+
+27. Access to which of the following can be shared across AWS accounts using AWS Resource Access Manager (RAM)? (Select TWO.)
+    - [x] **Amazon EC2**
+    - [ ] Amazon ElastiCache
+    - [ ] AWS CloudTrail
+    - [ ] Network Access Control Lists (ACL)
+    - [x] **Amazon Aurora**
+
+    > Access to Amazon EC2 and Amazon Aurora can be shared across AWS accounts using the AWS Resource Access Manager (RAM) service. RAM allows some AWS services to be shared across multiple AWS accounts. This is useful in organizations where each department maintains its own AWS account, but some management and business tasks are centralized.
+
+28. An administrator needs to provide access to sales documents for several account executives. An AWS Identity and Access Management (IAM) group was previously created for the account executive job function. The administrator would like to replace the existing IAM policy with a new one. What should the administrator do to complete the required IAM configuration while MINIMIZING administrative overheads? (Select TWO.)
+    - [ ] Attach the new IAM policy to the existing IAM group, removing the previous IAM policy.
+    - [ ] Define a IAM role for each IAM user.
+    - [ ] Define a replacement AM policy specifying the required access permissions.
+    - [ ] Assign access permissions directly to the IAM group.
+    - [ ] Attach the IAM policy to each IAM user.
+
+    > The administrator should define a replacement AM policy specifying the required access permissions and attach the new IAM policy to the existing IAM group, removing the previous lAM policy. The IAM policies in the described scenario are identity-based, as assigned to an IAM group.
+
+29. A company notices that some employees routinely use the AWS root user to perform a variety of everyday developer tasks in a shared AWS account. In line with AWS IAM best practices, the company wants to restrict access to the root user credentials to employees who require access to its elevated privileges. Which of the following tasks can only be performed by the account root user?
+    - [ ] Changing the primary contact person's name and telephone number in the AWS account settings
+    - [x] **Activating IAM access to Billing and Cost Management in the AWS console**
+    - [ ] Configuring an Amazon S3 bucket to enable versioning
+    - [ ] Deleting an Amazon S3 bucket that requires administrative access to delete objects
+
+    > Activating IAM access to Billing and Cost Management in the AWS console can only be performed by the account root user. By default, IAM users and roles cannot access Billing and Cost Management in the AWS console. The root user must explicitly use the Activate IAM Access setting to provision this access. Individual AM user and roles assigned with the appropriate IAM policies will then be able to access this billing and cost management data.
+    >
+    > Other IAM users and roles can change the primary contact person's name and telephone number in the AWS account settings. In the account settings information, a subset of the fields can only be changed by the root user, namely the account name, email address, root user password, and root user access keys fields. The other fields can be changed by other AWS users if granted the appropriate permissions.
+
+30. A company currently manages user identities using Microsoft Entra ID hosted on another public cloud provider. This company would like to federate this user directory with AWS so its employees can access the AWS cloud without having to explicitly log in to establish each AWS console session. Which of the following AWS services meets this requirement?
+    - [ ] Amazon Connect
+    - [ ] Amazon Elastic Compute Cloud (EC2)
+    - [x] **AWS IAM Identity Center (formerly AWS Single Sign-On)**
+    - [ ] Amazon S3
+
+    > AWS IAM Identity Center (formerly AWS Single Sign-On) service meets the requirement. The AWS AM Identity Center provides the means to integrate external corporate or third-party user directories, also known as Identity Providers (IdP), with AWS. For example, you can integrate AWS with Okta, Ping Identity, and Microsoft Entra ID (formerly Azure AD).
+    >
+    > The Amazon Connect service does not meet the requirement. Amazon Connect is the AWS cloud contact center solution that allows a company to interact with its clients using voice call, online chat and SMS channels.
+
+31. 
