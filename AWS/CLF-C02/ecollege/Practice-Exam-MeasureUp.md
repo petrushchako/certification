@@ -834,4 +834,115 @@
     >
     > AWS Storage Gateway is not the best option for transferring this data. Storage Gateway offers an on-premises virtual appliance that connects to AWS-based storage. The Storage Gateway provides seamless access to cloud storage as a file, volume, or tape-based resource. However, use of Storage Gateway is not the quickest and cheapest means of transferring this data, noting the customer does not require on-premises infrastructure as this data transfer is a one-only exercise.
 
-42. 
+42. A company is evaluating the feasibility of using an AWS CloudHSM physical security device within the AWS cloud. Which of the following use cases does the AWS Cloud-SM device support?
+    - [x] **Offload SSL/TLS processing for web servers.**
+    - [ ] Provide the firewall security function for Amazon Elastic Compute Cloud (EC2) instances.
+    - [ ] Link AWS Identity and Access Management (IAM) users if associated in the same IAM Group by job function.
+    - [ ] Block traffic based on source IP address ranges.
+
+    > The AWS CloudHSM device supports the offloading of Secure Sockets Layer/Transport Layer Security (SSL/TLS) processing for web servers. The SSL/TLS protocol encryption of network traffic between clients and servers is a highly compute-intensive process. An AWS hardware security module (HSM) is a physical computing device that is optimized to quickly perform computationally-expensive cryptographic operations and provides secure storage for cryptographic keys within a tamper-resistant hardware device. Use of the CloudHSM service offloads this cryptographic processing from the associated web servers, freeing up virtual machine resources to improve the responsiveness of web server processing.
+    > 
+    > The AWS CloudHSM device does not block traffic based on source IP address ranges. This functionality is provided by network Access Control Lists (ACLs). ACLs are used to block traffic based on IP address ranges and Transmission Control Protocol (TCP) port numbers.
+    >
+    > The AWS CloudHSM device does not link AWS Identity and Access Management (IAM) users if associated in the same IAM Group by job function. An administrator can group IAM Users into different IAM groups based on job function. However, CloudHSM does not make any logical associations between AM users aggregated into the same IAM group.
+    >
+    > The AWS CloudHSM device does not provide the firewall security function for Amazon Elastic Compute Cloud (EC2) instances. This functionality is provided by security groups. Security groups allow users to control traffic for instances and can be compared to a stateful firewall implemented at the instance-level.
+
+43. An organization plans to deploy a cloud-based data warehouse that must support intensive business intelligence (BI) queries. Use of which Amazon service is the BEST option for this purpose?
+    - [ ] Amazon Aurora
+    - [x] **Amazon Redshift**
+    - [ ] Amazon ElastiCache
+    - [ ] Amazon DynamoDB
+
+    > The Amazon Redshift service is the best option for data warehousing operations including supporting intensive business intelligence (BI) queries. Redshift is based on the open-source PostgreSQL database and has been specifically designed for online analytic processing (OLAP) and data warehousing use cases. Redshift uses a specialized storage schema to reduce the amount of data that must be read from disk when processing intensive BI queries. Redshift is capable of handling petabyte-sized data warehouse datasets.
+
+44. A DevOps engineer has detected several Amazon Elastic Compute Cloud (EC2) instances running in the company AWS account that allow all traffic on any port and protocol. As part of efforts to improve defences against network-based cyber attacks, the company wants to lock down internet connectivity to these specific instances, permitting only ingress traffic using the https protocol on port 443. What action should the company immediately undertake?
+    - [ ] Create a subnet for each instance.
+    - [ ] Create a network Access Control List (ACL).
+    - [ ] Configure AWS PrivateLink.
+    - [x] **Add specific inbound rules to the security group associated with each instance.**
+
+    > The company should add specific inbound rules to the security group associated with each instance. Security groups allow customers to control network traffic to and from instances and can be considered as a firewall specific to each instance. Customers a responsible for creating and configuring security groups based on the network security and application messaging requirements.
+    >
+    > The company should not create a network Access Control Lists (ACL). A network ACLis used to explicitly block traffic based on Internet Protocol (IP) addresses and Transmission Control Protocol (TCP) port numbers, and can be considered as a firewall at the subnet level, rather than locking down specific instances.
+
+45. An architect has a regulatory requirement to control the encryption key that secures sensitive data that is stored using the AWS Secrets Manager. Which of the following statements best describes the use of Key Management Service (KMS) keys to securely add token data in the AWS Secrets Manager with MINIMUM effort?
+    - [x] **The architect should create and configure an AWS Key Management Service (KMS) Customer Managed Key.**
+    - [ ] The architect should set the Encryption key field to the existing aws/secretsmanagerkey entry.
+    - [ ] The architect should create and configure an external key store.
+    - [ ] The architect should create and configure a custom key store using the AWS CloudHSM service.
+
+    > The architect should create and configure an AWS Key Management Service (KMS) Customer Managed Key. The AWS Secrets Manager is a secure data store that integrates with the AWS KMS service to encrypt sensitive data using a customer-nominated AWS or customer managed key. Unlike using an AWS owned key, the architect has full control over a KMS Customer Managed Key (CMK) including the ability to define Key and IAM policies, enable automatic key rotation, and schedule key deletion.
+    >
+    > The architect should not set the Encryption key field to the existing aws/secretsmanager key entry. The aws/secretsmanager key is created and managed by AWS. The use of an AWS owned key does not meet the scenario requirement for the architect to control the encryption key.
+    >
+    > The architect should not create and configure an external key store. The AWS KMS service supports the configuration of external key stores. However, this option does not meet the scenario requirement for the architect to have control over the encryption key with minimum effort.
+    >
+    > The architect should not create and configure a custom key store using the AWS Cloud-SM service. The AWS KMS service supports the use of custom key stores created and managed using the AWS CloudHSM service. However, the use of the AWS CloudHSM service does not meet the scenario requirement for minimum effort.
+
+46. Amazon GuardDuty can be used to perform a security-based analysis of activity for which of the following AWS resource types? (Select TWO.)
+    - [x] **Amazon S3 bucket**
+    - [ ] Amazon CloudFront edge server
+    - [ ] Network Access Control List (ACL)
+    - [x] **Amazon Elastic Compute Cloud (EC2) instance**
+    - [ ] Amazon Elastic Block Store (EBS) volume
+
+    > Amazon GuardDuty is used to analyze activity on a range of AWS resources including Amazon Elastic Compute Cloud (EC2) instances and S3 buckets. GuardDuty is a security monitoring service that processes logging information from a range of AWS services including AWS CloudTrail, Amazon Route 53 and Virtual Private Cloud (VPC) flow logs. GuardDuty uses threat intelligence feeds to analyze this collected data in real time. GuardDuty generates notifications including any suspicious activity for example when configured to dispatch its findings to the Simple Notification Service (SNS) service.
+
+47. A company is becoming increasingly concerned about the risks associated with having Personal Health Information (PHI) about its clients stored within registration data held in Amazon S3. Which of the following can be used to automate the discovery of Personal Health Information (PHI) stored in Amazon S3?
+    - [x] **Manice**
+
+    > Amazon Macie is a managed data privacy and data security platform that can be used tc automate the discovery of Personally Identifiable Information (PII), Personal Health Information (PHI), and other sensitive information stored in Amazon S3. The process of discovering this data based on defining a data discovery job. When each job runs, Macie uses machine learning (ML) and pattern matching to discover and assess the vulnerabilities associated with the storage of this sensitive data.
+
+48. Which plan types are offered as part of the Savings Plans pricing models? (Select TWO.)
+    - [x] **Compute Savings**
+    - [ ] S3 Storage Savings
+    - [ ] Route 53 Savings
+    - [ ] Snow Family Savings
+    - [x] **EC2 Instance Savings**
+
+    > Compute Savings and EC2 Instance Savings are the two Savings Plan Types offered by AWS. Savings Plans allow an organization to commit to a consistent level of resource consumption for a one to three-year term. In exchange, AWS offers significant discounts based on the AWS services specified in the Savings Plan. Compute Savings Plans apply to all Amazon Elastic Compute Cloud (EC2) instance usage irrespective of the instance type and size, while EC2 Instance Savings Plans provide additional savings if a customer commits to usage of a specific instance family in a chosen AWS region.
+
+49. Which statement regarding AWS Savings Plans is correct?
+    - [ ] AWS Savings Plans can be purchased and managed using the AWS Budgets tool.
+    - [x] **The customer will pay the On-Demand rate if the committed AWS Savings Plan usage rate for the specific AWS resources is exceeded.**
+    - [ ] AWS Savings Plans offer pricing tiers based on one, three, and five-year terms.
+    - [ ] AWS Savings Plan offers must be paid using an All Upfront payment option.
+
+    > The customer will pay the On-Demand rate if the committed AWS Savings Plan usage rate for the specific AWS resources is exceeded. Savings Plans allow an organization to commit to a consistent level of resource consumption for a specified term. Example Savings Plan types are Compute, EC2 Instance and SageMaker. In exchange, AWS offers significant discounts on use of specific AWS resources based on plan type, commitment period and payment type.
+    >
+    > AWS Savings Plans offer pricing tiers based on one and three-year terms. Five-year terms are not offered. The longer term offer greater savings.
+    > 
+    > AWS Savings Plans offers can be paid using an All Upfront, Partial Upfront, or No Upfront payment options. This allows an organization to distribute a large spend across multiple payments.
+    >
+    > AWS Savings Plans are not purchased and managed using the AWS Budgets tool. Savings Plan are purchased and managed using the AWS Cost Explorer. AWS Budgets is used to monitor usage metrics and establish service budgets. Budget alerts can be configured to trigger when spending approaches a budgeted limit.
+
+50. A company is evaluating the payment options and discounts associated with committing to the use of Amazon Elastic Compute Cloud (EC2) instances. Which payment option offers the greatest discount when using EC2 instances?
+    - [ ] On-Demand
+    - [ ] Partial Upfront
+    - [x] **All Upfront**
+    - [ ] No Upfront
+
+    > The All Upfront payment option offers the greatest discount when paying for EC2 reserved instances. Paying all costs up front is an option for both Standard and Convertible Reserved Instances. Both reserved instance types are offered at 1-year and 3-year terms. With this option, the full payment must be made at the beginning of the committed term.
+    > 
+    > The No Upfront payment option does not offer the greatest EC2 instance discount when paying for EC2 reserved instances. With this option, a discount hourly rate is applied for the duration of the agreed term.
+    > 
+    > The On-Demand option does not offer the greatest EC2 instance discount. The On-Demand pricing model is based on the pay-as-you-go usage model where compute capacity is charged by the hour or second but with no long-term commitments. On-Demand is the most expensive option.
+    > 
+    > The Partial Upfront payment option does not offer the greatest EC2 instance discount when paying for EC2 reserved instances. With this option, a partial payment is made when the term begins, and a discounted hourly rate is charged for the duration of the agreed term.
+
+51. A customer wants to use their own server-bound software licenses. Which EC2 instance pricing model would meet this requirement?
+    - [ ] Spot Instances
+    - [ ] Reserved Instances
+    - [ ] On-Demand
+    - [x] **Dedicated Host**
+
+    > Dedicated Hosts are the only type of EC2 instance that can be used with a customer's server-bound software licenses. With a dedicated host, customers can use their own server-bound software licenses (subject to license terms) and fulfill regulatory requirements. Dedicated hosts, unlike other EC2 offerings, are not bundled with an operating system and associated licensing. However, for the majority of use cases, using a bundled package of EC2, operating system, and associated licensing is the most cost-effective method of provisioning a compute instance.
+
+52. The magnetic tapes that an organization uses for data backups are no longer available for purchase. Which AWS service should the organization use to seamlessly store backups in Amazon S3 using virtual tapes?
+    - [ ] Amazon FSx for Lustre
+    - [ ] Amazon Elastic Block Store (EBS)
+    - [x] **AWS Storage Gateway**
+    - [ ] Amazon Elastic File System (EFS)
+
+    > The organization should use the AWS Storage Gateway service to seamlessly store backups in Amazon S3 using virtual tapes. AWS Storage Gateway provides an on-premises virtual appliance that connects to Amazon S3 storage. This approach is consistent with the Cost Optimization pillar in the AWS Well-Architected Framework, where an organization can efficiently and cost-effectively archive backup data to the cloud. The AWS Storage Gateway provides seamless access to cloud storage as a file, volume, or tape-based resource. Once the Storage Gateway is configured and activated, the organization can create a virtual tape pool declaring an Amazon S3 storage class to store the backup data in the most cost-efficient manner for the specific access requirements.
