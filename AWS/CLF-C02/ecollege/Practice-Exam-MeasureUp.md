@@ -427,7 +427,7 @@
     - [ ] Amazon Transcribe
     - [ ] Amazon Polly
     - [ ] Amazon Rekognition
-    - [x] 
+    - [x] **Amazon Textract**
     
     > The Amazon Textract machine learning service is best suited to extract the content in each scanned image. The Amazon Textract API can be used to automatically process text including handwriting and document layout information from scanned images and generate digital output in text.
     >
@@ -451,4 +451,78 @@
     >
     > AWS PrivateLink facilitates secure connectivity between AWS PCs, and between VPCs and AWS services. Network traffic on a Private Link connection does not traverse the Internet. PrivateLink does not filter specific inbound requests at the subnet level.
 
-11. 
+11. Which of the following are the BEST sources of AWS security documentation for enterprise- level use cases on the AWS public cloud? (Select TWO.)
+    - [x] **AWS Architect Center**
+    - [ ] AWS CloudWatch
+    - [ ] AWS Cost and Usage Reports
+    - [x] **AWS Shared Responsibility Model**
+    - [ ] AWS CloudTrail
+
+    > The AWS Architecture Center and the AWS Shared Responsibility Model are the best sources of AWS security documentation for enterprise-level use cases on the AWS public cloud.
+    >
+    > The AWS Architecture Center provides security guidance and documentation as part of the AWS Well-Architected framework; whereas the AWS Shared Responsibility model provides security documentation as part of the description of the inherent division of responsibilities between AWS and the customer. Fundamentally, AWS provides the security of the public cloud, while the customer agrees to secure its applications and all AWS resource usage within the AWS cloud.
+    >
+    > AWS CloudWatch is not the best source of AWS security documentation for enterprise-level use cases on the AWS public cloud. The CloudWatch service provides detailed logging and monitoring of applications and resources deployed to the AWS cloud.
+    >
+    > AWS CloudTrail is not the best source of AWS security documentation for enterprise-level use cases on the AWS public cloud. The CloudTrail service is a security auditing service that records activities undertaken by AWS users and roles as a series of recorded events logged on Amazon S3.
+    >
+    > AWS Cost and Usage Reports is not the best source of AWS security documentation for enterprise-level use cases on the AWS public cloud. The AWS cost and usage reports contain detailed billing information broken down by AWS resource and are configurable using definable AWS tags.
+
+12. Which of the following statements describe AWS Developer Support? (Select TWO.)
+    - [ ] AWS Developer Support response times for impaired systems are eight hours or less.
+    - [ ] AWS Developer Support includes access to an AWS Technical Account Manager (TAM).
+    - [x] **Email-based AWS Developer support is offered during normal business hours.**
+    - [x] **One nominated primary contact can open as many support cases as required.**
+    - [ ] Telephone, email, and chat-based support is available 24/7.
+
+    > With an AWS Developer Support plan, one nominated primary contact can open as many support cases as required. Developer support is email-based and is offered during normal business hours. This support level is best suited for the development and testing phases of an AWS-based project.
+    >
+    > AWS Developer Support response times for impaired systems is not eight hours or less. AWS Response times on the AWS Developer Support plan for general guidance is less than 24 business hours, and less than 12 business hours for impaired systems.
+    >
+    > AWS Developer Support does not include access to a Technical Account Manager (TAM), as is the case for the AWS enterprise-level support plans. AWS Enterprise level support is intended for organizations that have invested in AWS cloud resources for production services.
+    >
+    > Telephone, email and chat-based support are not available 24/7 for Developer support, as is the case for AWS Enterprise support. Email-based support from AWS Cloud Support engineers is available within business hours only.
+
+13. A support team is preparing for a company's first live deployment onto the AWS cloud and would like to understand which AWS services provide visibility of the current and planned availability of the AWS services on which the application depends. Which statement regarding the AWS Health service is correct?
+    - [ ] AWS Health allows notifications for events to be deleted from the Personal Health Dashboard.
+    - [ ] AWS Health can detect and alert on events generated in Amazon CloudWatch.
+    - [ ] AWS Health can only be used to view events from a single nominated AWS account.
+    - [x] **AWS Health displays events even if a customer does not use AWS services in the affected region.**
+
+    > The AWS Health service displays events even if a customer does not use AWS services in the affected region. AWS Health provides alert information regarding planned and unplanned AWS Service disruptions and failure events that may impact a customer. AWS Health displays two types of events: account-specific events and public events. Public events may include general service events for services in regions where a customer does not host resources.
+    >
+    > AWS Health can be used to view events from a multiple AWS accounts. For customers that use AWS Organizations, events for all associated accounts can be viewed.
+    >
+    > AWS Health does not detect and alert on events generated in Amazon CloudWatch. However, CloudWatch can be used to detect and alert on events generated by the AWS Health service.
+    >
+    > AWS Health does not allow notifications for events to be deleted from the Personal Health Dashboard. These notifications are updated and removed by AWS when the event is resolved.
+
+14. A company is evaluating which AWS support plan best meets their support needs on the AWS cloud. Which of the following support features is offered as part of the AWS Business Support but is not included in a Developer Support plan?
+    - [ ] AWS online documentation regarding best practices
+    - [ ] One-on-one billing and account support
+    - [ ] An unlimited number of support cases
+    - [x] **Access to all AWS Trusted Advisor best practice checks**
+
+    > The AWS Business Support plans offer access to all AWS Trusted Advisor best practice checks checks. The Trusted Advisor service automatically evaluates and reports in the configuration and operational status of each customer AWS environment, making recommendations in the cost optimization, performance, resilience, security, operational excellence, and service limits categories. Subscribers to the AWS Basic and Developer support plans have access to a subset of security checks as well as service quota checks. However, customers who subscribe to Business or Enterprise levels of support get full access to Trusted Advisor checks and capabilities.
+    >
+    > Both Business and Developer Support plans offer an unlimited number of support cases. In a Developer Support plan, the cases must be created by a primary contact.
+    >
+    > Both Business and Developer support plans offer access to AWS online documentation regarding best practices. AWS Best practices documentation is available in the public domain via AS websites and related training and community resources.
+    >
+    > Both Business and Developer support plans offer one-on-one billing and account support. AIl AWS customers, even those without a paid support plan, have access to customer billing support resources 24/7.
+
+
+15. Which of the following statements describes a capability of the AWS Trust and Safety team?
+    - [ ] Investigating reports of malicious network activity originating from sanctioned or politically-sensitive countries
+    - [ ] Investigating customer reports of incorrect AWS billing
+    - [ ] Ensuring all AWS Support requests are handled in a timely manner
+    - [x] **Investigating reports of excessive network activity originating from an AWS resource on a customer account**
+
+    > Investigating reports of excessive network activity originating from an AWS resource is a capability of the AWS Trust and Safety Team. The Trust and Safety Team is an AWS security team tasked with assisting AWS customers involved in reported incidents of abuse involving AWS resources. The AWS Trust and Safety team will contact AWS customers if associated AWS resources are alleged to be sources of copyright breaches, email abuse or of generating excessive or malicious network traffic.
+    >
+    > Ensuring all AWS Support requests are handled in a timely manner is not a capability of the AWS Trust and Safety team. The AWS Support team, rather than the AWS Trust and Safety team, is responsible for ensuring that customer support requests are handled in a timely manner.
+    >
+    > Investigating reports of malicious network activity originating from sanctioned or politically-sensitive countries is not a capability of the AWS Trust and Safety team. The AWS Trust and Safety team is responsible for investigating malicious network activity only when the source is suspected to be associated with the use of AWS resources.
+    >
+    > Investigating customer reports of incorrect AWS billing is not a capability of the AWS Trust and Safety team. This scenario should be resolved by the AWS Support team.
+
