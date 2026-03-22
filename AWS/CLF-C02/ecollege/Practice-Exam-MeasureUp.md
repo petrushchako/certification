@@ -672,13 +672,13 @@
     > Access to Amazon EC2 and Amazon Aurora can be shared across AWS accounts using the AWS Resource Access Manager (RAM) service. RAM allows some AWS services to be shared across multiple AWS accounts. This is useful in organizations where each department maintains its own AWS account, but some management and business tasks are centralized.
 
 28. An administrator needs to provide access to sales documents for several account executives. An AWS Identity and Access Management (IAM) group was previously created for the account executive job function. The administrator would like to replace the existing IAM policy with a new one. What should the administrator do to complete the required IAM configuration while MINIMIZING administrative overheads? (Select TWO.)
-    - [ ] Attach the new IAM policy to the existing IAM group, removing the previous IAM policy.
+    - [x] **Attach the new IAM policy to the existing IAM group, removing the previous IAM policy.**
     - [ ] Define a IAM role for each IAM user.
-    - [ ] Define a replacement AM policy specifying the required access permissions.
+    - [x] **Define a replacement AM policy specifying the required access permissions.**
     - [ ] Assign access permissions directly to the IAM group.
     - [ ] Attach the IAM policy to each IAM user.
 
-    > The administrator should define a replacement AM policy specifying the required access permissions and attach the new IAM policy to the existing IAM group, removing the previous lAM policy. The IAM policies in the described scenario are identity-based, as assigned to an IAM group.
+    > The administrator should define a replacement AM policy specifying the required access permissions and attach the new IAM policy to the existing IAM group, removing the previous IAM policy. The IAM policies in the described scenario are identity-based, as assigned to an IAM group.
 
 29. A company notices that some employees routinely use the AWS root user to perform a variety of everyday developer tasks in a shared AWS account. In line with AWS IAM best practices, the company wants to restrict access to the root user credentials to employees who require access to its elevated privileges. Which of the following tasks can only be performed by the account root user?
     - [ ] Changing the primary contact person's name and telephone number in the AWS account settings
@@ -700,4 +700,138 @@
     >
     > The Amazon Connect service does not meet the requirement. Amazon Connect is the AWS cloud contact center solution that allows a company to interact with its clients using voice call, online chat and SMS channels.
 
-31. 
+31. A developer has observed failures in the AWS console attempting to start an Amazon Elastic Compute Cloud (EC2) Windows server instance. Which AWS service or tool provides the MOST effective means of troubleshooting this issue?
+    - [x] **EC2Rescue for Windows Server**
+    - [ ] AWS CloudTrail
+    - [ ] Amazon CloudWatch
+
+    > The EC2Rescue for Windows Server tool provides the most effective means of troubleshooting this issue. EC2Rescue for Windows Server is an easy-to-use tool that customers can launch to perform diagnostic and troubleshooting checks on unreachable instances, collecting log files, and identifying potential causes.
+    >
+    > AWS CloudTrail does not provide the most effective means of troubleshooting this issue. The CloudTrail service is a security auditing service that records activities undertaken by AWS users and roles as a series of recorded events logged on Amazon S3. Amazon CloudTrail is not the most effective to investigate failed EC2 instance startup.
+    >
+    > AWS CloudWatch does not provide the most effective means of troubleshooting this issue. The CloudWatch service collects logs, resource metrics, and actionable events from EC2 instances. However, CloudWatch would be unable to capture log data for specific Windows server issues such as boot failures.
+
+32. A company has invested in Internet of Things (IoT) technologies and would like to connect its distributed farms of IoT devices to the AWS cloud. No AWS software components or additional runtime environments should be deployed. Which AWS service provides basic AWS connectivity for these IoT devices at MINIMAL cost?
+    - [ ] AWS IoT Greengrass
+    - [x] **AWS loT core**
+
+    > The AWS IoT Core service provides basic AWS connectivity for these IoT devices. IoT Core is an AWS-managed service that provides the AWS infrastructure required to connect IoT devices with the AWS cloud. The IoT Core platform is able to support messaging with billions of IoT devices by providing high-bandwidth, low-latency network connectivity.
+    >
+    > AWS IoT Greengrass service does not provide basic AWS connectivity for these IoT devices. The IoT Greengrass service offers component software for IoT devices and provisions IoT runtime environments deployed to Amazon Edge network locations. These edge locations enable cloud processing to be performed closer to the customer IoT device farms in this scenario, minimizing network latency and improving message throughput. While highly capable, the IoT Greengrass service is not the best choice in this scenario, which requires only basic AWS connectivity for remote IoT devices.
+
+33. A company is looking to adopt a Continuous Integration & Continuous Deployment (CI/CD) approach to automate the deployment of business applications on the AWS cloud. Which AWS service provides the use of configurable pipelines to automate the remote installation and update of customer applications?
+    - [ ] AWS CodeBuild
+    - [ ] AWS CodeCommit
+    - [ ] AWS CodeStar
+    - [x] **AWS CodePipeline**
+
+    > AWS CodePipeline allows the configuring of pipelines to automate the remote installation and update of customer applications. With AWS CodePipeline you configure a pipeline by setting up different stages. Each of these stages can call other AWS development services to extract source code, build, test, and remotely deploy each application on the AWS cloud.
+    >
+    > AWS CodeCommit does not meet the scenario requirements. The AWS CodeCommit service provides highly-scalable private Git repositories that customers can use to store their application code within the AWS cloud. Each CI/CD pipeline developed using the AWS CodePipeline service must contain a source stage, which typically configures the AWS CodeCommit service to retrieve source code from a specified repository.
+    >
+    > AWS CodeBuild does not meet the scenario requirements. The AWS CodeBuild service can be configured to automatically provide a virtualized build server environment that c generate application deployment artifacts within a build stage defined on the AWS CodePipeline pipeline.
+    >
+    > AWS CodeStar does not meet the scenario requirements. The AWS CodeStar service is used to create and configure software development projects based on customer- selected templates. These template projects integrate the use of selected AWS development services. The CodeStar service is deprecated and AWS support for this service will be discontinued in July 2024.
+
+34. Which Amazon Elastic Block Store (EBS) volume type provides the MOST cost-effective storage that supports a maximum throughput rate of 500 Mebibytes per second (MiB/s)?
+    - [ ] General Purpose solid state drive (SSD)
+    - [x] **Throughput Optimized hard disk drives (HDD)**
+    - [ ] Provisioned Input/Output Operations Per Second (IOPS) solid state drive (SSD)
+    - [ ] Cold hard disk drives (HDD)
+
+    > The Throughput Optimized hard disk drive (HDD) volume type provides the most cost-effective storage that supports a maximum throughput of 500 MiB/s per volume. This storage type is optimized for high-throughput workloads such as big data, log processing, and data warehousing. HDD storage has a lower a cost than SSD storage. Note that AWS documentation often uses the Mebibytes (MiB), Gibibytes (GiB) and Tebibytes (TiB) byte units in place of the more common Megabytes, Gigabytes and Terabyte. For example, while one megabyte is 1 million bytes, a mebibyte represents the more accurate 2^20 (exactly 1,048,576) bytes count.
+    >
+    > Cold HDD offers the lowest cost but does not support 500 MiB/s throughput. Cold HDD storage is best suited for workloads with infrequent access requirements.
+    >
+    > General Purpose solid state drive (SSD) is suitable for many types of workloads and supports up to 1,000 MiB/s. However, it is more expensive than HDD storage.
+    >
+    > Provisioned IOPS SSD storage is optimized for IOPS and offers a maximum throughput rate of up to 4000 MiB/s per volume. However, it is the most expensive volume type.
+
+35. An architect has received a requirement to provision internet connectivity for an application deployed to Amazon Elastic Compute Cloud (EC2) instances in a private subnet within the customer Virtual Private Cloud (VPC). What should the organization do to enhance security while minimizing the costs associated with utilizing static public IP addresses when connecting these instances to the internet?
+    - [ ] Configure a security group
+    - [ ] Configure an AWS Elastic IP for each EC2 instance
+    - [x] **Deploy a NAT gateway**
+    - [ ] Deploy Route 53
+
+    > The organization should deploy a Network Address Translation (NAT) gateway to enhance security and minimize the costs associated with public Internet Protocol (IP) addresses when connecting Amazon Elastic Compute Cloud (EC2) instances to the internet. A NAT gateway is located in a public subnet between the Internet and the private networks, allowing privately addressed nodes to access, and be accessed by publicly addressed nodes. The NAT gateway translates the private addresses used by internal clients to a shared static Elastic IP address that is configured on the gateway.
+    > 
+    > The organization should not configure an AWS Elastic IP for each EC2 instance to minimize the costs associated with utilizing static public IP addresses when connecting instances to the internet. An Elastic IP is static public IPv4 address that is routable on the internet. The use of a NAT gateway is more cost effective for provisioning a single static public IP address, rather than allocating a separate Elastic IP for each and every instance requiring a fixed IP address that does not change after each EC2 restart.
+    > 
+    > The organization should not configure a security group to minimize the costs associated with utilizing static public IP addresses when connecting instances to the internet. A security group is used to manage inbound and outbound traffic to a specific instance and can be considered as a stateful firewall at the instance level. Security groups are attached to instances but are not used to provision public IPs.
+    > 
+    > The organization should not deploy Route 53 to minimize the costs associated with utilizing static public IP addresses when connecting instances to the internet. Route 53 provides managed Domain Name System (DNS) services. The Route 53 service is not used to provision public IPs to specific private instances.
+
+36. A company is looking to migrate its infrastructure from a private data center and wants to use Network File System (NFS) compliant storage service in the AWS cloud. Which statement regarding Amazon Elastic File System (EFS) is correct?
+    - [ ] Amazon Elastic File System (EFS) can be used to provide in-memory data stores.
+    - [ ] Amazon Elastic File System (EFS) provides block level storage volumes for Amazon Elastic Compute Cloud (EC2) instances.
+    - [x] **Amazon Elastic File System (EFS) offers a storage class for infrequently accessed files.**
+    - [ ] Amazon Elastic File System (EFS) can only store up to terabyte-scale data sets.
+
+    > Amazon Elastic File System (EFS) offers a storage class for infrequently accessed files. EFS provides a cost-effective, Network File System (NFS) based file storage platform that can be shared by hundreds or even thousands of EC2 instances. EFS is a managed file system that supports low-latency, high-throughput file operations. EFS supports a range of storage classes for different use cases including EFS Standard, EFS Standard- Infrequent Access (Standard-IA), EFS One Zone and EFS One Zone-Infrequent Access (EFS One Zone-IA).
+    >
+    > Amazon EFS does not provide block level storage volumes for Amazon Elastic Compute Cloud (EC2) instances. This functionality describes the Amazon Elastic Block Store (EBS) service, which offers several volumes types that can be attached to EC2 instances as network storage.
+
+37. A company wants to schedule the regular archiving of S3 data associated with a financial trading application that is run on an Amazon Elastic Compute Cloud (EC2) cluster. What should the company do to meet the requirement with MINIMUM effort?
+    - [x] **Configure the AWS Backup service to regularly back up the Amazon S3 data.**
+    - [ ] Use the AWS console to execute each adhoc backup of the Amazon S3 data.
+    - [ ] Configure the AWS Backup service to regularly back up the Amazon Elastic Compute Cloud (EC2) instance.
+    - [ ] Deploy another application on the same Amazon Elastic Compute Cloud (EC2) cluster to automate the regular backup of the application data that is stored on Amazon S3.
+
+    > The company should configure the AWS Backup service to regularly back up the Amazon S3 data. AWS Backup is a fully - managed AWS service that customers can use to schedule, retain and if required, restore backups taken on designated data and configuration from across a full range of supported AWS services.
+    > 
+    > The company should not configure the AWS Backup service to regularly back up the Amazon Elastic Compute Cloud (EC2) instance. The company should regularly backup the Amazon S3 data rather than EC instance data.
+    >
+    > The company should not use the AWS console to execute each adhoc backup of the Amazon S3 data. While this approach is possible, it does not meet the scenario requirement of scheduling these backups to occur automatically at regular intervals.
+    >
+    > The company should not deploy another application on the same Amazon Elastic Compute Cloud (EC2) cluster to automate the regular backup of application data that is stored on Amazon S3. While deploying a new application designed to automate the backup of the application data is possible, this approach does not meet the scenario requirement of minimum effort.
+
+
+38. Which AWS services allow on-premises Windows clients to access AWS cloud-based Server Message Block (SMB) file shares? (Select TWO.)
+    - [ ] Amazon Elastic Block Store (EBS)
+    - [ ] AWS Elemental On-Premises
+    - [ ] Amazon Elastic File System (EFS)
+    - [x] **Amazon FSx for Windows File Server**
+    - [x] **AWS Storage Gateway**
+
+    > AWS Storage Gateway provides an on-premises virtual appliance that connects to AWS-based cloud storage. The Storage Gateway provides seamless access to cloud storage as a file, volume or tape-based resource. Once the Gateway is configured and activated, administrators can create Windows-compatible Server Message Block (SMB) file shares. Windows users can connect and access to these shares as they would with any other resource share.
+    >
+    > Amazon FSx for Windows File Server provides a managed service that natively supports file sharing using the Server Messaging Blocks (SMB) protocol between Windows-based clients and file servers.
+    >
+    > Amazon EFS does not allow on-premises Windows clients to access cloud-based Server Message Block (SMB) file shares. EFS is a managed file system that supports low-latency, high throughput file operations.
+    >
+    > Amazon EBS does not allow on-premises Windows clients to access cloud-based Server Message Block (SMB) file shares. EBS provides several types of block-level storage volumes that can be used with Amazon Elastic Compute Cloud (EC2) instances.
+
+39. Which of the following are part of a cost-effective AWS static website deployment? (Select TWO.)
+    - [x] **Naming the Amazon S3 bucket after the website domain.**
+    - [x] **Storing the website files in an Amazon S3 bucket.**
+    - [ ] Defining a storage lifecycle policy for the AWS static website.
+    - [ ] Storing the website files in Amazon Elastic Compute Cloud (EC2).
+    - [ ] Deploying the website using Amazon Redshift.
+
+    > Storing the website files in Amazon S3 and naming the bucket after the website domain allows a static website to be deployed in the AWS cloud. Static websites can be hosted on Amazon S3 cost-effectively, storing the static content including HTML, json scripts, stylesheets and image files. When a bucket is configured as a website, the bucket name must match the domain name of the website that is hosted.
+    >
+    > A storage lifecycle policy does not need to be defined for the AWS static website. Storage lifecycle policies automate the process of archiving infrequently accessed data to more cost-effective storage. Archiving the AWS website content files would make the static website inoperable.
+
+40. A company is considering the possible sharing of a data volume between Amazon Elastic Compute Cloud (EC2) instances run in the AWS cloud. Which type of Amazon Elastic Block Store (EBS) volume can be attached to more than one EC2 instance at the same time?
+    - [ ] gp2
+    - [ ] st1
+    - [x] **io1**
+    - [ ] gp3
+
+    > The Amazon Elastic Block Store (EBS) volume type io1 can be attached to more than one Amazon EC2 instance at the same time. Amazon Elastic Compute Cloud (EC2) provides traditional block storage, much like a hard drive and can be attached directly to an instance. Most EBS volume types can only be attached to a single instance. However, i01 and io2 volume types, as Provisioned Input/Output Operations Per Second (IOPS) solid- state drive (SSDs) volumes, do support being concurrently attached to multiple instances, known as EBS Multi-Attach.
+    >
+    > The EBS gp2 and gp3 volume types cannot be attached to more than one Amazon EC2 instance. These volumes use General Purpose SSD and do not support EBS Multi-attach. The volume types gp2 and gp3 are best used in test or development environments and for applications that require low latencies for network storage.
+    >
+    > The EBS st1 volumes cannot be attached to more than one EC2 instance. This st1 volume type is a Throughput Optimized hard disk drive (HDD) which is well suited for data warehousing and big data storage use cases.
+
+41. An organization is migrating to the AWS cloud and needs to move about 50TB of data to S3 storage once-only. Which of the following is the BEST option for transferring this data as quickly and economically as possible?
+    - [ ] Amazon Lightsail
+    - [ ] AWS Storage Gateway
+    - [x] **AWS Snowball**
+    - [ ] AWS Direct Connect
+
+    > The AWS Snow Family service is the best option for transferring this data as quickly and economically as possible. AWS Snow is a service offering physical data storage and compute devices that can be used to physically transfer very large amounts of on- premises data to the AWS cloud. Customers can for example request an AWS Snowball device that can hold over 70 terabytes (TB) of data, depending on the model requested. The data is physically transferred onto the Snowball at the Customer on-premises site, where it is encrypted. Once the Snowball has been physically transported back to AWS, the customer data is transferred to Amazon S3 storage. For exabyte-level storage transfer needs, AWS offers the Snowmobile data transfer service using a shipping container holding Snow devices, carried by a semi-trailer truck.
+    >
+    > AWS Storage Gateway is not the best option for transferring this data. Storage Gateway offers an on-premises virtual appliance that connects to AWS-based storage. The Storage Gateway provides seamless access to cloud storage as a file, volume, or tape-based resource. However, use of Storage Gateway is not the quickest and cheapest means of transferring this data, noting the customer does not require on-premises infrastructure as this data transfer is a one-only exercise.
+
+42. 
