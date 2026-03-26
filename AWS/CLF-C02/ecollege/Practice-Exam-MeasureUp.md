@@ -8,11 +8,6 @@
 
     > Access to Amazon EC2 and Amazon Aurora can be shared across AWS accounts using the AWS Resource Access Manager (RAM) service. RAM allows some AWS services to be shared across multiple AWS accounts. This is useful in organizations where each department maintains its own AWS account, but some management and business tasks are centralized.
     >
-    > RAM is not used to share access to AWS CloudTrail across multiple AWS accounts. CloudTrail maintains event history for actions taken using the AWS Management Console, AWS API, SDK and command-line tools. CloudTrail can be used to audit resource configuration and access activities.
-    >
-    > RAM is not used to share access to Network Access Control Lists (ACLs) across multiple AWS accounts. Network ACLs can be used to block traffic based on IP address ranges and Transmission Control Protocol (TCP) port numbers.
-    >
-    > RAM is not used to share access to Amazon ElastiCache across multiple AWS accounts. ElastiCache can be used to provide in-memory data stores to significantly reduce application read and write latency.
 
 2. A company is looking to choose an AWS container orchestration environment as a managed service that provides maximum flexibility and control over container deployment and network configurations.<br>Which AWS service will best meet these requirements?
     - [ ] AWS Lambda
@@ -24,9 +19,6 @@
     >
     > The company should not use the Amazon Elastic Container Service (ECS). Like Amazon EKS, the Amazon ECS service provides a container orchestration environment as a managed AWS service providing secure, highly-scalable and resilient infrastructure. However, the Amazon ECS service aims to provide a far simpler configuration and deployment interface for customers to use, abstracting away many of the technical details supporting container deployments and network configurations.
     >
-    > The company should not use the AWS Lambda service. AWS Lambda is not intended for container orchestration. This is an AWS serverless environment that allows you to execute code in response to events, without having to worry about underlying server or cluster deployment.
-    >
-    > The company should not use the Amazon Elastic Compute Cloud (EC2) service. While EC2 virtual machines (VM) can run customer-built Amazon Machine Image (AMI) images, the EC2 service is not a container orchestration system so is not the best solution for these requirements.
 
 3. A developer has observer failure in AWS console attempting to start Amazon Elastic Compute (EC2) Windows server instance.<br>Which AWS service or tool provides the most effective means of troubleshooting this issue?
     - [ ] Amazon CloudWatch
@@ -40,7 +32,6 @@
     >
     > AWS CloudWatch does not provide the most effective means of troubleshooting this issue. The CloudWatch service collects logs, resource metrics, and actionable events from EC2 instances. However, CloudWatch would be unable to capture log data for specific Windows server issues such as boot failures.
     >
-    > Amazon Connect does not provide the most effective means of troubleshooting this issue. The Amazon Connect service provides a highly scalable contact center solution to allow customers to provide their own users with public-facing customer services using the AWS cloud.
 
 4. A company is considering migrating source data from an external file server onto the AWS cloud using Amazon S3 storage.<br>Which of the following statements describes the use of object-base storage?
     - [ ] Source data is saved using block storage
@@ -163,9 +154,9 @@
     - [ ] Cost budget
     - [x] **Reserved Instance (RI) coverage budget**
 
-    > The AWS Budgets Reserved Instance (RI) coverage budget should be used to optimize billing by determining the number of Amazon Elastic Compute Cloud (EC2) service usage hours that did not use an EC2 Reserved Instance (RI). Ris provide costs savings by allowing an organization to commit to one or three- year terms that offer lower usage costs than use of On-Demand Instances. Using an RI coverage budget, a customer can receive alerts when instance usage does not fall under a reservation and is therefore incurring higher per-hour charges.
+    > The AWS Budgets Reserved Instance (RI) coverage budget should be used to optimize billing by determining the number of Amazon Elastic Compute Cloud (EC2) service usage hours that did not use an EC2 Reserved Instance (RI). Ris provide costs savings by allowing an organization to commit to one or three-year terms that offer lower usage costs than use of On-Demand Instances. Using an RI coverage budget, a customer can receive alerts when instance usage does not fall under a reservation and is therefore incurring higher per-hour charges.
     >
-    > RI utilization budgets are not used to determine the number of EC2 hours that did not use a reservation. These budgets can trigger alerts when Is are under-utilized.
+    > RI utilization budgets are not used to determine the number of EC2 hours that did not use a reservation. These budgets can trigger alerts when RIs are under-utilized.
     >
     > Usage budgets are not used to determine the number of EC2 hours that did not use a reservation. Usage budgets define target usage for a nominated AWS service.
     >
