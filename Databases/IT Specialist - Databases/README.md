@@ -2,14 +2,17 @@
 
 ## Initialising Database
 
-#### Create Database
-`CREATE DATABASE <db_name>`;
+- **Create Database**
 
-#### Verify DB creation
-`SELECT name FROM sys.databases;`
+    `CREATE DATABASE <db_name>;`
 
-#### Delete DB
-`DROP DATABASE IF EXISTS <db_name>;`
+- **Verify DB creation**
+
+    `SELECT name FROM sys.databases;`
+
+- **Delete DB**
+
+    `DROP DATABASE IF EXISTS <db_name>;`
 
 #### Example
 
