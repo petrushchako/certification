@@ -1,7 +1,7 @@
 # Practical SQL
 ##### A BEGGINER'S GUIDE TO STORRYTELLING WITH DATA<br><br>Anthony DeBarros
 
-> [Download the code from GitHub](https://www.nostarch.com/practicalSQL/)
+> [Download the code from GitHub](https://www.nost)
 
 <br>
 
